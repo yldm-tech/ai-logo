@@ -1,6 +1,6 @@
 {
   "name": "ai-logo",
-  "version": "5.18.0",
+  "version": "1.0.0",
   "description": "Popular AI / LLM Model Brand SVG Logo and Icon Collection",
   "keywords": [
     "ai logo",
@@ -20,6 +20,9 @@
   },
   "license": "MIT",
   "author": "yldm-tech",
+  "contributors": [
+    "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
+  ],
   "sideEffects": false,
   "main": "es/index.js",
   "module": "es/index.js",
@@ -151,8 +154,5 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  },
-  "contributors": [
-    "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
-  ]
+  }
 }
