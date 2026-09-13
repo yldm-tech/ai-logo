@@ -25,6 +25,8 @@ Contributions, corrections & requests can be made on GitHub.
 
 > **`ai-logo` is a fork of [lobehub/lobe-icons](https://github.com/lobehub/lobe-icons), published under a different npm name.** All icon artwork and the component library are the work of [LobeHub](https://github.com/lobehub) and remain MIT licensed. Upstream documentation at [icons.lobehub.com](https://icons.lobehub.com) applies to this package as well — only the package name differs.
 >
+> Note that `@lobehub/ui`, a peer dependency of this package, requires `@lobehub/icons` itself, so installing `ai-logo` still pulls the upstream package in transitively. `ai-logo` sits alongside it rather than replacing it.
+>
 > The brand logos in this collection are trademarks of their respective owners. They are included for identification purposes; inclusion does not imply any affiliation or endorsement.
 
 
