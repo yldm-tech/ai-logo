@@ -1,11 +1,11 @@
 ---
 name: add-icon-mapping
-description: Add or modify icon keyword mappings for providers, models, or agents in lobe-icons. Use this whenever a task involves mapping a provider/model id to an icon, adding a new entry to ModelProvider enum or providerMappings/modelMappings/agentMappings, or fixing a provider/model that renders the fallback (default) icon in LobeHub. Trigger even if the request only says "add icon for X provider" or references a Linear issue about icon keyword mapping — the actual icon component usually already exists; only the mapping is missing.
+description: Add or modify icon keyword mappings for providers, models, or agents in ai-logo. Use this whenever a task involves mapping a provider/model id to an icon, adding a new entry to ModelProvider enum or providerMappings/modelMappings/agentMappings, or fixing a provider/model that renders the fallback (default) icon in LobeHub. Trigger even if the request only says "add icon for X provider" or references a Linear issue about icon keyword mapping — the actual icon component usually already exists; only the mapping is missing.
 ---
 
 # Add icon keyword mapping
 
-lobe-icons ships icon components (e.g. `src/Grok/`) and, separately, **mapping tables** that resolve a provider/model/agent id string to one of those components. A provider showing the fallback icon in LobeHub almost always means the mapping entry is missing, not the icon itself. **Always check `src/<Name>/` first** — if the brand icon already exists, the task is only wiring it up.
+ai-logo ships icon components (e.g. `src/Grok/`) and, separately, **mapping tables** that resolve a provider/model/agent id string to one of those components. A provider showing the fallback icon in LobeHub almost always means the mapping entry is missing, not the icon itself. **Always check `src/<Name>/` first** — if the brand icon already exists, the task is only wiring it up.
 
 ## Where mappings live (edit ALL that apply)
 

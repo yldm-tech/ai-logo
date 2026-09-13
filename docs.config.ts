@@ -12,9 +12,6 @@ export default defineDocsConfig({
   },
   atomDirs: [{ dir: 'src', subType: 'components', type: 'component' }],
   description: 'Popular AI / LLM Model Brand SVG Logo and Icon Collection',
-  favicons: {
-    icon: 'https://lobehub.com/favicon.ico',
-  },
   homePage: './docs/index.tsx',
   legacyRedirects,
   navSections: {},
@@ -29,46 +26,23 @@ export default defineDocsConfig({
     'docs/features/agent-icon.mdx',
     'docs/features/icon-avatar.mdx',
   ],
-  siteUrl: 'https://icons.lobehub.com',
+  siteUrl: 'https://github.com/yldm-tech/ai-logo',
   themeConfig: {
-    analytics: {
-      plausible: {
-        domain: 'icons.lobehub.com',
-        source: 'https://plausible.lobehub-inc.cn/js/script.js',
-      },
-    },
     apiHeader: {
       docUrl: '{github}/edit/main/{atomId}',
-      github: 'https://github.com/lobehub/lobe-icons',
+      github: 'https://github.com/yldm-tech/ai-logo',
       match: ['/components/'],
       packageName: 'ai-logo',
       sourceUrl: '{github}/tree/main/{atomId}',
     },
-    giscus: {
-      category: 'Q&A',
-      categoryId: 'DIC_kwDOLLYRIs4Cin-i',
-      repo: 'lobehub/lobe-icons',
-      repoId: 'R_kgDOLLYRIg',
-    },
-    metadata: {
-      openGraph: {
-        image:
-          'https://repository-images.githubusercontent.com/750129442/59a8d16a-7ba1-4eda-b611-697d35cd04ab',
-      },
-    },
-    navItems: [
-      { external: true, href: 'https://ui.lobehub.com', label: 'UI' },
-      { external: true, href: 'https://charts.lobehub.com', label: 'Charts' },
-      { href: '/changelog', label: 'Changelog' },
-    ],
+    navItems: [{ href: '/changelog', label: 'Changelog' }],
     prefersColor: 'dark',
     socialLinks: [
       {
-        href: 'https://github.com/lobehub/lobe-icons',
+        href: 'https://github.com/yldm-tech/ai-logo',
         icon: 'github',
         label: 'GitHub',
       },
-      { href: 'https://discord.gg/AYFPHvv2jT', icon: 'discord', label: 'Discord' },
       {
         href: 'https://www.npmjs.com/package/ai-logo',
         icon: 'npm',
@@ -76,5 +50,5 @@ export default defineDocsConfig({
       },
     ],
   },
-  title: 'Lobe Icons',
+  title: 'AI Logo',
 });
