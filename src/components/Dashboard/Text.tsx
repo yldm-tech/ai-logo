@@ -1,6 +1,6 @@
 'use client';
 
-import * as Icons from '@lobehub/icons';
+import * as Icons from 'ai-logo';
 import { Flexbox } from '@lobehub/ui';
 import { StoryBook, useControls, useCreateStore } from '@lobehub/ui/storybook';
 import { createStaticStyles } from 'antd-style';

@@ -15,8 +15,8 @@
     "types": ["vitest/globals"],
     "paths": {
       "@/*": ["src/*"],
-      "@lobehub/icons": ["src"],
-      "@lobehub/icons/*": ["src/*"]
+      "ai-logo": ["src"],
+      "ai-logo/*": ["src/*"]
     }
   },
   "exclude": [".react-router"],

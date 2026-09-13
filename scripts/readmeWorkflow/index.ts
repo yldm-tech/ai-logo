@@ -20,8 +20,8 @@ const genMd = (data: IconToc): string =>
   [
     `<a href="${BASE_URL}${data.id.toLowerCase()}">`,
     `<picture>`,
-    `<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/${data.param.hasColor ? data.id.toLowerCase() + '-color' : data.id.toLowerCase()}.png" />`,
-    `<img height="56px" width="56px" src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/${data.param.hasColor ? data.id.toLowerCase() + '-color' : data.id.toLowerCase()}.png" />`,
+    `<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/dark/${data.param.hasColor ? data.id.toLowerCase() + '-color' : data.id.toLowerCase()}.png" />`,
+    `<img height="56px" width="56px" src="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/light/${data.param.hasColor ? data.id.toLowerCase() + '-color' : data.id.toLowerCase()}.png" />`,
     `</picture>`,
     '<br/>',
     data.fullTitle,

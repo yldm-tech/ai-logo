@@ -1,24 +1,25 @@
 {
-  "name": "@lobehub/icons",
+  "name": "ai-logo",
   "version": "5.18.0",
   "description": "Popular AI / LLM Model Brand SVG Logo and Icon Collection",
   "keywords": [
-    "lobehub",
+    "ai logo",
     "llm icons",
     "llm brand logo",
+    "ai icons",
     "react components",
     "svg icons"
   ],
-  "homepage": "https://github.com/lobehub/lobe-icons",
+  "homepage": "https://github.com/yldm-tech/ai-logo",
   "bugs": {
-    "url": "https://github.com/lobehub/lobe-icons/issues/new"
+    "url": "https://github.com/yldm-tech/ai-logo/issues/new"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lobehub/lobe-icons.git"
+    "url": "https://github.com/yldm-tech/ai-logo.git"
   },
   "license": "MIT",
-  "author": "LobeHub <i@lobehub.com>",
+  "author": "yldm-tech",
   "sideEffects": false,
   "main": "es/index.js",
   "module": "es/index.js",
@@ -95,6 +96,7 @@
     "@babel/runtime": "^7.29.7",
     "@commitlint/cli": "^19.8.1",
     "@lobehub/docs-kit": "^5.22.3",
+    "@lobehub/icons": "^5.18.0",
     "@lobehub/lint": "^1.26.3",
     "@lobehub/ui": "^5.22.3",
     "@qiwi/multi-semantic-release": "^7.1.2",
@@ -149,5 +151,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "contributors": [
+    "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
+  ]
 }

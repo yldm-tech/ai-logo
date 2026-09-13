@@ -7,8 +7,8 @@ import AgentGuideCard from '@/components/AgentGuideCard';
 import Dashboard from '@/components/Dashboard';
 
 const ICONS_DOC_URL = 'https://lobehub.com/icons/skill.md';
-const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions to use @lobehub/icons`;
-const ICONS_INSTALL_COMMAND = 'npm i @lobehub/icons';
+const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions to use ai-logo`;
+const ICONS_INSTALL_COMMAND = 'npm i ai-logo';
 
 const items: FeaturesProps['items'] = [
   {
@@ -62,12 +62,12 @@ export default () => {
             agent: {
               command: AI_AGENT_PROMPT,
               commandLanguage: 'shell',
-              description: 'Send this prompt to your agent to use @lobehub/icons',
+              description: 'Send this prompt to your agent to use ai-logo',
             },
             human: {
               command: ICONS_INSTALL_COMMAND,
               commandLanguage: 'shell',
-              description: 'Install @lobehub/icons with npm and start using the icon set',
+              description: 'Install ai-logo with npm and start using the icon set',
               linkHref: ICONS_DOC_URL,
               linkLabel: 'Read docs',
             },
