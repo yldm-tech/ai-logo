@@ -7,7 +7,7 @@ import AgentGuideCard from '@/components/AgentGuideCard';
 import Dashboard from '@/components/Dashboard';
 
 const ICONS_DOC_URL = 'https://lobehub.com/icons/skill.md';
-const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions to use ai-logo`;
+const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions, substituting the package name ai-logo for @lobehub/icons. The component API is identical.`;
 const ICONS_INSTALL_COMMAND = 'npm i ai-logo';
 
 const items: FeaturesProps['items'] = [
@@ -39,7 +39,7 @@ export default () => {
         actions={[
           {
             github: true,
-            link: 'https://github.com/lobehub/lobe-icons',
+            link: 'https://github.com/yldm-tech/ai-logo',
             openExternal: true,
             text: 'GitHub',
           },
@@ -50,7 +50,7 @@ export default () => {
           },
         ]}
         description="Popular AI / LLM Model Brand SVG Logo and Icon Collection"
-        title="LobeHub <b>Icons</b>"
+        title="AI <b>Logo</b>"
       />
       <Center width="100%">
         <AgentGuideCard
