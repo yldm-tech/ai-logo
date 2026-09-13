@@ -8,7 +8,7 @@ import type { IconToc } from '@/types/toc';
 
 const ROOT_PATH = resolve(__dirname, '../..');
 
-const BASE_URL = 'https://lobehub.com/icons/';
+const BASE_URL = 'https://github.com/yldm-tech/ai-logo/tree/main/src/';
 
 const updateReadme = (split: string, md: string, content: string): string => {
   const mds = md.split(split);
@@ -18,7 +18,7 @@ const updateReadme = (split: string, md: string, content: string): string => {
 
 const genMd = (data: IconToc): string =>
   [
-    `<a href="${BASE_URL}${data.id.toLowerCase()}">`,
+    `<a href="${BASE_URL}${data.id}">`,
     `<picture>`,
     `<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/dark/${data.param.hasColor ? data.id.toLowerCase() + '-color' : data.id.toLowerCase()}.png" />`,
     `<img height="56px" width="56px" src="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/light/${data.param.hasColor ? data.id.toLowerCase() + '-color' : data.id.toLowerCase()}.png" />`,
