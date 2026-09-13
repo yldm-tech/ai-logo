@@ -34,7 +34,7 @@ const getIconIds = () => {
 
 const loadIcons = async (): Promise<Record<string, CompoundIcon>> => {
   // Preload feature modules to avoid circular initialization:
-  // any icon -> @/features/IconAvatar -> @lobehub/ui -> @lobehub/icons (src/index.ts)
+  // any icon -> @/features/IconAvatar -> @lobehub/ui -> ai-logo (src/index.ts)
   // -> src/features -> modelConfig -> back into the icon being loaded.
   await import(pathToFileURL(resolve(srcDir, 'features/IconAvatar/index.tsx')).href);
   await import(pathToFileURL(resolve(srcDir, 'features/IconCombine/index.tsx')).href);

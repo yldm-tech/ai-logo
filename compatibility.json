@@ -267,7 +267,7 @@
   ],
   "documents": [
     {
-      "description": "New updates and improvements to @lobehub/icons",
+      "description": "New updates and improvements to ai-logo",
       "legacyRouteId": "docs/changelog",
       "pathname": "/changelog",
       "section": "Changelog",
@@ -275,7 +275,7 @@
       "title": "Changelog"
     },
     {
-      "description": "Icon Editor for @lobehub/icons",
+      "description": "Icon Editor for ai-logo",
       "legacyRouteId": "docs/editor/index",
       "pathname": "/editor",
       "section": "Guides",
@@ -284,7 +284,7 @@
     },
     {
       "category": "Features",
-      "description": "Guide to using agent icons from @lobehub/icons.",
+      "description": "Guide to using agent icons from ai-logo.",
       "legacyRouteId": "docs/features/agent-icon",
       "pathname": "/features/agent-icon",
       "section": "Guides",
@@ -302,7 +302,7 @@
     },
     {
       "category": "Components",
-      "description": "Guide to composing icon avatars with @lobehub/icons.",
+      "description": "Guide to composing icon avatars with ai-logo.",
       "legacyRouteId": "docs/features/icon-avatar",
       "pathname": "/features/icon-avatar",
       "section": "Guides",
@@ -320,7 +320,7 @@
     },
     {
       "category": "Features",
-      "description": "Guide to rendering model icons with @lobehub/icons.",
+      "description": "Guide to rendering model icons with ai-logo.",
       "legacyRouteId": "docs/features/model-icon",
       "pathname": "/features/model-icon",
       "section": "Guides",
@@ -329,7 +329,7 @@
     },
     {
       "category": "Features",
-      "description": "Guide to rendering model tags with @lobehub/icons.",
+      "description": "Guide to rendering model tags with ai-logo.",
       "legacyRouteId": "docs/features/model-tag",
       "pathname": "/features/model-tag",
       "section": "Guides",
@@ -338,7 +338,7 @@
     },
     {
       "category": "Features",
-      "description": "Guide to rendering provider icons with @lobehub/icons.",
+      "description": "Guide to rendering provider icons with ai-logo.",
       "legacyRouteId": "docs/features/provder-icon",
       "pathname": "/features/provder-icon",
       "section": "Guides",

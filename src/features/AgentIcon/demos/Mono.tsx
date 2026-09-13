@@ -1,4 +1,4 @@
-import { AgentIcon, agentMappings } from '@lobehub/icons';
+import { AgentIcon, agentMappings } from 'ai-logo';
 import { Flexbox } from '@lobehub/ui';
 
 export default () => {

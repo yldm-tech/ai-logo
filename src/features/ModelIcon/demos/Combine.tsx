@@ -1,4 +1,4 @@
-import { ModelIcon, modelMappings } from '@lobehub/icons';
+import { ModelIcon, modelMappings } from 'ai-logo';
 import { Grid } from '@lobehub/ui';
 
 export default () => {

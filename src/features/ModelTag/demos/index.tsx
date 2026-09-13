@@ -1,4 +1,4 @@
-import { ModelTag, modelMappings } from '@lobehub/icons';
+import { ModelTag, modelMappings } from 'ai-logo';
 import { Flexbox } from '@lobehub/ui';
 
 export default () => {

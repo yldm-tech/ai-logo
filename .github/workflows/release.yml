@@ -1,11 +1,15 @@
 name: Release CI
+
+# Runs on GitHub-hosted runners rather than the org's self-hosted ARC scale-set: this repository is public, and self-hosted runners on public repositories let fork workflows execute arbitrary code on org infrastructure. The ARC image also has no bun.
 on:
   push:
     branches:
       - master
-      - alpha
-      - beta
-      - rc
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
 
 jobs:
   release:
@@ -13,14 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v6
         with:
           node-version: '20'
-
-      - name: Setup npm 7
-        run: npm i -g npm@7 --registry=https://registry.npmjs.org
 
       - name: Install bun
         uses: oven-sh/setup-bun@v2
@@ -42,30 +45,5 @@ jobs:
       - name: Release
         run: bun run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Build Static
-        run: |-
-          bun run build:static
-          bun run sync:md
-
-      - name: Commit changes
-        run: |-
-          git diff
-          git config --global user.name "lobehubbot"
-          git config --global user.email "i@lobehub.com"
-          git add .
-          git commit -m "✨ feat(auto): Auto build static icons" || exit 0
-          git push
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Build RN
-        run: bun run build:rn
-
-      - name: Release Static
-        run: bun run release:static
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

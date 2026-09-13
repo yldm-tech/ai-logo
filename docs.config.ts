@@ -8,7 +8,7 @@ const legacyRedirects = compatibility as DocumentationInventory;
 export default defineDocsConfig({
   alias: {
     '@': 'src',
-    '@lobehub/icons': 'src',
+    'ai-logo': 'src',
   },
   atomDirs: [{ dir: 'src', subType: 'components', type: 'component' }],
   description: 'Popular AI / LLM Model Brand SVG Logo and Icon Collection',
@@ -41,7 +41,7 @@ export default defineDocsConfig({
       docUrl: '{github}/edit/master/{atomId}',
       github: 'https://github.com/lobehub/lobe-icons',
       match: ['/components/'],
-      packageName: '@lobehub/icons',
+      packageName: 'ai-logo',
       sourceUrl: '{github}/tree/master/{atomId}',
     },
     giscus: {
@@ -70,7 +70,7 @@ export default defineDocsConfig({
       },
       { href: 'https://discord.gg/AYFPHvv2jT', icon: 'discord', label: 'Discord' },
       {
-        href: 'https://www.npmjs.com/package/@lobehub/icons',
+        href: 'https://www.npmjs.com/package/ai-logo',
         icon: 'npm',
         label: 'NPM',
       },
