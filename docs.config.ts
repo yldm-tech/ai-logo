@@ -38,11 +38,11 @@ export default defineDocsConfig({
       },
     },
     apiHeader: {
-      docUrl: '{github}/edit/master/{atomId}',
+      docUrl: '{github}/edit/main/{atomId}',
       github: 'https://github.com/lobehub/lobe-icons',
       match: ['/components/'],
       packageName: 'ai-logo',
-      sourceUrl: '{github}/tree/master/{atomId}',
+      sourceUrl: '{github}/tree/main/{atomId}',
     },
     giscus: {
       category: 'Q&A',
