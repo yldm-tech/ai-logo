@@ -91,6 +91,9 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 
 **Supported brands:**
 
+<details>
+<summary><kbd>Show all 322 brands</kbd></summary>
+
 <!-- ICON LIST -->
 
 | Model                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Provider                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Application                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -227,6 +230,8 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <a href="https://github.com/yldm-tech/ai-logo/tree/main/src/Zencoder"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/dark/zencoder-color.png" /><img height="56px" width="56px" src="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/light/zencoder-color.png" /></picture><br/>Zencoder                      |
 
  <!-- ICON LIST -->
+
+</details>
 
 > \[!TIP]\
 > More brands are being added, and `PR` welcome.
