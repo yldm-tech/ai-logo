@@ -36,3 +36,5 @@ publicHoistPattern:
   - "*remark*"
   - "*semantic-release*"
   - "*stylelint*"
+minimumReleaseAgeExclude:
+  - "@lobehub/ui@5.46.2"
