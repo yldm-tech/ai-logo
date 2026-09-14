@@ -1,23 +1,26 @@
 {
-  "name": "@lobehub/icons-static-svg",
-  "version": "1.95.0",
+  "name": "@yldm-tech/ai-logo-static-svg",
+  "version": "0.0.0",
   "description": "Popular AI / LLM Model Brand SVG Logo and Icon Collection",
   "keywords": [
+    "ai logo",
     "llm brand logo",
     "llm icons",
-    "lobehub",
     "react components",
     "svg icons"
   ],
-  "homepage": "https://github.com/lobehub/lobe-icons",
+  "homepage": "https://ailogo.yldm.ai",
   "bugs": {
-    "url": "https://github.com/lobehub/lobe-icons/issues/new"
+    "url": "https://github.com/yldm-tech/ai-logo/issues/new"
   },
   "license": "MIT",
-  "author": "LobeHub <i@lobehub.com>",
+  "author": "yldm-tech",
+  "contributors": [
+    "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lobehub/lobe-icons.git"
+    "url": "git+https://github.com/yldm-tech/ai-logo.git"
   },
   "files": [
     "icons"

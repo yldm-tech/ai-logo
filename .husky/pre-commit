@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
 npm run build:toc
-git add .
+# Stage only what build:toc regenerates. `git add .` swept in every unrelated edit in the tree, so a commit meant for one file silently carried whatever else was dirty.
+git add src/toc.json
 npm run type-check
 npm run lint:circular
 npx --no-install lint-staged

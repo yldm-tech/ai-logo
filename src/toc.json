@@ -333,7 +333,7 @@
     "id": "Alibaba",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,
@@ -409,7 +409,7 @@
     "id": "AntGroup",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,
@@ -618,7 +618,7 @@
     "id": "Aws",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -733,7 +733,7 @@
     "id": "Baidu",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,
@@ -1001,7 +1001,7 @@
     "id": "ByteDance",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,
@@ -1058,7 +1058,7 @@
     "id": "CentML",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -1077,7 +1077,7 @@
     "id": "Cerebras",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -1633,7 +1633,7 @@
     "id": "Dbrx",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -2376,7 +2376,7 @@
     "id": "Google",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,
@@ -2395,7 +2395,7 @@
     "id": "GoogleCloud",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,
@@ -3656,7 +3656,7 @@
     "id": "Meta",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -4744,11 +4744,11 @@
     "id": "Replicate",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": false,
       "hasColor": false,
       "hasCombine": false,
-      "hasText": false,
+      "hasText": true,
       "hasTextCn": false,
       "hasTextColor": false
     },
@@ -4954,7 +4954,7 @@
     "id": "SenseNova",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -5165,7 +5165,7 @@
     "id": "Stability",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": true,
@@ -5355,7 +5355,7 @@
     "id": "Tencent",
     "param": {
       "hasAvatar": true,
-      "hasBrand": false,
+      "hasBrand": true,
       "hasBrandColor": true,
       "hasColor": true,
       "hasCombine": false,

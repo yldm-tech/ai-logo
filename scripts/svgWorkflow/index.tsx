@@ -63,6 +63,10 @@ class SvgWorkflow {
   browserInstance: Browser | null = null;
   browserPromise: Promise<Browser> | null = null;
   icons: Record<string, CompoundIcon> = {};
+  // Every conversion below catches its own error so one bad icon does not abort the run. Nothing was
+  // counting them, so a run in which every single file failed still exited 0 and `build:static`
+  // reported success after writing nothing.
+  failures: string[] = [];
 
   async getBrowser(): Promise<Browser> {
     // 使用 Promise 避免并发时启动多个浏览器实例
@@ -216,6 +220,7 @@ class SvgWorkflow {
       consola.success(`PNG file has been saved to ${outputPath}`);
     } catch (error) {
       consola.error("Error converting SVG to PNG:", error);
+      this.failures.push(`png ${outputPath}`);
     }
   }
 
@@ -238,6 +243,7 @@ class SvgWorkflow {
       consola.success(`WebP file has been saved to ${outputPath}`);
     } catch (error) {
       consola.error("Error converting SVG to WebP:", error);
+      this.failures.push(`webp ${outputPath}`);
     }
   }
 
@@ -335,6 +341,12 @@ class SvgWorkflow {
     await this.runPng();
     await this.runWebp();
     await this.runAvatar();
+
+    if (this.failures.length > 0) {
+      consola.error(`${this.failures.length} renders failed:`);
+      for (const failure of this.failures) consola.error(`  ${failure}`);
+      process.exitCode = 1;
+    }
   }
 }
 

@@ -34,6 +34,7 @@ Contributions, corrections & requests can be made on GitHub.
 - [📦 Installation](#-installation)
   - [I'm an Agent](#im-an-agent)
   - [I'm an Human](#im-an-human)
+  - [Usage](#usage)
   - [Packages](#packages)
 - [✨ Features](#-features)
 - [🤯 CDN Usage](#-cdn-usage)
@@ -75,10 +76,45 @@ The unscoped name `ai-logo` also works. It is an alias: a few hundred bytes that
 
 #### Peer dependencies
 
-`react`, `react-dom`, `antd` and `@lobehub/ui` are peer dependencies. npm 7+, pnpm 8+ and bun install those for you; Yarn Classic does not, so install them alongside:
+`react`, `react-dom` and `antd` are peer dependencies. npm 7+, pnpm 8+ and bun install those for you; Yarn Classic does not, so install them alongside:
 
 ```bash
-yarn add react react-dom antd @lobehub/ui
+yarn add react react-dom antd
+```
+
+`antd` is needed because `ModelTag` renders an antd `Tag` and `antd-style` — a runtime dependency of this package — declares antd as its own peer. Nothing else is required: the layout and icon wrappers the components use are part of this package.
+
+### Usage
+
+Import a brand directly when you know which one you need. Every icon is a compound component: the default export is the mono mark, with `.Color`, `.Text`, `.Avatar`, `.Combine` and the rest attached when that brand has them.
+
+```tsx
+import { Anthropic, OpenAI } from "@yldm-tech/ai-logo";
+
+<OpenAI size={24} />
+<OpenAI.Color size={24} />
+<OpenAI.Combine size={24} type="color" />
+<Anthropic.Avatar size={40} shape="circle" />;
+```
+
+When the brand is only known at runtime — a provider id from an API, a model name from a config — use the lookup components instead. They take an arbitrary string and fall back to a neutral icon when nothing matches:
+
+```tsx
+import { AgentIcon, ModelIcon, ProviderIcon } from "@yldm-tech/ai-logo";
+
+<ProviderIcon provider="anthropic" size={24} type="color" />
+<ModelIcon model="claude-sonnet-4" size={24} type="avatar" />
+<AgentIcon agent="cursor" size={24} />;
+```
+
+These carry their whole mapping table, so prefer the direct import where you can — see the bundle-size note under [Features](#-features).
+
+`toc` is exported too, if you want to enumerate the set:
+
+```tsx
+import { toc } from "@yldm-tech/ai-logo";
+
+toc.map((entry) => entry.id); // "OpenAI", "Anthropic", …
 ```
 
 ### Packages
@@ -99,7 +135,7 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 ## ✨ Features
 
 - 🚀 **Lightweight & Scalable**: Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.
-- 🌳 **Tree Shakable**: The collection is tree-shakable, ensuring that you only import the icons that you use, which helps in reducing the overall bundle size of your project.
+- 🌳 **Tree Shakable**: Importing a brand directly — `import { OpenAI } from "@yldm-tech/ai-logo"` — pulls in that brand and nothing else, around 216 kB against the full set. The lookup components are the exception: `ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id string at runtime, so they necessarily carry their whole mapping table and cost roughly 1.7 MB. Reach for them when the id is dynamic, and for the brand export when it is not. Both sizes are pinned by a budget in `apps/demo/treeshake`.
 - 🎨 **Every Major Model**: Over 320 AI company, model and application brands, each with mono, color, text, combined and avatar variants.
 
 ---
@@ -107,7 +143,7 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 **Supported brands:**
 
 <details>
-<summary><kbd>Show all 322 brands</kbd></summary>
+<summary><kbd>Show all 323 brands</kbd></summary>
 
 <!-- ICON LIST -->
 
@@ -244,7 +280,7 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | <a href="https://github.com/yldm-tech/ai-logo/tree/main/src/Zeabur"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/dark/zeabur-color.png" /><img height="56px" width="56px" src="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/light/zeabur-color.png" /></picture><br/>Zeabur                              |
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | <a href="https://github.com/yldm-tech/ai-logo/tree/main/src/Zencoder"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/dark/zencoder-color.png" /><img height="56px" width="56px" src="https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-png/light/zencoder-color.png" /></picture><br/>Zencoder                      |
 
- <!-- ICON LIST -->
+<!-- ICON LIST -->
 
 </details>
 
@@ -260,6 +296,8 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 ## 🤯 CDN Usage
 
 Every icon is served as a static SVG, PNG and WebP render from `ailogo.yldm.ai`. No install, no build step — just an `<img>` tag.
+
+> The asset paths below are served by a Cloudflare rule in front of the docs site, not by the docs build. `/svg/*`, `/png/*`, `/webp/*` and `/avatar/*` are rewritten onto the `packages/static-*` directories; without that rule those paths 404 while the rest of the site works. If you fork this project, either recreate the rule or use `getLobeIconCDN`, which returns raw GitHub and npm URLs that need no infrastructure.
 
 ### `A` CDN with SVG
 
@@ -387,7 +425,7 @@ WebP renders are the smallest of the three and also ship light and dark variants
 | `WEBP`   | `/webp/{light,dark}/…webp` | light / dark                   |
 | `Avatar` | `/avatar/[ICON SLUG].webp` | square avatars                 |
 
-The icon slug is the component name in kebab-case — `OpenAI` becomes `openai`, `AdobeFirefly` becomes `adobe-firefly`. Icons that have a colour variant expose it with a `-color` suffix.
+The icon slug is the component name lowercased, with nothing inserted between words — `OpenAI` becomes `openai`, `AdobeFirefly` becomes `adobefirefly`, `AlibabaCloud` becomes `alibabacloud`. It is not kebab-case; hyphens appear only in the variant suffix. Icons that have a colour variant expose it with a `-color` suffix, and the other variants follow the same shape: `-text`, `-text-cn`, `-text-color`, `-brand`, `-brand-color`. The bare slug is the mono variant.
 
 <div align="right">
 
@@ -432,6 +470,8 @@ pnpm is required here rather than optional. The toolchain is [Vite+](https://vit
 
 Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you’re made of.
 
+**[CONTRIBUTING.md](./CONTRIBUTING.md)** walks through the two things people actually come here to do: adding a brand icon, and fixing an id that renders the grey fallback. The second is usually a one-line mapping change rather than a missing icon.
+
 **Commit messages must be gitmoji-prefixed.** Releases are cut by semantic-release using `conventional-changelog-gitmoji-config`, whose parser only recognises a type when an emoji or its `:shortcode:` comes first:
 
 ```bash
@@ -454,7 +494,8 @@ A commit without the prefix is accepted by commitlint and merged normally, but i
 
 ## 🔗 Links
 
-- **[npmjs.com/package/ai-logo](https://www.npmjs.com/package/ai-logo)** - The published package.
+- **[npmjs.com/package/@yldm-tech/ai-logo](https://www.npmjs.com/package/@yldm-tech/ai-logo)** - The published package.
+- **[npmjs.com/package/ai-logo](https://www.npmjs.com/package/ai-logo)** - The unscoped alias, which re-exports it.
 - **[Supported brands](#-features)** - Every icon in the collection, with its light and dark render.
 - **[Asset paths](#asset-paths)** - CDN paths for the static SVG, PNG and WebP renders.
 
@@ -494,9 +535,9 @@ This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://
 [github-releasedate-shield]: https://img.shields.io/github/release-date/yldm-tech/ai-logo?labelColor=black&style=flat-square
 [github-stars-link]: https://github.com/yldm-tech/ai-logo/network/stargazers
 [github-stars-shield]: https://img.shields.io/github/stars/yldm-tech/ai-logo?color=ffcb47&labelColor=black&style=flat-square
-[npm-downloads-link]: https://www.npmjs.com/package/ai-logo
-[npm-downloads-shield]: https://img.shields.io/npm/dt/ai-logo?labelColor=black&style=flat-square
-[npm-release-link]: https://www.npmjs.com/package/ai-logo
-[npm-release-shield]: https://img.shields.io/npm/v/ai-logo?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
+[npm-downloads-link]: https://www.npmjs.com/package/@yldm-tech/ai-logo
+[npm-downloads-shield]: https://img.shields.io/npm/dt/%40yldm-tech%2Fai-logo?labelColor=black&style=flat-square
+[npm-release-link]: https://www.npmjs.com/package/@yldm-tech/ai-logo
+[npm-release-shield]: https://img.shields.io/npm/v/%40yldm-tech%2Fai-logo?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [pr-welcome-link]: https://github.com/yldm-tech/ai-logo/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge

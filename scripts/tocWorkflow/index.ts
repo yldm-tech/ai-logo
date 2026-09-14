@@ -15,19 +15,26 @@ const getIconIds = () => {
   return Array.from(source.matchAll(/default as (\w+)/g), (match) => match[1]);
 };
 
+// The flags describe what a consumer can reach as `Icon.Avatar`, `Icon.Combine` and so on, so they are read from the
+// subcomponents index.ts actually attaches rather than from which files happen to sit in components/. The two disagree
+// in both directions: Udio ships a Combine.tsx it never assigns, and Replicate assigns Brand and Text from BrandMono,
+// which has no file of either name. Inferring from the filesystem published a wrong contract for 20 of the 323 icons.
 const getIconParams = (iconDir: string) => {
-  const componentsDir = resolve(iconDir, "components");
-  const hasComponent = (name: string) => existsSync(resolve(componentsDir, `${name}.tsx`));
+  const source = readFileSync(resolve(iconDir, "index.ts"), "utf8");
+  const attached = new Set(
+    Array.from(source.matchAll(/^\s*Icons\.(\w+)\s*=/gm), (match) => match[1]),
+  );
+  const has = (name: string) => attached.has(name);
 
   return {
-    hasAvatar: hasComponent("Avatar"),
-    hasBrand: hasComponent("Brand"),
-    hasBrandColor: hasComponent("BrandColor"),
-    hasColor: hasComponent("Color"),
-    hasCombine: hasComponent("Combine"),
-    hasText: hasComponent("Text"),
-    hasTextCn: hasComponent("TextCn"),
-    hasTextColor: hasComponent("TextColor"),
+    hasAvatar: has("Avatar"),
+    hasBrand: has("Brand"),
+    hasBrandColor: has("BrandColor"),
+    hasColor: has("Color"),
+    hasCombine: has("Combine"),
+    hasText: has("Text"),
+    hasTextCn: has("TextCn"),
+    hasTextColor: has("TextColor"),
   };
 };
 

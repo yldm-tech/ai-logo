@@ -45,3 +45,4 @@ react-router.config.mjs
 # or a clean install fails on a patch file that is not there.
 !patches/*.patch
 dist-treeshake
+dist-treeshake-lookup

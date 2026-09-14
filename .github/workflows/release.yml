@@ -12,19 +12,26 @@ permissions:
   issues: write
   pull-requests: write
 
+# Two pushes to main must not release concurrently: semantic-release decides the next version from the
+# tags it can see, and a loser that started before the winner tagged would compute the same number.
+# The run in flight is never cancelled — it may already have published.
+concurrency:
+  cancel-in-progress: false
+  group: release
+
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v6
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           cache: "pnpm"
           node-version: "24"
@@ -52,11 +59,41 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # semantic-release publishes @yldm-tech/ai-logo; the unscoped `ai-logo` alias that re-exports it goes out here, at the same version.
-      - name: Publish unscoped alias
+      # This repository was forked from lobehub/lobe-icons and its v5.x tags are still ancestors of
+      # main, so the highest tag reachable from HEAD is v5.18.0 rather than anything on this project's
+      # v1 line. semantic-release gets this right under the current branches config — it has been
+      # cutting v1.x throughout — but a change to that config or to the tag set could quietly move the
+      # line. Checking the version it actually produced cannot unpublish a wrong one, but it stops the
+      # alias and the asset packages from following it and makes the jump impossible to miss.
+      - name: Released version is on the v1 line
         if: steps.release.outputs.version_before != steps.release.outputs.version_after
+        run: |
+          version="${{ steps.release.outputs.version_after }}"
+          echo "released: ${version}"
+          case "${version}" in
+            1.*) ;;
+            *) echo "::error::Released ${version}, which is not on the v1 line. An upstream tag is probably being treated as this project's last release."; exit 1 ;;
+          esac
+
+      # semantic-release publishes @yldm-tech/ai-logo only. The unscoped `ai-logo` alias that re-exports
+      # it and the four static asset packages the CDN helper resolves go out here, at the same version.
+      #
+      # `!cancelled()` rather than success(): if the release step fails after npm publish has already
+      # run, package.json holds the new version and these scripts — each of which skips a name already
+      # published at that version — complete the set instead of leaving it half-released forever. When
+      # no release happened they are no-ops, because every name is already published at that version.
+      - name: Publish unscoped alias
+        if: ${{ !cancelled() }}
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$HOME/.npmrc"
           scripts/publish-alias.sh
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish static asset packages
+        if: ${{ !cancelled() }}
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$HOME/.npmrc"
+          scripts/publish-static.sh
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

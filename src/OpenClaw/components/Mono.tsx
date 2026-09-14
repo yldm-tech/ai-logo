@@ -2,11 +2,14 @@
 
 import { memo } from "react";
 
+import { useFillIds } from "@/hooks/useFillId";
 import type { IconType } from "@/types";
 
 import { TITLE } from "../style";
 
 const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
+  const ids = useFillIds(TITLE, 6);
+
   return (
     <svg
       fill="currentColor"
@@ -19,7 +22,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
       {...rest}
     >
       <title>{TITLE}</title>
-      <g clipPath="url(#a)">
+      <g clipPath={ids[0].fill}>
         <path d="M9.046 7.104a.527.527 0 110 1.055.527.527 0 010-1.055z" />
         <path d="M15.376 7.104a.528.528 0 110 1.056.528.528 0 010-1.056z" />
         <path
@@ -32,7 +35,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
       <defs>
         <linearGradient
           gradientUnits="userSpaceOnUse"
-          id="b"
+          id={ids[1].id}
           x1="-.659"
           x2="27.023"
           y1=".458"
@@ -43,7 +46,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
-          id="c"
+          id={ids[2].id}
           x1="-.659"
           x2="27.023"
           y1=".458"
@@ -54,7 +57,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
-          id="d"
+          id={ids[3].id}
           x1="-.659"
           x2="27.023"
           y1=".458"
@@ -65,7 +68,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
-          id="e"
+          id={ids[4].id}
           x1="-.659"
           x2="27.023"
           y1=".458"
@@ -76,7 +79,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
         </linearGradient>
         <linearGradient
           gradientUnits="userSpaceOnUse"
-          id="f"
+          id={ids[5].id}
           x1="-.659"
           x2="27.023"
           y1=".458"
@@ -85,7 +88,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
           <stop stopColor="#FF4D4D" />
           <stop offset="1" stopColor="#991B1B" />
         </linearGradient>
-        <clipPath id="a">
+        <clipPath id={ids[0].id}>
           <path d="M0 0h24v24H0z" />
         </clipPath>
       </defs>

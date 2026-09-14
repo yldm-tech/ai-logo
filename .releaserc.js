@@ -23,14 +23,43 @@ const parserOpts = {
   headerPattern: /^(?::\w+:|\p{Extended_Pictographic}️?)\s*(\w+)(?:\(([^)]*)\))?!?:\s*(.+)$/u,
 };
 
-const withParserOpts = (plugin) => {
+/**
+ * Dropping the preset also drops the writer half of it, and the fallback writer is
+ * conventional-changelog-angular, which renders only `feat`, `fix` and `perf`. Seven
+ * commit types cut a release here, so `:hammer: build:` or `:art: style:` used to
+ * publish a version whose notes were empty — v1.2.4 in CHANGELOG.md is one of those.
+ *
+ * conventionalcommits is the maintained preset that does speak the v6 parser API, and
+ * it takes the section list as plain config, so the types that cut releases get
+ * headings and the ones that never do stay hidden. It is a direct devDependency rather
+ * than a hoisted transitive one: this config is loaded by name at release time, and
+ * that is exactly how the last two release outages happened.
+ */
+const types = [
+  { section: "Features", type: "feat" },
+  { section: "Bug Fixes", type: "fix" },
+  { section: "Performance", type: "perf" },
+  { section: "Styles", type: "style" },
+  { section: "Refactoring", type: "refactor" },
+  { section: "Build", type: "build" },
+  { section: "Documentation", type: "docs" },
+  { hidden: true, type: "test" },
+  { hidden: true, type: "ci" },
+  { hidden: true, type: "chore" },
+  { hidden: true, type: "wip" },
+];
+
+const withInlineConvention = (plugin) => {
   const [name, options = {}] = Array.isArray(plugin) ? plugin : [plugin, {}];
-  if (!name.includes("commit-analyzer") && !name.includes("release-notes-generator")) return plugin;
-  const { config: _unusedPreset, ...rest } = options;
-  return [name, { ...rest, parserOpts }];
+  const isAnalyzer = name.includes("commit-analyzer");
+  const isNotes = name.includes("release-notes-generator");
+  if (!isAnalyzer && !isNotes) return plugin;
+  const { config: _brokenGitmojiPreset, ...rest } = options;
+  if (isAnalyzer) return [name, { ...rest, parserOpts }];
+  return [name, { ...rest, parserOpts, preset: "conventionalcommits", presetConfig: { types } }];
 };
 
 module.exports = {
   ...base,
-  plugins: base.plugins.map(withParserOpts),
+  plugins: base.plugins.map(withInlineConvention),
 };

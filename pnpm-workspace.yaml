@@ -27,10 +27,8 @@ peerDependencyRules:
 resolutionMode: highest
 # The rc files hand remark, stylelint, commitlint, semantic-release and changelog a list of plugins by name, and every one of those tools resolves the names from the repository root rather than from the config that named them. Under pnpm's isolated store they live in .pnpm and none of them resolve, so they have to be hoisted into the root node_modules.
 publicHoistPattern:
-  - "*@umijs/lint*"
   - "*changelog*"
   - "*commitlint*"
-  - "*eslint*"
   - "*postcss*"
   - "*prettier*"
   - "*remark*"

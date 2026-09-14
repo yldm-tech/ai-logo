@@ -156,11 +156,14 @@ function convertIcon(iconInfo: IconInfo): boolean {
 
   // 获取所有组件
   const components = getIconComponents(iconInfo.webPath);
+  const failed: string[] = [];
   let successCount = 0;
 
   for (const component of components) {
     if (convertComponent(iconInfo.webPath, iconInfo.rnPath, component, iconInfo.name)) {
       successCount++;
+    } else {
+      failed.push(component);
     }
   }
 
@@ -172,6 +175,13 @@ function convertIcon(iconInfo: IconInfo): boolean {
   // 生成index.ts
   generateIndexFile(iconInfo.name, iconInfo.rnPath);
   successCount++;
+
+  // Report what actually happened. This used to `return true` regardless, so a run in which every
+  // single component failed to convert still printed 成功: 323/323 and exited 0.
+  if (failed.length > 0) {
+    console.error(`❌ ${iconInfo.name} 有 ${failed.length} 个组件未转换: ${failed.join(", ")}`);
+    return false;
+  }
 
   console.log(`✅ ${iconInfo.name} 完成 (${successCount}个文件)`);
   return true;

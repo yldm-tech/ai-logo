@@ -16,6 +16,7 @@ const DefaultAvatar = memo<Omit<IconAvatarProps, "Icon">>(
     iconMultiple = 0.6,
     iconStyle,
     iconClassName,
+    ...rest
   }) => {
     return (
       <Center
@@ -28,6 +29,7 @@ const DefaultAvatar = memo<Omit<IconAvatarProps, "Icon">>(
           width: size,
           ...style,
         }}
+        {...rest}
       >
         <DefaultIcon
           className={iconClassName}

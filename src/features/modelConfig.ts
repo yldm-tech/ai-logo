@@ -239,7 +239,8 @@ export const modelMappings: ModelMapping[] = [
   { Icon: Aya, keywords: ["aya"] },
   { Icon: Cohere, keywords: ["command"] },
   { Icon: Dbrx, keywords: ["dbrx"] },
-  { Icon: Stepfun, keywords: ["step"] },
+  // Anchored: bare "step" also matched "ace-step", so the Ace entry further down could never be reached.
+  { Icon: Stepfun, keywords: ["(^|/)step"] },
   { Icon: AiMass, keywords: ["taichu"] },
   { Icon: Ai360, keywords: ["360gpt", "360zhinao"] },
   { Icon: Baichuan, keywords: ["baichuan"] },
@@ -306,7 +307,7 @@ export const modelMappings: ModelMapping[] = [
   { Icon: AiHubMix, keywords: ["aihubmix"] },
   { Icon: V0, keywords: ["^v0-"] },
   { Icon: VertexAI, keywords: ["^veo-", "/veo-", "^veo3"] },
-  { Icon: Google, keywords: ["google", "learnlm", "nano-banana"] },
+  { Icon: Google, keywords: ["google", "learnlm"] },
   { Icon: CogView, keywords: ["cogview"] },
   { Icon: Kolors, keywords: ["kolors"] },
   { Icon: BaiduCloud, keywords: ["baidu", "qianfan"] },
@@ -323,6 +324,6 @@ export const modelMappings: ModelMapping[] = [
   { Icon: Kwaipilot, keywords: ["kat-"] },
   { Icon: Nova, keywords: ["^nova-", "/nova-"] },
   { Icon: XiaomiMiMo, keywords: ["^mimo-", "/mimo-"] },
-  { Icon: BAAI, keywords: ["^baai", "^bge-", "/beg-", "touchd", "robobrain"] },
+  { Icon: BAAI, keywords: ["^baai", "^bge-", "/bge-", "touchd", "robobrain"] },
   { Icon: Ace, keywords: ["ace-step"] },
 ];

@@ -31,14 +31,18 @@ const ProviderCombine = memo<ProviderCombineProps>(
 
     const iconProps = {
       size: size * (Render?.combineMultiple || 1),
-      type,
       ...Render?.props,
     };
 
-    let icon = Render?.Combine ? (
-      <Render.Combine {...iconProps} />
+    // `type` goes only to the components that read it. The Text fallback is a plain icon that spreads
+    // whatever it is given onto its <svg>, so passing it through put `type="mono"` in the DOM as an
+    // invalid attribute for the ten brands that reach that branch.
+    const combineProps = { ...iconProps, type };
+
+    const icon = Render?.Combine ? (
+      <Render.Combine {...combineProps} />
     ) : Render?.Icon?.Combine ? (
-      <Render.Icon.Combine {...iconProps} />
+      <Render.Icon.Combine {...combineProps} />
     ) : Render?.Icon?.Text ? (
       <Render.Icon.Text {...iconProps} />
     ) : (

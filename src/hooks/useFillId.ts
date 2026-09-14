@@ -9,7 +9,7 @@ export const useFillId = (namespace: string) => {
       fill: `url(#${id})`,
       id,
     }),
-    [namespace],
+    [namespace, uniqueId],
   );
 };
 

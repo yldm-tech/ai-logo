@@ -2,11 +2,14 @@
 
 import { memo } from "react";
 
+import { useFillIds } from "@/hooks/useFillId";
 import type { IconType } from "@/types";
 
 import { TITLE } from "../style";
 
 const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
+  const ids = useFillIds(TITLE, 1);
+
   return (
     <svg
       fill="currentColor"
@@ -23,7 +26,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
       <defs>
         <linearGradient
           gradientUnits="userSpaceOnUse"
-          id="a"
+          id={ids[0].id}
           x1="18.919"
           x2="4.853"
           y1="5.595"
