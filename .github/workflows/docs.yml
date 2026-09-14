@@ -44,6 +44,12 @@ jobs:
       - name: Install deps
         run: pnpm install
 
+      # The site imports the package the way a consumer does — through node_modules
+      # to es/ — so es/ has to exist before the site can be built. A fresh checkout
+      # has no build output.
+      - name: Build package
+        run: pnpm run build
+
       - name: Build site
         run: pnpm --dir apps/demo run build
 
