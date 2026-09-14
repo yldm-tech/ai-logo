@@ -2,6 +2,34 @@
 
 # Changelog
 
+## [1.7.0](https://github.com/yldm-tech/ai-logo/compare/v1.6.3...v1.7.0) (2026-09-14)
+
+### Features
+
+- **demo:** give the site something to index ([18aa4bf](https://github.com/yldm-tech/ai-logo/commit/18aa4bf5bbc156fdc52cae74dc31c1f027ffbd84))
+- **demo:** prerender the overview into the HTML ([51eb476](https://github.com/yldm-tech/ai-logo/commit/51eb4764f4cbe2a040f46b2183042a52599ca84b))
+- **demo:** redesign the landing page and translate the site into 11 languages ([c25b5e4](https://github.com/yldm-tech/ai-logo/commit/c25b5e4ac7d9c1944dea5a03e229dca044d112cd))
+- **demo:** redraw the project mark ([19fc9d4](https://github.com/yldm-tech/ai-logo/commit/19fc9d4a252be5d24eb14e11269983f796f9de63))
+- **demo:** redraw the project mark as a set ([b6b8b3e](https://github.com/yldm-tech/ai-logo/commit/b6b8b3e48754c6fa7cad87ebaccd7904785080d4))
+
+### Bug Fixes
+
+- **demo:** line the footer up ([a873245](https://github.com/yldm-tech/ai-logo/commit/a87324546c29e368a27aeefd35a4259cacfdf3e7))
+- **demo:** set CJK display type on its own terms ([297505a](https://github.com/yldm-tech/ai-logo/commit/297505a311c2b3605e3f173ed684e6fbd09b0bd3))
+- **demo:** stop the hero breaking a headline that almost fits ([55241af](https://github.com/yldm-tech/ai-logo/commit/55241afc130f42a92d328624e4ae535c206fba85))
+
+### Performance
+
+- **demo:** keep the gallery's 323 icons off the landing page ([4083eb9](https://github.com/yldm-tech/ai-logo/commit/4083eb974e74503794a17d0de5ec1f51d7e931fc))
+
+### Styles
+
+- **demo:** flatten hard-wrapped comments ([516b1bc](https://github.com/yldm-tech/ai-logo/commit/516b1bc7e1443839f1fbda9cdabf368f0ce66f31))
+
+### Refactoring
+
+- rename apps/demo to apps/site ([dc4fc07](https://github.com/yldm-tech/ai-logo/commit/dc4fc07c30536dbd62e238aa5624dec1942adfcf))
+
 ## [1.6.3](https://github.com/yldm-tech/ai-logo/compare/v1.6.2...v1.6.3) (2026-09-14)
 
 ### Bug Fixes
