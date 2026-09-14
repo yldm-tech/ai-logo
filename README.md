@@ -453,6 +453,16 @@ $ bun start
 
 Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you’re made of.
 
+**Commit messages must be gitmoji-prefixed.** Releases are cut by semantic-release using `conventional-changelog-gitmoji-config`, whose parser only recognises a type when an emoji or its `:shortcode:` comes first:
+
+```bash
+:bug: fix: correct the Gemini brand colour     # releases a patch
+:sparkles: feat: add the Mistral icon          # releases a minor
+fix: correct the Gemini brand colour           # parsed as no type, releases nothing
+```
+
+A commit without the prefix is accepted by commitlint and merged normally, but it is invisible to the release analyser, so the change never reaches npm.
+
 [![][pr-welcome-shield]][pr-welcome-link]
 
 [![][contributors-contrib]][contributors-link]
