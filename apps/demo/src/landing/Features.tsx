@@ -1,38 +1,21 @@
-import { ModelIcon, ProviderIcon } from "@yldm-tech/ai-logo";
+import { lazy } from "react";
 import { Trans, useTranslation } from "react-i18next";
 
 import { Code } from "../components/Code";
+import { Deferred } from "../components/Deferred";
 import { Reveal } from "../components/Reveal";
 import { SectionHead } from "../components/SectionHead";
-import { CDN, PKG, registry, stats } from "../registry";
+import { CDN, PKG, stats } from "../registry";
+import { Card, INLINE_CODE } from "./Card";
+import { featuredIcon } from "./featured";
 
-const Card = ({
-  children,
-  note,
-  title,
-}: {
-  children: React.ReactNode;
-  note: React.ReactNode;
-  title: string;
-}) => (
-  <div className="flex flex-col overflow-hidden rounded-2xl border border-line bg-surface transition hover:border-line-strong">
-    <div className="p-5">
-      <h3 className="text-[15px] font-semibold text-ink">{title}</h3>
-      <p className="mt-2 text-[13.5px] leading-relaxed text-dim">{note}</p>
-    </div>
-    <div className="mt-auto border-t border-line bg-elevated/60 p-5">{children}</div>
-  </div>
+// The string-lookup card pulls the 143-icon keyword table with it; see LookupCard for why that is inherent. Deferred mounts it only once the reader is within a screen of it.
+const LookupCard = lazy(() =>
+  import("./LookupCard").then((module) => ({ default: module.LookupCard })),
 );
 
-/** Identifiers inside a translated sentence are marked up as `<c>` in the JSON; this is the element they become. */
-const INLINE_CODE = { c: <code /> };
-
-const Anthropic = registry.Anthropic;
-const OpenAI = registry.OpenAI;
-
-/** Rendered from strings rather than from imports, which is the whole point of the card they sit in — if a keyword stopped resolving, this row would visibly fall back to the neutral mark. */
-const LOOKUPS = ["openai", "anthropic", "google", "mistral", "deepseek", "perplexity"];
-const MODELS = ["gpt-5", "claude-opus-4", "gemini-2.5-pro", "qwen3-max", "grok-4", "llama-3.3"];
+const Anthropic = featuredIcon("Anthropic");
+const OpenAI = featuredIcon("OpenAI");
 
 const CDN_SAMPLES = [
   { alt: "OpenAI", src: `${CDN}/svg/openai.svg` },
@@ -67,31 +50,9 @@ import { OpenAI } from "${PKG}";`}
           />
         </Card>
 
-        <Card
-          note={<Trans components={INLINE_CODE} i18nKey="features.lookup.note" />}
-          title={t("features.lookup.title")}
-        >
-          <div className="flex flex-wrap gap-2">
-            {LOOKUPS.map((provider) => (
-              <ProviderIcon
-                key={provider}
-                provider={provider}
-                shape="square"
-                size={34}
-                type="avatar"
-              />
-            ))}
-            {MODELS.map((model) => (
-              <ModelIcon key={model} model={model} shape="square" size={34} type="avatar" />
-            ))}
-          </div>
-          <Code
-            className="mt-3"
-            code={`<ProviderIcon provider="openai" size={34} />
-<ModelIcon model="gpt-5" size={34} />`}
-            copy={false}
-          />
-        </Card>
+        <Deferred minHeight="18rem">
+          <LookupCard />
+        </Deferred>
 
         <Card
           note={<Trans components={INLINE_CODE} i18nKey="features.css.note" />}

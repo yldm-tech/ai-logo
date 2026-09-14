@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 import { Code } from "../components/Code";
 import { Reveal } from "../components/Reveal";
 import { SectionHead } from "../components/SectionHead";
-import { entries, PKG, registry } from "../registry";
+import { entries, PKG } from "../registry";
+import { featuredIcon } from "./featured";
 
 /** Brands that ship all four variants, so the row below never has a hole in it. Filtered against the build rather than trusted, in case one of them loses a variant upstream. */
 const CHOICES = ["Claude", "Gemini", "DeepSeek", "Qwen", "Mistral", "Perplexity"]
@@ -26,7 +27,7 @@ export const Variants = () => {
   const [id, setId] = useState(CHOICES[0]?.id ?? "");
   const { t } = useTranslation();
   const entry = CHOICES.find((choice) => choice.id === id) ?? CHOICES[0];
-  const Icon = entry ? registry[entry.id] : undefined;
+  const Icon = entry ? featuredIcon(entry.id) : undefined;
 
   if (!entry || !Icon) return null;
 
@@ -41,7 +42,7 @@ export const Variants = () => {
 
         <div className="flex flex-wrap gap-2">
           {CHOICES.map((choice) => {
-            const Mark = registry[choice.id]?.Color ?? registry[choice.id];
+            const Mark = featuredIcon(choice.id)?.Color ?? featuredIcon(choice.id);
             const active = choice.id === entry.id;
             return (
               <button

@@ -1,14 +1,25 @@
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useRef } from "react";
+import { lazy, Suspense, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { Gallery } from "./gallery/Gallery";
 import { RTL_LANGUAGES } from "./i18n";
 import { Landing } from "./landing/Landing";
 import { useStore } from "./store";
 import "./styles.css";
+
+// The gallery renders all 323 brands, so it reaches for the package's whole namespace — around 3 MB, against the hundred-odd marks the landing page names one by one. Loading it on demand is what keeps that off the first visit; a reader who only reads the overview never fetches it.
+const Gallery = lazy(() =>
+  import("./gallery/Gallery").then((module) => ({ default: module.Gallery })),
+);
+
+/** Holds the page height while the gallery chunk arrives, so the footer does not jump up the screen and back down. */
+const GalleryFallback = () => (
+  <div aria-hidden className="mx-auto grid min-h-[70vh] max-w-6xl place-items-center px-5">
+    <span className="size-6 animate-spin rounded-full border-2 border-line border-t-accent" />
+  </div>
+);
 
 export default function App() {
   const { filter, query, selectedId, view } = useStore();
@@ -66,7 +77,13 @@ export default function App() {
             key={view}
             transition={{ duration: 0.18 }}
           >
-            {view === "overview" ? <Landing /> : <Gallery />}
+            {view === "overview" ? (
+              <Landing />
+            ) : (
+              <Suspense fallback={<GalleryFallback />}>
+                <Gallery />
+              </Suspense>
+            )}
           </motion.div>
         </AnimatePresence>
       </main>

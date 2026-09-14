@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 
 import { Code } from "../components/Code";
 import { CopyButton } from "../components/Copy";
-import { CDN, entries, type IconEntry, PKG, preferredIcon, registry, stats } from "../registry";
+import { CDN, entries, type IconEntry, PKG, preferred, stats } from "../registry";
+import { galleryRegistry } from "./registry";
 import { type Filter, useStore } from "../store";
 
 const FILTERS: { count: number; id: Filter; key: string }[] = [
@@ -16,6 +17,9 @@ const FILTERS: { count: number; id: Filter; key: string }[] = [
 
 const VARIANTS = ["Color", "Avatar", "Text", "Combine"] as const;
 
+/** A toc entry with no matching export would render an empty hole in the grid; filtering once here means nothing downstream has to guard against it. */
+const available = entries.filter((entry) => galleryRegistry[entry.id]);
+
 const Cell = ({
   entry,
   onSelect,
@@ -25,7 +29,7 @@ const Cell = ({
   onSelect: () => void;
   selected: boolean;
 }) => {
-  const Icon = preferredIcon(entry);
+  const Icon = preferred(galleryRegistry[entry.id], entry);
   if (!Icon) return null;
 
   return (
@@ -61,7 +65,7 @@ const assetLinks = (entry: IconEntry) => {
 
 const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) => {
   const { t } = useTranslation();
-  const Icon = registry[entry.id];
+  const Icon = galleryRegistry[entry.id];
   if (!Icon) return null;
   const importLine = `import { ${entry.id} } from "${PKG}";`;
 
@@ -153,7 +157,7 @@ export const Gallery = () => {
 
   const matches = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    const pool = filter === "all" ? entries : entries.filter((entry) => entry.group === filter);
+    const pool = available.filter((entry) => filter === "all" || entry.group === filter);
     if (!needle) return pool;
     return pool.filter(
       (entry) =>

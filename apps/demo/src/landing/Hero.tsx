@@ -2,8 +2,9 @@ import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 import { CopyButton } from "../components/Copy";
-import { marqueeRows, PKG, stats } from "../registry";
+import { PKG, stats } from "../registry";
 import { useStore } from "../store";
+import { marqueeRows } from "./featured";
 import { Marquee } from "./Marquee";
 
 const ROWS = marqueeRows(3, 26);
