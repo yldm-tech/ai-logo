@@ -4,8 +4,9 @@
   "private": true,
   "description": "Consumer smoke test — imports @yldm-tech/ai-logo the way a published dependency resolves, not through the repo's source aliases",
   "scripts": {
-    "build": "vp build",
+    "build": "vp build && tsx scripts/prerender.tsx",
     "dev": "vp dev",
+    "prerender": "tsx scripts/prerender.tsx",
     "test": "vp test run && node treeshake/check.mjs",
     "treeshake": "node treeshake/check.mjs",
     "type-check": "tsgo --noEmit"

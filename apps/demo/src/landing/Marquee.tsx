@@ -29,6 +29,9 @@ const Tile = ({ entry }: { entry: IconEntry }) => {
   );
 };
 
+/** The second half of the track is the same brands over again, purely so the loop has somewhere to land. The prerender skips it: it is 78 more inline SVGs in the first response, and the half that stays already carries every brand name. The client renders both from the first frame. */
+const echoTrack = typeof window !== "undefined";
+
 /**
  * How many times the row has to appear in each half of the loop.
  *
@@ -88,9 +91,11 @@ export const Marquee = ({
         <span className="flex" ref={half}>
           {tiles}
         </span>
-        <span aria-hidden className="flex">
-          {tiles}
-        </span>
+        {echoTrack && (
+          <span aria-hidden className="flex">
+            {tiles}
+          </span>
+        )}
       </div>
     </div>
   );

@@ -8,7 +8,6 @@ import { Header } from "./components/Header";
 import { RTL_LANGUAGES } from "./i18n";
 import { Landing } from "./landing/Landing";
 import { useStore } from "./store";
-import "./styles.css";
 
 // The gallery renders all 323 brands, so it reaches for the package's whole namespace — around 3 MB, against the hundred-odd marks the landing page names one by one. Loading it on demand is what keeps that off the first visit; a reader who only reads the overview never fetches it.
 const Gallery = lazy(() =>

@@ -9,10 +9,14 @@ const THEME_KEY = "ai-logo-theme";
 
 const isGroup = (value: string | null): value is Group => groups.includes((value ?? "") as Group);
 
-const initialParams = () => new URLSearchParams(window.location.search);
+/** The prerender runs this module in Node, where there is no location, no storage and no system preference. It renders the page a first-time visitor would get — the overview, in light, unfiltered — which is also what belongs in the HTML a crawler reads. */
+const onClient = typeof window !== "undefined";
+
+const initialParams = () => new URLSearchParams(onClient ? window.location.search : "");
 
 /** Falls back to the system preference, which is what the reader gets before they have expressed one of their own. */
 const initialTheme = (): "dark" | "light" => {
+  if (!onClient) return "light";
   const stored = localStorage.getItem(THEME_KEY);
   if (stored === "dark" || stored === "light") return stored;
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -58,7 +62,7 @@ export const useStore = create<State>((set) => ({
   toggleTheme: () =>
     set((state) => {
       const theme = state.theme === "light" ? "dark" : "light";
-      localStorage.setItem(THEME_KEY, theme);
+      if (onClient) localStorage.setItem(THEME_KEY, theme);
       return { theme };
     }),
 

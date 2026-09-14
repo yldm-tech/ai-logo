@@ -60,22 +60,23 @@ const TRADITIONAL = new Set(["zh-HK", "zh-Hant", "zh-MO", "zh-TW"]);
 const convertDetectedLanguage = (code: string) =>
   TRADITIONAL.has(code) || code.startsWith("zh-Hant") ? "zh-TW" : code;
 
-void i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    detection: {
-      caches: ["localStorage"],
-      convertDetectedLanguage,
-      lookupLocalStorage: LANGUAGE_KEY,
-      lookupQuerystring: LANGUAGE_PARAM,
-      // The query string comes first: a link that names a language means it, whatever this browser last chose.
-      order: ["querystring", "localStorage", "navigator", "htmlTag"],
-    },
-    fallbackLng: "en",
-    interpolation: { escapeValue: false },
-    resources,
-    supportedLngs: LANGUAGES.map((language) => language.value),
-  });
+// Detection reads the query string, storage and the navigator, none of which exist in the prerender. There it renders English, which is what index.html already advertises and what `x-default` points at.
+const onClient = typeof window !== "undefined";
+
+void (onClient ? i18n.use(LanguageDetector) : i18n).use(initReactI18next).init({
+  detection: {
+    caches: ["localStorage"],
+    convertDetectedLanguage,
+    lookupLocalStorage: LANGUAGE_KEY,
+    lookupQuerystring: LANGUAGE_PARAM,
+    // The query string comes first: a link that names a language means it, whatever this browser last chose.
+    order: ["querystring", "localStorage", "navigator", "htmlTag"],
+  },
+  fallbackLng: "en",
+  interpolation: { escapeValue: false },
+  lng: onClient ? undefined : "en",
+  resources,
+  supportedLngs: LANGUAGES.map((language) => language.value),
+});
 
 export default i18n;
