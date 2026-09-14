@@ -40,6 +40,7 @@ Contributions, corrections & requests can be made on GitHub.
   - [`A` CDN with SVG](#a-cdn-with-svg)
   - [`B` CDN with PNG](#b-cdn-with-png)
   - [`C` CDN with WEBP](#c-cdn-with-webp)
+  - [Pinning a version](#pinning-a-version)
   - [Asset Paths](#asset-paths)
 - [⌨️ Local Development](#️-local-development)
 - [🤝 Contributing](#-contributing)
@@ -258,37 +259,26 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 
 ## 🤯 CDN Usage
 
-Every icon is also committed to this repository as a static SVG, PNG and WebP render, served over [jsDelivr](https://www.jsdelivr.com/) straight from GitHub. No install, no build step — just an `<img>` tag.
-
-Replace `@main` with a release tag such as `@v1.0.0` to pin the assets to a fixed version.
+Every icon is served as a static SVG, PNG and WebP render from `ailogo.yldm.ai`. No install, no build step — just an `<img>` tag.
 
 ### `A` CDN with SVG
 
 ```html
-<img
-  height="64"
-  src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-svg/icons/[ICON SLUG].svg"
-/>
+<img height="64" src="https://ailogo.yldm.ai/svg/[ICON SLUG].svg" />
 ```
 
 #### Example
 
-<img height="64" src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-svg/icons/openai.svg">
+<img height="64" src="https://ailogo.yldm.ai/svg/openai.svg">
 
 ```html
-<img
-  height="64"
-  src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-svg/icons/openai.svg"
-/>
+<img height="64" src="https://ailogo.yldm.ai/svg/openai.svg" />
 ```
 
-<img height="64" src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-svg/icons/openai-text.svg">
+<img height="64" src="https://ailogo.yldm.ai/svg/openai-text.svg">
 
 ```html
-<img
-  height="64"
-  src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-svg/icons/openai-text.svg"
-/>
+<img height="64" src="https://ailogo.yldm.ai/svg/openai-text.svg" />
 ```
 
 <div align="right">
@@ -305,52 +295,26 @@ PNG renders come in light and dark variants, so a `<picture>` element can follow
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/dark/[ICON SLUG].png"
+    srcset="https://ailogo.yldm.ai/png/dark/[ICON SLUG].png"
   />
-  <img
-    height="64"
-    src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/light/[ICON SLUG].png"
-  />
+  <img height="64" src="https://ailogo.yldm.ai/png/light/[ICON SLUG].png" />
 </picture>
 ```
 
 #### Example
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/dark/openai.png">
-  <img height="64" src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/light/openai.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://ailogo.yldm.ai/png/dark/openai.png">
+  <img height="64" src="https://ailogo.yldm.ai/png/light/openai.png">
 </picture>
 
 ```html
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/dark/openai.png"
+    srcset="https://ailogo.yldm.ai/png/dark/openai.png"
   />
-  <img
-    height="64"
-    src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/light/openai.png"
-  />
-</picture>
-```
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/dark/openai-text.png">
-  <img height="64" src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/light/openai-text.png">
-</picture>
-
-```html
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="
-      https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/dark/openai-text.png
-    "
-  />
-  <img
-    height="64"
-    src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-png/light/openai-text.png"
-  />
+  <img height="64" src="https://ailogo.yldm.ai/png/light/openai.png" />
 </picture>
 ```
 
@@ -368,55 +332,44 @@ WebP renders are the smallest of the three and also ship light and dark variants
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/dark/[ICON SLUG].webp"
+    srcset="https://ailogo.yldm.ai/webp/dark/[ICON SLUG].webp"
   />
-  <img
-    height="64"
-    src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/light/[ICON SLUG].webp"
-  />
+  <img height="64" src="https://ailogo.yldm.ai/webp/light/[ICON SLUG].webp" />
 </picture>
 ```
 
 #### Example
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/dark/openai.webp">
-  <img height="64" src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/light/openai.webp">
+  <source media="(prefers-color-scheme: dark)" srcset="https://ailogo.yldm.ai/webp/dark/openai.webp">
+  <img height="64" src="https://ailogo.yldm.ai/webp/light/openai.webp">
 </picture>
 
 ```html
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="
-      https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/dark/openai.webp
-    "
+    srcset="https://ailogo.yldm.ai/webp/dark/openai.webp"
   />
-  <img
-    height="64"
-    src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/light/openai.webp"
-  />
+  <img height="64" src="https://ailogo.yldm.ai/webp/light/openai.webp" />
 </picture>
 ```
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/dark/openai-text.webp">
-  <img height="64" src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/light/openai-text.webp">
-</picture>
+<div align="right">
+
+[![][back-to-top]](#readme-top)
+
+</div>
+
+### Pinning a version
+
+`ailogo.yldm.ai` always serves what is on `main`. To pin the assets to a release instead, take the same files from jsDelivr against a tag:
 
 ```html
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="
-      https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/dark/openai-text.webp
-    "
-  />
-  <img
-    height="64"
-    src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@main/packages/static-webp/light/openai-text.webp"
-  />
-</picture>
+<img
+  height="64"
+  src="https://cdn.jsdelivr.net/gh/yldm-tech/ai-logo@v1.2.3/packages/static-svg/icons/openai.svg"
+/>
 ```
 
 <div align="right">
@@ -427,12 +380,12 @@ WebP renders are the smallest of the three and also ship light and dark variants
 
 ### Asset Paths
 
-| Format | Path                                        | Variants                       |
-| ------ | ------------------------------------------- | ------------------------------ |
-| `SVG`  | `packages/static-svg/icons/[ICON SLUG].svg` | single file, `-color` suffixed |
-| `PNG`  | `packages/static-png/{light,dark}/…png`     | light / dark                   |
-| `WEBP` | `packages/static-webp/{light,dark}/…webp`   | light / dark                   |
-| `WEBP` | `packages/static-avatar/{light,dark}/…webp` | light / dark, square avatars   |
+| Format   | Path                       | Variants                       |
+| -------- | -------------------------- | ------------------------------ |
+| `SVG`    | `/svg/[ICON SLUG].svg`     | single file, `-color` suffixed |
+| `PNG`    | `/png/{light,dark}/…png`   | light / dark                   |
+| `WEBP`   | `/webp/{light,dark}/…webp` | light / dark                   |
+| `Avatar` | `/avatar/[ICON SLUG].webp` | square avatars                 |
 
 The icon slug is the component name in kebab-case — `OpenAI` becomes `openai`, `AdobeFirefly` becomes `adobe-firefly`. Icons that have a colour variant expose it with a `-color` suffix.
 
