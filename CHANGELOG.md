@@ -2,6 +2,12 @@
 
 # Changelog
 
+# [1.5.0](https://github.com/yldm-tech/ai-logo/compare/v1.4.0...v1.5.0) (2026-09-14)
+
+### Features
+
+- replace the docs site with our own and drop @lobehub/ui entirely ([ea16d7e](https://github.com/yldm-tech/ai-logo/commit/ea16d7ee7c66ccf7ae70a3503f59f301e327ab31))
+
 # [1.4.0](https://github.com/yldm-tech/ai-logo/compare/v1.3.2...v1.4.0) (2026-09-14)
 
 ### Features
