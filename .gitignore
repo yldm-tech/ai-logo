@@ -41,3 +41,4 @@ react-router.config.mjs
 # add other ignore file below
 .env
 *.patch
+dist-treeshake
