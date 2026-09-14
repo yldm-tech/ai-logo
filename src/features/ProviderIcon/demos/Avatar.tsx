@@ -1,4 +1,4 @@
-import { ModelProvider, ProviderIcon } from "ai-logo";
+import { ModelProvider, ProviderIcon } from "@yldm-tech/ai-logo";
 import { Flexbox } from "@lobehub/ui";
 
 export default () => {

@@ -1,4 +1,4 @@
-import { ModelIcon, modelMappings } from "ai-logo";
+import { ModelIcon, modelMappings } from "@yldm-tech/ai-logo";
 import { Flexbox } from "@lobehub/ui";
 
 export default () => {

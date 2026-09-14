@@ -8,7 +8,7 @@ const legacyRedirects = compatibility as DocumentationInventory;
 export default defineDocsConfig({
   alias: {
     "@": "src",
-    "ai-logo": "src",
+    "@yldm-tech/ai-logo": "src",
   },
   atomDirs: [{ dir: "src", subType: "components", type: "component" }],
   description: "Popular AI / LLM Model Brand SVG Logo and Icon Collection",
@@ -32,7 +32,7 @@ export default defineDocsConfig({
       docUrl: "{github}/edit/main/{atomId}",
       github: "https://github.com/yldm-tech/ai-logo",
       match: ["/components/"],
-      packageName: "ai-logo",
+      packageName: "@yldm-tech/ai-logo",
       sourceUrl: "{github}/tree/main/{atomId}",
     },
     navItems: [{ href: "/changelog", label: "Changelog" }],
@@ -44,7 +44,7 @@ export default defineDocsConfig({
         label: "GitHub",
       },
       {
-        href: "https://www.npmjs.com/package/ai-logo",
+        href: "https://www.npmjs.com/package/@yldm-tech/ai-logo",
         icon: "npm",
         label: "NPM",
       },

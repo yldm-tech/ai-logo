@@ -13,8 +13,8 @@
     "types": ["vitest/globals"],
     "paths": {
       "@/*": ["./src/*"],
-      "ai-logo": ["./src"],
-      "ai-logo/*": ["./src/*"]
+      "@yldm-tech/ai-logo": ["./src"],
+      "@yldm-tech/ai-logo/*": ["./src/*"]
     }
   },
   "exclude": [".react-router"],

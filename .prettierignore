@@ -1,0 +1,8 @@
+# Markdown belongs to remark, not to oxfmt.
+#
+# Both claim *.md today: lint-staged runs `vp fmt` and then `remark --quiet --output --` over the same file, and remark wins because it runs last. oxfmt then rejects what remark wrote — the two disagree about padding in the generated icon table, 132 lines of README.md — so `vp check` fails in CI for any commit that stages a markdown file. remark has to be the one that writes, because remark-toc, remark-pangu, remark-sort-definitions and remark-remove-unused-definitions are transformers rather than linters and `--output` is how they do their work.
+#
+# The file is named for prettier, which this repository no longer uses, because .gitignore and .prettierignore are the two ignore files oxfmt reads without being passed --ignore-path, and `vp check` offers no way to pass one.
+#
+# .mdx stays with oxfmt: remark is only wired up for .md.
+*.md

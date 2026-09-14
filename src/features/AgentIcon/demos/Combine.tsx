@@ -1,4 +1,4 @@
-import { AgentIcon, agentMappings } from "ai-logo";
+import { AgentIcon, agentMappings } from "@yldm-tech/ai-logo";
 import { Grid } from "@lobehub/ui";
 
 export default () => {

@@ -1,4 +1,4 @@
-import { IconCombine, OpenAI } from "ai-logo";
+import { IconCombine, OpenAI } from "@yldm-tech/ai-logo";
 
 export default () => {
   return (

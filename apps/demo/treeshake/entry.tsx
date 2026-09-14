@@ -1,4 +1,4 @@
-import { OpenAI } from "ai-logo";
+import { OpenAI } from "@yldm-tech/ai-logo";
 
 import { renderToStaticMarkup } from "react-dom/server";
 

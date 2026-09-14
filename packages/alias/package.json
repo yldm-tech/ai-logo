@@ -1,0 +1,38 @@
+{
+  "name": "ai-logo",
+  "version": "0.0.0",
+  "description": "Alias for @yldm-tech/ai-logo — re-exports it in full, so either name can be installed",
+  "keywords": [
+    "ai icons",
+    "ai logo",
+    "llm brand logo",
+    "llm icons",
+    "react components",
+    "svg icons"
+  ],
+  "homepage": "https://github.com/yldm-tech/ai-logo",
+  "bugs": {
+    "url": "https://github.com/yldm-tech/ai-logo/issues/new"
+  },
+  "license": "MIT",
+  "author": "yldm-tech",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yldm-tech/ai-logo.git"
+  },
+  "files": [
+    "index.mjs",
+    "index.d.mts"
+  ],
+  "sideEffects": false,
+  "main": "index.mjs",
+  "module": "index.mjs",
+  "types": "index.d.mts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@yldm-tech/ai-logo": "workspace:*"
+  }
+}

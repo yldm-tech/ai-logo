@@ -8,7 +8,7 @@
  * so `node --import tsx` cannot resolve it. Every real consumer of a React icon
  * set builds through a bundler, so that is what this mirrors.
  */
-import { ModelIcon, ProviderIcon, toc } from "ai-logo";
+import { ModelIcon, ProviderIcon, toc } from "@yldm-tech/ai-logo";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vite-plus/test";
 
