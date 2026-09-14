@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.5.2](https://github.com/yldm-tech/ai-logo/compare/v1.5.1...v1.5.2) (2026-09-14)
+
+### Bug Fixes
+
+- keep the demo's detail panel and import line honest ([2d6d00e](https://github.com/yldm-tech/ai-logo/commit/2d6d00ed7495367e604d67ca36aabd7ec0fd3f52))
+
 ## [1.5.1](https://github.com/yldm-tech/ai-logo/compare/v1.5.0...v1.5.1) (2026-09-14)
 
 ### Bug Fixes
