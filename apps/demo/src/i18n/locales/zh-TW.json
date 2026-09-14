@@ -41,7 +41,7 @@
     "issue": "回報問題",
     "licence": "MIT 授權",
     "npm": "npm",
-    "npmAlias": "npm（{{alias}}）",
+    "npmAlias": "npm ({{alias}})",
     "tagline": "各品牌標識歸其各自擁有者所有，此處僅用於識別對應品牌。本套件 fork 自 lobehub/lobe-icons，沿用 MIT 授權。"
   },
   "gallery": {
