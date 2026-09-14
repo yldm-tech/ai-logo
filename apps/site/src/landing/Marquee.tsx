@@ -7,18 +7,14 @@ import { featuredMark } from "./featured";
 /** The spacing lives on the tile rather than as a `gap` on the track, so each half of the loop measures exactly N × (tile + gap). A gap between the two halves would make -50% land half a gap short of the seam. */
 const Tile = ({ entry }: { entry: IconEntry }) => {
   const Icon = featuredMark(entry);
-  const select = useStore((state) => state.select);
-  const setView = useStore((state) => state.setView);
+  const reveal = useStore((state) => state.reveal);
   if (!Icon) return null;
 
   return (
     <button
       aria-label={entry.fullTitle || entry.id}
       className="group/tile me-3 grid size-[66px] flex-none cursor-pointer place-items-center rounded-2xl border border-line bg-surface text-ink shadow-[0_1px_2px_rgb(0_0_0/4%)] transition duration-200 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_12px_28px_-12px_var(--accent)]"
-      onClick={() => {
-        select(entry.id);
-        setView("icons");
-      }}
+      onClick={() => reveal(entry.id)}
       title={entry.fullTitle || entry.id}
       type="button"
     >
@@ -92,7 +88,8 @@ export const Marquee = ({
           {tiles}
         </span>
         {echoTrack && (
-          <span aria-hidden className="flex">
+          // `inert` as well as `aria-hidden`: hiding the copy from assistive technology left its 78 buttons in the tab order, so a keyboard reader crossing the hero hit every brand twice.
+          <span aria-hidden className="flex" inert>
             {tiles}
           </span>
         )}

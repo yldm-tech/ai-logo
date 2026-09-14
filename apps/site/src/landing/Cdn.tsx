@@ -32,7 +32,7 @@ export const Cdn = () => {
             key={format}
           >
             <img
-              alt={`${format} example`}
+              alt={t("cdn.alt", { format })}
               className="size-10 flex-none rounded-lg bg-white object-contain p-1 ring-1 ring-line"
               height={40}
               loading="lazy"

@@ -2,6 +2,8 @@
 
 The most common contribution to this repository is adding an icon, or fixing which icon an id resolves to. Those are two different tasks and the second is much smaller than the first — check which one you have before starting.
 
+If what you have is a vulnerability rather than a bug, do not open an issue or a pull request for it — [SECURITY.md](./SECURITY.md) has the private route.
+
 ## Setup
 
 ```bash
@@ -37,7 +39,7 @@ Two things about matching are easy to get wrong:
 ```
 src/BrandName/
 ├── index.ts            # attaches the subcomponents and the brand constants
-├── index.mdx           # the docs page
+├── index.mdx           # frontmatter only — title, description, category
 ├── style.ts            # TITLE and colour constants
 └── components/
     ├── Mono.tsx        # required — the default export
@@ -50,14 +52,31 @@ src/BrandName/
 
 Copy the closest existing brand rather than starting from scratch. Then:
 
-1. Add the export to `src/icons.ts`.
-2. Add the mapping entries as above.
-3. Run `pnpm run build:toc` — `src/toc.json` is generated from what `index.ts` attaches, never edited by hand.
-4. Run `pnpm run sync:md` to regenerate the README icon table, then `npx remark --quiet --output -- README.md`. CI regenerates both and fails on a diff.
+1. Write `index.mdx`. It is frontmatter and nothing else, and it is not decoration — `pnpm run build:toc` reads it with gray-matter and fails if the file is missing:
+
+   ```mdx
+   ---
+   title: Claude
+   description: https://claude.ai
+   category: Model
+   ---
+   ```
+
+   `title` is the name shown in the README table and on the site, `description` is the brand's home page, and `category` is one of `Model`, `Provider` or `Application` — it is lowercased into the `group` field that the three README columns and the site's filters are built from.
+
+2. Add the export to `src/icons.ts`, in alphabetical position: `export { default as YourBrand, type CompoundedIcon as YourBrandProps } from "./YourBrand";`. The toc script discovers icons by matching `default as (\w+)` in that file, so a brand that is not exported there does not exist as far as the rest of the pipeline is concerned.
+
+3. Add the mapping entries as above.
+
+4. Run `pnpm run build:toc` — `src/toc.json` is generated from what `index.ts` attaches, never edited by hand. The `param` flags come from the `Icons.Color = …` assignments, not from which files sit in `components/`, so a subcomponent you wrote but forgot to attach is invisible everywhere downstream.
+
+5. Run `pnpm run build:static` to render the new files under `packages/static-*`, and commit them. They are committed build outputs, not generated in CI, and `tests/staticAssets.test.ts` asserts that every variant `src/toc.json` advertises has an SVG behind it — so a brand added without this step fails the test suite and leaves the documented CDN paths 404ing. The script installs a Chrome for puppeteer if there is not one already and re-renders the whole set rather than just what changed, so check `git status` afterwards: stage your brand's files across `static-svg`, `static-png`, `static-webp` and `static-avatar`, and leave any unrelated churn out of the commit.
+
+6. Run `pnpm run sync:md` to regenerate the README icon table, then `npx remark --quiet --output -- README.md`. CI regenerates both and fails on a diff.
+
+7. Port the icon to react-native with `pnpm run auto-converter-web-icons-to-rn`. It converts what `packages/react-native/src/icons` is missing, updates that package's exports and syncs the feature configs. Review the diff — it is code generation, not a build step — and check it with `pnpm --dir packages/react-native run type-check`, which is what CI runs. The port is not published and CI does not check that it is complete, so skipping this does not fail anything; it just leaves the port one brand further behind `src/`.
 
 **If your SVG uses `id` attributes**, namespace them with `useFillIds` from `@/hooks/useFillId` rather than writing `id="a"`. Ids are global to the page: two icons that both hardcode `id="a"` silently clip each other, and so does any host page with its own.
-
-Static renders under `packages/static-*` are produced by `pnpm run build:static`, which drives a headless Chrome. You do not need to run it for a normal icon addition.
 
 ## Commits and pull requests
 

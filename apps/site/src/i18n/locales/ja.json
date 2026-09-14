@@ -1,5 +1,6 @@
 {
   "cdn": {
+    "alt": "{{format}} の例",
     "avatar": "ブランドカラーを敷いたアバター",
     "eyebrow": "CDN",
     "png": "ライトとダークの 2 種類",
@@ -12,6 +13,7 @@
     "copied": "コピーしました",
     "copy": "コピー",
     "copyImport": "import をコピー",
+    "failed": "コピーできません",
     "label": "{{value}} をコピー"
   },
   "features": {
@@ -24,6 +26,7 @@
       "note": "すべてのマークは CDN 上のファイルでもあります。インストールもビルドも不要で、<c>img</c> タグだけで足ります。PNG と WebP はライトとダークの両方を用意しているので、<c>picture</c> 要素が選べます。",
       "title": "インストールを省いてもいい"
     },
+    "filesAlt": "{{brand}} のマーク",
     "lookup": {
       "note": "API が返すモデル ID は文字列であって import ではありません。<c>ProviderIcon</c>、<c>ModelIcon</c>、<c>AgentIcon</c> がキーワード表を通してマークに対応づけ、一致しなければ中立のフォールバックを返します。",
       "title": "文字列からマークを解決する"
@@ -49,10 +52,16 @@
     "apps": "アプリ",
     "close": "閉じる",
     "empty": "「{{query}}」に一致するものはありません。",
+    "group": {
+      "application": "アプリ",
+      "model": "モデル",
+      "provider": "プロバイダー"
+    },
     "models": "モデル",
     "providers": "プロバイダー",
     "search": "ブランド、モデル、プロバイダーを検索…",
-    "shown": "{{count}} 件表示"
+    "shown": "{{count}} 件表示",
+    "shown_other": "{{count}} 件表示"
   },
   "hero": {
     "badge": "{{brands}} ブランド · うち {{color}} はカラー · MIT",

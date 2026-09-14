@@ -7,7 +7,9 @@
 Popular AI / LLM Model Brand SVG Logo and Icon Collection for React.<br/>
 Contributions, corrections & requests can be made on GitHub.
 
-[Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+**[ailogo.yldm.ai][site-link]** — browse all 323 marks, every variant, in 11 languages.
+
+[Website][site-link] · [Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
 
 <!-- SHIELD GROUP -->
 
@@ -36,6 +38,7 @@ Contributions, corrections & requests can be made on GitHub.
   - [I'm an Human](#im-an-human)
   - [Usage](#usage)
   - [Packages](#packages)
+- [🌐 Website](#-website)
 - [✨ Features](#-features)
 - [🤯 CDN Usage](#-cdn-usage)
   - [`A` CDN with SVG](#a-cdn-with-svg)
@@ -89,13 +92,15 @@ yarn add react react-dom antd
 Import a brand directly when you know which one you need. Every icon is a compound component: the default export is the mono mark, with `.Color`, `.Text`, `.Avatar`, `.Combine` and the rest attached when that brand has them.
 
 ```tsx
-import { Anthropic, OpenAI } from "@yldm-tech/ai-logo";
+import { Claude } from "@yldm-tech/ai-logo";
 
-<OpenAI size={24} />
-<OpenAI.Color size={24} />
-<OpenAI.Combine size={24} type="color" />
-<Anthropic.Avatar size={40} shape="circle" />;
+<Claude size={24} />
+<Claude.Color size={24} />
+<Claude.Combine size={24} type="color" />
+<Claude.Avatar size={40} shape="circle" />;
 ```
+
+Which subcomponents a brand has varies, and the type definitions are the contract: a monochrome brand has no `.Color`, and a `.Combine` built on a brand without one takes no `type` prop. OpenAI, for instance, ships `.Text`, `.Combine` and `.Avatar` but no `.Color`, so `<OpenAI.Color />` does not exist. Check `src/<Brand>/index.ts` for what is attached, or see every variant rendered on [the website][site-link].
 
 When the brand is only known at runtime — a provider id from an API, a model name from a config — use the lookup components instead. They take an arbitrary string and fall back to a neutral icon when nothing matches:
 
@@ -124,7 +129,32 @@ toc.map((entry) => entry.id); // "OpenAI", "Anthropic", …
 | <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`@yldm-tech/ai-logo`** | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo)](https://www.npmjs.com/package/@yldm-tech/ai-logo) | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo) | [Source](https://github.com/yldm-tech/ai-logo/tree/main/src)            |
 | <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`ai-logo`** (alias)    | [![npm](https://img.shields.io/npm/v/ai-logo)](https://www.npmjs.com/package/ai-logo)                       | ![NPM Downloads](https://img.shields.io/npm/dw/ai-logo)            | [Source](https://github.com/yldm-tech/ai-logo/tree/main/packages/alias) |
 
-Static SVG, PNG and WebP renders of every icon live in this repository under `packages/static-*` and are served over a CDN — see [CDN Usage](#-cdn-usage).
+Four more packages carry the rendered files rather than React components. They have no code, no dependencies and no build — just the images, published at the same version as `@yldm-tech/ai-logo` so the whole set can be pinned together. Install one when you want the assets on disk; reach for [CDN Usage](#-cdn-usage) when you do not.
+
+| Package                                | Version                                                                                                                                 | Downloads                                                                        | Contents                                                     |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| **`@yldm-tech/ai-logo-static-svg`**    | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo-static-svg)](https://www.npmjs.com/package/@yldm-tech/ai-logo-static-svg)       | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo-static-svg)    | `icons/` — one SVG per icon and per variant                  |
+| **`@yldm-tech/ai-logo-static-png`**    | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo-static-png)](https://www.npmjs.com/package/@yldm-tech/ai-logo-static-png)       | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo-static-png)    | `light/` and `dark/` PNG renders                             |
+| **`@yldm-tech/ai-logo-static-webp`**   | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo-static-webp)](https://www.npmjs.com/package/@yldm-tech/ai-logo-static-webp)     | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo-static-webp)   | `light/` and `dark/` WebP renders, the smallest of the three |
+| **`@yldm-tech/ai-logo-static-avatar`** | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo-static-avatar)](https://www.npmjs.com/package/@yldm-tech/ai-logo-static-avatar) | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo-static-avatar) | `avatars/` — one square WebP avatar per icon                 |
+
+The same files live in this repository under `packages/static-*`, which is what the CDN paths below and `getLobeIconCDN`'s jsDelivr and unpkg hosts resolve to.
+
+A fifth package, `@yldm-tech/ai-logo-rn`, ports the icons to `react-native-svg` and lives under `packages/react-native`. It is `private` and not published — see [its README](./packages/react-native/README.md) for why and for what using it today involves.
+
+<div align="right">
+
+[![][back-to-top]](#readme-top)
+
+</div>
+
+## 🌐 Website
+
+**[ailogo.yldm.ai][site-link]** is the fastest way to find an icon and to see what it actually ships.
+
+Search the whole set or filter it by model, provider and application, then open any mark to get its variants rendered side by side — each one labelled with the JSX that produces it, so `<Claude.Combine />` existing and `<OpenAI.Color />` not existing is something you can see rather than infer. The panel also carries the brand's primary colour, the import line with a copy button, and direct links to the SVG, PNG, WebP and avatar renders of that icon.
+
+The site is translated into 11 languages — English, Simplified and Traditional Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Russian and Arabic, which lays out right-to-left — and any of them can be linked directly with `?lang=`, as in [ailogo.yldm.ai/?lang=ja](https://ailogo.yldm.ai/?lang=ja). It is prerendered and served from GitHub Pages. It is also this repository's consumer smoke test: it imports `@yldm-tech/ai-logo` through `node_modules` the way a published dependency resolves, and carries the bundle budgets, so the published surface cannot break without a CI failure.
 
 <div align="right">
 
@@ -136,7 +166,7 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 
 - 🚀 **Lightweight & Scalable**: Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.
 - 🌳 **Tree Shakable**: Importing a brand directly — `import { OpenAI } from "@yldm-tech/ai-logo"` — pulls in that brand and nothing else, around 216 kB against the full set. The lookup components are the exception: `ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id string at runtime, so they necessarily carry their whole mapping table and cost roughly 1.7 MB. Reach for them when the id is dynamic, and for the brand export when it is not. Both sizes are pinned by a budget in `apps/site/treeshake`.
-- 🎨 **Every Major Model**: Over 320 AI company, model and application brands, each with mono, color, text, combined and avatar variants.
+- 🎨 **Every Major Model**: 323 AI company, model and application brands. Every one ships a mono mark, and most add some combination of color, text, combined and avatar variants — which ones a given brand has is listed on [the website][site-link] and attached in `src/<Brand>/index.ts`.
 
 ---
 
@@ -494,10 +524,12 @@ A commit without the prefix is accepted by commitlint and merged normally, but i
 
 ## 🔗 Links
 
+- **[ailogo.yldm.ai][site-link]** - The website. Search every mark, see its variants and copy the import.
 - **[npmjs.com/package/@yldm-tech/ai-logo](https://www.npmjs.com/package/@yldm-tech/ai-logo)** - The published package.
 - **[npmjs.com/package/ai-logo](https://www.npmjs.com/package/ai-logo)** - The unscoped alias, which re-exports it.
 - **[Supported brands](#-features)** - Every icon in the collection, with its light and dark render.
 - **[Asset paths](#asset-paths)** - CDN paths for the static SVG, PNG and WebP renders.
+- **[SECURITY.md](./SECURITY.md)** - How to report a vulnerability in the published packages or the site.
 
 <div align="right">
 
@@ -541,3 +573,4 @@ This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://
 [npm-release-shield]: https://img.shields.io/npm/v/%40yldm-tech%2Fai-logo?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [pr-welcome-link]: https://github.com/yldm-tech/ai-logo/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
+[site-link]: https://ailogo.yldm.ai

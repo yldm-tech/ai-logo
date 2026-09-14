@@ -1,5 +1,6 @@
 {
   "cdn": {
+    "alt": "{{format}} 예시",
     "avatar": "브랜드 배경 위의 마크",
     "eyebrow": "CDN",
     "png": "라이트와 다크 두 가지 렌더",
@@ -12,6 +13,7 @@
     "copied": "복사됨",
     "copy": "복사",
     "copyImport": "import 복사",
+    "failed": "복사 실패",
     "label": "{{value}} 복사"
   },
   "features": {
@@ -24,6 +26,7 @@
       "note": "모든 마크는 CDN 위의 파일이기도 합니다. 설치도 빌드도 필요 없이 <c>img</c> 태그 하나면 충분하고, PNG와 WebP는 라이트·다크 렌더를 모두 제공하므로 <c>picture</c> 요소가 골라 쓸 수 있습니다.",
       "title": "설치를 아예 건너뛰어도 됩니다"
     },
+    "filesAlt": "{{brand}} 마크",
     "lookup": {
       "note": "API 응답의 모델 id는 import가 아니라 문자열입니다. <c>ProviderIcon</c>, <c>ModelIcon</c>, <c>AgentIcon</c>이 키워드 표를 통해 마크로 연결하고, 일치하는 것이 없으면 중립 아이콘으로 대체합니다.",
       "title": "문자열로 마크 찾기"
@@ -49,10 +52,16 @@
     "apps": "앱",
     "close": "닫기",
     "empty": "“{{query}}”와(과) 일치하는 항목이 없습니다.",
+    "group": {
+      "application": "앱",
+      "model": "모델",
+      "provider": "제공업체"
+    },
     "models": "모델",
     "providers": "제공업체",
     "search": "브랜드, 모델, 제공업체 검색…",
-    "shown": "{{count}}개 표시"
+    "shown": "{{count}}개 표시",
+    "shown_other": "{{count}}개 표시"
   },
   "hero": {
     "badge": "{{brands}}개 브랜드 · {{color}}개 컬러 · MIT",

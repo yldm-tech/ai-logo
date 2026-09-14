@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Code } from "../components/Code";
 import { Reveal } from "../components/Reveal";
 import { SectionHead } from "../components/SectionHead";
+import { entrance } from "../motion";
 import { entries, PKG } from "../registry";
 import { featuredIcon } from "./featured";
 
@@ -47,6 +48,7 @@ export const Variants = () => {
             const active = choice.id === entry.id;
             return (
               <button
+                aria-pressed={active}
                 className={`flex cursor-pointer items-center gap-2 rounded-full border py-1.5 pe-3.5 ps-2 text-[13px] transition ${
                   active
                     ? "border-accent bg-accent-soft text-ink"
@@ -85,12 +87,14 @@ export const Variants = () => {
               <span className="grid flex-1 place-items-center overflow-hidden px-2 py-4 text-ink">
                 <AnimatePresence mode="wait">
                   <motion.span
-                    animate={{ opacity: 1, scale: 1 }}
                     className="grid max-w-full place-items-center [&>*]:max-w-full"
                     exit={{ opacity: 0, scale: 0.94 }}
-                    initial={{ opacity: 0, scale: 0.94 }}
                     key={entry.id}
-                    transition={{ duration: 0.22, ease: "easeOut" }}
+                    {...entrance(
+                      { opacity: 0, scale: 0.94 },
+                      { opacity: 1, scale: 1 },
+                      { duration: 0.22, ease: "easeOut" },
+                    )}
                   >
                     <Variant size={wide ? 26 : 44} />
                   </motion.span>

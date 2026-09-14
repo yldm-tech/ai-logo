@@ -1,5 +1,6 @@
 {
   "cdn": {
+    "alt": "Exemple {{format}}",
     "avatar": "la marque sur sa couleur de fond",
     "eyebrow": "CDN",
     "png": "rendus clair et sombre",
@@ -12,6 +13,7 @@
     "copied": "Copié",
     "copy": "Copier",
     "copyImport": "Copier l’import",
+    "failed": "Échec de la copie",
     "label": "Copier {{value}}"
   },
   "features": {
@@ -24,6 +26,7 @@
       "note": "Chaque marque est aussi un fichier sur un CDN. Ni installation ni build : une balise <c>img</c> suffit, et les PNG et WebP existent en clair et en sombre pour qu’un élément <c>picture</c> puisse choisir.",
       "title": "Ou passez-vous entièrement de l’installation"
     },
+    "filesAlt": "Marque {{brand}}",
     "lookup": {
       "note": "L’identifiant de modèle renvoyé par une API est une chaîne, pas un import. <c>ProviderIcon</c>, <c>ModelIcon</c> et <c>AgentIcon</c> la relient à une marque via une table de mots-clés, avec un repli neutre quand rien ne correspond.",
       "title": "Résoudre une marque depuis une chaîne"
@@ -49,15 +52,23 @@
     "apps": "Applications",
     "close": "Fermer",
     "empty": "Aucun résultat pour « {{query}} ».",
+    "group": {
+      "application": "application",
+      "model": "modèle",
+      "provider": "fournisseur"
+    },
     "models": "Modèles",
     "providers": "Fournisseurs",
     "search": "Rechercher une marque, un modèle, un fournisseur…",
-    "shown": "{{count}} affichées"
+    "shown": "{{count}} affichées",
+    "shown_many": "{{count}} affichées",
+    "shown_one": "{{count}} affichée",
+    "shown_other": "{{count}} affichées"
   },
   "hero": {
     "badge": "{{brands}} marques · {{color}} en couleur · MIT",
     "browse": "Parcourir {{count}} icônes",
-    "sub": "Les logos des fournisseurs, modèles et applications d’IA sous forme de composants React typés — variantes couleur, wordmark, lockup et avatar — plus des SVG, PNG et WebP statiques sur un CDN.",
+    "sub": "Les logos des fournisseurs, modèles et applications d’IA sous forme de composants React typés — variantes couleur, logotype, bloc-marque et avatar — plus des SVG, PNG et WebP statiques sur un CDN.",
     "title": "Toutes les marques d’IA, <a>un seul import</a>."
   },
   "install": {
@@ -66,7 +77,7 @@
     "title": "Ajoutez-le à un projet"
   },
   "meta": {
-    "description": "Les logos des fournisseurs, modèles et applications d’IA en composants React typés, avec variantes couleur, wordmark, lockup et avatar, plus des SVG, PNG et WebP statiques sur un CDN. Sous licence MIT.",
+    "description": "Les logos des fournisseurs, modèles et applications d’IA en composants React typés, avec variantes couleur, logotype, bloc-marque et avatar, plus des SVG, PNG et WebP statiques sur un CDN. Sous licence MIT.",
     "title": "AI Logo — {{count}} icônes de marques d’IA pour React et CDN"
   },
   "nav": {
@@ -86,16 +97,16 @@
     "formats": "formats disponibles",
     "formatsNote": "React, SVG, PNG, WebP",
     "variants": "variantes par marque",
-    "variantsNote": "mono, couleur, wordmark, lockup, avatar"
+    "variantsNote": "mono, couleur, logotype, bloc-marque, avatar"
   },
   "variants": {
     "avatar": "La marque sur sa couleur de fond",
     "color": "La palette de la marque",
-    "combine": "Marque et wordmark assemblés",
+    "combine": "Marque et logotype assemblés",
     "eyebrow": "Variantes",
     "mono": "Monochrome, hérite de currentColor",
     "sub": "Une marque se résume rarement à un seul dessin. Chacune ne livre que les versions qu’elle possède réellement, et la table des matières indique lesquelles — une galerie peut donc afficher le bon ensemble sans deviner.",
-    "text": "Wordmark seul",
+    "text": "Logotype seul",
     "title": "Une marque, cinq façons de la dessiner"
   }
 }

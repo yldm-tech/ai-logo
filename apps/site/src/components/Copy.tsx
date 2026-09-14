@@ -14,31 +14,37 @@ export const CopyButton = ({
   label?: string;
   value: string;
 }) => {
-  const [copied, setCopied] = useState(false);
+  const [state, setState] = useState<"copied" | "failed" | "idle">("idle");
   const { t } = useTranslation();
   const idle = label ?? t("copy.copy");
   const done = t("copy.copied");
+  const failed = t("copy.failed");
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => () => clearTimeout(timer.current), []);
 
-  const copy = () => {
-    void navigator.clipboard?.writeText(value);
-    setCopied(true);
+  // The clipboard is a permission, not a function call. It is missing outside a secure context, it rejects when the document is not focused, and a browser may simply refuse — so the confirmation waits for the write to actually resolve, and a refusal says so instead of claiming success.
+  const copy = async () => {
     clearTimeout(timer.current);
-    timer.current = setTimeout(() => setCopied(false), 1400);
+    try {
+      await navigator.clipboard.writeText(value);
+      setState("copied");
+    } catch {
+      setState("failed");
+    }
+    timer.current = setTimeout(() => setState("idle"), 1400);
   };
 
   return (
     <button
       aria-label={t("copy.label", { value })}
       className={`group/copy relative flex-none cursor-pointer rounded-lg border border-line px-2.5 py-1.5 text-[11px] font-medium text-dim transition hover:border-line-strong hover:bg-elevated hover:text-ink ${className}`}
-      onClick={copy}
+      onClick={() => void copy()}
       type="button"
     >
-      {/* The wider of the two labels holds the width open while the visible one is absolutely positioned over it, so confirming a copy does not reflow the row. Which one is wider depends on the language. */}
+      {/* The widest label holds the width open while the visible one is absolutely positioned over it, so confirming a copy does not reflow the row. Which one is widest depends on the language. */}
       <span aria-hidden className="invisible">
-        {idle.length >= done.length ? idle : done}
+        {[idle, done, failed].reduce((a, b) => (a.length >= b.length ? a : b))}
       </span>
       <AnimatePresence initial={false} mode="wait">
         <motion.span
@@ -46,10 +52,12 @@ export const CopyButton = ({
           className="absolute inset-0 grid place-items-center"
           exit={{ opacity: 0, y: -6 }}
           initial={{ opacity: 0, y: 6 }}
-          key={copied ? "copied" : "idle"}
+          key={state}
           transition={{ duration: 0.14 }}
         >
-          {copied ? <span className="text-accent">{done}</span> : idle}
+          {state === "copied" && <span className="text-accent">{done}</span>}
+          {state === "failed" && <span className="text-dim">{failed}</span>}
+          {state === "idle" && idle}
         </motion.span>
       </AnimatePresence>
     </button>

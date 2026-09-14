@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { lazy, Suspense, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +7,7 @@ import { Head } from "./components/Head";
 import { Header } from "./components/Header";
 import { RTL_LANGUAGES } from "./i18n";
 import { Landing } from "./landing/Landing";
+import { entrance } from "./motion";
 import { useStore } from "./store";
 
 // The gallery renders all 323 brands, so it reaches for the package's whole namespace — around 3 MB, against the hundred-odd marks the landing page names one by one. Loading it on demand is what keeps that off the first visit; a reader who only reads the overview never fetches it.
@@ -45,7 +46,14 @@ export default function App() {
   }, [i18n]);
 
   // The query string carries state the reader chose, so a parameter is written only once it differs from what opening the page plainly would give. Writing all four unconditionally put `?view=overview&group=all` on every first visit, which reads as a selection nobody made.
+  //
+  // Debounced rather than written on every render: the search box drives `query`, so typing called replaceState once per keystroke. Safari rate-limits that to about a hundred calls in thirty seconds and throws past it, which would take down a reader who did nothing worse than type quickly.
   useEffect(() => {
+    const write = setTimeout(() => syncUrl(), 200);
+    return () => clearTimeout(write);
+  }, [filter, query, selectedId, view]);
+
+  function syncUrl() {
     const url = new URL(window.location.href);
     const write = (key: string, value: string) => {
       if (value) url.searchParams.set(key, value);
@@ -56,7 +64,7 @@ export default function App() {
     write("q", query);
     write("group", filter === "all" ? "" : filter);
     window.history.replaceState(null, "", url);
-  }, [filter, query, selectedId, view]);
+  }
 
   // Switching views should land at the top of the new one — opening the gallery from a button halfway down the landing page would otherwise start the grid mid-scroll. Only on an actual change: scrolling on mount would undo a deep link to an anchor.
   const previousView = useRef(view);
@@ -65,18 +73,17 @@ export default function App() {
     previousView.current = view;
   }, [view]);
 
+  // `reducedMotion="user"` is the only switch that reaches these animations. The stylesheet collapses CSS animation and transition durations for a reader who has asked for less motion, but motion/react drives transforms from JavaScript, so no stylesheet can touch them — every entrance, layout and crossfade on this page would have played at full strength for someone who asked it not to.
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <Head />
       <Header />
       <main>
         <AnimatePresence mode="wait">
           <motion.div
-            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            initial={{ opacity: 0 }}
             key={view}
-            transition={{ duration: 0.18 }}
+            {...entrance({ opacity: 0 }, { opacity: 1 }, { duration: 0.18 })}
           >
             {view === "overview" ? (
               <Landing />
@@ -89,6 +96,6 @@ export default function App() {
         </AnimatePresence>
       </main>
       <Footer />
-    </>
+    </MotionConfig>
   );
 }

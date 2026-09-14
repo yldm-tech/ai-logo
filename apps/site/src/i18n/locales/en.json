@@ -1,5 +1,6 @@
 {
   "cdn": {
+    "alt": "{{format}} example",
     "avatar": "mark on its brand background",
     "eyebrow": "CDN",
     "png": "light and dark renders",
@@ -12,6 +13,7 @@
     "copied": "Copied",
     "copy": "Copy",
     "copyImport": "Copy import",
+    "failed": "Copy failed",
     "label": "Copy {{value}}"
   },
   "features": {
@@ -24,6 +26,7 @@
       "note": "Every mark is also a file on a CDN. No install, no build step — an <c>img</c> tag is enough, and PNG and WebP ship light and dark renders for a <c>picture</c> element to choose between.",
       "title": "Or skip the install entirely"
     },
+    "filesAlt": "{{brand}} mark",
     "lookup": {
       "note": "A model id from an API response is a string, not an import. <c>ProviderIcon</c>, <c>ModelIcon</c> and <c>AgentIcon</c> map it to a mark through a keyword table, with a neutral fallback when nothing matches.",
       "title": "Resolve a mark from a string"
@@ -49,10 +52,17 @@
     "apps": "Apps",
     "close": "Close",
     "empty": "Nothing matches “{{query}}”.",
+    "group": {
+      "application": "application",
+      "model": "model",
+      "provider": "provider"
+    },
     "models": "Models",
     "providers": "Providers",
     "search": "Search brands, models, providers…",
-    "shown": "{{count}} shown"
+    "shown": "{{count}} shown",
+    "shown_one": "{{count}} shown",
+    "shown_other": "{{count}} shown"
   },
   "hero": {
     "badge": "{{brands}} brands · {{color}} in colour · MIT",
