@@ -1,6 +1,6 @@
 name: Release CI
 
-# Runs on GitHub-hosted runners rather than the org's self-hosted ARC scale-set: this repository is public, and self-hosted runners on public repositories let fork workflows execute arbitrary code on org infrastructure. The ARC image also has no bun.
+# Runs on GitHub-hosted runners rather than the org's self-hosted ARC scale-set: this repository is public, and self-hosted runners on public repositories let fork workflows execute arbitrary code on org infrastructure. The ARC image also has neither pnpm nor a current Node.
 on:
   push:
     branches:
@@ -21,34 +21,32 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v4
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v6
         with:
+          cache: 'pnpm'
           node-version: '24'
 
-      - name: Install bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: '1.3.11'
-
       - name: Install deps
-        run: bun i
+        run: pnpm install
 
       - name: CI
-        run: bun run ci
+        run: pnpm run ci
 
       - name: Test
-        run: bun run test
+        run: pnpm run test
 
       - name: Build
-        run: bun run build
+        run: pnpm run build
 
       # semantic-release writes the new version into package.json when it releases and leaves it alone when it does not, so comparing the version either side of this step says whether a release happened without asking the registry.
       - name: Release
         id: release
         run: |
           echo "version_before=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
-          bun run release
+          pnpm run release
           echo "version_after=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
