@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v6
@@ -66,11 +66,11 @@ jobs:
           cp -r packages/static-avatar/avatars "$out/avatar"
           du -sh "$out"
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
       # Vite copies apps/demo/public into dist, and CNAME rides along with it,
       # which is what binds the custom domain.
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: apps/demo/dist
 
@@ -83,4 +83,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
