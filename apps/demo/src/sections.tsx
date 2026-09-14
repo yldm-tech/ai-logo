@@ -20,7 +20,7 @@ const CDN_ROWS = [
   ["Avatar", `${CDN}/avatar/openai.webp`],
 ] as const;
 
-export const Hero = () => (
+export const Hero = ({ onBrowse }: { onBrowse: () => void }) => (
   <section className="hero" id="top">
     <Logo className="hero-mark" size={44} />
     <h1 className="hero-title">AI Logo</h1>
@@ -29,9 +29,9 @@ export const Hero = () => (
       as static SVG, PNG and WebP over a CDN.
     </p>
     <div className="hero-actions">
-      <a className="btn btn--primary" href="#icons">
+      <button className="btn btn--primary" onClick={onBrowse} type="button">
         Browse icons
-      </a>
+      </button>
       <a
         className="btn"
         href="https://github.com/yldm-tech/ai-logo"

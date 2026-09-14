@@ -62,15 +62,21 @@ const Mark = ({ entry, size = 30 }: { entry: IconEntry; size?: number }) => {
 export default function App() {
   const [theme, setTheme] = useState<"dark" | "light">("light");
   const [query, setQuery] = useState("");
+  const [tab, setTab] = useState(() =>
+    new URLSearchParams(window.location.search).get("tab") === "components"
+      ? "components"
+      : "overview",
+  );
   const [selectedId, setSelectedId] = useState(
     () => new URLSearchParams(window.location.search).get("icon") ?? toc[0]?.id ?? "",
   );
 
   useEffect(() => {
     const url = new URL(window.location.href);
+    url.searchParams.set("tab", tab);
     url.searchParams.set("icon", selectedId);
     window.history.replaceState(null, "", url);
-  }, [selectedId]);
+  }, [selectedId, tab]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -112,21 +118,34 @@ export default function App() {
               <Logo />
               <h1>AI Logo</h1>
             </a>
-            <span className="count">
-              {matches.length} of {toc.length} brands
-            </span>
+            {tab === "components" && (
+              <span className="count">
+                {matches.length} of {toc.length} brands
+              </span>
+            )}
           </div>
-          <p className="sub">
-            Imported as a dependency, so every mark below comes from the built <code>es/</code>{" "}
-            output rather than from source — the same files a consumer installs.
-          </p>
           <div className="controls">
-            <input
-              type="search"
-              placeholder="Search brands, models, providers…"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-            />
+            <nav className="tabs">
+              {(["overview", "components"] as const).map((name) => (
+                <button
+                  aria-selected={tab === name}
+                  className="tab"
+                  key={name}
+                  onClick={() => setTab(name)}
+                  type="button"
+                >
+                  {name === "overview" ? "Overview" : "Components"}
+                </button>
+              ))}
+            </nav>
+            {tab === "components" && (
+              <input
+                type="search"
+                placeholder="Search brands, models, providers…"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+              />
+            )}
             <button
               className="toggle"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -139,67 +158,74 @@ export default function App() {
       </header>
 
       <main className="wrap">
-        <Hero />
-        <Install />
-        <Cdn />
-
-        <h2 className="panel-title" id="icons">
-          Icons
-        </h2>
-
-        {selected && SelectedIcon && (
-          <section className="detail">
-            <div className="detail-head">
-              <h2>{selected.fullTitle || selected.id}</h2>
-              {selected.group && <span className="tag">{selected.group}</span>}
-              {selected.color && <span className="tag">{selected.color}</span>}
-            </div>
-
-            <div className="variants">
-              <div className="variant">
-                <span className="variant-art">
-                  <SelectedIcon size={34} />
-                </span>
-                <span className="variant-label">&lt;{selected.id} /&gt;</span>
-              </div>
-              {VARIANTS.map((name) => {
-                const Variant = SelectedIcon[name];
-                if (!Variant) return null;
-                const wide = name === "Text" || name === "Combine";
-                return (
-                  <div className={wide ? "variant variant--wide" : "variant"} key={name}>
-                    <span className="variant-art">
-                      <Variant size={wide ? 22 : 34} />
-                    </span>
-                    <span className="variant-label">
-                      &lt;{selected.id}.{name} /&gt;
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-
-            <ImportLine name={selected.id} />
-          </section>
-        )}
-
-        {matches.length === 0 ? (
-          <p className="empty">Nothing matches “{query}”.</p>
+        {tab === "overview" ? (
+          <>
+            <Hero onBrowse={() => setTab("components")} />
+            <Install />
+            <Cdn />
+          </>
         ) : (
-          <div className="grid">
-            {matches.map((entry) => (
-              <button
-                aria-pressed={entry.id === selectedId}
-                className="cell"
-                key={entry.id}
-                onClick={() => setSelectedId(entry.id)}
-                type="button"
-              >
-                <Mark entry={entry} />
-                <span className="cell-name">{entry.fullTitle || entry.id}</span>
-              </button>
-            ))}
-          </div>
+          <>
+            <p className="sub">
+              Imported as a dependency, so every mark below comes from the built <code>es/</code>{" "}
+              output rather than from source — the same files a consumer installs.
+            </p>
+
+            {selected && SelectedIcon && (
+              <section className="detail">
+                <div className="detail-head">
+                  <h2>{selected.fullTitle || selected.id}</h2>
+                  {selected.group && <span className="tag">{selected.group}</span>}
+                  {selected.color && <span className="tag">{selected.color}</span>}
+                </div>
+
+                <div className="variants">
+                  <div className="variant">
+                    <span className="variant-art">
+                      <SelectedIcon size={34} />
+                    </span>
+                    <span className="variant-label">&lt;{selected.id} /&gt;</span>
+                  </div>
+                  {VARIANTS.map((name) => {
+                    const Variant = SelectedIcon[name];
+                    if (!Variant) return null;
+                    const wide = name === "Text" || name === "Combine";
+                    return (
+                      <div className={wide ? "variant variant--wide" : "variant"} key={name}>
+                        <span className="variant-art">
+                          <Variant size={wide ? 22 : 34} />
+                        </span>
+                        <span className="variant-label">
+                          &lt;{selected.id}.{name} /&gt;
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <ImportLine name={selected.id} />
+              </section>
+            )}
+
+            {matches.length === 0 ? (
+              <p className="empty">Nothing matches “{query}”.</p>
+            ) : (
+              <div className="grid">
+                {matches.map((entry) => (
+                  <button
+                    aria-pressed={entry.id === selectedId}
+                    className="cell"
+                    key={entry.id}
+                    onClick={() => setSelectedId(entry.id)}
+                    type="button"
+                  >
+                    <Mark entry={entry} />
+                    <span className="cell-name">{entry.fullTitle || entry.id}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </>
         )}
       </main>
     </>
