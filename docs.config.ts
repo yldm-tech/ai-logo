@@ -1,7 +1,7 @@
 import { defineDocsConfig } from "@lobehub/docs-kit/src/config";
 import type { DocumentationInventory } from "@lobehub/docs-kit/src/types";
 
-import compatibility from "./compatibility.json";
+import compatibility from "./docs/compatibility.json";
 
 const legacyRedirects = compatibility as DocumentationInventory;
 
