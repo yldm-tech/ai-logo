@@ -20,6 +20,11 @@ jobs:
       - name: Install deps
         run: pnpm install
 
+      # The demo's smoke test imports the package through node_modules to es/, the
+      # way a consumer does, so es/ has to exist before the tests can run.
+      - name: Build package
+        run: pnpm run build
+
       - name: CI
         run: pnpm run ci
 
