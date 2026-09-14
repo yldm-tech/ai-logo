@@ -52,7 +52,8 @@ export const Hero = () => {
     <section className="relative overflow-hidden pb-16">
       <Backdrop />
 
-      <div className="relative z-10 mx-auto max-w-3xl px-5 pt-20 pb-12 text-center sm:pt-28">
+      {/* Wide enough for the headline to stay on one line. Measured, not picked: the Chinese headline needs 780px at its largest size and the English one 741px, so a 768px column was breaking every language in two for the sake of a few dozen pixels. Japanese is the one that still wraps, at 1247px, and it reads fine in two. */}
+      <div className="relative z-10 mx-auto max-w-5xl px-5 pt-20 pb-12 text-center sm:pt-28">
         <motion.a
           {...stagger(0)}
           className="inline-flex items-center gap-2 rounded-full border border-line bg-surface/80 px-3 py-1.5 text-[12px] text-dim backdrop-blur transition hover:border-line-strong hover:text-ink"
@@ -79,7 +80,7 @@ export const Hero = () => {
 
         <motion.p
           {...stagger(2)}
-          className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-balance text-dim sm:text-base"
+          className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-balance text-dim sm:text-base"
         >
           {t("hero.sub")}
         </motion.p>

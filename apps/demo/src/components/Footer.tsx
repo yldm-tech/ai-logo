@@ -20,7 +20,7 @@ export const Footer = () => {
   return (
     <footer className="border-t border-line">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:flex-row sm:items-start sm:justify-between">
-        <div className="max-w-sm">
+        <div className="max-w-2xl">
           <span className="flex items-center gap-2.5 text-ink">
             <Logo size={19} />
             <span className="text-[15px] font-semibold tracking-tight">AI Logo</span>
