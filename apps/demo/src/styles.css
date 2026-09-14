@@ -103,6 +103,41 @@ h1 {
   gap: 10px;
 }
 
+/* A segmented control rather than links: the two views are mutually exclusive and the switch is instant, so there is nothing to navigate to. It takes the leading edge and pushes everything after it to the right. */
+
+.tabs {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex;
+  gap: 2px;
+  margin-right: auto;
+  padding: 2px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 7px 14px;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.tab[aria-selected="true"] {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
 input[type="search"] {
   background: var(--surface);
   border: 1px solid var(--border);
