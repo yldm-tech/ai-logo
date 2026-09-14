@@ -61,16 +61,30 @@ Read https://github.com/yldm-tech/ai-logo/blob/main/README.md and follow the ins
 
 ### I'm an Human
 
-Install ai-logo with npm and start using the icon set.
+Install ai-logo and start using the icon set.
 
-```bash
-npm i ai-logo
-```
+| Package manager | Command            |
+| --------------- | ------------------ |
+| **npm**         | `npm i ai-logo`    |
+| **pnpm**        | `pnpm add ai-logo` |
+| **yarn**        | `yarn add ai-logo` |
+| **bun**         | `bun add ai-logo`  |
 
 The same build is published under a scoped name as well, for anyone who prefers a namespaced dependency. The two are identical — pick one, not both.
 
+| Package manager | Command                       |
+| --------------- | ----------------------------- |
+| **npm**         | `npm i @yldm-tech/ai-logo`    |
+| **pnpm**        | `pnpm add @yldm-tech/ai-logo` |
+| **yarn**        | `yarn add @yldm-tech/ai-logo` |
+| **bun**         | `bun add @yldm-tech/ai-logo`  |
+
+#### Peer dependencies
+
+`react`, `react-dom`, `antd` and `@lobehub/ui` are peer dependencies. npm 7+, pnpm 8+ and bun install those for you; Yarn Classic does not, so install them alongside:
+
 ```bash
-npm i @yldm-tech/ai-logo
+yarn add react react-dom antd @lobehub/ui
 ```
 
 ### Packages
@@ -449,6 +463,17 @@ $ cd ai-logo
 $ bun install
 $ bun start
 ```
+
+CI installs with bun and `.npmrc` sets `lockfile=false`, so no lockfile is committed and bun is what the build is tested against.
+
+You can install with another package manager, but bun still has to be on your PATH whichever one you pick: `build:toc` runs `bun scripts/tocWorkflow/index.ts` directly, and `build` and `start` shell out to `npm run` internally, so both binaries are needed regardless. Resolution can also differ from CI without a lockfile — reproduce a build failure under bun before reporting it.
+
+| Package manager | Install        | Dev server   | Build            |
+| --------------- | -------------- | ------------ | ---------------- |
+| **bun**         | `bun install`  | `bun start`  | `bun run build`  |
+| **npm**         | `npm install`  | `npm start`  | `npm run build`  |
+| **pnpm**        | `pnpm install` | `pnpm start` | `pnpm run build` |
+| **yarn**        | `yarn install` | `yarn start` | `yarn build`     |
 
 <div align="right">
 
