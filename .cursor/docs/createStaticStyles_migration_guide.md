@@ -25,7 +25,7 @@
 **之前（createStyles）：**
 
 ```typescript
-import { createStyles } from 'antd-style';
+import { createStyles } from "antd-style";
 
 export const useStyles = createStyles(({ css, token }) => {
   return {
@@ -40,7 +40,7 @@ export const useStyles = createStyles(({ css, token }) => {
 **之后（createStaticStyles）：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
+import { createStaticStyles } from "antd-style";
 
 export const styles = createStaticStyles(({ css, cssVar }) => {
   return {
@@ -281,8 +281,8 @@ const Component = () => {
 **样式文件：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
-import { cva } from 'class-variance-authority';
+import { createStaticStyles } from "antd-style";
+import { cva } from "class-variance-authority";
 
 export const styles = createStaticStyles(({ css, cssVar }) => {
   return {
@@ -306,7 +306,7 @@ export const styles = createStaticStyles(({ css, cssVar }) => {
 export const variants = cva(styles.root, {
   defaultVariants: {
     isDarkMode: false,
-    variant: 'filled',
+    variant: "filled",
   },
   variants: {
     isDarkMode: {
@@ -322,12 +322,12 @@ export const variants = cva(styles.root, {
     {
       class: styles.filledDark,
       isDarkMode: true,
-      variant: 'filled',
+      variant: "filled",
     },
     {
       class: styles.filledLight,
       isDarkMode: false,
-      variant: 'filled',
+      variant: "filled",
     },
   ],
 });
@@ -379,7 +379,7 @@ const Component = ({ variant = 'filled' }) => {
 **之前：**
 
 ```typescript
-import { createStyles } from 'antd-style';
+import { createStyles } from "antd-style";
 
 export const useStyles = createStyles(({ css, responsive }) => ({
   root: css`
@@ -393,8 +393,8 @@ export const useStyles = createStyles(({ css, responsive }) => ({
 **之后：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
-import { responsive } from 'antd-style';
+import { createStaticStyles } from "antd-style";
+import { responsive } from "antd-style";
 
 export const styles = createStaticStyles(({ css }) => ({
   root: css`
@@ -430,7 +430,7 @@ export const styles = createStaticStyles(({ css }) => ({
 **之前：**
 
 ```typescript
-import { createStyles } from 'antd-style';
+import { createStyles } from "antd-style";
 
 export const useStyles = createStyles(({ css, stylish }) => ({
   root: css`
@@ -443,9 +443,9 @@ export const useStyles = createStyles(({ css, stylish }) => ({
 **之后：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
+import { createStaticStyles } from "antd-style";
 
-import { lobeStaticStylish } from '@/styles';
+import { lobeStaticStylish } from "@/styles";
 
 export const styles = createStaticStyles(({ css }) => ({
   root: css`
@@ -486,7 +486,7 @@ export const useStyles = createStyles(({ css }, prefixCls: string) => ({
 **之后：**
 
 ```typescript
-const prefixCls = 'ant';
+const prefixCls = "ant";
 
 export const styles = createStaticStyles(({ css }) => ({
   root: css`
@@ -515,7 +515,7 @@ export const styles = createStaticStyles(({ css }) => ({
 **之前：**
 
 ```typescript
-import { readableColor } from 'polished';
+import { readableColor } from "polished";
 
 export const useStyles = createStyles(({ css, token }) => ({
   checked: css`
@@ -554,7 +554,7 @@ export const styles = createStaticStyles(({ css, cssVar }) => ({
 **之前：**
 
 ```typescript
-import { rgba } from 'polished';
+import { rgba } from "polished";
 
 export const useStyles = createStyles(({ css, token }) => ({
   root: css`
@@ -608,7 +608,7 @@ export const useStyles = createStyles(({ css, keyframes }) => {
 **之后：**
 
 ```typescript
-import { keyframes } from 'antd-style';
+import { keyframes } from "antd-style";
 
 const spin = keyframes`
   from { transform: rotate(0deg); }
@@ -671,19 +671,19 @@ export const variants = cva(styles.root, {
     {
       class: styles.filledDark,
       isDarkMode: true,
-      variant: 'filled',
+      variant: "filled",
     },
     {
       class: styles.filledLight,
       isDarkMode: false,
-      variant: 'filled',
+      variant: "filled",
     },
   ],
 });
 
 // 组件中
 const { isDarkMode } = useThemeMode();
-const className = variants({ isDarkMode, variant: 'filled' });
+const className = variants({ isDarkMode, variant: "filled" });
 ```
 
 ## ⚠️ 无法优化的场景
@@ -769,7 +769,7 @@ const scale = chroma.bezier([token.colorText, backgroundColor]).scale().colors(6
 **样式文件：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
+import { createStaticStyles } from "antd-style";
 
 export const styles = createStaticStyles(({ css, cssVar }) => ({
   root: css`
@@ -796,7 +796,7 @@ const Component = ({ className }) => {
 **样式文件：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
+import { createStaticStyles } from "antd-style";
 
 export const styles = createStaticStyles(({ css, cssVar }) => ({
   root: css`
@@ -840,7 +840,7 @@ const Component = ({ size = 24, className, style, ...rest }) => {
 **样式文件：**
 
 ```typescript
-import { createStaticStyles } from 'antd-style';
+import { createStaticStyles } from "antd-style";
 
 export const styles = createStaticStyles(({ css, cssVar }) => ({
   rootDark: css`

@@ -1,28 +1,28 @@
-'use client';
+"use client";
 
-import { Center, type CenterProps } from '@lobehub/ui';
-import { useThemeMode } from 'antd-style';
-import { CSSProperties, memo } from 'react';
+import { Center, type CenterProps } from "@lobehub/ui";
+import { useThemeMode } from "antd-style";
+import { CSSProperties, memo } from "react";
 
-import { IconType } from '@/types';
+import { IconType } from "@/types";
 
-import { getAvatarShadow } from './util';
+import { getAvatarShadow } from "./util";
 
-export interface IconAvatarProps extends Omit<CenterProps, 'children'> {
+export interface IconAvatarProps extends Omit<CenterProps, "children"> {
   Icon?: IconType;
   background?: string;
   color?: string;
   iconClassName?: string;
   iconMultiple?: number;
   iconStyle?: CSSProperties;
-  shape?: 'circle' | 'square';
+  shape?: "circle" | "square";
   size: number;
 }
 
 const IconAvatar = memo<IconAvatarProps>(
   ({
-    shape = 'circle',
-    color = '#fff',
+    shape = "circle",
+    color = "#fff",
     background,
     size,
     style,
@@ -35,14 +35,14 @@ const IconAvatar = memo<IconAvatarProps>(
     const { isDarkMode } = useThemeMode();
     return (
       <Center
-        flex={'none'}
+        flex={"none"}
         style={{
           background,
-          borderRadius: shape === 'circle' ? '50%' : Math.floor(size * 0.1),
+          borderRadius: shape === "circle" ? "50%" : Math.floor(size * 0.1),
           boxShadow: getAvatarShadow(isDarkMode, background),
           color,
           height: size,
-          overflow: 'hidden',
+          overflow: "hidden",
           width: size,
           ...style,
         }}

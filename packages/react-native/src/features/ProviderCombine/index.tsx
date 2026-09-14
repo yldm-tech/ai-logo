@@ -1,19 +1,19 @@
-import React, { memo, useMemo } from 'react';
-import { View, type ViewStyle } from 'react-native';
+import React, { memo, useMemo } from "react";
+import { View, type ViewStyle } from "react-native";
 
-import { RNIconCombineProps } from '@/features';
+import { RNIconCombineProps } from "@/features";
 
-import { rnProviderMappings } from '../providerConfig';
+import { rnProviderMappings } from "../providerConfig";
 
 export interface RNProviderCombineProps extends RNIconCombineProps {
   provider?: string;
   size?: number;
   style?: ViewStyle;
-  type?: 'mono' | 'color';
+  type?: "mono" | "color";
 }
 
 const RNProviderCombineMain = memo<RNProviderCombineProps>(
-  ({ provider: originProvider, size = 12, type = 'color', style, ...rest }) => {
+  ({ provider: originProvider, size = 12, type = "color", style, ...rest }) => {
     const Render = useMemo(() => {
       if (!originProvider) return undefined;
       const provider = originProvider.toLowerCase();
@@ -39,16 +39,16 @@ const RNProviderCombineMain = memo<RNProviderCombineProps>(
     ) : Render?.Icon?.Text ? (
       <Render.Icon.Text {...iconProps} {...rest} />
     ) : (
-      <View style={{ backgroundColor: '#f0f0f0', height: size, width: size }} {...rest} />
+      <View style={{ backgroundColor: "#f0f0f0", height: size, width: size }} {...rest} />
     );
 
     return (
       <View
         style={[
           {
-            alignItems: 'center',
+            alignItems: "center",
             height: size * 1.5,
-            justifyContent: 'center',
+            justifyContent: "center",
           },
           style,
         ]}
@@ -60,6 +60,6 @@ const RNProviderCombineMain = memo<RNProviderCombineProps>(
   },
 );
 
-RNProviderCombineMain.displayName = 'RNProviderCombineMain';
+RNProviderCombineMain.displayName = "RNProviderCombineMain";
 
 export default RNProviderCombineMain;

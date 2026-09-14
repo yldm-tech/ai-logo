@@ -3,33 +3,37 @@
   "version": "2.13.1",
   "description": "Popular AI / LLM Model Brand Icons for React Native and Expo",
   "keywords": [
-    "lobehub",
-    "llm icons",
-    "llm brand logo",
-    "react-native",
     "expo",
+    "llm brand logo",
+    "llm icons",
+    "lobehub",
+    "mobile icons",
     "react native icons",
-    "react-native-svg",
-    "mobile icons"
+    "react-native",
+    "react-native-svg"
   ],
   "homepage": "https://github.com/lobehub/lobe-icons",
   "bugs": {
     "url": "https://github.com/lobehub/lobe-icons/issues/new"
   },
+  "license": "MIT",
+  "author": "LobeHub <i@lobehub.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/lobehub/lobe-icons.git"
   },
-  "license": "MIT",
-  "author": "LobeHub <i@lobehub.com>",
-  "sideEffects": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "react-native": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "react-native": "dist/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "prebuild": "npm run clean",
     "build": "NODE_OPTIONS=\"--max-old-space-size=16384 --max-semi-space-size=1024\" tsup",
@@ -62,9 +66,5 @@
     "react": "^19.0.0",
     "react-native": ">=0.76.9",
     "react-native-svg": ">=15.8.0"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
   }
 }

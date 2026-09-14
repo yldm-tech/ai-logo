@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { memo } from 'react';
+import { memo } from "react";
 
-import { useFillIds } from '@/hooks/useFillId';
-import type { IconType } from '@/types';
+import { useFillIds } from "@/hooks/useFillId";
+import type { IconType } from "@/types";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
-const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
+const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
   const [a, b, c, d, e, f, g, h, i, j, k, l, m] = useFillIds(`${TITLE}-brand`, 13);
   return (
     <svg
       fill="currentColor"
       fillRule="evenodd"
       height={size}
-      style={{ flex: 'none', lineHeight: 1, ...style }}
+      style={{ flex: "none", lineHeight: 1, ...style }}
       viewBox="0 0 103 24"
       xmlns="http://www.w3.org/2000/svg"
       {...rest}

@@ -36,8 +36,8 @@ The `static-*` workspace packages (`static-svg`, `static-png`, `static-webp`, `s
    ```
 2. **Import** — in `providerConfig.tsx`, import the icon (alphabetical order). Main package uses the `@/` alias, RN uses relative paths:
    ```ts
-   import Grok from '@/Grok';          // main package
-   import Grok from '../icons/Grok';   // react-native package
+   import Grok from "@/Grok"; // main package
+   import Grok from "../icons/Grok"; // react-native package
    ```
 3. **Mapping entry** — add to `providerMappings`, near related entries:
    ```ts

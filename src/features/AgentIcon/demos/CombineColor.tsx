@@ -1,12 +1,12 @@
-import { AgentIcon, agentMappings } from 'ai-logo';
-import { Grid } from '@lobehub/ui';
+import { AgentIcon, agentMappings } from "ai-logo";
+import { Grid } from "@lobehub/ui";
 
 export default () => {
   return (
-    <Grid gap={16} rows={2} width={'100%'}>
+    <Grid gap={16} rows={2} width={"100%"}>
       {Object.values(agentMappings).map((item) => {
-        const agent = item.keywords[0].replace('^', '');
-        return <AgentIcon agent={agent} key={agent} size={28} type={'combine-color'} />;
+        const agent = item.keywords[0].replace("^", "");
+        return <AgentIcon agent={agent} key={agent} size={28} type={"combine-color"} />;
       })}
     </Grid>
   );

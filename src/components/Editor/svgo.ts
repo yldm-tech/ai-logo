@@ -1,4 +1,4 @@
-import { type Config, type PluginConfig, optimize } from 'svgo/browser';
+import { type Config, type PluginConfig, optimize } from "svgo/browser";
 
 export interface SvgoConfig {
   [key: string]: any;
@@ -41,42 +41,42 @@ export const defaultPlugins = {
 };
 
 const PRESET_OVERRIDE_KEYS = [
-  'cleanupAttrs',
-  'cleanupEnableBackground',
-  'cleanupIds',
-  'cleanupNumericValues',
-  'collapseGroups',
-  'convertColors',
-  'convertPathData',
-  'convertShapeToPath',
-  'convertTransform',
-  'mergePaths',
-  'moveElemsAttrsToGroup',
-  'moveGroupAttrsToElems',
-  'removeComments',
-  'removeDesc',
-  'removeDoctype',
-  'removeEditorsNSData',
-  'removeEmptyAttrs',
-  'removeEmptyContainers',
-  'removeEmptyText',
-  'removeHiddenElems',
-  'removeMetadata',
-  'removeNonInheritableGroupAttrs',
-  'removeUnknownsAndDefaults',
-  'removeUnusedNS',
-  'removeUselessDefs',
-  'removeUselessStrokeAndFill',
-  'removeXMLProcInst',
-  'sortAttrs',
+  "cleanupAttrs",
+  "cleanupEnableBackground",
+  "cleanupIds",
+  "cleanupNumericValues",
+  "collapseGroups",
+  "convertColors",
+  "convertPathData",
+  "convertShapeToPath",
+  "convertTransform",
+  "mergePaths",
+  "moveElemsAttrsToGroup",
+  "moveGroupAttrsToElems",
+  "removeComments",
+  "removeDesc",
+  "removeDoctype",
+  "removeEditorsNSData",
+  "removeEmptyAttrs",
+  "removeEmptyContainers",
+  "removeEmptyText",
+  "removeHiddenElems",
+  "removeMetadata",
+  "removeNonInheritableGroupAttrs",
+  "removeUnknownsAndDefaults",
+  "removeUnusedNS",
+  "removeUselessDefs",
+  "removeUselessStrokeAndFill",
+  "removeXMLProcInst",
+  "sortAttrs",
 ] as const;
 
 const STANDALONE_BOOLEAN_PLUGINS = [
-  'convertStyleToAttrs',
-  'removeDimensions',
-  'removeRasterImages',
-  'removeTitle',
-  'removeViewBox',
+  "convertStyleToAttrs",
+  "removeDimensions",
+  "removeRasterImages",
+  "removeTitle",
+  "removeViewBox",
 ] as const;
 
 const toPluginEnabled = (value: unknown): boolean => value !== false && value !== undefined;
@@ -94,7 +94,7 @@ const buildPlugins = (config: SvgoConfig = {}): PluginConfig[] => {
 
   const plugins: PluginConfig[] = [
     {
-      name: 'preset-default',
+      name: "preset-default",
       params: { overrides },
     },
   ];
@@ -106,20 +106,20 @@ const buildPlugins = (config: SvgoConfig = {}): PluginConfig[] => {
   }
 
   const removeAttrs = normalized.removeAttrs;
-  if (removeAttrs && typeof removeAttrs === 'object' && removeAttrs.attrs) {
+  if (removeAttrs && typeof removeAttrs === "object" && removeAttrs.attrs) {
     plugins.push({
-      name: 'removeAttrs',
+      name: "removeAttrs",
       params: { attrs: removeAttrs.attrs },
     });
   }
 
   const addAttributes = normalized.addAttributesToSVGElement;
-  if (addAttributes && typeof addAttributes === 'object') {
+  if (addAttributes && typeof addAttributes === "object") {
     const attributes =
       addAttributes.attributes ?? (addAttributes.attribute ? [addAttributes.attribute] : undefined);
     if (attributes?.length) {
       plugins.push({
-        name: 'addAttributesToSVGElement',
+        name: "addAttributesToSVGElement",
         params: { attributes },
       });
     }

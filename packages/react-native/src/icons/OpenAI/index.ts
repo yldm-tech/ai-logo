@@ -1,7 +1,7 @@
-import Avatar from './components/Avatar';
-import Combine from './components/Combine';
-import Mono from './components/Mono';
-import Text from './components/Text';
+import Avatar from "./components/Avatar";
+import Combine from "./components/Combine";
+import Mono from "./components/Mono";
+import Text from "./components/Text";
 import {
   COLOR_GPT_3,
   COLOR_GPT_4,
@@ -11,7 +11,7 @@ import {
   COLOR_PLATFORM,
   COLOR_PRIMARY,
   TITLE,
-} from './style';
+} from "./style";
 
 export type CompoundedIcon = typeof Mono & {
   Avatar: typeof Avatar;

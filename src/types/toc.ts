@@ -4,7 +4,7 @@ export interface IconToc {
   desc: string;
   docsUrl: string;
   fullTitle: string;
-  group: 'model' | 'provider' | 'application';
+  group: "model" | "provider" | "application";
   id: string;
   param: {
     hasAvatar: boolean;

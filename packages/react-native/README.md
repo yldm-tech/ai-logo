@@ -77,7 +77,7 @@ pnpm add expo-linear-gradient
 ### Basic Usage
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
@@ -91,12 +91,12 @@ export default function App() {
 ### With Styling
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Adobe size={24} style={{ marginRight: 8, color: '#007AFF' }} />
+      <Adobe size={24} style={{ marginRight: 8, color: "#007AFF" }} />
     </View>
   );
 }
@@ -105,7 +105,7 @@ export default function App() {
 ### Color Version
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
@@ -119,7 +119,7 @@ export default function App() {
 ### Text Version
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
@@ -133,7 +133,7 @@ export default function App() {
 ### Avatar Version
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
@@ -147,7 +147,7 @@ export default function App() {
 ### Avatar with Gradient Background
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
@@ -165,7 +165,7 @@ export default function App() {
 ### Combine Version (Icon + Text)
 
 ```tsx
-import { Adobe } from '@lobehub/icons-rn';
+import { Adobe } from "@lobehub/icons-rn";
 
 export default function App() {
   return (
@@ -218,7 +218,7 @@ export default function App() {
 This package includes full TypeScript support:
 
 ```tsx
-import { Adobe, type AdobeProps } from '@lobehub/icons-rn';
+import { Adobe, type AdobeProps } from "@lobehub/icons-rn";
 
 // All props are properly typed
 const MyComponent: React.FC = () => {

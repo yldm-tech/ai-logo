@@ -1,6 +1,6 @@
-import Avatar from './components/Avatar';
-import Mono from './components/Mono';
-import { COLOR_PRIMARY, TITLE } from './style';
+import Avatar from "./components/Avatar";
+import Mono from "./components/Mono";
+import { COLOR_PRIMARY, TITLE } from "./style";
 
 export type CompoundedIcon = typeof Mono & {
   Avatar: typeof Avatar;

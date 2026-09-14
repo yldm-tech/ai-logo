@@ -1,6 +1,6 @@
 packages:
-  - '*'
-  - 'packages/*'
+  - "*"
+  - "packages/*"
 allowBuilds:
   core-js: true
   core-js-pure: true
@@ -12,14 +12,14 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@0.3.1
   vitest: 4.1.11
   vite-plus: 0.3.1
-  '@vitest/coverage-v8': 4.1.11
+  "@vitest/coverage-v8": 4.1.11
 overrides:
-  vite@*: 'catalog:'
-  vitest@*: 'catalog:'
+  vite@*: "catalog:"
+  vitest@*: "catalog:"
 peerDependencyRules:
   allowAny:
     - vite
     - vitest
   allowedVersions:
-    vite: '*'
-    vitest: '*'
+    vite: "*"
+    vitest: "*"

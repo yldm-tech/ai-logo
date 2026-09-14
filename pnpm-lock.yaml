@@ -264,9 +264,6 @@ importers:
       dpdm:
         specifier: ^3.15.1
         version: 3.15.1
-      eslint:
-        specifier: ^8.57.1
-        version: 8.57.1(supports-color@9.4.0)
       glob:
         specifier: ^11.1.0
         version: 11.1.0
@@ -294,9 +291,6 @@ importers:
       postcss-styled-syntax:
         specifier: ^0.7.2
         version: 0.7.2(postcss@8.5.28)
-      prettier:
-        specifier: ^3.9.5
-        version: 3.9.6
       puppeteer:
         specifier: ^24.43.1
         version: 24.43.1(supports-color@9.4.0)(typescript@5.9.3)

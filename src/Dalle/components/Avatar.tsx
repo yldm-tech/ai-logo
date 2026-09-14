@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { memo } from 'react';
+import { memo } from "react";
 
-import IconAvatar, { type IconAvatarProps } from '@/features/IconAvatar';
+import IconAvatar, { type IconAvatarProps } from "@/features/IconAvatar";
 
-import { AVATAR_BACKGROUND, AVATAR_COLOR, AVATAR_ICON_MULTIPLE, TITLE } from '../style';
+import { AVATAR_BACKGROUND, AVATAR_COLOR, AVATAR_ICON_MULTIPLE, TITLE } from "../style";
 
-export type AvatarProps = Omit<IconAvatarProps, 'Icon'>;
+export type AvatarProps = Omit<IconAvatarProps, "Icon">;
 
 const Avatar = memo<AvatarProps>(({ ...rest }) => {
   return (

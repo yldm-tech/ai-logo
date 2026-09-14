@@ -1,12 +1,12 @@
-import React, { memo } from 'react';
-import { Defs, LinearGradient, Path, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Defs, LinearGradient, Path, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillIds } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillIds } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
-const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }) => {
+const Icon = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
   const [a, b, c, d, e, f, g, h, i, j, k, l, m] = useFillIds(`${TITLE}-brand`, 13);
   return (
     <Svg
@@ -154,6 +154,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }
   );
 });
 
-Icon.displayName = 'MetaBrandColor';
+Icon.displayName = "MetaBrandColor";
 
 export default Icon;

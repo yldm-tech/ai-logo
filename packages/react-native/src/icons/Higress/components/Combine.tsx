@@ -1,15 +1,15 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { RNIconCombineProps } from '@/features';
+import { RNIconCombineProps } from "@/features";
 
-import Mono from './Text';
-import Color from './TextColor';
+import Mono from "./Text";
+import Color from "./TextColor";
 
-export interface CombineProps extends Omit<RNIconCombineProps, 'Icon' | 'Text'> {
-  type?: 'color' | 'mono';
+export interface CombineProps extends Omit<RNIconCombineProps, "Icon" | "Text"> {
+  type?: "color" | "mono";
 }
-const Combine = memo<CombineProps>(({ type = 'mono', ...rest }) => {
-  return type === 'color' ? <Color {...(rest as any)} /> : <Mono {...(rest as any)} />;
+const Combine = memo<CombineProps>(({ type = "mono", ...rest }) => {
+  return type === "color" ? <Color {...(rest as any)} /> : <Mono {...(rest as any)} />;
 });
 
 export default Combine;

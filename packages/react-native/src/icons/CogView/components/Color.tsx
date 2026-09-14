@@ -1,10 +1,10 @@
-import React, { memo } from 'react';
-import { Defs, LinearGradient, Path, RadialGradient, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Defs, LinearGradient, Path, RadialGradient, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillIds } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillIds } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
 const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   const [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A] =
@@ -434,6 +434,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   );
 });
 
-Icon.displayName = 'CogViewColor';
+Icon.displayName = "CogViewColor";
 
 export default Icon;

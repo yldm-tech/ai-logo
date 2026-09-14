@@ -1,9 +1,9 @@
-import React, { memo } from 'react';
-import { Path, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Path, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
+import type { RNIconProps } from "@/features";
 
-const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }) => {
+const Icon = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
   return (
     <Svg
       color={color}
@@ -26,6 +26,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }
   );
 });
 
-Icon.displayName = 'CoquiMono';
+Icon.displayName = "CoquiMono";
 
 export default Icon;

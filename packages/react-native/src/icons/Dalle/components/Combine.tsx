@@ -1,12 +1,12 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { RNIconCombine, type RNIconCombineProps } from '@/features';
-import Mono from '@/icons/OpenAI/components/Mono';
+import { RNIconCombine, type RNIconCombineProps } from "@/features";
+import Mono from "@/icons/OpenAI/components/Mono";
 
-import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from '../style';
-import Text from './Text';
+import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from "../style";
+import Text from "./Text";
 
-export type CombineProps = Omit<RNIconCombineProps, 'Icon' | 'Text'>;
+export type CombineProps = Omit<RNIconCombineProps, "Icon" | "Text">;
 
 const Combine = memo<CombineProps>(({ extraStyle, size = 24, ...rest }) => {
   return (

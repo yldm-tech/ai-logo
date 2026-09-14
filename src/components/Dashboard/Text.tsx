@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import * as Icons from 'ai-logo';
-import { Flexbox } from '@lobehub/ui';
-import { StoryBook, useControls, useCreateStore } from '@lobehub/ui/storybook';
-import { createStaticStyles } from 'antd-style';
-import { memo } from 'react';
+import * as Icons from "ai-logo";
+import { Flexbox } from "@lobehub/ui";
+import { StoryBook, useControls, useCreateStore } from "@lobehub/ui/storybook";
+import { createStaticStyles } from "antd-style";
+import { memo } from "react";
 
-import IconPreview from '@/components/IconPreview';
+import IconPreview from "@/components/IconPreview";
 
 const data = Object.values(Icons).filter((icon: any) => icon?.colorPrimary);
 
@@ -26,7 +26,7 @@ const Dashboard = memo<{ className: string }>(({ className }) => {
     {
       color: {
         color: true,
-        value: '#ffffff',
+        value: "#ffffff",
       },
       size: {
         max: 96,
@@ -40,13 +40,13 @@ const Dashboard = memo<{ className: string }>(({ className }) => {
 
   return (
     <StoryBook className={className} levaStore={store}>
-      <Flexbox align={'center'} gap={4} horizontal justify={'center'} style={{ flexWrap: 'wrap' }}>
+      <Flexbox align={"center"} gap={4} horizontal justify={"center"} style={{ flexWrap: "wrap" }}>
         {data.map((Icon: any, index) => {
           const IconRender = Icon.Text || Icon.Brand;
           if (!IconRender) return null;
           return (
             <IconPreview className={styles.item} key={index}>
-              <IconRender color={color === '#ffffff' ? undefined : color} size={size} />
+              <IconRender color={color === "#ffffff" ? undefined : color} size={size} />
             </IconPreview>
           );
         })}

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { Flexbox } from '@lobehub/ui';
-import { createStaticStyles } from 'antd-style';
+import { Flexbox } from "@lobehub/ui";
+import { createStaticStyles } from "antd-style";
 import {
   PropsWithChildren,
   memo,
@@ -9,7 +9,7 @@ import {
   useLayoutEffect,
   useRef,
   useSyncExternalStore,
-} from 'react';
+} from "react";
 
 const styles = createStaticStyles(({ css, cssVar }) => ({
   container: css`
@@ -31,17 +31,17 @@ const unsubscribe = () => {};
 const subscribe = () => unsubscribe;
 
 const namespaceSvgIds = (container: HTMLDivElement, namespace: string) => {
-  for (const [svgIndex, svg] of [...container.querySelectorAll('svg')].entries()) {
+  for (const [svgIndex, svg] of [...container.querySelectorAll("svg")].entries()) {
     const idMap = new Map<string, string>();
 
-    for (const element of svg.querySelectorAll<HTMLElement>('[id]')) {
+    for (const element of svg.querySelectorAll<HTMLElement>("[id]")) {
       const currentId = element.id;
       const namespacedId = `${namespace}-${svgIndex}-${currentId}`;
       idMap.set(currentId, namespacedId);
       element.id = namespacedId;
     }
 
-    for (const element of svg.querySelectorAll('*')) {
+    for (const element of svg.querySelectorAll("*")) {
       for (const attribute of element.getAttributeNames()) {
         const currentValue = element.getAttribute(attribute);
         if (!currentValue) continue;
@@ -52,17 +52,17 @@ const namespaceSvgIds = (container: HTMLDivElement, namespace: string) => {
           if (nextValue === `#${currentId}`) nextValue = `#${namespacedId}`;
         }
 
-        if (attribute === 'aria-describedby' || attribute === 'aria-labelledby') {
+        if (attribute === "aria-describedby" || attribute === "aria-labelledby") {
           nextValue = nextValue
             .split(/\s+/)
             .map((id) => idMap.get(id) ?? id)
-            .join(' ');
+            .join(" ");
         }
 
         if (nextValue !== currentValue) element.setAttribute(attribute, nextValue);
       }
 
-      if (element.tagName.toLowerCase() === 'style' && element.textContent) {
+      if (element.tagName.toLowerCase() === "style" && element.textContent) {
         let nextValue = element.textContent;
         for (const [currentId, namespacedId] of idMap) {
           nextValue = nextValue.replaceAll(`url(#${currentId})`, `url(#${namespacedId})`);
@@ -76,7 +76,7 @@ const namespaceSvgIds = (container: HTMLDivElement, namespace: string) => {
 const DocsPreview = memo<PropsWithChildren>(({ children }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const hydrated = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot);
-  const namespace = `docs-preview-${useId().replaceAll(/\W/g, '')}`;
+  const namespace = `docs-preview-${useId().replaceAll(/\W/g, "")}`;
 
   useLayoutEffect(() => {
     if (hydrated && containerRef.current) namespaceSvgIds(containerRef.current, namespace);
@@ -84,10 +84,10 @@ const DocsPreview = memo<PropsWithChildren>(({ children }) => {
 
   return (
     <Flexbox
-      align={'center'}
+      align={"center"}
       className={styles.container}
       data-docs-preview
-      justify={'center'}
+      justify={"center"}
       ref={containerRef}
     >
       {hydrated ? children : null}

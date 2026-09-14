@@ -1,18 +1,18 @@
-import { Tag, TagProps } from '@lobehub/ui';
-import { memo } from 'react';
+import { Tag, TagProps } from "@lobehub/ui";
+import { memo } from "react";
 
-import ModelIcon from '../ModelIcon';
+import ModelIcon from "../ModelIcon";
 
-export interface ModelTagProps extends Omit<TagProps, 'icon' | 'children'> {
+export interface ModelTagProps extends Omit<TagProps, "icon" | "children"> {
   model: string;
-  type?: 'color' | 'mono';
+  type?: "color" | "mono";
 }
-const ModelTag = memo<ModelTagProps>(({ type = 'mono', model, ...rest }) => (
+const ModelTag = memo<ModelTagProps>(({ type = "mono", model, ...rest }) => (
   <Tag icon={<ModelIcon model={model} type={type} />} {...rest}>
     {model}
   </Tag>
 ));
 
-ModelTag.displayName = 'ModelTag';
+ModelTag.displayName = "ModelTag";
 
 export default ModelTag;

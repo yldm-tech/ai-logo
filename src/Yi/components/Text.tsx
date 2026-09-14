@@ -1,1 +1,1 @@
-export { default } from '@/ZeroOne/components/Text';
+export { default } from "@/ZeroOne/components/Text";

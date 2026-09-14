@@ -1,10 +1,10 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { RNIconCombine, type RNIconCombineProps } from '@/features';
+import { RNIconCombine, type RNIconCombineProps } from "@/features";
 
-import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from '../style';
-import Mono from './Mono';
-import Text from './Text';
+import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from "../style";
+import Mono from "./Mono";
+import Text from "./Text";
 
 const Combine = memo<RNIconCombineProps>(({ ...rest }) => {
   return (

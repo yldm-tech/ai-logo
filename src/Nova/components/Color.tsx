@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { memo } from 'react';
+import { memo } from "react";
 
-import { useFillIds } from '@/hooks/useFillId';
-import type { IconType } from '@/types';
+import { useFillIds } from "@/hooks/useFillId";
+import type { IconType } from "@/types";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
-const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
+const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
   const [a, b, c] = useFillIds(TITLE, 3);
   return (
     <svg
       height={size}
-      style={{ flex: 'none', lineHeight: 1, ...style }}
+      style={{ flex: "none", lineHeight: 1, ...style }}
       viewBox="0 0 33 32"
       width={size}
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
           height="32"
           id={a.id}
           maskUnits="userSpaceOnUse"
-          style={{ maskType: 'luminance' }}
+          style={{ maskType: "luminance" }}
           width="32"
           x="0"
           y="0"
@@ -35,7 +35,7 @@ const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
           height="32"
           id={b.id}
           maskUnits="userSpaceOnUse"
-          style={{ maskType: 'alpha' }}
+          style={{ maskType: "alpha" }}
           width="32"
           x="0"
           y="0"

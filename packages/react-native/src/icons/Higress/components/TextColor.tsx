@@ -1,12 +1,12 @@
-import React, { memo } from 'react';
-import { Defs, LinearGradient, Path, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Defs, LinearGradient, Path, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillIds } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillIds } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
-const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }) => {
+const Icon = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
   const [a, b] = useFillIds(TITLE, 2);
   return (
     <Svg
@@ -74,6 +74,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }
   );
 });
 
-Icon.displayName = 'HigressTextColor';
+Icon.displayName = "HigressTextColor";
 
 export default Icon;

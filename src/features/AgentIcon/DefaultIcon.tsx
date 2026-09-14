@@ -1,7 +1,7 @@
-import { Icon } from '@lobehub/ui';
-import { cssVar } from 'antd-style';
-import { Bot } from 'lucide-react';
-import { CSSProperties, memo } from 'react';
+import { Icon } from "@lobehub/ui";
+import { cssVar } from "antd-style";
+import { Bot } from "lucide-react";
+import { CSSProperties, memo } from "react";
 
 interface DefaultIconProps {
   className?: string;

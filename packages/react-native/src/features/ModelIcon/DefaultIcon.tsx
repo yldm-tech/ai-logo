@@ -1,20 +1,20 @@
-import React, { memo } from 'react';
-import { Text, type ViewStyle } from 'react-native';
+import React, { memo } from "react";
+import { Text, type ViewStyle } from "react-native";
 
-import type { RNIconProps } from '../types';
+import type { RNIconProps } from "../types";
 
 interface DefaultIconProps extends RNIconProps {
   style?: ViewStyle;
 }
 
-const DefaultIcon = memo<DefaultIconProps>(({ color = '#666', size = 12, style, ...rest }) => {
+const DefaultIcon = memo<DefaultIconProps>(({ color = "#666", size = 12, style, ...rest }) => {
   return (
     <Text
       style={[
         {
           color,
           fontSize: size,
-          fontWeight: 'bold',
+          fontWeight: "bold",
         },
         style,
       ]}

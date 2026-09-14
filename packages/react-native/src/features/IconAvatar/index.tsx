@@ -1,8 +1,8 @@
-import { LinearGradient } from 'expo-linear-gradient';
-import React, { memo, useMemo } from 'react';
-import { View, type ViewStyle } from 'react-native';
+import { LinearGradient } from "expo-linear-gradient";
+import React, { memo, useMemo } from "react";
+import { View, type ViewStyle } from "react-native";
 
-import type { RNIconProps } from '../types';
+import type { RNIconProps } from "../types";
 
 // Gradient parsing interfaces
 interface GradientInfo {
@@ -39,14 +39,14 @@ const parseGradientDirection = (
     string,
     { end: { x: number; y: number }; start: { x: number; y: number } }
   > = {
-    'to bottom': { end: { x: 0, y: 1 }, start: { x: 0, y: 0 } },
-    'to bottom left': { end: { x: 0, y: 1 }, start: { x: 1, y: 0 } },
-    'to bottom right': { end: { x: 1, y: 1 }, start: { x: 0, y: 0 } },
-    'to left': { end: { x: 0, y: 0 }, start: { x: 1, y: 0 } },
-    'to right': { end: { x: 1, y: 0 }, start: { x: 0, y: 0 } },
-    'to top': { end: { x: 0, y: 0 }, start: { x: 0, y: 1 } },
-    'to top left': { end: { x: 0, y: 0 }, start: { x: 1, y: 1 } },
-    'to top right': { end: { x: 1, y: 0 }, start: { x: 0, y: 1 } },
+    "to bottom": { end: { x: 0, y: 1 }, start: { x: 0, y: 0 } },
+    "to bottom left": { end: { x: 0, y: 1 }, start: { x: 1, y: 0 } },
+    "to bottom right": { end: { x: 1, y: 1 }, start: { x: 0, y: 0 } },
+    "to left": { end: { x: 0, y: 0 }, start: { x: 1, y: 0 } },
+    "to right": { end: { x: 1, y: 0 }, start: { x: 0, y: 0 } },
+    "to top": { end: { x: 0, y: 0 }, start: { x: 0, y: 1 } },
+    "to top left": { end: { x: 0, y: 0 }, start: { x: 1, y: 1 } },
+    "to top right": { end: { x: 1, y: 0 }, start: { x: 0, y: 1 } },
   };
 
   // Handle keyword directions
@@ -62,7 +62,7 @@ const parseGradientDirection = (
   }
 
   // Default to bottom
-  return directionMap['to bottom'];
+  return directionMap["to bottom"];
 };
 
 // Parse CSS linear-gradient string
@@ -71,7 +71,7 @@ const parseLinearGradient = (gradientString: string): GradientInfo | null => {
     const match = gradientString.match(/linear-gradient\(([^)]+)\)/);
     if (!match) return null;
 
-    const parts = match[1].split(',').map((s) => s.trim());
+    const parts = match[1].split(",").map((s) => s.trim());
     if (parts.length < 2) return null;
 
     let direction = parts[0];
@@ -120,7 +120,7 @@ const parseLinearGradient = (gradientString: string): GradientInfo | null => {
       locations,
     };
   } catch (error) {
-    console.warn('Failed to parse gradient:', gradientString, error);
+    console.warn("Failed to parse gradient:", gradientString, error);
     return null;
   }
 };
@@ -128,12 +128,12 @@ const parseLinearGradient = (gradientString: string): GradientInfo | null => {
 // Extract fallback color from gradient string
 const extractFallbackColor = (gradientString: string): string => {
   const colorMatch = gradientString.match(/#[\dA-Fa-f]{6}|#[\dA-Fa-f]{3}/);
-  return colorMatch ? colorMatch[0] : '#cccccc';
+  return colorMatch ? colorMatch[0] : "#cccccc";
 };
 
 // Check if background is a gradient
 const isGradient = (background?: string): boolean => {
-  return background?.includes('linear-gradient(') ?? false;
+  return background?.includes("linear-gradient(") ?? false;
 };
 
 export interface RNIconAvatarProps {
@@ -142,15 +142,15 @@ export interface RNIconAvatarProps {
   color?: string;
   iconMultiple?: number;
   iconStyle?: ViewStyle;
-  shape?: 'circle' | 'square';
+  shape?: "circle" | "square";
   size: number;
   style?: ViewStyle;
 }
 
 const RNIconAvatar = memo<RNIconAvatarProps>(
   ({
-    shape = 'circle',
-    color = '#fff',
+    shape = "circle",
+    color = "#fff",
     background,
     size,
     style,
@@ -159,7 +159,7 @@ const RNIconAvatar = memo<RNIconAvatarProps>(
     iconStyle,
     ...rest
   }) => {
-    const borderRadius = shape === 'circle' ? size / 2 : Math.floor(size * 0.1);
+    const borderRadius = shape === "circle" ? size / 2 : Math.floor(size * 0.1);
 
     // Parse gradient information
     const gradientInfo = useMemo(() => {
@@ -170,10 +170,10 @@ const RNIconAvatar = memo<RNIconAvatarProps>(
     }, [background]);
 
     const containerStyle: ViewStyle = {
-      alignItems: 'center',
+      alignItems: "center",
       borderRadius,
       height: size,
-      justifyContent: 'center',
+      justifyContent: "center",
       width: size,
     };
 
@@ -200,8 +200,8 @@ const RNIconAvatar = memo<RNIconAvatarProps>(
     }
 
     // Fallback to solid color
-    const fallbackBackground = isGradient(background || '')
-      ? extractFallbackColor(background || '')
+    const fallbackBackground = isGradient(background || "")
+      ? extractFallbackColor(background || "")
       : background;
 
     return (

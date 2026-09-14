@@ -1,12 +1,12 @@
-import { kebabCase } from 'es-toolkit';
+import { kebabCase } from "es-toolkit";
 
 export const docsKebabCase = (string: string) =>
   string
-    .replaceAll(/([A-Z]+)([A-Z][a-z])/g, '$1-$2')
-    .replaceAll(/([\da-z])([A-Z])/g, '$1-$2')
-    .replaceAll(/['’]/g, '')
-    .replaceAll(/[^\dA-Za-z]+/g, '-')
-    .replaceAll(/^-|-$/g, '')
+    .replaceAll(/([A-Z]+)([A-Z][a-z])/g, "$1-$2")
+    .replaceAll(/([\da-z])([A-Z])/g, "$1-$2")
+    .replaceAll(/['’]/g, "")
+    .replaceAll(/[^\dA-Za-z]+/g, "-")
+    .replaceAll(/^-|-$/g, "")
     .toLowerCase();
 
 export const customKebabCase = (string: string) => {
@@ -22,5 +22,5 @@ export const customKebabCase = (string: string) => {
 
       return kebabCase(part);
     })
-    .join('-');
+    .join("-");
 };

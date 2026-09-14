@@ -1,21 +1,21 @@
-import { consola } from 'consola';
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
-import pMap from 'p-map';
-import puppeteer, { type Browser } from 'puppeteer';
-import { ComponentType, createElement } from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
-import sharp from 'sharp';
+import { consola } from "consola";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import pMap from "p-map";
+import puppeteer, { type Browser } from "puppeteer";
+import { ComponentType, createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import sharp from "sharp";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const rootDir = resolve(__dirname, '../..');
-const srcDir = resolve(rootDir, 'src');
-const outputDir = resolve(rootDir, 'packages/static-svg/icons');
-const outputPngDir = resolve(rootDir, 'packages/static-png');
-const outputWebpDir = resolve(rootDir, 'packages/static-webp');
-const outputAvatarsDir = resolve(rootDir, 'packages/static-avatar/avatars');
+const rootDir = resolve(__dirname, "../..");
+const srcDir = resolve(rootDir, "src");
+const outputDir = resolve(rootDir, "packages/static-svg/icons");
+const outputPngDir = resolve(rootDir, "packages/static-png");
+const outputWebpDir = resolve(rootDir, "packages/static-webp");
+const outputAvatarsDir = resolve(rootDir, "packages/static-avatar/avatars");
 
 type CompoundIcon = ComponentType & {
   Avatar?: ComponentType;
@@ -28,7 +28,7 @@ type CompoundIcon = ComponentType & {
 };
 
 const getIconIds = () => {
-  const source = readFileSync(resolve(srcDir, 'icons.ts'), 'utf8');
+  const source = readFileSync(resolve(srcDir, "icons.ts"), "utf8");
   return Array.from(source.matchAll(/default as (\w+)/g), (match) => match[1]);
 };
 
@@ -36,13 +36,13 @@ const loadIcons = async (): Promise<Record<string, CompoundIcon>> => {
   // Preload feature modules to avoid circular initialization:
   // any icon -> @/features/IconAvatar -> @lobehub/ui -> ai-logo (src/index.ts)
   // -> src/features -> modelConfig -> back into the icon being loaded.
-  await import(pathToFileURL(resolve(srcDir, 'features/IconAvatar/index.tsx')).href);
-  await import(pathToFileURL(resolve(srcDir, 'features/IconCombine/index.tsx')).href);
+  await import(pathToFileURL(resolve(srcDir, "features/IconAvatar/index.tsx")).href);
+  await import(pathToFileURL(resolve(srcDir, "features/IconCombine/index.tsx")).href);
 
   const iconIds = getIconIds();
   const entries = await Promise.all(
     iconIds.map(async (id) => {
-      const iconPath = resolve(srcDir, id, 'index.ts');
+      const iconPath = resolve(srcDir, id, "index.ts");
       const mod = (await import(pathToFileURL(iconPath).href)) as { default: CompoundIcon };
       return [id, mod.default] as const;
     }),
@@ -50,12 +50,12 @@ const loadIcons = async (): Promise<Record<string, CompoundIcon>> => {
   return Object.fromEntries(entries);
 };
 
-type ThemeMode = 'light' | 'dark';
+type ThemeMode = "light" | "dark";
 
 const themeColors = {
   // 浅色主题使用黑色
-  dark: '#FFFFFF',
-  light: '#000000', // 深色主题使用白色
+  dark: "#FFFFFF",
+  light: "#000000", // 深色主题使用白色
 };
 
 class SvgWorkflow {
@@ -69,11 +69,11 @@ class SvgWorkflow {
     if (!this.browserPromise) {
       this.browserPromise = puppeteer.launch({
         args: [
-          '--no-sandbox',
-          '--disable-setuid-sandbox',
-          '--disable-dev-shm-usage',
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-dev-shm-usage",
           // 允许 file:// 下加载字体等资源
-          '--allow-file-access-from-files',
+          "--allow-file-access-from-files",
         ],
         headless: true,
       });
@@ -100,13 +100,13 @@ class SvgWorkflow {
 
     const node = createElement(Component, {
       // @ts-ignore
-      shape: 'square',
+      shape: "square",
       size,
       style: {
-        alignItems: 'center',
+        alignItems: "center",
         borderRadius: 0,
-        display: 'flex',
-        justifyContent: 'center',
+        display: "flex",
+        justifyContent: "center",
       },
     });
 
@@ -156,7 +156,7 @@ class SvgWorkflow {
 
       // 对于静态 HTML，使用 'load' 或 'domcontentloaded' 更快
       await page.setContent(fullHtml, {
-        waitUntil: 'load',
+        waitUntil: "load",
       });
 
       // 等待样式和布局正确应用（使用 waitForFunction 替代已废弃的 waitForTimeout）
@@ -175,7 +175,7 @@ class SvgWorkflow {
         omitBackground: true,
         path: filename,
         quality: 95,
-        type: 'webp', // 保留透明通道
+        type: "webp", // 保留透明通道
       });
 
       consola.success(`Exported avatar to ${filename}`);
@@ -189,11 +189,11 @@ class SvgWorkflow {
     const svgContent = svgString.match(/<svg[^>]*>[\S\s]*<\/svg>/i)?.[0];
 
     if (!svgContent) {
-      throw new Error('No SVG content found in the rendered component');
+      throw new Error("No SVG content found in the rendered component");
     }
 
-    const filename = resolve(outputDir, outputFileName + '.svg');
-    writeFileSync(filename, svgContent, 'utf8');
+    const filename = resolve(outputDir, outputFileName + ".svg");
+    writeFileSync(filename, svgContent, "utf8");
     consola.success(`Exported SVG to ${filename}`);
   }
 
@@ -204,10 +204,10 @@ class SvgWorkflow {
     themeMode?: ThemeMode,
   ): Promise<void> {
     try {
-      let svgContent = readFileSync(svgPath, 'utf8');
+      let svgContent = readFileSync(svgPath, "utf8");
       if (themeMode) {
         const color = themeColors[themeMode];
-        svgContent = svgContent.replaceAll('currentColor', color);
+        svgContent = svgContent.replaceAll("currentColor", color);
       }
       await sharp(Buffer.from(svgContent))
         .resize({ height })
@@ -215,7 +215,7 @@ class SvgWorkflow {
         .toFile(outputPath);
       consola.success(`PNG file has been saved to ${outputPath}`);
     } catch (error) {
-      consola.error('Error converting SVG to PNG:', error);
+      consola.error("Error converting SVG to PNG:", error);
     }
   }
 
@@ -226,10 +226,10 @@ class SvgWorkflow {
     themeMode?: ThemeMode,
   ): Promise<void> {
     try {
-      let svgContent = readFileSync(svgPath, 'utf8');
+      let svgContent = readFileSync(svgPath, "utf8");
       if (themeMode) {
         const color = themeColors[themeMode];
-        svgContent = svgContent.replaceAll('currentColor', color);
+        svgContent = svgContent.replaceAll("currentColor", color);
       }
       await sharp(Buffer.from(svgContent))
         .resize({ height })
@@ -237,7 +237,7 @@ class SvgWorkflow {
         .toFile(outputPath);
       consola.success(`WebP file has been saved to ${outputPath}`);
     } catch (error) {
-      consola.error('Error converting SVG to WebP:', error);
+      consola.error("Error converting SVG to WebP:", error);
     }
   }
 
@@ -275,7 +275,7 @@ class SvgWorkflow {
     try {
       // 先启动浏览器，避免并发时启动多个实例
       await this.getBrowser();
-      consola.info('Browser launched, starting avatar export...');
+      consola.info("Browser launched, starting avatar export...");
 
       await pMap(
         Object.entries(this.icons),
@@ -301,12 +301,12 @@ class SvgWorkflow {
     await pMap(
       readdirSync(outputDir),
       async (file) => {
-        if (file.endsWith('.svg') && !this.ignoreList.includes(file)) {
+        if (file.endsWith(".svg") && !this.ignoreList.includes(file)) {
           const svgPath = resolve(outputDir, file);
-          const pngLightPath = resolve(outputPngDir, 'light', file.replace('.svg', '.png'));
-          const pngDarkPath = resolve(outputPngDir, 'dark', file.replace('.svg', '.png'));
-          await this.convertSvgToPng(svgPath, pngLightPath, 640, 'light');
-          await this.convertSvgToPng(svgPath, pngDarkPath, 640, 'dark');
+          const pngLightPath = resolve(outputPngDir, "light", file.replace(".svg", ".png"));
+          const pngDarkPath = resolve(outputPngDir, "dark", file.replace(".svg", ".png"));
+          await this.convertSvgToPng(svgPath, pngLightPath, 640, "light");
+          await this.convertSvgToPng(svgPath, pngDarkPath, 640, "dark");
         }
       },
       { concurrency: 5 },
@@ -317,12 +317,12 @@ class SvgWorkflow {
     await pMap(
       readdirSync(outputDir),
       async (file) => {
-        if (file.endsWith('.svg') && !this.ignoreList.includes(file)) {
+        if (file.endsWith(".svg") && !this.ignoreList.includes(file)) {
           const svgPath = resolve(outputDir, file);
-          const webpLightPath = resolve(outputWebpDir, 'light', file.replace('.svg', '.webp'));
-          const webpDarkPath = resolve(outputWebpDir, 'dark', file.replace('.svg', '.webp'));
-          await this.convertSvgToWebp(svgPath, webpLightPath, 640, 'light');
-          await this.convertSvgToWebp(svgPath, webpDarkPath, 640, 'dark');
+          const webpLightPath = resolve(outputWebpDir, "light", file.replace(".svg", ".webp"));
+          const webpDarkPath = resolve(outputWebpDir, "dark", file.replace(".svg", ".webp"));
+          await this.convertSvgToWebp(svgPath, webpLightPath, 640, "light");
+          await this.convertSvgToWebp(svgPath, webpDarkPath, 640, "dark");
         }
       },
       { concurrency: 5 },
