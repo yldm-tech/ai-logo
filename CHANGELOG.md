@@ -2,6 +2,39 @@
 
 # Changelog
 
+## [Version 1.2.0](https://github.com/yldm-tech/ai-logo/compare/v1.1.0...v1.2.0)
+
+<sup>Released on **2026-09-14**</sup>
+
+#### ✨ Features
+
+- **misc**: Add the EveryAPI icon.
+
+#### 🐛 Bug Fixes
+
+- **misc**: Stop the scoped mirror skipping every real release.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add the EveryAPI icon, closes [lobehub/lobe-icons#384](https://github.com/lobehub/lobe-icons/issues/384) [#7C5](https://github.com/yldm-tech/ai-logo/issues/7C5) ([5425869](https://github.com/yldm-tech/ai-logo/commit/5425869))
+
+#### What's fixed
+
+- **misc**: Stop the scoped mirror skipping every real release ([ebb5eb6](https://github.com/yldm-tech/ai-logo/commit/ebb5eb6))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.1.0](https://github.com/yldm-tech/ai-logo/compare/v1.0.1...v1.1.0)
 
 <sup>Released on **2026-09-14**</sup>
