@@ -66,10 +66,7 @@ export const Hero = () => {
           {...stagger(1)}
           className="text-balance-tight mt-6 text-[clamp(2.5rem,7.5vw,4.25rem)] leading-[var(--display-leading)] font-semibold text-ink"
         >
-          {/* The whole headline is one string with the accented half marked up inside it. Splitting
-              it into two keys put the space between them in the markup, where no translation could
-              reach it: Chinese does not want one after a full-width comma, Korean does, and the
-              text stream lost its word boundary either way. */}
+          {/* The whole headline is one string with the accented half marked up inside it. Splitting it into two keys put the space between them in the markup, where no translation could reach it: Chinese does not want one after a full-width comma, Korean does, and the text stream lost its word boundary either way. */}
           <Trans
             components={{
               a: (

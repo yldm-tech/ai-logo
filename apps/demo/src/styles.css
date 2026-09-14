@@ -21,17 +21,14 @@
   --tok-ident: #953800;
   --tok-punct: #6e7781;
 
-  /* Display type is tuned for Latin: tightened, and set close because cap-height leaves air above
-     and below the line. */
+  /* Display type is tuned for Latin: tightened, and set close because cap-height leaves air above and below the line. */
   --display-tracking: -0.035em;
   --display-leading: 1.04;
 
   color-scheme: light;
 }
 
-/* CJK undoes both. The glyphs are drawn to fill a fixed em box, so negative tracking makes them
-   collide rather than tighten, and they reach the top and bottom of that box, so Latin display
-   leading leaves two lines touching.
+/* CJK undoes both. The glyphs are drawn to fill a fixed em box, so negative tracking makes them collide rather than tighten, and they reach the top and bottom of that box, so Latin display leading leaves two lines touching.
 
    `:lang(zh)` matches `zh-CN` and `zh-TW` alike — App writes the tag onto <html>. */
 :root:lang(zh),
@@ -61,11 +58,7 @@
   color-scheme: dark;
 }
 
-/* Hangul syllables are full-width blocks, so a browser breaks between any two of them by default
-   and severs a word from its particle — 브랜드 / 를. Korean is written with spaces between words
-   and should break there, which is exactly what `keep-all` restores. Chinese and Japanese are not
-   in this rule: breaking anywhere is correct for them, and keep-all would make long runs overflow.
-   `overflow-wrap` is the safety net for a run too long for its line. */
+/* Hangul syllables are full-width blocks, so a browser breaks between any two of them by default and severs a word from its particle — 브랜드 / 를. Korean is written with spaces between words and should break there, which is exactly what `keep-all` restores. Chinese and Japanese are not in this rule: breaking anywhere is correct for them, and keep-all would make long runs overflow. `overflow-wrap` is the safety net for a run too long for its line. */
 :root:lang(ko) {
   overflow-wrap: break-word;
   word-break: keep-all;
@@ -83,8 +76,7 @@
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-accent-2: var(--accent-2);
-  /* The Latin families come first and carry no CJK glyphs, so Chinese, Japanese and Korean fall
-     through to the families named after them rather than to whatever the platform picks. */
+  /* The Latin families come first and carry no CJK glyphs, so Chinese, Japanese and Korean fall through to the families named after them rather than to whatever the platform picks. */
   --font-sans:
     -apple-system, blinkmacsystemfont, "Segoe UI", system-ui, "Helvetica Neue", arial,
     "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Hiragino Sans",
