@@ -2,6 +2,12 @@
 
 # Changelog
 
+# [1.4.0](https://github.com/yldm-tech/ai-logo/compare/v1.3.2...v1.4.0) (2026-09-14)
+
+### Features
+
+- drop the @lobehub/ui peer dependency ([10eddbb](https://github.com/yldm-tech/ai-logo/commit/10eddbb084a47ac4bed2d9f67aa47346d31d0ead))
+
 ## [1.3.2](https://github.com/yldm-tech/ai-logo/compare/v1.3.1...v1.3.2) (2026-09-14)
 
 ## [1.3.1](https://github.com/yldm-tech/ai-logo/compare/v1.3.0...v1.3.1) (2026-09-14)
