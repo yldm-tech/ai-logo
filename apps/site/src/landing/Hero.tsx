@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
 
 import { CopyButton } from "../components/Copy";
+import { entrance } from "../motion";
 import { PKG, stats } from "../registry";
 import { useStore } from "../store";
 import { marqueeRows } from "./featured";
@@ -37,11 +38,12 @@ const Backdrop = () => (
   </div>
 );
 
-const stagger = (index: number) => ({
-  animate: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 14 },
-  transition: { delay: 0.06 * index, duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
-});
+const stagger = (index: number) =>
+  entrance(
+    { opacity: 0, y: 14 },
+    { opacity: 1, y: 0 },
+    { delay: 0.06 * index, duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  );
 
 export const Hero = () => {
   const setView = useStore((state) => state.setView);
@@ -90,7 +92,7 @@ export const Hero = () => {
           className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
           <button
-            className="group inline-flex cursor-pointer items-center gap-2 rounded-xl bg-accent px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_-12px_var(--accent)] transition hover:brightness-110"
+            className="group inline-flex cursor-pointer items-center gap-2 rounded-xl bg-accent-solid px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_-12px_var(--accent)] transition hover:brightness-110"
             onClick={() => setView("icons")}
             type="button"
           >
@@ -111,10 +113,8 @@ export const Hero = () => {
       </div>
 
       <motion.div
-        animate={{ opacity: 1 }}
         className="relative z-10"
-        initial={{ opacity: 0 }}
-        transition={{ delay: 0.25, duration: 0.8 }}
+        {...entrance({ opacity: 0 }, { opacity: 1 }, { delay: 0.25, duration: 0.8 })}
       >
         {TRACKS.map((track, index) => (
           <Marquee key={index} row={ROWS[index]} {...track} />

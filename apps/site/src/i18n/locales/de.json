@@ -1,5 +1,6 @@
 {
   "cdn": {
+    "alt": "{{format}}-Beispiel",
     "avatar": "Zeichen auf seiner Markenfarbe",
     "eyebrow": "CDN",
     "png": "helle und dunkle Fassung",
@@ -12,6 +13,7 @@
     "copied": "Kopiert",
     "copy": "Kopieren",
     "copyImport": "Import kopieren",
+    "failed": "Kopieren fehlgeschlagen",
     "label": "{{value}} kopieren"
   },
   "features": {
@@ -24,6 +26,7 @@
       "note": "Jedes Zeichen ist auch eine Datei auf einem CDN. Keine Installation, kein Build — ein <c>img</c>-Tag genügt, und PNG und WebP liegen hell und dunkel vor, damit ein <c>picture</c>-Element wählen kann.",
       "title": "Oder ganz ohne Installation"
     },
+    "filesAlt": "{{brand}}-Zeichen",
     "lookup": {
       "note": "Eine Modell-ID aus einer API-Antwort ist ein String, kein Import. <c>ProviderIcon</c>, <c>ModelIcon</c> und <c>AgentIcon</c> ordnen sie über eine Schlüsselworttabelle einem Zeichen zu — mit neutralem Rückfall, wenn nichts passt.",
       "title": "Ein Zeichen aus einem String auflösen"
@@ -49,15 +52,22 @@
     "apps": "Apps",
     "close": "Schließen",
     "empty": "Nichts passt zu „{{query}}“.",
+    "group": {
+      "application": "Anwendung",
+      "model": "Modell",
+      "provider": "Anbieter"
+    },
     "models": "Modelle",
     "providers": "Anbieter",
     "search": "Marken, Modelle, Anbieter suchen…",
-    "shown": "{{count}} angezeigt"
+    "shown": "{{count}} angezeigt",
+    "shown_one": "{{count}} angezeigt",
+    "shown_other": "{{count}} angezeigt"
   },
   "hero": {
     "badge": "{{brands}} Marken · {{color}} in Farbe · MIT",
     "browse": "{{count}} Icons ansehen",
-    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten — mit Farb-, Wortmarken-, Lockup- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN.",
+    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten — mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN.",
     "title": "Jede KI-Marke, <a>ein Import</a>."
   },
   "install": {
@@ -66,7 +76,7 @@
     "title": "In ein Projekt aufnehmen"
   },
   "meta": {
-    "description": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten, mit Farb-, Wortmarken-, Lockup- und Avatar-Varianten sowie statischen SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
+    "description": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten, mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten sowie statischen SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
     "title": "AI Logo — {{count}} KI-Markenicons für React und CDN"
   },
   "nav": {
@@ -86,7 +96,7 @@
     "formats": "Formate",
     "formatsNote": "React, SVG, PNG, WebP",
     "variants": "Varianten je Marke",
-    "variantsNote": "einfarbig, Farbe, Wortmarke, Lockup, Avatar"
+    "variantsNote": "einfarbig, Farbe, Wortmarke, Bildwortmarke, Avatar"
   },
   "variants": {
     "avatar": "Zeichen auf seiner Markenfarbe",

@@ -1,77 +1,86 @@
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: true
 ---
+
 # AI Logo Repository Guide
 
-This guide provides comprehensive information about the ai-logo repository structure and how to add new icons.
+How this repository is laid out and what adding an icon actually involves. [CONTRIBUTING.md](mdc:CONTRIBUTING.md) is the longer version and the one to trust if the two ever disagree.
 
 ## Project Overview
 
-The ai-logo repository contains 323 AI/ML brand icons organized in a consistent structure. Each icon brand has its own directory under `src/` with standardized components and exports.
+323 AI company, model and application brands, each a React component under `src/`, published as `@yldm-tech/ai-logo`. The repository is a pnpm workspace and pnpm is required — `vite` is aliased to `@voidzero-dev/vite-plus-core` through a catalog in `pnpm-workspace.yaml`, which no other package manager reads.
 
 ## Directory Structure
 
 ### Root Structure
-- `src/` - Contains all icon brand directories
-- `packages/` - Static format packages (PNG, SVG, WebP)
-- `docs/` - Documentation and guides
-- `scripts/` - Build and automation scripts
+
+- `src/` — one directory per brand, plus `features/` (the lookup components and their mapping tables), `hooks/`, `primitives/`, `types/`, `icons.ts` and the generated `toc.json`
+- `apps/site/` — the website at <https://ailogo.yldm.ai>. It imports the package through `node_modules` the way a consumer does, so it is also the smoke test and carries the bundle budgets in `apps/site/treeshake`
+- `packages/` — the unscoped `alias` package, the `react-native` port (private, not published), and `static-svg`, `static-png`, `static-webp`, `static-avatar`, which hold the committed renders and are published alongside the main package
+- `scripts/` — `tocWorkflow` (generates `src/toc.json`), `readmeWorkflow` (the README icon table), `svgWorkflow` (the static renders), `rn-conversion` (the react-native port)
+- `tests/` — contract tests over the mapping tables, the toc and the rendered assets
+
+There is no `docs/` directory; the site under `apps/site` is the documentation.
 
 ### Icon Brand Structure
-Each icon brand follows this pattern:
+
+Each brand follows this pattern, and only `Mono.tsx` is required:
+
 ```
 src/IconName/
-├── index.ts          # Main exports
-├── style.ts          # Brand constants and styling
-├── index.mdx         # Documentation
+├── index.ts          # attaches the subcomponents and the brand constants
+├── style.ts          # TITLE, colours and the multiples
+├── index.mdx         # frontmatter only — title, description, category
 └── components/
-    ├── Mono.tsx      # Monochrome icon
-    ├── Color.tsx     # Colored icon (if applicable)
-    ├── Text.tsx      # Text component
-    ├── Avatar.tsx    # Avatar component
-    └── Combine.tsx   # Combined icon+text
+    ├── Mono.tsx      # required, the default export
+    ├── Color.tsx     # optional
+    ├── Text.tsx      # optional wordmark
+    ├── TextColor.tsx # optional
+    ├── TextCn.tsx    # optional Chinese wordmark
+    ├── Avatar.tsx    # optional
+    └── Combine.tsx   # optional icon + wordmark
 ```
+
+Which of these a brand has varies, and consumers read the attachments in `index.ts` as the contract: OpenAI is monochrome and has no `.Color`, so `<OpenAI.Color />` does not exist. Never write an example against a subcomponent without checking `src/<Brand>/index.ts` first.
 
 ## Adding a New Icon
 
-### 1. Create Directory Structure
-Create a new directory under `src/` with your icon brand name:
-```
-src/YourIconName/
-```
+Copy the closest existing brand rather than starting from scratch.
 
-### 2. Essential Files to Create
+### 1. Style Configuration ([style.ts](mdc:src/AdobeFirefly/style.ts))
 
-#### Style Configuration ([style.ts](mdc:src/AdobeFirefly/style.ts))
 ```typescript
-export const TITLE = 'YourIconName';
-export const TEXT_MULTIPLE = 0.6;        // Used in Combine component
-export const SPACE_MULTIPLE = 0.1;       // Used in Combine component
-export const COLOR_PRIMARY = '#yourBrandColor'; // Used in Avatar
+export const TITLE = "YourIconName";
+export const COMBINE_TEXT_MULTIPLE = 0.75; // used by Combine
+export const COMBINE_SPACE_MULTIPLE = 0.3; // used by Combine
+export const COLOR_PRIMARY = "#EB1000";
 
-// Avatar constants (recommended)
+// Avatar constants
 export const AVATAR_BACKGROUND = COLOR_PRIMARY;
-export const AVATAR_COLOR = '#fff';
+export const AVATAR_COLOR = "#fff";
 export const AVATAR_ICON_MULTIPLE = 0.6;
 ```
 
-#### Monochrome Icon ([Mono.tsx](mdc:src/AdobeFirefly/components/Mono.tsx))
+### 2. Monochrome Icon ([Mono.tsx](mdc:src/AdobeFirefly/components/Mono.tsx))
+
 ```typescript
-'use client';
+"use client";
 
-import { memo } from 'react';
-import type { IconType } from '@/types';
-import { TITLE } from '../style';
+import { memo } from "react";
 
-const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
+import type { IconType } from "@/types";
+
+import { TITLE } from "../style";
+
+const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
   return (
     <svg
       fill="currentColor"
       fillRule="evenodd"
       height={size}
-      style={{ flex: 'none', lineHeight: 1, ...style }}
+      style={{ flex: "none", lineHeight: 1, ...style }}
       viewBox="0 0 24 24"
       width={size}
       xmlns="http://www.w3.org/2000/svg"
@@ -86,23 +95,28 @@ const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
 export default Icon;
 ```
 
-#### Avatar Component ([Avatar.tsx](mdc:src/AdobeFirefly/components/Avatar.tsx))
+If the SVG needs `id` attributes, namespace them with `useFillIds` from [useFillId](mdc:src/hooks/useFillId.ts) rather than writing `id="a"`. Ids are global to the page: two icons that hardcode the same one clip each other, and so does any host page with its own.
+
+### 3. Avatar Component ([Avatar.tsx](mdc:src/AdobeFirefly/components/Avatar.tsx))
+
 ```typescript
-'use client';
+"use client";
 
-import { memo } from 'react';
-import IconAvatar, { type IconAvatarProps } from '@/features/IconAvatar';
-import { AVATAR_BACKGROUND, AVATAR_COLOR, AVATAR_ICON_MULTIPLE, TITLE } from '../style';
-import Mono from './Mono';
+import { memo } from "react";
 
-export type AvatarProps = Omit<IconAvatarProps, 'Icon'>;
+import IconAvatar, { type IconAvatarProps } from "@/features/IconAvatar";
 
-const Avatar = memo<AvatarProps>(({ background, ...rest }) => {
+import { AVATAR_BACKGROUND, AVATAR_COLOR, AVATAR_ICON_MULTIPLE, TITLE } from "../style";
+import Mono from "./Mono";
+
+export type AvatarProps = Omit<IconAvatarProps, "Icon">;
+
+const Avatar = memo<AvatarProps>(({ ...rest }) => {
   return (
     <IconAvatar
       Icon={Mono}
       aria-label={TITLE}
-      background={background || AVATAR_BACKGROUND}
+      background={AVATAR_BACKGROUND}
       color={AVATAR_COLOR}
       iconMultiple={AVATAR_ICON_MULTIPLE}
       {...rest}
@@ -113,16 +127,19 @@ const Avatar = memo<AvatarProps>(({ background, ...rest }) => {
 export default Avatar;
 ```
 
-#### Main Index File ([index.ts](mdc:src/AdobeFirefly/index.ts))
+### 4. Main Index File ([index.ts](mdc:src/AdobeFirefly/index.ts))
+
 ```typescript
-import Avatar from './components/Avatar';
-import Combine from './components/Combine';
-import Mono from './components/Mono';
-import Text from './components/Text';
-import { COLOR_PRIMARY, TITLE } from './style';
+import Avatar from "./components/Avatar";
+import Color from "./components/Color";
+import Combine from "./components/Combine";
+import Mono from "./components/Mono";
+import Text from "./components/Text";
+import { COLOR_PRIMARY, TITLE } from "./style";
 
 export type CompoundedIcon = typeof Mono & {
   Avatar: typeof Avatar;
+  Color: typeof Color;
   Combine: typeof Combine;
   Text: typeof Text;
   colorPrimary: string;
@@ -130,6 +147,7 @@ export type CompoundedIcon = typeof Mono & {
 };
 
 const Icons = Mono as CompoundedIcon;
+Icons.Color = Color;
 Icons.Text = Text;
 Icons.Combine = Combine;
 Icons.Avatar = Avatar;
@@ -139,67 +157,90 @@ Icons.title = TITLE;
 export default Icons;
 ```
 
-### 3. SVG Preparation Guidelines
-
-1. **Source**: Find the official SVG logo of the brand
-2. **Cleanup**: Remove unnecessary elements and attributes
-3. **Scale**: Ensure it fits within 24x24 viewBox
-4. **Extract**: Get the path data for the icon
-5. **Tool**: Use https://ailogo.yldm.ai/editor for formatted SVG output
-
-### 4. Icon Types
-
-#### Monochrome Icons
-- Use `currentColor` for fill
-- Inherit color from parent element
-- Best for UI elements that need theme consistency
-
-#### Colored Icons
-- Include brand-specific colors
-- Maintain colors regardless of parent styling
-- Best for brand representation
-- Create both `Mono.tsx` and `Color.tsx` components
+The `Icons.X = X` lines are what `build:toc` reads to decide which variants the brand advertises. A component that exists in `components/` but is never attached is invisible to the toc, the README table, the site and the static renderer.
 
 ### 5. Documentation ([index.mdx](mdc:src/AdobeFirefly/index.mdx))
-Create documentation with examples for all component variants:
-- Basic icons (Mono/Color)
-- Text component
-- Combine component
-- Avatar component
-- Color preview
+
+Frontmatter and nothing else. It is read by the toc script, which fails if the file is missing:
+
+```mdx
+---
+title: Firefly (Adobe)
+description: https://firefly.adobe.com
+category: Application
+---
+```
+
+`category` is one of `Model`, `Provider` or `Application`, lowercased into the `group` field the README columns and the site's filters are built from.
 
 ### 6. Export Integration
-Update [src/icons.ts](mdc:src/icons.ts) to include your new icon:
+
+Add the brand to [src/icons.ts](mdc:src/icons.ts), in alphabetical position:
+
 ```typescript
-export { default as YourIconName, type CompoundedIcon as YourIconNameProps } from './YourIconName';
+export { default as YourIconName, type CompoundedIcon as YourIconNameProps } from "./YourIconName";
 ```
+
+The toc script discovers icons by matching `default as (\w+)` in that file, so a brand missing from it does not exist downstream.
+
+### 7. Lookup Mappings
+
+An icon nobody can look up by id still renders the grey fallback. Add the brand to the mapping tables that apply: [providerEnum.ts](mdc:src/features/providerEnum.ts) and [providerConfig.tsx](mdc:src/features/providerConfig.tsx) for providers, [modelConfig.ts](mdc:src/features/modelConfig.ts) for models, [agentConfig.ts](mdc:src/features/agentConfig.ts) for applications. The react-native port duplicates the first three under `packages/react-native/src/features/`.
+
+Provider keywords are compared with `===` after lowercasing, so the id must be listed verbatim. Model and agent keywords are unanchored regexes and the first match wins, so anchor them with `(^|/)` and `($|[-_])` unless the substring is really what you mean. [tests/contract.test.tsx](mdc:tests/contract.test.tsx) fails on a shadowed or orphaned keyword.
+
+### 8. Generated Artifacts
+
+```bash
+pnpm run build:toc    # regenerates src/toc.json
+pnpm run build:static # renders packages/static-* through headless Chrome — commit the new files
+pnpm run sync:md      # regenerates the README icon table
+npx remark --quiet --output -- README.md
+```
+
+All of these outputs are committed. CI regenerates the toc and the README and fails on a diff, and [tests/staticAssets.test.ts](mdc:tests/staticAssets.test.ts) fails if a variant the toc advertises has no rendered SVG behind it.
+
+Porting the icon to react-native is `pnpm run auto-converter-web-icons-to-rn`, which converts what the port is missing and syncs its feature configs. Review that diff — it is code generation, not a build step.
 
 ## Development Workflow
 
-### Build Commands
-```bash
-npm run build    # Build all icons
-npm run dev      # Start demo site
+| Task                  | Command               |
+| --------------------- | --------------------- |
+| Install               | `pnpm install`        |
+| Dev server (the site) | `pnpm start`          |
+| Build the package     | `pnpm run build`      |
+| Test                  | `pnpm run test`       |
+| Format, lint, types   | `pnpm run ci`         |
+| Types only            | `pnpm run type-check` |
+
+`pnpm run build` regenerates `src/toc.json` and then runs `vp pack`, which bundles `src/index.ts` into `es/index.mjs` with types alongside. `pnpm start` runs the site in `apps/site`.
+
+## Usage
+
+```tsx
+import { Claude, ProviderIcon } from "@yldm-tech/ai-logo";
+
+<Claude size={24} />
+<Claude.Color size={24} />
+<Claude.Combine size={24} type="color" />
+<Claude.Avatar size={40} shape="circle" />
+<ProviderIcon provider="anthropic" size={24} type="color" />;
 ```
 
-### Quality Checks
-1. Test icon in light and dark modes
-2. Verify appearance at different sizes
-3. Check all component variants work correctly
-4. Ensure SVG path is optimized
+`ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id at runtime and therefore carry their whole mapping table — roughly 1.7 MB against 216 kB for a direct brand import. Use them when the id is dynamic, and the brand export when it is not.
 
 ## Important Notes
 
-- The [src/toc.ts](mdc:src/toc.ts) file is generated automatically
-- Static format images (PNG, SVG, WebP) are generated automatically
-- Group types: Model | Provider | Application
-- All icons should be 24x24 viewBox for consistency
-- Use the online editor at https://ailogo.yldm.ai/editor for best results
+- `src/toc.json` is generated by `pnpm run build:toc`; `src/toc.ts` is the hand-written module that types and re-exports it. Neither is edited by hand.
+- The static PNG, SVG, WebP and avatar files are generated by `pnpm run build:static` and committed. They are not produced in CI.
+- Group types come from the `category` frontmatter: Model | Provider | Application.
+- New icons use a `0 0 24 24` viewBox unless the artwork genuinely cannot fit one.
+- Commits are gitmoji plus conventional commits — `:sparkles: feat: add the Mistral icon`. Without the emoji prefix the release analyser ignores the commit and nothing reaches npm.
 
 ## Best Practices
 
-1. **Consistency**: Follow existing patterns and naming conventions
-2. **Optimization**: Clean and optimize SVG paths
-3. **Documentation**: Provide clear examples for all variants
-4. **Testing**: Verify icons work across different contexts
-5. **Accessibility**: Include proper aria-labels and titles
+1. **Consistency**: follow the existing patterns and naming rather than inventing a new shape
+2. **Accuracy**: check `index.ts` before claiming a brand has a variant
+3. **Optimisation**: clean the SVG path and keep it to the 24x24 grid
+4. **Testing**: `pnpm run ci` and `pnpm run test` before opening a pull request
+5. **Accessibility**: keep the `<title>` in every icon and the `aria-label` on the wrappers

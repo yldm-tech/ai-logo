@@ -3,7 +3,9 @@
 /* The theme is a data attribute on <html> rather than the `prefers-color-scheme` media query, because the reader can override it from the header. Tailwind's stock `dark:` variant keys off the media query, so it is redefined here to read the attribute instead. */
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-/* Two layers of colour. These raw variables carry the light and dark values; the @theme block below hands them to Tailwind under semantic names, so a utility like `bg-surface` resolves to whichever theme is on the element. */
+/* --accent is the decorative violet: borders, glows, the gradient, small text on a page background. --accent-solid is the one that sits under white text, which is a different constraint — white on the dark theme's lighter violet measures 3.41:1, under the 4.5:1 that text needs, so the filled controls take a deeper violet there and the two tokens part company.
+
+   Two layers of colour. These raw variables carry the light and dark values; the @theme block below hands them to Tailwind under semantic names, so a utility like `bg-surface` resolves to whichever theme is on the element. */
 :root {
   --canvas: #fcfcfd;
   --surface: #fff;
@@ -12,8 +14,9 @@
   --line-strong: #d7d7e1;
   --ink: #121217;
   --ink-dim: #5f5f6d;
-  --ink-faint: #8c8c9a;
+  --ink-faint: #6f6f7d;
   --accent: #6d4aff;
+  --accent-solid: #6d4aff;
   --accent-soft: #f0ecff;
   --accent-2: #00a6c4;
   --tok-keyword: #cf222e;
@@ -46,8 +49,9 @@
   --line-strong: #32323e;
   --ink: #f3f3f7;
   --ink-dim: #9a9aa8;
-  --ink-faint: #6e6e7c;
+  --ink-faint: #8b8b99;
   --accent: #8f75ff;
+  --accent-solid: #6a45f5;
   --accent-soft: #191333;
   --accent-2: #3ad8f0;
   --tok-keyword: #ff7b72;
@@ -74,6 +78,7 @@
   --color-dim: var(--ink-dim);
   --color-faint: var(--ink-faint);
   --color-accent: var(--accent);
+  --color-accent-solid: var(--accent-solid);
   --color-accent-soft: var(--accent-soft);
   --color-accent-2: var(--accent-2);
   /* The Latin families come first and carry no CJK glyphs, so Chinese, Japanese and Korean fall through to the families named after them rather than to whatever the platform picks. */

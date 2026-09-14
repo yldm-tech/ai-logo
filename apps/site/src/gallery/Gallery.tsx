@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Code } from "../components/Code";
@@ -26,7 +26,7 @@ const Cell = ({
   selected,
 }: {
   entry: IconEntry;
-  onSelect: () => void;
+  onSelect: (element: HTMLButtonElement) => void;
   selected: boolean;
 }) => {
   const Icon = preferred(galleryRegistry[entry.id], entry);
@@ -38,7 +38,7 @@ const Cell = ({
       className={`group flex cursor-pointer flex-col items-center justify-center gap-2.5 rounded-xl border bg-surface px-2 pt-5 pb-3.5 transition duration-150 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-16px_rgb(0_0_0/40%)] ${
         selected ? "border-accent bg-accent-soft" : "border-line hover:border-line-strong"
       }`}
-      onClick={onSelect}
+      onClick={(event) => onSelect(event.currentTarget)}
       type="button"
     >
       <span className="text-ink transition-transform duration-150 group-hover:scale-110">
@@ -65,13 +65,21 @@ const assetLinks = (entry: IconEntry) => {
 
 const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) => {
   const { t } = useTranslation();
+  const heading = useRef<HTMLHeadingElement>(null);
   const Icon = galleryRegistry[entry.id];
+
+  // The panel appears above the grid, so a reader who picked a cell with the keyboard was left focused on a button that had just been pushed down the page, with the thing they asked for out of view behind them. Focus moves to the panel's heading instead; the grid cell takes it back on close, which Gallery handles because it is the one that knows which cell was pressed.
+  useEffect(() => {
+    heading.current?.focus();
+  }, [entry.id]);
+
   if (!Icon) return null;
   const importLine = `import { ${entry.id} } from "${PKG}";`;
 
   return (
     <motion.section
       animate={{ height: "auto", opacity: 1 }}
+      aria-label={entry.fullTitle || entry.id}
       className="overflow-hidden"
       exit={{ height: 0, opacity: 0 }}
       initial={{ height: 0, opacity: 0 }}
@@ -79,12 +87,16 @@ const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) =
     >
       <div className="mb-4 rounded-2xl border border-line bg-surface p-5 shadow-[0_18px_40px_-28px_rgb(0_0_0/45%)]">
         <div className="flex flex-wrap items-center gap-3">
-          <h2 className="text-[17px] font-semibold tracking-tight text-ink">
+          <h2
+            className="text-[17px] font-semibold tracking-tight text-ink outline-none"
+            ref={heading}
+            tabIndex={-1}
+          >
             {entry.fullTitle || entry.id}
           </h2>
           {entry.group && (
             <span className="rounded-full bg-elevated px-2.5 py-0.5 text-[11px] text-dim">
-              {entry.group}
+              {t(`gallery.group.${entry.group}`)}
             </span>
           )}
           {entry.color && (
@@ -154,6 +166,13 @@ const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) =
 export const Gallery = () => {
   const { clear, filter, query, select, selectedId, setFilter, setQuery } = useStore();
   const { t } = useTranslation();
+  // Where focus came from, so closing the panel can put it back on the cell the reader pressed rather than dropping it at the top of the document.
+  const opener = useRef<HTMLButtonElement | null>(null);
+
+  const close = () => {
+    clear();
+    opener.current?.focus();
+  };
 
   const matches = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -180,6 +199,9 @@ export const Gallery = () => {
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-10">
+      {/* The page's only h1 lives in the hero, which this view replaces — so switching to the gallery left a document with no top-level heading and nothing to orient by. It is visually redundant next to a wall of logos, so it is there for the outline rather than for the eye. */}
+      <h1 className="sr-only">{t("nav.icons")}</h1>
+
       <label className="mb-4 block sm:hidden">
         <input
           aria-label={t("gallery.search")}
@@ -195,6 +217,7 @@ export const Gallery = () => {
         <div className="flex flex-wrap gap-1.5">
           {FILTERS.map(({ count, id, key }) => (
             <button
+              aria-pressed={filter === id}
               className={`cursor-pointer rounded-full border px-3.5 py-1.5 text-[13px] transition ${
                 filter === id
                   ? "border-accent bg-accent-soft text-ink"
@@ -215,7 +238,7 @@ export const Gallery = () => {
       </div>
 
       <AnimatePresence initial={false}>
-        {selected && <Detail entry={selected} key={selected.id} onClose={clear} />}
+        {selected && <Detail entry={selected} key={selected.id} onClose={close} />}
       </AnimatePresence>
 
       {matches.length === 0 ? (
@@ -226,7 +249,10 @@ export const Gallery = () => {
             <Cell
               entry={entry}
               key={entry.id}
-              onSelect={() => select(entry.id)}
+              onSelect={(element) => {
+                opener.current = element;
+                select(entry.id);
+              }}
               selected={entry.id === selectedId}
             />
           ))}

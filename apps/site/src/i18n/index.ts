@@ -57,8 +57,22 @@ const resources = {
  */
 const TRADITIONAL = new Set(["zh-HK", "zh-Hant", "zh-MO", "zh-TW"]);
 
-const convertDetectedLanguage = (code: string) =>
-  TRADITIONAL.has(code) || code.startsWith("zh-Hant") ? "zh-TW" : code;
+const SUPPORTED: ReadonlySet<string> = new Set(LANGUAGES.map((language) => language.value));
+
+/**
+ * Narrows whatever was detected to a tag this site actually ships.
+ *
+ * i18next filters a detected value against `supportedLngs` and drops it if it does not match, which is right for the navigator — the next detector gets a turn — and wrong for the query string, where the reader asked for something specific and silence is the only answer they get. `?lang=de-AT` used to fall all the way through to English. Now it lands on `de`, `?lang=zh` lands on `zh-CN` and `?lang=pt` on `pt-BR`, which is what `fallbackLng` already does for the navigator path and what the hreflang cluster implies.
+ */
+const convertDetectedLanguage = (code: string) => {
+  if (TRADITIONAL.has(code) || code.startsWith("zh-Hant")) return "zh-TW";
+  if (SUPPORTED.has(code)) return code;
+  const base = code.split("-")[0];
+  if (SUPPORTED.has(base)) return base;
+  // `zh` before `zh-CN`, `pt` before `pt-BR`: the first tag that shares the base is the one this site treats as that language.
+  const regional = LANGUAGES.find((language) => language.value.split("-")[0] === base);
+  return regional ? regional.value : code;
+};
 
 // Detection reads the query string, storage and the navigator, none of which exist in the prerender. There it renders English, which is what index.html already advertises and what `x-default` points at.
 const onClient = typeof window !== "undefined";

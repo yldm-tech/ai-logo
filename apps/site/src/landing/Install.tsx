@@ -38,6 +38,7 @@ export const Install = () => {
           <div className="mb-3 flex w-fit rounded-xl border border-line bg-surface p-1">
             {ORDER.map((name) => (
               <button
+                aria-pressed={manager === name}
                 className="relative cursor-pointer rounded-lg px-3.5 py-1.5 font-mono text-[12.5px] transition-colors"
                 key={name}
                 onClick={() => setManager(name)}

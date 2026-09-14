@@ -97,7 +97,7 @@ import { OpenAI } from "${PKG}";`}
             {/* A monochrome render is black on transparent, which disappears against a dark page. The light chip is the honest fix: these are the light-theme files, and the card's own copy points at <picture> for following the reader's scheme. */}
             {CDN_SAMPLES.map(({ alt, src }) => (
               <img
-                alt={alt}
+                alt={t("features.filesAlt", { brand: alt })}
                 className="size-9 rounded-lg bg-white object-contain p-1 ring-1 ring-line"
                 height={36}
                 key={src}

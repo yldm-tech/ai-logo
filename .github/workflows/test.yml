@@ -54,5 +54,35 @@ jobs:
           pnpm --dir apps/site run type-check
           pnpm --dir apps/site run test
 
+      # Nothing built the site until the Pages deploy did, so a Vite failure or a prerender that threw was found in production, on main, by the workflow whose job is to publish it. This runs the same command docs.yml runs, one step earlier in the life of the change.
+      - name: Build the site
+        run: pnpm --dir apps/site run build
+
+      # The prerender's own guard only asserts that an <h1> exists, which a page whose every section is rendered at opacity:0 satisfies perfectly: the markup is all there, and everything that reads the response without running the reveal animations — crawlers other than Google, link previewers, readers with scripting off — is served a blank page. That is the failure this step exists for. The other two assertions are the cheap ones that keep it honest: the hero copy the page shows has to be the copy the response carries, and the response has to be more than the shell.
+      - name: Prerendered page is readable
+        run: |
+          node -e '
+          const fs = require("node:fs");
+          const html = fs.readFileSync("apps/site/dist/index.html", "utf8");
+          const hero = JSON.parse(fs.readFileSync("apps/site/src/i18n/locales/en.json", "utf8")).hero;
+          const sizeKb = Buffer.byteLength(html) / 1024;
+          const hidden = html.match(/style="[^"]*opacity:\s*0[;"]/g) ?? [];
+          const fail = (message) => {
+            console.error("::error::" + message);
+            process.exitCode = 1;
+          };
+
+          if (!html.includes("<h1")) fail("dist/index.html has no <h1>, so the prerender never wrote its markup into the shell.");
+
+          if (typeof hero?.sub !== "string") fail("en.json has no hero.sub for this check to look for. If the key was renamed, rename it here too rather than dropping the assertion.");
+          else if (!html.includes(hero.sub)) fail("dist/index.html does not contain hero.sub from en.json, so the copy the page shows is not the copy the response carries.");
+
+          if (sizeKb < 20) fail("dist/index.html is " + sizeKb.toFixed(0) + " kB. The shell on its own is roughly 3 kB and the prerendered page is roughly 200 kB, so anything this small means the markup did not land.");
+
+          if (hidden.length > 0) fail(hidden.length + " prerendered elements carry opacity:0, so the response is a page that is present in the markup and invisible to anything that does not run the animations. Render the resting state on the server and let the client animate from there.");
+
+          if (!process.exitCode) console.log("prerendered page is " + sizeKb.toFixed(0) + " kB, carries the hero copy and ships nothing hidden");
+          '
+
       - name: Type-check the react-native port
         run: pnpm --dir packages/react-native run type-check

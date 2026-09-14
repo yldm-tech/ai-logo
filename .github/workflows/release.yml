@@ -48,6 +48,14 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      # This gate used to be strictly weaker than the pull request one, and the gap was the part that reaches a consumer: apps/site is where the bundle budgets live, so nothing checked tree-shaking before a publish. The regression those budgets exist for — an icon import pulling in all 323, 3219 kB against 216 kB — type-checks and tests clean, which means every other step here would have passed it straight through to npm.
+      #
+      # The site also imports the package through node_modules the way a published dependency resolves, so its type-check and its smoke test are the closest thing this repository has to installing the tarball and using it. Both need es/, which the Build step above has just produced.
+      - name: Check the site
+        run: |
+          pnpm --dir apps/site run type-check
+          pnpm --dir apps/site run test
+
       # semantic-release writes the new version into package.json when it releases and leaves it alone when it does not, so comparing the version either side of this step says whether a release happened without asking the registry.
       - name: Release
         id: release

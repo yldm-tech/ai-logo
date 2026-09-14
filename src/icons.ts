@@ -81,7 +81,7 @@ export { default as Copilot, type CompoundedIcon as CopilotProps } from "./Copil
 export { default as CopilotKit, type CompoundedIcon as CopilotKitProps } from "./CopilotKit";
 export { default as Coqui, type CompoundedIcon as CoquiProps } from "./Coqui";
 export { default as Coze, type CompoundedIcon as CozeProps } from "./Coze";
-export { default as CrewAI, type CompoundedIcon as CrewAIrops } from "./CrewAI";
+export { default as CrewAI, type CompoundedIcon as CrewAIProps } from "./CrewAI";
 export { default as Crusoe, type CompoundedIcon as CrusoeProps } from "./Crusoe";
 export { default as Cursor, type CompoundedIcon as CursorProps } from "./Cursor";
 export { default as CyberCut, type CompoundedIcon as CyberCutProps } from "./CyberCut";
@@ -270,7 +270,7 @@ export { default as Skywork, type CompoundedIcon as SkyworkProps } from "./Skywo
 export { default as Slock, type CompoundedIcon as SlockProps } from "./Slock";
 export { default as Smithery, type CompoundedIcon as SmitheryProps } from "./Smithery";
 export { default as Snowflake, type CompoundedIcon as SnowflakeProps } from "./Snowflake";
-export { default as SophNet, type CompoundedIcon as SophNetLabsProps } from "./SophNet";
+export { default as SophNet, type CompoundedIcon as SophNetProps } from "./SophNet";
 export { default as Sora, type CompoundedIcon as SoraProps } from "./Sora";
 export { default as Spark, type CompoundedIcon as SparkProps } from "./Spark";
 export { default as SpeedAI, type CompoundedIcon as SpeedAIProps } from "./SpeedAI";
@@ -292,7 +292,7 @@ export { default as Together, type CompoundedIcon as TogetherProps } from "./Tog
 export { default as TopazLabs, type CompoundedIcon as TopazLabsProps } from "./TopazLabs";
 export { default as Trae, type CompoundedIcon as TraeProps } from "./Trae";
 export { default as Tripo, type CompoundedIcon as TripoProps } from "./Tripo";
-export { default as TuriX, type CompoundedIcon as TuriXCompoundedIcon } from "./TuriX";
+export { default as TuriX, type CompoundedIcon as TuriXProps } from "./TuriX";
 export { default as Udio, type CompoundedIcon as UdioProps } from "./Udio";
 export { default as Unsloth, type CompoundedIcon as UnslothProps } from "./Unsloth";
 export { default as Unstructured, type CompoundedIcon as UnstructuredProps } from "./Unstructured";

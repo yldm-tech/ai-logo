@@ -12,6 +12,8 @@
     <link rel="canonical" href="https://ailogo.yldm.ai/" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Clients that do not take an SVG icon, and the crawlers that ask for /favicon.ico at the root whatever the document says. -->
+    <link rel="alternate icon" href="/favicon.ico" sizes="32x32 16x16" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#fcfcfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#08080b" media="(prefers-color-scheme: dark)" />
@@ -71,6 +73,20 @@
     </script>
   </head>
   <body>
+    <!-- The theme has to be on <html> before the first paint. React applies it in an effect, which runs after the prerendered HTML has already been painted — so a reader who prefers dark got a full white page first, and the prerender made that flash a whole screen of white content rather than an empty div. Storage is read in a try/catch because Safari in private browsing throws on it, and a preference is not worth taking the page down for. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("ai-logo-theme");
+        } catch (error) {
+          stored = null;
+        }
+        var dark =
+          stored === "dark" ||
+          (stored !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
