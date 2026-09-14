@@ -135,7 +135,7 @@ Static SVG, PNG and WebP renders of every icon live in this repository under `pa
 ## ✨ Features
 
 - 🚀 **Lightweight & Scalable**: Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.
-- 🌳 **Tree Shakable**: Importing a brand directly — `import { OpenAI } from "@yldm-tech/ai-logo"` — pulls in that brand and nothing else, around 216 kB against the full set. The lookup components are the exception: `ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id string at runtime, so they necessarily carry their whole mapping table and cost roughly 1.7 MB. Reach for them when the id is dynamic, and for the brand export when it is not. Both sizes are pinned by a budget in `apps/demo/treeshake`.
+- 🌳 **Tree Shakable**: Importing a brand directly — `import { OpenAI } from "@yldm-tech/ai-logo"` — pulls in that brand and nothing else, around 216 kB against the full set. The lookup components are the exception: `ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id string at runtime, so they necessarily carry their whole mapping table and cost roughly 1.7 MB. Reach for them when the id is dynamic, and for the brand export when it is not. Both sizes are pinned by a budget in `apps/site/treeshake`.
 - 🎨 **Every Major Model**: Over 320 AI company, model and application brands, each with mono, color, text, combined and avatar variants.
 
 ---

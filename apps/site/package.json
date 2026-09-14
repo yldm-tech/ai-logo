@@ -1,0 +1,33 @@
+{
+  "name": "@ai-logo/site",
+  "version": "0.0.0",
+  "private": true,
+  "description": "The site at ailogo.yldm.ai. It imports @yldm-tech/ai-logo the way a published dependency resolves rather than through the repo's source aliases, so it doubles as the consumer smoke test.",
+  "scripts": {
+    "build": "vp build && tsx scripts/prerender.tsx",
+    "dev": "vp dev",
+    "prerender": "tsx scripts/prerender.tsx",
+    "test": "vp test run && node treeshake/check.mjs",
+    "treeshake": "node treeshake/check.mjs",
+    "type-check": "tsgo --noEmit"
+  },
+  "dependencies": {
+    "@yldm-tech/ai-logo": "workspace:*",
+    "i18next": "^26.4.2",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "motion": "^13.2.0",
+    "react-i18next": "^17.0.13",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "antd": "^6.1.1",
+    "jsdom": "^30.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "vite-plus": "catalog:"
+  }
+}

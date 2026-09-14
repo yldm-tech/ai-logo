@@ -1,0 +1,101 @@
+{
+  "cdn": {
+    "avatar": "帶品牌底色的頭像",
+    "eyebrow": "CDN",
+    "png": "提供淺色與深色兩種算圖",
+    "sub": "檔名是元件名稱的全小寫形式，字與字之間不加分隔，<c>HuggingFace</c> 對應 <c>huggingface</c>；變體以後綴區分：<c>-color</c>、<c>-text</c>、<c>-brand</c>。PNG 與 WebP 分別放在 <c>light</c> 和 <c>dark</c> 目錄下，<c>picture</c> 元素正是靠這一點跟隨讀者的配色方案。",
+    "svg": "向量，每個圖示一個檔案",
+    "title": "每個圖示同時也是一個檔案",
+    "webp": "同樣的算圖，體積更小"
+  },
+  "copy": {
+    "copied": "已複製",
+    "copy": "複製",
+    "copyImport": "複製 import",
+    "label": "複製 {{value}}"
+  },
+  "features": {
+    "css": {
+      "note": "單色圖示以 <c>currentColor</c> 繪製，尺寸由單一屬性控制，因此會跟隨周圍文字的顏色，並在任何尺寸下保持銳利：它們是向量圖，不是點陣圖。",
+      "title": "像文字一樣控制大小與顏色"
+    },
+    "eyebrow": "運作方式",
+    "files": {
+      "note": "每個圖示同時也是 CDN 上的一個檔案。不必安裝、不必建置，一個 <c>img</c> 標籤就夠；PNG 與 WebP 提供淺色與深色兩套算圖，供 <c>picture</c> 元素挑選。",
+      "title": "也可以完全不裝相依套件"
+    },
+    "lookup": {
+      "note": "API 回傳的模型 id 是字串，不是 import。<c>ProviderIcon</c>、<c>ModelIcon</c> 與 <c>AgentIcon</c> 透過關鍵字表把它對應到圖示，比對不到時退回中性圖示。",
+      "title": "用字串解析圖示"
+    },
+    "sub": "這個套件做的四件事，讓應用不必自己維護一個 logo 資料夾。",
+    "title": "為被相依而生，而不是被複製進專案",
+    "treeshake": {
+      "comment": "引入一個模組，搖掉另外 {{count}} 個",
+      "note": "建置為每個品牌產出獨立模組，打包工具會丟掉你沒點名的那 {{count}} 個。CI 裡的體積預算守著這條線：這類退步在有人翻打包報告之前一直是隱形的。",
+      "title": "引入一個品牌，只打包一個品牌"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "issue": "回報問題",
+    "licence": "MIT 授權",
+    "npm": "npm",
+    "npmAlias": "npm ({{alias}})",
+    "tagline": "各品牌標識歸其各自擁有者所有，此處僅用於識別對應品牌。本套件 fork 自 lobehub/lobe-icons，沿用 MIT 授權。"
+  },
+  "gallery": {
+    "all": "全部",
+    "apps": "應用",
+    "close": "關閉",
+    "empty": "沒有符合「{{query}}」的結果。",
+    "models": "模型",
+    "providers": "服務商",
+    "search": "搜尋品牌、模型、服務商…",
+    "shown": "顯示 {{count}} 個"
+  },
+  "hero": {
+    "badge": "{{brands}} 個品牌 · {{color}} 個彩色 · MIT",
+    "browse": "瀏覽 {{count}} 個圖示",
+    "sub": "AI 服務商、模型與應用的品牌圖示。以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。",
+    "title": "每個 AI 品牌，<a>一行 import</a>"
+  },
+  "install": {
+    "eyebrow": "安裝",
+    "peers": "<c>react</c>、<c>react-dom</c> 與 <c>antd</c> 是 peer 相依套件。同一份建置也以 <c>{{alias}}</c> 的名稱發佈，版本一致，二選一即可，不要同時安裝。",
+    "title": "把它加進專案"
+  },
+  "meta": {
+    "description": "AI 服務商、模型與應用的品牌圖示，以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。MIT 授權。",
+    "title": "AI Logo — {{count}} 個 AI 品牌圖示，React 元件與 CDN"
+  },
+  "nav": {
+    "github": "GitHub 儲存庫",
+    "icons": "圖示",
+    "language": "語言",
+    "overview": "總覽",
+    "search": "搜尋品牌…",
+    "toDark": "切換到深色主題",
+    "toLight": "切換到淺色主題"
+  },
+  "stats": {
+    "brands": "個品牌標識",
+    "brandsNote": "{{provider}} 個服務商 · {{model}} 個模型 · {{application}} 個應用",
+    "colour": "個有彩色版本",
+    "colourNote": "其餘跟隨 currentColor",
+    "formats": "種資源格式",
+    "formatsNote": "React、SVG、PNG、WebP",
+    "variants": "種變體",
+    "variantsNote": "單色、彩色、文字標、組合標、頭像"
+  },
+  "variants": {
+    "avatar": "帶品牌底色的頭像",
+    "color": "品牌配色",
+    "combine": "圖示與文字的組合標",
+    "eyebrow": "變體",
+    "mono": "單色，跟隨 currentColor",
+    "sub": "一個品牌往往不只一種畫法。每個品牌只提供它真正有的那幾種，目錄資料記錄了是哪幾種，所以圖庫不必靠猜就能算出正確的集合。",
+    "text": "僅文字標",
+    "title": "一個品牌，五種畫法"
+  }
+}

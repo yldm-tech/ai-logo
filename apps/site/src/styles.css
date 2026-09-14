@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/* The theme is a data attribute on <html> rather than the `prefers-color-scheme` media query, because the reader can override it from the header. Tailwind's stock `dark:` variant keys off the media query, so it is redefined here to read the attribute instead. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Two layers of colour. These raw variables carry the light and dark values; the @theme block below hands them to Tailwind under semantic names, so a utility like `bg-surface` resolves to whichever theme is on the element. */
+:root {
+  --canvas: #fcfcfd;
+  --surface: #fff;
+  --elevated: #f4f4f7;
+  --line: #e7e7ee;
+  --line-strong: #d7d7e1;
+  --ink: #121217;
+  --ink-dim: #5f5f6d;
+  --ink-faint: #8c8c9a;
+  --accent: #6d4aff;
+  --accent-soft: #f0ecff;
+  --accent-2: #00a6c4;
+  --tok-keyword: #cf222e;
+  --tok-string: #0a3069;
+  --tok-ident: #953800;
+  --tok-punct: #6e7781;
+
+  /* Display type is tuned for Latin: tightened, and set close because cap-height leaves air above and below the line. */
+  --display-tracking: -0.035em;
+  --display-leading: 1.04;
+
+  color-scheme: light;
+}
+
+/* CJK undoes both. The glyphs are drawn to fill a fixed em box, so negative tracking makes them collide rather than tighten, and they reach the top and bottom of that box, so Latin display leading leaves two lines touching.
+
+   `:lang(zh)` matches `zh-CN` and `zh-TW` alike — App writes the tag onto <html>. */
+:root:lang(zh),
+:root:lang(ja),
+:root:lang(ko) {
+  --display-tracking: 0;
+  --display-leading: 1.28;
+}
+
+[data-theme="dark"] {
+  --canvas: #08080b;
+  --surface: #101015;
+  --elevated: #17171e;
+  --line: #23232c;
+  --line-strong: #32323e;
+  --ink: #f3f3f7;
+  --ink-dim: #9a9aa8;
+  --ink-faint: #6e6e7c;
+  --accent: #8f75ff;
+  --accent-soft: #191333;
+  --accent-2: #3ad8f0;
+  --tok-keyword: #ff7b72;
+  --tok-string: #a5d6ff;
+  --tok-ident: #ffa657;
+  --tok-punct: #8b949e;
+
+  color-scheme: dark;
+}
+
+/* Hangul syllables are full-width blocks, so a browser breaks between any two of them by default and severs a word from its particle — 브랜드 / 를. Korean is written with spaces between words and should break there, which is exactly what `keep-all` restores. Chinese and Japanese are not in this rule: breaking anywhere is correct for them, and keep-all would make long runs overflow. `overflow-wrap` is the safety net for a run too long for its line. */
+:root:lang(ko) {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-dim: var(--ink-dim);
+  --color-faint: var(--ink-faint);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-2: var(--accent-2);
+  /* The Latin families come first and carry no CJK glyphs, so Chinese, Japanese and Korean fall through to the families named after them rather than to whatever the platform picks. */
+  --font-sans:
+    -apple-system, blinkmacsystemfont, "Segoe UI", system-ui, "Helvetica Neue", arial,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Hiragino Sans",
+    "Yu Gothic", "Noto Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-mono: ui-monospace, sfmono-regular, "SF Mono", menlo, consolas, monospace;
+  --animate-marquee: marquee var(--marquee-duration, 64s) linear infinite;
+  --animate-drift: drift 18s ease-in-out infinite alternate;
+}
+
+/* Half the track is a duplicate of the other half, so translating by exactly -50% lands on an identical frame and the seam is invisible. */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(-3%, -2%, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(3%, 4%, 0) scale(1.12);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Nothing below should animate for a reader who has asked the system not to. The marquee is decorative and the entrance transitions carry no information, so both are cut rather than shortened. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Inline code in running text. `pre code` is excluded — a code block styles itself, and a chip background inside one would draw a box around every line. */
+  p code,
+  li code {
+    background: var(--elevated);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    font-size: 0.84em;
+    padding: 0.1em 0.36em;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--accent) 28%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@utility text-balance-tight {
+  letter-spacing: var(--display-tracking);
+  text-wrap: balance;
+}
+
+/* Fades the ends of a horizontal track so rows of icons slide out of view instead of being cut off by the viewport edge. */
+@utility edge-fade {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}

@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - "apps/demo/**"
+      - "apps/site/**"
       - "src/**"
       - "public/**"
       # The icon renders are staged into the site below, so a change to them changes what is deployed.
@@ -58,7 +58,7 @@ jobs:
         run: pnpm run build
 
       - name: Build site
-        run: pnpm --dir apps/demo run build
+        run: pnpm --dir apps/site run build
 
       # The icon renders ride along with the site so they are reachable at a short
       # path on the custom domain — /svg/openai.svg rather than the monorepo layout
@@ -70,7 +70,7 @@ jobs:
       # to /png/package.json on the public site alongside the images.
       - name: Stage icon assets
         run: |
-          out=apps/demo/dist
+          out=apps/site/dist
           cp -r packages/static-svg/icons "$out/svg"
           mkdir -p "$out/png" "$out/webp"
           cp -r packages/static-png/light packages/static-png/dark "$out/png/"
@@ -80,11 +80,11 @@ jobs:
 
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
-      # Vite copies apps/demo/public into dist, and CNAME rides along with it,
+      # Vite copies apps/site/public into dist, and CNAME rides along with it,
       # which is what binds the custom domain.
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          path: apps/demo/dist
+          path: apps/site/dist
 
   deploy:
     name: Deploy

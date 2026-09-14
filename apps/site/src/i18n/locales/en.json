@@ -1,0 +1,101 @@
+{
+  "cdn": {
+    "avatar": "mark on its brand background",
+    "eyebrow": "CDN",
+    "png": "light and dark renders",
+    "sub": "The slug is the component name lower-cased with nothing between the words — <c>HuggingFace</c> is <c>huggingface</c> — and variants carry a suffix: <c>-color</c>, <c>-text</c>, <c>-brand</c>. PNG and WebP sit under a <c>light</c> or <c>dark</c> directory, which is what a <c>picture</c> element needs to follow the reader's colour scheme.",
+    "svg": "vector, one file per mark",
+    "title": "Every mark is also a file",
+    "webp": "the same renders, smaller"
+  },
+  "copy": {
+    "copied": "Copied",
+    "copy": "Copy",
+    "copyImport": "Copy import",
+    "label": "Copy {{value}}"
+  },
+  "features": {
+    "css": {
+      "note": "Monochrome marks are drawn in <c>currentColor</c> and sized by a single prop, so they take the colour of the text around them and stay sharp at any size — they are vectors, not sprites.",
+      "title": "Sized and coloured like text"
+    },
+    "eyebrow": "How it works",
+    "files": {
+      "note": "Every mark is also a file on a CDN. No install, no build step — an <c>img</c> tag is enough, and PNG and WebP ship light and dark renders for a <c>picture</c> element to choose between.",
+      "title": "Or skip the install entirely"
+    },
+    "lookup": {
+      "note": "A model id from an API response is a string, not an import. <c>ProviderIcon</c>, <c>ModelIcon</c> and <c>AgentIcon</c> map it to a mark through a keyword table, with a neutral fallback when nothing matches.",
+      "title": "Resolve a mark from a string"
+    },
+    "sub": "Four things the package does so an application does not have to keep its own folder of logo files.",
+    "title": "Built to be consumed, not vendored",
+    "treeshake": {
+      "comment": "one module in, {{count}} shaken out",
+      "note": "The build emits one module per brand, so a bundler drops the {{count}} you did not name. A bundle-size budget in CI guards it — this is the regression that stays invisible until someone reads their bundle report.",
+      "title": "Import one brand, ship one brand"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "issue": "Report an issue",
+    "licence": "MIT licence",
+    "npm": "npm",
+    "npmAlias": "npm ({{alias}})",
+    "tagline": "Brand marks belong to their respective owners and are used here to identify them. This package is a fork of lobehub/lobe-icons, MIT licensed, and keeps that licence."
+  },
+  "gallery": {
+    "all": "All",
+    "apps": "Apps",
+    "close": "Close",
+    "empty": "Nothing matches “{{query}}”.",
+    "models": "Models",
+    "providers": "Providers",
+    "search": "Search brands, models, providers…",
+    "shown": "{{count}} shown"
+  },
+  "hero": {
+    "badge": "{{brands}} brands · {{color}} in colour · MIT",
+    "browse": "Browse {{count}} icons",
+    "sub": "Logos for AI providers, models and applications as typed React components — colour, wordmark, lockup and avatar variants — plus static SVG, PNG and WebP on a CDN.",
+    "title": "Every AI brand, <a>one import</a>."
+  },
+  "install": {
+    "eyebrow": "Install",
+    "peers": "<c>react</c>, <c>react-dom</c> and <c>antd</c> are peer dependencies. The same build is published as <c>{{alias}}</c> at the same version — pick one, not both.",
+    "title": "Add it to a project"
+  },
+  "meta": {
+    "description": "Logos for AI providers, models and applications as typed React components, with colour, wordmark, lockup and avatar variants, plus static SVG, PNG and WebP on a CDN. MIT licensed.",
+    "title": "AI Logo — {{count}} AI brand icons for React and CDN"
+  },
+  "nav": {
+    "github": "GitHub repository",
+    "icons": "Icons",
+    "language": "Language",
+    "overview": "Overview",
+    "search": "Search brands…",
+    "toDark": "Switch to dark theme",
+    "toLight": "Switch to light theme"
+  },
+  "stats": {
+    "brands": "brand marks",
+    "brandsNote": "{{provider}} providers · {{model}} models · {{application}} apps",
+    "colour": "in full colour",
+    "colourNote": "the rest inherit currentColor",
+    "formats": "asset formats",
+    "formatsNote": "React, SVG, PNG, WebP",
+    "variants": "variants per brand",
+    "variantsNote": "mono, colour, wordmark, lockup, avatar"
+  },
+  "variants": {
+    "avatar": "Mark on its brand background",
+    "color": "The brand palette",
+    "combine": "Mark and wordmark locked up",
+    "eyebrow": "Variants",
+    "mono": "Monochrome, inherits currentColor",
+    "sub": "A brand is rarely one drawing. Each one ships the marks it actually has, and the table of contents records which — so a gallery can render the right set without guessing.",
+    "text": "Wordmark only",
+    "title": "One brand, five ways to draw it"
+  }
+}

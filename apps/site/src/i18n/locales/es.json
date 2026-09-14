@@ -1,0 +1,101 @@
+{
+  "cdn": {
+    "avatar": "la marca sobre su color de fondo",
+    "eyebrow": "CDN",
+    "png": "versiones clara y oscura",
+    "sub": "El slug es el nombre del componente en minúsculas y sin nada entre palabras — <c>HuggingFace</c> es <c>huggingface</c> — y las variantes llevan sufijo: <c>-color</c>, <c>-text</c>, <c>-brand</c>. PNG y WebP viven en un directorio <c>light</c> o <c>dark</c>, que es justo lo que necesita un elemento <c>picture</c> para seguir el esquema de color del lector.",
+    "svg": "vectorial, un archivo por marca",
+    "title": "Cada marca es también un archivo",
+    "webp": "las mismas versiones, más ligeras"
+  },
+  "copy": {
+    "copied": "Copiado",
+    "copy": "Copiar",
+    "copyImport": "Copiar import",
+    "label": "Copiar {{value}}"
+  },
+  "features": {
+    "css": {
+      "note": "Las marcas monocromas se dibujan con <c>currentColor</c> y se dimensionan con una sola prop, así que toman el color del texto que las rodea y se ven nítidas a cualquier tamaño: son vectores, no sprites.",
+      "title": "Se dimensionan y colorean como el texto"
+    },
+    "eyebrow": "Cómo funciona",
+    "files": {
+      "note": "Cada marca es también un archivo en un CDN. Sin instalación ni compilación: basta una etiqueta <c>img</c>, y PNG y WebP incluyen versiones clara y oscura para que un elemento <c>picture</c> elija.",
+      "title": "O sáltate la instalación por completo"
+    },
+    "lookup": {
+      "note": "El id de modelo que devuelve una API es una cadena, no un import. <c>ProviderIcon</c>, <c>ModelIcon</c> y <c>AgentIcon</c> lo asocian a una marca mediante una tabla de palabras clave, con un respaldo neutro cuando nada coincide.",
+      "title": "Resolver una marca desde una cadena"
+    },
+    "sub": "Cuatro cosas que hace el paquete para que tu aplicación no tenga que mantener su propia carpeta de logotipos.",
+    "title": "Hecho para consumirse, no para copiarse",
+    "treeshake": {
+      "comment": "entra un módulo, salen {{count}}",
+      "note": "La compilación emite un módulo por marca, así que el empaquetador descarta las {{count}} que no nombraste. Un presupuesto de tamaño en CI lo vigila: es la regresión que permanece invisible hasta que alguien lee su informe de bundle.",
+      "title": "Importa una marca, publica una marca"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "issue": "Reportar un problema",
+    "licence": "Licencia MIT",
+    "npm": "npm",
+    "npmAlias": "npm ({{alias}})",
+    "tagline": "Las marcas pertenecen a sus respectivos titulares y aquí se usan para identificarlos. Este paquete es un fork de lobehub/lobe-icons, con licencia MIT, y mantiene esa licencia."
+  },
+  "gallery": {
+    "all": "Todas",
+    "apps": "Apps",
+    "close": "Cerrar",
+    "empty": "Nada coincide con «{{query}}».",
+    "models": "Modelos",
+    "providers": "Proveedores",
+    "search": "Buscar marcas, modelos, proveedores…",
+    "shown": "{{count}} visibles"
+  },
+  "hero": {
+    "badge": "{{brands}} marcas · {{color}} a color · MIT",
+    "browse": "Ver {{count}} iconos",
+    "sub": "Logotipos de proveedores, modelos y aplicaciones de IA como componentes de React tipados — con variantes a color, wordmark, lockup y avatar — además de SVG, PNG y WebP estáticos en un CDN.",
+    "title": "Cada marca de IA, <a>un solo import</a>."
+  },
+  "install": {
+    "eyebrow": "Instalación",
+    "peers": "<c>react</c>, <c>react-dom</c> y <c>antd</c> son dependencias peer. La misma compilación se publica como <c>{{alias}}</c> en la misma versión: elige una, no las dos.",
+    "title": "Añádelo a un proyecto"
+  },
+  "meta": {
+    "description": "Logotipos de proveedores, modelos y aplicaciones de IA como componentes de React tipados, con variantes a color, wordmark, lockup y avatar, además de SVG, PNG y WebP estáticos en un CDN. Licencia MIT.",
+    "title": "AI Logo — {{count}} iconos de marcas de IA para React y CDN"
+  },
+  "nav": {
+    "github": "Repositorio de GitHub",
+    "icons": "Iconos",
+    "language": "Idioma",
+    "overview": "Resumen",
+    "search": "Buscar marcas…",
+    "toDark": "Cambiar al tema oscuro",
+    "toLight": "Cambiar al tema claro"
+  },
+  "stats": {
+    "brands": "marcas",
+    "brandsNote": "{{provider}} proveedores · {{model}} modelos · {{application}} apps",
+    "colour": "a todo color",
+    "colourNote": "el resto hereda currentColor",
+    "formats": "formatos",
+    "formatsNote": "React, SVG, PNG, WebP",
+    "variants": "variantes por marca",
+    "variantsNote": "mono, color, wordmark, lockup, avatar"
+  },
+  "variants": {
+    "avatar": "La marca sobre su color de fondo",
+    "color": "La paleta de la marca",
+    "combine": "Marca y wordmark juntos",
+    "eyebrow": "Variantes",
+    "mono": "Monocroma, hereda currentColor",
+    "sub": "Una marca rara vez es un solo dibujo. Cada una incluye las versiones que realmente tiene y el índice registra cuáles son, así que una galería puede dibujar el conjunto correcto sin adivinar.",
+    "text": "Solo el wordmark",
+    "title": "Una marca, cinco formas de dibujarla"
+  }
+}
