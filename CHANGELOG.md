@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.3.1](https://github.com/yldm-tech/ai-logo/compare/v1.3.0...v1.3.1) (2026-09-14)
+
+### Bug Fixes
+
+- point the mdx demos at the scoped package name ([3cc7141](https://github.com/yldm-tech/ai-logo/commit/3cc7141b517a932784e8bab153196f4137f5098c))
+
 # [1.3.0](https://github.com/yldm-tech/ai-logo/compare/v1.2.4...v1.3.0) (2026-09-14)
 
 ### Features
