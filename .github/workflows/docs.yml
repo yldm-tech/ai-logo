@@ -48,6 +48,19 @@ jobs:
       - name: Build docs
         run: pnpm run docs:build
 
+      # The icon renders ride along with the site so they are reachable at a short
+      # path on the custom domain — /svg/openai.svg rather than the monorepo layout
+      # a CDN pointed straight at the repository would expose. Roughly 75 MB and
+      # 4880 files on top of the site, well inside the 1 GB Pages limit.
+      - name: Stage icon assets
+        run: |
+          out=.react-router/build/client
+          cp -r packages/static-svg/icons "$out/svg"
+          cp -r packages/static-png "$out/png"
+          cp -r packages/static-webp "$out/webp"
+          cp -r packages/static-avatar/avatars "$out/avatar"
+          du -sh "$out"
+
       - uses: actions/configure-pages@v5
 
       # lobedocs prerenders into .react-router/build/client, and public/CNAME is
