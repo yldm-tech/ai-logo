@@ -48,3 +48,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # semantic-release publishes one name; the scoped copy of the same build goes out here. The script is a no-op when the release step decided there was nothing to release.
+      - name: Publish scoped mirror
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$HOME/.npmrc"
+          scripts/publish-mirror.sh
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
