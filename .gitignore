@@ -27,7 +27,6 @@ coverage
 # production
 dist
 es
-lib
 logs
 test-output
 
@@ -40,6 +39,5 @@ react-router.config.mjs
 
 # misc
 # add other ignore file below
-bun.lockb
 .env
 *.patch

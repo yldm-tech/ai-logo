@@ -4,7 +4,7 @@
   "dependencyDashboard": true,
   "ignoreDeps": [],
   "labels": ["dependencies"],
-  "postUpdateOptions": ["yarnDedupeHighest"],
+  "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 30,
   "prHourlyLimit": 0,
   "rebaseWhen": "conflicted",
