@@ -1,4 +1,4 @@
-import { DivProps } from "@lobehub/ui";
+import { DivProps } from "@/primitives";
 import { FC, memo } from "react";
 
 import Ai21 from "@/Ai21";

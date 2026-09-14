@@ -1,4 +1,4 @@
-import { Center } from "@lobehub/ui";
+import { Center } from "@/primitives";
 import { cssVar } from "antd-style";
 import { memo } from "react";
 
