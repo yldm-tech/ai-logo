@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import { LANGUAGES } from "../i18n";
+import { LANGUAGE_PARAM, LANGUAGES } from "../i18n";
 
 const GlobeIcon = () => (
   <svg fill="none" height="15" viewBox="0 0 24 24" width="15">
@@ -31,7 +31,13 @@ export const LanguagePicker = () => {
       <select
         aria-label={t("nav.language")}
         className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
-        onChange={(event) => void i18n.changeLanguage(event.target.value)}
+        onChange={(event) => {
+          void i18n.changeLanguage(event.target.value);
+          // Written only on an explicit choice, so a detected language does not litter the URL of a first visit — but a reader who picked one can share what they are reading.
+          const url = new URL(window.location.href);
+          url.searchParams.set(LANGUAGE_PARAM, event.target.value);
+          window.history.replaceState(null, "", url);
+        }}
         value={current.value}
       >
         {LANGUAGES.map((language) => (

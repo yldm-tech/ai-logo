@@ -33,6 +33,11 @@ export const RTL_LANGUAGES = new Set(["ar"]);
 
 export const LANGUAGE_KEY = "ai-logo-lang";
 
+/** The query parameter that pins a language. It is what makes a translation addressable — a link to share, and a URL a crawler can index and an hreflang alternate can point at. */
+export const LANGUAGE_PARAM = "lang";
+
+export const SITE = "https://ailogo.yldm.ai";
+
 const resources = {
   ar: { translation: ar },
   de: { translation: de },
@@ -63,7 +68,9 @@ void i18n
       caches: ["localStorage"],
       convertDetectedLanguage,
       lookupLocalStorage: LANGUAGE_KEY,
-      order: ["localStorage", "navigator", "htmlTag"],
+      lookupQuerystring: LANGUAGE_PARAM,
+      // The query string comes first: a link that names a language means it, whatever this browser last chose.
+      order: ["querystring", "localStorage", "navigator", "htmlTag"],
     },
     fallbackLng: "en",
     interpolation: { escapeValue: false },

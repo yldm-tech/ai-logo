@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Footer } from "./components/Footer";
+import { Head } from "./components/Head";
 import { Header } from "./components/Header";
 import { RTL_LANGUAGES } from "./i18n";
 import { Landing } from "./landing/Landing";
@@ -67,6 +68,7 @@ export default function App() {
 
   return (
     <>
+      <Head />
       <Header />
       <main>
         <AnimatePresence mode="wait">

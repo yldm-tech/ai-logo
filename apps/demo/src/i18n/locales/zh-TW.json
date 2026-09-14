@@ -65,6 +65,10 @@
     "peers": "<c>react</c>、<c>react-dom</c> 與 <c>antd</c> 是 peer 相依套件。同一份建置也以 <c>{{alias}}</c> 的名稱發佈，版本一致，二選一即可，不要同時安裝。",
     "title": "把它加進專案"
   },
+  "meta": {
+    "description": "AI 服務商、模型與應用的品牌圖示，以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。MIT 授權。",
+    "title": "AI Logo — {{count}} 個 AI 品牌圖示，React 元件與 CDN"
+  },
   "nav": {
     "github": "GitHub 儲存庫",
     "icons": "圖示",

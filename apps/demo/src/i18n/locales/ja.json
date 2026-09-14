@@ -65,6 +65,10 @@
     "peers": "<c>react</c>、<c>react-dom</c>、<c>antd</c> は peer 依存です。同じビルドが <c>{{alias}}</c> という名前でも同じバージョンで公開されています。どちらか一方を選んでください。",
     "title": "プロジェクトに追加する"
   },
+  "meta": {
+    "description": "AI プロバイダー、モデル、アプリケーションのロゴを型付きの React コンポーネントで提供。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から。MIT ライセンス。",
+    "title": "AI Logo — AI ブランドアイコン {{count}} 種、React と CDN"
+  },
   "nav": {
     "github": "GitHub リポジトリ",
     "icons": "アイコン",

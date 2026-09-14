@@ -65,6 +65,10 @@
     "peers": "<c>react</c>, <c>react-dom</c> und <c>antd</c> sind Peer-Abhängigkeiten. Derselbe Build erscheint unter dem Namen <c>{{alias}}</c> in derselben Version — nimm eines von beiden, nicht beide.",
     "title": "In ein Projekt aufnehmen"
   },
+  "meta": {
+    "description": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten, mit Farb-, Wortmarken-, Lockup- und Avatar-Varianten sowie statischen SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
+    "title": "AI Logo — {{count}} KI-Markenicons für React und CDN"
+  },
   "nav": {
     "github": "GitHub-Repository",
     "icons": "Icons",

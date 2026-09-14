@@ -65,6 +65,10 @@
     "peers": "<c>react</c>、<c>react-dom</c> 和 <c>antd</c> 是 peer 依赖。同一份构建也以 <c>{{alias}}</c> 的名字发布，版本一致，二选一即可，不要同时装。",
     "title": "把它加进项目"
   },
+  "meta": {
+    "description": "AI 服务商、模型与应用的品牌图标，以带类型的 React 组件提供，含单色、彩色、文字标、组合标与头像；也提供 CDN 上的静态 SVG、PNG 与 WebP。MIT 许可证。",
+    "title": "AI Logo — {{count}} 个 AI 品牌图标，React 组件与 CDN"
+  },
   "nav": {
     "github": "GitHub 仓库",
     "icons": "图标",

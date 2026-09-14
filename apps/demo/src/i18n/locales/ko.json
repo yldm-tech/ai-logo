@@ -65,6 +65,10 @@
     "peers": "<c>react</c>, <c>react-dom</c>, <c>antd</c>는 peer 의존성입니다. 같은 빌드가 <c>{{alias}}</c>라는 이름으로도 같은 버전에 배포됩니다. 둘 중 하나만 설치하세요.",
     "title": "프로젝트에 추가하기"
   },
+  "meta": {
+    "description": "AI 제공업체와 모델, 애플리케이션의 로고를 타입이 붙은 React 컴포넌트로 제공합니다. 컬러·워드마크·락업·아바타 변형과 정적 SVG·PNG·WebP까지. MIT 라이선스.",
+    "title": "AI Logo — AI 브랜드 아이콘 {{count}}개, React와 CDN"
+  },
   "nav": {
     "github": "GitHub 저장소",
     "icons": "아이콘",
