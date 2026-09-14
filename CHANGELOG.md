@@ -2,6 +2,39 @@
 
 # Changelog
 
+### [Version 1.2.2](https://github.com/yldm-tech/ai-logo/compare/v1.2.1...v1.2.2)
+
+<sup>Released on **2026-09-14**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Restore tree-shaking, and add the demo app that caught it losing it.
+
+#### 💄 Styles
+
+- **misc**: Make the demo a real gallery.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Restore tree-shaking, and add the demo app that caught it losing it ([9f37b6f](https://github.com/yldm-tech/ai-logo/commit/9f37b6f))
+
+#### Styles
+
+- **misc**: Make the demo a real gallery ([309d71e](https://github.com/yldm-tech/ai-logo/commit/309d71e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.2.1](https://github.com/yldm-tech/ai-logo/compare/v1.2.0...v1.2.1)
 
 <sup>Released on **2026-09-14**</sup>
