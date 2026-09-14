@@ -68,13 +68,18 @@ export default function App() {
       : "overview",
   );
   const [selectedId, setSelectedId] = useState(
-    () => new URLSearchParams(window.location.search).get("icon") ?? toc[0]?.id ?? "",
+    () => new URLSearchParams(window.location.search).get("icon") ?? "",
   );
 
+  // The query string is for state the reader chose, so a param is written only once it differs from what you get by just opening the page. Writing them unconditionally put `?tab=overview&icon=Ace` on every first visit, which reads as a selection nobody made — Ace is only ever the alphabetically first brand.
   useEffect(() => {
     const url = new URL(window.location.href);
-    url.searchParams.set("tab", tab);
-    url.searchParams.set("icon", selectedId);
+    const write = (key: string, value: string) => {
+      if (value) url.searchParams.set(key, value);
+      else url.searchParams.delete(key);
+    };
+    write("tab", tab === "components" ? tab : "");
+    write("icon", selectedId);
     window.history.replaceState(null, "", url);
   }, [selectedId, tab]);
 
@@ -98,11 +103,10 @@ export default function App() {
     );
   }, [query]);
 
-  // A search that filters the selected icon out of the grid would otherwise leave the
-  // detail panel showing a brand that is no longer in the results.
+  // A search that filters the selected icon out of the grid would otherwise leave the detail panel showing a brand that is no longer in the results. Clear it rather than substituting the first match: picking a different brand on the reader's behalf is how `Ace` used to end up selected before anyone had clicked anything.
   useEffect(() => {
-    if (matches.length && !matches.some((entry) => entry.id === selectedId)) {
-      setSelectedId(matches[0].id);
+    if (selectedId && !matches.some((entry) => entry.id === selectedId)) {
+      setSelectedId("");
     }
   }, [matches, selectedId]);
 
@@ -112,32 +116,25 @@ export default function App() {
   return (
     <>
       <header className="head">
-        <div className="wrap" style={{ paddingBottom: 0 }}>
-          <div className="head-top">
-            <a className="brand" href="#top">
-              <Logo />
-              <h1>AI Logo</h1>
-            </a>
-            {tab === "components" && (
-              <span className="count">
-                {matches.length} of {toc.length} brands
-              </span>
-            )}
-          </div>
-          <div className="controls">
-            <nav className="tabs">
-              {(["overview", "components"] as const).map((name) => (
-                <button
-                  aria-selected={tab === name}
-                  className="tab"
-                  key={name}
-                  onClick={() => setTab(name)}
-                  type="button"
-                >
-                  {name === "overview" ? "Overview" : "Components"}
-                </button>
-              ))}
-            </nav>
+        <div className="wrap head-row">
+          <a className="brand" href="#top">
+            <Logo />
+            <h1>AI Logo</h1>
+          </a>
+          <nav className="tabs">
+            {(["overview", "components"] as const).map((name) => (
+              <button
+                aria-selected={tab === name}
+                className="tab"
+                key={name}
+                onClick={() => setTab(name)}
+                type="button"
+              >
+                {name === "overview" ? "Overview" : "Components"}
+              </button>
+            ))}
+          </nav>
+          <div className="head-right">
             {tab === "components" && (
               <input
                 type="search"
@@ -166,10 +163,15 @@ export default function App() {
           </>
         ) : (
           <>
-            <p className="sub">
-              Imported as a dependency, so every mark below comes from the built <code>es/</code>{" "}
-              output rather than from source — the same files a consumer installs.
-            </p>
+            <div className="list-head">
+              <p className="sub">
+                Imported as a dependency, so every mark below comes from the built <code>es/</code>{" "}
+                output rather than from source — the same files a consumer installs.
+              </p>
+              <span className="count">
+                {matches.length} of {toc.length} brands
+              </span>
+            </div>
 
             {selected && SelectedIcon && (
               <section className="detail">

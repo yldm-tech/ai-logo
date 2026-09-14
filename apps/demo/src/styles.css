@@ -57,28 +57,46 @@ body {
   background: color-mix(in srgb, var(--bg) 82%, transparent);
   border-bottom: 1px solid var(--border);
   margin-bottom: 32px;
-  padding: 24px 0 20px;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.head-top {
-  align-items: baseline;
+/* One row, the height of a nav bar: brand and tabs lead, search and the theme toggle are pushed to the trailing edge. */
+
+.head-row {
+  align-items: center;
   display: flex;
-  gap: 12px;
-  margin-bottom: 4px;
+  gap: 20px;
+  min-height: 60px;
+  padding-bottom: 0;
+}
+
+.head-right {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 650;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin: 0;
+}
+
+.list-head {
+  align-items: baseline;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .count {
   color: var(--text-dim);
+  flex: none;
   font-size: 13px;
   font-variant-numeric: tabular-nums;
 }
@@ -87,7 +105,7 @@ h1 {
   color: var(--text-dim);
   font-size: 13px;
   line-height: 1.6;
-  margin: 0 0 16px;
+  margin: 0;
   max-width: 62ch;
 }
 
@@ -98,20 +116,15 @@ h1 {
   padding: 1px 5px;
 }
 
-.controls {
-  display: flex;
-  gap: 10px;
-}
-
-/* A segmented control rather than links: the two views are mutually exclusive and the switch is instant, so there is nothing to navigate to. It takes the leading edge and pushes everything after it to the right. */
+/* A segmented control rather than links: the two views are mutually exclusive and the switch is instant, so there is nothing to navigate to. It sits beside the brand and does not absorb free space — .head-right's auto margin is the only thing that does, so the gap all lands on one side. */
 
 .tabs {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
   display: flex;
+  flex: none;
   gap: 2px;
-  margin-right: auto;
   padding: 2px;
 }
 
@@ -123,7 +136,7 @@ h1 {
   cursor: pointer;
   font-family: inherit;
   font-size: 14px;
-  padding: 7px 14px;
+  padding: 6px 13px;
   transition:
     background 0.15s ease,
     color 0.15s ease;
@@ -143,11 +156,11 @@ input[type="search"] {
   border: 1px solid var(--border);
   border-radius: 10px;
   color: var(--text);
-  flex: 1;
   font-size: 14px;
   outline: none;
-  padding: 9px 14px;
+  padding: 8px 13px;
   transition: border-color 0.15s ease;
+  width: min(300px, 42vw);
 }
 
 input[type="search"]:focus {
@@ -160,8 +173,10 @@ input[type="search"]:focus {
   border-radius: 10px;
   color: var(--text);
   cursor: pointer;
+  flex: none;
+  font-family: inherit;
   font-size: 14px;
-  padding: 9px 14px;
+  padding: 8px 13px;
   transition: background 0.15s ease;
 }
 
@@ -475,16 +490,38 @@ input[type="search"]:focus {
   align-items: center;
   color: var(--text);
   display: flex;
+  flex: none;
   gap: 9px;
   text-decoration: none;
-}
-
-.brand h1 {
-  font-size: 19px;
 }
 
 .hero-mark {
   color: var(--text);
   display: block;
   margin-bottom: 18px;
+}
+
+/* Narrow screens get the search on its own line rather than a squeezed row. */
+
+@media (max-width: 680px) {
+  .head-row {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  .head-right {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    flex: 1;
+    width: auto;
+  }
+
+  .list-head {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
