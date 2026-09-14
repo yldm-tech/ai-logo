@@ -7,8 +7,8 @@ import AgentGuideCard from "@/components/AgentGuideCard";
 import Dashboard from "@/components/Dashboard";
 
 const ICONS_DOC_URL = "https://lobehub.com/icons/skill.md";
-const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions, substituting the package name ai-logo for @lobehub/icons. The component API is identical.`;
-const ICONS_INSTALL_COMMAND = "npm i ai-logo";
+const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions, substituting the package name @yldm-tech/ai-logo for @lobehub/icons. The component API is identical.`;
+const ICONS_INSTALL_COMMAND = "npm i @yldm-tech/ai-logo";
 
 const items: FeaturesProps["items"] = [
   {

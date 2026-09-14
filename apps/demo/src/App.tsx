@@ -1,5 +1,5 @@
-import * as AiLogo from "ai-logo";
-import { toc } from "ai-logo";
+import * as AiLogo from "@yldm-tech/ai-logo";
+import { toc } from "@yldm-tech/ai-logo";
 import { useEffect, useMemo, useState } from "react";
 
 import "./styles.css";
@@ -26,7 +26,7 @@ const VARIANTS = ["Color", "Text", "Combine", "Avatar"] as const;
 
 /** Hand-tokenised rather than pulling in a highlighter for a single line of code. */
 const ImportLine = ({ name }: { name: string }) => {
-  const source = `import { ${name} } from "ai-logo";`;
+  const source = `import { ${name} } from "@yldm-tech/ai-logo";`;
   const [copied, setCopied] = useState(false);
 
   const copy = () => {

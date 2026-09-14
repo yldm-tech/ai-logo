@@ -52,11 +52,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # semantic-release publishes one name; the scoped copy of the same build goes out here.
-      - name: Publish scoped mirror
+      # semantic-release publishes @yldm-tech/ai-logo; the unscoped `ai-logo` alias that re-exports it goes out here, at the same version.
+      - name: Publish unscoped alias
         if: steps.release.outputs.version_before != steps.release.outputs.version_after
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$HOME/.npmrc"
-          scripts/publish-mirror.sh
+          scripts/publish-alias.sh
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

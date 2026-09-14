@@ -1,4 +1,4 @@
-import { Anthropic, Claude, EveryAPI, Gemini, OpenAI, Qwen } from "ai-logo";
+import { Anthropic, Claude, EveryAPI, Gemini, OpenAI, Qwen } from "@yldm-tech/ai-logo";
 
 /**
  * A deliberately mixed sample: two brands with a colour variant, one without,

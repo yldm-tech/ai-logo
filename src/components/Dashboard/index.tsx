@@ -1,6 +1,6 @@
 "use client";
 
-import * as Icons from "ai-logo";
+import * as Icons from "@yldm-tech/ai-logo";
 import { Flexbox, Grid, SearchBar, TooltipGroup } from "@lobehub/ui";
 import { Empty, Segmented } from "antd";
 import { cssVar } from "antd-style";
