@@ -9,10 +9,7 @@ import "./styles.css";
 type IconEntry = (typeof toc)[number];
 
 /**
- * Every icon is a named export, so the toc doubles as an index into the module.
- * A real app would import the handful it needs — see treeshake/entry.tsx — but a
- * gallery wants all of them, and driving it off the toc proves the metadata and
- * the exports line up for all 300-odd brands rather than the six the test samples.
+ * Every icon is a named export, so the toc doubles as an index into the module. A real app would import the handful it needs — see treeshake/entry.tsx — but a gallery wants all of them, and driving it off the toc proves the metadata and the exports line up for all 300-odd brands rather than the six the test samples.
  */
 const registry = AiLogo as unknown as Record<string, CompoundIcon | undefined>;
 
