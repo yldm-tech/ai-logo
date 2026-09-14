@@ -6,10 +6,9 @@ on:
     branches:
       - main
     paths:
-      - "docs/**"
+      - "apps/demo/**"
       - "src/**"
       - "public/**"
-      - "docs.config.ts"
       - "package.json"
       - "pnpm-lock.yaml"
       - ".github/workflows/docs.yml"
@@ -45,8 +44,8 @@ jobs:
       - name: Install deps
         run: pnpm install
 
-      - name: Build docs
-        run: pnpm run docs:build
+      - name: Build site
+        run: pnpm --dir apps/demo run build
 
       # The icon renders ride along with the site so they are reachable at a short
       # path on the custom domain — /svg/openai.svg rather than the monorepo layout
@@ -54,7 +53,7 @@ jobs:
       # 4880 files on top of the site, well inside the 1 GB Pages limit.
       - name: Stage icon assets
         run: |
-          out=.react-router/build/client
+          out=apps/demo/dist
           cp -r packages/static-svg/icons "$out/svg"
           cp -r packages/static-png "$out/png"
           cp -r packages/static-webp "$out/webp"
@@ -63,11 +62,11 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      # lobedocs prerenders into .react-router/build/client, and public/CNAME is
-      # copied through with it, which is what binds the custom domain.
+      # Vite copies apps/demo/public into dist, and CNAME rides along with it,
+      # which is what binds the custom domain.
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .react-router/build/client
+          path: apps/demo/dist
 
   deploy:
     name: Deploy

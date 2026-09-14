@@ -2,6 +2,8 @@ import * as AiLogo from "@yldm-tech/ai-logo";
 import { toc } from "@yldm-tech/ai-logo";
 import { useEffect, useMemo, useState } from "react";
 
+import { Logo } from "./Logo";
+import { Cdn, Hero, Install } from "./sections";
 import "./styles.css";
 
 type IconEntry = (typeof toc)[number];
@@ -61,7 +63,15 @@ const Mark = ({ entry, size = 30 }: { entry: IconEntry; size?: number }) => {
 export default function App() {
   const [theme, setTheme] = useState<"dark" | "light">("light");
   const [query, setQuery] = useState("");
-  const [selectedId, setSelectedId] = useState(toc[0]?.id ?? "");
+  const [selectedId, setSelectedId] = useState(
+    () => new URLSearchParams(window.location.search).get("icon") ?? toc[0]?.id ?? "",
+  );
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    url.searchParams.set("icon", selectedId);
+    window.history.replaceState(null, "", url);
+  }, [selectedId]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -91,7 +101,10 @@ export default function App() {
       <header className="head">
         <div className="wrap" style={{ paddingBottom: 0 }}>
           <div className="head-top">
-            <h1>ai-logo</h1>
+            <a className="brand" href="#top">
+              <Logo />
+              <h1>AI Logo</h1>
+            </a>
             <span className="count">
               {matches.length} of {toc.length} brands
             </span>
@@ -119,6 +132,14 @@ export default function App() {
       </header>
 
       <main className="wrap">
+        <Hero />
+        <Install />
+        <Cdn />
+
+        <h2 className="panel-title" id="icons">
+          Icons
+        </h2>
+
         {selected && SelectedIcon && (
           <section className="detail">
             <div className="detail-head">
