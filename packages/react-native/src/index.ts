@@ -366,6 +366,7 @@ export {
   default as Unstructured,
   type CompoundedIcon as UnstructuredProps,
 } from "./icons/Unstructured";
+export { default as Unsloth, type CompoundedIcon as UnslothProps } from "./icons/Unsloth";
 export { default as Upstage, type CompoundedIcon as UpstageProps } from "./icons/Upstage";
 export { default as V0, type CompoundedIcon as V0Props } from "./icons/V0";
 export {
