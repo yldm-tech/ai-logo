@@ -60,8 +60,8 @@ const run = async () => {
     }),
   );
 
-  // writeFileSync(resolve(rootDir, 'src/toc.json'), JSON.stringify(list, null, 2));
-  writeFileSync(resolve(rootDir, "src/toc.json"), JSON.stringify(list));
+  // Written formatted with a trailing newline so it matches what oxfmt emits. Minified output drifts on every regeneration and fails `vp check` in CI.
+  writeFileSync(resolve(rootDir, "src/toc.json"), `${JSON.stringify(list, null, 2)}\n`);
 };
 
 run();
