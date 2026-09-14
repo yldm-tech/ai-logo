@@ -1,9 +1,11 @@
-const base = require("@lobehub/lint").semanticRelease;
+const preset = require("@lobehub/semantic-release-config");
+
+const base = preset.default || preset;
 
 /**
  * The commit convention here is gitmoji: `:sparkles: feat(scope): subject`.
  *
- * @lobehub/lint wires that up through `conventional-changelog-gitmoji-config`,
+ * @lobehub/semantic-release-config wires that up through `conventional-changelog-gitmoji-config`,
  * which has not been touched since 2023 and still speaks the pre-v6
  * conventional-commits-parser API. semantic-release 25 ships commit-analyzer 13,
  * which requires conventional-commits-parser ^6, so loading the preset throws
