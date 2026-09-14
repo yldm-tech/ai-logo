@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [1.6.2](https://github.com/yldm-tech/ai-logo/compare/v1.6.1...v1.6.2) (2026-09-14)
+
+### Bug Fixes
+
+- act on the repository audit — lookup tables, published surface, and gates that could not fail ([48dd2f3](https://github.com/yldm-tech/ai-logo/commit/48dd2f3dce92f156296386f35f63bb9fad3d8347))
+
+### Documentation
+
+- point every package homepage at the docs site ([0d21a27](https://github.com/yldm-tech/ai-logo/commit/0d21a276e09ee528c14d963c40fdc0aa11c276d9))
+
 ## [1.6.1](https://github.com/yldm-tech/ai-logo/compare/v1.6.0...v1.6.1) (2026-09-14)
 
 ### Bug Fixes
