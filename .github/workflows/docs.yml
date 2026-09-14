@@ -1,0 +1,68 @@
+name: Docs
+
+# Runs on GitHub-hosted runners rather than the org's self-hosted ARC scale-set: this repository is public, and self-hosted runners on public repositories let fork workflows execute arbitrary code on org infrastructure. The ARC image also has neither pnpm nor a current Node.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "src/**"
+      - "public/**"
+      - "docs.config.ts"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - ".github/workflows/docs.yml"
+  workflow_dispatch:
+
+# Pages deployment authenticates through OIDC, so no token needs to be stored.
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+# A queued deploy supersedes a running one rather than racing it, but an
+# in-flight deploy is allowed to finish so the site is never left half-written.
+concurrency:
+  cancel-in-progress: false
+  group: pages
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v6
+        with:
+          cache: "pnpm"
+          node-version: "24"
+
+      - name: Install deps
+        run: pnpm install
+
+      - name: Build docs
+        run: pnpm run docs:build
+
+      - uses: actions/configure-pages@v5
+
+      # lobedocs prerenders into .react-router/build/client, and public/CNAME is
+      # copied through with it, which is what binds the custom domain.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .react-router/build/client
+
+  deploy:
+    name: Deploy
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

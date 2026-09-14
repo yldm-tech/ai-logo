@@ -1,2 +1,5 @@
 User-Agent: *
 Allow: /
+
+Host: https://ailogo.yldm.ai
+Sitemap: https://ailogo.yldm.ai/sitemap.xml

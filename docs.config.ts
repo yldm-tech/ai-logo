@@ -26,7 +26,7 @@ export default defineDocsConfig({
     "docs/features/agent-icon.mdx",
     "docs/features/icon-avatar.mdx",
   ],
-  siteUrl: "https://github.com/yldm-tech/ai-logo",
+  siteUrl: "https://ailogo.yldm.ai",
   themeConfig: {
     apiHeader: {
       docUrl: "{github}/edit/main/{atomId}",
