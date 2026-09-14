@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.6.1](https://github.com/yldm-tech/ai-logo/compare/v1.6.0...v1.6.1) (2026-09-14)
+
+### Bug Fixes
+
+- **demo:** stop inventing a selection, and put the header on one row ([71d5dec](https://github.com/yldm-tech/ai-logo/commit/71d5dec69514d0db4278d3bef218731e89fb9619))
+
 # [1.6.0](https://github.com/yldm-tech/ai-logo/compare/v1.5.2...v1.6.0) (2026-09-14)
 
 ### Features
