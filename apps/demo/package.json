@@ -4,8 +4,8 @@
   "private": true,
   "description": "Consumer smoke test — imports ai-logo the way a published dependency resolves, not through the repo's source aliases",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
+    "build": "vp build",
+    "dev": "vp dev",
     "test": "vp test run && node treeshake/check.mjs",
     "treeshake": "node treeshake/check.mjs",
     "type-check": "tsgo --noEmit"
