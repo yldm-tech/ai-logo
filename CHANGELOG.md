@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.9.0](https://github.com/yldm-tech/ai-logo/compare/v1.8.0...v1.9.0) (2026-09-14)
+
+### Features
+
+- **site:** close the rest of the audit's confirmed findings ([e166345](https://github.com/yldm-tech/ai-logo/commit/e166345a1fd2861c2edce957f8e3d1ece366ddae))
+
 ## [1.8.0](https://github.com/yldm-tech/ai-logo/compare/v1.7.0...v1.8.0) (2026-09-14)
 
 ### Features
