@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.6.3](https://github.com/yldm-tech/ai-logo/compare/v1.6.2...v1.6.3) (2026-09-14)
+
+### Bug Fixes
+
+- restore the docs workflow changes a conflict resolution clobbered ([a249ced](https://github.com/yldm-tech/ai-logo/commit/a249ced0e7f30d440dfa7466f2d9092dba00ec82))
+
 ## [1.6.2](https://github.com/yldm-tech/ai-logo/compare/v1.6.1...v1.6.2) (2026-09-14)
 
 ### Bug Fixes
