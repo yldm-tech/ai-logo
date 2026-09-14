@@ -1,7 +1,7 @@
 /**
  * Checks what the store reads while the module is being evaluated, which is the only time it reads any of it.
  *
- * Two callers, two environments. In a browser the initial state is a deep link — `?view=icons&group=model&q=foo&icon=Claude` has to arrive as the gallery, filtered, searched and with that brand open, and a parameter someone typed by hand has to fall back rather than put the page in a state the UI has no way out of. In Node it is scripts/prerender.tsx, where there is no location, no storage and no system preference: a single unguarded read there throws at import time and takes the whole prerender with it, so the build fails rather than the page.
+ * This file is the browser half: the initial state is a deep link — `?view=icons&group=model&q=foo&icon=Claude` has to arrive as the gallery, filtered, searched and with that brand open — and a parameter someone typed by hand has to fall back rather than put the page in a state the UI has no way out of. The Node half is store.server.test.ts, which runs in a real environment without a `window` rather than deleting one here.
  *
  * Each case imports the module afresh, because the reads happen once at evaluation and never again.
  */
@@ -23,14 +23,6 @@ const load = async (search = "") => {
   return (await import("./store")).useStore.getState();
 };
 
-/** What prerender.tsx runs: the same module with no `window` to reach for. */
-const loadOnServer = async (search = "") => {
-  window.history.replaceState(null, "", `/${search}`);
-  vi.stubGlobal("window", undefined);
-  vi.resetModules();
-  return (await import("./store")).useStore.getState();
-};
-
 /** jsdom ships no `matchMedia`, so the system preference has to be given one. Real browsers have it; this is the test environment being thinner than the web, not the store reading something it should not. */
 const systemPrefers = (scheme: "dark" | "light") => {
   window.matchMedia = ((query: string) => ({
@@ -44,33 +36,6 @@ afterEach(() => {
   Reflect.deleteProperty(window, "matchMedia");
   localStorage.clear();
   window.history.replaceState(null, "", "/");
-});
-
-describe("store, in the prerender", () => {
-  it("gives a first visit's page without reading the browser", async () => {
-    const getItem = vi.spyOn(Storage.prototype, "getItem");
-    // Both are present and both say something other than the answer expected below, so a read that slipped through would show up as the wrong state rather than as nothing at all.
-    systemPrefers("dark");
-    localStorage.setItem("ai-logo-theme", "dark");
-
-    const state = await loadOnServer("?view=icons&group=model&q=foo&icon=Claude");
-
-    expect(place(state)).toEqual(FIRST_VISIT);
-    expect(state.theme).toBe("light");
-    expect(getItem).not.toHaveBeenCalled();
-  });
-
-  it("still toggles the theme, without a store to write it to", async () => {
-    const setItem = vi.spyOn(Storage.prototype, "setItem");
-    const { toggleTheme, ...state } = await loadOnServer();
-    const store = (await import("./store")).useStore;
-
-    toggleTheme();
-
-    expect(state.theme).toBe("light");
-    expect(store.getState().theme).toBe("dark");
-    expect(setItem).not.toHaveBeenCalled();
-  });
 });
 
 describe("store, on a client", () => {
