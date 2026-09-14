@@ -74,8 +74,9 @@ export const Marquee = ({
     </Fragment>
   ));
 
+  // Pinned to `ltr` because the track has no reading direction — it is a strip of logos, not a sentence. Under `dir="rtl"` the row laid out from the right and the animation kept translating left, so it walked away from the viewport instead of cycling: six seconds into an Arabic page there was a 213px blank band on the right and it was still growing.
   return (
-    <div className="group edge-fade overflow-hidden py-2">
+    <div className="group edge-fade overflow-hidden py-2" dir="ltr">
       <div
         className="flex w-max animate-marquee group-hover:[animation-play-state:paused]"
         style={{

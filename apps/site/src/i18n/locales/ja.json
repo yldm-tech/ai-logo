@@ -61,7 +61,8 @@
     "providers": "プロバイダー",
     "search": "ブランド、モデル、プロバイダーを検索…",
     "shown": "{{count}} 件表示",
-    "shown_other": "{{count}} 件表示"
+    "shown_other": "{{count}} 件表示",
+    "skip": "アイコングリッドをスキップ"
   },
   "hero": {
     "badge": "{{brands}} ブランド · うち {{color}} はカラー · MIT",

@@ -61,7 +61,8 @@
     "providers": "제공업체",
     "search": "브랜드, 모델, 제공업체 검색…",
     "shown": "{{count}}개 표시",
-    "shown_other": "{{count}}개 표시"
+    "shown_other": "{{count}}개 표시",
+    "skip": "아이콘 그리드 건너뛰기"
   },
   "hero": {
     "badge": "{{brands}}개 브랜드 · {{color}}개 컬러 · MIT",

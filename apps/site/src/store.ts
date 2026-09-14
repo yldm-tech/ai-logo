@@ -57,6 +57,29 @@ type State = {
   view: View;
 };
 
+/**
+ * The address a given state should be at.
+ *
+ * A parameter is written only once it differs from what opening the page plainly would give: writing all four unconditionally put `?view=overview&group=all` on every first visit, which reads as a selection nobody made. Pure, and separate from the effect that calls it, because the rule is worth stating once and checking — the last version of it shipped exactly that bug.
+ */
+export const urlFor = (
+  state: Pick<State, "filter" | "query" | "selectedId" | "view">,
+  href: string,
+): string => {
+  const url = new URL(href);
+  const write = (key: string, value: string) => {
+    if (value) url.searchParams.set(key, value);
+    else url.searchParams.delete(key);
+  };
+
+  write("view", state.view === "icons" ? state.view : "");
+  write("icon", state.selectedId);
+  write("q", state.query);
+  write("group", state.filter === "all" ? "" : state.filter);
+
+  return url.toString();
+};
+
 export const useStore = create<State>((set) => ({
   clear: () => set({ selectedId: "" }),
 

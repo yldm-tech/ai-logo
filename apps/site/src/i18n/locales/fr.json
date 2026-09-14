@@ -63,7 +63,8 @@
     "shown": "{{count}} affichées",
     "shown_many": "{{count}} affichées",
     "shown_one": "{{count}} affichée",
-    "shown_other": "{{count}} affichées"
+    "shown_other": "{{count}} affichées",
+    "skip": "Passer la grille d’icônes"
   },
   "hero": {
     "badge": "{{brands}} marques · {{color}} en couleur · MIT",

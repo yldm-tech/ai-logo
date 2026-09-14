@@ -62,7 +62,8 @@
     "search": "Search brands, models, providers…",
     "shown": "{{count}} shown",
     "shown_one": "{{count}} shown",
-    "shown_other": "{{count}} shown"
+    "shown_other": "{{count}} shown",
+    "skip": "Skip the icon grid"
   },
   "hero": {
     "badge": "{{brands}} brands · {{color}} in colour · MIT",

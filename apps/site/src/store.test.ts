@@ -7,6 +7,8 @@
  */
 import { afterEach, describe, expect, it, vi } from "vite-plus/test";
 
+import { urlFor } from "./store";
+
 /** The four things a deep link carries. Theme is not among them — it is a preference, not a place. */
 const place = (state: { filter: string; query: string; selectedId: string; view: string }) => ({
   filter: state.filter,
@@ -129,5 +131,37 @@ describe("store, on a client", () => {
     state.toggleTheme();
 
     expect((await import("./store")).useStore.getState().theme).toBe("dark");
+  });
+});
+
+/**
+ * The other direction: what the address bar should say for a given state.
+ *
+ * Only what the reader chose belongs in the URL. Writing all four parameters unconditionally is not a cosmetic problem — it put `?view=overview&group=all` on every first visit, which is a shareable link that looks like somebody made two selections, and that bug shipped once already.
+ */
+describe("the address a state should be at", () => {
+  const base = "https://ailogo.yldm.ai/";
+  const first = { filter: "all", query: "", selectedId: "", view: "overview" } as const;
+
+  it("leaves a first visit's URL untouched", () => {
+    expect(urlFor(first, base)).toBe(base);
+  });
+
+  it("writes only what differs from a first visit", () => {
+    expect(urlFor({ ...first, view: "icons" }, base)).toBe(`${base}?view=icons`);
+    expect(urlFor({ ...first, filter: "model" }, base)).toBe(`${base}?group=model`);
+    expect(urlFor({ ...first, query: "hugging face" }, base)).toBe(`${base}?q=hugging+face`);
+    expect(urlFor({ ...first, selectedId: "Claude" }, base)).toBe(`${base}?icon=Claude`);
+  });
+
+  it("clears a parameter when its state goes back to the default", () => {
+    expect(urlFor(first, `${base}?view=icons&group=model&q=foo&icon=Claude`)).toBe(base);
+  });
+
+  // The language is pinned by a different mechanism and belongs to the reader's link, not to this state.
+  it("leaves a parameter it does not own alone", () => {
+    expect(urlFor({ ...first, view: "icons" }, `${base}?lang=ja`)).toBe(
+      `${base}?lang=ja&view=icons`,
+    );
   });
 });
