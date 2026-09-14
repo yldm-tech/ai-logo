@@ -1,6 +1,8 @@
 name: Docs
 
 # Runs on GitHub-hosted runners rather than the org's self-hosted ARC scale-set: this repository is public, and self-hosted runners on public repositories let fork workflows execute arbitrary code on org infrastructure. The ARC image also has neither pnpm nor a current Node.
+#
+# Actions are pinned to commit SHAs with the tag in a trailing comment. A tag is a moving pointer the upstream owner can repoint, and these jobs run with write scopes; Renovate keeps the pins current.
 on:
   push:
     branches:
@@ -19,8 +21,6 @@ on:
       - ".github/workflows/docs.yml"
   workflow_dispatch:
 
-# Actions are pinned to commit SHAs with the tag in a trailing comment. A tag is a moving pointer the upstream owner can repoint, and these jobs run with write scopes; Renovate keeps the pins current.
-
 # Pages deployment authenticates through OIDC, so no token needs to be stored.
 permissions:
   contents: read
@@ -38,12 +38,12 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           cache: "pnpm"
           node-version: "24"
@@ -64,12 +64,17 @@ jobs:
       # path on the custom domain — /svg/openai.svg rather than the monorepo layout
       # a CDN pointed straight at the repository would expose. Roughly 75 MB and
       # 4880 files on top of the site, well inside the 1 GB Pages limit.
+      #
+      # Each copy takes the asset subdirectories, never the package directory: copying
+      # packages/static-png wholesale published its package.json, README.md and LICENSE
+      # to /png/package.json on the public site alongside the images.
       - name: Stage icon assets
         run: |
           out=apps/demo/dist
           cp -r packages/static-svg/icons "$out/svg"
-          cp -r packages/static-png "$out/png"
-          cp -r packages/static-webp "$out/webp"
+          mkdir -p "$out/png" "$out/webp"
+          cp -r packages/static-png/light packages/static-png/dark "$out/png/"
+          cp -r packages/static-webp/light packages/static-webp/dark "$out/webp/"
           cp -r packages/static-avatar/avatars "$out/avatar"
           du -sh "$out"
 
