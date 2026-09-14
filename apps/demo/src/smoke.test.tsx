@@ -3,10 +3,10 @@
  * built es/index.mjs and es/index.d.mts, not through the repo's `@/` and `ai-logo`
  * tsconfig aliases that point back at src.
  *
- * It runs under a bundler rather than bare Node on purpose. `@lobehub/ui`, a peer
- * dependency, ships directory imports and pulls in a package with no exports map,
- * so `node --import tsx` cannot resolve it. Every real consumer of a React icon
- * set builds through a bundler, so that is what this mirrors.
+ * It runs under vitest because that is how a React app consumes this — through a
+ * bundler, with jsdom standing in for the browser. It no longer has to: dropping
+ * the @lobehub/ui peer dependency, which pulled in a package with no exports map,
+ * made the built output resolvable in bare Node ESM as well.
  */
 import { ModelIcon, ProviderIcon, toc } from "@yldm-tech/ai-logo";
 import { renderToStaticMarkup } from "react-dom/server";

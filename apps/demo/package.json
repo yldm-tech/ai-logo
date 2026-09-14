@@ -14,7 +14,6 @@
     "@yldm-tech/ai-logo": "workspace:*"
   },
   "devDependencies": {
-    "@lobehub/ui": "^5.0.0",
     "@typescript/native-preview": "^7.0.0-dev.20260707.2",
     "antd": "^6.1.1",
     "jsdom": "^30.0.1",
