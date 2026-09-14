@@ -25,7 +25,8 @@
   },
   "workspaces": [
     "*",
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "files": [
     "es"
@@ -40,11 +41,11 @@
   },
   "scripts": {
     "auto-converter-web-icons-to-rn": "tsx scripts/rn-conversion/auto-converter.ts --lint",
-    "build": "tsx scripts/tocWorkflow/index.ts && vp pack src/index.ts --dts --format esm --out-dir es",
+    "build": "tsx scripts/tocWorkflow/index.ts && vp pack src/index.ts --dts --format esm --out-dir es --unbundle",
     "build:rn": "pnpm --dir packages/react-native run build",
     "build:static": "npx puppeteer browsers install chrome && tsx scripts/svgWorkflow/index.tsx",
     "build:toc": "tsx scripts/tocWorkflow/index.ts",
-    "build:watch": "vp pack src/index.ts --dts --format esm --out-dir es --watch",
+    "build:watch": "vp pack src/index.ts --dts --format esm --out-dir es --unbundle --watch",
     "ci": "vp check && npm run type-check",
     "clean": "rm -r es dist coverage .react-router .eslintcache node_modules/.cache",
     "dev": "lobedocs dev",
