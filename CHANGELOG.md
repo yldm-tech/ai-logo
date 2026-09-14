@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [1.8.0](https://github.com/yldm-tech/ai-logo/compare/v1.7.0...v1.8.0) (2026-09-14)
+
+### Features
+
+- close the gaps an audit of the whole repo turned up ([9fb9a4c](https://github.com/yldm-tech/ai-logo/commit/9fb9a4c2b15366196d905e58394640db78d8188f))
+
+### Bug Fixes
+
+- **site:** stop the store tests failing at random ([d6c4883](https://github.com/yldm-tech/ai-logo/commit/d6c4883fff87cf5d0280b68d28d1b6a84e936110))
+
 ## [1.7.0](https://github.com/yldm-tech/ai-logo/compare/v1.6.3...v1.7.0) (2026-09-14)
 
 ### Features
