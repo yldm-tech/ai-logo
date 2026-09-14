@@ -1,0 +1,98 @@
+{
+  "cdn": {
+    "avatar": "브랜드 배경 위의 마크",
+    "eyebrow": "CDN",
+    "png": "라이트와 다크 두 가지 렌더",
+    "sub": "슬러그는 컴포넌트 이름을 소문자로 바꾼 형태이며 단어 사이에 아무것도 넣지 않습니다. <c>HuggingFace</c>는 <c>huggingface</c>가 됩니다. 변형은 접미사로 구분합니다: <c>-color</c>, <c>-text</c>, <c>-brand</c>. PNG와 WebP는 <c>light</c> 또는 <c>dark</c> 디렉터리에 있으며, <c>picture</c> 요소가 사용자의 색 구성표를 따라갈 수 있는 이유가 바로 이것입니다.",
+    "svg": "벡터, 마크당 파일 하나",
+    "title": "모든 마크는 파일이기도 합니다",
+    "webp": "같은 렌더, 더 작은 용량"
+  },
+  "copy": {
+    "copied": "복사됨",
+    "copy": "복사",
+    "copyImport": "import 복사",
+    "label": "{{value}} 복사"
+  },
+  "features": {
+    "css": {
+      "note": "단색 마크는 <c>currentColor</c>로 그려지고 크기는 prop 하나로 정해집니다. 그래서 주변 텍스트의 색을 그대로 따르고 어떤 크기에서도 또렷합니다. 스프라이트가 아니라 벡터입니다.",
+      "title": "텍스트처럼 크기와 색을 정합니다"
+    },
+    "eyebrow": "작동 방식",
+    "files": {
+      "note": "모든 마크는 CDN 위의 파일이기도 합니다. 설치도 빌드도 필요 없이 <c>img</c> 태그 하나면 충분하고, PNG와 WebP는 라이트·다크 렌더를 모두 제공하므로 <c>picture</c> 요소가 골라 쓸 수 있습니다.",
+      "title": "설치를 아예 건너뛰어도 됩니다"
+    },
+    "lookup": {
+      "note": "API 응답의 모델 id는 import가 아니라 문자열입니다. <c>ProviderIcon</c>, <c>ModelIcon</c>, <c>AgentIcon</c>이 키워드 표를 통해 마크로 연결하고, 일치하는 것이 없으면 중립 아이콘으로 대체합니다.",
+      "title": "문자열로 마크 찾기"
+    },
+    "sub": "애플리케이션이 자체 로고 폴더를 들고 다니지 않아도 되도록 이 패키지가 맡는 네 가지.",
+    "title": "복사해 넣는 대신 의존하도록 만들었습니다",
+    "treeshake": {
+      "comment": "모듈 하나를 들이고, {{count}}개를 털어냅니다",
+      "note": "빌드가 브랜드마다 모듈 하나를 내보내므로, 번들러는 이름을 적지 않은 {{count}}개를 걷어냅니다. CI의 번들 크기 예산이 이를 지킵니다. 누군가 번들 리포트를 읽기 전까지는 드러나지 않는 종류의 회귀입니다.",
+      "title": "한 브랜드를 가져오면 한 브랜드만 나갑니다"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "issue": "문제 신고",
+    "licence": "MIT 라이선스",
+    "npm": "npm",
+    "npmAlias": "npm ({{alias}})",
+    "tagline": "브랜드 마크의 권리는 각 소유자에게 있으며 여기서는 식별 목적으로만 사용합니다. 이 패키지는 lobehub/lobe-icons의 포크이며 MIT 라이선스를 그대로 따릅니다."
+  },
+  "gallery": {
+    "all": "전체",
+    "apps": "앱",
+    "close": "닫기",
+    "empty": "“{{query}}”와(과) 일치하는 항목이 없습니다.",
+    "models": "모델",
+    "providers": "제공업체",
+    "search": "브랜드, 모델, 제공업체 검색…",
+    "shown": "{{count}}개 표시"
+  },
+  "hero": {
+    "badge": "{{brands}}개 브랜드 · {{color}}개 컬러 · MIT",
+    "browse": "아이콘 {{count}}개 보기",
+    "sub": "AI 제공업체와 모델, 애플리케이션의 로고를 타입이 붙은 React 컴포넌트로 제공합니다. 컬러·워드마크·락업·아바타 변형이 함께 들어 있고, 정적 SVG·PNG·WebP도 CDN에서 받을 수 있습니다.",
+    "title": "모든 AI 브랜드를,",
+    "titleAccent": "import 한 줄로"
+  },
+  "install": {
+    "eyebrow": "설치",
+    "peers": "<c>react</c>, <c>react-dom</c>, <c>antd</c>는 peer 의존성입니다. 같은 빌드가 <c>{{alias}}</c>라는 이름으로도 같은 버전에 배포됩니다. 둘 중 하나만 설치하세요.",
+    "title": "프로젝트에 추가하기"
+  },
+  "nav": {
+    "github": "GitHub 저장소",
+    "icons": "아이콘",
+    "language": "언어",
+    "overview": "개요",
+    "search": "브랜드 검색…",
+    "toDark": "다크 테마로 전환",
+    "toLight": "라이트 테마로 전환"
+  },
+  "stats": {
+    "brands": "개 브랜드 마크",
+    "brandsNote": "제공업체 {{provider}} · 모델 {{model}} · 앱 {{application}}",
+    "colour": "개는 풀컬러",
+    "colourNote": "나머지는 currentColor를 따릅니다",
+    "formats": "가지 배포 형식",
+    "formatsNote": "React, SVG, PNG, WebP",
+    "variants": "가지 변형",
+    "variantsNote": "단색, 컬러, 워드마크, 락업, 아바타"
+  },
+  "variants": {
+    "avatar": "브랜드 배경 위의 마크",
+    "color": "브랜드 팔레트",
+    "combine": "마크와 워드마크를 묶은 형태",
+    "eyebrow": "변형",
+    "mono": "단색, currentColor를 따름",
+    "sub": "브랜드가 그림 하나로 끝나는 경우는 드뭅니다. 각 브랜드는 실제로 가진 마크만 제공하고 목차 데이터가 그 목록을 기록합니다. 덕분에 갤러리는 추측 없이 올바른 조합을 그릴 수 있습니다.",
+    "text": "워드마크만",
+    "title": "하나의 브랜드, 다섯 가지 표현"
+  }
+}

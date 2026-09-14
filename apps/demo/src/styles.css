@@ -1,527 +1,144 @@
+@import "tailwindcss";
+
+/* The theme is a data attribute on <html> rather than the `prefers-color-scheme` media query, because the reader can override it from the header. Tailwind's stock `dark:` variant keys off the media query, so it is redefined here to read the attribute instead. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Two layers of colour. These raw variables carry the light and dark values; the @theme block below hands them to Tailwind under semantic names, so a utility like `bg-surface` resolves to whichever theme is on the element. */
 :root {
-  --bg: #fbfbfd;
+  --canvas: #fcfcfd;
+  --surface: #fff;
+  --elevated: #f4f4f7;
+  --line: #e7e7ee;
+  --line-strong: #d7d7e1;
+  --ink: #121217;
+  --ink-dim: #5f5f6d;
+  --ink-faint: #8c8c9a;
+  --accent: #6d4aff;
+  --accent-soft: #f0ecff;
+  --accent-2: #00a6c4;
   --tok-keyword: #cf222e;
   --tok-string: #0a3069;
   --tok-ident: #953800;
   --tok-punct: #6e7781;
-  --surface: #fff;
-  --surface-hover: #f5f5f7;
-  --border: #e6e6ea;
-  --text: #16161a;
-  --text-dim: #6b6b76;
-  --accent: #7c5cff;
-  --radius: 14px;
-  --shadow: 0 1px 2px rgb(0 0 0 / 4%), 0 8px 24px rgb(0 0 0 / 4%);
+
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --bg: #0c0c0f;
+  --canvas: #08080b;
+  --surface: #101015;
+  --elevated: #17171e;
+  --line: #23232c;
+  --line-strong: #32323e;
+  --ink: #f3f3f7;
+  --ink-dim: #9a9aa8;
+  --ink-faint: #6e6e7c;
+  --accent: #8f75ff;
+  --accent-soft: #191333;
+  --accent-2: #3ad8f0;
   --tok-keyword: #ff7b72;
   --tok-string: #a5d6ff;
   --tok-ident: #ffa657;
   --tok-punct: #8b949e;
-  --surface: #161619;
-  --surface-hover: #1e1e23;
-  --border: #26262c;
-  --text: #f2f2f5;
-  --text-dim: #8b8b96;
-  --shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px rgb(0 0 0 / 24%);
+
   color-scheme: dark;
 }
 
-* {
-  box-sizing: border-box;
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-dim: var(--ink-dim);
+  --color-faint: var(--ink-faint);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-2: var(--accent-2);
+  --font-sans:
+    -apple-system, blinkmacsystemfont, "Segoe UI", system-ui, "Helvetica Neue", arial, sans-serif;
+  --font-mono: ui-monospace, sfmono-regular, "SF Mono", menlo, consolas, monospace;
+  --animate-marquee: marquee var(--marquee-duration, 64s) linear infinite;
+  --animate-drift: drift 18s ease-in-out infinite alternate;
 }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  margin: 0;
-  transition:
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-.wrap {
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 0 24px 96px;
-}
-
-/* header */
-
-.head {
-  backdrop-filter: saturate(180%) blur(12px);
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 32px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-/* One row, the height of a nav bar: brand and tabs lead, search and the theme toggle are pushed to the trailing edge. */
-
-.head-row {
-  align-items: center;
-  display: flex;
-  gap: 20px;
-  min-height: 60px;
-  padding-bottom: 0;
-}
-
-.head-right {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  margin-left: auto;
-}
-
-h1 {
-  font-size: 17px;
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  margin: 0;
-}
-
-.list-head {
-  align-items: baseline;
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.count {
-  color: var(--text-dim);
-  flex: none;
-  font-size: 13px;
-  font-variant-numeric: tabular-nums;
-}
-
-.sub {
-  color: var(--text-dim);
-  font-size: 13px;
-  line-height: 1.6;
-  margin: 0;
-  max-width: 62ch;
-}
-
-.sub code {
-  background: var(--surface-hover);
-  border-radius: 4px;
-  font-size: 12px;
-  padding: 1px 5px;
-}
-
-/* A segmented control rather than links: the two views are mutually exclusive and the switch is instant, so there is nothing to navigate to. It sits beside the brand and does not absorb free space — .head-right's auto margin is the only thing that does, so the gap all lands on one side. */
-
-.tabs {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  display: flex;
-  flex: none;
-  gap: 2px;
-  padding: 2px;
-}
-
-.tab {
-  background: none;
-  border: none;
-  border-radius: 8px;
-  color: var(--text-dim);
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 6px 13px;
-  transition:
-    background 0.15s ease,
-    color 0.15s ease;
-}
-
-.tab:hover {
-  color: var(--text);
-}
-
-.tab[aria-selected="true"] {
-  background: var(--surface-hover);
-  color: var(--text);
-}
-
-input[type="search"] {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--text);
-  font-size: 14px;
-  outline: none;
-  padding: 8px 13px;
-  transition: border-color 0.15s ease;
-  width: min(300px, 42vw);
-}
-
-input[type="search"]:focus {
-  border-color: var(--accent);
-}
-
-.toggle {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--text);
-  cursor: pointer;
-  flex: none;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 8px 13px;
-  transition: background 0.15s ease;
-}
-
-.toggle:hover {
-  background: var(--surface-hover);
-}
-
-/* grid */
-
-.grid {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
-}
-
-.cell {
-  align-items: center;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  padding: 20px 10px 14px;
-  transition:
-    transform 0.12s ease,
-    border-color 0.12s ease,
-    background 0.12s ease;
-}
-
-.cell:hover {
-  background: var(--surface-hover);
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-  transform: translateY(-2px);
-}
-
-.cell[aria-pressed="true"] {
-  border-color: var(--accent);
-}
-
-.cell-name {
-  color: var(--text-dim);
-  font-size: 11px;
-  line-height: 1.3;
-  max-width: 100%;
-  overflow: hidden;
-  text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.empty {
-  color: var(--text-dim);
-  font-size: 14px;
-  padding: 48px 0;
-  text-align: center;
-}
-
-/* detail */
-
-.detail {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  margin-bottom: 24px;
-  padding: 22px 24px;
-}
-
-.detail-head {
-  align-items: baseline;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 18px;
-}
-
-.detail-head h2 {
-  font-size: 17px;
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  margin: 0;
-}
-
-.tag {
-  background: var(--surface-hover);
-  border-radius: 999px;
-  color: var(--text-dim);
-  font-size: 11px;
-  padding: 2px 9px;
-}
-
-.variants {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-}
-
-.variant {
-  align-items: center;
-  border: 1px dashed var(--border);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  min-height: 92px;
-  overflow: hidden;
-  padding: 14px 10px;
-}
-
-/* Wordmarks and lockups are far wider than a square mark, so they get two columns
-   rather than overflowing a cell sized for an icon. */
-.variant--wide {
-  grid-column: span 2;
-}
-
-.variant-art {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.variant-art > * {
-  max-width: 100%;
-}
-
-.variant-label {
-  color: var(--text-dim);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 10.5px;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.snippet {
-  align-items: center;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
-  margin-top: 16px;
-  padding: 9px 10px 9px 13px;
-}
-
-.snippet code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 12.5px;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.tok-keyword {
-  color: var(--tok-keyword);
-}
-
-.tok-string {
-  color: var(--tok-string);
-}
-
-.tok-ident {
-  color: var(--tok-ident);
-}
-
-.tok-punct {
-  color: var(--tok-punct);
-}
-
-.copy {
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  color: var(--text-dim);
-  cursor: pointer;
-  flex: none;
-  font-size: 11px;
-  padding: 4px 9px;
-  transition:
-    background 0.15s ease,
-    color 0.15s ease;
-}
-
-.copy:hover {
-  background: var(--surface-hover);
-  color: var(--text);
-}
-
-/* page sections */
-
-.hero {
-  padding: 56px 0 40px;
-}
-
-.hero-title {
-  font-size: 40px;
-  font-weight: 680;
-  letter-spacing: -0.03em;
-  margin: 0 0 12px;
-}
-
-.hero-sub {
-  color: var(--text-dim);
-  font-size: 15px;
-  line-height: 1.7;
-  margin: 0 0 24px;
-  max-width: 58ch;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.btn {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--text);
-  font-size: 14px;
-  padding: 9px 18px;
-  text-decoration: none;
-  transition: background 0.15s ease;
-}
-
-.btn:hover {
-  background: var(--surface-hover);
-}
-
-.btn--primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-
-.btn--primary:hover {
-  filter: brightness(1.08);
-}
-
-.panel {
-  border-top: 1px solid var(--border);
-  padding: 32px 0;
-}
-
-.panel-title {
-  font-size: 17px;
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  margin: 0 0 14px;
-  scroll-margin-top: 140px;
-}
-
-.panel-note {
-  color: var(--text-dim);
-  font-size: 13px;
-  line-height: 1.7;
-  margin: 14px 0 0;
-  max-width: 70ch;
-}
-
-.panel-note code,
-.table code {
-  background: var(--surface-hover);
-  border-radius: 4px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 12px;
-  padding: 1px 5px;
-}
-
-.table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.table th,
-.table td {
-  border-bottom: 1px solid var(--border);
-  padding: 8px 0;
-  text-align: left;
-}
-
-.table th {
-  color: var(--text-dim);
-  font-size: 12px;
-  font-weight: 500;
-  width: 92px;
-}
-
-.block {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 12.5px;
-  line-height: 1.7;
-  margin: 16px 0 0;
-  overflow-x: auto;
-  padding: 14px 16px;
-}
-
-/* brand mark */
-
-.brand {
-  align-items: center;
-  color: var(--text);
-  display: flex;
-  flex: none;
-  gap: 9px;
-  text-decoration: none;
-}
-
-.hero-mark {
-  color: var(--text);
-  display: block;
-  margin-bottom: 18px;
-}
-
-/* Narrow screens get the search on its own line rather than a squeezed row. */
-
-@media (max-width: 680px) {
-  .head-row {
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+/* Half the track is a duplicate of the other half, so translating by exactly -50% lands on an identical frame and the seam is invisible. */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
   }
 
-  .head-right {
-    width: 100%;
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(-3%, -2%, 0) scale(1);
   }
 
-  input[type="search"] {
-    flex: 1;
-    width: auto;
+  to {
+    transform: translate3d(3%, 4%, 0) scale(1.12);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
 
-  .list-head {
-    flex-direction: column;
-    gap: 8px;
+  /* Nothing below should animate for a reader who has asked the system not to. The marquee is decorative and the entrance transitions carry no information, so both are cut rather than shortened. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
+
+  body {
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Inline code in running text. `pre code` is excluded — a code block styles itself, and a chip background inside one would draw a box around every line. */
+  p code,
+  li code {
+    background: var(--elevated);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    font-family: var(--font-mono);
+    font-size: 0.84em;
+    padding: 0.1em 0.36em;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--accent) 28%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@utility text-balance-tight {
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+/* Fades the ends of a horizontal track so rows of icons slide out of view instead of being cut off by the viewport edge. */
+@utility edge-fade {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }

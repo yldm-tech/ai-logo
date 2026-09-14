@@ -1,0 +1,98 @@
+{
+  "cdn": {
+    "avatar": "带品牌底色的头像",
+    "eyebrow": "CDN",
+    "png": "提供浅色与深色两种渲染",
+    "sub": "文件名是组件名的全小写形式，词与词之间不加分隔——<c>HuggingFace</c> 对应 <c>huggingface</c>；变体以后缀区分：<c>-color</c>、<c>-text</c>、<c>-brand</c>。PNG 与 WebP 分别放在 <c>light</c> 和 <c>dark</c> 目录下，<c>picture</c> 元素正是靠这一点跟随读者的配色方案。",
+    "svg": "矢量，每个图标一个文件",
+    "title": "每个图标同时也是一个文件",
+    "webp": "同样的渲染，体积更小"
+  },
+  "copy": {
+    "copied": "已复制",
+    "copy": "复制",
+    "copyImport": "复制 import",
+    "label": "复制 {{value}}"
+  },
+  "features": {
+    "css": {
+      "note": "单色图标使用 <c>currentColor</c> 绘制，尺寸由一个属性控制，因此会跟随周围文字的颜色，并在任意尺寸下保持清晰——它们是矢量图，不是位图精灵。",
+      "title": "像文字一样控制大小和颜色"
+    },
+    "eyebrow": "工作方式",
+    "files": {
+      "note": "每个图标同时也是 CDN 上的一个文件。无需安装、无需构建，一个 <c>img</c> 标签就够；PNG 与 WebP 提供浅色和深色两套渲染，供 <c>picture</c> 元素选择。",
+      "title": "也可以完全不装依赖"
+    },
+    "lookup": {
+      "note": "接口返回的模型 id 是字符串，不是 import。<c>ProviderIcon</c>、<c>ModelIcon</c> 和 <c>AgentIcon</c> 通过关键词表把它映射到图标，匹配不到时回退到中性图标。",
+      "title": "用字符串解析图标"
+    },
+    "sub": "这个包做的四件事，好让应用不必自己维护一个 logo 文件夹。",
+    "title": "为被依赖而生，而不是被拷进项目",
+    "treeshake": {
+      "comment": "引入一个模块，摇掉另外 {{count}} 个",
+      "note": "构建为每个品牌产出独立模块，打包器会丢掉你没点名的那 {{count}} 个。CI 里的体积预算守着这条线——这类回归在有人翻打包报告之前一直是隐形的。",
+      "title": "引入一个品牌，只打包一个品牌"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "issue": "反馈问题",
+    "licence": "MIT 许可证",
+    "npm": "npm",
+    "npmAlias": "npm（{{alias}}）",
+    "tagline": "各品牌标识归其各自所有者所有，此处仅用于标识对应品牌。本包 fork 自 lobehub/lobe-icons，沿用 MIT 许可证。"
+  },
+  "gallery": {
+    "all": "全部",
+    "apps": "应用",
+    "close": "关闭",
+    "empty": "没有匹配“{{query}}”的结果。",
+    "models": "模型",
+    "providers": "服务商",
+    "search": "搜索品牌、模型、服务商…",
+    "shown": "显示 {{count}} 个"
+  },
+  "hero": {
+    "badge": "{{brands}} 个品牌 · {{color}} 个彩色 · MIT",
+    "browse": "浏览 {{count}} 个图标",
+    "sub": "AI 服务商、模型与应用的品牌标识，以带类型的 React 组件提供——单色、彩色、文字标、组合标与头像多种变体——同时提供 CDN 上的静态 SVG、PNG 和 WebP。",
+    "title": "每个 AI 品牌，",
+    "titleAccent": "一行 import"
+  },
+  "install": {
+    "eyebrow": "安装",
+    "peers": "<c>react</c>、<c>react-dom</c> 和 <c>antd</c> 是 peer 依赖。同一份构建也以 <c>{{alias}}</c> 的名字发布，版本一致——二选一，不要同时装。",
+    "title": "把它加进项目"
+  },
+  "nav": {
+    "github": "GitHub 仓库",
+    "icons": "图标",
+    "language": "语言",
+    "overview": "概览",
+    "search": "搜索品牌…",
+    "toDark": "切换到深色主题",
+    "toLight": "切换到浅色主题"
+  },
+  "stats": {
+    "brands": "个品牌标识",
+    "brandsNote": "{{provider}} 个服务商 · {{model}} 个模型 · {{application}} 个应用",
+    "colour": "个带彩色版本",
+    "colourNote": "其余跟随 currentColor",
+    "formats": "种资源格式",
+    "formatsNote": "React、SVG、PNG、WebP",
+    "variants": "种变体",
+    "variantsNote": "单色、彩色、文字标、组合标、头像"
+  },
+  "variants": {
+    "avatar": "带品牌底色的头像",
+    "color": "品牌配色",
+    "combine": "图标与文字的组合标",
+    "eyebrow": "变体",
+    "mono": "单色，跟随 currentColor",
+    "sub": "一个品牌往往不止一种画法。每个品牌只提供它真正有的那几种，目录数据记录了是哪几种——所以图库不用靠猜就能渲染出正确的集合。",
+    "text": "仅文字标",
+    "title": "一个品牌，五种画法"
+  }
+}

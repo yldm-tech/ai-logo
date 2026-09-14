@@ -1,0 +1,98 @@
+{
+  "cdn": {
+    "avatar": "Zeichen auf seiner Markenfarbe",
+    "eyebrow": "CDN",
+    "png": "helle und dunkle Fassung",
+    "sub": "Der Slug ist der Komponentenname in Kleinbuchstaben, ohne Trennzeichen zwischen den Wörtern — aus <c>HuggingFace</c> wird <c>huggingface</c> — und Varianten tragen ein Suffix: <c>-color</c>, <c>-text</c>, <c>-brand</c>. PNG und WebP liegen in einem Verzeichnis <c>light</c> oder <c>dark</c>; genau das braucht ein <c>picture</c>-Element, um dem Farbschema der Lesenden zu folgen.",
+    "svg": "Vektor, eine Datei je Zeichen",
+    "title": "Jedes Zeichen ist auch eine Datei",
+    "webp": "dieselben Fassungen, kleiner"
+  },
+  "copy": {
+    "copied": "Kopiert",
+    "copy": "Kopieren",
+    "copyImport": "Import kopieren",
+    "label": "{{value}} kopieren"
+  },
+  "features": {
+    "css": {
+      "note": "Einfarbige Zeichen werden in <c>currentColor</c> gezeichnet und über eine einzige Prop skaliert. Sie übernehmen damit die Farbe des umgebenden Textes und bleiben in jeder Größe scharf — Vektoren, keine Sprites.",
+      "title": "Größe und Farbe wie bei Text"
+    },
+    "eyebrow": "So funktioniert es",
+    "files": {
+      "note": "Jedes Zeichen ist auch eine Datei auf einem CDN. Keine Installation, kein Build — ein <c>img</c>-Tag genügt, und PNG und WebP liegen hell und dunkel vor, damit ein <c>picture</c>-Element wählen kann.",
+      "title": "Oder ganz ohne Installation"
+    },
+    "lookup": {
+      "note": "Eine Modell-ID aus einer API-Antwort ist ein String, kein Import. <c>ProviderIcon</c>, <c>ModelIcon</c> und <c>AgentIcon</c> ordnen sie über eine Schlüsselworttabelle einem Zeichen zu — mit neutralem Rückfall, wenn nichts passt.",
+      "title": "Ein Zeichen aus einem String auflösen"
+    },
+    "sub": "Vier Dinge, die das Paket übernimmt, damit eine Anwendung keinen eigenen Logo-Ordner pflegen muss.",
+    "title": "Zum Einbinden gebaut, nicht zum Hineinkopieren",
+    "treeshake": {
+      "comment": "ein Modul rein, {{count}} heraus geschüttelt",
+      "note": "Der Build gibt ein Modul je Marke aus, also wirft der Bundler die {{count}} weg, die du nicht genannt hast. Ein Größenbudget in der CI wacht darüber — das ist die Regression, die unsichtbar bleibt, bis jemand seinen Bundle-Report liest.",
+      "title": "Eine Marke importieren, eine Marke ausliefern"
+    }
+  },
+  "footer": {
+    "github": "GitHub",
+    "issue": "Problem melden",
+    "licence": "MIT-Lizenz",
+    "npm": "npm",
+    "npmAlias": "npm ({{alias}})",
+    "tagline": "Die Markenzeichen gehören ihren jeweiligen Inhabern und werden hier zu deren Kennzeichnung verwendet. Dieses Paket ist ein Fork von lobehub/lobe-icons unter MIT-Lizenz und behält diese Lizenz bei."
+  },
+  "gallery": {
+    "all": "Alle",
+    "apps": "Apps",
+    "close": "Schließen",
+    "empty": "Nichts passt zu „{{query}}“.",
+    "models": "Modelle",
+    "providers": "Anbieter",
+    "search": "Marken, Modelle, Anbieter suchen…",
+    "shown": "{{count}} angezeigt"
+  },
+  "hero": {
+    "badge": "{{brands}} Marken · {{color}} in Farbe · MIT",
+    "browse": "{{count}} Icons ansehen",
+    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten — mit Farb-, Wortmarken-, Lockup- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN.",
+    "title": "Jede KI-Marke,",
+    "titleAccent": "ein Import"
+  },
+  "install": {
+    "eyebrow": "Installation",
+    "peers": "<c>react</c>, <c>react-dom</c> und <c>antd</c> sind Peer-Abhängigkeiten. Derselbe Build erscheint unter dem Namen <c>{{alias}}</c> in derselben Version — nimm eines von beiden, nicht beide.",
+    "title": "In ein Projekt aufnehmen"
+  },
+  "nav": {
+    "github": "GitHub-Repository",
+    "icons": "Icons",
+    "language": "Sprache",
+    "overview": "Überblick",
+    "search": "Marken suchen…",
+    "toDark": "Zum dunklen Thema wechseln",
+    "toLight": "Zum hellen Thema wechseln"
+  },
+  "stats": {
+    "brands": "Markenzeichen",
+    "brandsNote": "{{provider}} Anbieter · {{model}} Modelle · {{application}} Apps",
+    "colour": "in voller Farbe",
+    "colourNote": "der Rest erbt currentColor",
+    "formats": "Formate",
+    "formatsNote": "React, SVG, PNG, WebP",
+    "variants": "Varianten je Marke",
+    "variantsNote": "einfarbig, Farbe, Wortmarke, Lockup, Avatar"
+  },
+  "variants": {
+    "avatar": "Zeichen auf seiner Markenfarbe",
+    "color": "Die Markenpalette",
+    "combine": "Zeichen und Wortmarke kombiniert",
+    "eyebrow": "Varianten",
+    "mono": "Einfarbig, erbt currentColor",
+    "sub": "Eine Marke ist selten nur eine Zeichnung. Jede liefert genau die Fassungen, die sie wirklich hat, und das Inhaltsverzeichnis hält fest, welche — eine Galerie kann den richtigen Satz also zeichnen, ohne zu raten.",
+    "text": "Nur die Wortmarke",
+    "title": "Eine Marke, fünf Darstellungen"
+  }
+}
