@@ -1,4 +1,4 @@
-const config = require("@lobehub/lint").stylelint;
+const config = require("@lobehub/stylelint-config");
 
 module.exports = {
   ...config,
