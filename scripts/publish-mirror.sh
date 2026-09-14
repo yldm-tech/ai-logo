@@ -4,6 +4,8 @@
 #
 # semantic-release only knows about one package name, so the scoped copy is published separately from the same working tree. The version is whatever package.json holds after semantic-release has bumped it, which keeps the two names in lockstep.
 #
+# Call it only for a version that has just been published under the primary name; it does not verify that itself.
+#
 # Usage:
 #   scripts/publish-mirror.sh              # CI: auth comes from NPM_TOKEN
 #   scripts/publish-mirror.sh --otp=123456 # local: account has 2FA on writes
@@ -15,12 +17,7 @@ PRIMARY_NAME='ai-logo'
 
 VERSION=$(node -p "require('./package.json').version")
 
-# A run where semantic-release decided not to release leaves package.json at the previous version, which is already on the registry under both names. Checking the primary name is what tells the two cases apart.
-if ! npm view "${PRIMARY_NAME}@${VERSION}" version >/dev/null 2>&1; then
-  echo "${PRIMARY_NAME}@${VERSION} is not on the registry — nothing was released, so there is nothing to mirror."
-  exit 0
-fi
-
+# Whether a release happened is decided by the caller — the workflow compares package.json before and after semantic-release. It deliberately is not decided by asking the registry whether the primary name has this version: this runs seconds after the publish that puts it there, and npm takes longer than that to make a new version visible, so such a check reports "no release" for every real release.
 if npm view "${MIRROR_NAME}@${VERSION}" version >/dev/null 2>&1; then
   echo "${MIRROR_NAME}@${VERSION} is already published."
   exit 0

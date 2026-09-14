@@ -43,14 +43,20 @@ jobs:
       - name: Build
         run: bun run build
 
+      # semantic-release writes the new version into package.json when it releases and leaves it alone when it does not, so comparing the version either side of this step says whether a release happened without asking the registry.
       - name: Release
-        run: bun run release
+        id: release
+        run: |
+          echo "version_before=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
+          bun run release
+          echo "version_after=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # semantic-release publishes one name; the scoped copy of the same build goes out here. The script is a no-op when the release step decided there was nothing to release.
+      # semantic-release publishes one name; the scoped copy of the same build goes out here.
       - name: Publish scoped mirror
+        if: steps.release.outputs.version_before != steps.release.outputs.version_after
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$HOME/.npmrc"
           scripts/publish-mirror.sh
