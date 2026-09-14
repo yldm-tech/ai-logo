@@ -1,9 +1,9 @@
 /**
- * The mark is a slot: two brackets around a filled dot.
+ * The mark is a bracket pair holding a filled dot.
  *
- * This package is a container for other people's brand marks — the dot stands in for whichever one is being asked for, the brackets for the slot it drops into. It stays monochrome on purpose. The page already carries 323 logos in full colour, and a coloured mark of our own would just be a 324th competing for attention.
+ * This package is a container for other people's brand marks, and the way you get one is by importing it — so the brackets are the container and the punctuation of the call at once, and the dot is whichever mark is being asked for. It stays monochrome on purpose: the page already carries 323 logos in full colour, and a coloured mark of our own would just be a 324th competing for attention.
  *
- * Drawn on a 24-unit grid with 2-unit strokes so it stays on whole pixels at 24, 48 and 96, and reads at 16.
+ * Drawn on a 24-unit grid. Each bracket is a true circular arc of radius 7.5 reaching 58° either side of the horizontal, stroked at 3 units with round caps, which is what keeps the thickness even and the terminals clean at any size. The openings at the top and bottom are what separate this from a ring: closed up much past 70° it stops reading as a bracket and starts reading as a target.
  */
 export const Logo = ({ size = 22, ...rest }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -16,17 +16,17 @@ export const Logo = ({ size = 22, ...rest }: { size?: number } & React.SVGProps<
     {...rest}
   >
     <path
-      d="M9 3H5.5A2.5 2.5 0 0 0 3 5.5v13A2.5 2.5 0 0 0 5.5 21H9"
+      d="M8.03 5.64A7.5 7.5 0 0 0 8.03 18.36"
       stroke="currentColor"
       strokeLinecap="round"
-      strokeWidth={2}
+      strokeWidth={3}
     />
     <path
-      d="M15 3h3.5A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5H15"
+      d="M15.97 5.64A7.5 7.5 0 0 1 15.97 18.36"
       stroke="currentColor"
       strokeLinecap="round"
-      strokeWidth={2}
+      strokeWidth={3}
     />
-    <circle cx={12} cy={12} fill="currentColor" r={3} />
+    <circle cx={12} cy={12} fill="currentColor" r={3.4} />
   </svg>
 );
