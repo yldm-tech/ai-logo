@@ -38,3 +38,5 @@ publicHoistPattern:
   - "*stylelint*"
 minimumReleaseAgeExclude:
   - "@lobehub/ui@5.46.2"
+patchedDependencies:
+  "@lobehub/docs-kit": patches/@lobehub__docs-kit.patch

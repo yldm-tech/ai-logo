@@ -41,4 +41,7 @@ react-router.config.mjs
 # add other ignore file below
 .env
 *.patch
+# pnpm patches are referenced from pnpm-workspace.yaml and have to be committed,
+# or a clean install fails on a patch file that is not there.
+!patches/*.patch
 dist-treeshake

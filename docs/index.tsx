@@ -6,8 +6,8 @@ import { Link } from "react-router";
 import AgentGuideCard from "@/components/AgentGuideCard";
 import Dashboard from "@/components/Dashboard";
 
-const ICONS_DOC_URL = "https://lobehub.com/icons/skill.md";
-const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions, substituting the package name @yldm-tech/ai-logo for @lobehub/icons. The component API is identical.`;
+const ICONS_DOC_URL = "https://ailogo.yldm.ai";
+const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions to use @yldm-tech/ai-logo.`;
 const ICONS_INSTALL_COMMAND = "npm i @yldm-tech/ai-logo";
 
 const items: FeaturesProps["items"] = [
@@ -62,7 +62,7 @@ export default () => {
             agent: {
               command: AI_AGENT_PROMPT,
               commandLanguage: "shell",
-              description: "Send this prompt to your agent to use ai-logo",
+              description: "Send this prompt to your agent to use @yldm-tech/ai-logo",
             },
             human: {
               command: ICONS_INSTALL_COMMAND,
