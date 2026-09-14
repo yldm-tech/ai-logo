@@ -58,8 +58,7 @@
     "badge": "{{brands}} ブランド · うち {{color}} はカラー · MIT",
     "browse": "{{count}} 個のアイコンを見る",
     "sub": "AI プロバイダー、モデル、アプリケーションのロゴを型付きの React コンポーネントとして提供します。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から配信しています。",
-    "title": "すべての AI ブランドを、",
-    "titleAccent": "1 行の import で"
+    "title": "すべての AI ブランドを、<a>1 行の import で</a>"
   },
   "install": {
     "eyebrow": "インストール",

@@ -19,6 +19,7 @@ export const Cdn = () => {
     <Reveal as="section" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20" id="cdn">
       <SectionHead
         eyebrow={t("cdn.eyebrow")}
+        split
         sub={<Trans components={{ c: <code /> }} i18nKey="cdn.sub" />}
         title={t("cdn.title")}
       />

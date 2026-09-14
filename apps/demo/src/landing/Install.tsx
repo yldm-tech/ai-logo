@@ -26,6 +26,7 @@ export const Install = () => {
     <Reveal as="section" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20" id="install">
       <SectionHead
         eyebrow={t("install.eyebrow")}
+        split
         sub={
           <Trans components={{ c: <code /> }} i18nKey="install.peers" values={{ alias: ALIAS }} />
         }

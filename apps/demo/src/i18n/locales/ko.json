@@ -58,8 +58,7 @@
     "badge": "{{brands}}개 브랜드 · {{color}}개 컬러 · MIT",
     "browse": "아이콘 {{count}}개 보기",
     "sub": "AI 제공업체와 모델, 애플리케이션의 로고를 타입이 붙은 React 컴포넌트로 제공합니다. 컬러·워드마크·락업·아바타 변형이 함께 들어 있고, 정적 SVG·PNG·WebP도 CDN에서 받을 수 있습니다.",
-    "title": "모든 AI 브랜드를,",
-    "titleAccent": "import 한 줄로"
+    "title": "모든 AI 브랜드를, <a>import 한 줄로</a>"
   },
   "install": {
     "eyebrow": "설치",

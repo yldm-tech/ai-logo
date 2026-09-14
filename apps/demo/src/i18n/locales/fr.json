@@ -58,8 +58,7 @@
     "badge": "{{brands}} marques · {{color}} en couleur · MIT",
     "browse": "Parcourir {{count}} icônes",
     "sub": "Les logos des fournisseurs, modèles et applications d’IA sous forme de composants React typés — variantes couleur, wordmark, lockup et avatar — plus des SVG, PNG et WebP statiques sur un CDN.",
-    "title": "Toutes les marques d’IA,",
-    "titleAccent": "un seul import"
+    "title": "Toutes les marques d’IA, <a>un seul import</a>."
   },
   "install": {
     "eyebrow": "Installation",

@@ -58,8 +58,7 @@
     "badge": "{{brands}} marcas · {{color}} coloridas · MIT",
     "browse": "Ver {{count}} ícones",
     "sub": "Logotipos de provedores, modelos e aplicações de IA como componentes React tipados — com variantes em cor, wordmark, lockup e avatar — além de SVG, PNG e WebP estáticos em um CDN.",
-    "title": "Toda marca de IA,",
-    "titleAccent": "um import"
+    "title": "Toda marca de IA, <a>um import</a>."
   },
   "install": {
     "eyebrow": "Instalação",

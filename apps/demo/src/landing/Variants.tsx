@@ -33,9 +33,10 @@ export const Variants = () => {
 
   return (
     <Reveal as="section" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20" id="variants">
-      <div className="flex flex-wrap items-end justify-between gap-6">
+      <div className="flex flex-col gap-6">
         <SectionHead
           eyebrow={t("variants.eyebrow")}
+          split
           sub={t("variants.sub")}
           title={t("variants.title")}
         />

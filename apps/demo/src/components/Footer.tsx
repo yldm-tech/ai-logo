@@ -28,7 +28,7 @@ export const Footer = () => {
           <p className="mt-3 text-[13px] leading-relaxed text-dim">{t("footer.tagline")}</p>
         </div>
 
-        <nav className="flex flex-col gap-2 text-[13px] sm:text-end">
+        <nav className="flex flex-wrap gap-x-5 gap-y-2 text-[13px] sm:justify-end">
           {links.map(({ href, label }) => (
             <a
               className="text-dim transition hover:text-ink"

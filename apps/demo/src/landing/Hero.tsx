@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { CopyButton } from "../components/Copy";
 import { PKG, stats } from "../registry";
@@ -64,12 +64,20 @@ export const Hero = () => {
 
         <motion.h1
           {...stagger(1)}
-          className="text-balance-tight mt-6 text-[clamp(2.5rem,7.5vw,4.25rem)] leading-[1.04] font-semibold text-ink"
+          className="text-balance-tight mt-6 text-[clamp(2.5rem,7.5vw,4.25rem)] leading-[var(--display-leading)] font-semibold text-ink"
         >
-          {t("hero.title")}{" "}
-          <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent">
-            {t("hero.titleAccent")}
-          </span>
+          {/* The whole headline is one string with the accented half marked up inside it. Splitting
+              it into two keys put the space between them in the markup, where no translation could
+              reach it: Chinese does not want one after a full-width comma, Korean does, and the
+              text stream lost its word boundary either way. */}
+          <Trans
+            components={{
+              a: (
+                <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-transparent" />
+              ),
+            }}
+            i18nKey="hero.title"
+          />
         </motion.h1>
 
         <motion.p
