@@ -2,6 +2,13 @@
 
 # Changelog
 
+## [1.2.3](https://github.com/yldm-tech/ai-logo/compare/v1.2.2...v1.2.3) (2026-09-14)
+
+### Bug Fixes
+
+- point the release config at the package that still exists ([a902f22](https://github.com/yldm-tech/ai-logo/commit/a902f227bf042b463c3571f7ccc251e2b077d8fb)), closes [#15](https://github.com/yldm-tech/ai-logo/issues/15)
+- unbreak releases under semantic-release 25 ([e56eb1b](https://github.com/yldm-tech/ai-logo/commit/e56eb1b185b03c80bd955620d80750171a857087)), closes [#15](https://github.com/yldm-tech/ai-logo/issues/15) [#16](https://github.com/yldm-tech/ai-logo/issues/16) [#15](https://github.com/yldm-tech/ai-logo/issues/15)
+
 ### [Version 1.2.2](https://github.com/yldm-tech/ai-logo/compare/v1.2.1...v1.2.2)
 
 <sup>Released on **2026-09-14**</sup>
