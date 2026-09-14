@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.5.1](https://github.com/yldm-tech/ai-logo/compare/v1.5.0...v1.5.1) (2026-09-14)
+
+### Bug Fixes
+
+- build the package before the site and the tests ([3e4be3b](https://github.com/yldm-tech/ai-logo/commit/3e4be3b1a2b9e3ac17eeaca5ed15724eebc4431e))
+
 # [1.5.0](https://github.com/yldm-tech/ai-logo/compare/v1.4.0...v1.5.0) (2026-09-14)
 
 ### Features
