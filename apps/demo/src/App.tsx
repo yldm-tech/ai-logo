@@ -26,9 +26,11 @@ type CompoundIcon = React.ComponentType<IconProps> & {
 
 const VARIANTS = ["Color", "Text", "Combine", "Avatar"] as const;
 
+const PKG = "@yldm-tech/ai-logo";
+
 /** Hand-tokenised rather than pulling in a highlighter for a single line of code. */
 const ImportLine = ({ name }: { name: string }) => {
-  const source = `import { ${name} } from "@yldm-tech/ai-logo";`;
+  const source = `import { ${name} } from "${PKG}";`;
   const [copied, setCopied] = useState(false);
 
   const copy = () => {
@@ -43,7 +45,7 @@ const ImportLine = ({ name }: { name: string }) => {
         <span className="tok-keyword">import</span> <span className="tok-punct">{"{"}</span>{" "}
         <span className="tok-ident">{name}</span> <span className="tok-punct">{"}"}</span>{" "}
         <span className="tok-keyword">from</span>{" "}
-        <span className="tok-string">&quot;ai-logo&quot;</span>
+        <span className="tok-string">&quot;{PKG}&quot;</span>
         <span className="tok-punct">;</span>
       </code>
       <button className="copy" onClick={copy} type="button">
@@ -92,6 +94,14 @@ export default function App() {
           .includes(q),
     );
   }, [query]);
+
+  // A search that filters the selected icon out of the grid would otherwise leave the
+  // detail panel showing a brand that is no longer in the results.
+  useEffect(() => {
+    if (matches.length && !matches.some((entry) => entry.id === selectedId)) {
+      setSelectedId(matches[0].id);
+    }
+  }, [matches, selectedId]);
 
   const selected = toc.find((entry) => entry.id === selectedId);
   const SelectedIcon = selected ? registry[selected.id] : undefined;
