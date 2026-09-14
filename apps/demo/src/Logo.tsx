@@ -1,14 +1,9 @@
 /**
  * The mark is a slot: two brackets around a filled dot.
  *
- * This package is a container for other people's brand marks — the dot stands in
- * for whichever one is being asked for, the brackets for the slot it drops into.
- * It stays monochrome on purpose. The page already carries 323 logos in full
- * colour, and a coloured mark of our own would just be a 324th competing for
- * attention.
+ * This package is a container for other people's brand marks — the dot stands in for whichever one is being asked for, the brackets for the slot it drops into. It stays monochrome on purpose. The page already carries 323 logos in full colour, and a coloured mark of our own would just be a 324th competing for attention.
  *
- * Drawn on a 24-unit grid with 2-unit strokes so it stays on whole pixels at 24,
- * 48 and 96, and reads at 16.
+ * Drawn on a 24-unit grid with 2-unit strokes so it stays on whole pixels at 24, 48 and 96, and reads at 16.
  */
 export const Logo = ({ size = 22, ...rest }: { size?: number } & React.SVGProps<SVGSVGElement>) => (
   <svg
