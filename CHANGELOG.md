@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [Version 1.1.0](https://github.com/yldm-tech/ai-logo/compare/v1.0.1...v1.1.0)
+
+<sup>Released on **2026-09-14**</sup>
+
+#### ✨ Features
+
+- **misc**: Publish each release under @yldm-tech/ai-logo as well.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Publish each release under @yldm-tech/ai-logo as well ([33fd271](https://github.com/yldm-tech/ai-logo/commit/33fd271))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.0.1](https://github.com/yldm-tech/ai-logo/compare/v1.0.0...v1.0.1)
 
 <sup>Released on **2026-09-14**</sup>
