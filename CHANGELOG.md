@@ -2,6 +2,32 @@
 
 # Changelog
 
+### [Version 1.2.1](https://github.com/yldm-tech/ai-logo/compare/v1.2.0...v1.2.1)
+
+<sup>Released on **2026-09-14**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Emit src/toc.json already formatted, restore pnpm hoisting so the release commit can run remark.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Emit src/toc.json already formatted ([7f9666f](https://github.com/yldm-tech/ai-logo/commit/7f9666f))
+- **misc**: Restore pnpm hoisting so the release commit can run remark, closes [#10](https://github.com/yldm-tech/ai-logo/issues/10) [#10](https://github.com/yldm-tech/ai-logo/issues/10) ([d112aaa](https://github.com/yldm-tech/ai-logo/commit/d112aaa))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.2.0](https://github.com/yldm-tech/ai-logo/compare/v1.1.0...v1.2.0)
 
 <sup>Released on **2026-09-14**</sup>
