@@ -1,3 +1,40 @@
+diff --git a/site/app/providers/themeTokens.ts b/site/app/providers/themeTokens.ts
+index 859c54eef6e3a495739fc0b63ac596b7046b8fea..4979110be1057a68f02f80108164af31cc0a8c2f 100644
+--- a/site/app/providers/themeTokens.ts
++++ b/site/app/providers/themeTokens.ts
+@@ -24,10 +24,32 @@ const ignore: Record<string, boolean> = {
+   motionUnit: true,
+ };
+ 
++// The site chrome is driven by the `--docs-*` palette in styles/globalStyles.ts.
++// antd paints `font-family: var(--ant-font-family)` on every component root, which
++// beats `body { font-family: var(--docs-font-sans) }` on specificity, so leaving the
++// antd seed alone would leave every antd subtree (cards, search, segmented controls,
++// tooltips, tables inside demos) rendering in a different typeface and radius family
++// from the shell around it. These two families are kept deliberately in sync.
++const SITE_FONT_STACK =
++  "ui-monospace, 'SF Mono', SFMono-Regular, Menlo, 'JetBrains Mono', 'Cascadia Mono', Consolas, 'Liberation Mono', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', monospace";
++
++// `borderRadius` is a seed token, so it flows through the derivative; the LG/SM/XS/Outer
++// steps are map tokens and are applied by formatToken's override merge.
++const siteTokenOverrides = {
++  borderRadius: 2,
++  borderRadiusLG: 3,
++  borderRadiusOuter: 2,
++  borderRadiusSM: 2,
++  borderRadiusXS: 1,
++  fontFamily: SITE_FONT_STACK,
++  fontFamilyCode: SITE_FONT_STACK,
++};
++
+ const buildLobeToken = (appearance: ThemeAppearance) => {
+   const themeConfig = createLobeAntdTheme({ appearance });
+   return antdTheme.getDesignToken({
+     ...themeConfig,
++    token: { ...themeConfig.token, ...siteTokenOverrides },
+     algorithm: [
+       appearance === 'dark' ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm,
+       themeConfig.algorithm,
 diff --git a/site/components/Header/Header.tsx b/site/components/Header/Header.tsx
 index 7fb348f1376f1844ab35cb37d2d54316a5f9b8d3..593b98f0506ee6f8256c371cfd752400440575c6 100644
 --- a/site/components/Header/Header.tsx
@@ -40,3 +77,183 @@ index 7fb348f1376f1844ab35cb37d2d54316a5f9b8d3..593b98f0506ee6f8256c371cfd752400
              <span className={styles.productName}>{productName}</span>
            </Link>
  
+diff --git a/site/root.tsx b/site/root.tsx
+index 5daac82fa559c63298a9aac834fc1c2ac4a1c765..fe2ff1fc48fe95a459e61ebbbc7875deca1be760 100644
+--- a/site/root.tsx
++++ b/site/root.tsx
+@@ -7,10 +7,6 @@ import { SiteProviders } from './app/providers/SiteProviders';
+ import { ThemeBootstrap } from './app/providers/ThemeBootstrap';
+ import { styles } from './styles/globalStyles';
+ 
+-const FONT_REGISTRY_ORIGIN = 'https://registry.npmmirror.com';
+-const GEIST_FONT_STYLESHEET = `${FONT_REGISTRY_ORIGIN}/@lobehub/webfont-geist/1.0.0/files/css/index.css`;
+-const GEIST_MONO_FONT_STYLESHEET = `${FONT_REGISTRY_ORIGIN}/@lobehub/webfont-geist-mono/1.0.0/files/css/index.css`;
+-
+ const DEFAULT_FAVICONS: Record<string, string> = {
+   appleTouchIcon: '/apple-touch-icon.png',
+   icon: '/favicon.ico',
+@@ -22,15 +18,12 @@ export const links: LinksFunction = () => {
+   const favicons = { ...DEFAULT_FAVICONS, ...siteConfig.favicons };
+ 
+   return [
+-    { crossOrigin: 'anonymous', href: FONT_REGISTRY_ORIGIN, rel: 'preconnect' },
+     { href: favicons.icon, rel: 'icon', sizes: 'any' },
+     { href: favicons.icon16, rel: 'icon', sizes: '16x16', type: 'image/png' },
+     { href: favicons.icon32, rel: 'icon', sizes: '32x32', type: 'image/png' },
+     { href: favicons.appleTouchIcon, rel: 'apple-touch-icon', sizes: '180x180' },
+     { href: '/antd.css', rel: 'stylesheet' },
+     { href: '/theme-vars.css', rel: 'stylesheet' },
+-    { href: GEIST_FONT_STYLESHEET, rel: 'stylesheet' },
+-    { href: GEIST_MONO_FONT_STYLESHEET, rel: 'stylesheet' },
+   ];
+ };
+ 
+diff --git a/site/styles/globalStyles.ts b/site/styles/globalStyles.ts
+index 31f7edf868ae92904fe58205fce28e1182a97af1..4e5f33faae7054dcd949ac759ca0d8170494eca0 100644
+--- a/site/styles/globalStyles.ts
++++ b/site/styles/globalStyles.ts
+@@ -4,81 +4,78 @@ injectGlobal`
+   :root {
+     color-scheme: light;
+ 
+-    --docs-header-height: 3.5rem;
+-    --docs-shell-max-width: 90rem;
+-    --docs-radius-lg: 0.75rem;
+-    --docs-radius-md: 0.5rem;
+-    --docs-radius-sm: 0.375rem;
++    --docs-header-height: 3rem;
++    --docs-shell-max-width: 84rem;
++    --docs-radius-lg: 3px;
++    --docs-radius-md: 2px;
++    --docs-radius-sm: 1px;
+     --docs-font-sans:
+-      'Geist', 'SF Pro Text', 'SF Pro Display', Inter, ui-sans-serif, system-ui, sans-serif;
+-    --docs-font-mono: 'Geist Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
++      ui-monospace, 'SF Mono', SFMono-Regular, Menlo, 'JetBrains Mono', 'Cascadia Mono', Consolas,
++      'Liberation Mono', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', monospace;
++    --docs-font-mono:
++      ui-monospace, 'SF Mono', SFMono-Regular, Menlo, 'JetBrains Mono', 'Cascadia Mono', Consolas,
++      'Liberation Mono', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', monospace;
+     --docs-background: #ffffff;
+     --docs-surface-raised: #ffffff;
+-    --docs-surface-muted: #f7f7f8;
+-    --docs-surface-hover: #f4f4f5;
+-    --docs-surface-active: #eeeeef;
+-    --docs-code-background: #fafafa;
+-    --docs-text-primary: #111113;
+-    --docs-text-secondary: #52525b;
+-    --docs-text-subtle: #71717a;
+-    --docs-border-subtle: #e9e9eb;
+-    --docs-border-default: #dedee1;
+-    --docs-border-strong: #c9c9ce;
+-    --docs-accent: #6257d9;
++    --docs-surface-muted: #f4f4f5;
++    --docs-surface-hover: #ebebed;
++    --docs-surface-active: #e2e2e5;
++    --docs-code-background: #f6f6f7;
++    --docs-text-primary: #0a0a0b;
++    --docs-text-secondary: #3f3f46;
++    --docs-text-subtle: #6a6a73;
++    --docs-border-subtle: #d4d4d8;
++    --docs-border-default: #b8b8bf;
++    --docs-border-strong: #8a8a93;
++    --docs-accent: #0a0a0b;
+     --docs-accent-contrast: #ffffff;
+-    --docs-overlay: rgb(8 8 12 / 38%);
+-    --docs-ambient-violet: rgb(111 74 255 / 10%);
+-    --docs-ambient-cyan: rgb(52 201 211 / 7%);
+-    --docs-ambient-rose: rgb(242 92 166 / 5%);
+-    --docs-aurora-violet: rgb(140 100 255 / 16%);
+-    --docs-aurora-blue: rgb(70 180 240 / 14%);
+-    --docs-aurora-pink: rgb(250 120 180 / 11%);
+-    --docs-shadow-control: 0 1px 2px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 3%);
+-    --docs-shadow-sheet: 16px 0 48px rgb(0 0 0 / 12%), 2px 0 8px rgb(0 0 0 / 7%);
+-    --docs-shadow-inset: inset 0 1px 0 rgb(255 255 255 / 60%);
+-    --docs-gradient-spectral: linear-gradient(105deg, #7c5cff 8%, #d6549e 55%, #f0885f 95%);
+-    --docs-syntax-plain: #27272d;
+-    --docs-syntax-comment: #8a8a93;
+-    --docs-syntax-punctuation: #71717a;
+-    --docs-syntax-keyword: #6d54e8;
+-    --docs-syntax-entity: #bb3d83;
+-    --docs-syntax-string: #c05621;
++    --docs-danger-text: #a3301c;
++    --docs-overlay: rgb(10 10 11 / 55%);
++    --docs-ambient-violet: rgb(0 0 0 / 0%);
++    --docs-ambient-cyan: rgb(0 0 0 / 0%);
++    --docs-ambient-rose: rgb(0 0 0 / 0%);
++    --docs-aurora-violet: rgb(0 0 0 / 0%);
++    --docs-aurora-blue: rgb(0 0 0 / 0%);
++    --docs-aurora-pink: rgb(0 0 0 / 0%);
++    --docs-shadow-control: none;
++    --docs-shadow-sheet:
++      1px 0 0 var(--docs-border-strong), -1px 0 0 var(--docs-border-strong);
++    --docs-shadow-inset: none;
++    --docs-gradient-spectral: linear-gradient(90deg, #0a0a0b 0%, #0a0a0b 100%);
++    --docs-syntax-plain: #16181a;
++    --docs-syntax-comment: #6b7178;
++    --docs-syntax-punctuation: #5b6167;
++    --docs-syntax-keyword: #0b5d8f;
++    --docs-syntax-entity: #8a5a00;
++    --docs-syntax-string: #1a6b4a;
+   }
+ 
+   :root[data-theme='dark'] {
+     color-scheme: dark;
+ 
+-    --docs-background: #0d0d0f;
+-    --docs-surface-raised: #151518;
+-    --docs-surface-muted: #19191d;
+-    --docs-surface-hover: #202024;
+-    --docs-surface-active: #26262b;
+-    --docs-code-background: #121214;
+-    --docs-text-primary: #f4f4f5;
+-    --docs-text-secondary: #b4b4bc;
+-    --docs-text-subtle: #888891;
+-    --docs-border-subtle: #26262b;
+-    --docs-border-default: #333338;
+-    --docs-border-strong: #45454b;
+-    --docs-accent: #8378f0;
+-    --docs-accent-contrast: #0d0d0f;
+-    --docs-overlay: rgb(0 0 0 / 62%);
+-    --docs-ambient-violet: rgb(112 80 255 / 13%);
+-    --docs-ambient-cyan: rgb(45 204 218 / 8%);
+-    --docs-ambient-rose: rgb(240 76 153 / 5%);
+-    --docs-aurora-violet: rgb(120 84 255 / 26%);
+-    --docs-aurora-blue: rgb(56 168 235 / 20%);
+-    --docs-aurora-pink: rgb(238 96 165 / 15%);
+-    --docs-shadow-control: 0 1px 2px rgb(0 0 0 / 24%), 0 1px 8px rgb(0 0 0 / 18%);
+-    --docs-shadow-sheet: 18px 0 56px rgb(0 0 0 / 36%), 2px 0 10px rgb(0 0 0 / 28%);
+-    --docs-shadow-inset: inset 0 1px 0 rgb(255 255 255 / 3%);
+-    --docs-gradient-spectral: linear-gradient(105deg, #a78bfa 8%, #ef7fc0 55%, #f8a878 95%);
+-    --docs-syntax-plain: #d6d6dd;
+-    --docs-syntax-comment: #6b6b76;
+-    --docs-syntax-punctuation: #888891;
+-    --docs-syntax-keyword: #a78bfa;
+-    --docs-syntax-entity: #ef7fc0;
+-    --docs-syntax-string: #f8a878;
++    --docs-background: #0a0b0c;
++    --docs-surface-raised: #101113;
++    --docs-surface-muted: #151719;
++    --docs-surface-hover: #1c1f22;
++    --docs-surface-active: #24282c;
++    --docs-code-background: #0e0f11;
++    --docs-text-primary: #f2f4f5;
++    --docs-text-secondary: #b8bcc0;
++    --docs-text-subtle: #838890;
++    --docs-border-subtle: #2a2d31;
++    --docs-border-default: #3d4147;
++    --docs-border-strong: #5a5f66;
++    --docs-accent: #f2f4f5;
++    --docs-accent-contrast: #0a0b0c;
++    --docs-danger-text: #ff8a72;
++    --docs-overlay: rgb(0 0 0 / 74%);
++    --docs-gradient-spectral: linear-gradient(90deg, #f2f4f5 0%, #f2f4f5 100%);
++    --docs-syntax-plain: #dfe3e6;
++    --docs-syntax-comment: #7d858d;
++    --docs-syntax-punctuation: #939aa1;
++    --docs-syntax-keyword: #6cb6ff;
++    --docs-syntax-entity: #e3a43c;
++    --docs-syntax-string: #6fcf9f;
+   }
+ 
+   * {

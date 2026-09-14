@@ -182,7 +182,7 @@ overrides:
   vitest@*: 4.1.11
 
 patchedDependencies:
-  '@lobehub/docs-kit': e17a6af58b9779461725fceed931e9bbaf4ab33bf8e1e50032fc6e6dab6f2c23
+  '@lobehub/docs-kit': 1c8719f521783aae31a6f3f5df86edd0928e21e8ab921c6f0b5504ba1a302ec9
 
 importers:
 
@@ -212,7 +212,7 @@ importers:
         version: 2.1.5(@commitlint/cli@21.2.2(@types/node@26.5.1)(conventional-commits-parser@7.1.2)(typescript@7.0.2))
       '@lobehub/docs-kit':
         specifier: ^5.27.3
-        version: 5.27.3(patch_hash=e17a6af58b9779461725fceed931e9bbaf4ab33bf8e1e50032fc6e6dab6f2c23)(5279df08946ffb2d3cc3c73cc505083e)
+        version: 5.27.3(patch_hash=1c8719f521783aae31a6f3f5df86edd0928e21e8ab921c6f0b5504ba1a302ec9)(5279df08946ffb2d3cc3c73cc505083e)
       '@lobehub/icons':
         specifier: ^5.18.0
         version: 5.18.0(@lobehub/ui@5.46.2)(@types/react@19.3.0)(antd@6.6.3(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(supports-color@9.4.0)
@@ -10919,7 +10919,7 @@ snapshots:
       '@commitlint/cli': 21.2.2(@types/node@26.5.1)(conventional-commits-parser@7.1.2)(typescript@7.0.2)
       commitlint-config-gitmoji: 2.3.1
 
-  '@lobehub/docs-kit@5.27.3(patch_hash=e17a6af58b9779461725fceed931e9bbaf4ab33bf8e1e50032fc6e6dab6f2c23)(5279df08946ffb2d3cc3c73cc505083e)':
+  '@lobehub/docs-kit@5.27.3(patch_hash=1c8719f521783aae31a6f3f5df86edd0928e21e8ab921c6f0b5504ba1a302ec9)(5279df08946ffb2d3cc3c73cc505083e)':
     dependencies:
       '@ant-design/cssinjs': 2.1.2(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       '@giscus/react': 3.1.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
