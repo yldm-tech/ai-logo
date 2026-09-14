@@ -2,6 +2,12 @@
 
 # Changelog
 
+# [1.6.0](https://github.com/yldm-tech/ai-logo/compare/v1.5.2...v1.6.0) (2026-09-14)
+
+### Features
+
+- **demo:** split the site into Overview and Components tabs ([d377c55](https://github.com/yldm-tech/ai-logo/commit/d377c55cd88dc3b60f2188a9726439a03f123fab))
+
 ## [1.5.2](https://github.com/yldm-tech/ai-logo/compare/v1.5.1...v1.5.2) (2026-09-14)
 
 ### Bug Fixes
