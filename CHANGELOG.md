@@ -2,6 +2,8 @@
 
 # Changelog
 
+## [1.2.4](https://github.com/yldm-tech/ai-logo/compare/v1.2.3...v1.2.4) (2026-09-14)
+
 ## [1.2.3](https://github.com/yldm-tech/ai-logo/compare/v1.2.2...v1.2.3) (2026-09-14)
 
 ### Bug Fixes
