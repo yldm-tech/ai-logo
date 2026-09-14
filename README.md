@@ -67,11 +67,18 @@ Install ai-logo with npm and start using the icon set.
 npm i ai-logo
 ```
 
+The same build is published under a scoped name as well, for anyone who prefers a namespaced dependency. The two are identical — pick one, not both.
+
+```bash
+npm i @yldm-tech/ai-logo
+```
+
 ### Packages
 
-| Logo                                                                                                                    | Package       | Version                                                                               | Downloads                                               | Links                                                        |
-| ----------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------ |
-| <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`ai-logo`** | [![npm](https://img.shields.io/npm/v/ai-logo)](https://www.npmjs.com/package/ai-logo) | ![NPM Downloads](https://img.shields.io/npm/dw/ai-logo) | [Source](https://github.com/yldm-tech/ai-logo/tree/main/src) |
+| Logo                                                                                                                    | Package                  | Version                                                                                                     | Downloads                                                          | Links                                                        |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`ai-logo`**            | [![npm](https://img.shields.io/npm/v/ai-logo)](https://www.npmjs.com/package/ai-logo)                       | ![NPM Downloads](https://img.shields.io/npm/dw/ai-logo)            | [Source](https://github.com/yldm-tech/ai-logo/tree/main/src) |
+| <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`@yldm-tech/ai-logo`** | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo)](https://www.npmjs.com/package/@yldm-tech/ai-logo) | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo) | [Source](https://github.com/yldm-tech/ai-logo/tree/main/src) |
 
 Static SVG, PNG and WebP renders of every icon live in this repository under `packages/static-*` and are served over a CDN — see [CDN Usage](#-cdn-usage).
 
@@ -456,9 +463,9 @@ Contributions of all types are more than welcome, if you are interested in contr
 **Commit messages must be gitmoji-prefixed.** Releases are cut by semantic-release using `conventional-changelog-gitmoji-config`, whose parser only recognises a type when an emoji or its `:shortcode:` comes first:
 
 ```bash
-:bug: fix: correct the Gemini brand colour     # releases a patch
-:sparkles: feat: add the Mistral icon          # releases a minor
-fix: correct the Gemini brand colour           # parsed as no type, releases nothing
+:bug: fix: correct the Gemini brand colour # releases a patch
+:sparkles: feat: add the Mistral icon      # releases a minor
+fix: correct the Gemini brand colour       # parsed as no type, releases nothing
 ```
 
 A commit without the prefix is accepted by commitlint and merged normally, but it is invisible to the release analyser, so the change never reaches npm.
