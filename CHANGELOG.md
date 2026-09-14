@@ -2,6 +2,12 @@
 
 # Changelog
 
+# [1.3.0](https://github.com/yldm-tech/ai-logo/compare/v1.2.4...v1.3.0) (2026-09-14)
+
+### Features
+
+- serve the icon renders from ailogo.yldm.ai ([5dd1a8d](https://github.com/yldm-tech/ai-logo/commit/5dd1a8d2aa30664e5304e999e267294ae58add02))
+
 ## [1.2.4](https://github.com/yldm-tech/ai-logo/compare/v1.2.3...v1.2.4) (2026-09-14)
 
 ## [1.2.3](https://github.com/yldm-tech/ai-logo/compare/v1.2.2...v1.2.3) (2026-09-14)
