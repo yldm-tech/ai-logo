@@ -202,6 +202,14 @@ export const Gallery = () => {
       {/* The page's only h1 lives in the hero, which this view replaces — so switching to the gallery left a document with no top-level heading and nothing to orient by. It is visually redundant next to a wall of logos, so it is there for the outline rather than for the eye. */}
       <h1 className="sr-only">{t("nav.icons")}</h1>
 
+      {/* The grid is one tab stop per brand, and there are 323 of them. Proper grid semantics would be the thorough answer; this is the one that helps today — a link that is invisible until it is focused and puts a keyboard reader past the wall in one press. */}
+      <a
+        className="sr-only rounded-lg bg-accent-solid px-4 py-2 text-sm font-medium text-white focus:not-sr-only focus:absolute focus:z-20"
+        href="#gallery-end"
+      >
+        {t("gallery.skip")}
+      </a>
+
       <label className="mb-4 block sm:hidden">
         <input
           aria-label={t("gallery.search")}
@@ -258,6 +266,7 @@ export const Gallery = () => {
           ))}
         </div>
       )}
+      <span id="gallery-end" tabIndex={-1} />
     </div>
   );
 };

@@ -62,7 +62,8 @@
     "search": "Marken, Modelle, Anbieter suchen…",
     "shown": "{{count}} angezeigt",
     "shown_one": "{{count}} angezeigt",
-    "shown_other": "{{count}} angezeigt"
+    "shown_other": "{{count}} angezeigt",
+    "skip": "Icon-Raster überspringen"
   },
   "hero": {
     "badge": "{{brands}} Marken · {{color}} in Farbe · MIT",

@@ -64,7 +64,8 @@
     "shown_few": "показано {{count}} знака",
     "shown_many": "показано {{count}} знаков",
     "shown_one": "показан {{count}} знак",
-    "shown_other": "показано {{count}} знака"
+    "shown_other": "показано {{count}} знака",
+    "skip": "Пропустить сетку иконок"
   },
   "hero": {
     "badge": "{{brands}} бренда · {{color}} в цвете · MIT",

@@ -61,7 +61,8 @@
     "providers": "服务商",
     "search": "搜索品牌、模型、服务商…",
     "shown": "显示 {{count}} 个",
-    "shown_other": "显示 {{count}} 个"
+    "shown_other": "显示 {{count}} 个",
+    "skip": "跳过图标网格"
   },
   "hero": {
     "badge": "{{brands}} 个品牌 · {{color}} 个彩色 · MIT",

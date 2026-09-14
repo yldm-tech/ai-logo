@@ -8,7 +8,7 @@ import { Header } from "./components/Header";
 import { RTL_LANGUAGES } from "./i18n";
 import { Landing } from "./landing/Landing";
 import { entrance } from "./motion";
-import { useStore } from "./store";
+import { urlFor, useStore } from "./store";
 
 // The gallery renders all 323 brands, so it reaches for the package's whole namespace — around 3 MB, against the hundred-odd marks the landing page names one by one. Loading it on demand is what keeps that off the first visit; a reader who only reads the overview never fetches it.
 const Gallery = lazy(() =>
@@ -49,22 +49,17 @@ export default function App() {
   //
   // Debounced rather than written on every render: the search box drives `query`, so typing called replaceState once per keystroke. Safari rate-limits that to about a hundred calls in thirty seconds and throws past it, which would take down a reader who did nothing worse than type quickly.
   useEffect(() => {
-    const write = setTimeout(() => syncUrl(), 200);
+    const write = setTimeout(
+      () =>
+        window.history.replaceState(
+          null,
+          "",
+          urlFor({ filter, query, selectedId, view }, window.location.href),
+        ),
+      200,
+    );
     return () => clearTimeout(write);
   }, [filter, query, selectedId, view]);
-
-  function syncUrl() {
-    const url = new URL(window.location.href);
-    const write = (key: string, value: string) => {
-      if (value) url.searchParams.set(key, value);
-      else url.searchParams.delete(key);
-    };
-    write("view", view === "icons" ? view : "");
-    write("icon", selectedId);
-    write("q", query);
-    write("group", filter === "all" ? "" : filter);
-    window.history.replaceState(null, "", url);
-  }
 
   // Switching views should land at the top of the new one — opening the gallery from a button halfway down the landing page would otherwise start the grid mid-scroll. Only on an actual change: scrolling on mount would undo a deep link to an anchor.
   const previousView = useRef(view);

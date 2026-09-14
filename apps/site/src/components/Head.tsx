@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
+import { LANGUAGE_PARAM, SITE } from "../i18n";
 import { stats } from "../registry";
 
 /** Open Graph wants the underscored form — `zh-CN` is `zh_CN` there, and nowhere else. */
@@ -32,6 +33,12 @@ export const Head = () => {
       setMeta('meta[property="og:locale"]', "content", ogLocale(language));
       setMeta('meta[name="twitter:title"]', "content", title);
       setMeta('meta[name="twitter:description"]', "content", description);
+
+      // A page reached through ?lang= has to name itself as its own canonical. Leaving every translation pointing at "/" tells a crawler the eleven hreflang alternates are duplicates of one page, which is the opposite of what the cluster is for — it asks for them to be treated as one page in eleven languages.
+      const pinned = new URL(window.location.href).searchParams.get(LANGUAGE_PARAM);
+      const canonical = pinned ? `${SITE}/?${LANGUAGE_PARAM}=${pinned}` : `${SITE}/`;
+      setMeta('link[rel="canonical"]', "href", canonical);
+      setMeta('meta[property="og:url"]', "content", canonical);
     };
 
     apply();
