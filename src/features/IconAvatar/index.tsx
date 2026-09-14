@@ -1,6 +1,6 @@
 "use client";
 
-import { Center, type CenterProps } from "@lobehub/ui";
+import { Center, type CenterProps } from "@/primitives";
 import { useThemeMode } from "antd-style";
 import { CSSProperties, memo } from "react";
 

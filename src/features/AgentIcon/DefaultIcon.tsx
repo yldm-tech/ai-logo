@@ -1,4 +1,4 @@
-import { Icon } from "@lobehub/ui";
+import { Icon } from "@/primitives";
 import { cssVar } from "antd-style";
 import { Bot } from "lucide-react";
 import { CSSProperties, memo } from "react";

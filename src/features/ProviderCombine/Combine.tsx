@@ -1,4 +1,4 @@
-import { DivProps, Flexbox } from "@lobehub/ui";
+import { DivProps, Flexbox } from "@/primitives";
 import { Divider } from "antd";
 import { ReactNode, memo } from "react";
 

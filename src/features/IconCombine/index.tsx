@@ -1,6 +1,6 @@
 "use client";
 
-import { Flexbox, type FlexboxProps } from "@lobehub/ui";
+import { Flexbox, type FlexboxProps } from "@/primitives";
 import { CSSProperties, memo } from "react";
 
 import IconAvatar, { IconAvatarProps } from "@/features/IconAvatar";

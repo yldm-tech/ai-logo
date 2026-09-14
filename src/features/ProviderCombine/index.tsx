@@ -1,6 +1,6 @@
 "use client";
 
-import { Flexbox, FlexboxProps } from "@lobehub/ui";
+import { Flexbox, FlexboxProps } from "@/primitives";
 import { memo, useMemo } from "react";
 
 import DefaultIcon from "../ProviderIcon/DefaultIcon";
