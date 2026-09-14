@@ -433,3 +433,23 @@ input[type="search"]:focus {
   overflow-x: auto;
   padding: 14px 16px;
 }
+
+/* brand mark */
+
+.brand {
+  align-items: center;
+  color: var(--text);
+  display: flex;
+  gap: 9px;
+  text-decoration: none;
+}
+
+.brand h1 {
+  font-size: 19px;
+}
+
+.hero-mark {
+  color: var(--text);
+  display: block;
+  margin-bottom: 18px;
+}

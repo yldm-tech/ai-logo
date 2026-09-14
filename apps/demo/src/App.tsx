@@ -2,6 +2,7 @@ import * as AiLogo from "@yldm-tech/ai-logo";
 import { toc } from "@yldm-tech/ai-logo";
 import { useEffect, useMemo, useState } from "react";
 
+import { Logo } from "./Logo";
 import { Cdn, Hero, Install } from "./sections";
 import "./styles.css";
 
@@ -100,7 +101,10 @@ export default function App() {
       <header className="head">
         <div className="wrap" style={{ paddingBottom: 0 }}>
           <div className="head-top">
-            <h1>ai-logo</h1>
+            <a className="brand" href="#top">
+              <Logo />
+              <h1>AI Logo</h1>
+            </a>
             <span className="count">
               {matches.length} of {toc.length} brands
             </span>

@@ -1,5 +1,7 @@
 import { toc } from "@yldm-tech/ai-logo";
 
+import { Logo } from "./Logo";
+
 const PKG = "@yldm-tech/ai-logo";
 const ALIAS = "ai-logo";
 const CDN = "https://ailogo.yldm.ai";
@@ -19,7 +21,8 @@ const CDN_ROWS = [
 ] as const;
 
 export const Hero = () => (
-  <section className="hero">
+  <section className="hero" id="top">
+    <Logo className="hero-mark" size={44} />
     <h1 className="hero-title">AI Logo</h1>
     <p className="hero-sub">
       Brand marks for {toc.length} AI companies, models and applications — as React components, and
