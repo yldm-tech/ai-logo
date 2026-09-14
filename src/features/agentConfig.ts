@@ -94,7 +94,8 @@ export const agentMappings: AgentMapping[] = [
   { Icon: Manus, keywords: ["manus"] },
   { Icon: CherryStudio, keywords: ["cherry-studio", "cherrystudio"] },
   { Icon: Cursor, keywords: ["cursor"] },
-  { Icon: Amp, keywords: ["amp"] },
+  // Anchored: bare "amp" matched any id containing those three letters, "example" among them.
+  { Icon: Amp, keywords: ["(^|/)amp($|[-_])"] },
   {
     Icon: GithubCopilot,
     keywords: [

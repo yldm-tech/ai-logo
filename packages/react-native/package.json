@@ -1,53 +1,53 @@
 {
-  "name": "@lobehub/icons-rn",
-  "version": "2.13.1",
+  "name": "@yldm-tech/ai-logo-rn",
+  "version": "0.0.0",
+  "private": true,
   "description": "Popular AI / LLM Model Brand Icons for React Native and Expo",
   "keywords": [
+    "ai logo",
     "expo",
     "llm brand logo",
     "llm icons",
-    "lobehub",
     "mobile icons",
     "react native icons",
     "react-native",
     "react-native-svg"
   ],
-  "homepage": "https://github.com/lobehub/lobe-icons",
+  "homepage": "https://github.com/yldm-tech/ai-logo",
   "bugs": {
-    "url": "https://github.com/lobehub/lobe-icons/issues/new"
+    "url": "https://github.com/yldm-tech/ai-logo/issues/new"
   },
   "license": "MIT",
-  "author": "LobeHub <i@lobehub.com>",
+  "author": "yldm-tech",
+  "contributors": [
+    "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lobehub/lobe-icons.git"
+    "url": "git+https://github.com/yldm-tech/ai-logo.git"
   },
   "files": [
     "dist"
   ],
   "sideEffects": false,
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
-  "react-native": "dist/index.js",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  },
+  "react-native": "dist/esm/index.js",
   "scripts": {
     "prebuild": "npm run clean",
     "build": "NODE_OPTIONS=\"--max-old-space-size=16384 --max-semi-space-size=1024\" tsup",
     "build:dts-only": "NODE_OPTIONS=\"--max-old-space-size=26384 --max-semi-space-size=1024\" tsup --dts-only",
     "build:no-dts": "NODE_OPTIONS=\"--max-old-space-size=16384 --max-semi-space-size=1024\" tsup --no-dts",
     "clean": "rm -rf dist",
-    "lint": "eslint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint": "vp lint src --fix",
     "prepack": "clean-package",
     "postpack": "clean-package restore",
     "test": "vp test",
     "test:coverage": "vp test --coverage",
     "test:run": "vp test run",
     "test:watch": "vp test --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsgo --noEmit"
   },
   "dependencies": {
     "es-toolkit": "^1.52.0"

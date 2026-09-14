@@ -3,6 +3,7 @@ import Color from "./components/Color";
 import Combine from "./components/Combine";
 import Mono from "./components/Mono";
 import Text from "./components/Text";
+import TextColor from "./components/TextColor";
 import { COLOR_PRIMARY, TITLE } from "./style";
 
 export type CompoundedIcon = typeof Mono & {
@@ -10,6 +11,7 @@ export type CompoundedIcon = typeof Mono & {
   Color: typeof Color;
   Combine: typeof Combine;
   Text: typeof Text;
+  TextColor: typeof TextColor;
   colorGradient: string;
   colorPrimary: string;
   title: string;
@@ -20,6 +22,7 @@ Icons.Color = Color;
 Icons.Text = Text;
 Icons.Combine = Combine;
 Icons.Avatar = Avatar;
+Icons.TextColor = TextColor;
 Icons.colorPrimary = COLOR_PRIMARY;
 Icons.title = TITLE;
 

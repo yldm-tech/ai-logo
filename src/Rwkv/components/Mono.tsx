@@ -2,11 +2,14 @@
 
 import { memo } from "react";
 
+import { useFillIds } from "@/hooks/useFillId";
 import type { IconType } from "@/types";
 
 import { TITLE } from "../style";
 
 const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
+  const ids = useFillIds(TITLE, 1);
+
   return (
     <svg
       fill="currentColor"
@@ -20,7 +23,7 @@ const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
     >
       <title>{TITLE}</title>
       <defs>
-        <linearGradient id="a" x1="100%" x2="0%" y1="53.893%" y2="53.893%">
+        <linearGradient id={ids[0].id} x1="100%" x2="0%" y1="53.893%" y2="53.893%">
           <stop offset="0%" stopColor="#1D1A5C" />
           <stop offset="49.586%" stopColor="#3431C3" />
           <stop offset="100%" stopColor="#7361F7" />

@@ -1,0 +1,50 @@
+name: "🎨 图标请求 Icon Request"
+description: "请求新增一个品牌图标，或修正某个 id 解析到的图标 | Request a new brand icon, or fix which icon an id resolves to"
+title: "[Icon] "
+labels: "🎨 Icon Request"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most reports here are one of two things, and they are handled differently:
+
+        - **The brand has no icon yet** — fill in the brand section below.
+        - **The brand has an icon but your id renders the grey fallback** — that is a missing mapping entry, not a missing icon. Fill in the id section; the fix is usually one line.
+
+        You can check which case you are in at [ailogo.yldm.ai](https://ailogo.yldm.ai) by searching the brand name.
+  - type: input
+    attributes:
+      label: "🏷 品牌名称 | Brand Name"
+      description: "As the brand writes it. | 品牌的官方写法。"
+      placeholder: "Anthropic"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "🔗 品牌官网或素材来源 | Brand Site or Asset Source"
+      description: "Where the logo can be taken from — a press kit or brand page is ideal. | 标志的来源，最好是品牌官方的 press kit 或品牌页。"
+      placeholder: "https://www.anthropic.com/"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "🆔 相关 id | Related ids"
+      description: "The provider, model or agent id strings that should resolve to this icon. List every form you have seen. | 应该解析到这个图标的 provider / model / agent id，把你见过的所有写法都列出来。"
+      placeholder: |
+        claude
+        claude-sonnet-4
+        anthropic/claude-3.5-sonnet
+  - type: dropdown
+    attributes:
+      label: "🧩 类型 | Kind"
+      options:
+        - Provider
+        - Model
+        - Agent / Application
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "📝 补充信息 | Additional Information"
+      description: "Variants the brand has (mono, colour, wordmark), licensing notes, or anything else worth knowing. | 品牌有哪些变体（单色、彩色、文字标），授权方面的注意事项，或其他值得说明的内容。"

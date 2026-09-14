@@ -5,12 +5,13 @@ export interface LobeIconCdnConfig {
   type?: "mono" | "color" | "text" | "text-cn" | "text-color" | "brand" | "brand-color";
 }
 
+// All three hosts serve this repository's own assets. The npm-backed two resolve `@yldm-tech/ai-logo-static-*`, which the release workflow publishes from packages/static-* at the same version as the main package; the GitHub one reads those directories straight from main.
 const GITHUB_ICON_CDN = (type: LobeIconCdnConfig["format"]) =>
-  `https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-${type}`;
+  `https://raw.githubusercontent.com/yldm-tech/ai-logo/refs/heads/main/packages/static-${type}`;
 const ALIYUN_ICON_CDN = (type: LobeIconCdnConfig["format"]) =>
-  `https://registry.npmmirror.com/@lobehub/icons-static-${type}/latest/files`;
+  `https://registry.npmmirror.com/@yldm-tech/ai-logo-static-${type}/latest/files`;
 const UNPKG_ICON_CDN = (type: LobeIconCdnConfig["format"]) =>
-  `https://unpkg.com/@lobehub/icons-static-${type}@latest`;
+  `https://unpkg.com/@yldm-tech/ai-logo-static-${type}@latest`;
 
 export const getLobeIconCDN = (id: string, config?: LobeIconCdnConfig): string => {
   const { format = "png", isDarkMode = false, type = "color", cdn = "github" } = config || {};

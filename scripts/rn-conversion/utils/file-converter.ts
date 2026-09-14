@@ -125,7 +125,7 @@ export class FileConverter {
   // ========== 基础转换方法 ==========
 
   private removeUseClient(content: string): string {
-    return content.replaceAll(/'use client';\s*\n/g, "");
+    return content.replaceAll(/["']use client["'];?\s*\n/g, "");
   }
 
   private updateReactImports(content: string): string {
@@ -145,7 +145,7 @@ export class FileConverter {
 
   private removeWebSpecificImports(content: string): string {
     // 统一删除TITLE导入，后续在addSpecialImports中按需重新添加
-    return content.replaceAll(/import { TITLE } from '\.\.\/style';\s*\n/g, "");
+    return content.replaceAll(/import \{ TITLE \} from ["']\.\.\/style["'];?\s*\n/g, "");
   }
 
   private addSpecialImports(content: string): string {
@@ -184,7 +184,7 @@ export class FileConverter {
   private updateComponentSignature(content: string, hasCurrentColor: boolean): string {
     return content.replaceAll(/const Icon: IconType = memo\(\(([^)]+)\) => {/g, (match, params) => {
       // 替换size默认值
-      let newParams = params.replaceAll("size = '1em'", "size = 24");
+      let newParams = params.replaceAll(/size = ["']1em["']/g, "size = 24");
 
       // 如果有currentColor，添加color参数
       if (hasCurrentColor && !newParams.includes("color")) {
@@ -301,7 +301,7 @@ export class FileConverter {
 
     // 移除RN不支持的SVG属性
     result = result.replaceAll(/\s+shapeRendering="[^"]*"/g, "");
-    result = result.replaceAll(/style={{\s*mixBlendMode:\s*'[^']*',?\s*}}/g, "");
+    result = result.replaceAll(/style=\{\{\s*mixBlendMode:\s*["'][^"']*["'],?\s*\}\}/g, "");
 
     // 修复fontWeight在ViewStyle中的使用（移除fontWeight）
     result = result.replaceAll(

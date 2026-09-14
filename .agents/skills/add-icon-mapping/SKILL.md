@@ -57,24 +57,29 @@ Prefer whichever the issue/requester specifies; otherwise pick based on whether 
 ## Verification
 
 ```bash
-bun run type-check                             # repo root
-cd packages/react-native && bun run type-check # RN package has its own tsconfig
+pnpm run ci                                    # oxfmt, oxlint and tsgo over the whole repo
+pnpm run test                                  # the contract suite below
 ```
 
-If dependencies aren't installed, the RN type-check reports pre-existing `Cannot find module 'react-native'` / `'react-native-svg'` errors — those are environmental, not caused by your change. Only errors mentioning your new enum member or the config files matter; don't install dependencies just to silence them (`pnpm install` creates lockfile noise, see below).
+The contract tests in `tests/contract.test.tsx` are the real check, and they will fail on a half-finished mapping without you having to look for it:
 
-Type-check catches typos but not a missed mapping — grep is the completeness check:
+- every `ModelProvider` member must be reachable through `providerMappings` — a new enum member with no mapping entry fails here
+- no keyword may appear in two provider entries
+- every model and agent keyword must reach its own entry — a new broad keyword that shadows an existing one fails here, and so does a new narrow one hidden behind an existing broad one
+- `src/toc.json` must describe the subcomponents each icon actually attaches
+
+Grep is still the quickest completeness check across the two packages:
 
 ```bash
 grep -rn "supergrok" src packages/react-native/src
 ```
 
-Expect hits in both enum files and both config files (2×2). For a model/agent keyword, quickly sanity-check the regex in isolation: `new RegExp(keyword, 'i').test(modelId)`.
+Expect hits in both enum files and both config files (2×2). For a model or agent keyword, sanity-check the regex in isolation too: `new RegExp(keyword, "i").test(modelId)`. Remember that matching is unanchored and first-match-wins, so a short keyword like `"amp"` claims every id containing those letters — anchor with `(^|/)` and `($|[-_])` unless you mean the substring.
 
-There are no committed tests and the repo's `vitest.config.ts` alias (`'@': './src'`, relative) does not resolve transitive `@/` imports — a render test needs a throwaway config with an absolute-path alias and `server.deps.inline: [/@lobehub/]`. Usually type-check + grep is sufficient.
+The react-native package type-checks in CI, so `Cannot find module react-native` is no longer expected. Run `pnpm install` first if you see it.
 
 ## Commit pitfalls
 
-- `.npmrc` sets `lockfile=false` — the repo commits **no lockfile**. Running `pnpm install` generates `pnpm-lock.yaml` and may inject a placeholder `allowBuilds:` block into `pnpm-workspace.yaml`. Delete the lockfile and `git checkout -- pnpm-workspace.yaml` before committing.
-- The pre-commit hook runs lint-staged and can sweep unintended files into the commit. After committing, check `git show --stat HEAD` — a mapping change should touch only the 2–4 config files.
-- Commit style is gitmoji + conventional: `✨ feat: add Grok icon mapping for supergrok provider`.
+- `pnpm-lock.yaml` **is committed**. Do not delete it, and do not revert `pnpm-workspace.yaml` — `pnpm install` writing to either is a real change that belongs in the commit. (A previous version of this file said the opposite.)
+- The pre-commit hook regenerates `src/toc.json` and stages only that file. A mapping change should touch the 2–4 config files plus, if you added an icon, `src/toc.json`. Check with `git show --stat HEAD`.
+- Commit style is gitmoji + conventional: `:sparkles: feat: add Grok icon mapping for supergrok provider`.

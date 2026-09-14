@@ -476,6 +476,12 @@ export type IconType = ForwardRefExoticComponent<
   > & {
     color?: string;
     size?: string | number;
+    /**
+     * Passed through to the `<svg>` as an attribute. It does **not** replace the `<title>` element,
+     * which every icon renders with its own brand name, so it does not change the accessible name —
+     * a screen reader still announces the brand. Use `aria-label` on the element you are labelling
+     * if you need a different one.
+     */
     title?: string;
   } & RefAttributes<SVGSVGElement>
 >;

@@ -55,7 +55,10 @@ class FeatureConfigSyncer {
     let transformed = content;
 
     // 1. 转换导入路径：@/IconName → ../icons/IconName
-    transformed = transformed.replaceAll(/from '@\/([A-Z][\dA-Za-z]*)'/g, "from '../icons/$1'");
+    transformed = transformed.replaceAll(
+      /from ["']@\/([A-Z][\dA-Za-z]*)["']/g,
+      "from '../icons/$1'",
+    );
 
     // 2. 转换类型名称
     // ModelProvider → RNModelProvider (枚举定义)
@@ -124,7 +127,7 @@ class FeatureConfigSyncer {
     // 5. 特殊导入处理
     // 移除 @lobehub/ui 的 DivProps 导入
     transformed = transformed.replaceAll(
-      /import\s*{\s*DivProps\s*}\s*from\s*'@lobehub\/ui';\s*\n/g,
+      /import\s*\{\s*DivProps\s*\}\s*from\s*["'](?:@lobehub\/ui|@\/primitives)["'];?\s*\n/g,
       "",
     );
 
@@ -154,7 +157,7 @@ class FeatureConfigSyncer {
     // 6. 修复特定的导入语句格式
     // 处理 Kwaipilot 的特殊导入 - 从 @/icons 改为直接导入
     transformed = transformed.replaceAll(
-      "import { Kwaipilot } from '@/icons';",
+      /import \{ Kwaipilot \} from ["']@\/icons["'];?/g,
       "import Kwaipilot from '../icons/Kwaipilot';",
     );
 
@@ -180,7 +183,7 @@ class FeatureConfigSyncer {
     } else if (fileName === "providerConfig.tsx") {
       // 在 Combine 导入之前添加统一的类型导入
       transformed = transformed.replaceAll(
-        "import Combine from './ProviderCombine/Combine';",
+        /import Combine from ["']\.\/ProviderCombine\/Combine["'];?/g,
         "import type { RNIconAvatarProps, RNIconCombineProps, RNIconProps } from './types';\nimport Combine from './ProviderCombine/Combine';",
       );
     }
@@ -222,29 +225,23 @@ class FeatureConfigSyncer {
       const targetFiles = this.configFiles.map((config) => config.targetFile);
 
       // 使用 oxfmt 格式化
-      try {
-        execSync(`vp fmt ${targetFiles.join(" ")}`, {
-          cwd: this.projectRoot,
-          encoding: "utf8",
-          stdio: "pipe",
-        });
-        console.log("✅ 格式化完成");
-      } catch {
-        console.log("⚠️  Prettier 格式化失败，尝试使用 ESLint...");
-      }
+      //
+      // 这里原本还有一段 `npx eslint --fix` 的兜底。eslint 在迁到 oxlint 时已被移除，所以 npx 会去
+      // registry 现下一份 eslint，而失败又被 catch 吞掉——既慢又永远不会报错。oxfmt 和 oxlint 就是
+      // 现在的格式化与检查工具，直接用它们。
+      execSync(`vp fmt ${targetFiles.join(" ")}`, {
+        cwd: this.projectRoot,
+        encoding: "utf8",
+        stdio: "pipe",
+      });
+      console.log("✅ 格式化完成");
 
-      // 使用 eslint 修复
-      try {
-        const featuresDir = path.join(this.projectRoot, "packages/react-native/src/features");
-        execSync(`npx eslint "${featuresDir}/*.{ts,tsx}" --fix`, {
-          cwd: this.projectRoot,
-          encoding: "utf8",
-          stdio: "pipe",
-        });
-        console.log("✅ ESLint 修复完成");
-      } catch {
-        console.log("⚠️  ESLint 修复跳过");
-      }
+      execSync(`vp lint ${targetFiles.join(" ")} --fix`, {
+        cwd: this.projectRoot,
+        encoding: "utf8",
+        stdio: "pipe",
+      });
+      console.log("✅ 代码检查修复完成");
 
       return true;
     } catch (error) {

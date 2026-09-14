@@ -35,6 +35,13 @@
   "main": "es/index.mjs",
   "module": "es/index.mjs",
   "types": "es/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./es/index.d.mts",
+      "default": "./es/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
@@ -46,8 +53,8 @@
     "build:static": "npx puppeteer browsers install chrome && tsx scripts/svgWorkflow/index.tsx",
     "build:toc": "tsx scripts/tocWorkflow/index.ts",
     "build:watch": "vp pack src/index.ts --dts --format esm --out-dir es --unbundle --watch",
-    "ci": "vp check && npm run type-check",
-    "clean": "rm -r es dist coverage .react-router .eslintcache node_modules/.cache",
+    "ci": "vp fmt --check && vp lint -D no-unused-vars && npm run type-check",
+    "clean": "rm -rf es dist coverage .react-router node_modules/.cache",
     "dev": "pnpm --dir apps/demo run dev",
     "fmt": "vp fmt",
     "lint": "vp lint src tests --fix",
@@ -72,13 +79,11 @@
   "dependencies": {
     "antd-style": "^4.1.0",
     "es-toolkit": "^1.52.0",
-    "lucide-react": "^1.45.0",
-    "polished": "^4.3.1"
+    "lucide-react": "^1.45.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
     "@lobehub/commitlint-config": "^2.1.5",
-    "@lobehub/icons": "^5.18.0",
     "@lobehub/remarklint-config": "^2.1.5",
     "@lobehub/semantic-release-config": "^2.1.5",
     "@lobehub/stylelint-config": "^2.1.5",
@@ -89,6 +94,7 @@
     "clean-package": "^2.2.0",
     "commitlint": "^21.2.2",
     "consola": "^3.4.2",
+    "conventional-changelog-conventionalcommits": "^9.3.1",
     "dotenv": "^17.4.2",
     "dpdm": "^4.3.0",
     "glob": "^13.0.6",
@@ -98,6 +104,7 @@
     "lint-staged": "^17.5.1",
     "markdown-table": "^3.0.4",
     "p-map": "^7.0.8",
+    "polished": "^4.3.1",
     "postcss-styled-syntax": "^0.7.2",
     "puppeteer": "^25.10.0",
     "react": "^19.3.0",

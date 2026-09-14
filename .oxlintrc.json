@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "perf": "warn",
+    "suspicious": "warn"
+  },
+  "env": {
+    "browser": true,
+    "es2024": true
+  },
+  "ignorePatterns": ["es", "dist", "dist-treeshake", "dist-treeshake-lookup", ".react-router"],
+  "plugins": ["react", "react-perf", "typescript", "unicorn"],
+  "rules": {
+    "no-unused-vars": "error",
+    "typescript/no-unused-vars": "error"
+  }
+}

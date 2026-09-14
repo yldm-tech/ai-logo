@@ -9,7 +9,7 @@ This guide provides comprehensive information about the ai-logo repository struc
 
 ## Project Overview
 
-The ai-logo repository contains over 150 AI/ML brand icons organized in a consistent structure. Each icon brand has its own directory under `src/` with standardized components and exports.
+The ai-logo repository contains 323 AI/ML brand icons organized in a consistent structure. Each icon brand has its own directory under `src/` with standardized components and exports.
 
 ## Directory Structure
 
@@ -25,7 +25,7 @@ Each icon brand follows this pattern:
 src/IconName/
 ├── index.ts          # Main exports
 ├── style.ts          # Brand constants and styling
-├── index.md          # Documentation
+├── index.mdx         # Documentation
 └── components/
     ├── Mono.tsx      # Monochrome icon
     ├── Color.tsx     # Colored icon (if applicable)
@@ -145,7 +145,7 @@ export default Icons;
 2. **Cleanup**: Remove unnecessary elements and attributes
 3. **Scale**: Ensure it fits within 24x24 viewBox
 4. **Extract**: Get the path data for the icon
-5. **Tool**: Use https://icons.lobehub.com/editor for formatted SVG output
+5. **Tool**: Use https://ailogo.yldm.ai/editor for formatted SVG output
 
 ### 4. Icon Types
 
@@ -160,7 +160,7 @@ export default Icons;
 - Best for brand representation
 - Create both `Mono.tsx` and `Color.tsx` components
 
-### 5. Documentation ([index.md](mdc:src/AdobeFirefly/index.md))
+### 5. Documentation ([index.mdx](mdc:src/AdobeFirefly/index.mdx))
 Create documentation with examples for all component variants:
 - Basic icons (Mono/Color)
 - Text component
@@ -194,7 +194,7 @@ npm run dev      # Start demo site
 - Static format images (PNG, SVG, WebP) are generated automatically
 - Group types: Model | Provider | Application
 - All icons should be 24x24 viewBox for consistency
-- Use the online editor at https://icons.lobehub.com/editor for best results
+- Use the online editor at https://ailogo.yldm.ai/editor for best results
 
 ## Best Practices
 

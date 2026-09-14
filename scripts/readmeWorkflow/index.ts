@@ -12,9 +12,16 @@ const BASE_URL = "https://github.com/yldm-tech/ai-logo/tree/main/src/";
 
 const updateReadme = (split: string, md: string, content: string): string => {
   const mds = md.split(split);
-  mds[1] = [" ", content, " "].join("\n\n");
+  // Blank lines, not spaces. Padding with " " left a trailing space after the opening marker, which
+  // remark preserves verbatim because it sits inside an HTML node, so every regeneration produced a
+  // one-character diff that no formatter would settle and no freshness check could pass.
+  mds[1] = ["", content, ""].join("\n\n");
   return mds.join(split);
 };
+
+/** The count in the disclosure summary is generated, so it cannot drift from the table below it. */
+const updateBrandCount = (md: string, count: number): string =>
+  md.replace(/Show all \d+ brands/, `Show all ${count} brands`);
 
 const genMd = (data: IconToc): string =>
   [
@@ -49,17 +56,33 @@ const run = () => {
     ]),
   ];
 
+  const rendered = model.length + provider.length + application.length;
+
+  // The table has exactly three columns, so an icon in any other group is dropped without a trace.
+  // Reporting toc.length here made that invisible: it always claimed every icon had been written.
+  if (rendered !== toc.length) {
+    const groups = [...new Set(toc.map((item) => item.group))].join(", ");
+    consola.error(
+      `${toc.length - rendered} of ${toc.length} icons fall in no rendered column. Columns are model, provider and application; toc uses: ${groups}.`,
+    );
+    process.exitCode = 1;
+    return;
+  }
+
   const contents = markdownTable(table);
 
   const readmePath = resolve(ROOT_PATH, "README.md");
 
   const readme = readFileSync(readmePath, "utf8");
 
-  const newReadme = updateReadme("<!-- ICON LIST -->", readme, contents);
+  const newReadme = updateBrandCount(
+    updateReadme("<!-- ICON LIST -->", readme, contents),
+    rendered,
+  );
 
   writeFileSync(readmePath, newReadme, "utf8");
 
-  consola.success(`Add ${toc.length} icons to README`);
+  consola.success(`Add ${rendered} icons to README`);
 };
 
 run();
