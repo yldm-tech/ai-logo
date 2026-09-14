@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "declaration": true,
-    "downlevelIteration": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -14,11 +12,11 @@
     "target": "es6",
     "types": ["vitest/globals"],
     "paths": {
-      "@/*": ["src/*"],
-      "ai-logo": ["src"],
-      "ai-logo/*": ["src/*"]
+      "@/*": ["./src/*"],
+      "ai-logo": ["./src"],
+      "ai-logo/*": ["./src/*"]
     }
   },
   "exclude": [".react-router"],
-  "include": ["src", "docs", "tests", "docs.config.ts", ".fatherrc.ts", "scripts"]
+  "include": ["src", "docs", "tests", "docs.config.ts", "scripts"]
 }
