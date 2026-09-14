@@ -48,13 +48,11 @@ jobs:
           npx remark --quiet --output -- README.md
           git diff --exit-code -- src/toc.json README.md
 
-      # The demo consumes the built package through node_modules the way a real dependant does, which
-      # the Build package step above has already produced. It also carries the bundle budgets, the
-      # only guard against the kind of regression that shipped in 1.2.1.
-      - name: Check the consumer demo
+      # The site consumes the built package through node_modules the way a real dependant does, which the Build package step above has already produced. It also carries the bundle budgets, the only guard against the kind of regression that shipped in 1.2.1.
+      - name: Check the site
         run: |
-          pnpm --dir apps/demo run type-check
-          pnpm --dir apps/demo run test
+          pnpm --dir apps/site run type-check
+          pnpm --dir apps/site run test
 
       - name: Type-check the react-native port
         run: pnpm --dir packages/react-native run type-check

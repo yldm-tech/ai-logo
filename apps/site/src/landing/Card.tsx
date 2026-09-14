@@ -1,4 +1,4 @@
-/** One capability, stated at the top and demonstrated at the bottom. The demo sits in its own band so the four cards share a baseline however long their copy runs. */
+/** One capability, stated at the top and demonstrated at the bottom. The demonstration sits in its own band so the four cards share a baseline however long their copy runs. */
 export const Card = ({
   children,
   note,

@@ -1,8 +1,8 @@
 {
-  "name": "@ai-logo/demo",
+  "name": "@ai-logo/site",
   "version": "0.0.0",
   "private": true,
-  "description": "Consumer smoke test — imports @yldm-tech/ai-logo the way a published dependency resolves, not through the repo's source aliases",
+  "description": "The site at ailogo.yldm.ai. It imports @yldm-tech/ai-logo the way a published dependency resolves rather than through the repo's source aliases, so it doubles as the consumer smoke test.",
   "scripts": {
     "build": "vp build && tsx scripts/prerender.tsx",
     "dev": "vp dev",

@@ -11,7 +11,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const demoRoot = resolve(here, "..");
+const siteRoot = resolve(here, "..");
 
 const cases = [
   {
@@ -33,9 +33,9 @@ const cases = [
 let failed = false;
 
 for (const { config, label, limitKb, outDir } of cases) {
-  execFileSync("vp", ["build", "--config", config], { cwd: demoRoot, stdio: "inherit" });
+  execFileSync("vp", ["build", "--config", config], { cwd: siteRoot, stdio: "inherit" });
 
-  const assets = join(demoRoot, outDir, "assets");
+  const assets = join(siteRoot, outDir, "assets");
   const bundles = readdirSync(assets).filter((file) => file.endsWith(".js"));
   const totalKb = bundles.reduce((sum, file) => sum + statSync(join(assets, file)).size, 0) / 1024;
 
