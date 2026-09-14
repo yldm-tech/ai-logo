@@ -39,10 +39,10 @@
     "lint": "eslint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
     "prepack": "clean-package",
     "postpack": "clean-package restore",
-    "test": "vitest",
-    "test:coverage": "vitest --coverage",
-    "test:run": "vitest run",
-    "test:watch": "vitest --watch",
+    "test": "vp test",
+    "test:coverage": "vp test --coverage",
+    "test:run": "vp test run",
+    "test:watch": "vp test --watch",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {

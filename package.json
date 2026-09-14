@@ -24,9 +24,9 @@
     "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
   ],
   "sideEffects": false,
-  "main": "es/index.js",
-  "module": "es/index.js",
-  "types": "es/index.d.ts",
+  "main": "es/index.mjs",
+  "module": "es/index.mjs",
+  "types": "es/index.d.mts",
   "files": [
     "es"
   ],
@@ -35,19 +35,18 @@
     "packages/*"
   ],
   "scripts": {
-    "auto-converter-web-icons-to-rn": "bun scripts/rn-conversion/auto-converter.ts --lint",
-    "build": "npm run build:toc && father build",
-    "build:rn": "bun run --cwd packages/react-native build",
-    "build:static": "npx puppeteer browsers install chrome && bun scripts/svgWorkflow/index.tsx",
-    "build:toc": "bun scripts/tocWorkflow/index.ts",
-    "build:watch": "father dev",
+    "auto-converter-web-icons-to-rn": "tsx scripts/rn-conversion/auto-converter.ts --lint",
+    "build": "tsx scripts/tocWorkflow/index.ts && vp pack src/index.ts --dts --format esm --out-dir es",
+    "build:rn": "pnpm --dir packages/react-native run build",
+    "build:static": "npx puppeteer browsers install chrome && tsx scripts/svgWorkflow/index.tsx",
+    "build:toc": "tsx scripts/tocWorkflow/index.ts",
+    "build:watch": "vp pack src/index.ts --dts --format esm --out-dir es --watch",
     "ci": "npm run lint && npm run type-check",
     "clean": "rm -r es lib dist coverage .react-router .eslintcache node_modules/.cache",
     "dev": "lobedocs dev",
     "docs:build": "lobedocs build",
     "docs:build-analyze": "ANALYZE=1 lobedocs build",
     "docs:dev": "lobedocs dev",
-    "doctor": "father doctor",
     "lint": "eslint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
     "lint:circular": "dpdm src/**/*.{ts,tsx}  --warning false  --tree false  --exit-code circular:1  -T true",
     "lint:md": "remark . --quiet --frail --output",
@@ -64,9 +63,9 @@
     "start": "npm run dev",
     "sync:cnpm": "cnpm sync @lobehub/icons-static-svg @lobehub/icons-static-png @lobehub/icons-static-webp @lobehub/icons-static-avatar",
     "sync:md": "npm run build:toc && tsx scripts/readmeWorkflow/index.ts",
-    "test": "vitest --passWithNoTests",
-    "test:coverage": "vitest run --coverage  --passWithNoTests",
-    "test:update": "vitest -u",
+    "test": "vp test --passWithNoTests",
+    "test:coverage": "vp test run --coverage  --passWithNoTests",
+    "test:update": "vp test -u",
     "type-check": "tsc --noEmit",
     "vectorizer": "tsx scripts/vectorizer/index.ts"
   },
@@ -108,7 +107,7 @@
     "@types/pangu": "^4.0.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitest/coverage-v8": "^3.2.7",
+    "@vitest/coverage-v8": "catalog:",
     "ajv": "^8.20.0",
     "babel-plugin-antd-style": "^1.0.4",
     "clean-package": "^2.2.0",
@@ -118,7 +117,6 @@
     "dotenv": "^17.4.2",
     "dpdm": "^3.15.1",
     "eslint": "^8.57.1",
-    "father": "^4.6.30",
     "glob": "^11.1.0",
     "gray-matter": "^4.0.3",
     "html-react-parser": "^5.2.17",
@@ -142,8 +140,9 @@
     "svgo": "4.0.2",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3",
-    "vite": "8.1.4",
-    "vitest": "^3.2.7"
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
   },
   "peerDependencies": {
     "@lobehub/ui": "^5.0.0",
@@ -151,6 +150,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
+  "packageManager": "pnpm@12.4.1",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
