@@ -1,23 +1,23 @@
-import React, { memo, useMemo } from 'react';
-import { type ViewStyle } from 'react-native';
+import React, { memo, useMemo } from "react";
+import { type ViewStyle } from "react-native";
 
-import { RNIconProps } from '@/types';
+import { RNIconProps } from "@/types";
 
-import { rnProviderMappings } from '../providerConfig';
-import DefaultAvatar from './DefaultAvatar';
-import DefaultIcon from './DefaultIcon';
+import { rnProviderMappings } from "../providerConfig";
+import DefaultAvatar from "./DefaultAvatar";
+import DefaultIcon from "./DefaultIcon";
 
 export interface RNProviderIconProps extends RNIconProps {
   forceMono?: boolean;
   provider?: string;
-  shape?: 'circle' | 'square';
+  shape?: "circle" | "square";
   size?: number;
   style?: ViewStyle;
-  type?: 'avatar' | 'mono' | 'color' | 'combine' | 'combine-color';
+  type?: "avatar" | "mono" | "color" | "combine" | "combine-color";
 }
 
 const RNProviderIcon = memo<RNProviderIconProps>(
-  ({ provider: originProvider, size = 12, type = 'avatar', forceMono, shape, ...rest }) => {
+  ({ provider: originProvider, size = 12, type = "avatar", forceMono, shape, ...rest }) => {
     const Render = useMemo(() => {
       if (!originProvider) return undefined;
       const provider = originProvider.toLowerCase();
@@ -37,25 +37,25 @@ const RNProviderIcon = memo<RNProviderIconProps>(
     };
 
     switch (type) {
-      case 'avatar': {
+      case "avatar": {
         if (!Render?.Icon) return <DefaultAvatar shape={shape} {...props} />;
         return <Render.Icon.Avatar shape={shape} {...props} />;
       }
-      case 'mono': {
+      case "mono": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
-        if (!forceMono && originProvider === 'lobehub') {
+        if (!forceMono && originProvider === "lobehub") {
           return Render.Icon?.Color ? <Render.Icon.Color {...props} /> : <Render.Icon {...props} />;
         }
         return <Render.Icon {...props} />;
       }
-      case 'color': {
+      case "color": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return Render.Icon?.Color ? <Render.Icon.Color {...props} /> : <Render.Icon {...props} />;
       }
-      case 'combine': {
+      case "combine": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return Render.Icon?.Combine ? (
-          <Render.Icon.Combine type={'mono'} {...props} />
+          <Render.Icon.Combine type={"mono"} {...props} />
         ) : Render.Icon?.Brand ? (
           <Render.Icon.Brand {...props} />
         ) : Render.Icon?.Text ? (
@@ -64,10 +64,10 @@ const RNProviderIcon = memo<RNProviderIconProps>(
           <Render.Icon {...props} />
         );
       }
-      case 'combine-color': {
+      case "combine-color": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return Render.Icon?.Combine ? (
-          <Render.Icon.Combine type={'color'} {...props} />
+          <Render.Icon.Combine type={"color"} {...props} />
         ) : Render.Icon?.BrandColor ? (
           <Render.Icon.BrandColor {...props} />
         ) : Render.Icon?.Text ? (
@@ -83,6 +83,6 @@ const RNProviderIcon = memo<RNProviderIconProps>(
   },
 );
 
-RNProviderIcon.displayName = 'RNProviderIcon';
+RNProviderIcon.displayName = "RNProviderIcon";
 
 export default RNProviderIcon;

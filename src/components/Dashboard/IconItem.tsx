@@ -1,23 +1,23 @@
-'use client';
+"use client";
 
-import { ActionIcon, Block, Center, CopyButton, Flexbox, Text } from '@lobehub/ui';
-import { createStaticStyles, cx } from 'antd-style';
-import { DownloadIcon, SearchIcon } from 'lucide-react';
-import { readableColor } from 'polished';
-import { ReactNode, memo, useCallback, useRef } from 'react';
-import { Link } from 'react-router';
+import { ActionIcon, Block, Center, CopyButton, Flexbox, Text } from "@lobehub/ui";
+import { createStaticStyles, cx } from "antd-style";
+import { DownloadIcon, SearchIcon } from "lucide-react";
+import { readableColor } from "polished";
+import { ReactNode, memo, useCallback, useRef } from "react";
+import { Link } from "react-router";
 
-import { customKebabCase, docsKebabCase } from '@/components/Dashboard/utils';
+import { customKebabCase, docsKebabCase } from "@/components/Dashboard/utils";
 
 const styles = createStaticStyles(({ css, cssVar }) => {
   const colorText = cx(
-    'color-text',
+    "color-text",
     css`
       display: block;
     `,
   );
   const copy = cx(
-    'copy',
+    "copy",
     css`
       z-index: 1;
       display: none !important;
@@ -75,10 +75,10 @@ const IconItem = memo<IconItemProps>(({ children, title, color, id }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const handleDownload = useCallback((iconId: string) => {
-    const svgString = String(ref?.current?.querySelector('svg')?.outerHTML);
-    const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+    const svgString = String(ref?.current?.querySelector("svg")?.outerHTML);
+    const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
     const url = URL.createObjectURL(blob);
-    const downloadLink = document.createElement('a');
+    const downloadLink = document.createElement("a");
     downloadLink.href = url;
     downloadLink.download = `${iconId.toLowerCase()}.svg`;
     document.body.append(downloadLink);
@@ -88,27 +88,27 @@ const IconItem = memo<IconItemProps>(({ children, title, color, id }) => {
   }, []);
 
   return (
-    <Block className={styles.card} variant={'outlined'}>
-      <Link style={{ color: 'inherit' }} to={`/components/${docsKebabCase(id)}`}>
-        <Center height={96} ref={ref} style={{ position: 'relative' }} width={'100%'}>
+    <Block className={styles.card} variant={"outlined"}>
+      <Link style={{ color: "inherit" }} to={`/components/${docsKebabCase(id)}`}>
+        <Center height={96} ref={ref} style={{ position: "relative" }} width={"100%"}>
           {children}
         </Center>
       </Link>
       <Flexbox
-        align={'center'}
+        align={"center"}
         className={styles.titleRow}
         horizontal
-        justify={'space-between'}
+        justify={"space-between"}
         paddingBlock={8}
         paddingInline={12}
-        width={'100%'}
+        width={"100%"}
       >
-        <Text as={'h2'} className={styles.title} ellipsis>
+        <Text as={"h2"} className={styles.title} ellipsis>
           {title}
         </Text>
-        <CopyButton content={title} size={'small'} />
+        <CopyButton content={title} size={"small"} />
       </Flexbox>
-      <Flexbox align={'center'} className={styles.row} horizontal>
+      <Flexbox align={"center"} className={styles.row} horizontal>
         <Center
           className={styles.color}
           flex={1}
@@ -122,7 +122,7 @@ const IconItem = memo<IconItemProps>(({ children, title, color, id }) => {
             className={styles.copy}
             color={readableColor(color)}
             content={color.toUpperCase()}
-            size={'small'}
+            size={"small"}
           />
         </Center>
         <Flexbox flex={1} horizontal paddingInline={12}>
@@ -130,14 +130,14 @@ const IconItem = memo<IconItemProps>(({ children, title, color, id }) => {
             <a
               href={`https://lobehub.com/icons/${customKebabCase(id)}`}
               rel="noreferrer"
-              style={{ color: 'inherit' }}
-              target={'_blank'}
+              style={{ color: "inherit" }}
+              target={"_blank"}
             >
-              <ActionIcon icon={SearchIcon} size={'small'} />
+              <ActionIcon icon={SearchIcon} size={"small"} />
             </a>
           </Center>
           <Center flex={1} height={32} onClick={() => handleDownload(id)}>
-            <ActionIcon icon={DownloadIcon} size={'small'} />
+            <ActionIcon icon={DownloadIcon} size={"small"} />
           </Center>
         </Flexbox>
       </Flexbox>

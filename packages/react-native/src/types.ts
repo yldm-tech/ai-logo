@@ -1,5 +1,5 @@
-import type { ComponentType } from 'react';
-import type { ViewStyle } from 'react-native';
+import type { ComponentType } from "react";
+import type { ViewStyle } from "react-native";
 
 export interface RNIconProps {
   [key: string]: any;

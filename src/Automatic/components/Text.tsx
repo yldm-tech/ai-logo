@@ -1,1 +1,1 @@
-export { default } from '@/Stability/components/Text';
+export { default } from "@/Stability/components/Text";

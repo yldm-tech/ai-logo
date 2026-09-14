@@ -1,10 +1,10 @@
-import React, { memo } from 'react';
-import { Defs, LinearGradient, Path, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Defs, LinearGradient, Path, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillIds } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillIds } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
 const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   const [a, b, c] = useFillIds(TITLE, 3);
@@ -42,6 +42,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   );
 });
 
-Icon.displayName = 'SubModelColor';
+Icon.displayName = "SubModelColor";
 
 export default Icon;

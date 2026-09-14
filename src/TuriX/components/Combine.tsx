@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { memo } from 'react';
+import { memo } from "react";
 
-import IconCombine, { type IconCombineProps } from '@/features/IconCombine';
+import IconCombine, { type IconCombineProps } from "@/features/IconCombine";
 
-import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from '../style';
-import Mono from './Mono';
-import Text from './Text';
+import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from "../style";
+import Mono from "./Mono";
+import Text from "./Text";
 
 const Combine = memo<IconCombineProps>(({ ...rest }) => {
   return (

@@ -1,15 +1,15 @@
-import { fileURLToPath } from 'node:url';
-import { defineConfig } from 'vite-plus';
+import { fileURLToPath } from "node:url";
+import { defineConfig } from "vite-plus";
 
-import { name } from './package.json';
+import { name } from "./package.json";
 
 export default defineConfig({
   test: {
     alias: {
-      '@': fileURLToPath(new URL('src', import.meta.url)),
-      [name]: fileURLToPath(new URL('src', import.meta.url)),
+      "@": fileURLToPath(new URL("src", import.meta.url)),
+      [name]: fileURLToPath(new URL("src", import.meta.url)),
     },
-    environment: 'jsdom',
+    environment: "jsdom",
     globals: true,
     server: {
       deps: {

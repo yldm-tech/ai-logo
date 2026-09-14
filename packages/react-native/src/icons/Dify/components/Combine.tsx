@@ -1,18 +1,18 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { RNIconCombine, type RNIconCombineProps } from '@/features';
+import { RNIconCombine, type RNIconCombineProps } from "@/features";
 
-import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from '../style';
-import Text from './Text';
-import TextColor from './TextColor';
+import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from "../style";
+import Text from "./Text";
+import TextColor from "./TextColor";
 
-export interface CombineProps extends Omit<RNIconCombineProps, 'Icon' | 'Text'> {
-  type?: 'color' | 'mono';
+export interface CombineProps extends Omit<RNIconCombineProps, "Icon" | "Text"> {
+  type?: "color" | "mono";
 }
-const Combine = memo<CombineProps>(({ type = 'mono', ...rest }) => {
+const Combine = memo<CombineProps>(({ type = "mono", ...rest }) => {
   return (
     <RNIconCombine
-      Text={type === 'color' ? TextColor : Text}
+      Text={type === "color" ? TextColor : Text}
       aria-label={TITLE}
       spaceMultiple={COMBINE_SPACE_MULTIPLE}
       textMultiple={COMBINE_TEXT_MULTIPLE}

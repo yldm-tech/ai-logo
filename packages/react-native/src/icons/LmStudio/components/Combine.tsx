@@ -1,24 +1,24 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { RNIconCombine, type RNIconCombineProps } from '@/features';
+import { RNIconCombine, type RNIconCombineProps } from "@/features";
 
-import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from '../style';
-import Avatar from './Avatar';
-import Mono from './Mono';
-import Text from './Text';
+import { COMBINE_SPACE_MULTIPLE, COMBINE_TEXT_MULTIPLE, TITLE } from "../style";
+import Avatar from "./Avatar";
+import Mono from "./Mono";
+import Text from "./Text";
 
-export interface CombineProps extends Omit<RNIconCombineProps, 'Icon' | 'Text'> {
-  type?: 'color' | 'mono';
+export interface CombineProps extends Omit<RNIconCombineProps, "Icon" | "Text"> {
+  type?: "color" | "mono";
 }
-const Combine = memo<CombineProps>(({ type = 'mono', ...rest }) => {
-  const Icon = type === 'color' ? Avatar : Mono;
+const Combine = memo<CombineProps>(({ type = "mono", ...rest }) => {
+  const Icon = type === "color" ? Avatar : Mono;
 
   return (
     <RNIconCombine
       Icon={Icon}
       Text={Text}
       aria-label={TITLE}
-      iconProps={type === 'color' ? { shape: 'square' } : {}}
+      iconProps={type === "color" ? { shape: "square" } : {}}
       spaceMultiple={COMBINE_SPACE_MULTIPLE}
       textMultiple={COMBINE_TEXT_MULTIPLE}
       {...rest}

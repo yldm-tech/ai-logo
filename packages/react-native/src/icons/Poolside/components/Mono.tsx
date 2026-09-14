@@ -1,12 +1,12 @@
-import React, { memo } from 'react';
-import { ClipPath, Defs, G, LinearGradient, Mask, Path, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { ClipPath, Defs, G, LinearGradient, Mask, Path, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillIds } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillIds } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
-const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }) => {
+const Icon = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
   const [a, b, c, d, e] = useFillIds(TITLE, 5);
   return (
     <Svg
@@ -23,7 +23,7 @@ const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }
           height="24"
           id={e.id}
           maskUnits="userSpaceOnUse"
-          style={{ maskType: 'alpha' }}
+          style={{ maskType: "alpha" }}
           width="24"
           x="0"
           y="0"
@@ -83,6 +83,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }
   );
 });
 
-Icon.displayName = 'PoolsideMono';
+Icon.displayName = "PoolsideMono";
 
 export default Icon;

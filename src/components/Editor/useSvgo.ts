@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from "react";
 
-import SvgoClient, { type SvgoConfig } from '@/components/Editor/svgo';
+import SvgoClient, { type SvgoConfig } from "@/components/Editor/svgo";
 
 export const useSvgo = (svg: string, config: SvgoConfig) => {
   const svgoInstance = useRef<SvgoClient | null>(null);

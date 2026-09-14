@@ -1,23 +1,23 @@
-'use client';
+"use client";
 
-import { Flexbox, FlexboxProps } from '@lobehub/ui';
-import { memo, useMemo } from 'react';
+import { Flexbox, FlexboxProps } from "@lobehub/ui";
+import { memo, useMemo } from "react";
 
-import DefaultIcon from '../ProviderIcon/DefaultIcon';
-import { providerMappings } from '../providerConfig';
-import { ModelProviderKey } from '../providerEnum';
+import DefaultIcon from "../ProviderIcon/DefaultIcon";
+import { providerMappings } from "../providerConfig";
+import { ModelProviderKey } from "../providerEnum";
 
 export interface ProviderCombineProps extends Omit<
   FlexboxProps,
-  'children' | 'horizontal' | 'height' | 'width' | 'align' | 'justify'
+  "children" | "horizontal" | "height" | "width" | "align" | "justify"
 > {
   provider?: ModelProviderKey | string;
   size?: number;
-  type?: 'mono' | 'color';
+  type?: "mono" | "color";
 }
 
 const ProviderCombine = memo<ProviderCombineProps>(
-  ({ provider: originProvider, size = 12, type = 'color', ...rest }) => {
+  ({ provider: originProvider, size = 12, type = "color", ...rest }) => {
     const Render = useMemo(() => {
       if (!originProvider) return;
       const provider = originProvider.toLowerCase();
@@ -47,11 +47,11 @@ const ProviderCombine = memo<ProviderCombineProps>(
 
     return (
       <Flexbox
-        align={'center'}
-        flex={'none'}
+        align={"center"}
+        flex={"none"}
         height={size * 1.5}
         horizontal
-        width={'fit-content'}
+        width={"fit-content"}
         {...rest}
       >
         {icon}
@@ -60,6 +60,6 @@ const ProviderCombine = memo<ProviderCombineProps>(
   },
 );
 
-ProviderCombine.displayName = 'ProviderCombine';
+ProviderCombine.displayName = "ProviderCombine";
 
 export default ProviderCombine;

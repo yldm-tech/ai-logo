@@ -1,20 +1,20 @@
-import { consola } from 'consola';
-import dotenv from 'dotenv';
-import { promises as fs } from 'node:fs';
-import { resolve } from 'node:path';
+import { consola } from "consola";
+import dotenv from "dotenv";
+import { promises as fs } from "node:fs";
+import { resolve } from "node:path";
 
 dotenv.config();
 
-const rootPath = resolve(process.cwd(), 'temp');
-const pngPath = resolve(rootPath, 'logo.png');
-const svgPath = resolve(rootPath, 'logo.svg');
+const rootPath = resolve(process.cwd(), "temp");
+const pngPath = resolve(rootPath, "logo.png");
+const svgPath = resolve(rootPath, "logo.svg");
 
 const apiUrl = process.env.VECTORIZE_URL;
 const secretAccessKey = process.env.VECTORIZE_SECRET_ACCESS_KEY;
 
 const convertPngToSvg = async () => {
   if (!apiUrl || !secretAccessKey) {
-    consola.error('Please provide VECTORIZE_URL and VECTORIZE_SECRET_ACCESS_KEY in .env file');
+    consola.error("Please provide VECTORIZE_URL and VECTORIZE_SECRET_ACCESS_KEY in .env file");
     return;
   }
 
@@ -27,10 +27,10 @@ const convertPngToSvg = async () => {
 
     // 创建FormData对象
     const formData = new FormData();
-    const file = new File([fileBuffer], 'logo.png', { type: 'image/png' });
-    formData.append('image', file);
+    const file = new File([fileBuffer], "logo.png", { type: "image/png" });
+    formData.append("image", file);
 
-    console.log('Sending request to vectorize API...');
+    console.log("Sending request to vectorize API...");
 
     // 发送请求
     const response = await fetch(apiUrl, {
@@ -38,7 +38,7 @@ const convertPngToSvg = async () => {
       headers: {
         Authorization: `Bearer ${secretAccessKey}`,
       },
-      method: 'POST',
+      method: "POST",
     });
 
     if (!response.ok) {
@@ -55,7 +55,7 @@ const convertPngToSvg = async () => {
 
     consola.log(`Successfully converted logo.png to logo.svg at: ${svgPath}`);
   } catch (error) {
-    consola.error('Error:', error);
+    consola.error("Error:", error);
   }
 };
 

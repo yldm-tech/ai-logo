@@ -1,160 +1,160 @@
-import { DivProps } from '@lobehub/ui';
-import { FC, memo } from 'react';
+import { DivProps } from "@lobehub/ui";
+import { FC, memo } from "react";
 
-import Ai21 from '@/Ai21';
-import Ai302 from '@/Ai302';
-import Ai360 from '@/Ai360';
-import AiHubMix from '@/AiHubMix';
-import AiMass from '@/AiMass';
-import AiStudio from '@/AiStudio';
-import AkashChat from '@/AkashChat';
-import AlephAlpha from '@/AlephAlpha';
-import Alibaba from '@/Alibaba';
-import AlibabaCloud from '@/AlibabaCloud';
-import AntGroup from '@/AntGroup';
-import Anthropic from '@/Anthropic';
-import Anyscale from '@/Anyscale';
-import Apple from '@/Apple';
-import AtlasCloud from '@/AtlasCloud';
-import Aws from '@/Aws';
-import Azure from '@/Azure';
-import AzureAI from '@/AzureAI';
-import Baichuan from '@/Baichuan';
-import Baidu from '@/Baidu';
-import BaiduCloud from '@/BaiduCloud';
-import Bailian from '@/Bailian';
-import Baseten from '@/Baseten';
-import Bedrock from '@/Bedrock';
-import Bfl from '@/Bfl';
-import Bilibili from '@/Bilibili';
-import BurnCloud from '@/BurnCloud';
-import ByteDance from '@/ByteDance';
-import CentML from '@/CentML';
-import Cerebras from '@/Cerebras';
-import Civitai from '@/Civitai';
-import Claude from '@/Claude';
-import Cloudflare from '@/Cloudflare';
-import Cohere from '@/Cohere';
-import CometAPI from '@/CometAPI';
-import ComfyUI from '@/ComfyUI';
-import Copilot from '@/Copilot';
-import Crusoe from '@/Crusoe';
-import DeepInfra from '@/DeepInfra';
-import DeepMind from '@/DeepMind';
-import DeepSeek from '@/DeepSeek';
-import Doubao from '@/Doubao';
-import EveryAPI from '@/EveryAPI';
-import Exa from '@/Exa';
-import Fal from '@/Fal';
-import Featherless from '@/Featherless';
-import Fireworks from '@/Fireworks';
-import Friendli from '@/Friendli';
-import Gemini from '@/Gemini';
-import GiteeAI from '@/GiteeAI';
-import Github from '@/Github';
-import GithubCopilot from '@/GithubCopilot';
-import Google from '@/Google';
-import GoogleCloud from '@/GoogleCloud';
-import Grok from '@/Grok';
-import Groq from '@/Groq';
-import Higress from '@/Higress';
-import Huawei from '@/Huawei';
-import HuaweiCloud from '@/HuaweiCloud';
-import HuggingFace from '@/HuggingFace';
-import Hunyuan from '@/Hunyuan';
-import Hyperbolic from '@/Hyperbolic';
-import IBM from '@/IBM';
-import IFlyTekCloud from '@/IFlyTekCloud';
-import Inference from '@/Inference';
-import Infermatic from '@/Infermatic';
-import Infinigence from '@/Infinigence';
-import InternLM from '@/InternLM';
-import Jina from '@/Jina';
-import Kluster from '@/Kluster';
-import LG from '@/LG';
-import Lambda from '@/Lambda';
-import LeptonAI from '@/LeptonAI';
-import LlmApi from '@/LlmApi';
-import LmStudio from '@/LmStudio';
-import LobeHub from '@/LobeHub';
-import LongCat from '@/LongCat';
-import Menlo from '@/Menlo';
-import MetaAI from '@/MetaAI';
-import Microsoft from '@/Microsoft';
-import Minimax from '@/Minimax';
-import Mistral from '@/Mistral';
-import ModelScope from '@/ModelScope';
-import Moonshot from '@/Moonshot';
-import NPLCloud from '@/NPLCloud';
-import Nebius from '@/Nebius';
-import NewAPI from '@/NewAPI';
-import NousResearch from '@/NousResearch';
-import Novita from '@/Novita';
-import Nvidia from '@/Nvidia';
-import Ollama from '@/Ollama';
-import OpenAI from '@/OpenAI';
-import OpenCode from '@/OpenCode';
-import OpenRouter from '@/OpenRouter';
-import PPIO from '@/PPIO';
-import Parasail from '@/Parasail';
-import Perplexity from '@/Perplexity';
-import Player2 from '@/Player2';
-import Qiniu from '@/Qiniu';
-import Qwen from '@/Qwen';
-import Replicate from '@/Replicate';
-import SambaNova from '@/SambaNova';
-import Search1API from '@/Search1API';
-import SearchApi from '@/SearchApi';
-import SenseNova from '@/SenseNova';
-import SiliconCloud from '@/SiliconCloud';
-import Snowflake from '@/Snowflake';
-import SophNet from '@/SophNet';
-import Spark from '@/Spark';
-import Stability from '@/Stability';
-import StateCloud from '@/StateCloud';
-import Stepfun from '@/Stepfun';
-import Straico from '@/Straico';
-import StreamLake from '@/StreamLake';
-import SubModel from '@/SubModel';
-import TII from '@/TII';
-import Targon from '@/Targon';
-import Tencent from '@/Tencent';
-import TencentCloud from '@/TencentCloud';
-import Together from '@/Together';
-import Upstage from '@/Upstage';
-import V0 from '@/V0';
-import Vercel from '@/Vercel';
-import VertexAI from '@/VertexAI';
-import Vllm from '@/Vllm';
-import Volcengine from '@/Volcengine';
-import Wenxin from '@/Wenxin';
-import WorkersAI from '@/WorkersAI';
-import XAI from '@/XAI';
-import XiaomiMiMo from '@/XiaomiMiMo';
-import Xinference from '@/Xinference';
-import Xpay from '@/Xpay';
-import Yandex from '@/Yandex';
-import ZenMux from '@/ZenMux';
-import ZeroOne from '@/ZeroOne';
-import Zhipu from '@/Zhipu';
-import type { IconType } from '@/types';
+import Ai21 from "@/Ai21";
+import Ai302 from "@/Ai302";
+import Ai360 from "@/Ai360";
+import AiHubMix from "@/AiHubMix";
+import AiMass from "@/AiMass";
+import AiStudio from "@/AiStudio";
+import AkashChat from "@/AkashChat";
+import AlephAlpha from "@/AlephAlpha";
+import Alibaba from "@/Alibaba";
+import AlibabaCloud from "@/AlibabaCloud";
+import AntGroup from "@/AntGroup";
+import Anthropic from "@/Anthropic";
+import Anyscale from "@/Anyscale";
+import Apple from "@/Apple";
+import AtlasCloud from "@/AtlasCloud";
+import Aws from "@/Aws";
+import Azure from "@/Azure";
+import AzureAI from "@/AzureAI";
+import Baichuan from "@/Baichuan";
+import Baidu from "@/Baidu";
+import BaiduCloud from "@/BaiduCloud";
+import Bailian from "@/Bailian";
+import Baseten from "@/Baseten";
+import Bedrock from "@/Bedrock";
+import Bfl from "@/Bfl";
+import Bilibili from "@/Bilibili";
+import BurnCloud from "@/BurnCloud";
+import ByteDance from "@/ByteDance";
+import CentML from "@/CentML";
+import Cerebras from "@/Cerebras";
+import Civitai from "@/Civitai";
+import Claude from "@/Claude";
+import Cloudflare from "@/Cloudflare";
+import Cohere from "@/Cohere";
+import CometAPI from "@/CometAPI";
+import ComfyUI from "@/ComfyUI";
+import Copilot from "@/Copilot";
+import Crusoe from "@/Crusoe";
+import DeepInfra from "@/DeepInfra";
+import DeepMind from "@/DeepMind";
+import DeepSeek from "@/DeepSeek";
+import Doubao from "@/Doubao";
+import EveryAPI from "@/EveryAPI";
+import Exa from "@/Exa";
+import Fal from "@/Fal";
+import Featherless from "@/Featherless";
+import Fireworks from "@/Fireworks";
+import Friendli from "@/Friendli";
+import Gemini from "@/Gemini";
+import GiteeAI from "@/GiteeAI";
+import Github from "@/Github";
+import GithubCopilot from "@/GithubCopilot";
+import Google from "@/Google";
+import GoogleCloud from "@/GoogleCloud";
+import Grok from "@/Grok";
+import Groq from "@/Groq";
+import Higress from "@/Higress";
+import Huawei from "@/Huawei";
+import HuaweiCloud from "@/HuaweiCloud";
+import HuggingFace from "@/HuggingFace";
+import Hunyuan from "@/Hunyuan";
+import Hyperbolic from "@/Hyperbolic";
+import IBM from "@/IBM";
+import IFlyTekCloud from "@/IFlyTekCloud";
+import Inference from "@/Inference";
+import Infermatic from "@/Infermatic";
+import Infinigence from "@/Infinigence";
+import InternLM from "@/InternLM";
+import Jina from "@/Jina";
+import Kluster from "@/Kluster";
+import LG from "@/LG";
+import Lambda from "@/Lambda";
+import LeptonAI from "@/LeptonAI";
+import LlmApi from "@/LlmApi";
+import LmStudio from "@/LmStudio";
+import LobeHub from "@/LobeHub";
+import LongCat from "@/LongCat";
+import Menlo from "@/Menlo";
+import MetaAI from "@/MetaAI";
+import Microsoft from "@/Microsoft";
+import Minimax from "@/Minimax";
+import Mistral from "@/Mistral";
+import ModelScope from "@/ModelScope";
+import Moonshot from "@/Moonshot";
+import NPLCloud from "@/NPLCloud";
+import Nebius from "@/Nebius";
+import NewAPI from "@/NewAPI";
+import NousResearch from "@/NousResearch";
+import Novita from "@/Novita";
+import Nvidia from "@/Nvidia";
+import Ollama from "@/Ollama";
+import OpenAI from "@/OpenAI";
+import OpenCode from "@/OpenCode";
+import OpenRouter from "@/OpenRouter";
+import PPIO from "@/PPIO";
+import Parasail from "@/Parasail";
+import Perplexity from "@/Perplexity";
+import Player2 from "@/Player2";
+import Qiniu from "@/Qiniu";
+import Qwen from "@/Qwen";
+import Replicate from "@/Replicate";
+import SambaNova from "@/SambaNova";
+import Search1API from "@/Search1API";
+import SearchApi from "@/SearchApi";
+import SenseNova from "@/SenseNova";
+import SiliconCloud from "@/SiliconCloud";
+import Snowflake from "@/Snowflake";
+import SophNet from "@/SophNet";
+import Spark from "@/Spark";
+import Stability from "@/Stability";
+import StateCloud from "@/StateCloud";
+import Stepfun from "@/Stepfun";
+import Straico from "@/Straico";
+import StreamLake from "@/StreamLake";
+import SubModel from "@/SubModel";
+import TII from "@/TII";
+import Targon from "@/Targon";
+import Tencent from "@/Tencent";
+import TencentCloud from "@/TencentCloud";
+import Together from "@/Together";
+import Upstage from "@/Upstage";
+import V0 from "@/V0";
+import Vercel from "@/Vercel";
+import VertexAI from "@/VertexAI";
+import Vllm from "@/Vllm";
+import Volcengine from "@/Volcengine";
+import Wenxin from "@/Wenxin";
+import WorkersAI from "@/WorkersAI";
+import XAI from "@/XAI";
+import XiaomiMiMo from "@/XiaomiMiMo";
+import Xinference from "@/Xinference";
+import Xpay from "@/Xpay";
+import Yandex from "@/Yandex";
+import ZenMux from "@/ZenMux";
+import ZeroOne from "@/ZeroOne";
+import Zhipu from "@/Zhipu";
+import type { IconType } from "@/types";
 
-import type { IconAvatarProps } from './IconAvatar';
-import type { IconCombineProps } from './IconCombine';
-import Combine from './ProviderCombine/Combine';
-import { ModelProvider } from './providerEnum';
+import type { IconAvatarProps } from "./IconAvatar";
+import type { IconCombineProps } from "./IconCombine";
+import Combine from "./ProviderCombine/Combine";
+import { ModelProvider } from "./providerEnum";
 
 type ProviderIconType = FC<IconType & any> & {
-  Avatar: FC<Omit<IconAvatarProps, 'Icon'> & any>;
+  Avatar: FC<Omit<IconAvatarProps, "Icon"> & any>;
   Brand?: FC<IconType & any>;
   BrandColor?: FC<IconType & any>;
   Color?: FC<IconType & any>;
-  Combine?: FC<Omit<IconCombineProps, 'Icon' | 'Text'> & any>;
+  Combine?: FC<Omit<IconCombineProps, "Icon" | "Text"> & any>;
   Text?: FC<IconType & any>;
 };
 
 export interface ProviderMapping {
-  Combine?: FC<DivProps & { size: number; type: 'color' | 'mono' }>;
+  Combine?: FC<DivProps & { size: number; type: "color" | "mono" }>;
   Icon: ProviderIconType;
   combineMultiple?: number;
   keywords: string[];
@@ -219,9 +219,9 @@ export const providerMappings: ProviderMapping[] = [
     keywords: [ModelProvider.ZhiPu, ModelProvider.GLMCodingPlan],
   },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
-        left={type === 'color' ? <Aws.Color size={size * 1.2} /> : <Aws size={size * 1.2} />}
+        left={type === "color" ? <Aws.Color size={size * 1.2} /> : <Aws size={size * 1.2} />}
         right={<Bedrock.Combine size={size} type={type} />}
         size={size}
         {...props}
@@ -233,10 +233,10 @@ export const providerMappings: ProviderMapping[] = [
   },
   { Icon: DeepSeek, combineMultiple: 1.16, keywords: [ModelProvider.DeepSeek] },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
         left={
-          type === 'color' ? (
+          type === "color" ? (
             <Google.BrandColor size={size * 0.95} />
           ) : (
             <Google.Brand size={size * 0.95} />
@@ -252,7 +252,7 @@ export const providerMappings: ProviderMapping[] = [
     keywords: [ModelProvider.Google],
   },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
         left={<Azure.Combine size={size * 0.92} type={type} />}
         right={<OpenAI.Combine size={size} />}
@@ -289,7 +289,7 @@ export const providerMappings: ProviderMapping[] = [
   },
   { Icon: Mistral, keywords: [ModelProvider.Mistral] },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
         left={<Anthropic.Text size={size * 0.75} />}
         right={<Claude.Combine size={size} type={type} />}
@@ -307,7 +307,7 @@ export const providerMappings: ProviderMapping[] = [
   { Icon: Together, keywords: [ModelProvider.TogetherAI] },
   { Icon: Qiniu, combineMultiple: 1.1, keywords: [ModelProvider.Qiniu] },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
         left={<AlibabaCloud.Combine size={size} type={type} />}
         right={<Qwen.Combine size={size * 0.9} type={type} />}
@@ -338,7 +338,7 @@ export const providerMappings: ProviderMapping[] = [
   {
     Icon: GithubCopilot,
     combineMultiple: 0.95,
-    keywords: [ModelProvider.GithubCopilot, 'github-copilot'],
+    keywords: [ModelProvider.GithubCopilot, "github-copilot"],
   },
   { Icon: Copilot, combineMultiple: 0.95, keywords: [ModelProvider.Copilot] },
   { Icon: Doubao, keywords: [ModelProvider.Doubao] },
@@ -346,10 +346,10 @@ export const providerMappings: ProviderMapping[] = [
   { Icon: Nvidia, keywords: [ModelProvider.Nvidia] },
   { Icon: TencentCloud, keywords: [ModelProvider.TencentCloud] },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
         left={<BaiduCloud.Combine size={size * 0.9} type={type} />}
-        right={<Wenxin.Combine extra={'千帆'} size={size} type={type} {...props} />}
+        right={<Wenxin.Combine extra={"千帆"} size={size} type={type} {...props} />}
         size={size}
         {...props}
       />
@@ -363,7 +363,7 @@ export const providerMappings: ProviderMapping[] = [
   { Icon: XAI, combineMultiple: 0.85, keywords: [ModelProvider.XAI] },
   { Icon: Grok, keywords: [ModelProvider.SuperGrok] },
   {
-    Combine: memo(({ size = 24, type = 'color', ...props }) => (
+    Combine: memo(({ size = 24, type = "color", ...props }) => (
       <Combine
         left={<Cloudflare.Combine size={size * 1.1} type={type} />}
         right={<WorkersAI.Combine size={size * 0.9} type={type} />}
@@ -424,7 +424,7 @@ export const providerMappings: ProviderMapping[] = [
   {
     Combine: memo(({ size = 24, ...props }) => (
       <Ollama.Combine
-        extra={'Cloud'}
+        extra={"Cloud"}
         extraStyle={{ fontSize: size * 0.78, fontWeight: 500, marginLeft: size * 0.2 }}
         size={size * 1.16}
         {...props}

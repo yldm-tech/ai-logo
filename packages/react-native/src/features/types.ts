@@ -1,5 +1,5 @@
-import type { ComponentType } from 'react';
-import type { TextStyle, ViewStyle } from 'react-native';
+import type { ComponentType } from "react";
+import type { TextStyle, ViewStyle } from "react-native";
 
 export interface RNIconProps {
   color?: string;
@@ -13,7 +13,7 @@ export interface RNIconAvatarProps {
   color?: string;
   iconMultiple?: number;
   iconStyle?: ViewStyle;
-  shape?: 'circle' | 'square';
+  shape?: "circle" | "square";
   size: number;
   style?: ViewStyle;
 }

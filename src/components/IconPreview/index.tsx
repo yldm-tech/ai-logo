@@ -1,13 +1,13 @@
-import { Flexbox, FlexboxProps } from '@lobehub/ui';
-import { createStaticStyles, cx } from 'antd-style';
-import { ReactNode, Ref, memo, useRef } from 'react';
+import { Flexbox, FlexboxProps } from "@lobehub/ui";
+import { createStaticStyles, cx } from "antd-style";
+import { ReactNode, Ref, memo, useRef } from "react";
 
-import DownloadButton from '@/components/DownloadButton';
+import DownloadButton from "@/components/DownloadButton";
 
 const styles = createStaticStyles(({ css, cssVar }) => {
   return {
     btn: cx(
-      'copy-button',
+      "copy-button",
       css`
         position: absolute;
         inset-block-start: 4px;
@@ -57,14 +57,14 @@ export interface IconPreviewProps extends FlexboxProps {
 
 const IconPreview = memo<IconPreviewProps>(({ className, children, ...rest }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isString = typeof children === 'string';
+  const isString = typeof children === "string";
 
   return (
     <Flexbox
-      align={'center'}
+      align={"center"}
       className={cx(styles.container, className)}
-      flex={'none'}
-      justify={'center'}
+      flex={"none"}
+      justify={"center"}
       {...rest}
     >
       {isString ? (
@@ -75,12 +75,12 @@ const IconPreview = memo<IconPreviewProps>(({ className, children, ...rest }) =>
       <DownloadButton
         className={styles.btn}
         onClick={() => {
-          const svgString = String(ref?.current?.querySelector('svg')?.outerHTML);
-          const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+          const svgString = String(ref?.current?.querySelector("svg")?.outerHTML);
+          const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
           const url = URL.createObjectURL(blob);
-          const downloadLink = document.createElement('a');
+          const downloadLink = document.createElement("a");
           downloadLink.href = url;
-          downloadLink.download = 'icon.svg';
+          downloadLink.download = "icon.svg";
           document.body.append(downloadLink);
           downloadLink.click();
           downloadLink.remove();

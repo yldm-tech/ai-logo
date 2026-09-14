@@ -1,10 +1,10 @@
-import React, { memo } from 'react';
-import { Defs, LinearGradient, Path, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Defs, LinearGradient, Path, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillId } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillId } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
 const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   const { id, fill } = useFillId(TITLE);
@@ -36,6 +36,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   );
 });
 
-Icon.displayName = 'ViduColor';
+Icon.displayName = "ViduColor";
 
 export default Icon;

@@ -3,10 +3,10 @@
   "version": "1.2.0",
   "description": "Popular AI / LLM Model Brand SVG Logo and Icon Collection",
   "keywords": [
-    "ai logo",
-    "llm icons",
-    "llm brand logo",
     "ai icons",
+    "ai logo",
+    "llm brand logo",
+    "llm icons",
     "react components",
     "svg icons"
   ],
@@ -14,26 +14,30 @@
   "bugs": {
     "url": "https://github.com/yldm-tech/ai-logo/issues/new"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yldm-tech/ai-logo.git"
-  },
   "license": "MIT",
   "author": "yldm-tech",
   "contributors": [
     "LobeHub <i@lobehub.com> (original author of lobehub/lobe-icons)"
   ],
-  "sideEffects": false,
-  "main": "es/index.mjs",
-  "module": "es/index.mjs",
-  "types": "es/index.d.mts",
-  "files": [
-    "es"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yldm-tech/ai-logo.git"
+  },
   "workspaces": [
     "*",
     "packages/*"
   ],
+  "files": [
+    "es"
+  ],
+  "sideEffects": false,
+  "main": "es/index.mjs",
+  "module": "es/index.mjs",
+  "types": "es/index.d.mts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "auto-converter-web-icons-to-rn": "tsx scripts/rn-conversion/auto-converter.ts --lint",
     "build": "tsx scripts/tocWorkflow/index.ts && vp pack src/index.ts --dts --format esm --out-dir es",
@@ -41,52 +45,31 @@
     "build:static": "npx puppeteer browsers install chrome && tsx scripts/svgWorkflow/index.tsx",
     "build:toc": "tsx scripts/tocWorkflow/index.ts",
     "build:watch": "vp pack src/index.ts --dts --format esm --out-dir es --watch",
-    "ci": "npm run lint && npm run type-check",
-    "clean": "rm -r es lib dist coverage .react-router .eslintcache node_modules/.cache",
+    "ci": "vp check && npm run type-check",
+    "clean": "rm -r es dist coverage .react-router .eslintcache node_modules/.cache",
     "dev": "lobedocs dev",
     "docs:build": "lobedocs build",
     "docs:build-analyze": "ANALYZE=1 lobedocs build",
     "docs:dev": "lobedocs dev",
-    "lint": "eslint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
+    "fmt": "vp fmt",
+    "lint": "vp lint src tests --fix",
     "lint:circular": "dpdm src/**/*.{ts,tsx}  --warning false  --tree false  --exit-code circular:1  -T true",
     "lint:md": "remark . --quiet --frail --output",
     "lint:style": "stylelint \"{src,tests}/**/*.{js,jsx,ts,tsx}\" --fix",
-    "prepack": "clean-package",
     "postpack": "clean-package restore",
+    "prepack": "clean-package",
     "prepare": "husky && npm run setup",
     "prepublishOnly": "npm run build",
-    "prettier": "prettier -c --write --no-error-on-unmatched-pattern \"**/**\"",
     "pull": "git pull",
     "release": "semantic-release",
-    "release:static": "multi-semantic-release --sequential-prepare --debug",
     "setup": "lobedocs typegen",
     "start": "npm run dev",
-    "sync:cnpm": "cnpm sync @lobehub/icons-static-svg @lobehub/icons-static-png @lobehub/icons-static-webp @lobehub/icons-static-avatar",
     "sync:md": "npm run build:toc && tsx scripts/readmeWorkflow/index.ts",
     "test": "vp test --passWithNoTests",
     "test:coverage": "vp test run --coverage  --passWithNoTests",
     "test:update": "vp test -u",
     "type-check": "tsc --noEmit",
     "vectorizer": "tsx scripts/vectorizer/index.ts"
-  },
-  "lint-staged": {
-    "*.md": [
-      "remark --quiet --output --",
-      "prettier --write --no-error-on-unmatched-pattern"
-    ],
-    "*.json": [
-      "prettier --write --no-error-on-unmatched-pattern"
-    ],
-    "*.{js,jsx}": [
-      "prettier --write",
-      "stylelint --fix",
-      "eslint --fix"
-    ],
-    "*.{ts,tsx}": [
-      "prettier --parser=typescript --write",
-      "stylelint --fix",
-      "eslint --fix"
-    ]
   },
   "dependencies": {
     "antd-style": "^4.1.0",
@@ -95,45 +78,34 @@
     "polished": "^4.3.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.29.7",
     "@commitlint/cli": "^19.8.1",
     "@lobehub/docs-kit": "^5.22.3",
     "@lobehub/icons": "^5.18.0",
     "@lobehub/lint": "^1.26.3",
     "@lobehub/ui": "^5.22.3",
-    "@qiwi/multi-semantic-release": "^7.1.2",
     "@react-router/dev": "8.2.0",
-    "@testing-library/react": "^16.3.2",
-    "@types/pangu": "^4.0.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitest/coverage-v8": "catalog:",
-    "ajv": "^8.20.0",
-    "babel-plugin-antd-style": "^1.0.4",
     "clean-package": "^2.2.0",
     "commitlint": "^19.8.1",
     "consola": "^3.4.2",
-    "cross-env": "^10.1.0",
     "dotenv": "^17.4.2",
     "dpdm": "^3.15.1",
-    "eslint": "^8.57.1",
     "glob": "^11.1.0",
     "gray-matter": "^4.0.3",
-    "html-react-parser": "^5.2.17",
     "husky": "^9.1.7",
     "jsdom": "^27.4.0",
     "lint-staged": "^16.4.0",
     "markdown-table": "^3.0.4",
     "p-map": "^7.0.5",
     "postcss-styled-syntax": "^0.7.2",
-    "prettier": "^3.9.5",
     "puppeteer": "^24.43.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router": "8.2.0",
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
-    "satori": "^0.15.2",
     "semantic-release": "^21.1.2",
     "sharp": "^0.34.5",
     "stylelint": "^15.11.0",
@@ -150,9 +122,17 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
-  "packageManager": "pnpm@12.4.1",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  }
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,mdx,yml,yaml}": [
+      "vp fmt"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "stylelint --fix",
+      "vp lint --fix"
+    ],
+    "*.md": [
+      "remark --quiet --output --"
+    ]
+  },
+  "packageManager": "pnpm@12.4.1"
 }

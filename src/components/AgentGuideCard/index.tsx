@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { Block, BlockProps, Flexbox, Icon, Segmented, Snippet, Text } from '@lobehub/ui';
-import { BotIcon, UserRoundIcon } from 'lucide-react';
-import { memo, useMemo, useState } from 'react';
+import { Block, BlockProps, Flexbox, Icon, Segmented, Snippet, Text } from "@lobehub/ui";
+import { BotIcon, UserRoundIcon } from "lucide-react";
+import { memo, useMemo, useState } from "react";
 
-type GuideMode = 'agent' | 'human';
+type GuideMode = "agent" | "human";
 
 interface GuideItem {
   command: string;
@@ -30,7 +30,7 @@ interface AgentGuideCardProps extends BlockProps {
 }
 
 const AgentGuideCard = memo<AgentGuideCardProps>(
-  ({ className, initialMode = 'agent', labels, mode, onModeChange, sections, ...rest }) => {
+  ({ className, initialMode = "agent", labels, mode, onModeChange, sections, ...rest }) => {
     const [innerMode, setInnerMode] = useState<GuideMode>(initialMode);
     const currentMode = mode ?? innerMode;
 
@@ -44,11 +44,11 @@ const AgentGuideCard = memo<AgentGuideCardProps>(
     return (
       <Block
         className={className}
-        flex={'none'}
+        flex={"none"}
         shadow
         style={{ maxWidth: 960 }}
-        variant={'outlined'}
-        width={'100%'}
+        variant={"outlined"}
+        width={"100%"}
         {...rest}
       >
         <Flexbox flex={1} padding={8}>
@@ -59,37 +59,37 @@ const AgentGuideCard = memo<AgentGuideCardProps>(
               {
                 icon: <Icon icon={BotIcon} />,
                 label: labels.agent,
-                value: 'agent',
+                value: "agent",
               },
               {
                 icon: <Icon icon={UserRoundIcon} />,
                 label: labels.human,
-                value: 'human',
+                value: "human",
               },
             ]}
             value={currentMode}
-            variant={'filled'}
+            variant={"filled"}
           />
         </Flexbox>
-        <Flexbox gap={8} paddingBlock={'8px 16px'} paddingInline={16}>
-          <Text align={'center'} weight={500}>
+        <Flexbox gap={8} paddingBlock={"8px 16px"} paddingInline={16}>
+          <Text align={"center"} weight={500}>
             {content.description}
           </Text>
           {content.linkHref && content.linkLabel && (
-            <Flexbox align={'center'}>
+            <Flexbox align={"center"}>
               <a
                 href={content.linkHref}
-                rel={'noreferrer'}
+                rel={"noreferrer"}
                 style={{ fontSize: 13 }}
-                target={'_blank'}
+                target={"_blank"}
               >
                 {content.linkLabel}
               </a>
             </Flexbox>
           )}
           <Snippet
-            language={content.commandLanguage || 'shell'}
-            style={{ fontSize: 12, width: '100%' }}
+            language={content.commandLanguage || "shell"}
+            style={{ fontSize: 12, width: "100%" }}
           >
             {content.command}
           </Snippet>

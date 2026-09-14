@@ -1,17 +1,17 @@
-import React, { memo } from 'react';
-import { useColorScheme } from 'react-native';
-import { Defs, LinearGradient, Path, Stop, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { useColorScheme } from "react-native";
+import { Defs, LinearGradient, Path, Stop, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
-import { useFillIds } from '@/hooks/useFillId';
+import type { RNIconProps } from "@/features";
+import { useFillIds } from "@/hooks/useFillId";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
 const Icon = memo<RNIconProps>(({ color, size = 24, style, ...rest }) => {
   const [a, b, c] = useFillIds(TITLE + color, 3);
   const colorScheme = useColorScheme();
-  const fill = colorScheme === 'dark' || color === '#fff' ? '#fff' : '#000';
-  const fillSecondary = colorScheme === 'dark' || color === '#fff' ? '#E4E4E4' : '#555';
+  const fill = colorScheme === "dark" || color === "#fff" ? "#fff" : "#000";
+  const fillSecondary = colorScheme === "dark" || color === "#fff" ? "#E4E4E4" : "#555";
 
   return (
     <Svg height={size} style={style} viewBox="0 0 24 24" width={size} {...rest}>
@@ -59,6 +59,6 @@ const Icon = memo<RNIconProps>(({ color, size = 24, style, ...rest }) => {
   );
 });
 
-Icon.displayName = 'CursorMono';
+Icon.displayName = "CursorMono";
 
 export default Icon;

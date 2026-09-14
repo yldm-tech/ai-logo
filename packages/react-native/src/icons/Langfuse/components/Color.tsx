@@ -1,7 +1,7 @@
-import React, { memo } from 'react';
-import { Path, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Path, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
+import type { RNIconProps } from "@/features";
 
 const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   return (
@@ -34,6 +34,6 @@ const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
   );
 });
 
-Icon.displayName = 'LangfuseColor';
+Icon.displayName = "LangfuseColor";
 
 export default Icon;

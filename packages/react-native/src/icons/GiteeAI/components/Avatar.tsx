@@ -1,11 +1,11 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
-import { RNIconAvatar, type RNIconAvatarProps } from '@/features';
+import { RNIconAvatar, type RNIconAvatarProps } from "@/features";
 
-import { AVATAR_BACKGROUND, AVATAR_COLOR, AVATAR_ICON_MULTIPLE, TITLE } from '../style';
-import Mono from './Mono';
+import { AVATAR_BACKGROUND, AVATAR_COLOR, AVATAR_ICON_MULTIPLE, TITLE } from "../style";
+import Mono from "./Mono";
 
-export type AvatarProps = Omit<RNIconAvatarProps, 'Icon'>;
+export type AvatarProps = Omit<RNIconAvatarProps, "Icon">;
 
 const Avatar = memo<AvatarProps>(({ background, ...rest }) => {
   return (

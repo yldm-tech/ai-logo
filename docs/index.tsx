@@ -1,33 +1,33 @@
-import { Center, Flexbox } from '@lobehub/ui';
-import { Features, FeaturesProps, Hero } from '@lobehub/ui/awesome';
-import { Expand, GitPullRequest, Trees } from 'lucide-react';
-import { Link } from 'react-router';
+import { Center, Flexbox } from "@lobehub/ui";
+import { Features, FeaturesProps, Hero } from "@lobehub/ui/awesome";
+import { Expand, GitPullRequest, Trees } from "lucide-react";
+import { Link } from "react-router";
 
-import AgentGuideCard from '@/components/AgentGuideCard';
-import Dashboard from '@/components/Dashboard';
+import AgentGuideCard from "@/components/AgentGuideCard";
+import Dashboard from "@/components/Dashboard";
 
-const ICONS_DOC_URL = 'https://lobehub.com/icons/skill.md';
+const ICONS_DOC_URL = "https://lobehub.com/icons/skill.md";
 const AI_AGENT_PROMPT = `Read ${ICONS_DOC_URL} and follow the instructions, substituting the package name ai-logo for @lobehub/icons. The component API is identical.`;
-const ICONS_INSTALL_COMMAND = 'npm i ai-logo';
+const ICONS_INSTALL_COMMAND = "npm i ai-logo";
 
-const items: FeaturesProps['items'] = [
+const items: FeaturesProps["items"] = [
   {
     description:
-      'Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.',
+      "Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.",
     icon: Expand,
-    title: 'Lightweight & Scalable',
+    title: "Lightweight & Scalable",
   },
   {
     description:
-      'The collection is tree-shakable, ensuring that you only import the icons that you use, which helps in reducing the overall bundle size of your project.',
+      "The collection is tree-shakable, ensuring that you only import the icons that you use, which helps in reducing the overall bundle size of your project.",
     icon: Trees,
-    title: 'Tree Shakable',
+    title: "Tree Shakable",
   },
   {
     description:
-      'Lobe Icons boasts an active community of designers and developers. Engage with us on platforms like GitHub and Discord to contribute or get support.',
+      "Lobe Icons boasts an active community of designers and developers. Engage with us on platforms like GitHub and Discord to contribute or get support.",
     icon: GitPullRequest,
-    title: 'Active Community',
+    title: "Active Community",
   },
 ];
 
@@ -39,14 +39,14 @@ export default () => {
         actions={[
           {
             github: true,
-            link: 'https://github.com/yldm-tech/ai-logo',
+            link: "https://github.com/yldm-tech/ai-logo",
             openExternal: true,
-            text: 'GitHub',
+            text: "GitHub",
           },
           {
-            link: '/components/lobe-hub',
-            text: 'View all icons',
-            type: 'primary',
+            link: "/components/lobe-hub",
+            text: "View all icons",
+            type: "primary",
           },
         ]}
         description="Popular AI / LLM Model Brand SVG Logo and Icon Collection"
@@ -61,15 +61,15 @@ export default () => {
           sections={{
             agent: {
               command: AI_AGENT_PROMPT,
-              commandLanguage: 'shell',
-              description: 'Send this prompt to your agent to use ai-logo',
+              commandLanguage: "shell",
+              description: "Send this prompt to your agent to use ai-logo",
             },
             human: {
               command: ICONS_INSTALL_COMMAND,
-              commandLanguage: 'shell',
-              description: 'Install ai-logo with npm and start using the icon set',
+              commandLanguage: "shell",
+              description: "Install ai-logo with npm and start using the icon set",
               linkHref: ICONS_DOC_URL,
-              linkLabel: 'Read docs',
+              linkLabel: "Read docs",
             },
           }}
         />

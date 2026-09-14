@@ -1,1 +1,1 @@
-export { default } from './Mono';
+export { default } from "./Mono";

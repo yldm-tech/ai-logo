@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { ActionIcon, ActionIconSize, DivProps } from '@lobehub/ui';
-import { Download } from 'lucide-react';
-import { memo } from 'react';
+import { ActionIcon, ActionIconSize, DivProps } from "@lobehub/ui";
+import { Download } from "lucide-react";
+import { memo } from "react";
 
 export interface DownloadButtonProps extends DivProps {
   className?: string;
@@ -18,7 +18,7 @@ const DownloadButton = memo<DownloadButtonProps>(({ className, onClick, ...rest 
       glass
       icon={Download}
       onClick={onClick}
-      title={'Download'}
+      title={"Download"}
     />
   );
 });

@@ -1,8 +1,8 @@
-import Avatar from './components/Avatar';
-import Combine from './components/Combine';
-import Mono from './components/Mono';
-import Text from './components/Text';
-import { COLOR_GRADIENT, COLOR_PRIMARY, TITLE } from './style';
+import Avatar from "./components/Avatar";
+import Combine from "./components/Combine";
+import Mono from "./components/Mono";
+import Text from "./components/Text";
+import { COLOR_GRADIENT, COLOR_PRIMARY, TITLE } from "./style";
 
 export type CompoundedIcon = typeof Mono & {
   Avatar: typeof Avatar;

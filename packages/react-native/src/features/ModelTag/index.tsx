@@ -1,18 +1,18 @@
-import React, { memo } from 'react';
-import { Text, View, type ViewStyle } from 'react-native';
+import React, { memo } from "react";
+import { Text, View, type ViewStyle } from "react-native";
 
-import RNModelIcon from '../ModelIcon';
+import RNModelIcon from "../ModelIcon";
 
 export interface RNModelTagProps {
   model: string;
   size?: number;
   style?: ViewStyle;
   textStyle?: ViewStyle;
-  type?: 'color' | 'mono';
+  type?: "color" | "mono";
 }
 
 const RNModelTag = memo<RNModelTagProps>(
-  ({ type = 'mono', model, size = 12, style, textStyle, ...rest }) => {
+  ({ type = "mono", model, size = 12, style, textStyle, ...rest }) => {
     // Calculate text size and padding based on icon size
     const textSize = Math.max(size * 0.9, 10); // Text slightly smaller than icon, minimum 10
     const paddingHorizontal = Math.max(size * 0.67, 8); // Proportional padding, minimum 8
@@ -24,10 +24,10 @@ const RNModelTag = memo<RNModelTagProps>(
       <View
         style={[
           {
-            alignItems: 'center',
-            backgroundColor: '#f5f5f5',
+            alignItems: "center",
+            backgroundColor: "#f5f5f5",
             borderRadius,
-            flexDirection: 'row',
+            flexDirection: "row",
             paddingHorizontal,
             paddingVertical,
           },
@@ -39,7 +39,7 @@ const RNModelTag = memo<RNModelTagProps>(
         <Text
           style={[
             {
-              color: '#666',
+              color: "#666",
               fontSize: textSize,
               marginLeft,
             },
@@ -53,6 +53,6 @@ const RNModelTag = memo<RNModelTagProps>(
   },
 );
 
-RNModelTag.displayName = 'RNModelTag';
+RNModelTag.displayName = "RNModelTag";
 
 export default RNModelTag;

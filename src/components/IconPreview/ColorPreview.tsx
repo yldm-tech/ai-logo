@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { CopyButton, Flexbox } from '@lobehub/ui';
-import { createStaticStyles, cx } from 'antd-style';
-import { memo } from 'react';
+import { CopyButton, Flexbox } from "@lobehub/ui";
+import { createStaticStyles, cx } from "antd-style";
+import { memo } from "react";
 
 const styles = createStaticStyles(({ css, cssVar }) => {
   return {
     btn: cx(
-      'copy-button',
+      "copy-button",
       css`
         position: absolute;
         inset-block-start: 4px;
@@ -46,12 +46,12 @@ export interface IconPreviewProps {
 const IconPreview = memo<IconPreviewProps>(({ color }) => {
   return (
     <Flexbox
-      align={'center'}
+      align={"center"}
       className={styles.container}
-      justify={'center'}
+      justify={"center"}
       style={{ background: color }}
     >
-      <div style={{ color: '#fff' }}>{color}</div>
+      <div style={{ color: "#fff" }}>{color}</div>
       <CopyButton className={styles.btn} content={color} />
     </Flexbox>
   );

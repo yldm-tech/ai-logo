@@ -1,5 +1,5 @@
-import React, { ReactNode, memo } from 'react';
-import { View, type ViewStyle } from 'react-native';
+import React, { ReactNode, memo } from "react";
+import { View, type ViewStyle } from "react-native";
 
 export interface RNProviderCombineProps {
   left: ReactNode;
@@ -14,8 +14,8 @@ const RNProviderCombine = memo<RNProviderCombineProps>(
       <View
         style={[
           {
-            alignItems: 'center',
-            flexDirection: 'row',
+            alignItems: "center",
+            flexDirection: "row",
             gap: size / 3,
           },
           style,
@@ -25,7 +25,7 @@ const RNProviderCombine = memo<RNProviderCombineProps>(
         {left}
         <View
           style={{
-            backgroundColor: '#e0e0e0',
+            backgroundColor: "#e0e0e0",
             height: size * 0.6,
             marginHorizontal: size / 6,
             width: 1,
@@ -37,6 +37,6 @@ const RNProviderCombine = memo<RNProviderCombineProps>(
   },
 );
 
-RNProviderCombine.displayName = 'RNProviderCombine';
+RNProviderCombine.displayName = "RNProviderCombine";
 
 export default RNProviderCombine;

@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import * as Icons from 'ai-logo';
-import { Flexbox, Grid, SearchBar, TooltipGroup } from '@lobehub/ui';
-import { Empty, Segmented } from 'antd';
-import { cssVar } from 'antd-style';
-import { memo, useMemo, useState } from 'react';
+import * as Icons from "ai-logo";
+import { Flexbox, Grid, SearchBar, TooltipGroup } from "@lobehub/ui";
+import { Empty, Segmented } from "antd";
+import { cssVar } from "antd-style";
+import { memo, useMemo, useState } from "react";
 
-import IconItem from './IconItem';
+import IconItem from "./IconItem";
 
 enum ColorType {
-  Color = 'color',
-  Mono = 'mono',
+  Color = "color",
+  Mono = "mono",
 }
 
 const Dashboard = memo(() => {
@@ -35,26 +35,26 @@ const Dashboard = memo(() => {
   const isMono = type === ColorType.Mono;
 
   return (
-    <Flexbox gap={16} style={{ maxWidth: 960 }} width={'100%'}>
-      <Flexbox align={'center'} gap={12} horizontal>
+    <Flexbox gap={16} style={{ maxWidth: 960 }} width={"100%"}>
+      <Flexbox align={"center"} gap={12} horizontal>
         <SearchBar
           allowClear
           defaultValue={keyword}
           onSearch={(v) => setKeyword(v)}
-          placeholder={'Search by brand or model keywords...'}
-          style={{ width: '100%' }}
-          type={'block'}
+          placeholder={"Search by brand or model keywords..."}
+          style={{ width: "100%" }}
+          type={"block"}
         />
         <Segmented
           defaultValue={type}
           onChange={(v) => setType(v)}
           options={[
             {
-              label: 'Color',
+              label: "Color",
               value: ColorType.Color,
             },
             {
-              label: 'Mono',
+              label: "Mono",
               value: ColorType.Mono,
             },
           ]}

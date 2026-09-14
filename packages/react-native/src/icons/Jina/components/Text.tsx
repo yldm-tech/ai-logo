@@ -1,9 +1,9 @@
-import React, { memo } from 'react';
-import { Path, Svg } from 'react-native-svg';
+import React, { memo } from "react";
+import { Path, Svg } from "react-native-svg";
 
-import type { RNIconProps } from '@/features';
+import type { RNIconProps } from "@/features";
 
-const Text = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }) => {
+const Text = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
   return (
     <Svg
       color={color}
@@ -30,6 +30,6 @@ const Text = memo<RNIconProps>(({ size = 24, style, color = '#000000', ...rest }
   );
 });
 
-Text.displayName = 'JinaText';
+Text.displayName = "JinaText";
 
 export default Text;

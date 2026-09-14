@@ -7,15 +7,15 @@ category: Utils
 ## Default
 
 ```tsx
-import { getLobeIconCDN } from 'ai-logo';
-import { Grid } from '@lobehub/ui';
-import { useThemeMode } from 'antd-style';
+import { getLobeIconCDN } from "ai-logo";
+import { Grid } from "@lobehub/ui";
+import { useThemeMode } from "antd-style";
 
 export default () => {
   const { isDarkMode } = useThemeMode();
-  const color = getLobeIconCDN('Claude');
-  const mono = getLobeIconCDN('Claude', { type: 'mono', isDarkMode });
-  const text = getLobeIconCDN('Claude', { type: 'text', isDarkMode });
+  const color = getLobeIconCDN("Claude");
+  const mono = getLobeIconCDN("Claude", { type: "mono", isDarkMode });
+  const text = getLobeIconCDN("Claude", { type: "text", isDarkMode });
   return (
     <Grid>
       <img height={48} src={color} alt="Claude" />
@@ -30,9 +30,9 @@ export default () => {
 
 ```ts
 export interface LobeIconCdnConfig {
-  cdn?: 'aliyun' | 'unpkg';
-  format?: 'svg' | 'png' | 'webp';
+  cdn?: "aliyun" | "unpkg";
+  format?: "svg" | "png" | "webp";
   isDarkMode?: boolean;
-  type?: 'mono' | 'color' | 'text' | 'text-cn' | 'brand' | 'brand-color';
+  type?: "mono" | "color" | "text" | "text-cn" | "brand" | "brand-color";
 }
 ```

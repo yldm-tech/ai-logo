@@ -1,1 +1,1 @@
-export { default } from '@/icons/Stability/components/Text';
+export { default } from "@/icons/Stability/components/Text";

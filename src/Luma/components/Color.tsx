@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { memo } from 'react';
+import { memo } from "react";
 
-import { useFillIds } from '@/hooks/useFillId';
-import type { IconType } from '@/types';
+import { useFillIds } from "@/hooks/useFillId";
+import type { IconType } from "@/types";
 
-import { TITLE } from '../style';
+import { TITLE } from "../style";
 
-const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
+const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
   const [a, b, c, d, e] = useFillIds(TITLE, 5);
   return (
     <svg
       height={size}
-      style={{ flex: 'none', lineHeight: 1, ...style }}
+      style={{ flex: "none", lineHeight: 1, ...style }}
       viewBox="0 0 24 24"
       width={size}
       xmlns="http://www.w3.org/2000/svg"
@@ -26,21 +26,21 @@ const Icon: IconType = memo(({ size = '1em', style, ...rest }) => {
         d="M2 5.999L12.392 0v24L2 18V5.999z"
         fill={c.fill}
         style={{
-          mixBlendMode: 'screen',
+          mixBlendMode: "screen",
         }}
       />
       <path
         d="M12.392 24L2 18l10.392-6 10.393 6-10.393 6z"
         fill={d.fill}
         style={{
-          mixBlendMode: 'overlay',
+          mixBlendMode: "overlay",
         }}
       />
       <path
         d="M2 5.999L12.392 0v24L2 18V5.999z"
         fill={e.fill}
         style={{
-          mixBlendMode: 'overlay',
+          mixBlendMode: "overlay",
         }}
       />
       <defs>

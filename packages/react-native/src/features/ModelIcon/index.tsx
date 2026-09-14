@@ -1,27 +1,27 @@
-import React, { memo, useMemo } from 'react';
-import { type ViewStyle } from 'react-native';
+import React, { memo, useMemo } from "react";
+import { type ViewStyle } from "react-native";
 
-import { RNIconProps } from '@/types';
+import { RNIconProps } from "@/types";
 
-import { rnModelMappings } from '../modelConfig';
-import DefaultAvatar from './DefaultAvatar';
-import DefaultIcon from './DefaultIcon';
+import { rnModelMappings } from "../modelConfig";
+import DefaultAvatar from "./DefaultAvatar";
+import DefaultIcon from "./DefaultIcon";
 
 export interface RNModelIconProps extends RNIconProps {
   model?: string;
-  shape?: 'circle' | 'square';
+  shape?: "circle" | "square";
   size?: number;
   style?: ViewStyle;
-  type?: 'avatar' | 'mono' | 'color' | 'combine' | 'combine-color';
+  type?: "avatar" | "mono" | "color" | "combine" | "combine-color";
 }
 
 const RNModelIcon = memo<RNModelIconProps>(
-  ({ model: originModel, size = 12, type = 'avatar', shape, ...rest }) => {
+  ({ model: originModel, size = 12, type = "avatar", shape, ...rest }) => {
     const Render = useMemo(() => {
       if (!originModel) return undefined;
       const model = originModel.toLowerCase();
       for (const item of rnModelMappings) {
-        if (item.keywords.some((keyword) => new RegExp(keyword, 'i').test(model))) {
+        if (item.keywords.some((keyword) => new RegExp(keyword, "i").test(model))) {
           return item;
         }
       }
@@ -35,22 +35,22 @@ const RNModelIcon = memo<RNModelIconProps>(
     };
 
     switch (type) {
-      case 'avatar': {
+      case "avatar": {
         if (!Render?.Icon) return <DefaultAvatar shape={shape} {...props} />;
         return <Render.Icon.Avatar shape={shape} {...props} />;
       }
-      case 'mono': {
+      case "mono": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return <Render.Icon {...props} />;
       }
-      case 'color': {
+      case "color": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return Render.Icon?.Color ? <Render.Icon.Color {...props} /> : <Render.Icon {...props} />;
       }
-      case 'combine': {
+      case "combine": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return Render.Icon?.Combine ? (
-          <Render.Icon.Combine type={'mono'} {...props} />
+          <Render.Icon.Combine type={"mono"} {...props} />
         ) : Render.Icon?.Brand ? (
           <Render.Icon.Brand {...props} />
         ) : Render.Icon?.Text ? (
@@ -59,10 +59,10 @@ const RNModelIcon = memo<RNModelIconProps>(
           <Render.Icon {...props} />
         );
       }
-      case 'combine-color': {
+      case "combine-color": {
         if (!Render?.Icon) return <DefaultIcon {...props} />;
         return Render.Icon?.Combine ? (
-          <Render.Icon.Combine type={'color'} {...props} />
+          <Render.Icon.Combine type={"color"} {...props} />
         ) : Render.Icon?.BrandColor ? (
           <Render.Icon.BrandColor {...props} />
         ) : Render.Icon?.Text ? (
@@ -78,6 +78,6 @@ const RNModelIcon = memo<RNModelIconProps>(
   },
 );
 
-RNModelIcon.displayName = 'RNModelIcon';
+RNModelIcon.displayName = "RNModelIcon";
 
 export default RNModelIcon;

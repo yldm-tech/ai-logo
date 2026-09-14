@@ -22,7 +22,7 @@ export class FileConverter {
       return { content, success: true };
     } catch (error) {
       return {
-        error: error instanceof Error ? error.message : 'Unknown error',
+        error: error instanceof Error ? error.message : "Unknown error",
         success: false,
       };
     }
@@ -33,7 +33,7 @@ export class FileConverter {
    */
   convertSvgComponentFile(
     webFileContent: string,
-    componentType: 'Mono' | 'Color' | 'Text',
+    componentType: "Mono" | "Color" | "Text",
     iconName: string,
   ): ConversionResult {
     try {
@@ -66,7 +66,7 @@ export class FileConverter {
       };
     } catch (error) {
       return {
-        error: error instanceof Error ? error.message : 'Unknown error',
+        error: error instanceof Error ? error.message : "Unknown error",
         success: false,
       };
     }
@@ -77,7 +77,7 @@ export class FileConverter {
    */
   convertNonSvgComponentFile(
     webFileContent: string,
-    componentType: 'Avatar' | 'Combine',
+    componentType: "Avatar" | "Combine",
   ): ConversionResult {
     try {
       let content = webFileContent;
@@ -85,16 +85,16 @@ export class FileConverter {
       content = this.removeUseClient(content);
       content = this.updateReactImports(content);
 
-      if (componentType === 'Avatar') {
+      if (componentType === "Avatar") {
         content = this.convertAvatarComponent(content);
-      } else if (componentType === 'Combine') {
+      } else if (componentType === "Combine") {
         content = this.convertCombineComponent(content);
       }
 
       return { content, success: true };
     } catch (error) {
       return {
-        error: error instanceof Error ? error.message : 'Unknown error',
+        error: error instanceof Error ? error.message : "Unknown error",
         success: false,
       };
     }
@@ -109,14 +109,14 @@ export class FileConverter {
 
       // 转换AVATAR_BACKGROUND从COLOR_GRADIENT到COLOR_PRIMARY
       content = content.replaceAll(
-        'export const AVATAR_BACKGROUND = COLOR_GRADIENT;',
-        'export const AVATAR_BACKGROUND = COLOR_PRIMARY;',
+        "export const AVATAR_BACKGROUND = COLOR_GRADIENT;",
+        "export const AVATAR_BACKGROUND = COLOR_PRIMARY;",
       );
 
       return { content, success: true };
     } catch (error) {
       return {
-        error: error instanceof Error ? error.message : 'Unknown error',
+        error: error instanceof Error ? error.message : "Unknown error",
         success: false,
       };
     }
@@ -125,7 +125,7 @@ export class FileConverter {
   // ========== 基础转换方法 ==========
 
   private removeUseClient(content: string): string {
-    return content.replaceAll(/'use client';\s*\n/g, '');
+    return content.replaceAll(/'use client';\s*\n/g, "");
   }
 
   private updateReactImports(content: string): string {
@@ -139,23 +139,23 @@ export class FileConverter {
     const svgImports = this.detectSvgImports(content);
     return content.replaceAll(
       /import type { IconType } from '@\/types';\s*\n/g,
-      `import { ${svgImports.join(', ')} } from 'react-native-svg';\n\nimport type { RNIconProps } from '@/features';\n`,
+      `import { ${svgImports.join(", ")} } from 'react-native-svg';\n\nimport type { RNIconProps } from '@/features';\n`,
     );
   }
 
   private removeWebSpecificImports(content: string): string {
     // 统一删除TITLE导入，后续在addSpecialImports中按需重新添加
-    return content.replaceAll(/import { TITLE } from '\.\.\/style';\s*\n/g, '');
+    return content.replaceAll(/import { TITLE } from '\.\.\/style';\s*\n/g, "");
   }
 
   private addSpecialImports(content: string): string {
     let result = content;
 
     // 检查是否使用了useFillId或useFillIds
-    const usesUseFillId = content.includes('useFillId(') || content.includes('useFillIds(');
+    const usesUseFillId = content.includes("useFillId(") || content.includes("useFillIds(");
 
     // 如果有useFillIds使用但没有导入，添加导入
-    if (content.includes('useFillIds') && !content.includes('import { useFillIds }')) {
+    if (content.includes("useFillIds") && !content.includes("import { useFillIds }")) {
       result = result.replaceAll(
         /import type { RNIconProps } from '@\/features';\s*\n/g,
         "import type { RNIconProps } from '@/features';\nimport { useFillIds } from '@/hooks/useFillId';\n",
@@ -163,7 +163,7 @@ export class FileConverter {
     }
 
     // 如果有useFillId使用但没有导入，添加导入
-    if (content.includes('useFillId(') && !content.includes('import { useFillId }')) {
+    if (content.includes("useFillId(") && !content.includes("import { useFillId }")) {
       result = result.replaceAll(
         /import type { RNIconProps } from '@\/features';\s*\n/g,
         "import type { RNIconProps } from '@/features';\nimport { useFillId } from '@/hooks/useFillId';\n",
@@ -171,7 +171,7 @@ export class FileConverter {
     }
 
     // 如果使用了任何useFillId相关函数但没有TITLE导入，添加TITLE导入
-    if (usesUseFillId && !content.includes('import { TITLE }')) {
+    if (usesUseFillId && !content.includes("import { TITLE }")) {
       result = result.replaceAll(
         /import type { RNIconProps } from '@\/features';\s*\n/g,
         "import type { RNIconProps } from '@/features';\nimport { TITLE } from '../style';\n",
@@ -184,10 +184,10 @@ export class FileConverter {
   private updateComponentSignature(content: string, hasCurrentColor: boolean): string {
     return content.replaceAll(/const Icon: IconType = memo\(\(([^)]+)\) => {/g, (match, params) => {
       // 替换size默认值
-      let newParams = params.replaceAll("size = '1em'", 'size = 24');
+      let newParams = params.replaceAll("size = '1em'", "size = 24");
 
       // 如果有currentColor，添加color参数
-      if (hasCurrentColor && !newParams.includes('color')) {
+      if (hasCurrentColor && !newParams.includes("color")) {
         newParams = newParams.replace(
           /({ size = 24, style), (\.{3}rest })/,
           "$1, color = '#000000', $2",
@@ -225,64 +225,64 @@ export class FileConverter {
 
   private convertSvgTags(content: string): string {
     const tagMappings = [
-      ['<svg', '<Svg'],
-      ['</svg>', '</Svg>'],
-      ['<path', '<Path'],
-      ['<defs>', '<Defs>'],
-      ['</defs>', '</Defs>'],
-      ['<linearGradient', '<LinearGradient'],
-      ['</linearGradient>', '</LinearGradient>'],
-      ['<radialGradient', '<RadialGradient'],
-      ['</radialGradient>', '</RadialGradient>'],
-      ['<stop', '<Stop'],
-      ['<circle', '<Circle'],
-      ['<ellipse', '<Ellipse'],
-      ['<g ', '<G '],
-      ['<g>', '<G>'],
-      ['</g>', '</G>'],
-      ['<text', '<Text'],
-      ['</text>', '</Text>'],
-      ['<tspan', '<TSpan'],
-      ['</tspan>', '</TSpan>'],
-      ['<textPath', '<TextPath'],
-      ['</textPath>', '</TextPath>'],
-      ['<rect', '<Rect'],
-      ['<line', '<Line'],
-      ['<polygon', '<Polygon'],
-      ['<polyline', '<Polyline'],
-      ['<clipPath', '<ClipPath'],
-      ['</clipPath>', '</ClipPath>'],
-      ['<mask', '<Mask'],
-      ['</mask>', '</Mask>'],
-      ['<pattern', '<Pattern'],
-      ['</pattern>', '</Pattern>'],
-      ['<use', '<Use'],
-      ['<image', '<Image'],
-      ['<symbol', '<Symbol'],
-      ['</symbol>', '</Symbol>'],
+      ["<svg", "<Svg"],
+      ["</svg>", "</Svg>"],
+      ["<path", "<Path"],
+      ["<defs>", "<Defs>"],
+      ["</defs>", "</Defs>"],
+      ["<linearGradient", "<LinearGradient"],
+      ["</linearGradient>", "</LinearGradient>"],
+      ["<radialGradient", "<RadialGradient"],
+      ["</radialGradient>", "</RadialGradient>"],
+      ["<stop", "<Stop"],
+      ["<circle", "<Circle"],
+      ["<ellipse", "<Ellipse"],
+      ["<g ", "<G "],
+      ["<g>", "<G>"],
+      ["</g>", "</G>"],
+      ["<text", "<Text"],
+      ["</text>", "</Text>"],
+      ["<tspan", "<TSpan"],
+      ["</tspan>", "</TSpan>"],
+      ["<textPath", "<TextPath"],
+      ["</textPath>", "</TextPath>"],
+      ["<rect", "<Rect"],
+      ["<line", "<Line"],
+      ["<polygon", "<Polygon"],
+      ["<polyline", "<Polyline"],
+      ["<clipPath", "<ClipPath"],
+      ["</clipPath>", "</ClipPath>"],
+      ["<mask", "<Mask"],
+      ["</mask>", "</Mask>"],
+      ["<pattern", "<Pattern"],
+      ["</pattern>", "</Pattern>"],
+      ["<use", "<Use"],
+      ["<image", "<Image"],
+      ["<symbol", "<Symbol"],
+      ["</symbol>", "</Symbol>"],
       // Filter effects
-      ['<filter', '<Filter'],
-      ['</filter>', '</Filter>'],
-      ['<feFlood', '<FeFlood'],
-      ['<feBlend', '<FeBlend'],
-      ['<feColorMatrix', '<FeColorMatrix'],
-      ['<feOffset', '<FeOffset'],
-      ['<feGaussianBlur', '<FeGaussianBlur'],
-      ['<feComposite', '<FeComposite'],
-      ['<feMorphology', '<FeMorphology'],
-      ['<feDropShadow', '<FeDropShadow'],
-      ['<feTurbulence', '<FeTurbulence'],
-      ['<feDisplacementMap', '<FeDisplacementMap'],
-      ['<feConvolveMatrix', '<FeConvolveMatrix'],
-      ['<feImage', '<FeImage'],
-      ['<feMerge', '<FeMerge'],
-      ['</feMerge>', '</FeMerge>'],
-      ['<feMergeNode', '<FeMergeNode'],
+      ["<filter", "<Filter"],
+      ["</filter>", "</Filter>"],
+      ["<feFlood", "<FeFlood"],
+      ["<feBlend", "<FeBlend"],
+      ["<feColorMatrix", "<FeColorMatrix"],
+      ["<feOffset", "<FeOffset"],
+      ["<feGaussianBlur", "<FeGaussianBlur"],
+      ["<feComposite", "<FeComposite"],
+      ["<feMorphology", "<FeMorphology"],
+      ["<feDropShadow", "<FeDropShadow"],
+      ["<feTurbulence", "<FeTurbulence"],
+      ["<feDisplacementMap", "<FeDisplacementMap"],
+      ["<feConvolveMatrix", "<FeConvolveMatrix"],
+      ["<feImage", "<FeImage"],
+      ["<feMerge", "<FeMerge"],
+      ["</feMerge>", "</FeMerge>"],
+      ["<feMergeNode", "<FeMergeNode"],
     ];
 
     let result = content;
     tagMappings.forEach(([from, to]) => {
-      result = result.replaceAll(new RegExp(from, 'g'), to);
+      result = result.replaceAll(new RegExp(from, "g"), to);
     });
 
     return result;
@@ -292,23 +292,23 @@ export class FileConverter {
     let result = content;
 
     // 删除title标签和Web特有属性
-    result = result.replaceAll(/<title>.*?<\/title>\s*/g, '');
+    result = result.replaceAll(/<title>.*?<\/title>\s*/g, "");
     result = result.replaceAll(
       "style={{ flex: 'none', lineHeight: 1, ...style }}",
-      'style={style}',
+      "style={style}",
     );
-    result = result.replaceAll(/\s*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/g, '');
+    result = result.replaceAll(/\s*xmlns="http:\/\/www\.w3\.org\/2000\/svg"/g, "");
 
     // 移除RN不支持的SVG属性
-    result = result.replaceAll(/\s+shapeRendering="[^"]*"/g, '');
-    result = result.replaceAll(/style={{\s*mixBlendMode:\s*'[^']*',?\s*}}/g, '');
+    result = result.replaceAll(/\s+shapeRendering="[^"]*"/g, "");
+    result = result.replaceAll(/style={{\s*mixBlendMode:\s*'[^']*',?\s*}}/g, "");
 
     // 修复fontWeight在ViewStyle中的使用（移除fontWeight）
     result = result.replaceAll(
       /extraStyle={{ fontWeight: \d+, \.\.\.extraStyle }}/g,
-      'extraStyle={{ ...extraStyle }}',
+      "extraStyle={{ ...extraStyle }}",
     );
-    result = result.replaceAll(/fontSize: size \* [\d.]+,/g, '');
+    result = result.replaceAll(/fontSize: size \* [\d.]+,/g, "");
 
     // 转换offset值为百分比字符串格式
     result = this.convertOffsetValues(result);
@@ -319,21 +319,21 @@ export class FileConverter {
   private formatSvgTag(content: string, hasCurrentColor: boolean): string {
     return content.replaceAll(/<Svg\s+([^>]*?)>/g, (match, attrs) => {
       // 移除Web特有属性
-      let cleanAttrs = attrs.replaceAll(/\s*fill="[^"]*"/g, '').replaceAll(/\s*xmlns="[^"]*"/g, '');
+      let cleanAttrs = attrs.replaceAll(/\s*fill="[^"]*"/g, "").replaceAll(/\s*xmlns="[^"]*"/g, "");
 
       // 构建属性数组
       const allAttrs = [];
-      if (hasCurrentColor) allAttrs.push('color={color}');
+      if (hasCurrentColor) allAttrs.push("color={color}");
 
       // 按顺序添加属性
-      this.addAttributeIfExists(cleanAttrs, 'fillRule', allAttrs);
-      this.addAttributeIfExists(cleanAttrs, 'height', allAttrs);
-      this.addAttributeIfExists(cleanAttrs, 'style', allAttrs);
-      this.addAttributeIfExists(cleanAttrs, 'viewBox', allAttrs);
-      this.addAttributeIfExists(cleanAttrs, 'width', allAttrs);
+      this.addAttributeIfExists(cleanAttrs, "fillRule", allAttrs);
+      this.addAttributeIfExists(cleanAttrs, "height", allAttrs);
+      this.addAttributeIfExists(cleanAttrs, "style", allAttrs);
+      this.addAttributeIfExists(cleanAttrs, "viewBox", allAttrs);
+      this.addAttributeIfExists(cleanAttrs, "width", allAttrs);
 
       // 格式化为多行
-      const formattedAttrs = allAttrs.map((attr) => `      ${attr}`).join('\n');
+      const formattedAttrs = allAttrs.map((attr) => `      ${attr}`).join("\n");
       return `<Svg\n${formattedAttrs}\n      {...rest}\n    >`;
     });
   }
@@ -341,16 +341,16 @@ export class FileConverter {
   private formatPathTag(content: string, hasCurrentColor: boolean): string {
     return content.replaceAll(/<Path\s+([^>]*?)\s*\/?>/g, (match, originalAttrs) => {
       // 处理fill属性
-      let attrs = originalAttrs.replaceAll('fill="currentColor"', 'fill={color}');
+      let attrs = originalAttrs.replaceAll('fill="currentColor"', "fill={color}");
 
-      if (!attrs.includes('fill=') && hasCurrentColor) {
+      if (!attrs.includes("fill=") && hasCurrentColor) {
         attrs = `fill={color} ${attrs.trim()}`;
-      } else if (attrs.includes('fill=')) {
+      } else if (attrs.includes("fill=")) {
         // 调整属性顺序：fill 在前，d 在后
         const fillMatch = attrs.match(/(fill={[^}]+}|fill="[^"]*")/);
         const dMatch = attrs.match(/(d="[^"]*")/);
         if (fillMatch && dMatch) {
-          const otherAttrs = attrs.replace(fillMatch[0], '').replace(dMatch[0], '').trim();
+          const otherAttrs = attrs.replace(fillMatch[0], "").replace(dMatch[0], "").trim();
           attrs = `${fillMatch[0]} ${dMatch[0]} ${otherAttrs}`.trim();
         }
       }
@@ -380,7 +380,7 @@ export class FileConverter {
       // 将小数转换为百分比
       const percentage = (parseFloat(decimal) * 100).toString();
       // 移除不必要的小数点后的0
-      const cleanPercentage = percentage.replace(/\.?0+$/, '');
+      const cleanPercentage = percentage.replace(/\.?0+$/, "");
       return `offset="${cleanPercentage}%"`;
     });
 
@@ -397,7 +397,7 @@ export class FileConverter {
     const viewBoxMatch = content.match(/viewBox="([^"]+)"/);
     if (!viewBoxMatch) return content;
 
-    const viewBoxValues = viewBoxMatch[1].split(' ');
+    const viewBoxValues = viewBoxMatch[1].split(" ");
     if (viewBoxValues.length !== 4) return content;
 
     const width = parseFloat(viewBoxValues[2]);
@@ -428,13 +428,13 @@ export class FileConverter {
     );
 
     // 转换组件标签
-    result = result.replaceAll('<IconAvatar', '<RNIconAvatar');
+    result = result.replaceAll("<IconAvatar", "<RNIconAvatar");
 
     // 处理background属性 - 更灵活的匹配
-    if (result.includes('background={AVATAR_BACKGROUND}')) {
+    if (result.includes("background={AVATAR_BACKGROUND}")) {
       result = result.replaceAll(
-        'background={AVATAR_BACKGROUND}',
-        'background={background || AVATAR_BACKGROUND}',
+        "background={AVATAR_BACKGROUND}",
+        "background={background || AVATAR_BACKGROUND}",
       );
 
       // 检查函数参数中是否已经有background参数
@@ -445,8 +445,8 @@ export class FileConverter {
         const params = functionSignatureMatch[1];
 
         // 如果参数中没有background，需要添加
-        if (!params.includes('background')) {
-          const newParams = params.replace('...rest', 'background, ...rest');
+        if (!params.includes("background")) {
+          const newParams = params.replace("...rest", "background, ...rest");
           result = result.replace(
             /const Avatar = memo<AvatarProps>\(\([^)]*\) => {/,
             `const Avatar = memo<AvatarProps>(${newParams} => {`,
@@ -456,7 +456,7 @@ export class FileConverter {
     }
 
     // 修复组件结束语法 - 更精确的匹配
-    result = result.replaceAll(/(\s+\/>\s*\n\s*\);\s*\n}\);\s*\n)/g, '\n    />\n  )\n});\n');
+    result = result.replaceAll(/(\s+\/>\s*\n\s*\);\s*\n}\);\s*\n)/g, "\n    />\n  )\n});\n");
 
     return result;
   }
@@ -472,10 +472,10 @@ export class FileConverter {
           "export interface CombineProps extends Omit<IconCombineProps, 'Icon' | 'Text'>",
           "export interface CombineProps extends Omit<RNIconCombineProps, 'Icon' | 'Text'>",
         )
-        .replaceAll('<IconCombine', '<RNIconCombine')
+        .replaceAll("<IconCombine", "<RNIconCombine")
         .replaceAll(
           /extraStyle={{ fontWeight: \d+, \.\.\.extraStyle }}/g,
-          'extraStyle={{ ...extraStyle }}',
+          "extraStyle={{ ...extraStyle }}",
         )
         // 修复跨图标组件导入路径
         .replaceAll(
@@ -483,7 +483,7 @@ export class FileConverter {
           "import $1 from '@/icons/$2/components/$3';\n",
         )
         // 移除fontSize属性（包括复杂表达式）
-        .replaceAll(/fontSize: size \* [\d.]+,\s*/g, '')
+        .replaceAll(/fontSize: size \* [\d.]+,\s*/g, "")
     );
   }
 
@@ -491,44 +491,44 @@ export class FileConverter {
 
   private detectSvgImports(content: string): string[] {
     const svgElements = [
-      'Svg',
-      'Path',
-      'Defs',
-      'LinearGradient',
-      'RadialGradient',
-      'Stop',
-      'Circle',
-      'Ellipse',
-      'G',
-      'Text',
-      'TSpan',
-      'TextPath',
-      'Rect',
-      'Line',
-      'Polygon',
-      'Polyline',
-      'ClipPath',
-      'Mask',
-      'Pattern',
-      'Use',
-      'Image',
-      'Symbol',
+      "Svg",
+      "Path",
+      "Defs",
+      "LinearGradient",
+      "RadialGradient",
+      "Stop",
+      "Circle",
+      "Ellipse",
+      "G",
+      "Text",
+      "TSpan",
+      "TextPath",
+      "Rect",
+      "Line",
+      "Polygon",
+      "Polyline",
+      "ClipPath",
+      "Mask",
+      "Pattern",
+      "Use",
+      "Image",
+      "Symbol",
       // Filter effects
-      'Filter',
-      'FeFlood',
-      'FeBlend',
-      'FeColorMatrix',
-      'FeOffset',
-      'FeGaussianBlur',
-      'FeComposite',
-      'FeMorphology',
-      'FeDropShadow',
-      'FeTurbulence',
-      'FeDisplacementMap',
-      'FeConvolveMatrix',
-      'FeImage',
-      'FeMerge',
-      'FeMergeNode',
+      "Filter",
+      "FeFlood",
+      "FeBlend",
+      "FeColorMatrix",
+      "FeOffset",
+      "FeGaussianBlur",
+      "FeComposite",
+      "FeMorphology",
+      "FeDropShadow",
+      "FeTurbulence",
+      "FeDisplacementMap",
+      "FeConvolveMatrix",
+      "FeImage",
+      "FeMerge",
+      "FeMergeNode",
     ];
 
     const detectedImports = new Set<string>();
@@ -536,7 +536,7 @@ export class FileConverter {
     svgElements.forEach((element) => {
       const lowerElement = element.toLowerCase();
       // 使用更精确的匹配，确保元素名后面跟着空格、>或属性
-      const regex = new RegExp(`<${lowerElement}(\\s|>|$)`, 'i');
+      const regex = new RegExp(`<${lowerElement}(\\s|>|$)`, "i");
       if (regex.test(content)) {
         detectedImports.add(element);
       }

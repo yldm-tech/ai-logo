@@ -1,13 +1,13 @@
-import { Center } from '@lobehub/ui';
-import { cssVar } from 'antd-style';
-import { memo } from 'react';
+import { Center } from "@lobehub/ui";
+import { cssVar } from "antd-style";
+import { memo } from "react";
 
-import type { IconAvatarProps } from '../IconAvatar';
-import DefaultIcon from './DefaultIcon';
+import type { IconAvatarProps } from "../IconAvatar";
+import DefaultIcon from "./DefaultIcon";
 
-const DefaultAvatar = memo<Omit<IconAvatarProps, 'Icon'>>(
+const DefaultAvatar = memo<Omit<IconAvatarProps, "Icon">>(
   ({
-    shape = 'circle',
+    shape = "circle",
     color,
     background,
     size,
@@ -18,10 +18,10 @@ const DefaultAvatar = memo<Omit<IconAvatarProps, 'Icon'>>(
   }) => {
     return (
       <Center
-        flex={'none'}
+        flex={"none"}
         style={{
           background: background || cssVar.colorFillSecondary,
-          borderRadius: shape === 'circle' ? '50%' : Math.floor(size * 0.1),
+          borderRadius: shape === "circle" ? "50%" : Math.floor(size * 0.1),
           color,
           height: size,
           width: size,
