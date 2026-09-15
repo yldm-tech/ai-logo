@@ -2,6 +2,13 @@
 
 # Changelog
 
+## [1.9.1](https://github.com/yldm-tech/ai-logo/compare/v1.9.0...v1.9.1) (2026-09-15)
+
+### Bug Fixes
+
+- **ci:** let the release reach main, and stop the alias outrunning it ([f5d9a3b](https://github.com/yldm-tech/ai-logo/commit/f5d9a3b2451f69a665bdf7a808013b3f7bed8575))
+- render the missing variants, catch the port up, and make the gates binding ([3b4fea5](https://github.com/yldm-tech/ai-logo/commit/3b4fea5d4eb0f9f15ba4012145405565c95d84fe))
+
 ## [1.9.0](https://github.com/yldm-tech/ai-logo/compare/v1.8.0...v1.9.0) (2026-09-14)
 
 ### Features
