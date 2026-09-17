@@ -126,6 +126,11 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
+  "peerDependenciesMeta": {
+    "antd": {
+      "optional": true
+    }
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,md,mdx,yml,yaml}": [
       "vp fmt"
