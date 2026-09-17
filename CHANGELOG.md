@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.9.2](https://github.com/yldm-tech/ai-logo/compare/v1.9.1...v1.9.2) (2026-09-17)
+
+### Bug Fixes
+
+- mark antd as an optional peer dependency ([e6e11f2](https://github.com/yldm-tech/ai-logo/commit/e6e11f20fddc55eab9ec832c588766998f9a0984))
+
 ## [1.9.1](https://github.com/yldm-tech/ai-logo/compare/v1.9.0...v1.9.1) (2026-09-15)
 
 ### Bug Fixes
