@@ -1,0 +1,7 @@
+export const TITLE = "ŠKODA";
+export const COLOR_PRIMARY = "#0E3A2F";
+
+// Avatar constants
+export const AVATAR_BACKGROUND = COLOR_PRIMARY;
+export const AVATAR_COLOR = "#fff";
+export const AVATAR_ICON_MULTIPLE = 0.6;

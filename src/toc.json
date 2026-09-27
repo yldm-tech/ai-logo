@@ -1,5 +1,24 @@
 [
   {
+    "color": "#A100FF",
+    "desc": "https://www.accenture.com",
+    "docsUrl": "accenture",
+    "fullTitle": "Accenture",
+    "group": "service",
+    "id": "Accenture",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Accenture"
+  },
+  {
     "color": "#000",
     "desc": "https://github.com/ace-step/ACE-Step",
     "docsUrl": "ace",
@@ -17,6 +36,44 @@
       "hasTextColor": false
     },
     "title": "ace"
+  },
+  {
+    "color": "#83B81A",
+    "desc": "https://www.acer.com",
+    "docsUrl": "acer",
+    "fullTitle": "Acer",
+    "group": "service",
+    "id": "Acer",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Acer"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.activision.com",
+    "docsUrl": "activision",
+    "fullTitle": "Activision",
+    "group": "service",
+    "id": "Activision",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Activision"
   },
   {
     "color": "#000000",
@@ -325,6 +382,25 @@
     "title": "Airbnb"
   },
   {
+    "color": "#00205B",
+    "desc": "https://www.airbus.com",
+    "docsUrl": "airbus",
+    "fullTitle": "Airbus",
+    "group": "service",
+    "id": "Airbus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Airbus"
+  },
+  {
     "color": "#615EFF",
     "desc": "https://airbyte.com",
     "docsUrl": "airbyte",
@@ -342,6 +418,44 @@
       "hasTextColor": false
     },
     "title": "Airbyte"
+  },
+  {
+    "color": "#E30E17",
+    "desc": "https://www.airchina.com.cn",
+    "docsUrl": "air-china",
+    "fullTitle": "Air China",
+    "group": "service",
+    "id": "AirChina",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Air China"
+  },
+  {
+    "color": "#002157",
+    "desc": "https://www.airfrance.com",
+    "docsUrl": "air-france",
+    "fullTitle": "Air France",
+    "group": "service",
+    "id": "AirFrance",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Air France"
   },
   {
     "color": "#00C8FF",
@@ -589,6 +703,25 @@
       "hasTextColor": false
     },
     "title": "Alipay"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://almalinux.org",
+    "docsUrl": "alma-linux",
+    "fullTitle": "AlmaLinux",
+    "group": "service",
+    "id": "AlmaLinux",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "AlmaLinux"
   },
   {
     "color": "#8BC0D0",
@@ -857,6 +990,25 @@
     "title": "Anspire"
   },
   {
+    "color": "#0170FE",
+    "desc": "https://ant.design",
+    "docsUrl": "ant-design",
+    "fullTitle": "Ant Design",
+    "group": "service",
+    "id": "AntDesign",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ant Design"
+  },
+  {
     "color": "#1677ff",
     "desc": "https://antgroup.com",
     "docsUrl": "ant-group",
@@ -1085,6 +1237,25 @@
     "title": "Apertis"
   },
   {
+    "color": "#311C87",
+    "desc": "https://www.apollographql.com",
+    "docsUrl": "apollo-graph-ql",
+    "fullTitle": "Apollo GraphQL",
+    "group": "service",
+    "id": "ApolloGraphQL",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Apollo GraphQL"
+  },
+  {
     "color": "#fff",
     "desc": "https://apple.com",
     "docsUrl": "apple",
@@ -1104,6 +1275,25 @@
     "title": "Apple"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.apple.com/apple-arcade",
+    "docsUrl": "apple-arcade",
+    "fullTitle": "Apple Arcade",
+    "group": "service",
+    "id": "AppleArcade",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Apple Arcade"
+  },
+  {
     "color": "#FA243C",
     "desc": "https://music.apple.com",
     "docsUrl": "apple-music",
@@ -1121,6 +1311,25 @@
       "hasTextColor": false
     },
     "title": "Apple Music"
+  },
+  {
+    "color": "#FD415E",
+    "desc": "https://www.apple.com/apple-news",
+    "docsUrl": "apple-news",
+    "fullTitle": "Apple News",
+    "group": "service",
+    "id": "AppleNews",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Apple News"
   },
   {
     "color": "#000000",
@@ -1332,6 +1541,44 @@
     "title": "Arm"
   },
   {
+    "color": "#13AFF0",
+    "desc": "https://www.artstation.com",
+    "docsUrl": "art-station",
+    "fullTitle": "ArtStation",
+    "group": "service",
+    "id": "ArtStation",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ArtStation"
+  },
+  {
+    "color": "#B31B1B",
+    "desc": "https://arxiv.org",
+    "docsUrl": "ar-xiv",
+    "fullTitle": "arXiv",
+    "group": "service",
+    "id": "ArXiv",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "arXiv"
+  },
+  {
     "color": "#F06A6A",
     "desc": "https://asana.com",
     "docsUrl": "asana",
@@ -1387,6 +1634,25 @@
       "hasTextColor": false
     },
     "title": "AssemblyAI"
+  },
+  {
+    "color": "#00665E",
+    "desc": "https://www.astonmartin.com",
+    "docsUrl": "aston-martin",
+    "fullTitle": "Aston Martin",
+    "group": "service",
+    "id": "AstonMartin",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Aston Martin"
   },
   {
     "color": "#BC52EE",
@@ -1596,6 +1862,25 @@
       "hasTextColor": false
     },
     "title": "AWS"
+  },
+  {
+    "color": "#5A29E4",
+    "desc": "https://axios-http.com",
+    "docsUrl": "axios",
+    "fullTitle": "Axios",
+    "group": "service",
+    "id": "Axios",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Axios"
   },
   {
     "color": "#416FDC",
@@ -1980,6 +2265,25 @@
     "title": "Behance"
   },
   {
+    "color": "#000000",
+    "desc": "https://bere.al",
+    "docsUrl": "be-real",
+    "fullTitle": "BeReal",
+    "group": "service",
+    "id": "BeReal",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "BeReal"
+  },
+  {
     "color": "#fff",
     "desc": "https://bfl.ai",
     "docsUrl": "bfl",
@@ -1997,6 +2301,25 @@
       "hasTextColor": false
     },
     "title": "Black Forest Labs"
+  },
+  {
+    "color": "#121118",
+    "desc": "https://www.bigcommerce.com",
+    "docsUrl": "big-commerce",
+    "fullTitle": "BigCommerce",
+    "group": "service",
+    "id": "BigCommerce",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "BigCommerce"
   },
   {
     "color": "#FB7299",
@@ -2133,6 +2456,63 @@
     "title": "Bitcoin"
   },
   {
+    "color": "#ED1C24",
+    "desc": "https://www.bitdefender.com",
+    "docsUrl": "bitdefender",
+    "fullTitle": "Bitdefender",
+    "group": "service",
+    "id": "Bitdefender",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bitdefender"
+  },
+  {
+    "color": "#EE6123",
+    "desc": "https://bitly.com",
+    "docsUrl": "bitly",
+    "fullTitle": "Bitly",
+    "group": "service",
+    "id": "Bitly",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bitly"
+  },
+  {
+    "color": "#683D87",
+    "desc": "https://bitrise.io",
+    "docsUrl": "bitrise",
+    "fullTitle": "Bitrise",
+    "group": "service",
+    "id": "Bitrise",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bitrise"
+  },
+  {
     "color": "#175DDC",
     "desc": "https://bitwarden.com",
     "docsUrl": "bitwarden",
@@ -2226,6 +2606,25 @@
       "hasTextColor": false
     },
     "title": "Bocha"
+  },
+  {
+    "color": "#1D439C",
+    "desc": "https://www.boeing.com",
+    "docsUrl": "boeing",
+    "fullTitle": "Boeing",
+    "group": "service",
+    "id": "Boeing",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Boeing"
   },
   {
     "color": "#003A9A",
@@ -2323,6 +2722,25 @@
     "title": "Box"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.braintreepayments.com",
+    "docsUrl": "braintree",
+    "fullTitle": "Braintree",
+    "group": "service",
+    "id": "Braintree",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Braintree"
+  },
+  {
     "color": "#FF4000",
     "desc": "https://brave.com",
     "docsUrl": "brave",
@@ -2342,6 +2760,25 @@
     "title": "Brave"
   },
   {
+    "color": "#0B996E",
+    "desc": "https://www.brevo.com",
+    "docsUrl": "brevo",
+    "fullTitle": "Brevo",
+    "group": "service",
+    "id": "Brevo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Brevo"
+  },
+  {
     "color": "#671ECC",
     "desc": "https://bria.ai",
     "docsUrl": "bria-ai",
@@ -2359,6 +2796,25 @@
       "hasTextColor": false
     },
     "title": "BRIA AI"
+  },
+  {
+    "color": "#2E5C99",
+    "desc": "https://www.britishairways.com",
+    "docsUrl": "british-airways",
+    "fullTitle": "British Airways",
+    "group": "service",
+    "id": "BritishAirways",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "British Airways"
   },
   {
     "color": "#fff",
@@ -2399,6 +2855,25 @@
     "title": "Bruno"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.bugatti.com",
+    "docsUrl": "bugatti",
+    "fullTitle": "Bugatti",
+    "group": "service",
+    "id": "Bugatti",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bugatti"
+  },
+  {
     "color": "#14CC80",
     "desc": "https://buildkite.com",
     "docsUrl": "buildkite",
@@ -2418,6 +2893,25 @@
     "title": "Buildkite"
   },
   {
+    "color": "#00D1B2",
+    "desc": "https://bulma.io",
+    "docsUrl": "bulma",
+    "fullTitle": "Bulma",
+    "group": "service",
+    "id": "Bulma",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bulma"
+  },
+  {
     "color": "#000000",
     "desc": "https://bun.sh",
     "docsUrl": "bun",
@@ -2435,6 +2929,25 @@
       "hasTextColor": false
     },
     "title": "Bun"
+  },
+  {
+    "color": "#0075BB",
+    "desc": "https://www.bungie.net",
+    "docsUrl": "bungie",
+    "fullTitle": "Bungie",
+    "group": "service",
+    "id": "Bungie",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bungie"
   },
   {
     "color": "#D62300",
@@ -2475,6 +2988,44 @@
     "title": "BurnCloud"
   },
   {
+    "color": "#FF6633",
+    "desc": "https://portswigger.net/burp",
+    "docsUrl": "burp-suite",
+    "fullTitle": "Burp Suite",
+    "group": "service",
+    "id": "BurpSuite",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Burp Suite"
+  },
+  {
+    "color": "#FFDD00",
+    "desc": "https://buymeacoffee.com",
+    "docsUrl": "buy-me-a-coffee",
+    "fullTitle": "Buy Me A Coffee",
+    "group": "service",
+    "id": "BuyMeACoffee",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Buy Me A Coffee"
+  },
+  {
     "color": "#325AB4",
     "desc": "https://bytedance.com",
     "docsUrl": "byte-dance",
@@ -2494,6 +3045,44 @@
     "title": "ByteDance"
   },
   {
+    "color": "#1F88C0",
+    "desc": "https://caddyserver.com",
+    "docsUrl": "caddy",
+    "fullTitle": "Caddy",
+    "group": "service",
+    "id": "Caddy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Caddy"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.cadillac.com",
+    "docsUrl": "cadillac",
+    "fullTitle": "Cadillac",
+    "group": "service",
+    "id": "Cadillac",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Cadillac"
+  },
+  {
     "color": "#006BFF",
     "desc": "https://calendly.com",
     "docsUrl": "calendly",
@@ -2511,6 +3100,25 @@
       "hasTextColor": false
     },
     "title": "Calendly"
+  },
+  {
+    "color": "#119EFF",
+    "desc": "https://capacitorjs.com",
+    "docsUrl": "capacitor",
+    "fullTitle": "Capacitor",
+    "group": "service",
+    "id": "Capacitor",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Capacitor"
   },
   {
     "color": "#fff",
@@ -2551,6 +3159,25 @@
     "title": "Cardano"
   },
   {
+    "color": "#004E9F",
+    "desc": "https://www.carrefour.com",
+    "docsUrl": "carrefour",
+    "fullTitle": "Carrefour",
+    "group": "service",
+    "id": "Carrefour",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Carrefour"
+  },
+  {
     "color": "#00C244",
     "desc": "https://cash.app",
     "docsUrl": "cash-app",
@@ -2587,6 +3214,25 @@
       "hasTextColor": false
     },
     "title": "Apache Cassandra"
+  },
+  {
+    "color": "#DC0D15",
+    "desc": "https://www.cdprojekt.com",
+    "docsUrl": "cd-projekt",
+    "fullTitle": "CD Projekt",
+    "group": "service",
+    "id": "CDProjekt",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "CD Projekt"
   },
   {
     "color": "#000",
@@ -2701,6 +3347,25 @@
       "hasTextColor": false
     },
     "title": "Chainlink"
+  },
+  {
+    "color": "#1BB2A9",
+    "desc": "https://chakra-ui.com",
+    "docsUrl": "chakra-ui",
+    "fullTitle": "Chakra UI",
+    "group": "service",
+    "id": "ChakraUI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Chakra UI"
   },
   {
     "color": "#FF6384",
@@ -2837,6 +3502,44 @@
     "title": "Chevrolet"
   },
   {
+    "color": "#1A2477",
+    "desc": "https://www.ceair.com",
+    "docsUrl": "china-eastern-airlines",
+    "fullTitle": "China Eastern Airlines",
+    "group": "service",
+    "id": "ChinaEasternAirlines",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "China Eastern Airlines"
+  },
+  {
+    "color": "#008BCB",
+    "desc": "https://www.csair.com",
+    "docsUrl": "china-southern-airlines",
+    "fullTitle": "China Southern Airlines",
+    "group": "service",
+    "id": "ChinaSouthernAirlines",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "China Southern Airlines"
+  },
+  {
     "color": "#4285F4",
     "desc": "https://www.google.com/chrome",
     "docsUrl": "chrome",
@@ -2854,6 +3557,44 @@
       "hasTextColor": false
     },
     "title": "Google Chrome"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://chromewebstore.google.com",
+    "docsUrl": "chrome-web-store",
+    "fullTitle": "Chrome Web Store",
+    "group": "service",
+    "id": "ChromeWebStore",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Chrome Web Store"
+  },
+  {
+    "color": "#F8C517",
+    "desc": "https://cilium.io",
+    "docsUrl": "cilium",
+    "fullTitle": "Cilium",
+    "group": "service",
+    "id": "Cilium",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Cilium"
   },
   {
     "color": "#343434",
@@ -3370,6 +4111,25 @@
     "title": "CodeFlicker"
   },
   {
+    "color": "#1F8ACB",
+    "desc": "https://codeforces.com",
+    "docsUrl": "codeforces",
+    "fullTitle": "Codeforces",
+    "group": "service",
+    "id": "Codeforces",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Codeforces"
+  },
+  {
     "color": "#00e7e7",
     "colorGradient": "linear-gradient(to right, #00E7E7,  #00BFFF)",
     "desc": "https://codegeex.cn/",
@@ -3388,6 +4148,25 @@
       "hasTextColor": false
     },
     "title": "CodeGeeX"
+  },
+  {
+    "color": "#151515",
+    "desc": "https://codesandbox.io",
+    "docsUrl": "code-sandbox",
+    "fullTitle": "CodeSandbox",
+    "group": "service",
+    "id": "CodeSandbox",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "CodeSandbox"
   },
   {
     "color": "#B1361E",
@@ -3581,6 +4360,25 @@
     "title": "CommandA"
   },
   {
+    "color": "#885630",
+    "desc": "https://getcomposer.org",
+    "docsUrl": "composer",
+    "fullTitle": "Composer",
+    "group": "service",
+    "id": "Composer",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Composer"
+  },
+  {
     "color": "#172B4D",
     "desc": "https://www.atlassian.com/software/confluence",
     "docsUrl": "confluence",
@@ -3771,6 +4569,25 @@
     "title": "Couchbase"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.counter-strike.net",
+    "docsUrl": "counter-strike",
+    "fullTitle": "Counter-Strike",
+    "group": "service",
+    "id": "CounterStrike",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Counter-Strike"
+  },
+  {
     "color": "#0056D2",
     "desc": "https://www.coursera.org",
     "docsUrl": "coursera",
@@ -3923,6 +4740,44 @@
     "title": "CSS"
   },
   {
+    "color": "#073551",
+    "desc": "https://curl.se",
+    "docsUrl": "curl",
+    "fullTitle": "curl",
+    "group": "service",
+    "id": "Curl",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "curl"
+  },
+  {
+    "color": "#F16436",
+    "desc": "https://www.curseforge.com",
+    "docsUrl": "curse-forge",
+    "fullTitle": "CurseForge",
+    "group": "service",
+    "id": "CurseForge",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "CurseForge"
+  },
+  {
     "color": "#000",
     "desc": "https://cursor.com",
     "docsUrl": "cursor",
@@ -3961,6 +4816,25 @@
     "title": "CyberCut"
   },
   {
+    "color": "#69D3A7",
+    "desc": "https://www.cypress.io",
+    "docsUrl": "cypress",
+    "fullTitle": "Cypress",
+    "group": "service",
+    "id": "Cypress",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Cypress"
+  },
+  {
     "color": "#F9A03C",
     "desc": "https://d3js.org",
     "docsUrl": "d-3",
@@ -3978,6 +4852,44 @@
       "hasTextColor": false
     },
     "title": "D3"
+  },
+  {
+    "color": "#0A0A0A",
+    "desc": "https://www.dailymotion.com",
+    "docsUrl": "dailymotion",
+    "fullTitle": "Dailymotion",
+    "group": "service",
+    "id": "Dailymotion",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dailymotion"
+  },
+  {
+    "color": "#FFC63A",
+    "desc": "https://daisyui.com",
+    "docsUrl": "daisy-ui",
+    "fullTitle": "daisyUI",
+    "group": "service",
+    "id": "DaisyUI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "daisyUI"
   },
   {
     "color": "#000",
@@ -4057,6 +4969,25 @@
     "title": "Databricks"
   },
   {
+    "color": "#03EF62",
+    "desc": "https://www.datacamp.com",
+    "docsUrl": "data-camp",
+    "fullTitle": "DataCamp",
+    "group": "service",
+    "id": "DataCamp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DataCamp"
+  },
+  {
     "color": "#632CA6",
     "desc": "https://www.datadoghq.com",
     "docsUrl": "datadog",
@@ -4076,6 +5007,25 @@
     "title": "Datadog"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.jetbrains.com/datagrip",
+    "docsUrl": "data-grip",
+    "fullTitle": "DataGrip",
+    "group": "service",
+    "id": "DataGrip",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DataGrip"
+  },
+  {
     "color": "#233A51",
     "desc": "https://www.blackmagicdesign.com/products/davinciresolve",
     "docsUrl": "da-vinci-resolve",
@@ -4093,6 +5043,44 @@
       "hasTextColor": false
     },
     "title": "DaVinci Resolve"
+  },
+  {
+    "color": "#F8F8F5",
+    "desc": "https://www.dazn.com",
+    "docsUrl": "dazn",
+    "fullTitle": "DAZN",
+    "group": "service",
+    "id": "DAZN",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DAZN"
+  },
+  {
+    "color": "#382923",
+    "desc": "https://dbeaver.io",
+    "docsUrl": "d-beaver",
+    "fullTitle": "DBeaver",
+    "group": "service",
+    "id": "DBeaver",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DBeaver"
   },
   {
     "color": "#EE3D2C",
@@ -4150,6 +5138,25 @@
       "hasTextColor": false
     },
     "title": "Deep Cogito"
+  },
+  {
+    "color": "#007CFF",
+    "desc": "https://www.deepin.org",
+    "docsUrl": "deepin",
+    "fullTitle": "deepin",
+    "group": "service",
+    "id": "Deepin",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "deepin"
   },
   {
     "color": "#fff",
@@ -4342,6 +5349,25 @@
     "title": "Dependabot"
   },
   {
+    "color": "#05CC47",
+    "desc": "https://www.deviantart.com",
+    "docsUrl": "deviant-art",
+    "fullTitle": "DeviantArt",
+    "group": "service",
+    "id": "DeviantArt",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DeviantArt"
+  },
+  {
     "color": "#fff",
     "desc": "https://devin.ai",
     "docsUrl": "devin",
@@ -4361,6 +5387,25 @@
     "title": "Devin"
   },
   {
+    "color": "#003E54",
+    "desc": "https://devpost.com",
+    "docsUrl": "devpost",
+    "fullTitle": "Devpost",
+    "group": "service",
+    "id": "Devpost",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Devpost"
+  },
+  {
     "color": "#0A0A0A",
     "desc": "https://dev.to",
     "docsUrl": "dev-to",
@@ -4378,6 +5423,44 @@
       "hasTextColor": false
     },
     "title": "dev.to"
+  },
+  {
+    "color": "#FFCC00",
+    "desc": "https://www.dhl.com",
+    "docsUrl": "dhl",
+    "fullTitle": "DHL",
+    "group": "service",
+    "id": "DHL",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DHL"
+  },
+  {
+    "color": "#FF6633",
+    "desc": "https://www.dianping.com",
+    "docsUrl": "dianping",
+    "fullTitle": "Dazhong Dianping",
+    "group": "service",
+    "id": "Dianping",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dazhong Dianping"
   },
   {
     "color": "#03F",
@@ -4454,6 +5537,25 @@
       "hasTextColor": false
     },
     "title": "Directus"
+  },
+  {
+    "color": "#333333",
+    "desc": "https://www.discogs.com",
+    "docsUrl": "discogs",
+    "fullTitle": "Discogs",
+    "group": "service",
+    "id": "Discogs",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Discogs"
   },
   {
     "color": "#5865F2",
@@ -4646,6 +5748,25 @@
     "title": "DoorDash"
   },
   {
+    "color": "#BF2E1A",
+    "desc": "https://www.dota2.com",
+    "docsUrl": "dota2",
+    "fullTitle": "Dota 2",
+    "group": "service",
+    "id": "Dota2",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dota 2"
+  },
+  {
     "color": "#512BD4",
     "desc": "https://dotnet.microsoft.com",
     "docsUrl": "dot-net",
@@ -4798,6 +5919,25 @@
     "title": "Drupal"
   },
   {
+    "color": "#CC0000",
+    "desc": "https://www.ducati.com",
+    "docsUrl": "ducati",
+    "fullTitle": "Ducati",
+    "group": "service",
+    "id": "Ducati",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ducati"
+  },
+  {
     "color": "#FFF000",
     "desc": "https://duckdb.org",
     "docsUrl": "duck-db",
@@ -4853,6 +5993,25 @@
       "hasTextColor": false
     },
     "title": "Duolingo"
+  },
+  {
+    "color": "#1496FF",
+    "desc": "https://www.dynatrace.com",
+    "docsUrl": "dynatrace",
+    "fullTitle": "Dynatrace",
+    "group": "service",
+    "id": "Dynatrace",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dynatrace"
   },
   {
     "color": "#000000",
@@ -4932,6 +6091,25 @@
   },
   {
     "color": "#005571",
+    "desc": "https://www.elastic.co",
+    "docsUrl": "elastic",
+    "fullTitle": "Elastic",
+    "group": "service",
+    "id": "Elastic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Elastic"
+  },
+  {
+    "color": "#005571",
     "desc": "https://www.elastic.co/elasticsearch",
     "docsUrl": "elasticsearch",
     "fullTitle": "Elasticsearch",
@@ -5007,6 +6185,25 @@
     "title": "ElevenLabs"
   },
   {
+    "color": "#222222",
+    "desc": "https://www.11ty.dev",
+    "docsUrl": "eleventy",
+    "fullTitle": "Eleventy",
+    "group": "service",
+    "id": "Eleventy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Eleventy"
+  },
+  {
     "color": "#fff",
     "desc": "https://11x.ai",
     "docsUrl": "eleven-x",
@@ -5026,6 +6223,25 @@
     "title": "11x"
   },
   {
+    "color": "#101010",
+    "desc": "https://www.elgato.com",
+    "docsUrl": "elgato",
+    "fullTitle": "Elgato",
+    "group": "service",
+    "id": "Elgato",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Elgato"
+  },
+  {
     "color": "#4B275F",
     "desc": "https://elixir-lang.org",
     "docsUrl": "elixir",
@@ -5043,6 +6259,25 @@
       "hasTextColor": false
     },
     "title": "Elixir"
+  },
+  {
+    "color": "#E04E39",
+    "desc": "https://emberjs.com",
+    "docsUrl": "ember-js",
+    "fullTitle": "Ember.js",
+    "group": "service",
+    "id": "EmberJS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ember.js"
   },
   {
     "color": "#D71921",
@@ -5217,6 +6452,25 @@
     "title": "Essential AI"
   },
   {
+    "color": "#419EDA",
+    "desc": "https://etcd.io",
+    "docsUrl": "etcd",
+    "fullTitle": "etcd",
+    "group": "service",
+    "id": "Etcd",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "etcd"
+  },
+  {
     "color": "#3C3C3D",
     "desc": "https://ethereum.org",
     "docsUrl": "ethereum",
@@ -5312,6 +6566,44 @@
     "title": "Exa"
   },
   {
+    "color": "#6965DB",
+    "desc": "https://excalidraw.com",
+    "docsUrl": "excalidraw",
+    "fullTitle": "Excalidraw",
+    "group": "service",
+    "id": "Excalidraw",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Excalidraw"
+  },
+  {
+    "color": "#009CAB",
+    "desc": "https://exercism.org",
+    "docsUrl": "exercism",
+    "fullTitle": "Exercism",
+    "group": "service",
+    "id": "Exercism",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Exercism"
+  },
+  {
     "color": "#191E3B",
     "desc": "https://www.expedia.com",
     "docsUrl": "expedia",
@@ -5329,6 +6621,25 @@
       "hasTextColor": false
     },
     "title": "Expedia"
+  },
+  {
+    "color": "#1C2024",
+    "desc": "https://expo.dev",
+    "docsUrl": "expo",
+    "fullTitle": "Expo",
+    "group": "service",
+    "id": "Expo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Expo"
   },
   {
     "color": "#0A0A0A",
@@ -5407,6 +6718,25 @@
     "title": "Fal"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.farfetch.com",
+    "docsUrl": "farfetch",
+    "fullTitle": "FARFETCH",
+    "group": "service",
+    "id": "Farfetch",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "FARFETCH"
+  },
+  {
     "color": "#009688",
     "desc": "https://fastapi.tiangolo.com",
     "docsUrl": "fast-api",
@@ -5443,6 +6773,44 @@
       "hasTextColor": false
     },
     "title": "FastGPT"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://fastify.dev",
+    "docsUrl": "fastify",
+    "fullTitle": "Fastify",
+    "group": "service",
+    "id": "Fastify",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fastify"
+  },
+  {
+    "color": "#00F200",
+    "desc": "https://fastlane.tools",
+    "docsUrl": "fastlane",
+    "fullTitle": "Fastlane",
+    "group": "service",
+    "id": "Fastlane",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fastlane"
   },
   {
     "color": "#FF282D",
@@ -5483,6 +6851,25 @@
     "title": "featherless.ai"
   },
   {
+    "color": "#4D148C",
+    "desc": "https://www.fedex.com",
+    "docsUrl": "fed-ex",
+    "fullTitle": "FedEx",
+    "group": "service",
+    "id": "FedEx",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "FedEx"
+  },
+  {
     "color": "#D40000",
     "desc": "https://www.ferrari.com",
     "docsUrl": "ferrari",
@@ -5502,6 +6889,44 @@
     "title": "Ferrari"
   },
   {
+    "color": "#007808",
+    "desc": "https://ffmpeg.org",
+    "docsUrl": "f-fmpeg",
+    "fullTitle": "FFmpeg",
+    "group": "service",
+    "id": "FFmpeg",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "FFmpeg"
+  },
+  {
+    "color": "#941711",
+    "desc": "https://www.fiat.com",
+    "docsUrl": "fiat",
+    "fullTitle": "Fiat",
+    "group": "service",
+    "id": "Fiat",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fiat"
+  },
+  {
     "color": "#000",
     "desc": "https://figma.com",
     "docsUrl": "figma",
@@ -5519,6 +6944,25 @@
       "hasTextColor": false
     },
     "title": "Figma"
+  },
+  {
+    "color": "#BF0000",
+    "desc": "https://filezilla-project.org",
+    "docsUrl": "file-zilla",
+    "fullTitle": "FileZilla",
+    "group": "service",
+    "id": "FileZilla",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "FileZilla"
   },
   {
     "color": "#DD2C00",
@@ -5635,6 +7079,25 @@
     "title": "Fitbit"
   },
   {
+    "color": "#1DBF73",
+    "desc": "https://www.fiverr.com",
+    "docsUrl": "fiverr",
+    "fullTitle": "Fiverr",
+    "group": "service",
+    "id": "Fiverr",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fiverr"
+  },
+  {
     "color": "#3BABC3",
     "desc": "https://flask.palletsprojects.com",
     "docsUrl": "flask",
@@ -5671,6 +7134,25 @@
       "hasTextColor": false
     },
     "title": "Flickr"
+  },
+  {
+    "color": "#19315B",
+    "desc": "https://www.flightaware.com",
+    "docsUrl": "flight-aware",
+    "fullTitle": "Flightaware",
+    "group": "service",
+    "id": "FlightAware",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Flightaware"
   },
   {
     "color": "#000",
@@ -5806,6 +7288,44 @@
     "title": "Ford"
   },
   {
+    "color": "#EE3124",
+    "desc": "https://www.fortinet.com",
+    "docsUrl": "fortinet",
+    "fullTitle": "Fortinet",
+    "group": "service",
+    "id": "Fortinet",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fortinet"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.fortnite.com",
+    "docsUrl": "fortnite",
+    "fullTitle": "Fortnite",
+    "group": "service",
+    "id": "Fortnite",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fortnite"
+  },
+  {
     "color": "#0055FF",
     "desc": "https://www.framer.com",
     "docsUrl": "framer",
@@ -5842,6 +7362,25 @@
       "hasTextColor": false
     },
     "title": "FreeBSD"
+  },
+  {
+    "color": "#1273EB",
+    "desc": "https://www.freepik.com",
+    "docsUrl": "freepik",
+    "fullTitle": "Freepik",
+    "group": "service",
+    "id": "Freepik",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Freepik"
   },
   {
     "color": "#101723",
@@ -5920,6 +7459,44 @@
     "title": "Garmin"
   },
   {
+    "color": "#663399",
+    "desc": "https://www.gatsbyjs.com",
+    "docsUrl": "gatsby",
+    "fullTitle": "Gatsby",
+    "group": "service",
+    "id": "Gatsby",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Gatsby"
+  },
+  {
+    "color": "#2F8D46",
+    "desc": "https://www.geeksforgeeks.org",
+    "docsUrl": "geeksfor-geeks",
+    "fullTitle": "GeeksforGeeks",
+    "group": "service",
+    "id": "GeeksforGeeks",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GeeksforGeeks"
+  },
+  {
     "color": "#fff",
     "desc": "https://deepmind.google/technologies/gemini",
     "docsUrl": "gemini",
@@ -5978,6 +7555,25 @@
     "title": "Gemma"
   },
   {
+    "color": "#FFFF64",
+    "desc": "https://genius.com",
+    "docsUrl": "genius",
+    "fullTitle": "Genius",
+    "group": "service",
+    "id": "Genius",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Genius"
+  },
+  {
     "color": "#15171A",
     "desc": "https://ghost.org",
     "docsUrl": "ghost",
@@ -5997,6 +7593,25 @@
     "title": "Ghost"
   },
   {
+    "color": "#FF6666",
+    "desc": "https://giphy.com",
+    "docsUrl": "giphy",
+    "fullTitle": "GIPHY",
+    "group": "service",
+    "id": "Giphy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GIPHY"
+  },
+  {
     "color": "#F03C2E",
     "desc": "https://git-scm.com",
     "docsUrl": "git",
@@ -6014,6 +7629,25 @@
       "hasTextColor": false
     },
     "title": "Git"
+  },
+  {
+    "color": "#BBDDE5",
+    "desc": "https://www.gitbook.com",
+    "docsUrl": "git-book",
+    "fullTitle": "GitBook",
+    "group": "service",
+    "id": "GitBook",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GitBook"
   },
   {
     "color": "#609926",
@@ -6168,6 +7802,25 @@
     "title": "GitLab"
   },
   {
+    "color": "#FFAE33",
+    "desc": "https://www.gitpod.io",
+    "docsUrl": "gitpod",
+    "fullTitle": "Gitpod",
+    "group": "service",
+    "id": "Gitpod",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Gitpod"
+  },
+  {
     "color": "#000",
     "desc": "https://glama.ai",
     "docsUrl": "glama",
@@ -6187,6 +7840,25 @@
     "title": "Glama"
   },
   {
+    "color": "#00A162",
+    "desc": "https://www.glassdoor.com",
+    "docsUrl": "glassdoor",
+    "fullTitle": "Glassdoor",
+    "group": "service",
+    "id": "Glassdoor",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Glassdoor"
+  },
+  {
     "color": "#000",
     "desc": "https://glif.app",
     "docsUrl": "glif",
@@ -6204,6 +7876,25 @@
       "hasTextColor": false
     },
     "title": "Glif"
+  },
+  {
+    "color": "#3333FF",
+    "desc": "https://glitch.com",
+    "docsUrl": "glitch",
+    "fullTitle": "Glitch",
+    "group": "service",
+    "id": "Glitch",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Glitch"
   },
   {
     "color": "#0039C6",
@@ -6263,6 +7954,25 @@
     "title": "Gmail"
   },
   {
+    "color": "#4A86CF",
+    "desc": "https://www.gnome.org",
+    "docsUrl": "gnome",
+    "fullTitle": "GNOME",
+    "group": "service",
+    "id": "GNOME",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GNOME"
+  },
+  {
     "color": "#00ADD8",
     "desc": "https://go.dev",
     "docsUrl": "go",
@@ -6320,6 +8030,25 @@
     "title": "Godot"
   },
   {
+    "color": "#00B964",
+    "desc": "https://www.gofundme.com",
+    "docsUrl": "go-fund-me",
+    "fullTitle": "GoFundMe",
+    "group": "service",
+    "id": "GoFundMe",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GoFundMe"
+  },
+  {
     "color": "#86328A",
     "desc": "https://www.gog.com",
     "docsUrl": "gog",
@@ -6337,6 +8066,25 @@
       "hasTextColor": false
     },
     "title": "GOG.com"
+  },
+  {
+    "color": "#00AA13",
+    "desc": "https://www.gojek.com",
+    "docsUrl": "gojek",
+    "fullTitle": "Gojek",
+    "group": "service",
+    "id": "Gojek",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Gojek"
   },
   {
     "color": "#000000",
@@ -6415,6 +8163,63 @@
     "title": "Google"
   },
   {
+    "color": "#EA4335",
+    "desc": "https://admob.google.com",
+    "docsUrl": "google-ad-mob",
+    "fullTitle": "Google AdMob",
+    "group": "service",
+    "id": "GoogleAdMob",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google AdMob"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://ads.google.com",
+    "docsUrl": "google-ads",
+    "fullTitle": "Google Ads",
+    "group": "service",
+    "id": "GoogleAds",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Ads"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://adsense.google.com",
+    "docsUrl": "google-ad-sense",
+    "fullTitle": "Google AdSense",
+    "group": "service",
+    "id": "GoogleAdSense",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google AdSense"
+  },
+  {
     "color": "#E37400",
     "desc": "https://marketingplatform.google.com/about/analytics",
     "docsUrl": "google-analytics",
@@ -6435,6 +8240,63 @@
   },
   {
     "color": "#4285F4",
+    "desc": "https://assistant.google.com",
+    "docsUrl": "google-assistant",
+    "fullTitle": "Google Assistant",
+    "group": "service",
+    "id": "GoogleAssistant",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Assistant"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://support.google.com/accounts/answer/1066447",
+    "docsUrl": "google-authenticator",
+    "fullTitle": "Google Authenticator",
+    "group": "service",
+    "id": "GoogleAuthenticator",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Authenticator"
+  },
+  {
+    "color": "#669DF6",
+    "desc": "https://cloud.google.com/bigquery",
+    "docsUrl": "google-big-query",
+    "fullTitle": "Google BigQuery",
+    "group": "service",
+    "id": "GoogleBigQuery",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google BigQuery"
+  },
+  {
+    "color": "#4285F4",
     "desc": "https://calendar.google.com",
     "docsUrl": "google-calendar",
     "fullTitle": "Google Calendar",
@@ -6451,6 +8313,25 @@
       "hasTextColor": false
     },
     "title": "Google Calendar"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://www.google.com/cast",
+    "docsUrl": "google-cast",
+    "fullTitle": "Google Cast",
+    "group": "service",
+    "id": "GoogleCast",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Cast"
   },
   {
     "color": "#34A853",
@@ -6548,6 +8429,82 @@
     "title": "Google Drive"
   },
   {
+    "color": "#4285F4",
+    "desc": "https://earth.google.com",
+    "docsUrl": "google-earth",
+    "fullTitle": "Google Earth",
+    "group": "service",
+    "id": "GoogleEarth",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Earth"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://fonts.google.com",
+    "docsUrl": "google-fonts",
+    "fullTitle": "Google Fonts",
+    "group": "service",
+    "id": "GoogleFonts",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Fonts"
+  },
+  {
+    "color": "#7248B9",
+    "desc": "https://forms.google.com",
+    "docsUrl": "google-forms",
+    "fullTitle": "Google Forms",
+    "group": "service",
+    "id": "GoogleForms",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Forms"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://home.google.com",
+    "docsUrl": "google-home",
+    "fullTitle": "Google Home",
+    "group": "service",
+    "id": "GoogleHome",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Home"
+  },
+  {
     "color": "#FFBB00",
     "desc": "https://keep.google.com",
     "docsUrl": "google-keep",
@@ -6565,6 +8522,25 @@
       "hasTextColor": false
     },
     "title": "Google Keep"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://lens.google",
+    "docsUrl": "google-lens",
+    "fullTitle": "Google Lens",
+    "group": "service",
+    "id": "GoogleLens",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Lens"
   },
   {
     "color": "#4285F4",
@@ -6605,6 +8581,44 @@
     "title": "Google Meet"
   },
   {
+    "color": "#1A73E8",
+    "desc": "https://messages.google.com",
+    "docsUrl": "google-messages",
+    "fullTitle": "Google Messages",
+    "group": "service",
+    "id": "GoogleMessages",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Messages"
+  },
+  {
+    "color": "#174EA6",
+    "desc": "https://news.google.com",
+    "docsUrl": "google-news",
+    "fullTitle": "Google News",
+    "group": "service",
+    "id": "GoogleNews",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google News"
+  },
+  {
     "color": "#4285F4",
     "desc": "https://pay.google.com",
     "docsUrl": "google-pay",
@@ -6622,6 +8636,25 @@
       "hasTextColor": false
     },
     "title": "Google Pay"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://photos.google.com",
+    "docsUrl": "google-photos",
+    "fullTitle": "Google Photos",
+    "group": "service",
+    "id": "GooglePhotos",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Photos"
   },
   {
     "color": "#414141",
@@ -6643,6 +8676,44 @@
     "title": "Google Play"
   },
   {
+    "color": "#4285F4",
+    "desc": "https://scholar.google.com",
+    "docsUrl": "google-scholar",
+    "fullTitle": "Google Scholar",
+    "group": "service",
+    "id": "GoogleScholar",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Scholar"
+  },
+  {
+    "color": "#458CF5",
+    "desc": "https://search.google.com/search-console",
+    "docsUrl": "google-search-console",
+    "fullTitle": "Google Search Console",
+    "group": "service",
+    "id": "GoogleSearchConsole",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Search Console"
+  },
+  {
     "color": "#34A853",
     "desc": "https://sheets.google.com",
     "docsUrl": "google-sheets",
@@ -6662,6 +8733,44 @@
     "title": "Google Sheets"
   },
   {
+    "color": "#FBBC04",
+    "desc": "https://slides.google.com",
+    "docsUrl": "google-slides",
+    "fullTitle": "Google Slides",
+    "group": "service",
+    "id": "GoogleSlides",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Slides"
+  },
+  {
+    "color": "#246FDB",
+    "desc": "https://tagmanager.google.com",
+    "docsUrl": "google-tag-manager",
+    "fullTitle": "Google Tag Manager",
+    "group": "service",
+    "id": "GoogleTagManager",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Tag Manager"
+  },
+  {
     "color": "#2684FC",
     "desc": "https://tasks.google.com",
     "docsUrl": "google-tasks",
@@ -6679,6 +8788,44 @@
       "hasTextColor": false
     },
     "title": "Google Tasks"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://translate.google.com",
+    "docsUrl": "google-translate",
+    "fullTitle": "Google Translate",
+    "group": "service",
+    "id": "GoogleTranslate",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Translate"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://tv.google",
+    "docsUrl": "google-tv",
+    "fullTitle": "Google TV",
+    "group": "service",
+    "id": "GoogleTV",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google TV"
   },
   {
     "color": "#fff",
@@ -6795,6 +8942,25 @@
     "title": "Grammarly"
   },
   {
+    "color": "#0053A3",
+    "desc": "https://grapheneos.org",
+    "docsUrl": "graphene-os",
+    "fullTitle": "GrapheneOS",
+    "group": "service",
+    "id": "GrapheneOS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GrapheneOS"
+  },
+  {
     "color": "#E10098",
     "desc": "https://graphql.org",
     "docsUrl": "graph-ql",
@@ -6871,6 +9037,63 @@
     "title": "Groq"
   },
   {
+    "color": "#CF4647",
+    "desc": "https://gulpjs.com",
+    "docsUrl": "gulp",
+    "fullTitle": "gulp",
+    "group": "service",
+    "id": "Gulp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "gulp"
+  },
+  {
+    "color": "#FF90E8",
+    "desc": "https://gumroad.com",
+    "docsUrl": "gumroad",
+    "fullTitle": "Gumroad",
+    "group": "service",
+    "id": "Gumroad",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Gumroad"
+  },
+  {
+    "color": "#494649",
+    "desc": "https://www.hackerone.com",
+    "docsUrl": "hacker-one",
+    "fullTitle": "HackerOne",
+    "group": "service",
+    "id": "HackerOne",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "HackerOne"
+  },
+  {
     "color": "#00EA64",
     "desc": "https://www.hackerrank.com",
     "docsUrl": "hacker-rank",
@@ -6888,6 +9111,25 @@
       "hasTextColor": false
     },
     "title": "HackerRank"
+  },
+  {
+    "color": "#9FEF00",
+    "desc": "https://www.hackthebox.com",
+    "docsUrl": "hack-the-box",
+    "fullTitle": "Hack The Box",
+    "group": "service",
+    "id": "HackTheBox",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Hack The Box"
   },
   {
     "color": "#fff",
@@ -7138,6 +9380,25 @@
     "title": "Hetzner"
   },
   {
+    "color": "#0E83CD",
+    "desc": "https://hexo.io",
+    "docsUrl": "hexo",
+    "fullTitle": "Hexo",
+    "group": "service",
+    "id": "Hexo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Hexo"
+  },
+  {
     "color": "#3E5CF4",
     "colorGradient": "linear-gradient(to bottom, #0418FF,  #1E8CFE)",
     "desc": "https://higress.cn/",
@@ -7196,6 +9457,25 @@
     "title": "Hitachi"
   },
   {
+    "color": "#18BCF2",
+    "desc": "https://www.home-assistant.io",
+    "docsUrl": "home-assistant",
+    "fullTitle": "Home Assistant",
+    "group": "service",
+    "id": "HomeAssistant",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Home Assistant"
+  },
+  {
     "color": "#FBB040",
     "desc": "https://brew.sh",
     "docsUrl": "homebrew",
@@ -7251,6 +9531,25 @@
       "hasTextColor": false
     },
     "title": "Hono"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.honor.com",
+    "docsUrl": "honor",
+    "fullTitle": "Honor",
+    "group": "service",
+    "id": "Honor",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Honor"
   },
   {
     "color": "#673DE6",
@@ -7443,6 +9742,25 @@
     "title": "HuggingFace"
   },
   {
+    "color": "#FF4088",
+    "desc": "https://gohugo.io",
+    "docsUrl": "hugo",
+    "fullTitle": "Hugo",
+    "group": "service",
+    "id": "Hugo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Hugo"
+  },
+  {
     "color": "#CC2929",
     "desc": "https://www.humblebundle.com",
     "docsUrl": "humble-bundle",
@@ -7614,6 +9932,25 @@
     "title": "IFTTT"
   },
   {
+    "color": "#BF1313",
+    "desc": "https://www.ign.com",
+    "docsUrl": "ign",
+    "fullTitle": "IGN",
+    "group": "service",
+    "id": "IGN",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "IGN"
+  },
+  {
     "color": "#0058A3",
     "desc": "https://www.ikea.com",
     "docsUrl": "ikea",
@@ -7652,6 +9989,63 @@
     "title": "IMDb"
   },
   {
+    "color": "#34DA50",
+    "desc": "https://support.apple.com/messages",
+    "docsUrl": "i-message",
+    "fullTitle": "iMessage",
+    "group": "service",
+    "id": "IMessage",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "iMessage"
+  },
+  {
+    "color": "#1BB76E",
+    "desc": "https://imgur.com",
+    "docsUrl": "imgur",
+    "fullTitle": "Imgur",
+    "group": "service",
+    "id": "Imgur",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Imgur"
+  },
+  {
+    "color": "#4250AF",
+    "desc": "https://immich.app",
+    "docsUrl": "immich",
+    "fullTitle": "Immich",
+    "group": "service",
+    "id": "Immich",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Immich"
+  },
+  {
     "color": "#fff",
     "desc": "https://inceptionlabs.ai",
     "docsUrl": "inception",
@@ -7669,6 +10063,25 @@
       "hasTextColor": false
     },
     "title": "Inception"
+  },
+  {
+    "color": "#003A9B",
+    "desc": "https://www.indeed.com",
+    "docsUrl": "indeed",
+    "fullTitle": "Indeed",
+    "group": "service",
+    "id": "Indeed",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Indeed"
   },
   {
     "color": "#000",
@@ -7764,6 +10177,25 @@
       "hasTextColor": false
     },
     "title": "InfluxDB"
+  },
+  {
+    "color": "#007CC3",
+    "desc": "https://www.infosys.com",
+    "docsUrl": "infosys",
+    "fullTitle": "Infosys",
+    "group": "service",
+    "id": "Infosys",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Infosys"
   },
   {
     "color": "#4000BF",
@@ -7918,6 +10350,44 @@
     "title": "InternLM"
   },
   {
+    "color": "#236CFF",
+    "desc": "https://www.intuit.com",
+    "docsUrl": "intuit",
+    "fullTitle": "Intuit",
+    "group": "service",
+    "id": "Intuit",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Intuit"
+  },
+  {
+    "color": "#3880FF",
+    "desc": "https://ionicframework.com",
+    "docsUrl": "ionic",
+    "fullTitle": "Ionic",
+    "group": "service",
+    "id": "Ionic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ionic"
+  },
+  {
     "color": "#003D8F",
     "desc": "https://www.ionos.com",
     "docsUrl": "ionos",
@@ -8013,6 +10483,25 @@
     "title": "iTerm2"
   },
   {
+    "color": "#FB5BC5",
+    "desc": "https://www.apple.com/itunes",
+    "docsUrl": "i-tunes",
+    "fullTitle": "iTunes",
+    "group": "service",
+    "id": "ITunes",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "iTunes"
+  },
+  {
     "color": "#66CFE3",
     "desc": "https://www.jaegertracing.io",
     "docsUrl": "jaeger",
@@ -8030,6 +10519,25 @@
       "hasTextColor": false
     },
     "title": "Jaeger"
+  },
+  {
+    "color": "#C00000",
+    "desc": "https://www.jal.co.jp",
+    "docsUrl": "japan-airlines",
+    "fullTitle": "Japan Airlines",
+    "group": "service",
+    "id": "JapanAirlines",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Japan Airlines"
   },
   {
     "color": "#F7DF1E",
@@ -8108,6 +10616,25 @@
     "title": "Jeep"
   },
   {
+    "color": "#CC0000",
+    "desc": "https://jekyllrb.com",
+    "docsUrl": "jekyll",
+    "fullTitle": "Jekyll",
+    "group": "service",
+    "id": "Jekyll",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Jekyll"
+  },
+  {
     "color": "#00A4DC",
     "desc": "https://jellyfin.org",
     "docsUrl": "jellyfin",
@@ -8163,6 +10690,25 @@
       "hasTextColor": false
     },
     "title": "JetBrains"
+  },
+  {
+    "color": "#40BE46",
+    "desc": "https://jfrog.com",
+    "docsUrl": "j-frog",
+    "fullTitle": "JFrog",
+    "group": "service",
+    "id": "JFrog",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "JFrog"
   },
   {
     "color": "#000",
@@ -8222,6 +10768,25 @@
     "title": "Jira"
   },
   {
+    "color": "#97979A",
+    "desc": "https://jitsi.org",
+    "docsUrl": "jitsi",
+    "fullTitle": "Jitsi",
+    "group": "service",
+    "id": "Jitsi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Jitsi"
+  },
+  {
     "color": "#5091CD",
     "desc": "https://www.joomla.org",
     "docsUrl": "joomla",
@@ -8277,6 +10842,44 @@
       "hasTextColor": false
     },
     "title": "jQuery"
+  },
+  {
+    "color": "#E84D3D",
+    "desc": "https://www.jsdelivr.com",
+    "docsUrl": "js-delivr",
+    "fullTitle": "jsDelivr",
+    "group": "service",
+    "id": "JsDelivr",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "jsDelivr"
+  },
+  {
+    "color": "#0084FF",
+    "desc": "https://jsfiddle.net",
+    "docsUrl": "js-fiddle",
+    "fullTitle": "JSFiddle",
+    "group": "service",
+    "id": "JSFiddle",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "JSFiddle"
   },
   {
     "color": "#000000",
@@ -8355,6 +10958,25 @@
     "title": "Junie"
   },
   {
+    "color": "#25A162",
+    "desc": "https://junit.org",
+    "docsUrl": "j-unit5",
+    "fullTitle": "JUnit5",
+    "group": "service",
+    "id": "JUnit5",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "JUnit5"
+  },
+  {
     "color": "#F37626",
     "desc": "https://jupyter.org",
     "docsUrl": "jupyter",
@@ -8412,6 +11034,25 @@
     "title": "K3s"
   },
   {
+    "color": "#7D64FF",
+    "desc": "https://k6.io",
+    "docsUrl": "k-6",
+    "fullTitle": "k6",
+    "group": "service",
+    "id": "K6",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "k6"
+  },
+  {
     "color": "#20BEFF",
     "desc": "https://www.kaggle.com",
     "docsUrl": "kaggle",
@@ -8451,6 +11092,25 @@
   },
   {
     "color": "#FFCD00",
+    "desc": "https://www.kakaocorp.com",
+    "docsUrl": "kakao",
+    "fullTitle": "Kakao",
+    "group": "service",
+    "id": "Kakao",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kakao"
+  },
+  {
+    "color": "#FFCD00",
     "desc": "https://www.kakaocorp.com/page/service/service/KakaoTalk",
     "docsUrl": "kakao-talk",
     "fullTitle": "KakaoTalk",
@@ -8486,6 +11146,44 @@
       "hasTextColor": false
     },
     "title": "Kali Linux"
+  },
+  {
+    "color": "#006D5C",
+    "desc": "https://www.kaspersky.com",
+    "docsUrl": "kaspersky",
+    "fullTitle": "Kaspersky",
+    "group": "service",
+    "id": "Kaspersky",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kaspersky"
+  },
+  {
+    "color": "#1D99F3",
+    "desc": "https://kde.org",
+    "docsUrl": "kde",
+    "fullTitle": "KDE",
+    "group": "service",
+    "id": "KDE",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "KDE"
   },
   {
     "color": "#6CAC4D",
@@ -8621,6 +11319,25 @@
     "title": "Kick"
   },
   {
+    "color": "#05CE78",
+    "desc": "https://www.kickstarter.com",
+    "docsUrl": "kickstarter",
+    "fullTitle": "Kickstarter",
+    "group": "service",
+    "id": "Kickstarter",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kickstarter"
+  },
+  {
     "color": "#F8F676",
     "desc": "https://kilo.ai",
     "docsUrl": "kilo-code",
@@ -8717,6 +11434,25 @@
     "title": "Kling"
   },
   {
+    "color": "#00A1DE",
+    "desc": "https://www.klm.com",
+    "docsUrl": "klm",
+    "fullTitle": "KLM",
+    "group": "service",
+    "id": "KLM",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "KLM"
+  },
+  {
     "color": "#6525F7",
     "desc": "https://kluster.ai",
     "docsUrl": "kluster",
@@ -8774,6 +11510,25 @@
     "title": "Kodi"
   },
   {
+    "color": "#FF6433",
+    "desc": "https://ko-fi.com",
+    "docsUrl": "ko-fi",
+    "fullTitle": "Ko-fi",
+    "group": "service",
+    "id": "KoFi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ko-fi"
+  },
+  {
     "color": "#83FF63",
     "colorGradient": "radial-gradient(#CBFF00,#7EF426)",
     "desc": "https://kolors.kuaishou.com",
@@ -8811,6 +11566,25 @@
       "hasTextColor": false
     },
     "title": "Kotlin"
+  },
+  {
+    "color": "#121212",
+    "desc": "https://www.koyeb.com",
+    "docsUrl": "koyeb",
+    "fullTitle": "Koyeb",
+    "group": "service",
+    "id": "Koyeb",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Koyeb"
   },
   {
     "color": "#000",
@@ -9155,6 +11929,44 @@
     "title": "LeetCode"
   },
   {
+    "color": "#E20612",
+    "desc": "https://leica-camera.com",
+    "docsUrl": "leica",
+    "fullTitle": "Leica",
+    "group": "service",
+    "id": "Leica",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Leica"
+  },
+  {
+    "color": "#FFC233",
+    "desc": "https://www.lemonsqueezy.com",
+    "docsUrl": "lemon-squeezy",
+    "fullTitle": "Lemon Squeezy",
+    "group": "service",
+    "id": "LemonSqueezy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lemon Squeezy"
+  },
+  {
     "color": "#E2231A",
     "desc": "https://www.lenovo.com",
     "docsUrl": "lenovo",
@@ -9191,6 +12003,25 @@
       "hasTextColor": false
     },
     "title": "LeptonAI"
+  },
+  {
+    "color": "#C084FC",
+    "desc": "https://lerna.js.org",
+    "docsUrl": "lerna",
+    "fullTitle": "Lerna",
+    "group": "service",
+    "id": "Lerna",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lerna"
   },
   {
     "color": "#1D365D",
@@ -9250,6 +12081,25 @@
     "title": "LG AI"
   },
   {
+    "color": "#18A303",
+    "desc": "https://www.libreoffice.org",
+    "docsUrl": "libre-office",
+    "fullTitle": "LibreOffice",
+    "group": "service",
+    "id": "LibreOffice",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "LibreOffice"
+  },
+  {
     "color": "#000000",
     "desc": "https://lichess.org",
     "docsUrl": "lichess",
@@ -9267,6 +12117,25 @@
       "hasTextColor": false
     },
     "title": "Lichess"
+  },
+  {
+    "color": "#0050AA",
+    "desc": "https://www.lidl.com",
+    "docsUrl": "lidl",
+    "fullTitle": "Lidl",
+    "group": "service",
+    "id": "Lidl",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lidl"
   },
   {
     "color": "#000",
@@ -9307,6 +12176,25 @@
     "title": "LINE"
   },
   {
+    "color": "#167C80",
+    "desc": "https://lineageos.org",
+    "docsUrl": "lineage-os",
+    "fullTitle": "LineageOS",
+    "group": "service",
+    "id": "LineageOS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "LineageOS"
+  },
+  {
     "color": "#5E6AD2",
     "desc": "https://linear.app",
     "docsUrl": "linear",
@@ -9324,6 +12212,25 @@
       "hasTextColor": false
     },
     "title": "Linear"
+  },
+  {
+    "color": "#43E55E",
+    "desc": "https://linktr.ee",
+    "docsUrl": "linktree",
+    "fullTitle": "Linktree",
+    "group": "service",
+    "id": "Linktree",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Linktree"
   },
   {
     "color": "#FCC624",
@@ -9381,6 +12288,25 @@
       "hasTextColor": false
     },
     "title": "Liquid"
+  },
+  {
+    "color": "#324FFF",
+    "desc": "https://lit.dev",
+    "docsUrl": "lit",
+    "fullTitle": "Lit",
+    "group": "service",
+    "id": "Lit",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lit"
   },
   {
     "color": "#A6A9AA",
@@ -9479,6 +12405,25 @@
     "title": "LLM API"
   },
   {
+    "color": "#262D3A",
+    "desc": "https://llvm.org",
+    "docsUrl": "llvm",
+    "fullTitle": "LLVM",
+    "group": "service",
+    "id": "LLVM",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "LLVM"
+  },
+  {
     "color": "#4338CA",
     "colorGradient": "linear-gradient(135deg, #6C78EF, #4F14BE)",
     "desc": "https://lmstudio.ai",
@@ -9516,6 +12461,25 @@
       "hasTextColor": false
     },
     "title": "LobeHub"
+  },
+  {
+    "color": "#3492FF",
+    "desc": "https://lodash.com",
+    "docsUrl": "lodash",
+    "fullTitle": "Lodash",
+    "group": "service",
+    "id": "Lodash",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lodash"
   },
   {
     "color": "#85C8C8",
@@ -9689,6 +12653,25 @@
     "title": "Luma"
   },
   {
+    "color": "#5B9BD5",
+    "desc": "https://www.luogu.com.cn",
+    "docsUrl": "luogu",
+    "fullTitle": "Luogu",
+    "group": "service",
+    "id": "Luogu",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Luogu"
+  },
+  {
     "color": "#FF00BF",
     "desc": "https://www.lyft.com",
     "docsUrl": "lyft",
@@ -9765,6 +12748,25 @@
     "title": "MailChimp"
   },
   {
+    "color": "#F06B66",
+    "desc": "https://www.mailgun.com",
+    "docsUrl": "mailgun",
+    "fullTitle": "Mailgun",
+    "group": "service",
+    "id": "Mailgun",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mailgun"
+  },
+  {
     "color": "#ff009a",
     "desc": "https://make.com",
     "docsUrl": "make",
@@ -9782,6 +12784,25 @@
       "hasTextColor": false
     },
     "title": "Make"
+  },
+  {
+    "color": "#0D3ECC",
+    "desc": "https://www.malwarebytes.com",
+    "docsUrl": "malwarebytes",
+    "fullTitle": "Malwarebytes",
+    "group": "service",
+    "id": "Malwarebytes",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Malwarebytes"
   },
   {
     "color": "#35BFA4",
@@ -9896,6 +12917,25 @@
       "hasTextColor": false
     },
     "title": "Marriott"
+  },
+  {
+    "color": "#0C2340",
+    "desc": "https://www.maserati.com",
+    "docsUrl": "maserati",
+    "fullTitle": "Maserati",
+    "group": "service",
+    "id": "Maserati",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Maserati"
   },
   {
     "color": "#EB001B",
@@ -10069,6 +13109,25 @@
     "title": "McDonald's"
   },
   {
+    "color": "#FF0000",
+    "desc": "https://www.mclaren.com",
+    "docsUrl": "mc-laren",
+    "fullTitle": "McLaren",
+    "group": "service",
+    "id": "McLaren",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "McLaren"
+  },
+  {
     "color": "#FFF",
     "desc": "https://modelcontextprotocol.io",
     "docsUrl": "mcp",
@@ -10105,6 +13164,25 @@
       "hasTextColor": false
     },
     "title": "MCP.so"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://developer.mozilla.org",
+    "docsUrl": "mdn-web-docs",
+    "fullTitle": "MDN Web Docs",
+    "group": "service",
+    "id": "MDNWebDocs",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MDN Web Docs"
   },
   {
     "color": "#1B1F24",
@@ -10164,6 +13242,25 @@
     "title": "Medium"
   },
   {
+    "color": "#D9272E",
+    "desc": "https://mega.io",
+    "docsUrl": "mega",
+    "fullTitle": "MEGA",
+    "group": "service",
+    "id": "MEGA",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MEGA"
+  },
+  {
     "color": "#FF5CAA",
     "desc": "https://www.meilisearch.com",
     "docsUrl": "meilisearch",
@@ -10202,6 +13299,25 @@
     "title": "Meituan"
   },
   {
+    "color": "#FF4132",
+    "desc": "https://www.meizu.com",
+    "docsUrl": "meizu",
+    "fullTitle": "Meizu",
+    "group": "service",
+    "id": "Meizu",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Meizu"
+  },
+  {
     "color": "#FF5C00",
     "desc": "https://menlo.ai",
     "docsUrl": "menlo",
@@ -10238,6 +13354,25 @@
       "hasTextColor": false
     },
     "title": "Mercado Pago"
+  },
+  {
+    "color": "#FF3670",
+    "desc": "https://mermaid.js.org",
+    "docsUrl": "mermaid",
+    "fullTitle": "Mermaid",
+    "group": "service",
+    "id": "Mermaid",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mermaid"
   },
   {
     "color": "#000",
@@ -10355,6 +13490,25 @@
     "title": "MetaGPT"
   },
   {
+    "color": "#2596CD",
+    "desc": "https://www.metasploit.com",
+    "docsUrl": "metasploit",
+    "fullTitle": "Metasploit",
+    "group": "service",
+    "id": "Metasploit",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Metasploit"
+  },
+  {
     "color": "#00A4EF",
     "desc": "https://microsoft.com",
     "docsUrl": "microsoft",
@@ -10391,6 +13545,25 @@
       "hasTextColor": false
     },
     "title": "Midjourney"
+  },
+  {
+    "color": "#4EA4DD",
+    "desc": "https://www.mihoyo.com",
+    "docsUrl": "mi-ho-yo",
+    "fullTitle": "miHoYo",
+    "group": "service",
+    "id": "MiHoYo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "miHoYo"
   },
   {
     "color": "#00A1EA",
@@ -10451,6 +13624,25 @@
     "title": "MinIO"
   },
   {
+    "color": "#18E299",
+    "desc": "https://www.mintlify.com",
+    "docsUrl": "mintlify",
+    "fullTitle": "Mintlify",
+    "group": "service",
+    "id": "Mintlify",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mintlify"
+  },
+  {
     "color": "#050038",
     "desc": "https://miro.com",
     "docsUrl": "miro",
@@ -10508,6 +13700,25 @@
     "title": "Mitsubishi"
   },
   {
+    "color": "#5000FF",
+    "desc": "https://www.mixcloud.com",
+    "docsUrl": "mixcloud",
+    "fullTitle": "Mixcloud",
+    "group": "service",
+    "id": "Mixcloud",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mixcloud"
+  },
+  {
     "color": "#7856FF",
     "desc": "https://mixpanel.com",
     "docsUrl": "mixpanel",
@@ -10525,6 +13736,25 @@
       "hasTextColor": false
     },
     "title": "Mixpanel"
+  },
+  {
+    "color": "#8D6748",
+    "desc": "https://mochajs.org",
+    "docsUrl": "mocha",
+    "fullTitle": "Mocha",
+    "group": "service",
+    "id": "Mocha",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mocha"
   },
   {
     "color": "#624AFF",
@@ -10718,6 +13948,63 @@
     "title": "Mozilla"
   },
   {
+    "color": "#660066",
+    "desc": "https://mqtt.org",
+    "docsUrl": "mqtt",
+    "fullTitle": "MQTT",
+    "group": "service",
+    "id": "MQTT",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MQTT"
+  },
+  {
+    "color": "#FF0000",
+    "desc": "https://www.msi.com",
+    "docsUrl": "msi",
+    "fullTitle": "MSI",
+    "group": "service",
+    "id": "MSI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MSI"
+  },
+  {
+    "color": "#007FFF",
+    "desc": "https://mui.com",
+    "docsUrl": "mui",
+    "fullTitle": "MUI",
+    "group": "service",
+    "id": "MUI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MUI"
+  },
+  {
     "color": "#294D73",
     "desc": "https://mullvad.net",
     "docsUrl": "mullvad",
@@ -10870,6 +14157,44 @@
     "title": "NanoBanana"
   },
   {
+    "color": "#E03C31",
+    "desc": "https://www.nasa.gov",
+    "docsUrl": "nasa",
+    "fullTitle": "NASA",
+    "group": "service",
+    "id": "NASA",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "NASA"
+  },
+  {
+    "color": "#03C75A",
+    "desc": "https://www.naver.com",
+    "docsUrl": "naver",
+    "fullTitle": "Naver",
+    "group": "service",
+    "id": "Naver",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Naver"
+  },
+  {
     "color": "#253B73",
     "desc": "https://www.nba.com",
     "docsUrl": "nba",
@@ -11003,6 +14328,25 @@
     "title": "Netflix"
   },
   {
+    "color": "#2C262D",
+    "desc": "https://www.netgear.com",
+    "docsUrl": "netgear",
+    "fullTitle": "NETGEAR",
+    "group": "service",
+    "id": "Netgear",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "NETGEAR"
+  },
+  {
     "color": "#00C7B7",
     "desc": "https://www.netlify.com",
     "docsUrl": "netlify",
@@ -11041,6 +14385,44 @@
     "title": "New API"
   },
   {
+    "color": "#CF0A2C",
+    "desc": "https://www.newbalance.com",
+    "docsUrl": "new-balance",
+    "fullTitle": "New Balance",
+    "group": "service",
+    "id": "NewBalance",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "New Balance"
+  },
+  {
+    "color": "#E05E00",
+    "desc": "https://www.newegg.com",
+    "docsUrl": "newegg",
+    "fullTitle": "Newegg",
+    "group": "service",
+    "id": "Newegg",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Newegg"
+  },
+  {
     "color": "#1CE783",
     "desc": "https://newrelic.com",
     "docsUrl": "new-relic",
@@ -11077,6 +14459,25 @@
       "hasTextColor": false
     },
     "title": "New York Times"
+  },
+  {
+    "color": "#0082C9",
+    "desc": "https://nextcloud.com",
+    "docsUrl": "nextcloud",
+    "fullTitle": "Nextcloud",
+    "group": "service",
+    "id": "Nextcloud",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Nextcloud"
   },
   {
     "color": "#8ED500",
@@ -11134,6 +14535,44 @@
       "hasTextColor": false
     },
     "title": "NGINX"
+  },
+  {
+    "color": "#1F1E37",
+    "desc": "https://ngrok.com",
+    "docsUrl": "ngrok",
+    "fullTitle": "ngrok",
+    "group": "service",
+    "id": "Ngrok",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ngrok"
+  },
+  {
+    "color": "#231815",
+    "desc": "https://www.nicovideo.jp",
+    "docsUrl": "niconico",
+    "fullTitle": "niconico",
+    "group": "service",
+    "id": "Niconico",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "niconico"
   },
   {
     "color": "#111111",
@@ -11326,6 +14765,25 @@
     "title": "NotebookLM"
   },
   {
+    "color": "#90E59A",
+    "desc": "https://notepad-plus-plus.org",
+    "docsUrl": "notepad-plus-plus",
+    "fullTitle": "Notepad++",
+    "group": "service",
+    "id": "NotepadPlusPlus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Notepad++"
+  },
+  {
     "color": "#fff",
     "desc": "https://notion.com",
     "docsUrl": "notion",
@@ -11458,6 +14916,25 @@
       "hasTextColor": false
     },
     "title": "npm"
+  },
+  {
+    "color": "#004880",
+    "desc": "https://www.nuget.org",
+    "docsUrl": "nu-get",
+    "fullTitle": "NuGet",
+    "group": "service",
+    "id": "NuGet",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "NuGet"
   },
   {
     "color": "#013243",
@@ -11593,6 +15070,25 @@
     "title": "OCaml"
   },
   {
+    "color": "#2F93E0",
+    "desc": "https://octopus.com",
+    "docsUrl": "octopus-deploy",
+    "fullTitle": "Octopus Deploy",
+    "group": "service",
+    "id": "OctopusDeploy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Octopus Deploy"
+  },
+  {
     "color": "#007DC1",
     "desc": "https://www.okta.com",
     "docsUrl": "okta",
@@ -11688,6 +15184,25 @@
     "title": "OnePlus"
   },
   {
+    "color": "#444444",
+    "desc": "https://www.onlyoffice.com",
+    "docsUrl": "only-office",
+    "fullTitle": "ONLYOFFICE",
+    "group": "service",
+    "id": "OnlyOffice",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ONLYOFFICE"
+  },
+  {
     "color": "#000",
     "desc": "https://openai.com",
     "docsUrl": "open-ai",
@@ -11705,6 +15220,25 @@
       "hasTextColor": false
     },
     "title": "OpenAI"
+  },
+  {
+    "color": "#F2CA30",
+    "desc": "https://www.openbsd.org",
+    "docsUrl": "open-bsd",
+    "fullTitle": "OpenBSD",
+    "group": "service",
+    "id": "OpenBSD",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OpenBSD"
   },
   {
     "color": "#4A7FE3",
@@ -11781,6 +15315,25 @@
       "hasTextColor": false
     },
     "title": "OpenCV"
+  },
+  {
+    "color": "#5586A4",
+    "desc": "https://www.opengl.org",
+    "docsUrl": "open-gl",
+    "fullTitle": "OpenGL",
+    "group": "service",
+    "id": "OpenGL",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OpenGL"
   },
   {
     "color": "#fff",
@@ -11954,6 +15507,25 @@
     "title": "OpenTelemetry"
   },
   {
+    "color": "#FFDA18",
+    "desc": "https://opentofu.org",
+    "docsUrl": "open-tofu",
+    "fullTitle": "OpenTofu",
+    "group": "service",
+    "id": "OpenTofu",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OpenTofu"
+  },
+  {
     "color": "#EA7E20",
     "desc": "https://openvpn.net",
     "docsUrl": "open-vpn",
@@ -11990,6 +15562,25 @@
       "hasTextColor": false
     },
     "title": "OpenWebUI"
+  },
+  {
+    "color": "#00B5E2",
+    "desc": "https://openwrt.org",
+    "docsUrl": "open-wrt",
+    "fullTitle": "OpenWrt",
+    "group": "service",
+    "id": "OpenWrt",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OpenWrt"
   },
   {
     "color": "#FF1B2D",
@@ -12030,6 +15621,25 @@
     "title": "OPPO"
   },
   {
+    "color": "#A6CE39",
+    "desc": "https://orcid.org",
+    "docsUrl": "orcid",
+    "fullTitle": "ORCID",
+    "group": "service",
+    "id": "ORCID",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ORCID"
+  },
+  {
     "color": "#47A141",
     "desc": "https://www.overleaf.com",
     "docsUrl": "overleaf",
@@ -12068,6 +15678,25 @@
     "title": "OVH"
   },
   {
+    "color": "#000000",
+    "desc": "https://owasp.org",
+    "docsUrl": "owasp",
+    "fullTitle": "OWASP",
+    "group": "service",
+    "id": "OWASP",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OWASP"
+  },
+  {
     "color": "#02A8EF",
     "desc": "https://www.packer.io",
     "docsUrl": "packer",
@@ -12085,6 +15714,25 @@
       "hasTextColor": false
     },
     "title": "Packer"
+  },
+  {
+    "color": "#FDDD35",
+    "desc": "https://www.paddle.com",
+    "docsUrl": "paddle",
+    "fullTitle": "Paddle",
+    "group": "service",
+    "id": "Paddle",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Paddle"
   },
   {
     "color": "#06AC38",
@@ -12106,6 +15754,25 @@
     "title": "PagerDuty"
   },
   {
+    "color": "#101113",
+    "desc": "https://www.palantir.com",
+    "docsUrl": "palantir",
+    "fullTitle": "Palantir",
+    "group": "service",
+    "id": "Palantir",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Palantir"
+  },
+  {
     "color": "#FFF",
     "desc": "https://ai.google/discover/palm2",
     "docsUrl": "pa-lm",
@@ -12123,6 +15790,25 @@
       "hasTextColor": false
     },
     "title": "PaLM"
+  },
+  {
+    "color": "#F04E23",
+    "desc": "https://www.paloaltonetworks.com",
+    "docsUrl": "palo-alto-networks",
+    "fullTitle": "Palo Alto Networks",
+    "group": "service",
+    "id": "PaloAltoNetworks",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Palo Alto Networks"
   },
   {
     "color": "#0049AB",
@@ -12315,6 +16001,25 @@
     "title": "Paytm"
   },
   {
+    "color": "#000000",
+    "desc": "https://penpot.app",
+    "docsUrl": "penpot",
+    "fullTitle": "Penpot",
+    "group": "service",
+    "id": "Penpot",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Penpot"
+  },
+  {
     "color": "#0073A1",
     "desc": "https://www.perl.org",
     "docsUrl": "perl",
@@ -12351,6 +16056,63 @@
       "hasTextColor": false
     },
     "title": "Perplexity"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.peugeot.com",
+    "docsUrl": "peugeot",
+    "fullTitle": "Peugeot",
+    "group": "service",
+    "id": "Peugeot",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Peugeot"
+  },
+  {
+    "color": "#05A081",
+    "desc": "https://www.pexels.com",
+    "docsUrl": "pexels",
+    "fullTitle": "Pexels",
+    "group": "service",
+    "id": "Pexels",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pexels"
+  },
+  {
+    "color": "#212121",
+    "desc": "https://www.pfsense.org",
+    "docsUrl": "pf-sense",
+    "fullTitle": "pfSense",
+    "group": "service",
+    "id": "PfSense",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "pfSense"
   },
   {
     "color": "#FF4017",
@@ -12391,6 +16153,25 @@
     "title": "phind"
   },
   {
+    "color": "#FD4F00",
+    "desc": "https://www.phoenixframework.org",
+    "docsUrl": "phoenix",
+    "fullTitle": "Phoenix Framework",
+    "group": "service",
+    "id": "Phoenix",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Phoenix Framework"
+  },
+  {
     "color": "#5F259F",
     "desc": "https://www.phonepe.com",
     "docsUrl": "phone-pe",
@@ -12410,6 +16191,25 @@
     "title": "PhonePe"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.jetbrains.com/phpstorm",
+    "docsUrl": "php-storm",
+    "fullTitle": "PhpStorm",
+    "group": "service",
+    "id": "PhpStorm",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PhpStorm"
+  },
+  {
     "color": "#000",
     "desc": "https://pi.dev",
     "docsUrl": "pi",
@@ -12427,6 +16227,25 @@
       "hasTextColor": false
     },
     "title": "Pi"
+  },
+  {
+    "color": "#96060C",
+    "desc": "https://pi-hole.net",
+    "docsUrl": "pi-hole",
+    "fullTitle": "Pi-hole",
+    "group": "service",
+    "id": "PiHole",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pi-hole"
   },
   {
     "color": "#FDF7EF",
@@ -12465,6 +16284,25 @@
       "hasTextColor": false
     },
     "title": "Pinterest"
+  },
+  {
+    "color": "#191B26",
+    "desc": "https://pixabay.com",
+    "docsUrl": "pixabay",
+    "fullTitle": "Pixabay",
+    "group": "service",
+    "id": "Pixabay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pixabay"
   },
   {
     "color": "#000",
@@ -12579,6 +16417,25 @@
       "hasTextColor": false
     },
     "title": "Plotly"
+  },
+  {
+    "color": "#F15B2A",
+    "desc": "https://www.pluralsight.com",
+    "docsUrl": "pluralsight",
+    "fullTitle": "Pluralsight",
+    "group": "service",
+    "id": "Pluralsight",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pluralsight"
   },
   {
     "color": "#F69220",
@@ -12771,6 +16628,25 @@
     "title": "Poolside"
   },
   {
+    "color": "#48B9C7",
+    "desc": "https://pop.system76.com",
+    "docsUrl": "pop-os",
+    "fullTitle": "Pop!_OS",
+    "group": "service",
+    "id": "PopOS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pop!_OS"
+  },
+  {
     "color": "#EF7878",
     "desc": "https://porkbun.com",
     "docsUrl": "porkbun",
@@ -12807,6 +16683,25 @@
       "hasTextColor": false
     },
     "title": "Porsche"
+  },
+  {
+    "color": "#13BEF9",
+    "desc": "https://www.portainer.io",
+    "docsUrl": "portainer",
+    "fullTitle": "Portainer",
+    "group": "service",
+    "id": "Portainer",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Portainer"
   },
   {
     "color": "#DD3A0A",
@@ -13075,6 +16970,25 @@
     "title": "Proton VPN"
   },
   {
+    "color": "#E57000",
+    "desc": "https://www.proxmox.com",
+    "docsUrl": "proxmox",
+    "fullTitle": "Proxmox",
+    "group": "service",
+    "id": "Proxmox",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Proxmox"
+  },
+  {
     "color": "#AC51FF",
     "desc": "https://pruna.ai",
     "docsUrl": "pruna-ai",
@@ -13092,6 +17006,63 @@
       "hasTextColor": false
     },
     "title": "PrunaAI"
+  },
+  {
+    "color": "#F4B942",
+    "desc": "https://pubg.com",
+    "docsUrl": "pubg",
+    "fullTitle": "PUBG",
+    "group": "service",
+    "id": "PUBG",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PUBG"
+  },
+  {
+    "color": "#326599",
+    "desc": "https://pubmed.ncbi.nlm.nih.gov",
+    "docsUrl": "pub-med",
+    "fullTitle": "PubMed",
+    "group": "service",
+    "id": "PubMed",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PubMed"
+  },
+  {
+    "color": "#8A3391",
+    "desc": "https://www.pulumi.com",
+    "docsUrl": "pulumi",
+    "fullTitle": "Pulumi",
+    "group": "service",
+    "id": "Pulumi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pulumi"
   },
   {
     "color": "#242B2F",
@@ -13130,6 +17101,44 @@
       "hasTextColor": false
     },
     "title": "Puppet"
+  },
+  {
+    "color": "#40B5A4",
+    "desc": "https://pptr.dev",
+    "docsUrl": "puppeteer",
+    "fullTitle": "Puppeteer",
+    "group": "service",
+    "id": "Puppeteer",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Puppeteer"
+  },
+  {
+    "color": "#300D4F",
+    "desc": "https://pusher.com",
+    "docsUrl": "pusher",
+    "fullTitle": "Pusher",
+    "group": "service",
+    "id": "Pusher",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pusher"
   },
   {
     "color": "#000000",
@@ -13284,6 +17293,25 @@
     "title": "Qdrant"
   },
   {
+    "color": "#FF6600",
+    "desc": "https://www.qemu.org",
+    "docsUrl": "qemu",
+    "fullTitle": "QEMU",
+    "group": "service",
+    "id": "QEMU",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "QEMU"
+  },
+  {
     "color": "#1041F3",
     "desc": "https://chatglm.cn",
     "docsUrl": "qingyan",
@@ -13320,6 +17348,25 @@
       "hasTextColor": false
     },
     "title": "Qiniu"
+  },
+  {
+    "color": "#0C2E82",
+    "desc": "https://www.qnap.com",
+    "docsUrl": "qnap",
+    "fullTitle": "QNAP",
+    "group": "service",
+    "id": "QNAP",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "QNAP"
   },
   {
     "color": "#fff",
@@ -13377,6 +17424,44 @@
       "hasTextColor": false
     },
     "title": "Qualcomm"
+  },
+  {
+    "color": "#4695EB",
+    "desc": "https://quarkus.io",
+    "docsUrl": "quarkus",
+    "fullTitle": "Quarkus",
+    "group": "service",
+    "id": "Quarkus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Quarkus"
+  },
+  {
+    "color": "#2CA01C",
+    "desc": "https://quickbooks.intuit.com",
+    "docsUrl": "quick-books",
+    "fullTitle": "QuickBooks",
+    "group": "service",
+    "id": "QuickBooks",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "QuickBooks"
   },
   {
     "color": "#4255FF",
@@ -13456,6 +17541,25 @@
     "title": "Qwik"
   },
   {
+    "color": "#FECE00",
+    "desc": "https://qzone.qq.com",
+    "docsUrl": "qzone",
+    "fullTitle": "Qzone",
+    "group": "service",
+    "id": "Qzone",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Qzone"
+  },
+  {
     "color": "#FF6600",
     "desc": "https://www.rabbitmq.com",
     "docsUrl": "rabbit-mq",
@@ -13473,6 +17577,25 @@
       "hasTextColor": false
     },
     "title": "RabbitMQ"
+  },
+  {
+    "color": "#161618",
+    "desc": "https://www.radix-ui.com",
+    "docsUrl": "radix-ui",
+    "fullTitle": "Radix UI",
+    "group": "service",
+    "id": "RadixUI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Radix UI"
   },
   {
     "color": "#853bce",
@@ -13628,6 +17751,63 @@
     "title": "React"
   },
   {
+    "color": "#EC5990",
+    "desc": "https://react-hook-form.com",
+    "docsUrl": "react-hook-form",
+    "fullTitle": "React Hook Form",
+    "group": "service",
+    "id": "ReactHookForm",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "React Hook Form"
+  },
+  {
+    "color": "#CA4245",
+    "desc": "https://reactrouter.com",
+    "docsUrl": "react-router",
+    "fullTitle": "React Router",
+    "group": "service",
+    "id": "ReactRouter",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "React Router"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://readthedocs.org",
+    "docsUrl": "read-the-docs",
+    "fullTitle": "Read the Docs",
+    "group": "service",
+    "id": "ReadTheDocs",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Read the Docs"
+  },
+  {
     "color": "#000",
     "desc": "https://recraft.ai",
     "docsUrl": "recraft",
@@ -13704,6 +17884,25 @@
     "title": "Redis"
   },
   {
+    "color": "#764ABC",
+    "desc": "https://redux.js.org",
+    "docsUrl": "redux",
+    "fullTitle": "Redux",
+    "group": "service",
+    "id": "Redux",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Redux"
+  },
+  {
     "color": "#000",
     "desc": "https://relace.ai",
     "docsUrl": "relace",
@@ -13740,6 +17939,25 @@
       "hasTextColor": false
     },
     "title": "Remix"
+  },
+  {
+    "color": "#FFCC33",
+    "desc": "https://www.renault.com",
+    "docsUrl": "renault",
+    "fullTitle": "Renault",
+    "group": "service",
+    "id": "Renault",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Renault"
   },
   {
     "color": "#000000",
@@ -13816,6 +18034,25 @@
       "hasTextColor": false
     },
     "title": "Replit"
+  },
+  {
+    "color": "#00CCBB",
+    "desc": "https://www.researchgate.net",
+    "docsUrl": "research-gate",
+    "fullTitle": "ResearchGate",
+    "group": "service",
+    "id": "ResearchGate",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ResearchGate"
   },
   {
     "color": "#000000",
@@ -14008,6 +18245,63 @@
     "title": "Rocket.Chat"
   },
   {
+    "color": "#FCAF17",
+    "desc": "https://www.rockstargames.com",
+    "docsUrl": "rockstar-games",
+    "fullTitle": "Rockstar Games",
+    "group": "service",
+    "id": "RockstarGames",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Rockstar Games"
+  },
+  {
+    "color": "#662D91",
+    "desc": "https://www.roku.com",
+    "docsUrl": "roku",
+    "fullTitle": "Roku",
+    "group": "service",
+    "id": "Roku",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Roku"
+  },
+  {
+    "color": "#281432",
+    "desc": "https://www.rolls-roycemotorcars.com",
+    "docsUrl": "rolls-royce",
+    "fullTitle": "Rolls-Royce",
+    "group": "service",
+    "id": "RollsRoyce",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Rolls-Royce"
+  },
+  {
     "color": "#EC4A3F",
     "desc": "https://rollupjs.org",
     "docsUrl": "rollup",
@@ -14046,6 +18340,25 @@
     "title": "RooCode"
   },
   {
+    "color": "#FA320A",
+    "desc": "https://www.rottentomatoes.com",
+    "docsUrl": "rotten-tomatoes",
+    "fullTitle": "Rotten Tomatoes",
+    "group": "service",
+    "id": "RottenTomatoes",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Rotten Tomatoes"
+  },
+  {
     "color": "#fff",
     "desc": "https://rsshub.app",
     "docsUrl": "rss-hub",
@@ -14063,6 +18376,63 @@
       "hasTextColor": false
     },
     "title": "RSSHub"
+  },
+  {
+    "color": "#E9573F",
+    "desc": "https://rubygems.org",
+    "docsUrl": "ruby-gems",
+    "fullTitle": "RubyGems",
+    "group": "service",
+    "id": "RubyGems",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "RubyGems"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.jetbrains.com/ruby",
+    "docsUrl": "ruby-mine",
+    "fullTitle": "RubyMine",
+    "group": "service",
+    "id": "RubyMine",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "RubyMine"
+  },
+  {
+    "color": "#D30001",
+    "desc": "https://rubyonrails.org",
+    "docsUrl": "ruby-on-rails",
+    "fullTitle": "Ruby on Rails",
+    "group": "service",
+    "id": "RubyOnRails",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ruby on Rails"
   },
   {
     "color": "#D7FF64",
@@ -14216,6 +18586,25 @@
       "hasTextColor": false
     },
     "title": "Samsung"
+  },
+  {
+    "color": "#1428A0",
+    "desc": "https://www.samsung.com/samsung-pay",
+    "docsUrl": "samsung-pay",
+    "fullTitle": "Samsung Pay",
+    "group": "service",
+    "id": "SamsungPay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Samsung Pay"
   },
   {
     "color": "#0D0E12",
@@ -14408,6 +18797,63 @@
     "title": "SearXNG"
   },
   {
+    "color": "#0089CF",
+    "desc": "https://www.sega.com",
+    "docsUrl": "sega",
+    "fullTitle": "Sega",
+    "group": "service",
+    "id": "Sega",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Sega"
+  },
+  {
+    "color": "#43B02A",
+    "desc": "https://www.selenium.dev",
+    "docsUrl": "selenium",
+    "fullTitle": "Selenium",
+    "group": "service",
+    "id": "Selenium",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Selenium"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.sennheiser.com",
+    "docsUrl": "sennheiser",
+    "fullTitle": "Sennheiser",
+    "group": "service",
+    "id": "Sennheiser",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Sennheiser"
+  },
+  {
     "color": "#5B2AD8",
     "desc": "https://platform.sensenova.cn",
     "docsUrl": "sense-nova",
@@ -14444,6 +18890,63 @@
       "hasTextColor": false
     },
     "title": "Sentry"
+  },
+  {
+    "color": "#E7282D",
+    "desc": "https://serverfault.com",
+    "docsUrl": "server-fault",
+    "fullTitle": "Server Fault",
+    "group": "service",
+    "id": "ServerFault",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Server Fault"
+  },
+  {
+    "color": "#E6C3A5",
+    "desc": "https://setapp.com",
+    "docsUrl": "setapp",
+    "fullTitle": "Setapp",
+    "group": "service",
+    "id": "Setapp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Setapp"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://ui.shadcn.com",
+    "docsUrl": "shadcn-ui",
+    "fullTitle": "shadcn/ui",
+    "group": "service",
+    "id": "ShadcnUI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "shadcn/ui"
   },
   {
     "color": "#0088FF",
@@ -14636,6 +19139,44 @@
     "title": "SketchUp"
   },
   {
+    "color": "#00FF84",
+    "desc": "https://www.skillshare.com",
+    "docsUrl": "skillshare",
+    "fullTitle": "Skillshare",
+    "group": "service",
+    "id": "Skillshare",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Skillshare"
+  },
+  {
+    "color": "#0E3A2F",
+    "desc": "https://www.skoda-auto.com",
+    "docsUrl": "skoda",
+    "fullTitle": "ŠKODA",
+    "group": "service",
+    "id": "Skoda",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ŠKODA"
+  },
+  {
     "color": "#fff",
     "desc": "https://skywork.ai",
     "docsUrl": "skywork",
@@ -14748,6 +19289,44 @@
       "hasTextColor": false
     },
     "title": "Snyk"
+  },
+  {
+    "color": "#010101",
+    "desc": "https://socket.io",
+    "docsUrl": "socket-io",
+    "fullTitle": "Socket.io",
+    "group": "service",
+    "id": "SocketIO",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Socket.io"
+  },
+  {
+    "color": "#FB6022",
+    "desc": "https://www.sogou.com",
+    "docsUrl": "sogou",
+    "fullTitle": "Sogou",
+    "group": "service",
+    "id": "Sogou",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Sogou"
   },
   {
     "color": "#9945FF",
@@ -14960,6 +19539,25 @@
     "title": "Sourcetree"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.spacex.com",
+    "docsUrl": "space-x",
+    "fullTitle": "SpaceX",
+    "group": "service",
+    "id": "SpaceX",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "SpaceX"
+  },
+  {
     "color": "#0070f0",
     "desc": "https://xinghuo.xfyun.cn",
     "docsUrl": "spark",
@@ -14996,6 +19594,25 @@
       "hasTextColor": false
     },
     "title": "SpeedAI"
+  },
+  {
+    "color": "#141526",
+    "desc": "https://www.speedtest.net",
+    "docsUrl": "speedtest",
+    "fullTitle": "Speedtest",
+    "group": "service",
+    "id": "Speedtest",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Speedtest"
   },
   {
     "color": "#000000",
@@ -15112,6 +19729,25 @@
     "title": "Square"
   },
   {
+    "color": "#ED1C24",
+    "desc": "https://www.square-enix.com",
+    "docsUrl": "square-enix",
+    "fullTitle": "Square Enix",
+    "group": "service",
+    "id": "SquareEnix",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Square Enix"
+  },
+  {
     "color": "#000000",
     "desc": "https://www.squarespace.com",
     "docsUrl": "squarespace",
@@ -15149,6 +19785,44 @@
       "hasTextColor": false
     },
     "title": "Stability"
+  },
+  {
+    "color": "#1269D3",
+    "desc": "https://stackblitz.com",
+    "docsUrl": "stack-blitz",
+    "fullTitle": "StackBlitz",
+    "group": "service",
+    "id": "StackBlitz",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "StackBlitz"
+  },
+  {
+    "color": "#1E5397",
+    "desc": "https://stackexchange.com",
+    "docsUrl": "stack-exchange",
+    "fullTitle": "Stack Exchange",
+    "group": "service",
+    "id": "StackExchange",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Stack Exchange"
   },
   {
     "color": "#F58025",
@@ -15227,6 +19901,25 @@
     "title": "Steam"
   },
   {
+    "color": "#1A9FFF",
+    "desc": "https://www.steamdeck.com",
+    "docsUrl": "steam-deck",
+    "fullTitle": "Steam Deck",
+    "group": "service",
+    "id": "SteamDeck",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Steam Deck"
+  },
+  {
     "color": "#FF5200",
     "desc": "https://steelseries.com",
     "docsUrl": "steel-series",
@@ -15282,6 +19975,25 @@
       "hasTextColor": false
     },
     "title": "STMicroelectronics"
+  },
+  {
+    "color": "#006340",
+    "desc": "https://stockx.com",
+    "docsUrl": "stock-x",
+    "fullTitle": "StockX",
+    "group": "service",
+    "id": "StockX",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "StockX"
   },
   {
     "color": "#FF4785",
@@ -15398,6 +20110,44 @@
     "title": "Stripe"
   },
   {
+    "color": "#DB7093",
+    "desc": "https://styled-components.com",
+    "docsUrl": "styled-components",
+    "fullTitle": "styled-components",
+    "group": "service",
+    "id": "StyledComponents",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "styled-components"
+  },
+  {
+    "color": "#263238",
+    "desc": "https://stylelint.io",
+    "docsUrl": "stylelint",
+    "fullTitle": "stylelint",
+    "group": "service",
+    "id": "Stylelint",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "stylelint"
+  },
+  {
     "color": "#013C74",
     "desc": "https://www.subaru.com",
     "docsUrl": "subaru",
@@ -15512,6 +20262,44 @@
     "title": "Supabase"
   },
   {
+    "color": "#000",
+    "desc": "https://supercell.com",
+    "docsUrl": "supercell",
+    "fullTitle": "Supercell",
+    "group": "service",
+    "id": "Supercell",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Supercell"
+  },
+  {
+    "color": "#38A1CE",
+    "desc": "https://superuser.com",
+    "docsUrl": "super-user",
+    "fullTitle": "Super User",
+    "group": "service",
+    "id": "SuperUser",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Super User"
+  },
+  {
     "color": "#1EBFBF",
     "desc": "https://surfshark.com",
     "docsUrl": "surfshark",
@@ -15567,6 +20355,25 @@
       "hasTextColor": false
     },
     "title": "SUSE"
+  },
+  {
+    "color": "#E30613",
+    "desc": "https://www.globalsuzuki.com",
+    "docsUrl": "suzuki",
+    "fullTitle": "Suzuki",
+    "group": "service",
+    "id": "Suzuki",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Suzuki"
   },
   {
     "color": "#FF3E00",
@@ -15645,6 +20452,44 @@
     "title": "Swift"
   },
   {
+    "color": "#FC8019",
+    "desc": "https://www.swiggy.com",
+    "docsUrl": "swiggy",
+    "fullTitle": "Swiggy",
+    "group": "service",
+    "id": "Swiggy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Swiggy"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://symfony.com",
+    "docsUrl": "symfony",
+    "fullTitle": "Symfony",
+    "group": "service",
+    "id": "Symfony",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Symfony"
+  },
+  {
     "color": "#0000FF",
     "desc": "https://sync.so",
     "docsUrl": "sync",
@@ -15662,6 +20507,44 @@
       "hasTextColor": false
     },
     "title": "Sync"
+  },
+  {
+    "color": "#0891D1",
+    "desc": "https://syncthing.net",
+    "docsUrl": "syncthing",
+    "fullTitle": "Syncthing",
+    "group": "service",
+    "id": "Syncthing",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Syncthing"
+  },
+  {
+    "color": "#B5B5B6",
+    "desc": "https://www.synology.com",
+    "docsUrl": "synology",
+    "fullTitle": "Synology",
+    "group": "service",
+    "id": "Synology",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Synology"
   },
   {
     "color": "#242424",
@@ -15700,6 +20583,25 @@
       "hasTextColor": false
     },
     "title": "Tailwind CSS"
+  },
+  {
+    "color": "#ECE8D1",
+    "desc": "https://tanstack.com",
+    "docsUrl": "tan-stack",
+    "fullTitle": "TanStack",
+    "group": "service",
+    "id": "TanStack",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TanStack"
   },
   {
     "color": "#E94F20",
@@ -15911,6 +20813,25 @@
     "title": "Terraform"
   },
   {
+    "color": "#00539F",
+    "desc": "https://www.tesco.com",
+    "docsUrl": "tesco",
+    "fullTitle": "Tesco",
+    "group": "service",
+    "id": "Tesco",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tesco"
+  },
+  {
     "color": "#CC0000",
     "desc": "https://www.tesla.com",
     "docsUrl": "tesla",
@@ -15966,6 +20887,44 @@
       "hasTextColor": false
     },
     "title": "The Guardian"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.thenorthface.com",
+    "docsUrl": "the-north-face",
+    "fullTitle": "The North Face",
+    "group": "service",
+    "id": "TheNorthFace",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "The North Face"
+  },
+  {
+    "color": "#2473E7",
+    "desc": "https://culturedcode.com/things",
+    "docsUrl": "things",
+    "fullTitle": "Things",
+    "group": "service",
+    "id": "Things",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Things"
   },
   {
     "color": "#000000",
@@ -16064,6 +21023,25 @@
     "title": "Tiangong"
   },
   {
+    "color": "#026CDF",
+    "desc": "https://www.ticketmaster.com",
+    "docsUrl": "ticketmaster",
+    "fullTitle": "Ticketmaster",
+    "group": "service",
+    "id": "Ticketmaster",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ticketmaster"
+  },
+  {
     "color": "#4772FA",
     "desc": "https://ticktick.com",
     "docsUrl": "tick-tick",
@@ -16157,6 +21135,63 @@
       "hasTextColor": false
     },
     "title": "Timescale"
+  },
+  {
+    "color": "#FF6B6B",
+    "desc": "https://tinder.com",
+    "docsUrl": "tinder",
+    "fullTitle": "Tinder",
+    "group": "service",
+    "id": "Tinder",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tinder"
+  },
+  {
+    "color": "#FAFAFA",
+    "desc": "https://www.tldraw.com",
+    "docsUrl": "tldraw",
+    "fullTitle": "tldraw",
+    "group": "service",
+    "id": "Tldraw",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "tldraw"
+  },
+  {
+    "color": "#01B4E4",
+    "desc": "https://www.themoviedb.org",
+    "docsUrl": "tmdb",
+    "fullTitle": "The Movie Database",
+    "group": "service",
+    "id": "TMDB",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "The Movie Database"
   },
   {
     "color": "#1BB91F",
@@ -16330,6 +21365,25 @@
     "title": "Toyota"
   },
   {
+    "color": "#4ACBD6",
+    "desc": "https://www.tp-link.com",
+    "docsUrl": "tp-link",
+    "fullTitle": "TP-Link",
+    "group": "service",
+    "id": "TPLink",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TP-Link"
+  },
+  {
     "color": "#32F08C",
     "desc": "https://trae.ai",
     "docsUrl": "trae",
@@ -16347,6 +21401,44 @@
       "hasTextColor": false
     },
     "title": "TRAE"
+  },
+  {
+    "color": "#24A1C1",
+    "desc": "https://traefik.io",
+    "docsUrl": "traefik",
+    "fullTitle": "Traefik Proxy",
+    "group": "service",
+    "id": "Traefik",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Traefik Proxy"
+  },
+  {
+    "color": "#9F42C6",
+    "desc": "https://trakt.tv",
+    "docsUrl": "trakt",
+    "fullTitle": "Trakt",
+    "group": "service",
+    "id": "Trakt",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Trakt"
   },
   {
     "color": "#3EAAAF",
@@ -16463,6 +21555,44 @@
     "title": "trivago"
   },
   {
+    "color": "#2596BE",
+    "desc": "https://trpc.io",
+    "docsUrl": "trpc",
+    "fullTitle": "tRPC",
+    "group": "service",
+    "id": "TRPC",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "tRPC"
+  },
+  {
+    "color": "#0095D5",
+    "desc": "https://www.truenas.com",
+    "docsUrl": "true-nas",
+    "fullTitle": "TrueNAS",
+    "group": "service",
+    "id": "TrueNAS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TrueNAS"
+  },
+  {
     "color": "#00B67A",
     "desc": "https://www.trustpilot.com",
     "docsUrl": "trustpilot",
@@ -16480,6 +21610,44 @@
       "hasTextColor": false
     },
     "title": "Trustpilot"
+  },
+  {
+    "color": "#212C42",
+    "desc": "https://tryhackme.com",
+    "docsUrl": "try-hack-me",
+    "fullTitle": "TryHackMe",
+    "group": "service",
+    "id": "TryHackMe",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TryHackMe"
+  },
+  {
+    "color": "#7408FF",
+    "desc": "https://tubitv.com",
+    "docsUrl": "tubi",
+    "fullTitle": "Tubi",
+    "group": "service",
+    "id": "Tubi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tubi"
   },
   {
     "color": "#36465D",
@@ -16692,6 +21860,25 @@
     "title": "Uber Eats"
   },
   {
+    "color": "#0559C9",
+    "desc": "https://www.ui.com",
+    "docsUrl": "ubiquiti",
+    "fullTitle": "Ubiquiti",
+    "group": "service",
+    "id": "Ubiquiti",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ubiquiti"
+  },
+  {
     "color": "#000000",
     "desc": "https://www.ubisoft.com",
     "docsUrl": "ubisoft",
@@ -16787,6 +21974,25 @@
     "title": "Udio"
   },
   {
+    "color": "#1D1D1D",
+    "desc": "https://www.underarmour.com",
+    "docsUrl": "under-armour",
+    "fullTitle": "Under Armour",
+    "group": "service",
+    "id": "UnderArmour",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Under Armour"
+  },
+  {
     "color": "#FF0000",
     "desc": "https://www.uniqlo.com",
     "docsUrl": "uniqlo",
@@ -16844,6 +22050,25 @@
     "title": "Unity"
   },
   {
+    "color": "#F15A2C",
+    "desc": "https://unraid.net",
+    "docsUrl": "unraid",
+    "fullTitle": "Unraid",
+    "group": "service",
+    "id": "Unraid",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Unraid"
+  },
+  {
     "color": "#0E1128",
     "desc": "https://www.unrealengine.com",
     "docsUrl": "unreal-engine",
@@ -16882,6 +22107,25 @@
     "title": "Unsloth"
   },
   {
+    "color": "#000000",
+    "desc": "https://unsplash.com",
+    "docsUrl": "unsplash",
+    "fullTitle": "Unsplash",
+    "group": "service",
+    "id": "Unsplash",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Unsplash"
+  },
+  {
     "color": "#0ADDF8",
     "desc": "https://unstructured.io",
     "docsUrl": "unstructured",
@@ -16899,6 +22143,25 @@
       "hasTextColor": false
     },
     "title": "Unstructured"
+  },
+  {
+    "color": "#150400",
+    "desc": "https://www.ups.com",
+    "docsUrl": "ups",
+    "fullTitle": "UPS",
+    "group": "service",
+    "id": "UPS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "UPS"
   },
   {
     "color": "#908AF9",
@@ -16938,6 +22201,25 @@
       "hasTextColor": false
     },
     "title": "Upstash"
+  },
+  {
+    "color": "#6FDA44",
+    "desc": "https://www.upwork.com",
+    "docsUrl": "upwork",
+    "fullTitle": "Upwork",
+    "group": "service",
+    "id": "Upwork",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Upwork"
   },
   {
     "color": "#DE5FE9",
@@ -17035,6 +22317,25 @@
     "title": "Valorant"
   },
   {
+    "color": "#F74843",
+    "desc": "https://www.valvesoftware.com",
+    "docsUrl": "valve",
+    "fullTitle": "Valve",
+    "group": "service",
+    "id": "Valve",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Valve"
+  },
+  {
     "color": "#FFEC6E",
     "desc": "https://www.vaultproject.io",
     "docsUrl": "vault",
@@ -17052,6 +22353,25 @@
       "hasTextColor": false
     },
     "title": "Vault"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://github.com/dani-garcia/vaultwarden",
+    "docsUrl": "vaultwarden",
+    "fullTitle": "Vaultwarden",
+    "group": "service",
+    "id": "Vaultwarden",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vaultwarden"
   },
   {
     "color": "#3659FF",
@@ -17128,6 +22448,25 @@
       "hasTextColor": false
     },
     "title": "Vercel"
+  },
+  {
+    "color": "#CD040B",
+    "desc": "https://www.verizon.com",
+    "docsUrl": "verizon",
+    "fullTitle": "Verizon",
+    "group": "service",
+    "id": "Verizon",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Verizon"
   },
   {
     "color": "#4285F4",
@@ -17243,6 +22582,44 @@
       "hasTextColor": false
     },
     "title": "Vimeo"
+  },
+  {
+    "color": "#007782",
+    "desc": "https://www.vinted.com",
+    "docsUrl": "vinted",
+    "fullTitle": "Vinted",
+    "group": "service",
+    "id": "Vinted",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vinted"
+  },
+  {
+    "color": "#2F61B4",
+    "desc": "https://www.virtualbox.org",
+    "docsUrl": "virtual-box",
+    "fullTitle": "VirtualBox",
+    "group": "service",
+    "id": "VirtualBox",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "VirtualBox"
   },
   {
     "color": "#1A1F71",
@@ -17435,6 +22812,25 @@
     "title": "VMware"
   },
   {
+    "color": "#E60000",
+    "desc": "https://www.vodafone.com",
+    "docsUrl": "vodafone",
+    "fullTitle": "Vodafone",
+    "group": "service",
+    "id": "Vodafone",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vodafone"
+  },
+  {
     "color": "#fff",
     "desc": "https://volcengine.com",
     "docsUrl": "volcengine",
@@ -17530,6 +22926,44 @@
     "title": "VSCodium"
   },
   {
+    "color": "#1867C0",
+    "desc": "https://vuetifyjs.com",
+    "docsUrl": "vuetify",
+    "fullTitle": "Vuetify",
+    "group": "service",
+    "id": "Vuetify",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vuetify"
+  },
+  {
+    "color": "#A41E22",
+    "desc": "https://www.vulkan.org",
+    "docsUrl": "vulkan",
+    "fullTitle": "Vulkan",
+    "group": "service",
+    "id": "Vulkan",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vulkan"
+  },
+  {
     "color": "#007BFC",
     "desc": "https://www.vultr.com",
     "docsUrl": "vultr",
@@ -17547,6 +22981,44 @@
       "hasTextColor": false
     },
     "title": "Vultr"
+  },
+  {
+    "color": "#04AA6D",
+    "desc": "https://www.w3schools.com",
+    "docsUrl": "w-3-schools",
+    "fullTitle": "W3Schools",
+    "group": "service",
+    "id": "W3Schools",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "W3Schools"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.wacom.com",
+    "docsUrl": "wacom",
+    "fullTitle": "Wacom",
+    "group": "service",
+    "id": "Wacom",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wacom"
   },
   {
     "color": "#01A4FF",
@@ -17644,6 +23116,25 @@
     "title": "WebAssembly"
   },
   {
+    "color": "#EA5906",
+    "desc": "https://webdriver.io",
+    "docsUrl": "webdriver-io",
+    "fullTitle": "WebdriverIO",
+    "group": "service",
+    "id": "WebdriverIO",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WebdriverIO"
+  },
+  {
     "color": "#146EF5",
     "desc": "https://webflow.com",
     "docsUrl": "webflow",
@@ -17661,6 +23152,25 @@
       "hasTextColor": false
     },
     "title": "Webflow"
+  },
+  {
+    "color": "#333333",
+    "desc": "https://webrtc.org",
+    "docsUrl": "web-rtc",
+    "fullTitle": "WebRTC",
+    "group": "service",
+    "id": "WebRTC",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WebRTC"
   },
   {
     "color": "#000000",
@@ -17699,6 +23209,25 @@
       "hasTextColor": false
     },
     "title": "WeChat"
+  },
+  {
+    "color": "#FAAB00",
+    "desc": "https://www.wegame.com.cn",
+    "docsUrl": "we-game",
+    "fullTitle": "WeGame",
+    "group": "service",
+    "id": "WeGame",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WeGame"
   },
   {
     "color": "#E6162D",
@@ -17778,6 +23307,44 @@
     "title": "WeRead"
   },
   {
+    "color": "#FFDD00",
+    "desc": "https://www.westernunion.com",
+    "docsUrl": "western-union",
+    "fullTitle": "Western Union",
+    "group": "service",
+    "id": "WesternUnion",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Western Union"
+  },
+  {
+    "color": "#409FFF",
+    "desc": "https://wetransfer.com",
+    "docsUrl": "we-transfer",
+    "fullTitle": "WeTransfer",
+    "group": "service",
+    "id": "WeTransfer",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WeTransfer"
+  },
+  {
     "color": "#4E49EE",
     "desc": "https://wezterm.org",
     "docsUrl": "wez-term",
@@ -17816,6 +23383,44 @@
     "title": "WhatsApp"
   },
   {
+    "color": "#006699",
+    "desc": "https://www.wikidata.org",
+    "docsUrl": "wikidata",
+    "fullTitle": "Wikidata",
+    "group": "service",
+    "id": "Wikidata",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wikidata"
+  },
+  {
+    "color": "#006699",
+    "desc": "https://commons.wikimedia.org",
+    "docsUrl": "wikimedia-commons",
+    "fullTitle": "Wikimedia Commons",
+    "group": "service",
+    "id": "WikimediaCommons",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wikimedia Commons"
+  },
+  {
     "color": "#000000",
     "desc": "https://www.wikipedia.org",
     "docsUrl": "wikipedia",
@@ -17833,6 +23438,25 @@
       "hasTextColor": false
     },
     "title": "Wikipedia"
+  },
+  {
+    "color": "#F93821",
+    "desc": "https://www.winamp.com",
+    "docsUrl": "winamp",
+    "fullTitle": "Winamp",
+    "group": "service",
+    "id": "Winamp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Winamp"
   },
   {
     "color": "#fff",
@@ -17892,6 +23516,25 @@
     "title": "WireGuard"
   },
   {
+    "color": "#1679A7",
+    "desc": "https://www.wireshark.org",
+    "docsUrl": "wireshark",
+    "fullTitle": "Wireshark",
+    "group": "service",
+    "id": "Wireshark",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wireshark"
+  },
+  {
     "color": "#9FE870",
     "desc": "https://wise.com",
     "docsUrl": "wise",
@@ -17928,6 +23571,25 @@
       "hasTextColor": false
     },
     "title": "Wix"
+  },
+  {
+    "color": "#96588A",
+    "desc": "https://woocommerce.com",
+    "docsUrl": "woo-commerce",
+    "fullTitle": "WooCommerce",
+    "group": "service",
+    "id": "WooCommerce",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WooCommerce"
   },
   {
     "color": "#21759B",
@@ -18042,6 +23704,25 @@
       "hasTextColor": false
     },
     "title": "Xcode"
+  },
+  {
+    "color": "#13B5EA",
+    "desc": "https://www.xero.com",
+    "docsUrl": "xero",
+    "fullTitle": "Xero",
+    "group": "service",
+    "id": "Xero",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Xero"
   },
   {
     "color": "#FF2442",
@@ -18349,6 +24030,44 @@
   },
   {
     "color": "#FF0000",
+    "desc": "https://www.youtube.com/gaming",
+    "docsUrl": "you-tube-gaming",
+    "fullTitle": "YouTube Gaming",
+    "group": "service",
+    "id": "YouTubeGaming",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "YouTube Gaming"
+  },
+  {
+    "color": "#FF0000",
+    "desc": "https://www.youtubekids.com",
+    "docsUrl": "you-tube-kids",
+    "fullTitle": "YouTube Kids",
+    "group": "service",
+    "id": "YouTubeKids",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "YouTube Kids"
+  },
+  {
+    "color": "#FF0000",
     "desc": "https://music.youtube.com",
     "docsUrl": "you-tube-music",
     "fullTitle": "YouTube Music",
@@ -18386,6 +24105,44 @@
     "title": "YouTube Shorts"
   },
   {
+    "color": "#FF0000",
+    "desc": "https://studio.youtube.com",
+    "docsUrl": "you-tube-studio",
+    "fullTitle": "YouTube Studio",
+    "group": "service",
+    "id": "YouTubeStudio",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "YouTube Studio"
+  },
+  {
+    "color": "#FF0000",
+    "desc": "https://tv.youtube.com",
+    "docsUrl": "you-tube-tv",
+    "fullTitle": "YouTube TV",
+    "group": "service",
+    "id": "YouTubeTV",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "YouTube TV"
+  },
+  {
     "color": "#fff",
     "desc": "https://yuanbao.tencent.com",
     "docsUrl": "yuanbao",
@@ -18403,6 +24160,25 @@
       "hasTextColor": false
     },
     "title": "Yuanbao"
+  },
+  {
+    "color": "#84BD00",
+    "desc": "https://www.yubico.com",
+    "docsUrl": "yubico",
+    "fullTitle": "Yubico",
+    "group": "service",
+    "id": "Yubico",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Yubico"
   },
   {
     "color": "#000",
@@ -18443,6 +24219,25 @@
     "title": "Zalando"
   },
   {
+    "color": "#0068FF",
+    "desc": "https://zalo.me",
+    "docsUrl": "zalo",
+    "fullTitle": "Zalo",
+    "group": "service",
+    "id": "Zalo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zalo"
+  },
+  {
     "color": "#FF4F00",
     "desc": "https://zapier.com",
     "docsUrl": "zapier",
@@ -18479,6 +24274,25 @@
       "hasTextColor": false
     },
     "title": "Zara"
+  },
+  {
+    "color": "#FFF200",
+    "desc": "https://www.zcool.com.cn",
+    "docsUrl": "zcool",
+    "fullTitle": "ZCOOL",
+    "group": "service",
+    "id": "Zcool",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ZCOOL"
   },
   {
     "color": "#6300FF",
@@ -18595,6 +24409,25 @@
     "title": "ZenMux"
   },
   {
+    "color": "#1682D4",
+    "desc": "https://zenodo.org",
+    "docsUrl": "zenodo",
+    "fullTitle": "Zenodo",
+    "group": "service",
+    "id": "Zenodo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zenodo"
+  },
+  {
     "color": "#003425",
     "desc": "https://lingyiwanwu.com/",
     "docsUrl": "zero-one",
@@ -18671,6 +24504,44 @@
     "title": "Zhipu"
   },
   {
+    "color": "#006AFF",
+    "desc": "https://www.zillow.com",
+    "docsUrl": "zillow",
+    "fullTitle": "Zillow",
+    "group": "service",
+    "id": "Zillow",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zillow"
+  },
+  {
+    "color": "#408AFF",
+    "desc": "https://zod.dev",
+    "docsUrl": "zod",
+    "fullTitle": "Zod",
+    "group": "service",
+    "id": "Zod",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zod"
+  },
+  {
     "color": "#E42527",
     "desc": "https://www.zoho.com",
     "docsUrl": "zoho",
@@ -18690,6 +24561,25 @@
     "title": "Zoho"
   },
   {
+    "color": "#E23744",
+    "desc": "https://www.zomato.com",
+    "docsUrl": "zomato",
+    "fullTitle": "Zomato",
+    "group": "service",
+    "id": "Zomato",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zomato"
+  },
+  {
     "color": "#0B5CFF",
     "desc": "https://zoom.us",
     "docsUrl": "zoom",
@@ -18707,6 +24597,25 @@
       "hasTextColor": false
     },
     "title": "Zoom"
+  },
+  {
+    "color": "#15A6F0",
+    "desc": "https://zorin.com/os",
+    "docsUrl": "zorin-os",
+    "fullTitle": "Zorin",
+    "group": "service",
+    "id": "ZorinOS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zorin"
   },
   {
     "color": "#CC2936",

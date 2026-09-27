@@ -1,0 +1,19 @@
+import React, { memo } from "react";
+import { Path, Svg } from "react-native-svg";
+
+import type { RNIconProps } from "@/features";
+
+const Icon = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
+  return (
+    <Svg color={color} height={size} style={style} viewBox="0 0 24 24" width={size} {...rest}>
+      <Path
+        d="M0 12.822V7.044L11.985.115 24 7.037v5.77L11.992 5.892Zm11.985 1.114L1.92 19.759 0 18.645v-3.557l11.985-6.93L24 15.089v3.542l-1.92 1.13Zm-3.028 9.949L3.95 21.004l8.036-4.656 8.066 4.656-5.009 2.88-3.05-1.759Z"
+        fill={color}
+      />
+    </Svg>
+  );
+});
+
+Icon.displayName = "KoyebMono";
+
+export default Icon;
