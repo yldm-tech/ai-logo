@@ -18,7 +18,7 @@ export type CompoundIcon = React.ComponentType<IconProps> & {
 
 export const entries: IconEntry[] = toc;
 
-export const groups = ["provider", "model", "application"] as const;
+export const groups = ["provider", "model", "application", "service"] as const;
 
 export type Group = (typeof groups)[number];
 
@@ -36,6 +36,7 @@ export const stats = {
   combine: entries.filter((entry) => entry.param.hasCombine).length,
   model: entries.filter((entry) => entry.group === "model").length,
   provider: entries.filter((entry) => entry.group === "provider").length,
+  service: entries.filter((entry) => entry.group === "service").length,
   text: entries.filter((entry) => entry.param.hasText).length,
 };
 

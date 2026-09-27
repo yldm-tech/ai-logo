@@ -23,7 +23,7 @@
     "desc": "https://www.adidas.com",
     "docsUrl": "adidas",
     "fullTitle": "Adidas",
-    "group": "application",
+    "group": "service",
     "id": "Adidas",
     "param": {
       "hasAvatar": true,
@@ -80,7 +80,7 @@
     "desc": "https://www.adyen.com",
     "docsUrl": "adyen",
     "fullTitle": "Adyen",
-    "group": "application",
+    "group": "service",
     "id": "Adyen",
     "param": {
       "hasAvatar": true,
@@ -99,7 +99,7 @@
     "desc": "https://www.afterpay.com",
     "docsUrl": "afterpay",
     "fullTitle": "Afterpay",
-    "group": "application",
+    "group": "service",
     "id": "Afterpay",
     "param": {
       "hasAvatar": true,
@@ -310,7 +310,7 @@
     "desc": "https://www.airbnb.com",
     "docsUrl": "airbnb",
     "fullTitle": "Airbnb",
-    "group": "application",
+    "group": "service",
     "id": "Airbnb",
     "param": {
       "hasAvatar": true,
@@ -329,7 +329,7 @@
     "desc": "https://airbyte.com",
     "docsUrl": "airbyte",
     "fullTitle": "Airbyte",
-    "group": "application",
+    "group": "service",
     "id": "Airbyte",
     "param": {
       "hasAvatar": true,
@@ -367,7 +367,7 @@
     "desc": "https://www.airtable.com",
     "docsUrl": "airtable",
     "fullTitle": "Airtable",
-    "group": "application",
+    "group": "service",
     "id": "Airtable",
     "param": {
       "hasAvatar": true,
@@ -405,7 +405,7 @@
     "desc": "https://www.akamai.com",
     "docsUrl": "akamai",
     "fullTitle": "Akamai",
-    "group": "application",
+    "group": "service",
     "id": "Akamai",
     "param": {
       "hasAvatar": true,
@@ -443,7 +443,7 @@
     "desc": "https://alacritty.org",
     "docsUrl": "alacritty",
     "fullTitle": "Alacritty",
-    "group": "application",
+    "group": "service",
     "id": "Alacritty",
     "param": {
       "hasAvatar": true,
@@ -481,7 +481,7 @@
     "desc": "https://www.alfredapp.com",
     "docsUrl": "alfred",
     "fullTitle": "Alfred",
-    "group": "application",
+    "group": "service",
     "id": "Alfred",
     "param": {
       "hasAvatar": true,
@@ -500,7 +500,7 @@
     "desc": "https://www.algolia.com",
     "docsUrl": "algolia",
     "fullTitle": "Algolia",
-    "group": "application",
+    "group": "service",
     "id": "Algolia",
     "param": {
       "hasAvatar": true,
@@ -557,7 +557,7 @@
     "desc": "https://www.aliexpress.com",
     "docsUrl": "ali-express",
     "fullTitle": "AliExpress",
-    "group": "application",
+    "group": "service",
     "id": "AliExpress",
     "param": {
       "hasAvatar": true,
@@ -576,7 +576,7 @@
     "desc": "https://www.alipay.com",
     "docsUrl": "alipay",
     "fullTitle": "Alipay",
-    "group": "application",
+    "group": "service",
     "id": "Alipay",
     "param": {
       "hasAvatar": true,
@@ -595,7 +595,7 @@
     "desc": "https://alpinejs.dev",
     "docsUrl": "alpine-js",
     "fullTitle": "Alpine.js",
-    "group": "application",
+    "group": "service",
     "id": "AlpineJS",
     "param": {
       "hasAvatar": true,
@@ -614,7 +614,7 @@
     "desc": "https://alpinelinux.org",
     "docsUrl": "alpine-linux",
     "fullTitle": "Alpine Linux",
-    "group": "application",
+    "group": "service",
     "id": "AlpineLinux",
     "param": {
       "hasAvatar": true,
@@ -633,7 +633,7 @@
     "desc": "https://www.amd.com",
     "docsUrl": "amd",
     "fullTitle": "AMD",
-    "group": "application",
+    "group": "service",
     "id": "AMD",
     "param": {
       "hasAvatar": true,
@@ -652,7 +652,7 @@
     "desc": "https://www.aa.com",
     "docsUrl": "american-airlines",
     "fullTitle": "American Airlines",
-    "group": "application",
+    "group": "service",
     "id": "AmericanAirlines",
     "param": {
       "hasAvatar": true,
@@ -671,7 +671,7 @@
     "desc": "https://www.americanexpress.com",
     "docsUrl": "american-express",
     "fullTitle": "American Express",
-    "group": "application",
+    "group": "service",
     "id": "AmericanExpress",
     "param": {
       "hasAvatar": true,
@@ -709,7 +709,7 @@
     "desc": "https://www.ana.co.jp",
     "docsUrl": "ana",
     "fullTitle": "ANA",
-    "group": "application",
+    "group": "service",
     "id": "ANA",
     "param": {
       "hasAvatar": true,
@@ -728,7 +728,7 @@
     "desc": "https://www.anaconda.com",
     "docsUrl": "anaconda",
     "fullTitle": "Anaconda",
-    "group": "application",
+    "group": "service",
     "id": "Anaconda",
     "param": {
       "hasAvatar": true,
@@ -747,7 +747,7 @@
     "desc": "https://www.android.com",
     "docsUrl": "android",
     "fullTitle": "Android",
-    "group": "application",
+    "group": "service",
     "id": "Android",
     "param": {
       "hasAvatar": true,
@@ -766,7 +766,7 @@
     "desc": "https://developer.android.com/studio",
     "docsUrl": "android-studio",
     "fullTitle": "Android Studio",
-    "group": "application",
+    "group": "service",
     "id": "AndroidStudio",
     "param": {
       "hasAvatar": true,
@@ -785,7 +785,7 @@
     "desc": "https://angular.dev",
     "docsUrl": "angular",
     "fullTitle": "Angular",
-    "group": "application",
+    "group": "service",
     "id": "Angular",
     "param": {
       "hasAvatar": true,
@@ -804,7 +804,7 @@
     "desc": "https://anilist.co",
     "docsUrl": "ani-list",
     "fullTitle": "AniList",
-    "group": "application",
+    "group": "service",
     "id": "AniList",
     "param": {
       "hasAvatar": true,
@@ -823,7 +823,7 @@
     "desc": "https://www.ansible.com",
     "docsUrl": "ansible",
     "fullTitle": "Ansible",
-    "group": "application",
+    "group": "service",
     "id": "Ansible",
     "param": {
       "hasAvatar": true,
@@ -937,7 +937,7 @@
     "desc": "https://anytype.io",
     "docsUrl": "anytype",
     "fullTitle": "Anytype",
-    "group": "application",
+    "group": "service",
     "id": "Anytype",
     "param": {
       "hasAvatar": true,
@@ -956,7 +956,7 @@
     "desc": "https://airflow.apache.org",
     "docsUrl": "apache-airflow",
     "fullTitle": "Apache Airflow",
-    "group": "application",
+    "group": "service",
     "id": "ApacheAirflow",
     "param": {
       "hasAvatar": true,
@@ -975,7 +975,7 @@
     "desc": "https://flink.apache.org",
     "docsUrl": "apache-flink",
     "fullTitle": "Apache Flink",
-    "group": "application",
+    "group": "service",
     "id": "ApacheFlink",
     "param": {
       "hasAvatar": true,
@@ -994,7 +994,7 @@
     "desc": "https://hadoop.apache.org",
     "docsUrl": "apache-hadoop",
     "fullTitle": "Apache Hadoop",
-    "group": "application",
+    "group": "service",
     "id": "ApacheHadoop",
     "param": {
       "hasAvatar": true,
@@ -1013,7 +1013,7 @@
     "desc": "https://kafka.apache.org",
     "docsUrl": "apache-kafka",
     "fullTitle": "Apache Kafka",
-    "group": "application",
+    "group": "service",
     "id": "ApacheKafka",
     "param": {
       "hasAvatar": true,
@@ -1032,7 +1032,7 @@
     "desc": "https://spark.apache.org",
     "docsUrl": "apache-spark",
     "fullTitle": "Apache Spark",
-    "group": "application",
+    "group": "service",
     "id": "ApacheSpark",
     "param": {
       "hasAvatar": true,
@@ -1051,7 +1051,7 @@
     "desc": "https://superset.apache.org",
     "docsUrl": "apache-superset",
     "fullTitle": "Apache Superset",
-    "group": "application",
+    "group": "service",
     "id": "ApacheSuperset",
     "param": {
       "hasAvatar": true,
@@ -1108,7 +1108,7 @@
     "desc": "https://music.apple.com",
     "docsUrl": "apple-music",
     "fullTitle": "Apple Music",
-    "group": "application",
+    "group": "service",
     "id": "AppleMusic",
     "param": {
       "hasAvatar": true,
@@ -1127,7 +1127,7 @@
     "desc": "https://www.apple.com/apple-pay",
     "docsUrl": "apple-pay",
     "fullTitle": "Apple Pay",
-    "group": "application",
+    "group": "service",
     "id": "ApplePay",
     "param": {
       "hasAvatar": true,
@@ -1146,7 +1146,7 @@
     "desc": "https://podcasts.apple.com",
     "docsUrl": "apple-podcasts",
     "fullTitle": "Apple Podcasts",
-    "group": "application",
+    "group": "service",
     "id": "ApplePodcasts",
     "param": {
       "hasAvatar": true,
@@ -1165,7 +1165,7 @@
     "desc": "https://tv.apple.com",
     "docsUrl": "apple-tv",
     "fullTitle": "Apple TV",
-    "group": "application",
+    "group": "service",
     "id": "AppleTV",
     "param": {
       "hasAvatar": true,
@@ -1184,7 +1184,7 @@
     "desc": "https://www.apple.com/app-store",
     "docsUrl": "app-store",
     "fullTitle": "App Store",
-    "group": "application",
+    "group": "service",
     "id": "AppStore",
     "param": {
       "hasAvatar": true,
@@ -1203,7 +1203,7 @@
     "desc": "https://appwrite.io",
     "docsUrl": "appwrite",
     "fullTitle": "Appwrite",
-    "group": "application",
+    "group": "service",
     "id": "Appwrite",
     "param": {
       "hasAvatar": true,
@@ -1222,7 +1222,7 @@
     "desc": "https://arc.net",
     "docsUrl": "arc",
     "fullTitle": "Arc",
-    "group": "application",
+    "group": "service",
     "id": "Arc",
     "param": {
       "hasAvatar": true,
@@ -1260,7 +1260,7 @@
     "desc": "https://archlinux.org",
     "docsUrl": "arch-linux",
     "fullTitle": "Arch Linux",
-    "group": "application",
+    "group": "service",
     "id": "ArchLinux",
     "param": {
       "hasAvatar": true,
@@ -1279,7 +1279,7 @@
     "desc": "https://www.arduino.cc",
     "docsUrl": "arduino",
     "fullTitle": "Arduino",
-    "group": "application",
+    "group": "service",
     "id": "Arduino",
     "param": {
       "hasAvatar": true,
@@ -1298,7 +1298,7 @@
     "desc": "https://argoproj.github.io",
     "docsUrl": "argo",
     "fullTitle": "Argo",
-    "group": "application",
+    "group": "service",
     "id": "Argo",
     "param": {
       "hasAvatar": true,
@@ -1317,7 +1317,7 @@
     "desc": "https://www.arm.com",
     "docsUrl": "arm",
     "fullTitle": "Arm",
-    "group": "application",
+    "group": "service",
     "id": "Arm",
     "param": {
       "hasAvatar": true,
@@ -1336,7 +1336,7 @@
     "desc": "https://asana.com",
     "docsUrl": "asana",
     "fullTitle": "Asana",
-    "group": "application",
+    "group": "service",
     "id": "Asana",
     "param": {
       "hasAvatar": true,
@@ -1393,7 +1393,7 @@
     "desc": "https://astro.build",
     "docsUrl": "astro",
     "fullTitle": "Astro",
-    "group": "application",
+    "group": "service",
     "id": "Astro",
     "param": {
       "hasAvatar": true,
@@ -1412,7 +1412,7 @@
     "desc": "https://www.asus.com",
     "docsUrl": "asus",
     "fullTitle": "ASUS",
-    "group": "application",
+    "group": "service",
     "id": "Asus",
     "param": {
       "hasAvatar": true,
@@ -1450,7 +1450,7 @@
     "desc": "https://www.atlassian.com",
     "docsUrl": "atlassian",
     "fullTitle": "Atlassian",
-    "group": "application",
+    "group": "service",
     "id": "Atlassian",
     "param": {
       "hasAvatar": true,
@@ -1469,7 +1469,7 @@
     "desc": "https://www.audacityteam.org",
     "docsUrl": "audacity",
     "fullTitle": "Audacity",
-    "group": "application",
+    "group": "service",
     "id": "Audacity",
     "param": {
       "hasAvatar": true,
@@ -1488,7 +1488,7 @@
     "desc": "https://www.audi.com",
     "docsUrl": "audi",
     "fullTitle": "Audi",
-    "group": "application",
+    "group": "service",
     "id": "Audi",
     "param": {
       "hasAvatar": true,
@@ -1507,7 +1507,7 @@
     "desc": "https://www.audible.com",
     "docsUrl": "audible",
     "fullTitle": "Audible",
-    "group": "application",
+    "group": "service",
     "id": "Audible",
     "param": {
       "hasAvatar": true,
@@ -1526,7 +1526,7 @@
     "desc": "https://auth0.com",
     "docsUrl": "auth0",
     "fullTitle": "Auth0",
-    "group": "application",
+    "group": "service",
     "id": "Auth0",
     "param": {
       "hasAvatar": true,
@@ -1545,7 +1545,7 @@
     "desc": "https://www.autodesk.com",
     "docsUrl": "autodesk",
     "fullTitle": "Autodesk",
-    "group": "application",
+    "group": "service",
     "id": "Autodesk",
     "param": {
       "hasAvatar": true,
@@ -1678,7 +1678,7 @@
     "desc": "https://babeljs.io",
     "docsUrl": "babel",
     "fullTitle": "Babel",
-    "group": "application",
+    "group": "service",
     "id": "Babel",
     "param": {
       "hasAvatar": true,
@@ -1697,7 +1697,7 @@
     "desc": "https://www.backblaze.com",
     "docsUrl": "backblaze",
     "fullTitle": "Backblaze",
-    "group": "application",
+    "group": "service",
     "id": "Backblaze",
     "param": {
       "hasAvatar": true,
@@ -1793,7 +1793,7 @@
     "desc": "https://bandcamp.com",
     "docsUrl": "bandcamp",
     "fullTitle": "Bandcamp",
-    "group": "application",
+    "group": "service",
     "id": "Bandcamp",
     "param": {
       "hasAvatar": true,
@@ -1812,7 +1812,7 @@
     "desc": "https://www.bankofamerica.com",
     "docsUrl": "bank-of-america",
     "fullTitle": "Bank of America",
-    "group": "application",
+    "group": "service",
     "id": "BankOfAmerica",
     "param": {
       "hasAvatar": true,
@@ -1831,7 +1831,7 @@
     "desc": "https://www.barclays.co.uk",
     "docsUrl": "barclays",
     "fullTitle": "Barclays",
-    "group": "application",
+    "group": "service",
     "id": "Barclays",
     "param": {
       "hasAvatar": true,
@@ -1869,7 +1869,7 @@
     "desc": "https://www.gnu.org/software/bash",
     "docsUrl": "bash",
     "fullTitle": "Bash",
-    "group": "application",
+    "group": "service",
     "id": "Bash",
     "param": {
       "hasAvatar": true,
@@ -1888,7 +1888,7 @@
     "desc": "https://battle.net",
     "docsUrl": "battle-net",
     "fullTitle": "Battle.net",
-    "group": "application",
+    "group": "service",
     "id": "BattleNet",
     "param": {
       "hasAvatar": true,
@@ -1907,7 +1907,7 @@
     "desc": "https://bazel.build",
     "docsUrl": "bazel",
     "fullTitle": "Bazel",
-    "group": "application",
+    "group": "service",
     "id": "Bazel",
     "param": {
       "hasAvatar": true,
@@ -1926,7 +1926,7 @@
     "desc": "https://www.beatsbydre.com",
     "docsUrl": "beats",
     "fullTitle": "Beats",
-    "group": "application",
+    "group": "service",
     "id": "Beats",
     "param": {
       "hasAvatar": true,
@@ -1965,7 +1965,7 @@
     "desc": "https://www.behance.net",
     "docsUrl": "behance",
     "fullTitle": "Behance",
-    "group": "application",
+    "group": "service",
     "id": "Behance",
     "param": {
       "hasAvatar": true,
@@ -2041,7 +2041,7 @@
     "desc": "https://www.binance.com",
     "docsUrl": "binance",
     "fullTitle": "Binance",
-    "group": "application",
+    "group": "service",
     "id": "Binance",
     "param": {
       "hasAvatar": true,
@@ -2080,7 +2080,7 @@
     "desc": "https://biomejs.dev",
     "docsUrl": "biome",
     "fullTitle": "Biome",
-    "group": "application",
+    "group": "service",
     "id": "Biome",
     "param": {
       "hasAvatar": true,
@@ -2099,7 +2099,7 @@
     "desc": "https://bitbucket.org",
     "docsUrl": "bitbucket",
     "fullTitle": "Bitbucket",
-    "group": "application",
+    "group": "service",
     "id": "Bitbucket",
     "param": {
       "hasAvatar": true,
@@ -2118,7 +2118,7 @@
     "desc": "https://bitcoin.org",
     "docsUrl": "bitcoin",
     "fullTitle": "Bitcoin",
-    "group": "application",
+    "group": "service",
     "id": "Bitcoin",
     "param": {
       "hasAvatar": true,
@@ -2137,7 +2137,7 @@
     "desc": "https://bitwarden.com",
     "docsUrl": "bitwarden",
     "fullTitle": "Bitwarden",
-    "group": "application",
+    "group": "service",
     "id": "Bitwarden",
     "param": {
       "hasAvatar": true,
@@ -2156,7 +2156,7 @@
     "desc": "https://www.blender.org",
     "docsUrl": "blender",
     "fullTitle": "Blender",
-    "group": "application",
+    "group": "service",
     "id": "Blender",
     "param": {
       "hasAvatar": true,
@@ -2175,7 +2175,7 @@
     "desc": "https://bsky.app",
     "docsUrl": "bluesky",
     "fullTitle": "Bluesky",
-    "group": "application",
+    "group": "service",
     "id": "Bluesky",
     "param": {
       "hasAvatar": true,
@@ -2194,7 +2194,7 @@
     "desc": "https://www.bmw.com",
     "docsUrl": "bmw",
     "fullTitle": "BMW",
-    "group": "application",
+    "group": "service",
     "id": "BMW",
     "param": {
       "hasAvatar": true,
@@ -2232,7 +2232,7 @@
     "desc": "https://www.booking.com",
     "docsUrl": "booking-com",
     "fullTitle": "Booking.com",
-    "group": "application",
+    "group": "service",
     "id": "BookingCom",
     "param": {
       "hasAvatar": true,
@@ -2251,7 +2251,7 @@
     "desc": "https://getbootstrap.com",
     "docsUrl": "bootstrap",
     "fullTitle": "Bootstrap",
-    "group": "application",
+    "group": "service",
     "id": "Bootstrap",
     "param": {
       "hasAvatar": true,
@@ -2270,7 +2270,7 @@
     "desc": "https://www.bosch.com",
     "docsUrl": "bosch",
     "fullTitle": "Bosch",
-    "group": "application",
+    "group": "service",
     "id": "Bosch",
     "param": {
       "hasAvatar": true,
@@ -2289,7 +2289,7 @@
     "desc": "https://www.bose.com",
     "docsUrl": "bose",
     "fullTitle": "Bose",
-    "group": "application",
+    "group": "service",
     "id": "Bose",
     "param": {
       "hasAvatar": true,
@@ -2308,7 +2308,7 @@
     "desc": "https://www.box.com",
     "docsUrl": "box",
     "fullTitle": "Box",
-    "group": "application",
+    "group": "service",
     "id": "Box",
     "param": {
       "hasAvatar": true,
@@ -2384,7 +2384,7 @@
     "desc": "https://www.usebruno.com",
     "docsUrl": "bruno",
     "fullTitle": "Bruno",
-    "group": "application",
+    "group": "service",
     "id": "Bruno",
     "param": {
       "hasAvatar": true,
@@ -2403,7 +2403,7 @@
     "desc": "https://buildkite.com",
     "docsUrl": "buildkite",
     "fullTitle": "Buildkite",
-    "group": "application",
+    "group": "service",
     "id": "Buildkite",
     "param": {
       "hasAvatar": true,
@@ -2422,7 +2422,7 @@
     "desc": "https://bun.sh",
     "docsUrl": "bun",
     "fullTitle": "Bun",
-    "group": "application",
+    "group": "service",
     "id": "Bun",
     "param": {
       "hasAvatar": true,
@@ -2441,7 +2441,7 @@
     "desc": "https://www.bk.com",
     "docsUrl": "burger-king",
     "fullTitle": "Burger King",
-    "group": "application",
+    "group": "service",
     "id": "BurgerKing",
     "param": {
       "hasAvatar": true,
@@ -2498,7 +2498,7 @@
     "desc": "https://calendly.com",
     "docsUrl": "calendly",
     "fullTitle": "Calendly",
-    "group": "application",
+    "group": "service",
     "id": "Calendly",
     "param": {
       "hasAvatar": true,
@@ -2536,7 +2536,7 @@
     "desc": "https://cardano.org",
     "docsUrl": "cardano",
     "fullTitle": "Cardano",
-    "group": "application",
+    "group": "service",
     "id": "Cardano",
     "param": {
       "hasAvatar": true,
@@ -2555,7 +2555,7 @@
     "desc": "https://cash.app",
     "docsUrl": "cash-app",
     "fullTitle": "Cash App",
-    "group": "application",
+    "group": "service",
     "id": "CashApp",
     "param": {
       "hasAvatar": true,
@@ -2574,7 +2574,7 @@
     "desc": "https://cassandra.apache.org",
     "docsUrl": "cassandra",
     "fullTitle": "Apache Cassandra",
-    "group": "application",
+    "group": "service",
     "id": "Cassandra",
     "param": {
       "hasAvatar": true,
@@ -2631,7 +2631,7 @@
     "desc": "https://www.centos.org",
     "docsUrl": "cent-os",
     "fullTitle": "CentOS",
-    "group": "application",
+    "group": "service",
     "id": "CentOS",
     "param": {
       "hasAvatar": true,
@@ -2650,7 +2650,7 @@
     "desc": "https://ceph.io",
     "docsUrl": "ceph",
     "fullTitle": "Ceph",
-    "group": "application",
+    "group": "service",
     "id": "Ceph",
     "param": {
       "hasAvatar": true,
@@ -2688,7 +2688,7 @@
     "desc": "https://chain.link",
     "docsUrl": "chainlink",
     "fullTitle": "Chainlink",
-    "group": "application",
+    "group": "service",
     "id": "Chainlink",
     "param": {
       "hasAvatar": true,
@@ -2707,7 +2707,7 @@
     "desc": "https://www.chartjs.org",
     "docsUrl": "chart-js",
     "fullTitle": "Chart.js",
-    "group": "application",
+    "group": "service",
     "id": "ChartJS",
     "param": {
       "hasAvatar": true,
@@ -2726,7 +2726,7 @@
     "desc": "https://www.chase.com",
     "docsUrl": "chase",
     "fullTitle": "Chase",
-    "group": "application",
+    "group": "service",
     "id": "Chase",
     "param": {
       "hasAvatar": true,
@@ -2765,7 +2765,7 @@
     "desc": "https://www.chef.io",
     "docsUrl": "chef",
     "fullTitle": "Chef",
-    "group": "application",
+    "group": "service",
     "id": "Chef",
     "param": {
       "hasAvatar": true,
@@ -2803,7 +2803,7 @@
     "desc": "https://www.chess.com",
     "docsUrl": "chess-com",
     "fullTitle": "Chess.com",
-    "group": "application",
+    "group": "service",
     "id": "ChessCom",
     "param": {
       "hasAvatar": true,
@@ -2822,7 +2822,7 @@
     "desc": "https://www.chevrolet.com",
     "docsUrl": "chevrolet",
     "fullTitle": "Chevrolet",
-    "group": "application",
+    "group": "service",
     "id": "Chevrolet",
     "param": {
       "hasAvatar": true,
@@ -2841,7 +2841,7 @@
     "desc": "https://www.google.com/chrome",
     "docsUrl": "chrome",
     "fullTitle": "Google Chrome",
-    "group": "application",
+    "group": "service",
     "id": "Chrome",
     "param": {
       "hasAvatar": true,
@@ -2860,7 +2860,7 @@
     "desc": "https://circleci.com",
     "docsUrl": "circle-ci",
     "fullTitle": "CircleCI",
-    "group": "application",
+    "group": "service",
     "id": "CircleCI",
     "param": {
       "hasAvatar": true,
@@ -2879,7 +2879,7 @@
     "desc": "https://www.cisco.com",
     "docsUrl": "cisco",
     "fullTitle": "Cisco",
-    "group": "application",
+    "group": "service",
     "id": "Cisco",
     "param": {
       "hasAvatar": true,
@@ -2917,7 +2917,7 @@
     "desc": "https://www.open-std.org/jtc1/sc22/wg14",
     "docsUrl": "c-lang",
     "fullTitle": "C",
-    "group": "application",
+    "group": "service",
     "id": "CLang",
     "param": {
       "hasAvatar": true,
@@ -2974,7 +2974,7 @@
     "desc": "https://clerk.com",
     "docsUrl": "clerk",
     "fullTitle": "Clerk",
-    "group": "application",
+    "group": "service",
     "id": "Clerk",
     "param": {
       "hasAvatar": true,
@@ -2993,7 +2993,7 @@
     "desc": "https://clickhouse.com",
     "docsUrl": "click-house",
     "fullTitle": "ClickHouse",
-    "group": "application",
+    "group": "service",
     "id": "ClickHouse",
     "param": {
       "hasAvatar": true,
@@ -3012,7 +3012,7 @@
     "desc": "https://clickup.com",
     "docsUrl": "click-up",
     "fullTitle": "ClickUp",
-    "group": "application",
+    "group": "service",
     "id": "ClickUp",
     "param": {
       "hasAvatar": true,
@@ -3050,7 +3050,7 @@
     "desc": "https://www.jetbrains.com/clion",
     "docsUrl": "c-lion",
     "fullTitle": "CLion",
-    "group": "application",
+    "group": "service",
     "id": "CLion",
     "param": {
       "hasAvatar": true,
@@ -3088,7 +3088,7 @@
     "desc": "https://clockify.me",
     "docsUrl": "clockify",
     "fullTitle": "Clockify",
-    "group": "application",
+    "group": "service",
     "id": "Clockify",
     "param": {
       "hasAvatar": true,
@@ -3107,7 +3107,7 @@
     "desc": "https://clojure.org",
     "docsUrl": "clojure",
     "fullTitle": "Clojure",
-    "group": "application",
+    "group": "service",
     "id": "Clojure",
     "param": {
       "hasAvatar": true,
@@ -3145,7 +3145,7 @@
     "desc": "https://pages.cloudflare.com",
     "docsUrl": "cloudflare-pages",
     "fullTitle": "Cloudflare Pages",
-    "group": "application",
+    "group": "service",
     "id": "CloudflarePages",
     "param": {
       "hasAvatar": true,
@@ -3164,7 +3164,7 @@
     "desc": "https://workers.cloudflare.com",
     "docsUrl": "cloudflare-workers",
     "fullTitle": "Cloudflare Workers",
-    "group": "application",
+    "group": "service",
     "id": "CloudflareWorkers",
     "param": {
       "hasAvatar": true,
@@ -3183,7 +3183,7 @@
     "desc": "https://cloudinary.com",
     "docsUrl": "cloudinary",
     "fullTitle": "Cloudinary",
-    "group": "application",
+    "group": "service",
     "id": "Cloudinary",
     "param": {
       "hasAvatar": true,
@@ -3202,7 +3202,7 @@
     "desc": "https://cmake.org",
     "docsUrl": "c-make",
     "fullTitle": "CMake",
-    "group": "application",
+    "group": "service",
     "id": "CMake",
     "param": {
       "hasAvatar": true,
@@ -3221,7 +3221,7 @@
     "desc": "https://www.cnn.com",
     "docsUrl": "cnn",
     "fullTitle": "CNN",
-    "group": "application",
+    "group": "service",
     "id": "CNN",
     "param": {
       "hasAvatar": true,
@@ -3240,7 +3240,7 @@
     "desc": "https://www.coca-cola.com",
     "docsUrl": "coca-cola",
     "fullTitle": "Coca-Cola",
-    "group": "application",
+    "group": "service",
     "id": "CocaCola",
     "param": {
       "hasAvatar": true,
@@ -3259,7 +3259,7 @@
     "desc": "https://www.cockroachlabs.com",
     "docsUrl": "cockroach-db",
     "fullTitle": "CockroachDB",
-    "group": "application",
+    "group": "service",
     "id": "CockroachDB",
     "param": {
       "hasAvatar": true,
@@ -3278,7 +3278,7 @@
     "desc": "https://codeberg.org",
     "docsUrl": "codeberg",
     "fullTitle": "Codeberg",
-    "group": "application",
+    "group": "service",
     "id": "Codeberg",
     "param": {
       "hasAvatar": true,
@@ -3317,7 +3317,7 @@
     "desc": "https://www.codecademy.com",
     "docsUrl": "codecademy",
     "fullTitle": "Codecademy",
-    "group": "application",
+    "group": "service",
     "id": "Codecademy",
     "param": {
       "hasAvatar": true,
@@ -3336,7 +3336,7 @@
     "desc": "https://about.codecov.io",
     "docsUrl": "codecov",
     "fullTitle": "Codecov",
-    "group": "application",
+    "group": "service",
     "id": "Codecov",
     "param": {
       "hasAvatar": true,
@@ -3394,7 +3394,7 @@
     "desc": "https://www.codewars.com",
     "docsUrl": "codewars",
     "fullTitle": "Codewars",
-    "group": "application",
+    "group": "service",
     "id": "Codewars",
     "param": {
       "hasAvatar": true,
@@ -3489,7 +3489,7 @@
     "desc": "https://www.coinbase.com",
     "docsUrl": "coinbase",
     "fullTitle": "Coinbase",
-    "group": "application",
+    "group": "service",
     "id": "Coinbase",
     "param": {
       "hasAvatar": true,
@@ -3585,7 +3585,7 @@
     "desc": "https://www.atlassian.com/software/confluence",
     "docsUrl": "confluence",
     "fullTitle": "Confluence",
-    "group": "application",
+    "group": "service",
     "id": "Confluence",
     "param": {
       "hasAvatar": true,
@@ -3604,7 +3604,7 @@
     "desc": "https://www.consul.io",
     "docsUrl": "consul",
     "fullTitle": "Consul",
-    "group": "application",
+    "group": "service",
     "id": "Consul",
     "param": {
       "hasAvatar": true,
@@ -3623,7 +3623,7 @@
     "desc": "https://containerd.io",
     "docsUrl": "containerd",
     "fullTitle": "containerd",
-    "group": "application",
+    "group": "service",
     "id": "Containerd",
     "param": {
       "hasAvatar": true,
@@ -3642,7 +3642,7 @@
     "desc": "https://www.contentful.com",
     "docsUrl": "contentful",
     "fullTitle": "Contentful",
-    "group": "application",
+    "group": "service",
     "id": "Contentful",
     "param": {
       "hasAvatar": true,
@@ -3661,7 +3661,7 @@
     "desc": "https://www.convex.dev",
     "docsUrl": "convex",
     "fullTitle": "Convex",
-    "group": "application",
+    "group": "service",
     "id": "Convex",
     "param": {
       "hasAvatar": true,
@@ -3737,7 +3737,7 @@
     "desc": "https://www.corsair.com",
     "docsUrl": "corsair",
     "fullTitle": "Corsair",
-    "group": "application",
+    "group": "service",
     "id": "Corsair",
     "param": {
       "hasAvatar": true,
@@ -3756,7 +3756,7 @@
     "desc": "https://www.couchbase.com",
     "docsUrl": "couchbase",
     "fullTitle": "Couchbase",
-    "group": "application",
+    "group": "service",
     "id": "Couchbase",
     "param": {
       "hasAvatar": true,
@@ -3775,7 +3775,7 @@
     "desc": "https://www.coursera.org",
     "docsUrl": "coursera",
     "fullTitle": "Coursera",
-    "group": "application",
+    "group": "service",
     "id": "Coursera",
     "param": {
       "hasAvatar": true,
@@ -3813,7 +3813,7 @@
     "desc": "https://isocpp.org",
     "docsUrl": "c-plus-plus",
     "fullTitle": "C++",
-    "group": "application",
+    "group": "service",
     "id": "CPlusPlus",
     "param": {
       "hasAvatar": true,
@@ -3851,7 +3851,7 @@
     "desc": "https://www.crunchyroll.com",
     "docsUrl": "crunchyroll",
     "fullTitle": "Crunchyroll",
-    "group": "application",
+    "group": "service",
     "id": "Crunchyroll",
     "param": {
       "hasAvatar": true,
@@ -3889,7 +3889,7 @@
     "desc": "https://www.csdn.net",
     "docsUrl": "csdn",
     "fullTitle": "CSDN",
-    "group": "application",
+    "group": "service",
     "id": "CSDN",
     "param": {
       "hasAvatar": true,
@@ -3908,7 +3908,7 @@
     "desc": "https://www.w3.org/Style/CSS",
     "docsUrl": "css",
     "fullTitle": "CSS",
-    "group": "application",
+    "group": "service",
     "id": "CSS",
     "param": {
       "hasAvatar": true,
@@ -3965,7 +3965,7 @@
     "desc": "https://d3js.org",
     "docsUrl": "d-3",
     "fullTitle": "D3",
-    "group": "application",
+    "group": "service",
     "id": "D3",
     "param": {
       "hasAvatar": true,
@@ -4004,7 +4004,7 @@
     "desc": "https://dart.dev",
     "docsUrl": "dart",
     "fullTitle": "Dart",
-    "group": "application",
+    "group": "service",
     "id": "Dart",
     "param": {
       "hasAvatar": true,
@@ -4023,7 +4023,7 @@
     "desc": "https://www.dashlane.com",
     "docsUrl": "dashlane",
     "fullTitle": "Dashlane",
-    "group": "application",
+    "group": "service",
     "id": "Dashlane",
     "param": {
       "hasAvatar": true,
@@ -4042,7 +4042,7 @@
     "desc": "https://www.databricks.com",
     "docsUrl": "databricks",
     "fullTitle": "Databricks",
-    "group": "application",
+    "group": "service",
     "id": "Databricks",
     "param": {
       "hasAvatar": true,
@@ -4061,7 +4061,7 @@
     "desc": "https://www.datadoghq.com",
     "docsUrl": "datadog",
     "fullTitle": "Datadog",
-    "group": "application",
+    "group": "service",
     "id": "Datadog",
     "param": {
       "hasAvatar": true,
@@ -4080,7 +4080,7 @@
     "desc": "https://www.blackmagicdesign.com/products/davinciresolve",
     "docsUrl": "da-vinci-resolve",
     "fullTitle": "DaVinci Resolve",
-    "group": "application",
+    "group": "service",
     "id": "DaVinciResolve",
     "param": {
       "hasAvatar": true,
@@ -4232,7 +4232,7 @@
     "desc": "https://www.deezer.com",
     "docsUrl": "deezer",
     "fullTitle": "Deezer",
-    "group": "application",
+    "group": "service",
     "id": "Deezer",
     "param": {
       "hasAvatar": true,
@@ -4251,7 +4251,7 @@
     "desc": "https://deliveroo.co.uk",
     "docsUrl": "deliveroo",
     "fullTitle": "Deliveroo",
-    "group": "application",
+    "group": "service",
     "id": "Deliveroo",
     "param": {
       "hasAvatar": true,
@@ -4270,7 +4270,7 @@
     "desc": "https://www.dell.com",
     "docsUrl": "dell",
     "fullTitle": "Dell",
-    "group": "application",
+    "group": "service",
     "id": "Dell",
     "param": {
       "hasAvatar": true,
@@ -4289,7 +4289,7 @@
     "desc": "https://www.delta.com",
     "docsUrl": "delta",
     "fullTitle": "Delta",
-    "group": "application",
+    "group": "service",
     "id": "Delta",
     "param": {
       "hasAvatar": true,
@@ -4308,7 +4308,7 @@
     "desc": "https://deno.com",
     "docsUrl": "deno",
     "fullTitle": "Deno",
-    "group": "application",
+    "group": "service",
     "id": "Deno",
     "param": {
       "hasAvatar": true,
@@ -4327,7 +4327,7 @@
     "desc": "https://github.com/dependabot",
     "docsUrl": "dependabot",
     "fullTitle": "Dependabot",
-    "group": "application",
+    "group": "service",
     "id": "Dependabot",
     "param": {
       "hasAvatar": true,
@@ -4365,7 +4365,7 @@
     "desc": "https://dev.to",
     "docsUrl": "dev-to",
     "fullTitle": "dev.to",
-    "group": "application",
+    "group": "service",
     "id": "DevTo",
     "param": {
       "hasAvatar": true,
@@ -4403,7 +4403,7 @@
     "desc": "https://www.digitalocean.com",
     "docsUrl": "digital-ocean",
     "fullTitle": "DigitalOcean",
-    "group": "application",
+    "group": "service",
     "id": "DigitalOcean",
     "param": {
       "hasAvatar": true,
@@ -4422,7 +4422,7 @@
     "desc": "https://www.dinersclub.com",
     "docsUrl": "diners-club",
     "fullTitle": "Diners Club",
-    "group": "application",
+    "group": "service",
     "id": "DinersClub",
     "param": {
       "hasAvatar": true,
@@ -4441,7 +4441,7 @@
     "desc": "https://directus.io",
     "docsUrl": "directus",
     "fullTitle": "Directus",
-    "group": "application",
+    "group": "service",
     "id": "Directus",
     "param": {
       "hasAvatar": true,
@@ -4460,7 +4460,7 @@
     "desc": "https://discord.com",
     "docsUrl": "discord",
     "fullTitle": "Discord",
-    "group": "application",
+    "group": "service",
     "id": "Discord",
     "param": {
       "hasAvatar": true,
@@ -4479,7 +4479,7 @@
     "desc": "https://www.djangoproject.com",
     "docsUrl": "django",
     "fullTitle": "Django",
-    "group": "application",
+    "group": "service",
     "id": "Django",
     "param": {
       "hasAvatar": true,
@@ -4498,7 +4498,7 @@
     "desc": "https://www.dji.com",
     "docsUrl": "dji",
     "fullTitle": "DJI",
-    "group": "application",
+    "group": "service",
     "id": "DJI",
     "param": {
       "hasAvatar": true,
@@ -4536,7 +4536,7 @@
     "desc": "https://www.docker.com",
     "docsUrl": "docker",
     "fullTitle": "Docker",
-    "group": "application",
+    "group": "service",
     "id": "Docker",
     "param": {
       "hasAvatar": true,
@@ -4574,7 +4574,7 @@
     "desc": "https://docusaurus.io",
     "docsUrl": "docusaurus",
     "fullTitle": "Docusaurus",
-    "group": "application",
+    "group": "service",
     "id": "Docusaurus",
     "param": {
       "hasAvatar": true,
@@ -4593,7 +4593,7 @@
     "desc": "https://dogecoin.com",
     "docsUrl": "dogecoin",
     "fullTitle": "Dogecoin",
-    "group": "application",
+    "group": "service",
     "id": "Dogecoin",
     "param": {
       "hasAvatar": true,
@@ -4631,7 +4631,7 @@
     "desc": "https://www.doordash.com",
     "docsUrl": "door-dash",
     "fullTitle": "DoorDash",
-    "group": "application",
+    "group": "service",
     "id": "DoorDash",
     "param": {
       "hasAvatar": true,
@@ -4650,7 +4650,7 @@
     "desc": "https://dotnet.microsoft.com",
     "docsUrl": "dot-net",
     "fullTitle": ".NET",
-    "group": "application",
+    "group": "service",
     "id": "DotNet",
     "param": {
       "hasAvatar": true,
@@ -4707,7 +4707,7 @@
     "desc": "https://dribbble.com",
     "docsUrl": "dribbble",
     "fullTitle": "Dribbble",
-    "group": "application",
+    "group": "service",
     "id": "Dribbble",
     "param": {
       "hasAvatar": true,
@@ -4726,7 +4726,7 @@
     "desc": "https://orm.drizzle.team",
     "docsUrl": "drizzle",
     "fullTitle": "Drizzle",
-    "group": "application",
+    "group": "service",
     "id": "Drizzle",
     "param": {
       "hasAvatar": true,
@@ -4745,7 +4745,7 @@
     "desc": "https://www.drone.io",
     "docsUrl": "drone",
     "fullTitle": "Drone",
-    "group": "application",
+    "group": "service",
     "id": "Drone",
     "param": {
       "hasAvatar": true,
@@ -4764,7 +4764,7 @@
     "desc": "https://www.dropbox.com",
     "docsUrl": "dropbox",
     "fullTitle": "Dropbox",
-    "group": "application",
+    "group": "service",
     "id": "Dropbox",
     "param": {
       "hasAvatar": true,
@@ -4783,7 +4783,7 @@
     "desc": "https://www.drupal.org",
     "docsUrl": "drupal",
     "fullTitle": "Drupal",
-    "group": "application",
+    "group": "service",
     "id": "Drupal",
     "param": {
       "hasAvatar": true,
@@ -4802,7 +4802,7 @@
     "desc": "https://duckdb.org",
     "docsUrl": "duck-db",
     "fullTitle": "DuckDB",
-    "group": "application",
+    "group": "service",
     "id": "DuckDB",
     "param": {
       "hasAvatar": true,
@@ -4821,7 +4821,7 @@
     "desc": "https://duckduckgo.com",
     "docsUrl": "duck-duck-go",
     "fullTitle": "DuckDuckGo",
-    "group": "application",
+    "group": "service",
     "id": "DuckDuckGo",
     "param": {
       "hasAvatar": true,
@@ -4840,7 +4840,7 @@
     "desc": "https://www.duolingo.com",
     "docsUrl": "duolingo",
     "fullTitle": "Duolingo",
-    "group": "application",
+    "group": "service",
     "id": "Duolingo",
     "param": {
       "hasAvatar": true,
@@ -4859,7 +4859,7 @@
     "desc": "https://www.ea.com",
     "docsUrl": "ea",
     "fullTitle": "EA",
-    "group": "application",
+    "group": "service",
     "id": "EA",
     "param": {
       "hasAvatar": true,
@@ -4878,7 +4878,7 @@
     "desc": "https://www.easyjet.com",
     "docsUrl": "easy-jet",
     "fullTitle": "easyJet",
-    "group": "application",
+    "group": "service",
     "id": "EasyJet",
     "param": {
       "hasAvatar": true,
@@ -4897,7 +4897,7 @@
     "desc": "https://www.ebay.com",
     "docsUrl": "ebay",
     "fullTitle": "eBay",
-    "group": "application",
+    "group": "service",
     "id": "Ebay",
     "param": {
       "hasAvatar": true,
@@ -4916,7 +4916,7 @@
     "desc": "https://www.edx.org",
     "docsUrl": "ed-x",
     "fullTitle": "edX",
-    "group": "application",
+    "group": "service",
     "id": "EdX",
     "param": {
       "hasAvatar": true,
@@ -4935,7 +4935,7 @@
     "desc": "https://www.elastic.co/elasticsearch",
     "docsUrl": "elasticsearch",
     "fullTitle": "Elasticsearch",
-    "group": "application",
+    "group": "service",
     "id": "Elasticsearch",
     "param": {
       "hasAvatar": true,
@@ -4954,7 +4954,7 @@
     "desc": "https://www.electronjs.org",
     "docsUrl": "electron",
     "fullTitle": "Electron",
-    "group": "application",
+    "group": "service",
     "id": "Electron",
     "param": {
       "hasAvatar": true,
@@ -4973,7 +4973,7 @@
     "desc": "https://element.io",
     "docsUrl": "element",
     "fullTitle": "Element",
-    "group": "application",
+    "group": "service",
     "id": "Element",
     "param": {
       "hasAvatar": true,
@@ -5030,7 +5030,7 @@
     "desc": "https://elixir-lang.org",
     "docsUrl": "elixir",
     "fullTitle": "Elixir",
-    "group": "application",
+    "group": "service",
     "id": "Elixir",
     "param": {
       "hasAvatar": true,
@@ -5049,7 +5049,7 @@
     "desc": "https://www.emirates.com",
     "docsUrl": "emirates",
     "fullTitle": "Emirates",
-    "group": "application",
+    "group": "service",
     "id": "Emirates",
     "param": {
       "hasAvatar": true,
@@ -5068,7 +5068,7 @@
     "desc": "https://www.envoyproxy.io",
     "docsUrl": "envoy",
     "fullTitle": "Envoy",
-    "group": "application",
+    "group": "service",
     "id": "Envoy",
     "param": {
       "hasAvatar": true,
@@ -5087,7 +5087,7 @@
     "desc": "https://www.epicgames.com",
     "docsUrl": "epic-games",
     "fullTitle": "Epic Games",
-    "group": "application",
+    "group": "service",
     "id": "EpicGames",
     "param": {
       "hasAvatar": true,
@@ -5106,7 +5106,7 @@
     "desc": "https://www.ericsson.com",
     "docsUrl": "ericsson",
     "fullTitle": "Ericsson",
-    "group": "application",
+    "group": "service",
     "id": "Ericsson",
     "param": {
       "hasAvatar": true,
@@ -5125,7 +5125,7 @@
     "desc": "https://www.erlang.org",
     "docsUrl": "erlang",
     "fullTitle": "Erlang",
-    "group": "application",
+    "group": "service",
     "id": "Erlang",
     "param": {
       "hasAvatar": true,
@@ -5144,7 +5144,7 @@
     "desc": "https://esbuild.github.io",
     "docsUrl": "esbuild",
     "fullTitle": "esbuild",
-    "group": "application",
+    "group": "service",
     "id": "Esbuild",
     "param": {
       "hasAvatar": true,
@@ -5163,7 +5163,7 @@
     "desc": "https://eslint.org",
     "docsUrl": "es-lint",
     "fullTitle": "ESLint",
-    "group": "application",
+    "group": "service",
     "id": "ESLint",
     "param": {
       "hasAvatar": true,
@@ -5182,7 +5182,7 @@
     "desc": "https://www.espressif.com",
     "docsUrl": "espressif",
     "fullTitle": "Espressif",
-    "group": "application",
+    "group": "service",
     "id": "Espressif",
     "param": {
       "hasAvatar": true,
@@ -5221,7 +5221,7 @@
     "desc": "https://ethereum.org",
     "docsUrl": "ethereum",
     "fullTitle": "Ethereum",
-    "group": "application",
+    "group": "service",
     "id": "Ethereum",
     "param": {
       "hasAvatar": true,
@@ -5240,7 +5240,7 @@
     "desc": "https://www.etsy.com",
     "docsUrl": "etsy",
     "fullTitle": "Etsy",
-    "group": "application",
+    "group": "service",
     "id": "Etsy",
     "param": {
       "hasAvatar": true,
@@ -5259,7 +5259,7 @@
     "desc": "https://evernote.com",
     "docsUrl": "evernote",
     "fullTitle": "Evernote",
-    "group": "application",
+    "group": "service",
     "id": "Evernote",
     "param": {
       "hasAvatar": true,
@@ -5316,7 +5316,7 @@
     "desc": "https://www.expedia.com",
     "docsUrl": "expedia",
     "fullTitle": "Expedia",
-    "group": "application",
+    "group": "service",
     "id": "Expedia",
     "param": {
       "hasAvatar": true,
@@ -5335,7 +5335,7 @@
     "desc": "https://expressjs.com",
     "docsUrl": "express",
     "fullTitle": "Express",
-    "group": "application",
+    "group": "service",
     "id": "Express",
     "param": {
       "hasAvatar": true,
@@ -5354,7 +5354,7 @@
     "desc": "https://www.expressvpn.com",
     "docsUrl": "express-vpn",
     "fullTitle": "ExpressVPN",
-    "group": "application",
+    "group": "service",
     "id": "ExpressVPN",
     "param": {
       "hasAvatar": true,
@@ -5373,7 +5373,7 @@
     "desc": "https://www.facebook.com",
     "docsUrl": "facebook",
     "fullTitle": "Facebook",
-    "group": "application",
+    "group": "service",
     "id": "Facebook",
     "param": {
       "hasAvatar": true,
@@ -5411,7 +5411,7 @@
     "desc": "https://fastapi.tiangolo.com",
     "docsUrl": "fast-api",
     "fullTitle": "FastAPI",
-    "group": "application",
+    "group": "service",
     "id": "FastAPI",
     "param": {
       "hasAvatar": true,
@@ -5449,7 +5449,7 @@
     "desc": "https://www.fastly.com",
     "docsUrl": "fastly",
     "fullTitle": "Fastly",
-    "group": "application",
+    "group": "service",
     "id": "Fastly",
     "param": {
       "hasAvatar": true,
@@ -5487,7 +5487,7 @@
     "desc": "https://www.ferrari.com",
     "docsUrl": "ferrari",
     "fullTitle": "Ferrari",
-    "group": "application",
+    "group": "service",
     "id": "Ferrari",
     "param": {
       "hasAvatar": true,
@@ -5525,7 +5525,7 @@
     "desc": "https://firebase.google.com",
     "docsUrl": "firebase",
     "fullTitle": "Firebase",
-    "group": "application",
+    "group": "service",
     "id": "Firebase",
     "param": {
       "hasAvatar": true,
@@ -5563,7 +5563,7 @@
     "desc": "https://www.firefox.com",
     "docsUrl": "firefox",
     "fullTitle": "Firefox Browser",
-    "group": "application",
+    "group": "service",
     "id": "Firefox",
     "param": {
       "hasAvatar": true,
@@ -5620,7 +5620,7 @@
     "desc": "https://www.fitbit.com",
     "docsUrl": "fitbit",
     "fullTitle": "Fitbit",
-    "group": "application",
+    "group": "service",
     "id": "Fitbit",
     "param": {
       "hasAvatar": true,
@@ -5639,7 +5639,7 @@
     "desc": "https://flask.palletsprojects.com",
     "docsUrl": "flask",
     "fullTitle": "Flask",
-    "group": "application",
+    "group": "service",
     "id": "Flask",
     "param": {
       "hasAvatar": true,
@@ -5658,7 +5658,7 @@
     "desc": "https://www.flickr.com",
     "docsUrl": "flickr",
     "fullTitle": "Flickr",
-    "group": "application",
+    "group": "service",
     "id": "Flickr",
     "param": {
       "hasAvatar": true,
@@ -5715,7 +5715,7 @@
     "desc": "https://flutter.dev",
     "docsUrl": "flutter",
     "fullTitle": "Flutter",
-    "group": "application",
+    "group": "service",
     "id": "Flutter",
     "param": {
       "hasAvatar": true,
@@ -5753,7 +5753,7 @@
     "desc": "https://fly.io",
     "docsUrl": "fly-io",
     "fullTitle": "Fly.io",
-    "group": "application",
+    "group": "service",
     "id": "FlyIo",
     "param": {
       "hasAvatar": true,
@@ -5772,7 +5772,7 @@
     "desc": "https://www.foodpanda.com",
     "docsUrl": "foodpanda",
     "fullTitle": "foodpanda",
-    "group": "application",
+    "group": "service",
     "id": "Foodpanda",
     "param": {
       "hasAvatar": true,
@@ -5791,7 +5791,7 @@
     "desc": "https://www.ford.com",
     "docsUrl": "ford",
     "fullTitle": "Ford",
-    "group": "application",
+    "group": "service",
     "id": "Ford",
     "param": {
       "hasAvatar": true,
@@ -5810,7 +5810,7 @@
     "desc": "https://www.framer.com",
     "docsUrl": "framer",
     "fullTitle": "Framer",
-    "group": "application",
+    "group": "service",
     "id": "Framer",
     "param": {
       "hasAvatar": true,
@@ -5829,7 +5829,7 @@
     "desc": "https://www.freebsd.org",
     "docsUrl": "free-bsd",
     "fullTitle": "FreeBSD",
-    "group": "application",
+    "group": "service",
     "id": "FreeBSD",
     "param": {
       "hasAvatar": true,
@@ -5867,7 +5867,7 @@
     "desc": "https://www.fujifilm.com",
     "docsUrl": "fujifilm",
     "fullTitle": "Fujifilm",
-    "group": "application",
+    "group": "service",
     "id": "Fujifilm",
     "param": {
       "hasAvatar": true,
@@ -5886,7 +5886,7 @@
     "desc": "https://www.fujitsu.com",
     "docsUrl": "fujitsu",
     "fullTitle": "Fujitsu",
-    "group": "application",
+    "group": "service",
     "id": "Fujitsu",
     "param": {
       "hasAvatar": true,
@@ -5905,7 +5905,7 @@
     "desc": "https://www.garmin.com",
     "docsUrl": "garmin",
     "fullTitle": "Garmin",
-    "group": "application",
+    "group": "service",
     "id": "Garmin",
     "param": {
       "hasAvatar": true,
@@ -5982,7 +5982,7 @@
     "desc": "https://ghost.org",
     "docsUrl": "ghost",
     "fullTitle": "Ghost",
-    "group": "application",
+    "group": "service",
     "id": "Ghost",
     "param": {
       "hasAvatar": true,
@@ -6001,7 +6001,7 @@
     "desc": "https://git-scm.com",
     "docsUrl": "git",
     "fullTitle": "Git",
-    "group": "application",
+    "group": "service",
     "id": "Git",
     "param": {
       "hasAvatar": true,
@@ -6020,7 +6020,7 @@
     "desc": "https://about.gitea.com",
     "docsUrl": "gitea",
     "fullTitle": "Gitea",
-    "group": "application",
+    "group": "service",
     "id": "Gitea",
     "param": {
       "hasAvatar": true,
@@ -6039,7 +6039,7 @@
     "desc": "https://gitee.com",
     "docsUrl": "gitee",
     "fullTitle": "Gitee",
-    "group": "application",
+    "group": "service",
     "id": "Gitee",
     "param": {
       "hasAvatar": true,
@@ -6096,7 +6096,7 @@
     "desc": "https://github.com/features/actions",
     "docsUrl": "github-actions",
     "fullTitle": "GitHub Actions",
-    "group": "application",
+    "group": "service",
     "id": "GithubActions",
     "param": {
       "hasAvatar": true,
@@ -6134,7 +6134,7 @@
     "desc": "https://www.gitkraken.com",
     "docsUrl": "git-kraken",
     "fullTitle": "GitKraken",
-    "group": "application",
+    "group": "service",
     "id": "GitKraken",
     "param": {
       "hasAvatar": true,
@@ -6153,7 +6153,7 @@
     "desc": "https://gitlab.com",
     "docsUrl": "git-lab",
     "fullTitle": "GitLab",
-    "group": "application",
+    "group": "service",
     "id": "GitLab",
     "param": {
       "hasAvatar": true,
@@ -6229,7 +6229,7 @@
     "desc": "https://glovoapp.com",
     "docsUrl": "glovo",
     "fullTitle": "Glovo",
-    "group": "application",
+    "group": "service",
     "id": "Glovo",
     "param": {
       "hasAvatar": true,
@@ -6248,7 +6248,7 @@
     "desc": "https://mail.google.com",
     "docsUrl": "gmail",
     "fullTitle": "Gmail",
-    "group": "application",
+    "group": "service",
     "id": "Gmail",
     "param": {
       "hasAvatar": true,
@@ -6267,7 +6267,7 @@
     "desc": "https://go.dev",
     "docsUrl": "go",
     "fullTitle": "Go",
-    "group": "application",
+    "group": "service",
     "id": "Go",
     "param": {
       "hasAvatar": true,
@@ -6286,7 +6286,7 @@
     "desc": "https://www.godaddy.com",
     "docsUrl": "go-daddy",
     "fullTitle": "GoDaddy",
-    "group": "application",
+    "group": "service",
     "id": "GoDaddy",
     "param": {
       "hasAvatar": true,
@@ -6305,7 +6305,7 @@
     "desc": "https://godotengine.org",
     "docsUrl": "godot",
     "fullTitle": "Godot",
-    "group": "application",
+    "group": "service",
     "id": "Godot",
     "param": {
       "hasAvatar": true,
@@ -6324,7 +6324,7 @@
     "desc": "https://www.gog.com",
     "docsUrl": "gog",
     "fullTitle": "GOG.com",
-    "group": "application",
+    "group": "service",
     "id": "GOG",
     "param": {
       "hasAvatar": true,
@@ -6343,7 +6343,7 @@
     "desc": "https://www.jetbrains.com/go",
     "docsUrl": "go-land",
     "fullTitle": "GoLand",
-    "group": "application",
+    "group": "service",
     "id": "GoLand",
     "param": {
       "hasAvatar": true,
@@ -6362,7 +6362,7 @@
     "desc": "https://www.goldmansachs.com",
     "docsUrl": "goldman-sachs",
     "fullTitle": "Goldman Sachs",
-    "group": "application",
+    "group": "service",
     "id": "GoldmanSachs",
     "param": {
       "hasAvatar": true,
@@ -6381,7 +6381,7 @@
     "desc": "https://www.goodreads.com",
     "docsUrl": "goodreads",
     "fullTitle": "Goodreads",
-    "group": "application",
+    "group": "service",
     "id": "Goodreads",
     "param": {
       "hasAvatar": true,
@@ -6419,7 +6419,7 @@
     "desc": "https://marketingplatform.google.com/about/analytics",
     "docsUrl": "google-analytics",
     "fullTitle": "Google Analytics",
-    "group": "application",
+    "group": "service",
     "id": "GoogleAnalytics",
     "param": {
       "hasAvatar": true,
@@ -6438,7 +6438,7 @@
     "desc": "https://calendar.google.com",
     "docsUrl": "google-calendar",
     "fullTitle": "Google Calendar",
-    "group": "application",
+    "group": "service",
     "id": "GoogleCalendar",
     "param": {
       "hasAvatar": true,
@@ -6457,7 +6457,7 @@
     "desc": "https://chat.google.com",
     "docsUrl": "google-chat",
     "fullTitle": "Google Chat",
-    "group": "application",
+    "group": "service",
     "id": "GoogleChat",
     "param": {
       "hasAvatar": true,
@@ -6476,7 +6476,7 @@
     "desc": "https://classroom.google.com",
     "docsUrl": "google-classroom",
     "fullTitle": "Google Classroom",
-    "group": "application",
+    "group": "service",
     "id": "GoogleClassroom",
     "param": {
       "hasAvatar": true,
@@ -6514,7 +6514,7 @@
     "desc": "https://docs.google.com",
     "docsUrl": "google-docs",
     "fullTitle": "Google Docs",
-    "group": "application",
+    "group": "service",
     "id": "GoogleDocs",
     "param": {
       "hasAvatar": true,
@@ -6533,7 +6533,7 @@
     "desc": "https://drive.google.com",
     "docsUrl": "google-drive",
     "fullTitle": "Google Drive",
-    "group": "application",
+    "group": "service",
     "id": "GoogleDrive",
     "param": {
       "hasAvatar": true,
@@ -6552,7 +6552,7 @@
     "desc": "https://keep.google.com",
     "docsUrl": "google-keep",
     "fullTitle": "Google Keep",
-    "group": "application",
+    "group": "service",
     "id": "GoogleKeep",
     "param": {
       "hasAvatar": true,
@@ -6571,7 +6571,7 @@
     "desc": "https://maps.google.com",
     "docsUrl": "google-maps",
     "fullTitle": "Google Maps",
-    "group": "application",
+    "group": "service",
     "id": "GoogleMaps",
     "param": {
       "hasAvatar": true,
@@ -6590,7 +6590,7 @@
     "desc": "https://meet.google.com",
     "docsUrl": "google-meet",
     "fullTitle": "Google Meet",
-    "group": "application",
+    "group": "service",
     "id": "GoogleMeet",
     "param": {
       "hasAvatar": true,
@@ -6609,7 +6609,7 @@
     "desc": "https://pay.google.com",
     "docsUrl": "google-pay",
     "fullTitle": "Google Pay",
-    "group": "application",
+    "group": "service",
     "id": "GooglePay",
     "param": {
       "hasAvatar": true,
@@ -6628,7 +6628,7 @@
     "desc": "https://play.google.com",
     "docsUrl": "google-play",
     "fullTitle": "Google Play",
-    "group": "application",
+    "group": "service",
     "id": "GooglePlay",
     "param": {
       "hasAvatar": true,
@@ -6647,7 +6647,7 @@
     "desc": "https://sheets.google.com",
     "docsUrl": "google-sheets",
     "fullTitle": "Google Sheets",
-    "group": "application",
+    "group": "service",
     "id": "GoogleSheets",
     "param": {
       "hasAvatar": true,
@@ -6666,7 +6666,7 @@
     "desc": "https://tasks.google.com",
     "docsUrl": "google-tasks",
     "fullTitle": "Google Tasks",
-    "group": "application",
+    "group": "service",
     "id": "GoogleTasks",
     "param": {
       "hasAvatar": true,
@@ -6704,7 +6704,7 @@
     "desc": "https://www.grab.com",
     "docsUrl": "grab",
     "fullTitle": "Grab",
-    "group": "application",
+    "group": "service",
     "id": "Grab",
     "param": {
       "hasAvatar": true,
@@ -6742,7 +6742,7 @@
     "desc": "https://gradle.org",
     "docsUrl": "gradle",
     "fullTitle": "Gradle",
-    "group": "application",
+    "group": "service",
     "id": "Gradle",
     "param": {
       "hasAvatar": true,
@@ -6761,7 +6761,7 @@
     "desc": "https://grafana.com",
     "docsUrl": "grafana",
     "fullTitle": "Grafana",
-    "group": "application",
+    "group": "service",
     "id": "Grafana",
     "param": {
       "hasAvatar": true,
@@ -6780,7 +6780,7 @@
     "desc": "https://www.grammarly.com",
     "docsUrl": "grammarly",
     "fullTitle": "Grammarly",
-    "group": "application",
+    "group": "service",
     "id": "Grammarly",
     "param": {
       "hasAvatar": true,
@@ -6799,7 +6799,7 @@
     "desc": "https://graphql.org",
     "docsUrl": "graph-ql",
     "fullTitle": "GraphQL",
-    "group": "application",
+    "group": "service",
     "id": "GraphQL",
     "param": {
       "hasAvatar": true,
@@ -6875,7 +6875,7 @@
     "desc": "https://www.hackerrank.com",
     "docsUrl": "hacker-rank",
     "fullTitle": "HackerRank",
-    "group": "application",
+    "group": "service",
     "id": "HackerRank",
     "param": {
       "hasAvatar": true,
@@ -6952,7 +6952,7 @@
     "desc": "https://www.harmonyos.com",
     "docsUrl": "harmony-os",
     "fullTitle": "HarmonyOS",
-    "group": "application",
+    "group": "service",
     "id": "HarmonyOS",
     "param": {
       "hasAvatar": true,
@@ -6971,7 +6971,7 @@
     "desc": "https://hashnode.com",
     "docsUrl": "hashnode",
     "fullTitle": "Hashnode",
-    "group": "application",
+    "group": "service",
     "id": "Hashnode",
     "param": {
       "hasAvatar": true,
@@ -6990,7 +6990,7 @@
     "desc": "https://www.haskell.org",
     "docsUrl": "haskell",
     "fullTitle": "Haskell",
-    "group": "application",
+    "group": "service",
     "id": "Haskell",
     "param": {
       "hasAvatar": true,
@@ -7009,7 +7009,7 @@
     "desc": "https://hasura.io",
     "docsUrl": "hasura",
     "fullTitle": "Hasura",
-    "group": "application",
+    "group": "service",
     "id": "Hasura",
     "param": {
       "hasAvatar": true,
@@ -7028,7 +7028,7 @@
     "desc": "https://www.hbo.com",
     "docsUrl": "hbo",
     "fullTitle": "HBO",
-    "group": "application",
+    "group": "service",
     "id": "HBO",
     "param": {
       "hasAvatar": true,
@@ -7066,7 +7066,7 @@
     "desc": "https://helix-editor.com",
     "docsUrl": "helix",
     "fullTitle": "Helix",
-    "group": "application",
+    "group": "service",
     "id": "Helix",
     "param": {
       "hasAvatar": true,
@@ -7085,7 +7085,7 @@
     "desc": "https://helm.sh",
     "docsUrl": "helm",
     "fullTitle": "Helm",
-    "group": "application",
+    "group": "service",
     "id": "Helm",
     "param": {
       "hasAvatar": true,
@@ -7123,7 +7123,7 @@
     "desc": "https://www.hetzner.com",
     "docsUrl": "hetzner",
     "fullTitle": "Hetzner",
-    "group": "application",
+    "group": "service",
     "id": "Hetzner",
     "param": {
       "hasAvatar": true,
@@ -7162,7 +7162,7 @@
     "desc": "https://www.hilton.com",
     "docsUrl": "hilton",
     "fullTitle": "Hilton",
-    "group": "application",
+    "group": "service",
     "id": "Hilton",
     "param": {
       "hasAvatar": true,
@@ -7181,7 +7181,7 @@
     "desc": "https://www.hitachi.com",
     "docsUrl": "hitachi",
     "fullTitle": "Hitachi",
-    "group": "application",
+    "group": "service",
     "id": "Hitachi",
     "param": {
       "hasAvatar": true,
@@ -7200,7 +7200,7 @@
     "desc": "https://brew.sh",
     "docsUrl": "homebrew",
     "fullTitle": "Homebrew",
-    "group": "application",
+    "group": "service",
     "id": "Homebrew",
     "param": {
       "hasAvatar": true,
@@ -7219,7 +7219,7 @@
     "desc": "https://global.honda",
     "docsUrl": "honda",
     "fullTitle": "Honda",
-    "group": "application",
+    "group": "service",
     "id": "Honda",
     "param": {
       "hasAvatar": true,
@@ -7238,7 +7238,7 @@
     "desc": "https://hono.dev",
     "docsUrl": "hono",
     "fullTitle": "Hono",
-    "group": "application",
+    "group": "service",
     "id": "Hono",
     "param": {
       "hasAvatar": true,
@@ -7257,7 +7257,7 @@
     "desc": "https://www.hostinger.com",
     "docsUrl": "hostinger",
     "fullTitle": "Hostinger",
-    "group": "application",
+    "group": "service",
     "id": "Hostinger",
     "param": {
       "hasAvatar": true,
@@ -7276,7 +7276,7 @@
     "desc": "https://www.hotels.com",
     "docsUrl": "hotels-com",
     "fullTitle": "Hotels.com",
-    "group": "application",
+    "group": "service",
     "id": "HotelsCom",
     "param": {
       "hasAvatar": true,
@@ -7295,7 +7295,7 @@
     "desc": "https://www.hp.com",
     "docsUrl": "hp",
     "fullTitle": "HP",
-    "group": "application",
+    "group": "service",
     "id": "HP",
     "param": {
       "hasAvatar": true,
@@ -7314,7 +7314,7 @@
     "desc": "https://www.hsbc.com",
     "docsUrl": "hsbc",
     "fullTitle": "HSBC",
-    "group": "application",
+    "group": "service",
     "id": "HSBC",
     "param": {
       "hasAvatar": true,
@@ -7333,7 +7333,7 @@
     "desc": "https://html.spec.whatwg.org",
     "docsUrl": "h-t-m-l-5",
     "fullTitle": "HTML5",
-    "group": "application",
+    "group": "service",
     "id": "HTML5",
     "param": {
       "hasAvatar": true,
@@ -7352,7 +7352,7 @@
     "desc": "https://htmx.org",
     "docsUrl": "htmx",
     "fullTitle": "htmx",
-    "group": "application",
+    "group": "service",
     "id": "Htmx",
     "param": {
       "hasAvatar": true,
@@ -7409,7 +7409,7 @@
     "desc": "https://www.hubspot.com",
     "docsUrl": "hub-spot",
     "fullTitle": "HubSpot",
-    "group": "application",
+    "group": "service",
     "id": "HubSpot",
     "param": {
       "hasAvatar": true,
@@ -7447,7 +7447,7 @@
     "desc": "https://www.humblebundle.com",
     "docsUrl": "humble-bundle",
     "fullTitle": "Humble Bundle",
-    "group": "application",
+    "group": "service",
     "id": "HumbleBundle",
     "param": {
       "hasAvatar": true,
@@ -7504,7 +7504,7 @@
     "desc": "https://www.hyundai.com",
     "docsUrl": "hyundai",
     "fullTitle": "Hyundai",
-    "group": "application",
+    "group": "service",
     "id": "Hyundai",
     "param": {
       "hasAvatar": true,
@@ -7542,7 +7542,7 @@
     "desc": "https://www.icloud.com",
     "docsUrl": "i-cloud",
     "fullTitle": "iCloud",
-    "group": "application",
+    "group": "service",
     "id": "ICloud",
     "param": {
       "hasAvatar": true,
@@ -7599,7 +7599,7 @@
     "desc": "https://ifttt.com",
     "docsUrl": "ifttt",
     "fullTitle": "IFTTT",
-    "group": "application",
+    "group": "service",
     "id": "IFTTT",
     "param": {
       "hasAvatar": true,
@@ -7618,7 +7618,7 @@
     "desc": "https://www.ikea.com",
     "docsUrl": "ikea",
     "fullTitle": "IKEA",
-    "group": "application",
+    "group": "service",
     "id": "IKEA",
     "param": {
       "hasAvatar": true,
@@ -7637,7 +7637,7 @@
     "desc": "https://www.imdb.com",
     "docsUrl": "im-db",
     "fullTitle": "IMDb",
-    "group": "application",
+    "group": "service",
     "id": "IMDb",
     "param": {
       "hasAvatar": true,
@@ -7751,7 +7751,7 @@
     "desc": "https://www.influxdata.com",
     "docsUrl": "influx-db",
     "fullTitle": "InfluxDB",
-    "group": "application",
+    "group": "service",
     "id": "InfluxDB",
     "param": {
       "hasAvatar": true,
@@ -7770,7 +7770,7 @@
     "desc": "https://insomnia.rest",
     "docsUrl": "insomnia",
     "fullTitle": "Insomnia",
-    "group": "application",
+    "group": "service",
     "id": "Insomnia",
     "param": {
       "hasAvatar": true,
@@ -7789,7 +7789,7 @@
     "desc": "https://www.instacart.com",
     "docsUrl": "instacart",
     "fullTitle": "Instacart",
-    "group": "application",
+    "group": "service",
     "id": "Instacart",
     "param": {
       "hasAvatar": true,
@@ -7808,7 +7808,7 @@
     "desc": "https://www.instagram.com",
     "docsUrl": "instagram",
     "fullTitle": "Instagram",
-    "group": "application",
+    "group": "service",
     "id": "Instagram",
     "param": {
       "hasAvatar": true,
@@ -7827,7 +7827,7 @@
     "desc": "https://www.intel.com",
     "docsUrl": "intel",
     "fullTitle": "Intel",
-    "group": "application",
+    "group": "service",
     "id": "Intel",
     "param": {
       "hasAvatar": true,
@@ -7846,7 +7846,7 @@
     "desc": "https://www.jetbrains.com/idea",
     "docsUrl": "intelli-jidea",
     "fullTitle": "IntelliJ IDEA",
-    "group": "application",
+    "group": "service",
     "id": "IntelliJIDEA",
     "param": {
       "hasAvatar": true,
@@ -7865,7 +7865,7 @@
     "desc": "https://www.intercom.com",
     "docsUrl": "intercom",
     "fullTitle": "Intercom",
-    "group": "application",
+    "group": "service",
     "id": "Intercom",
     "param": {
       "hasAvatar": true,
@@ -7884,7 +7884,7 @@
     "desc": "https://archive.org",
     "docsUrl": "internet-archive",
     "fullTitle": "Internet Archive",
-    "group": "application",
+    "group": "service",
     "id": "InternetArchive",
     "param": {
       "hasAvatar": true,
@@ -7922,7 +7922,7 @@
     "desc": "https://www.ionos.com",
     "docsUrl": "ionos",
     "fullTitle": "Ionos",
-    "group": "application",
+    "group": "service",
     "id": "Ionos",
     "param": {
       "hasAvatar": true,
@@ -7941,7 +7941,7 @@
     "desc": "https://www.apple.com/ios",
     "docsUrl": "ios",
     "fullTitle": "iOS",
-    "group": "application",
+    "group": "service",
     "id": "IOS",
     "param": {
       "hasAvatar": true,
@@ -7960,7 +7960,7 @@
     "desc": "https://istio.io",
     "docsUrl": "istio",
     "fullTitle": "Istio",
-    "group": "application",
+    "group": "service",
     "id": "Istio",
     "param": {
       "hasAvatar": true,
@@ -7979,7 +7979,7 @@
     "desc": "https://itch.io",
     "docsUrl": "itch-io",
     "fullTitle": "Itch.io",
-    "group": "application",
+    "group": "service",
     "id": "ItchIo",
     "param": {
       "hasAvatar": true,
@@ -7998,7 +7998,7 @@
     "desc": "https://iterm2.com",
     "docsUrl": "i-term2",
     "fullTitle": "iTerm2",
-    "group": "application",
+    "group": "service",
     "id": "ITerm2",
     "param": {
       "hasAvatar": true,
@@ -8017,7 +8017,7 @@
     "desc": "https://www.jaegertracing.io",
     "docsUrl": "jaeger",
     "fullTitle": "Jaeger",
-    "group": "application",
+    "group": "service",
     "id": "Jaeger",
     "param": {
       "hasAvatar": true,
@@ -8036,7 +8036,7 @@
     "desc": "https://developer.mozilla.org/docs/Web/JavaScript",
     "docsUrl": "java-script",
     "fullTitle": "JavaScript",
-    "group": "application",
+    "group": "service",
     "id": "JavaScript",
     "param": {
       "hasAvatar": true,
@@ -8055,7 +8055,7 @@
     "desc": "https://www.jbl.com",
     "docsUrl": "jbl",
     "fullTitle": "JBL",
-    "group": "application",
+    "group": "service",
     "id": "JBL",
     "param": {
       "hasAvatar": true,
@@ -8074,7 +8074,7 @@
     "desc": "https://www.global.jcb",
     "docsUrl": "jcb",
     "fullTitle": "JCB",
-    "group": "application",
+    "group": "service",
     "id": "JCB",
     "param": {
       "hasAvatar": true,
@@ -8093,7 +8093,7 @@
     "desc": "https://www.jeep.com",
     "docsUrl": "jeep",
     "fullTitle": "Jeep",
-    "group": "application",
+    "group": "service",
     "id": "Jeep",
     "param": {
       "hasAvatar": true,
@@ -8112,7 +8112,7 @@
     "desc": "https://jellyfin.org",
     "docsUrl": "jellyfin",
     "fullTitle": "Jellyfin",
-    "group": "application",
+    "group": "service",
     "id": "Jellyfin",
     "param": {
       "hasAvatar": true,
@@ -8131,7 +8131,7 @@
     "desc": "https://jestjs.io",
     "docsUrl": "jest",
     "fullTitle": "Jest",
-    "group": "application",
+    "group": "service",
     "id": "Jest",
     "param": {
       "hasAvatar": true,
@@ -8150,7 +8150,7 @@
     "desc": "https://www.jetbrains.com",
     "docsUrl": "jet-brains",
     "fullTitle": "JetBrains",
-    "group": "application",
+    "group": "service",
     "id": "JetBrains",
     "param": {
       "hasAvatar": true,
@@ -8207,7 +8207,7 @@
     "desc": "https://www.atlassian.com/software/jira",
     "docsUrl": "jira",
     "fullTitle": "Jira",
-    "group": "application",
+    "group": "service",
     "id": "Jira",
     "param": {
       "hasAvatar": true,
@@ -8226,7 +8226,7 @@
     "desc": "https://www.joomla.org",
     "docsUrl": "joomla",
     "fullTitle": "Joomla",
-    "group": "application",
+    "group": "service",
     "id": "Joomla",
     "param": {
       "hasAvatar": true,
@@ -8245,7 +8245,7 @@
     "desc": "https://joplinapp.org",
     "docsUrl": "joplin",
     "fullTitle": "Joplin",
-    "group": "application",
+    "group": "service",
     "id": "Joplin",
     "param": {
       "hasAvatar": true,
@@ -8264,7 +8264,7 @@
     "desc": "https://jquery.com",
     "docsUrl": "j-query",
     "fullTitle": "jQuery",
-    "group": "application",
+    "group": "service",
     "id": "JQuery",
     "param": {
       "hasAvatar": true,
@@ -8283,7 +8283,7 @@
     "desc": "https://www.json.org",
     "docsUrl": "json",
     "fullTitle": "JSON",
-    "group": "application",
+    "group": "service",
     "id": "JSON",
     "param": {
       "hasAvatar": true,
@@ -8302,7 +8302,7 @@
     "desc": "https://juejin.cn",
     "docsUrl": "juejin",
     "fullTitle": "Juejin",
-    "group": "application",
+    "group": "service",
     "id": "Juejin",
     "param": {
       "hasAvatar": true,
@@ -8321,7 +8321,7 @@
     "desc": "https://julialang.org",
     "docsUrl": "julia",
     "fullTitle": "Julia",
-    "group": "application",
+    "group": "service",
     "id": "Julia",
     "param": {
       "hasAvatar": true,
@@ -8359,7 +8359,7 @@
     "desc": "https://jupyter.org",
     "docsUrl": "jupyter",
     "fullTitle": "Jupyter",
-    "group": "application",
+    "group": "service",
     "id": "Jupyter",
     "param": {
       "hasAvatar": true,
@@ -8378,7 +8378,7 @@
     "desc": "https://www.just-eat.com",
     "docsUrl": "just-eat",
     "fullTitle": "Just Eat",
-    "group": "application",
+    "group": "service",
     "id": "JustEat",
     "param": {
       "hasAvatar": true,
@@ -8397,7 +8397,7 @@
     "desc": "https://k3s.io",
     "docsUrl": "k-3-s",
     "fullTitle": "K3s",
-    "group": "application",
+    "group": "service",
     "id": "K3s",
     "param": {
       "hasAvatar": true,
@@ -8416,7 +8416,7 @@
     "desc": "https://www.kaggle.com",
     "docsUrl": "kaggle",
     "fullTitle": "Kaggle",
-    "group": "application",
+    "group": "service",
     "id": "Kaggle",
     "param": {
       "hasAvatar": true,
@@ -8454,7 +8454,7 @@
     "desc": "https://www.kakaocorp.com/page/service/service/KakaoTalk",
     "docsUrl": "kakao-talk",
     "fullTitle": "KakaoTalk",
-    "group": "application",
+    "group": "service",
     "id": "KakaoTalk",
     "param": {
       "hasAvatar": true,
@@ -8473,7 +8473,7 @@
     "desc": "https://www.kali.org",
     "docsUrl": "kali-linux",
     "fullTitle": "Kali Linux",
-    "group": "application",
+    "group": "service",
     "id": "KaliLinux",
     "param": {
       "hasAvatar": true,
@@ -8492,7 +8492,7 @@
     "desc": "https://keepassxc.org",
     "docsUrl": "kee-pass-xc",
     "fullTitle": "KeePassXC",
-    "group": "application",
+    "group": "service",
     "id": "KeePassXC",
     "param": {
       "hasAvatar": true,
@@ -8511,7 +8511,7 @@
     "desc": "https://keras.io",
     "docsUrl": "keras",
     "fullTitle": "Keras",
-    "group": "application",
+    "group": "service",
     "id": "Keras",
     "param": {
       "hasAvatar": true,
@@ -8530,7 +8530,7 @@
     "desc": "https://www.kfc.com",
     "docsUrl": "kfc",
     "fullTitle": "KFC",
-    "group": "application",
+    "group": "service",
     "id": "KFC",
     "param": {
       "hasAvatar": true,
@@ -8549,7 +8549,7 @@
     "desc": "https://www.khanacademy.org",
     "docsUrl": "khan-academy",
     "fullTitle": "Khan Academy",
-    "group": "application",
+    "group": "service",
     "id": "KhanAcademy",
     "param": {
       "hasAvatar": true,
@@ -8568,7 +8568,7 @@
     "desc": "https://www.kia.com",
     "docsUrl": "kia",
     "fullTitle": "Kia",
-    "group": "application",
+    "group": "service",
     "id": "Kia",
     "param": {
       "hasAvatar": true,
@@ -8587,7 +8587,7 @@
     "desc": "https://www.elastic.co/kibana",
     "docsUrl": "kibana",
     "fullTitle": "Kibana",
-    "group": "application",
+    "group": "service",
     "id": "Kibana",
     "param": {
       "hasAvatar": true,
@@ -8606,7 +8606,7 @@
     "desc": "https://kick.com",
     "docsUrl": "kick",
     "fullTitle": "Kick",
-    "group": "application",
+    "group": "service",
     "id": "Kick",
     "param": {
       "hasAvatar": true,
@@ -8682,7 +8682,7 @@
     "desc": "https://www.klarna.com",
     "docsUrl": "klarna",
     "fullTitle": "Klarna",
-    "group": "application",
+    "group": "service",
     "id": "Klarna",
     "param": {
       "hasAvatar": true,
@@ -8740,7 +8740,7 @@
     "desc": "https://koajs.com",
     "docsUrl": "koa",
     "fullTitle": "Koa",
-    "group": "application",
+    "group": "service",
     "id": "Koa",
     "param": {
       "hasAvatar": true,
@@ -8759,7 +8759,7 @@
     "desc": "https://kodi.tv",
     "docsUrl": "kodi",
     "fullTitle": "Kodi",
-    "group": "application",
+    "group": "service",
     "id": "Kodi",
     "param": {
       "hasAvatar": true,
@@ -8798,7 +8798,7 @@
     "desc": "https://kotlinlang.org",
     "docsUrl": "kotlin",
     "fullTitle": "Kotlin",
-    "group": "application",
+    "group": "service",
     "id": "Kotlin",
     "param": {
       "hasAvatar": true,
@@ -8836,7 +8836,7 @@
     "desc": "https://krita.org",
     "docsUrl": "krita",
     "fullTitle": "Krita",
-    "group": "application",
+    "group": "service",
     "id": "Krita",
     "param": {
       "hasAvatar": true,
@@ -8855,7 +8855,7 @@
     "desc": "https://www.kuaishou.com",
     "docsUrl": "kuaishou",
     "fullTitle": "Kuaishou",
-    "group": "application",
+    "group": "service",
     "id": "Kuaishou",
     "param": {
       "hasAvatar": true,
@@ -8874,7 +8874,7 @@
     "desc": "https://kubernetes.io",
     "docsUrl": "kubernetes",
     "fullTitle": "Kubernetes",
-    "group": "application",
+    "group": "service",
     "id": "Kubernetes",
     "param": {
       "hasAvatar": true,
@@ -8950,7 +8950,7 @@
     "desc": "https://www.lamborghini.com",
     "docsUrl": "lamborghini",
     "fullTitle": "Lamborghini",
-    "group": "application",
+    "group": "service",
     "id": "Lamborghini",
     "param": {
       "hasAvatar": true,
@@ -9045,7 +9045,7 @@
     "desc": "https://laravel.com",
     "docsUrl": "laravel",
     "fullTitle": "Laravel",
-    "group": "application",
+    "group": "service",
     "id": "Laravel",
     "param": {
       "hasAvatar": true,
@@ -9064,7 +9064,7 @@
     "desc": "https://www.last.fm",
     "docsUrl": "last-fm",
     "fullTitle": "Last.fm",
-    "group": "application",
+    "group": "service",
     "id": "LastFm",
     "param": {
       "hasAvatar": true,
@@ -9083,7 +9083,7 @@
     "desc": "https://www.lastpass.com",
     "docsUrl": "last-pass",
     "fullTitle": "LastPass",
-    "group": "application",
+    "group": "service",
     "id": "LastPass",
     "param": {
       "hasAvatar": true,
@@ -9102,7 +9102,7 @@
     "desc": "https://leafletjs.com",
     "docsUrl": "leaflet",
     "fullTitle": "Leaflet",
-    "group": "application",
+    "group": "service",
     "id": "Leaflet",
     "param": {
       "hasAvatar": true,
@@ -9121,7 +9121,7 @@
     "desc": "https://www.leagueoflegends.com",
     "docsUrl": "league-of-legends",
     "fullTitle": "League of Legends",
-    "group": "application",
+    "group": "service",
     "id": "LeagueOfLegends",
     "param": {
       "hasAvatar": true,
@@ -9140,7 +9140,7 @@
     "desc": "https://leetcode.com",
     "docsUrl": "leet-code",
     "fullTitle": "LeetCode",
-    "group": "application",
+    "group": "service",
     "id": "LeetCode",
     "param": {
       "hasAvatar": true,
@@ -9159,7 +9159,7 @@
     "desc": "https://www.lenovo.com",
     "docsUrl": "lenovo",
     "fullTitle": "Lenovo",
-    "group": "application",
+    "group": "service",
     "id": "Lenovo",
     "param": {
       "hasAvatar": true,
@@ -9197,7 +9197,7 @@
     "desc": "https://lesscss.org",
     "docsUrl": "less",
     "fullTitle": "Less",
-    "group": "application",
+    "group": "service",
     "id": "Less",
     "param": {
       "hasAvatar": true,
@@ -9216,7 +9216,7 @@
     "desc": "https://letterboxd.com",
     "docsUrl": "letterboxd",
     "fullTitle": "Letterboxd",
-    "group": "application",
+    "group": "service",
     "id": "Letterboxd",
     "param": {
       "hasAvatar": true,
@@ -9254,7 +9254,7 @@
     "desc": "https://lichess.org",
     "docsUrl": "lichess",
     "fullTitle": "Lichess",
-    "group": "application",
+    "group": "service",
     "id": "Lichess",
     "param": {
       "hasAvatar": true,
@@ -9292,7 +9292,7 @@
     "desc": "https://line.me",
     "docsUrl": "line",
     "fullTitle": "LINE",
-    "group": "application",
+    "group": "service",
     "id": "Line",
     "param": {
       "hasAvatar": true,
@@ -9311,7 +9311,7 @@
     "desc": "https://linear.app",
     "docsUrl": "linear",
     "fullTitle": "Linear",
-    "group": "application",
+    "group": "service",
     "id": "Linear",
     "param": {
       "hasAvatar": true,
@@ -9330,7 +9330,7 @@
     "desc": "https://www.kernel.org",
     "docsUrl": "linux",
     "fullTitle": "Linux",
-    "group": "application",
+    "group": "service",
     "id": "Linux",
     "param": {
       "hasAvatar": true,
@@ -9349,7 +9349,7 @@
     "desc": "https://linuxmint.com",
     "docsUrl": "linux-mint",
     "fullTitle": "Linux Mint",
-    "group": "application",
+    "group": "service",
     "id": "LinuxMint",
     "param": {
       "hasAvatar": true,
@@ -9387,7 +9387,7 @@
     "desc": "https://litecoin.org",
     "docsUrl": "litecoin",
     "fullTitle": "Litecoin",
-    "group": "application",
+    "group": "service",
     "id": "Litecoin",
     "param": {
       "hasAvatar": true,
@@ -9522,7 +9522,7 @@
     "desc": "https://logseq.com",
     "docsUrl": "logseq",
     "fullTitle": "Logseq",
-    "group": "application",
+    "group": "service",
     "id": "Logseq",
     "param": {
       "hasAvatar": true,
@@ -9560,7 +9560,7 @@
     "desc": "https://cloud.google.com/looker",
     "docsUrl": "looker",
     "fullTitle": "Looker",
-    "group": "application",
+    "group": "service",
     "id": "Looker",
     "param": {
       "hasAvatar": true,
@@ -9579,7 +9579,7 @@
     "desc": "https://www.loom.com",
     "docsUrl": "loom",
     "fullTitle": "Loom",
-    "group": "application",
+    "group": "service",
     "id": "Loom",
     "param": {
       "hasAvatar": true,
@@ -9636,7 +9636,7 @@
     "desc": "https://www.lua.org",
     "docsUrl": "lua",
     "fullTitle": "Lua",
-    "group": "application",
+    "group": "service",
     "id": "Lua",
     "param": {
       "hasAvatar": true,
@@ -9655,7 +9655,7 @@
     "desc": "https://www.lufthansa.com",
     "docsUrl": "lufthansa",
     "fullTitle": "Lufthansa",
-    "group": "application",
+    "group": "service",
     "id": "Lufthansa",
     "param": {
       "hasAvatar": true,
@@ -9693,7 +9693,7 @@
     "desc": "https://www.lyft.com",
     "docsUrl": "lyft",
     "fullTitle": "Lyft",
-    "group": "application",
+    "group": "service",
     "id": "Lyft",
     "param": {
       "hasAvatar": true,
@@ -9712,7 +9712,7 @@
     "desc": "https://www.apple.com/macos",
     "docsUrl": "mac-os",
     "fullTitle": "macOS",
-    "group": "application",
+    "group": "service",
     "id": "MacOS",
     "param": {
       "hasAvatar": true,
@@ -9750,7 +9750,7 @@
     "desc": "https://mailchimp.com",
     "docsUrl": "mailchimp",
     "fullTitle": "MailChimp",
-    "group": "application",
+    "group": "service",
     "id": "Mailchimp",
     "param": {
       "hasAvatar": true,
@@ -9788,7 +9788,7 @@
     "desc": "https://manjaro.org",
     "docsUrl": "manjaro",
     "fullTitle": "Manjaro",
-    "group": "application",
+    "group": "service",
     "id": "Manjaro",
     "param": {
       "hasAvatar": true,
@@ -9826,7 +9826,7 @@
     "desc": "https://www.mapbox.com",
     "docsUrl": "mapbox",
     "fullTitle": "Mapbox",
-    "group": "application",
+    "group": "service",
     "id": "Mapbox",
     "param": {
       "hasAvatar": true,
@@ -9845,7 +9845,7 @@
     "desc": "https://mariadb.org",
     "docsUrl": "maria-db",
     "fullTitle": "MariaDB",
-    "group": "application",
+    "group": "service",
     "id": "MariaDB",
     "param": {
       "hasAvatar": true,
@@ -9864,7 +9864,7 @@
     "desc": "https://daringfireball.net/projects/markdown",
     "docsUrl": "markdown",
     "fullTitle": "Markdown",
-    "group": "application",
+    "group": "service",
     "id": "Markdown",
     "param": {
       "hasAvatar": true,
@@ -9883,7 +9883,7 @@
     "desc": "https://www.marriott.com",
     "docsUrl": "marriott",
     "fullTitle": "Marriott",
-    "group": "application",
+    "group": "service",
     "id": "Marriott",
     "param": {
       "hasAvatar": true,
@@ -9902,7 +9902,7 @@
     "desc": "https://www.mastercard.com",
     "docsUrl": "mastercard",
     "fullTitle": "MasterCard",
-    "group": "application",
+    "group": "service",
     "id": "Mastercard",
     "param": {
       "hasAvatar": true,
@@ -9921,7 +9921,7 @@
     "desc": "https://joinmastodon.org",
     "docsUrl": "mastodon",
     "fullTitle": "Mastodon",
-    "group": "application",
+    "group": "service",
     "id": "Mastodon",
     "param": {
       "hasAvatar": true,
@@ -9959,7 +9959,7 @@
     "desc": "https://matrix.org",
     "docsUrl": "matrix",
     "fullTitle": "Matrix",
-    "group": "application",
+    "group": "service",
     "id": "Matrix",
     "param": {
       "hasAvatar": true,
@@ -9978,7 +9978,7 @@
     "desc": "https://mattermost.com",
     "docsUrl": "mattermost",
     "fullTitle": "Mattermost",
-    "group": "application",
+    "group": "service",
     "id": "Mattermost",
     "param": {
       "hasAvatar": true,
@@ -9997,7 +9997,7 @@
     "desc": "https://maven.apache.org",
     "docsUrl": "maven",
     "fullTitle": "Maven",
-    "group": "application",
+    "group": "service",
     "id": "Maven",
     "param": {
       "hasAvatar": true,
@@ -10016,7 +10016,7 @@
     "desc": "https://www.max.com",
     "docsUrl": "max",
     "fullTitle": "Max",
-    "group": "application",
+    "group": "service",
     "id": "Max",
     "param": {
       "hasAvatar": true,
@@ -10035,7 +10035,7 @@
     "desc": "https://www.mazda.com",
     "docsUrl": "mazda",
     "fullTitle": "Mazda",
-    "group": "application",
+    "group": "service",
     "id": "Mazda",
     "param": {
       "hasAvatar": true,
@@ -10054,7 +10054,7 @@
     "desc": "https://www.mcdonalds.com",
     "docsUrl": "mc-donalds",
     "fullTitle": "McDonald's",
-    "group": "application",
+    "group": "service",
     "id": "McDonalds",
     "param": {
       "hasAvatar": true,
@@ -10111,7 +10111,7 @@
     "desc": "https://mdxjs.com",
     "docsUrl": "mdx",
     "fullTitle": "MDX",
-    "group": "application",
+    "group": "service",
     "id": "MDX",
     "param": {
       "hasAvatar": true,
@@ -10130,7 +10130,7 @@
     "desc": "https://www.mediatek.com",
     "docsUrl": "media-tek",
     "fullTitle": "MediaTek",
-    "group": "application",
+    "group": "service",
     "id": "MediaTek",
     "param": {
       "hasAvatar": true,
@@ -10149,7 +10149,7 @@
     "desc": "https://medium.com",
     "docsUrl": "medium",
     "fullTitle": "Medium",
-    "group": "application",
+    "group": "service",
     "id": "Medium",
     "param": {
       "hasAvatar": true,
@@ -10168,7 +10168,7 @@
     "desc": "https://www.meilisearch.com",
     "docsUrl": "meilisearch",
     "fullTitle": "Meilisearch",
-    "group": "application",
+    "group": "service",
     "id": "Meilisearch",
     "param": {
       "hasAvatar": true,
@@ -10187,7 +10187,7 @@
     "desc": "https://www.meituan.com",
     "docsUrl": "meituan",
     "fullTitle": "Meituan",
-    "group": "application",
+    "group": "service",
     "id": "Meituan",
     "param": {
       "hasAvatar": true,
@@ -10225,7 +10225,7 @@
     "desc": "https://www.mercadopago.com",
     "docsUrl": "mercado-pago",
     "fullTitle": "Mercado Pago",
-    "group": "application",
+    "group": "service",
     "id": "MercadoPago",
     "param": {
       "hasAvatar": true,
@@ -10263,7 +10263,7 @@
     "desc": "https://www.messenger.com",
     "docsUrl": "messenger",
     "fullTitle": "Messenger",
-    "group": "application",
+    "group": "service",
     "id": "Messenger",
     "param": {
       "hasAvatar": true,
@@ -10321,7 +10321,7 @@
     "desc": "https://www.metabase.com",
     "docsUrl": "metabase",
     "fullTitle": "Metabase",
-    "group": "application",
+    "group": "service",
     "id": "Metabase",
     "param": {
       "hasAvatar": true,
@@ -10397,7 +10397,7 @@
     "desc": "https://milvus.io",
     "docsUrl": "milvus",
     "fullTitle": "Milvus",
-    "group": "application",
+    "group": "service",
     "id": "Milvus",
     "param": {
       "hasAvatar": true,
@@ -10436,7 +10436,7 @@
     "desc": "https://min.io",
     "docsUrl": "min-io",
     "fullTitle": "MinIO",
-    "group": "application",
+    "group": "service",
     "id": "MinIO",
     "param": {
       "hasAvatar": true,
@@ -10455,7 +10455,7 @@
     "desc": "https://miro.com",
     "docsUrl": "miro",
     "fullTitle": "Miro",
-    "group": "application",
+    "group": "service",
     "id": "Miro",
     "param": {
       "hasAvatar": true,
@@ -10493,7 +10493,7 @@
     "desc": "https://www.mitsubishi.com",
     "docsUrl": "mitsubishi",
     "fullTitle": "Mitsubishi",
-    "group": "application",
+    "group": "service",
     "id": "Mitsubishi",
     "param": {
       "hasAvatar": true,
@@ -10512,7 +10512,7 @@
     "desc": "https://mixpanel.com",
     "docsUrl": "mixpanel",
     "fullTitle": "Mixpanel",
-    "group": "application",
+    "group": "service",
     "id": "Mixpanel",
     "param": {
       "hasAvatar": true,
@@ -10550,7 +10550,7 @@
     "desc": "https://www.mongodb.com",
     "docsUrl": "mongo-db",
     "fullTitle": "MongoDB",
-    "group": "application",
+    "group": "service",
     "id": "MongoDB",
     "param": {
       "hasAvatar": true,
@@ -10589,7 +10589,7 @@
     "desc": "https://monzo.com",
     "docsUrl": "monzo",
     "fullTitle": "Monzo",
-    "group": "application",
+    "group": "service",
     "id": "Monzo",
     "param": {
       "hasAvatar": true,
@@ -10608,7 +10608,7 @@
     "desc": "https://moodle.org",
     "docsUrl": "moodle",
     "fullTitle": "Moodle",
-    "group": "application",
+    "group": "service",
     "id": "Moodle",
     "param": {
       "hasAvatar": true,
@@ -10665,7 +10665,7 @@
     "desc": "https://www.motorola.com",
     "docsUrl": "motorola",
     "fullTitle": "Motorola",
-    "group": "application",
+    "group": "service",
     "id": "Motorola",
     "param": {
       "hasAvatar": true,
@@ -10703,7 +10703,7 @@
     "desc": "https://www.mozilla.org",
     "docsUrl": "mozilla",
     "fullTitle": "Mozilla",
-    "group": "application",
+    "group": "service",
     "id": "Mozilla",
     "param": {
       "hasAvatar": true,
@@ -10722,7 +10722,7 @@
     "desc": "https://mullvad.net",
     "docsUrl": "mullvad",
     "fullTitle": "Mullvad",
-    "group": "application",
+    "group": "service",
     "id": "Mullvad",
     "param": {
       "hasAvatar": true,
@@ -10741,7 +10741,7 @@
     "desc": "https://myanimelist.net",
     "docsUrl": "my-anime-list",
     "fullTitle": "MyAnimeList",
-    "group": "application",
+    "group": "service",
     "id": "MyAnimeList",
     "param": {
       "hasAvatar": true,
@@ -10779,7 +10779,7 @@
     "desc": "https://www.mysql.com",
     "docsUrl": "my-sql",
     "fullTitle": "MySQL",
-    "group": "application",
+    "group": "service",
     "id": "MySQL",
     "param": {
       "hasAvatar": true,
@@ -10798,7 +10798,7 @@
     "desc": "https://n26.com",
     "docsUrl": "n-26",
     "fullTitle": "N26",
-    "group": "application",
+    "group": "service",
     "id": "N26",
     "param": {
       "hasAvatar": true,
@@ -10836,7 +10836,7 @@
     "desc": "https://www.namecheap.com",
     "docsUrl": "namecheap",
     "fullTitle": "Namecheap",
-    "group": "application",
+    "group": "service",
     "id": "Namecheap",
     "param": {
       "hasAvatar": true,
@@ -10874,7 +10874,7 @@
     "desc": "https://www.nba.com",
     "docsUrl": "nba",
     "fullTitle": "NBA",
-    "group": "application",
+    "group": "service",
     "id": "NBA",
     "param": {
       "hasAvatar": true,
@@ -10912,7 +10912,7 @@
     "desc": "https://neo4j.com",
     "docsUrl": "neo4-j",
     "fullTitle": "Neo4j",
-    "group": "application",
+    "group": "service",
     "id": "Neo4j",
     "param": {
       "hasAvatar": true,
@@ -10931,7 +10931,7 @@
     "desc": "https://neon.com",
     "docsUrl": "neon",
     "fullTitle": "Neon",
-    "group": "application",
+    "group": "service",
     "id": "Neon",
     "param": {
       "hasAvatar": true,
@@ -10950,7 +10950,7 @@
     "desc": "https://nestjs.com",
     "docsUrl": "nest-js",
     "fullTitle": "NestJS",
-    "group": "application",
+    "group": "service",
     "id": "NestJS",
     "param": {
       "hasAvatar": true,
@@ -10969,7 +10969,7 @@
     "desc": "https://music.163.com",
     "docsUrl": "net-ease-cloud-music",
     "fullTitle": "NetEase Cloud Music",
-    "group": "application",
+    "group": "service",
     "id": "NetEaseCloudMusic",
     "param": {
       "hasAvatar": true,
@@ -10988,7 +10988,7 @@
     "desc": "https://www.netflix.com",
     "docsUrl": "netflix",
     "fullTitle": "Netflix",
-    "group": "application",
+    "group": "service",
     "id": "Netflix",
     "param": {
       "hasAvatar": true,
@@ -11007,7 +11007,7 @@
     "desc": "https://www.netlify.com",
     "docsUrl": "netlify",
     "fullTitle": "Netlify",
-    "group": "application",
+    "group": "service",
     "id": "Netlify",
     "param": {
       "hasAvatar": true,
@@ -11045,7 +11045,7 @@
     "desc": "https://newrelic.com",
     "docsUrl": "new-relic",
     "fullTitle": "New Relic",
-    "group": "application",
+    "group": "service",
     "id": "NewRelic",
     "param": {
       "hasAvatar": true,
@@ -11064,7 +11064,7 @@
     "desc": "https://www.nytimes.com",
     "docsUrl": "new-york-times",
     "fullTitle": "New York Times",
-    "group": "application",
+    "group": "service",
     "id": "NewYorkTimes",
     "param": {
       "hasAvatar": true,
@@ -11083,7 +11083,7 @@
     "desc": "https://nextdoor.com",
     "docsUrl": "nextdoor",
     "fullTitle": "Nextdoor",
-    "group": "application",
+    "group": "service",
     "id": "Nextdoor",
     "param": {
       "hasAvatar": true,
@@ -11102,7 +11102,7 @@
     "desc": "https://nextjs.org",
     "docsUrl": "next-js",
     "fullTitle": "Next.js",
-    "group": "application",
+    "group": "service",
     "id": "NextJS",
     "param": {
       "hasAvatar": true,
@@ -11121,7 +11121,7 @@
     "desc": "https://nginx.org",
     "docsUrl": "nginx",
     "fullTitle": "NGINX",
-    "group": "application",
+    "group": "service",
     "id": "Nginx",
     "param": {
       "hasAvatar": true,
@@ -11140,7 +11140,7 @@
     "desc": "https://www.nike.com",
     "docsUrl": "nike",
     "fullTitle": "Nike",
-    "group": "application",
+    "group": "service",
     "id": "Nike",
     "param": {
       "hasAvatar": true,
@@ -11159,7 +11159,7 @@
     "desc": "https://www.nikon.com",
     "docsUrl": "nikon",
     "fullTitle": "Nikon",
-    "group": "application",
+    "group": "service",
     "id": "Nikon",
     "param": {
       "hasAvatar": true,
@@ -11178,7 +11178,7 @@
     "desc": "https://nim-lang.org",
     "docsUrl": "nim",
     "fullTitle": "Nim",
-    "group": "application",
+    "group": "service",
     "id": "Nim",
     "param": {
       "hasAvatar": true,
@@ -11197,7 +11197,7 @@
     "desc": "https://www.nissan-global.com",
     "docsUrl": "nissan",
     "fullTitle": "Nissan",
-    "group": "application",
+    "group": "service",
     "id": "Nissan",
     "param": {
       "hasAvatar": true,
@@ -11216,7 +11216,7 @@
     "desc": "https://nixos.org",
     "docsUrl": "nix-os",
     "fullTitle": "NixOS",
-    "group": "application",
+    "group": "service",
     "id": "NixOS",
     "param": {
       "hasAvatar": true,
@@ -11235,7 +11235,7 @@
     "desc": "https://nodejs.org",
     "docsUrl": "node-js",
     "fullTitle": "Node.js",
-    "group": "application",
+    "group": "service",
     "id": "NodeJS",
     "param": {
       "hasAvatar": true,
@@ -11254,7 +11254,7 @@
     "desc": "https://www.nokia.com",
     "docsUrl": "nokia",
     "fullTitle": "Nokia",
-    "group": "application",
+    "group": "service",
     "id": "Nokia",
     "param": {
       "hasAvatar": true,
@@ -11273,7 +11273,7 @@
     "desc": "https://www.nomadproject.io",
     "docsUrl": "nomad",
     "fullTitle": "Nomad",
-    "group": "application",
+    "group": "service",
     "id": "Nomad",
     "param": {
       "hasAvatar": true,
@@ -11292,7 +11292,7 @@
     "desc": "https://nordvpn.com",
     "docsUrl": "nord-vpn",
     "fullTitle": "NordVPN",
-    "group": "application",
+    "group": "service",
     "id": "NordVPN",
     "param": {
       "hasAvatar": true,
@@ -11445,7 +11445,7 @@
     "desc": "https://www.npmjs.com",
     "docsUrl": "npm",
     "fullTitle": "npm",
-    "group": "application",
+    "group": "service",
     "id": "Npm",
     "param": {
       "hasAvatar": true,
@@ -11464,7 +11464,7 @@
     "desc": "https://numpy.org",
     "docsUrl": "num-py",
     "fullTitle": "NumPy",
-    "group": "application",
+    "group": "service",
     "id": "NumPy",
     "param": {
       "hasAvatar": true,
@@ -11483,7 +11483,7 @@
     "desc": "https://nuxt.com",
     "docsUrl": "nuxt",
     "fullTitle": "Nuxt",
-    "group": "application",
+    "group": "service",
     "id": "Nuxt",
     "param": {
       "hasAvatar": true,
@@ -11521,7 +11521,7 @@
     "desc": "https://nx.dev",
     "docsUrl": "nx",
     "fullTitle": "Nx",
-    "group": "application",
+    "group": "service",
     "id": "Nx",
     "param": {
       "hasAvatar": true,
@@ -11559,7 +11559,7 @@
     "desc": "https://obsproject.com",
     "docsUrl": "obs-studio",
     "fullTitle": "OBS Studio",
-    "group": "application",
+    "group": "service",
     "id": "OBSStudio",
     "param": {
       "hasAvatar": true,
@@ -11578,7 +11578,7 @@
     "desc": "https://ocaml.org",
     "docsUrl": "o-caml",
     "fullTitle": "OCaml",
-    "group": "application",
+    "group": "service",
     "id": "OCaml",
     "param": {
       "hasAvatar": true,
@@ -11597,7 +11597,7 @@
     "desc": "https://www.okta.com",
     "docsUrl": "okta",
     "fullTitle": "Okta",
-    "group": "application",
+    "group": "service",
     "id": "Okta",
     "param": {
       "hasAvatar": true,
@@ -11616,7 +11616,7 @@
     "desc": "https://www.okx.com",
     "docsUrl": "okx",
     "fullTitle": "OKX",
-    "group": "application",
+    "group": "service",
     "id": "OKX",
     "param": {
       "hasAvatar": true,
@@ -11654,7 +11654,7 @@
     "desc": "https://1password.com",
     "docsUrl": "one-password",
     "fullTitle": "1Password",
-    "group": "application",
+    "group": "service",
     "id": "OnePassword",
     "param": {
       "hasAvatar": true,
@@ -11673,7 +11673,7 @@
     "desc": "https://www.oneplus.com",
     "docsUrl": "one-plus",
     "fullTitle": "OnePlus",
-    "group": "application",
+    "group": "service",
     "id": "OnePlus",
     "param": {
       "hasAvatar": true,
@@ -11768,7 +11768,7 @@
     "desc": "https://opencv.org",
     "docsUrl": "open-cv",
     "fullTitle": "OpenCV",
-    "group": "application",
+    "group": "service",
     "id": "OpenCV",
     "param": {
       "hasAvatar": true,
@@ -11825,7 +11825,7 @@
     "desc": "https://openjdk.org",
     "docsUrl": "open-jdk",
     "fullTitle": "OpenJDK",
-    "group": "application",
+    "group": "service",
     "id": "OpenJDK",
     "param": {
       "hasAvatar": true,
@@ -11863,7 +11863,7 @@
     "desc": "https://opensea.io",
     "docsUrl": "open-sea",
     "fullTitle": "OpenSea",
-    "group": "application",
+    "group": "service",
     "id": "OpenSea",
     "param": {
       "hasAvatar": true,
@@ -11882,7 +11882,7 @@
     "desc": "https://opensearch.org",
     "docsUrl": "open-search",
     "fullTitle": "OpenSearch",
-    "group": "application",
+    "group": "service",
     "id": "OpenSearch",
     "param": {
       "hasAvatar": true,
@@ -11901,7 +11901,7 @@
     "desc": "https://www.openstreetmap.org",
     "docsUrl": "open-street-map",
     "fullTitle": "OpenStreetMap",
-    "group": "application",
+    "group": "service",
     "id": "OpenStreetMap",
     "param": {
       "hasAvatar": true,
@@ -11920,7 +11920,7 @@
     "desc": "https://www.opensuse.org",
     "docsUrl": "open-suse",
     "fullTitle": "openSUSE",
-    "group": "application",
+    "group": "service",
     "id": "OpenSUSE",
     "param": {
       "hasAvatar": true,
@@ -11939,7 +11939,7 @@
     "desc": "https://opentelemetry.io",
     "docsUrl": "open-telemetry",
     "fullTitle": "OpenTelemetry",
-    "group": "application",
+    "group": "service",
     "id": "OpenTelemetry",
     "param": {
       "hasAvatar": true,
@@ -11958,7 +11958,7 @@
     "desc": "https://openvpn.net",
     "docsUrl": "open-vpn",
     "fullTitle": "OpenVPN",
-    "group": "application",
+    "group": "service",
     "id": "OpenVPN",
     "param": {
       "hasAvatar": true,
@@ -11996,7 +11996,7 @@
     "desc": "https://www.opera.com",
     "docsUrl": "opera",
     "fullTitle": "Opera",
-    "group": "application",
+    "group": "service",
     "id": "Opera",
     "param": {
       "hasAvatar": true,
@@ -12015,7 +12015,7 @@
     "desc": "https://www.oppo.com",
     "docsUrl": "oppo",
     "fullTitle": "OPPO",
-    "group": "application",
+    "group": "service",
     "id": "Oppo",
     "param": {
       "hasAvatar": true,
@@ -12034,7 +12034,7 @@
     "desc": "https://www.overleaf.com",
     "docsUrl": "overleaf",
     "fullTitle": "Overleaf",
-    "group": "application",
+    "group": "service",
     "id": "Overleaf",
     "param": {
       "hasAvatar": true,
@@ -12053,7 +12053,7 @@
     "desc": "https://www.ovhcloud.com",
     "docsUrl": "ovh",
     "fullTitle": "OVH",
-    "group": "application",
+    "group": "service",
     "id": "OVH",
     "param": {
       "hasAvatar": true,
@@ -12072,7 +12072,7 @@
     "desc": "https://www.packer.io",
     "docsUrl": "packer",
     "fullTitle": "Packer",
-    "group": "application",
+    "group": "service",
     "id": "Packer",
     "param": {
       "hasAvatar": true,
@@ -12091,7 +12091,7 @@
     "desc": "https://www.pagerduty.com",
     "docsUrl": "pager-duty",
     "fullTitle": "PagerDuty",
-    "group": "application",
+    "group": "service",
     "id": "PagerDuty",
     "param": {
       "hasAvatar": true,
@@ -12129,7 +12129,7 @@
     "desc": "https://www.panasonic.com",
     "docsUrl": "panasonic",
     "fullTitle": "Panasonic",
-    "group": "application",
+    "group": "service",
     "id": "Panasonic",
     "param": {
       "hasAvatar": true,
@@ -12148,7 +12148,7 @@
     "desc": "https://pandas.pydata.org",
     "docsUrl": "pandas",
     "fullTitle": "pandas",
-    "group": "application",
+    "group": "service",
     "id": "Pandas",
     "param": {
       "hasAvatar": true,
@@ -12167,7 +12167,7 @@
     "desc": "https://www.pandora.com",
     "docsUrl": "pandora",
     "fullTitle": "Pandora",
-    "group": "application",
+    "group": "service",
     "id": "Pandora",
     "param": {
       "hasAvatar": true,
@@ -12186,7 +12186,7 @@
     "desc": "https://www.paramountplus.com",
     "docsUrl": "paramount-plus",
     "fullTitle": "Paramount+",
-    "group": "application",
+    "group": "service",
     "id": "ParamountPlus",
     "param": {
       "hasAvatar": true,
@@ -12224,7 +12224,7 @@
     "desc": "https://www.patreon.com",
     "docsUrl": "patreon",
     "fullTitle": "Patreon",
-    "group": "application",
+    "group": "service",
     "id": "Patreon",
     "param": {
       "hasAvatar": true,
@@ -12243,7 +12243,7 @@
     "desc": "https://payloadcms.com",
     "docsUrl": "payload-cms",
     "fullTitle": "Payload CMS",
-    "group": "application",
+    "group": "service",
     "id": "PayloadCMS",
     "param": {
       "hasAvatar": true,
@@ -12262,7 +12262,7 @@
     "desc": "https://www.payoneer.com",
     "docsUrl": "payoneer",
     "fullTitle": "Payoneer",
-    "group": "application",
+    "group": "service",
     "id": "Payoneer",
     "param": {
       "hasAvatar": true,
@@ -12281,7 +12281,7 @@
     "desc": "https://www.paypal.com",
     "docsUrl": "pay-pal",
     "fullTitle": "PayPal",
-    "group": "application",
+    "group": "service",
     "id": "PayPal",
     "param": {
       "hasAvatar": true,
@@ -12300,7 +12300,7 @@
     "desc": "https://paytm.com",
     "docsUrl": "paytm",
     "fullTitle": "Paytm",
-    "group": "application",
+    "group": "service",
     "id": "Paytm",
     "param": {
       "hasAvatar": true,
@@ -12319,7 +12319,7 @@
     "desc": "https://www.perl.org",
     "docsUrl": "perl",
     "fullTitle": "Perl",
-    "group": "application",
+    "group": "service",
     "id": "Perl",
     "param": {
       "hasAvatar": true,
@@ -12395,7 +12395,7 @@
     "desc": "https://www.phonepe.com",
     "docsUrl": "phone-pe",
     "fullTitle": "PhonePe",
-    "group": "application",
+    "group": "service",
     "id": "PhonePe",
     "param": {
       "hasAvatar": true,
@@ -12452,7 +12452,7 @@
     "desc": "https://www.pinterest.com",
     "docsUrl": "pinterest",
     "fullTitle": "Pinterest",
-    "group": "application",
+    "group": "service",
     "id": "Pinterest",
     "param": {
       "hasAvatar": true,
@@ -12490,7 +12490,7 @@
     "desc": "https://planetscale.com",
     "docsUrl": "planet-scale",
     "fullTitle": "PlanetScale",
-    "group": "application",
+    "group": "service",
     "id": "PlanetScale",
     "param": {
       "hasAvatar": true,
@@ -12528,7 +12528,7 @@
     "desc": "https://www.playstation.com",
     "docsUrl": "play-station",
     "fullTitle": "PlayStation",
-    "group": "application",
+    "group": "service",
     "id": "PlayStation",
     "param": {
       "hasAvatar": true,
@@ -12547,7 +12547,7 @@
     "desc": "https://www.plex.tv",
     "docsUrl": "plex",
     "fullTitle": "Plex",
-    "group": "application",
+    "group": "service",
     "id": "Plex",
     "param": {
       "hasAvatar": true,
@@ -12566,7 +12566,7 @@
     "desc": "https://plotly.com",
     "docsUrl": "plotly",
     "fullTitle": "Plotly",
-    "group": "application",
+    "group": "service",
     "id": "Plotly",
     "param": {
       "hasAvatar": true,
@@ -12585,7 +12585,7 @@
     "desc": "https://pnpm.io",
     "docsUrl": "pnpm",
     "fullTitle": "pnpm",
-    "group": "application",
+    "group": "service",
     "id": "Pnpm",
     "param": {
       "hasAvatar": true,
@@ -12604,7 +12604,7 @@
     "desc": "https://pocketbase.io",
     "docsUrl": "pocket-base",
     "fullTitle": "PocketBase",
-    "group": "application",
+    "group": "service",
     "id": "PocketBase",
     "param": {
       "hasAvatar": true,
@@ -12623,7 +12623,7 @@
     "desc": "https://pocketcasts.com",
     "docsUrl": "pocket-casts",
     "fullTitle": "Pocket Casts",
-    "group": "application",
+    "group": "service",
     "id": "PocketCasts",
     "param": {
       "hasAvatar": true,
@@ -12642,7 +12642,7 @@
     "desc": "https://podman.io",
     "docsUrl": "podman",
     "fullTitle": "Podman",
-    "group": "application",
+    "group": "service",
     "id": "Podman",
     "param": {
       "hasAvatar": true,
@@ -12680,7 +12680,7 @@
     "desc": "https://python-poetry.org",
     "docsUrl": "poetry",
     "fullTitle": "Poetry",
-    "group": "application",
+    "group": "service",
     "id": "Poetry",
     "param": {
       "hasAvatar": true,
@@ -12699,7 +12699,7 @@
     "desc": "https://www.polestar.com",
     "docsUrl": "polestar",
     "fullTitle": "Polestar",
-    "group": "application",
+    "group": "service",
     "id": "Polestar",
     "param": {
       "hasAvatar": true,
@@ -12737,7 +12737,7 @@
     "desc": "https://polygon.technology",
     "docsUrl": "polygon",
     "fullTitle": "Polygon",
-    "group": "application",
+    "group": "service",
     "id": "Polygon",
     "param": {
       "hasAvatar": true,
@@ -12775,7 +12775,7 @@
     "desc": "https://porkbun.com",
     "docsUrl": "porkbun",
     "fullTitle": "Porkbun",
-    "group": "application",
+    "group": "service",
     "id": "Porkbun",
     "param": {
       "hasAvatar": true,
@@ -12794,7 +12794,7 @@
     "desc": "https://www.porsche.com",
     "docsUrl": "porsche",
     "fullTitle": "Porsche",
-    "group": "application",
+    "group": "service",
     "id": "Porsche",
     "param": {
       "hasAvatar": true,
@@ -12813,7 +12813,7 @@
     "desc": "https://postcss.org",
     "docsUrl": "post-css",
     "fullTitle": "PostCSS",
-    "group": "application",
+    "group": "service",
     "id": "PostCSS",
     "param": {
       "hasAvatar": true,
@@ -12832,7 +12832,7 @@
     "desc": "https://www.postgresql.org",
     "docsUrl": "postgre-sql",
     "fullTitle": "PostgreSQL",
-    "group": "application",
+    "group": "service",
     "id": "PostgreSQL",
     "param": {
       "hasAvatar": true,
@@ -12851,7 +12851,7 @@
     "desc": "https://posthog.com",
     "docsUrl": "post-hog",
     "fullTitle": "PostHog",
-    "group": "application",
+    "group": "service",
     "id": "PostHog",
     "param": {
       "hasAvatar": true,
@@ -12870,7 +12870,7 @@
     "desc": "https://www.postman.com",
     "docsUrl": "postman",
     "fullTitle": "Postman",
-    "group": "application",
+    "group": "service",
     "id": "Postman",
     "param": {
       "hasAvatar": true,
@@ -12908,7 +12908,7 @@
     "desc": "https://preactjs.com",
     "docsUrl": "preact",
     "fullTitle": "Preact",
-    "group": "application",
+    "group": "service",
     "id": "Preact",
     "param": {
       "hasAvatar": true,
@@ -12927,7 +12927,7 @@
     "desc": "https://www.premierleague.com",
     "docsUrl": "premier-league",
     "fullTitle": "Premier League",
-    "group": "application",
+    "group": "service",
     "id": "PremierLeague",
     "param": {
       "hasAvatar": true,
@@ -12946,7 +12946,7 @@
     "desc": "https://prettier.io",
     "docsUrl": "prettier",
     "fullTitle": "Prettier",
-    "group": "application",
+    "group": "service",
     "id": "Prettier",
     "param": {
       "hasAvatar": true,
@@ -12965,7 +12965,7 @@
     "desc": "https://www.prisma.io",
     "docsUrl": "prisma",
     "fullTitle": "Prisma",
-    "group": "application",
+    "group": "service",
     "id": "Prisma",
     "param": {
       "hasAvatar": true,
@@ -12984,7 +12984,7 @@
     "desc": "https://www.producthunt.com",
     "docsUrl": "product-hunt",
     "fullTitle": "Product Hunt",
-    "group": "application",
+    "group": "service",
     "id": "ProductHunt",
     "param": {
       "hasAvatar": true,
@@ -13003,7 +13003,7 @@
     "desc": "https://prometheus.io",
     "docsUrl": "prometheus",
     "fullTitle": "Prometheus",
-    "group": "application",
+    "group": "service",
     "id": "Prometheus",
     "param": {
       "hasAvatar": true,
@@ -13022,7 +13022,7 @@
     "desc": "https://proton.me",
     "docsUrl": "proton",
     "fullTitle": "Proton",
-    "group": "application",
+    "group": "service",
     "id": "Proton",
     "param": {
       "hasAvatar": true,
@@ -13041,7 +13041,7 @@
     "desc": "https://proton.me/mail",
     "docsUrl": "proton-mail",
     "fullTitle": "Proton Mail",
-    "group": "application",
+    "group": "service",
     "id": "ProtonMail",
     "param": {
       "hasAvatar": true,
@@ -13060,7 +13060,7 @@
     "desc": "https://protonvpn.com",
     "docsUrl": "proton-vpn",
     "fullTitle": "Proton VPN",
-    "group": "application",
+    "group": "service",
     "id": "ProtonVPN",
     "param": {
       "hasAvatar": true,
@@ -13098,7 +13098,7 @@
     "desc": "https://www.puma.com",
     "docsUrl": "puma",
     "fullTitle": "Puma",
-    "group": "application",
+    "group": "service",
     "id": "Puma",
     "param": {
       "hasAvatar": true,
@@ -13117,7 +13117,7 @@
     "desc": "https://www.puppet.com",
     "docsUrl": "puppet",
     "fullTitle": "Puppet",
-    "group": "application",
+    "group": "service",
     "id": "Puppet",
     "param": {
       "hasAvatar": true,
@@ -13136,7 +13136,7 @@
     "desc": "https://www.jetbrains.com/pycharm",
     "docsUrl": "py-charm",
     "fullTitle": "PyCharm",
-    "group": "application",
+    "group": "service",
     "id": "PyCharm",
     "param": {
       "hasAvatar": true,
@@ -13174,7 +13174,7 @@
     "desc": "https://pypi.org",
     "docsUrl": "py-pi",
     "fullTitle": "PyPI",
-    "group": "application",
+    "group": "service",
     "id": "PyPI",
     "param": {
       "hasAvatar": true,
@@ -13193,7 +13193,7 @@
     "desc": "https://pytest.org",
     "docsUrl": "pytest",
     "fullTitle": "Pytest",
-    "group": "application",
+    "group": "service",
     "id": "Pytest",
     "param": {
       "hasAvatar": true,
@@ -13212,7 +13212,7 @@
     "desc": "https://www.python.org",
     "docsUrl": "python",
     "fullTitle": "Python",
-    "group": "application",
+    "group": "service",
     "id": "Python",
     "param": {
       "hasAvatar": true,
@@ -13231,7 +13231,7 @@
     "desc": "https://pytorch.org",
     "docsUrl": "py-torch",
     "fullTitle": "PyTorch",
-    "group": "application",
+    "group": "service",
     "id": "PyTorch",
     "param": {
       "hasAvatar": true,
@@ -13250,7 +13250,7 @@
     "desc": "https://www.qatarairways.com",
     "docsUrl": "qatar-airways",
     "fullTitle": "Qatar Airways",
-    "group": "application",
+    "group": "service",
     "id": "QatarAirways",
     "param": {
       "hasAvatar": true,
@@ -13269,7 +13269,7 @@
     "desc": "https://qdrant.tech",
     "docsUrl": "qdrant",
     "fullTitle": "Qdrant",
-    "group": "application",
+    "group": "service",
     "id": "Qdrant",
     "param": {
       "hasAvatar": true,
@@ -13345,7 +13345,7 @@
     "desc": "https://im.qq.com",
     "docsUrl": "qq",
     "fullTitle": "QQ",
-    "group": "application",
+    "group": "service",
     "id": "QQ",
     "param": {
       "hasAvatar": true,
@@ -13364,7 +13364,7 @@
     "desc": "https://www.qualcomm.com",
     "docsUrl": "qualcomm",
     "fullTitle": "Qualcomm",
-    "group": "application",
+    "group": "service",
     "id": "Qualcomm",
     "param": {
       "hasAvatar": true,
@@ -13383,7 +13383,7 @@
     "desc": "https://quizlet.com",
     "docsUrl": "quizlet",
     "fullTitle": "Quizlet",
-    "group": "application",
+    "group": "service",
     "id": "Quizlet",
     "param": {
       "hasAvatar": true,
@@ -13402,7 +13402,7 @@
     "desc": "https://www.quora.com",
     "docsUrl": "quora",
     "fullTitle": "Quora",
-    "group": "application",
+    "group": "service",
     "id": "Quora",
     "param": {
       "hasAvatar": true,
@@ -13441,7 +13441,7 @@
     "desc": "https://qwik.dev",
     "docsUrl": "qwik",
     "fullTitle": "Qwik",
-    "group": "application",
+    "group": "service",
     "id": "Qwik",
     "param": {
       "hasAvatar": true,
@@ -13460,7 +13460,7 @@
     "desc": "https://www.rabbitmq.com",
     "docsUrl": "rabbit-mq",
     "fullTitle": "RabbitMQ",
-    "group": "application",
+    "group": "service",
     "id": "RabbitMQ",
     "param": {
       "hasAvatar": true,
@@ -13499,7 +13499,7 @@
     "desc": "https://www.rakuten.com",
     "docsUrl": "rakuten",
     "fullTitle": "Rakuten",
-    "group": "application",
+    "group": "service",
     "id": "Rakuten",
     "param": {
       "hasAvatar": true,
@@ -13518,7 +13518,7 @@
     "desc": "https://www.rancher.com",
     "docsUrl": "rancher",
     "fullTitle": "Rancher",
-    "group": "application",
+    "group": "service",
     "id": "Rancher",
     "param": {
       "hasAvatar": true,
@@ -13537,7 +13537,7 @@
     "desc": "https://www.raspberrypi.com",
     "docsUrl": "raspberry-pi",
     "fullTitle": "Raspberry Pi",
-    "group": "application",
+    "group": "service",
     "id": "RaspberryPi",
     "param": {
       "hasAvatar": true,
@@ -13556,7 +13556,7 @@
     "desc": "https://www.raycast.com",
     "docsUrl": "raycast",
     "fullTitle": "Raycast",
-    "group": "application",
+    "group": "service",
     "id": "Raycast",
     "param": {
       "hasAvatar": true,
@@ -13575,7 +13575,7 @@
     "desc": "https://www.razer.com",
     "docsUrl": "razer",
     "fullTitle": "Razer",
-    "group": "application",
+    "group": "service",
     "id": "Razer",
     "param": {
       "hasAvatar": true,
@@ -13594,7 +13594,7 @@
     "desc": "https://razorpay.com",
     "docsUrl": "razorpay",
     "fullTitle": "Razorpay",
-    "group": "application",
+    "group": "service",
     "id": "Razorpay",
     "param": {
       "hasAvatar": true,
@@ -13613,7 +13613,7 @@
     "desc": "https://react.dev",
     "docsUrl": "react",
     "fullTitle": "React",
-    "group": "application",
+    "group": "service",
     "id": "React",
     "param": {
       "hasAvatar": true,
@@ -13651,7 +13651,7 @@
     "desc": "https://www.reddit.com",
     "docsUrl": "reddit",
     "fullTitle": "Reddit",
-    "group": "application",
+    "group": "service",
     "id": "Reddit",
     "param": {
       "hasAvatar": true,
@@ -13670,7 +13670,7 @@
     "desc": "https://www.redhat.com",
     "docsUrl": "red-hat",
     "fullTitle": "Red Hat",
-    "group": "application",
+    "group": "service",
     "id": "RedHat",
     "param": {
       "hasAvatar": true,
@@ -13689,7 +13689,7 @@
     "desc": "https://redis.io",
     "docsUrl": "redis",
     "fullTitle": "Redis",
-    "group": "application",
+    "group": "service",
     "id": "Redis",
     "param": {
       "hasAvatar": true,
@@ -13727,7 +13727,7 @@
     "desc": "https://remix.run",
     "docsUrl": "remix",
     "fullTitle": "Remix",
-    "group": "application",
+    "group": "service",
     "id": "Remix",
     "param": {
       "hasAvatar": true,
@@ -13746,7 +13746,7 @@
     "desc": "https://render.com",
     "docsUrl": "render",
     "fullTitle": "Render",
-    "group": "application",
+    "group": "service",
     "id": "Render",
     "param": {
       "hasAvatar": true,
@@ -13765,7 +13765,7 @@
     "desc": "https://docs.renovatebot.com",
     "docsUrl": "renovate",
     "fullTitle": "Renovate",
-    "group": "application",
+    "group": "service",
     "id": "Renovate",
     "param": {
       "hasAvatar": true,
@@ -13822,7 +13822,7 @@
     "desc": "https://resend.com",
     "docsUrl": "resend",
     "fullTitle": "Resend",
-    "group": "application",
+    "group": "service",
     "id": "Resend",
     "param": {
       "hasAvatar": true,
@@ -13841,7 +13841,7 @@
     "desc": "https://retool.com",
     "docsUrl": "retool",
     "fullTitle": "Retool",
-    "group": "application",
+    "group": "service",
     "id": "Retool",
     "param": {
       "hasAvatar": true,
@@ -13879,7 +13879,7 @@
     "desc": "https://www.revolut.com",
     "docsUrl": "revolut",
     "fullTitle": "Revolut",
-    "group": "application",
+    "group": "service",
     "id": "Revolut",
     "param": {
       "hasAvatar": true,
@@ -13898,7 +13898,7 @@
     "desc": "https://www.jetbrains.com/rider",
     "docsUrl": "rider",
     "fullTitle": "Rider",
-    "group": "application",
+    "group": "service",
     "id": "Rider",
     "param": {
       "hasAvatar": true,
@@ -13917,7 +13917,7 @@
     "desc": "https://www.riotgames.com",
     "docsUrl": "riot-games",
     "fullTitle": "Riot Games",
-    "group": "application",
+    "group": "service",
     "id": "RiotGames",
     "param": {
       "hasAvatar": true,
@@ -13936,7 +13936,7 @@
     "desc": "https://roamresearch.com",
     "docsUrl": "roam-research",
     "fullTitle": "Roam Research",
-    "group": "application",
+    "group": "service",
     "id": "RoamResearch",
     "param": {
       "hasAvatar": true,
@@ -13955,7 +13955,7 @@
     "desc": "https://robinhood.com",
     "docsUrl": "robinhood",
     "fullTitle": "Robinhood",
-    "group": "application",
+    "group": "service",
     "id": "Robinhood",
     "param": {
       "hasAvatar": true,
@@ -13974,7 +13974,7 @@
     "desc": "https://www.roblox.com",
     "docsUrl": "roblox",
     "fullTitle": "Roblox",
-    "group": "application",
+    "group": "service",
     "id": "Roblox",
     "param": {
       "hasAvatar": true,
@@ -13993,7 +13993,7 @@
     "desc": "https://www.rocket.chat",
     "docsUrl": "rocket-chat",
     "fullTitle": "Rocket.Chat",
-    "group": "application",
+    "group": "service",
     "id": "RocketChat",
     "param": {
       "hasAvatar": true,
@@ -14012,7 +14012,7 @@
     "desc": "https://rollupjs.org",
     "docsUrl": "rollup",
     "fullTitle": "rollup.js",
-    "group": "application",
+    "group": "service",
     "id": "Rollup",
     "param": {
       "hasAvatar": true,
@@ -14069,7 +14069,7 @@
     "desc": "https://docs.astral.sh/ruff",
     "docsUrl": "ruff",
     "fullTitle": "Ruff",
-    "group": "application",
+    "group": "service",
     "id": "Ruff",
     "param": {
       "hasAvatar": true,
@@ -14088,7 +14088,7 @@
     "desc": "https://rumble.com",
     "docsUrl": "rumble",
     "fullTitle": "Rumble",
-    "group": "application",
+    "group": "service",
     "id": "Rumble",
     "param": {
       "hasAvatar": true,
@@ -14146,7 +14146,7 @@
     "desc": "https://www.ryanair.com",
     "docsUrl": "ryanair",
     "fullTitle": "Ryanair",
-    "group": "application",
+    "group": "service",
     "id": "Ryanair",
     "param": {
       "hasAvatar": true,
@@ -14165,7 +14165,7 @@
     "desc": "https://www.apple.com/safari",
     "docsUrl": "safari",
     "fullTitle": "Safari",
-    "group": "application",
+    "group": "service",
     "id": "Safari",
     "param": {
       "hasAvatar": true,
@@ -14203,7 +14203,7 @@
     "desc": "https://www.samsung.com",
     "docsUrl": "samsung",
     "fullTitle": "Samsung",
-    "group": "application",
+    "group": "service",
     "id": "Samsung",
     "param": {
       "hasAvatar": true,
@@ -14222,7 +14222,7 @@
     "desc": "https://www.sanity.io",
     "docsUrl": "sanity",
     "fullTitle": "Sanity",
-    "group": "application",
+    "group": "service",
     "id": "Sanity",
     "param": {
       "hasAvatar": true,
@@ -14241,7 +14241,7 @@
     "desc": "https://www.sap.com",
     "docsUrl": "sap",
     "fullTitle": "SAP",
-    "group": "application",
+    "group": "service",
     "id": "SAP",
     "param": {
       "hasAvatar": true,
@@ -14260,7 +14260,7 @@
     "desc": "https://www.scala-lang.org",
     "docsUrl": "scala",
     "fullTitle": "Scala",
-    "group": "application",
+    "group": "service",
     "id": "Scala",
     "param": {
       "hasAvatar": true,
@@ -14279,7 +14279,7 @@
     "desc": "https://www.scaleway.com",
     "docsUrl": "scaleway",
     "fullTitle": "Scaleway",
-    "group": "application",
+    "group": "service",
     "id": "Scaleway",
     "param": {
       "hasAvatar": true,
@@ -14298,7 +14298,7 @@
     "desc": "https://scikit-learn.org",
     "docsUrl": "scikit-learn",
     "fullTitle": "scikit-learn",
-    "group": "application",
+    "group": "service",
     "id": "ScikitLearn",
     "param": {
       "hasAvatar": true,
@@ -14317,7 +14317,7 @@
     "desc": "https://scipy.org",
     "docsUrl": "sci-py",
     "fullTitle": "SciPy",
-    "group": "application",
+    "group": "service",
     "id": "SciPy",
     "param": {
       "hasAvatar": true,
@@ -14336,7 +14336,7 @@
     "desc": "https://www.seagate.com",
     "docsUrl": "seagate",
     "fullTitle": "Seagate",
-    "group": "application",
+    "group": "service",
     "id": "Seagate",
     "param": {
       "hasAvatar": true,
@@ -14431,7 +14431,7 @@
     "desc": "https://sentry.io",
     "docsUrl": "sentry",
     "fullTitle": "Sentry",
-    "group": "application",
+    "group": "service",
     "id": "Sentry",
     "param": {
       "hasAvatar": true,
@@ -14450,7 +14450,7 @@
     "desc": "https://www.shazam.com",
     "docsUrl": "shazam",
     "fullTitle": "Shazam",
-    "group": "application",
+    "group": "service",
     "id": "Shazam",
     "param": {
       "hasAvatar": true,
@@ -14469,7 +14469,7 @@
     "desc": "https://shopee.com",
     "docsUrl": "shopee",
     "fullTitle": "Shopee",
-    "group": "application",
+    "group": "service",
     "id": "Shopee",
     "param": {
       "hasAvatar": true,
@@ -14488,7 +14488,7 @@
     "desc": "https://www.shopify.com",
     "docsUrl": "shopify",
     "fullTitle": "Shopify",
-    "group": "application",
+    "group": "service",
     "id": "Shopify",
     "param": {
       "hasAvatar": true,
@@ -14507,7 +14507,7 @@
     "desc": "https://www.siemens.com",
     "docsUrl": "siemens",
     "fullTitle": "Siemens",
-    "group": "application",
+    "group": "service",
     "id": "Siemens",
     "param": {
       "hasAvatar": true,
@@ -14526,7 +14526,7 @@
     "desc": "https://signal.org",
     "docsUrl": "signal",
     "fullTitle": "Signal",
-    "group": "application",
+    "group": "service",
     "id": "Signal",
     "param": {
       "hasAvatar": true,
@@ -14583,7 +14583,7 @@
     "desc": "https://www.singaporeair.com",
     "docsUrl": "singapore-airlines",
     "fullTitle": "Singapore Airlines",
-    "group": "application",
+    "group": "service",
     "id": "SingaporeAirlines",
     "param": {
       "hasAvatar": true,
@@ -14602,7 +14602,7 @@
     "desc": "https://www.sketch.com",
     "docsUrl": "sketch",
     "fullTitle": "Sketch",
-    "group": "application",
+    "group": "service",
     "id": "Sketch",
     "param": {
       "hasAvatar": true,
@@ -14621,7 +14621,7 @@
     "desc": "https://www.sketchup.com",
     "docsUrl": "sketch-up",
     "fullTitle": "SketchUp",
-    "group": "application",
+    "group": "service",
     "id": "SketchUp",
     "param": {
       "hasAvatar": true,
@@ -14697,7 +14697,7 @@
     "desc": "https://www.snapchat.com",
     "docsUrl": "snapchat",
     "fullTitle": "Snapchat",
-    "group": "application",
+    "group": "service",
     "id": "Snapchat",
     "param": {
       "hasAvatar": true,
@@ -14735,7 +14735,7 @@
     "desc": "https://snyk.io",
     "docsUrl": "snyk",
     "fullTitle": "Snyk",
-    "group": "application",
+    "group": "service",
     "id": "Snyk",
     "param": {
       "hasAvatar": true,
@@ -14754,7 +14754,7 @@
     "desc": "https://solana.com",
     "docsUrl": "solana",
     "fullTitle": "Solana",
-    "group": "application",
+    "group": "service",
     "id": "Solana",
     "param": {
       "hasAvatar": true,
@@ -14773,7 +14773,7 @@
     "desc": "https://www.solidjs.com",
     "docsUrl": "solid",
     "fullTitle": "Solid",
-    "group": "application",
+    "group": "service",
     "id": "Solid",
     "param": {
       "hasAvatar": true,
@@ -14792,7 +14792,7 @@
     "desc": "https://soliditylang.org",
     "docsUrl": "solidity",
     "fullTitle": "Solidity",
-    "group": "application",
+    "group": "service",
     "id": "Solidity",
     "param": {
       "hasAvatar": true,
@@ -14811,7 +14811,7 @@
     "desc": "https://www.sonos.com",
     "docsUrl": "sonos",
     "fullTitle": "Sonos",
-    "group": "application",
+    "group": "service",
     "id": "Sonos",
     "param": {
       "hasAvatar": true,
@@ -14830,7 +14830,7 @@
     "desc": "https://www.sony.com",
     "docsUrl": "sony",
     "fullTitle": "Sony",
-    "group": "application",
+    "group": "service",
     "id": "Sony",
     "param": {
       "hasAvatar": true,
@@ -14888,7 +14888,7 @@
     "desc": "https://soundcloud.com",
     "docsUrl": "sound-cloud",
     "fullTitle": "SoundCloud",
-    "group": "application",
+    "group": "service",
     "id": "SoundCloud",
     "param": {
       "hasAvatar": true,
@@ -14907,7 +14907,7 @@
     "desc": "https://sourceforge.net",
     "docsUrl": "source-forge",
     "fullTitle": "SourceForge",
-    "group": "application",
+    "group": "service",
     "id": "SourceForge",
     "param": {
       "hasAvatar": true,
@@ -14926,7 +14926,7 @@
     "desc": "https://sourcehut.org",
     "docsUrl": "source-hut",
     "fullTitle": "SourceHut",
-    "group": "application",
+    "group": "service",
     "id": "SourceHut",
     "param": {
       "hasAvatar": true,
@@ -14945,7 +14945,7 @@
     "desc": "https://www.sourcetreeapp.com",
     "docsUrl": "sourcetree",
     "fullTitle": "Sourcetree",
-    "group": "application",
+    "group": "service",
     "id": "Sourcetree",
     "param": {
       "hasAvatar": true,
@@ -15002,7 +15002,7 @@
     "desc": "https://www.splunk.com",
     "docsUrl": "splunk",
     "fullTitle": "Splunk",
-    "group": "application",
+    "group": "service",
     "id": "Splunk",
     "param": {
       "hasAvatar": true,
@@ -15021,7 +15021,7 @@
     "desc": "https://www.spotify.com",
     "docsUrl": "spotify",
     "fullTitle": "Spotify",
-    "group": "application",
+    "group": "service",
     "id": "Spotify",
     "param": {
       "hasAvatar": true,
@@ -15040,7 +15040,7 @@
     "desc": "https://spring.io",
     "docsUrl": "spring",
     "fullTitle": "Spring",
-    "group": "application",
+    "group": "service",
     "id": "Spring",
     "param": {
       "hasAvatar": true,
@@ -15059,7 +15059,7 @@
     "desc": "https://spring.io/projects/spring-boot",
     "docsUrl": "spring-boot",
     "fullTitle": "Spring Boot",
-    "group": "application",
+    "group": "service",
     "id": "SpringBoot",
     "param": {
       "hasAvatar": true,
@@ -15078,7 +15078,7 @@
     "desc": "https://www.sqlite.org",
     "docsUrl": "sq-lite",
     "fullTitle": "SQLite",
-    "group": "application",
+    "group": "service",
     "id": "SQLite",
     "param": {
       "hasAvatar": true,
@@ -15097,7 +15097,7 @@
     "desc": "https://squareup.com",
     "docsUrl": "square",
     "fullTitle": "Square",
-    "group": "application",
+    "group": "service",
     "id": "Square",
     "param": {
       "hasAvatar": true,
@@ -15116,7 +15116,7 @@
     "desc": "https://www.squarespace.com",
     "docsUrl": "squarespace",
     "fullTitle": "Squarespace",
-    "group": "application",
+    "group": "service",
     "id": "Squarespace",
     "param": {
       "hasAvatar": true,
@@ -15155,7 +15155,7 @@
     "desc": "https://stackoverflow.com",
     "docsUrl": "stack-overflow",
     "fullTitle": "Stack Overflow",
-    "group": "application",
+    "group": "service",
     "id": "StackOverflow",
     "param": {
       "hasAvatar": true,
@@ -15174,7 +15174,7 @@
     "desc": "https://www.starbucks.com",
     "docsUrl": "starbucks",
     "fullTitle": "Starbucks",
-    "group": "application",
+    "group": "service",
     "id": "Starbucks",
     "param": {
       "hasAvatar": true,
@@ -15212,7 +15212,7 @@
     "desc": "https://store.steampowered.com",
     "docsUrl": "steam",
     "fullTitle": "Steam",
-    "group": "application",
+    "group": "service",
     "id": "Steam",
     "param": {
       "hasAvatar": true,
@@ -15231,7 +15231,7 @@
     "desc": "https://steelseries.com",
     "docsUrl": "steel-series",
     "fullTitle": "Steelseries",
-    "group": "application",
+    "group": "service",
     "id": "SteelSeries",
     "param": {
       "hasAvatar": true,
@@ -15269,7 +15269,7 @@
     "desc": "https://www.st.com",
     "docsUrl": "st-microelectronics",
     "fullTitle": "STMicroelectronics",
-    "group": "application",
+    "group": "service",
     "id": "STMicroelectronics",
     "param": {
       "hasAvatar": true,
@@ -15288,7 +15288,7 @@
     "desc": "https://storybook.js.org",
     "docsUrl": "storybook",
     "fullTitle": "Storybook",
-    "group": "application",
+    "group": "service",
     "id": "Storybook",
     "param": {
       "hasAvatar": true,
@@ -15326,7 +15326,7 @@
     "desc": "https://strapi.io",
     "docsUrl": "strapi",
     "fullTitle": "Strapi",
-    "group": "application",
+    "group": "service",
     "id": "Strapi",
     "param": {
       "hasAvatar": true,
@@ -15364,7 +15364,7 @@
     "desc": "https://streamlit.io",
     "docsUrl": "streamlit",
     "fullTitle": "Streamlit",
-    "group": "application",
+    "group": "service",
     "id": "Streamlit",
     "param": {
       "hasAvatar": true,
@@ -15383,7 +15383,7 @@
     "desc": "https://stripe.com",
     "docsUrl": "stripe",
     "fullTitle": "Stripe",
-    "group": "application",
+    "group": "service",
     "id": "Stripe",
     "param": {
       "hasAvatar": true,
@@ -15402,7 +15402,7 @@
     "desc": "https://www.subaru.com",
     "docsUrl": "subaru",
     "fullTitle": "Subaru",
-    "group": "application",
+    "group": "service",
     "id": "Subaru",
     "param": {
       "hasAvatar": true,
@@ -15421,7 +15421,7 @@
     "desc": "https://www.sublimetext.com",
     "docsUrl": "sublime-text",
     "fullTitle": "Sublime Text",
-    "group": "application",
+    "group": "service",
     "id": "SublimeText",
     "param": {
       "hasAvatar": true,
@@ -15459,7 +15459,7 @@
     "desc": "https://substack.com",
     "docsUrl": "substack",
     "fullTitle": "Substack",
-    "group": "application",
+    "group": "service",
     "id": "Substack",
     "param": {
       "hasAvatar": true,
@@ -15497,7 +15497,7 @@
     "desc": "https://supabase.com",
     "docsUrl": "supabase",
     "fullTitle": "Supabase",
-    "group": "application",
+    "group": "service",
     "id": "Supabase",
     "param": {
       "hasAvatar": true,
@@ -15516,7 +15516,7 @@
     "desc": "https://surfshark.com",
     "docsUrl": "surfshark",
     "fullTitle": "Surfshark",
-    "group": "application",
+    "group": "service",
     "id": "Surfshark",
     "param": {
       "hasAvatar": true,
@@ -15535,7 +15535,7 @@
     "desc": "https://surrealdb.com",
     "docsUrl": "surreal-db",
     "fullTitle": "SurrealDB",
-    "group": "application",
+    "group": "service",
     "id": "SurrealDB",
     "param": {
       "hasAvatar": true,
@@ -15554,7 +15554,7 @@
     "desc": "https://www.suse.com",
     "docsUrl": "suse",
     "fullTitle": "SUSE",
-    "group": "application",
+    "group": "service",
     "id": "SUSE",
     "param": {
       "hasAvatar": true,
@@ -15573,7 +15573,7 @@
     "desc": "https://svelte.dev",
     "docsUrl": "svelte",
     "fullTitle": "Svelte",
-    "group": "application",
+    "group": "service",
     "id": "Svelte",
     "param": {
       "hasAvatar": true,
@@ -15592,7 +15592,7 @@
     "desc": "https://swagger.io",
     "docsUrl": "swagger",
     "fullTitle": "Swagger",
-    "group": "application",
+    "group": "service",
     "id": "Swagger",
     "param": {
       "hasAvatar": true,
@@ -15611,7 +15611,7 @@
     "desc": "https://swc.rs",
     "docsUrl": "swc",
     "fullTitle": "SWC",
-    "group": "application",
+    "group": "service",
     "id": "SWC",
     "param": {
       "hasAvatar": true,
@@ -15630,7 +15630,7 @@
     "desc": "https://www.swift.org",
     "docsUrl": "swift",
     "fullTitle": "Swift",
-    "group": "application",
+    "group": "service",
     "id": "Swift",
     "param": {
       "hasAvatar": true,
@@ -15668,7 +15668,7 @@
     "desc": "https://tailscale.com",
     "docsUrl": "tailscale",
     "fullTitle": "Tailscale",
-    "group": "application",
+    "group": "service",
     "id": "Tailscale",
     "param": {
       "hasAvatar": true,
@@ -15687,7 +15687,7 @@
     "desc": "https://tailwindcss.com",
     "docsUrl": "tailwind-css",
     "fullTitle": "Tailwind CSS",
-    "group": "application",
+    "group": "service",
     "id": "TailwindCSS",
     "param": {
       "hasAvatar": true,
@@ -15706,7 +15706,7 @@
     "desc": "https://www.taobao.com",
     "docsUrl": "taobao",
     "fullTitle": "Taobao",
-    "group": "application",
+    "group": "service",
     "id": "Taobao",
     "param": {
       "hasAvatar": true,
@@ -15725,7 +15725,7 @@
     "desc": "https://www.target.com",
     "docsUrl": "target",
     "fullTitle": "Target",
-    "group": "application",
+    "group": "service",
     "id": "Target",
     "param": {
       "hasAvatar": true,
@@ -15782,7 +15782,7 @@
     "desc": "https://www.jetbrains.com/teamcity",
     "docsUrl": "team-city",
     "fullTitle": "TeamCity",
-    "group": "application",
+    "group": "service",
     "id": "TeamCity",
     "param": {
       "hasAvatar": true,
@@ -15801,7 +15801,7 @@
     "desc": "https://techcrunch.com",
     "docsUrl": "tech-crunch",
     "fullTitle": "TechCrunch",
-    "group": "application",
+    "group": "service",
     "id": "TechCrunch",
     "param": {
       "hasAvatar": true,
@@ -15820,7 +15820,7 @@
     "desc": "https://telegram.org",
     "docsUrl": "telegram",
     "fullTitle": "Telegram",
-    "group": "application",
+    "group": "service",
     "id": "Telegram",
     "param": {
       "hasAvatar": true,
@@ -15877,7 +15877,7 @@
     "desc": "https://www.tensorflow.org",
     "docsUrl": "tensor-flow",
     "fullTitle": "TensorFlow",
-    "group": "application",
+    "group": "service",
     "id": "TensorFlow",
     "param": {
       "hasAvatar": true,
@@ -15896,7 +15896,7 @@
     "desc": "https://www.terraform.io",
     "docsUrl": "terraform",
     "fullTitle": "Terraform",
-    "group": "application",
+    "group": "service",
     "id": "Terraform",
     "param": {
       "hasAvatar": true,
@@ -15915,7 +15915,7 @@
     "desc": "https://www.tesla.com",
     "docsUrl": "tesla",
     "fullTitle": "Tesla",
-    "group": "application",
+    "group": "service",
     "id": "Tesla",
     "param": {
       "hasAvatar": true,
@@ -15934,7 +15934,7 @@
     "desc": "https://tether.to",
     "docsUrl": "tether",
     "fullTitle": "Tether",
-    "group": "application",
+    "group": "service",
     "id": "Tether",
     "param": {
       "hasAvatar": true,
@@ -15953,7 +15953,7 @@
     "desc": "https://www.theguardian.com",
     "docsUrl": "the-guardian",
     "fullTitle": "The Guardian",
-    "group": "application",
+    "group": "service",
     "id": "TheGuardian",
     "param": {
       "hasAvatar": true,
@@ -15972,7 +15972,7 @@
     "desc": "https://www.threads.com",
     "docsUrl": "threads",
     "fullTitle": "Threads",
-    "group": "application",
+    "group": "service",
     "id": "Threads",
     "param": {
       "hasAvatar": true,
@@ -15991,7 +15991,7 @@
     "desc": "https://threejs.org",
     "docsUrl": "three-js",
     "fullTitle": "Three.js",
-    "group": "application",
+    "group": "service",
     "id": "ThreeJS",
     "param": {
       "hasAvatar": true,
@@ -16010,7 +16010,7 @@
     "desc": "https://threema.ch",
     "docsUrl": "threema",
     "fullTitle": "Threema",
-    "group": "application",
+    "group": "service",
     "id": "Threema",
     "param": {
       "hasAvatar": true,
@@ -16029,7 +16029,7 @@
     "desc": "https://www.thunderbird.net",
     "docsUrl": "thunderbird",
     "fullTitle": "Thunderbird",
-    "group": "application",
+    "group": "service",
     "id": "Thunderbird",
     "param": {
       "hasAvatar": true,
@@ -16068,7 +16068,7 @@
     "desc": "https://ticktick.com",
     "docsUrl": "tick-tick",
     "fullTitle": "TickTick",
-    "group": "application",
+    "group": "service",
     "id": "TickTick",
     "param": {
       "hasAvatar": true,
@@ -16087,7 +16087,7 @@
     "desc": "https://tidal.com",
     "docsUrl": "tidal",
     "fullTitle": "TIDAL",
-    "group": "application",
+    "group": "service",
     "id": "Tidal",
     "param": {
       "hasAvatar": true,
@@ -16125,7 +16125,7 @@
     "desc": "https://www.tiktok.com",
     "docsUrl": "tik-tok",
     "fullTitle": "TikTok",
-    "group": "application",
+    "group": "service",
     "id": "TikTok",
     "param": {
       "hasAvatar": true,
@@ -16144,7 +16144,7 @@
     "desc": "https://www.timescale.com",
     "docsUrl": "timescale",
     "fullTitle": "Timescale",
-    "group": "application",
+    "group": "service",
     "id": "Timescale",
     "param": {
       "hasAvatar": true,
@@ -16163,7 +16163,7 @@
     "desc": "https://github.com/tmux/tmux",
     "docsUrl": "tmux",
     "fullTitle": "tmux",
-    "group": "application",
+    "group": "service",
     "id": "Tmux",
     "param": {
       "hasAvatar": true,
@@ -16182,7 +16182,7 @@
     "desc": "https://www.todoist.com",
     "docsUrl": "todoist",
     "fullTitle": "Todoist",
-    "group": "application",
+    "group": "service",
     "id": "Todoist",
     "param": {
       "hasAvatar": true,
@@ -16220,7 +16220,7 @@
     "desc": "https://toggl.com",
     "docsUrl": "toggl",
     "fullTitle": "Toggl",
-    "group": "application",
+    "group": "service",
     "id": "Toggl",
     "param": {
       "hasAvatar": true,
@@ -16239,7 +16239,7 @@
     "desc": "https://toml.io",
     "docsUrl": "toml",
     "fullTitle": "TOML",
-    "group": "application",
+    "group": "service",
     "id": "TOML",
     "param": {
       "hasAvatar": true,
@@ -16277,7 +16277,7 @@
     "desc": "https://www.torproject.org",
     "docsUrl": "tor-project",
     "fullTitle": "Tor Project",
-    "group": "application",
+    "group": "service",
     "id": "TorProject",
     "param": {
       "hasAvatar": true,
@@ -16296,7 +16296,7 @@
     "desc": "https://www.toshiba.com",
     "docsUrl": "toshiba",
     "fullTitle": "Toshiba",
-    "group": "application",
+    "group": "service",
     "id": "Toshiba",
     "param": {
       "hasAvatar": true,
@@ -16315,7 +16315,7 @@
     "desc": "https://global.toyota",
     "docsUrl": "toyota",
     "fullTitle": "Toyota",
-    "group": "application",
+    "group": "service",
     "id": "Toyota",
     "param": {
       "hasAvatar": true,
@@ -16353,7 +16353,7 @@
     "desc": "https://www.travis-ci.com",
     "docsUrl": "travis-ci",
     "fullTitle": "Travis CI",
-    "group": "application",
+    "group": "service",
     "id": "TravisCI",
     "param": {
       "hasAvatar": true,
@@ -16372,7 +16372,7 @@
     "desc": "https://trello.com",
     "docsUrl": "trello",
     "fullTitle": "Trello",
-    "group": "application",
+    "group": "service",
     "id": "Trello",
     "param": {
       "hasAvatar": true,
@@ -16391,7 +16391,7 @@
     "desc": "https://www.tripadvisor.com",
     "docsUrl": "tripadvisor",
     "fullTitle": "Tripadvisor",
-    "group": "application",
+    "group": "service",
     "id": "Tripadvisor",
     "param": {
       "hasAvatar": true,
@@ -16410,7 +16410,7 @@
     "desc": "https://www.trip.com",
     "docsUrl": "trip-com",
     "fullTitle": "Trip.com",
-    "group": "application",
+    "group": "service",
     "id": "TripCom",
     "param": {
       "hasAvatar": true,
@@ -16448,7 +16448,7 @@
     "desc": "https://www.trivago.com",
     "docsUrl": "trivago",
     "fullTitle": "trivago",
-    "group": "application",
+    "group": "service",
     "id": "Trivago",
     "param": {
       "hasAvatar": true,
@@ -16467,7 +16467,7 @@
     "desc": "https://www.trustpilot.com",
     "docsUrl": "trustpilot",
     "fullTitle": "Trustpilot",
-    "group": "application",
+    "group": "service",
     "id": "Trustpilot",
     "param": {
       "hasAvatar": true,
@@ -16486,7 +16486,7 @@
     "desc": "https://www.tumblr.com",
     "docsUrl": "tumblr",
     "fullTitle": "Tumblr",
-    "group": "application",
+    "group": "service",
     "id": "Tumblr",
     "param": {
       "hasAvatar": true,
@@ -16505,7 +16505,7 @@
     "desc": "https://turborepo.com",
     "docsUrl": "turborepo",
     "fullTitle": "Turborepo",
-    "group": "application",
+    "group": "service",
     "id": "Turborepo",
     "param": {
       "hasAvatar": true,
@@ -16544,7 +16544,7 @@
     "desc": "https://www.turkishairlines.com",
     "docsUrl": "turkish-airlines",
     "fullTitle": "Turkish Airlines",
-    "group": "application",
+    "group": "service",
     "id": "TurkishAirlines",
     "param": {
       "hasAvatar": true,
@@ -16563,7 +16563,7 @@
     "desc": "https://turso.tech",
     "docsUrl": "turso",
     "fullTitle": "Turso",
-    "group": "application",
+    "group": "service",
     "id": "Turso",
     "param": {
       "hasAvatar": true,
@@ -16582,7 +16582,7 @@
     "desc": "https://tuta.com",
     "docsUrl": "tuta",
     "fullTitle": "Tuta",
-    "group": "application",
+    "group": "service",
     "id": "Tuta",
     "param": {
       "hasAvatar": true,
@@ -16601,7 +16601,7 @@
     "desc": "https://www.twitch.tv",
     "docsUrl": "twitch",
     "fullTitle": "Twitch",
-    "group": "application",
+    "group": "service",
     "id": "Twitch",
     "param": {
       "hasAvatar": true,
@@ -16620,7 +16620,7 @@
     "desc": "https://www.typeform.com",
     "docsUrl": "typeform",
     "fullTitle": "Typeform",
-    "group": "application",
+    "group": "service",
     "id": "Typeform",
     "param": {
       "hasAvatar": true,
@@ -16639,7 +16639,7 @@
     "desc": "https://www.typescriptlang.org",
     "docsUrl": "type-script",
     "fullTitle": "TypeScript",
-    "group": "application",
+    "group": "service",
     "id": "TypeScript",
     "param": {
       "hasAvatar": true,
@@ -16658,7 +16658,7 @@
     "desc": "https://www.uber.com",
     "docsUrl": "uber",
     "fullTitle": "Uber",
-    "group": "application",
+    "group": "service",
     "id": "Uber",
     "param": {
       "hasAvatar": true,
@@ -16677,7 +16677,7 @@
     "desc": "https://www.ubereats.com",
     "docsUrl": "uber-eats",
     "fullTitle": "Uber Eats",
-    "group": "application",
+    "group": "service",
     "id": "UberEats",
     "param": {
       "hasAvatar": true,
@@ -16696,7 +16696,7 @@
     "desc": "https://www.ubisoft.com",
     "docsUrl": "ubisoft",
     "fullTitle": "Ubisoft",
-    "group": "application",
+    "group": "service",
     "id": "Ubisoft",
     "param": {
       "hasAvatar": true,
@@ -16715,7 +16715,7 @@
     "desc": "https://ubuntu.com",
     "docsUrl": "ubuntu",
     "fullTitle": "Ubuntu",
-    "group": "application",
+    "group": "service",
     "id": "Ubuntu",
     "param": {
       "hasAvatar": true,
@@ -16734,7 +16734,7 @@
     "desc": "https://www.udacity.com",
     "docsUrl": "udacity",
     "fullTitle": "Udacity",
-    "group": "application",
+    "group": "service",
     "id": "Udacity",
     "param": {
       "hasAvatar": true,
@@ -16753,7 +16753,7 @@
     "desc": "https://www.udemy.com",
     "docsUrl": "udemy",
     "fullTitle": "Udemy",
-    "group": "application",
+    "group": "service",
     "id": "Udemy",
     "param": {
       "hasAvatar": true,
@@ -16791,7 +16791,7 @@
     "desc": "https://www.uniqlo.com",
     "docsUrl": "uniqlo",
     "fullTitle": "Uniqlo",
-    "group": "application",
+    "group": "service",
     "id": "Uniqlo",
     "param": {
       "hasAvatar": true,
@@ -16810,7 +16810,7 @@
     "desc": "https://www.united.com",
     "docsUrl": "united-airlines",
     "fullTitle": "United Airlines",
-    "group": "application",
+    "group": "service",
     "id": "UnitedAirlines",
     "param": {
       "hasAvatar": true,
@@ -16829,7 +16829,7 @@
     "desc": "https://unity.com",
     "docsUrl": "unity",
     "fullTitle": "Unity",
-    "group": "application",
+    "group": "service",
     "id": "Unity",
     "param": {
       "hasAvatar": true,
@@ -16848,7 +16848,7 @@
     "desc": "https://www.unrealengine.com",
     "docsUrl": "unreal-engine",
     "fullTitle": "Unreal Engine",
-    "group": "application",
+    "group": "service",
     "id": "UnrealEngine",
     "param": {
       "hasAvatar": true,
@@ -16925,7 +16925,7 @@
     "desc": "https://upstash.com",
     "docsUrl": "upstash",
     "fullTitle": "Upstash",
-    "group": "application",
+    "group": "service",
     "id": "Upstash",
     "param": {
       "hasAvatar": true,
@@ -16944,7 +16944,7 @@
     "desc": "https://docs.astral.sh/uv",
     "docsUrl": "uv",
     "fullTitle": "uv",
-    "group": "application",
+    "group": "service",
     "id": "Uv",
     "param": {
       "hasAvatar": true,
@@ -16982,7 +16982,7 @@
     "desc": "https://www.v2ex.com",
     "docsUrl": "v-2-ex",
     "fullTitle": "V2EX",
-    "group": "application",
+    "group": "service",
     "id": "V2EX",
     "param": {
       "hasAvatar": true,
@@ -17001,7 +17001,7 @@
     "desc": "https://www.vagrantup.com",
     "docsUrl": "vagrant",
     "fullTitle": "Vagrant",
-    "group": "application",
+    "group": "service",
     "id": "Vagrant",
     "param": {
       "hasAvatar": true,
@@ -17020,7 +17020,7 @@
     "desc": "https://playvalorant.com",
     "docsUrl": "valorant",
     "fullTitle": "Valorant",
-    "group": "application",
+    "group": "service",
     "id": "Valorant",
     "param": {
       "hasAvatar": true,
@@ -17039,7 +17039,7 @@
     "desc": "https://www.vaultproject.io",
     "docsUrl": "vault",
     "fullTitle": "Vault",
-    "group": "application",
+    "group": "service",
     "id": "Vault",
     "param": {
       "hasAvatar": true,
@@ -17096,7 +17096,7 @@
     "desc": "https://venmo.com",
     "docsUrl": "venmo",
     "fullTitle": "Venmo",
-    "group": "application",
+    "group": "service",
     "id": "Venmo",
     "param": {
       "hasAvatar": true,
@@ -17153,7 +17153,7 @@
     "desc": "https://www.viber.com",
     "docsUrl": "viber",
     "fullTitle": "Viber",
-    "group": "application",
+    "group": "service",
     "id": "Viber",
     "param": {
       "hasAvatar": true,
@@ -17211,7 +17211,7 @@
     "desc": "https://www.vim.org",
     "docsUrl": "vim",
     "fullTitle": "Vim",
-    "group": "application",
+    "group": "service",
     "id": "Vim",
     "param": {
       "hasAvatar": true,
@@ -17230,7 +17230,7 @@
     "desc": "https://vimeo.com",
     "docsUrl": "vimeo",
     "fullTitle": "Vimeo",
-    "group": "application",
+    "group": "service",
     "id": "Vimeo",
     "param": {
       "hasAvatar": true,
@@ -17249,7 +17249,7 @@
     "desc": "https://www.visa.com",
     "docsUrl": "visa",
     "fullTitle": "Visa",
-    "group": "application",
+    "group": "service",
     "id": "Visa",
     "param": {
       "hasAvatar": true,
@@ -17268,7 +17268,7 @@
     "desc": "https://vite.dev",
     "docsUrl": "vite",
     "fullTitle": "Vite",
-    "group": "application",
+    "group": "service",
     "id": "Vite",
     "param": {
       "hasAvatar": true,
@@ -17287,7 +17287,7 @@
     "desc": "https://vitepress.dev",
     "docsUrl": "vite-press",
     "fullTitle": "VitePress",
-    "group": "application",
+    "group": "service",
     "id": "VitePress",
     "param": {
       "hasAvatar": true,
@@ -17306,7 +17306,7 @@
     "desc": "https://vitest.dev",
     "docsUrl": "vitest",
     "fullTitle": "Vitest",
-    "group": "application",
+    "group": "service",
     "id": "Vitest",
     "param": {
       "hasAvatar": true,
@@ -17325,7 +17325,7 @@
     "desc": "https://vivaldi.com",
     "docsUrl": "vivaldi",
     "fullTitle": "Vivaldi",
-    "group": "application",
+    "group": "service",
     "id": "Vivaldi",
     "param": {
       "hasAvatar": true,
@@ -17344,7 +17344,7 @@
     "desc": "https://www.vivo.com",
     "docsUrl": "vivo",
     "fullTitle": "vivo",
-    "group": "application",
+    "group": "service",
     "id": "Vivo",
     "param": {
       "hasAvatar": true,
@@ -17363,7 +17363,7 @@
     "desc": "https://vk.com",
     "docsUrl": "vk",
     "fullTitle": "VK",
-    "group": "application",
+    "group": "service",
     "id": "VK",
     "param": {
       "hasAvatar": true,
@@ -17382,7 +17382,7 @@
     "desc": "https://www.videolan.org/vlc",
     "docsUrl": "vlc",
     "fullTitle": "VLC",
-    "group": "application",
+    "group": "service",
     "id": "VLC",
     "param": {
       "hasAvatar": true,
@@ -17420,7 +17420,7 @@
     "desc": "https://www.vmware.com",
     "docsUrl": "v-mware",
     "fullTitle": "VMware",
-    "group": "application",
+    "group": "service",
     "id": "VMware",
     "param": {
       "hasAvatar": true,
@@ -17458,7 +17458,7 @@
     "desc": "https://www.volkswagen.com",
     "docsUrl": "volkswagen",
     "fullTitle": "Volkswagen",
-    "group": "application",
+    "group": "service",
     "id": "Volkswagen",
     "param": {
       "hasAvatar": true,
@@ -17477,7 +17477,7 @@
     "desc": "https://www.volvocars.com",
     "docsUrl": "volvo",
     "fullTitle": "Volvo",
-    "group": "application",
+    "group": "service",
     "id": "Volvo",
     "param": {
       "hasAvatar": true,
@@ -17515,7 +17515,7 @@
     "desc": "https://vscodium.com",
     "docsUrl": "vs-codium",
     "fullTitle": "VSCodium",
-    "group": "application",
+    "group": "service",
     "id": "VSCodium",
     "param": {
       "hasAvatar": true,
@@ -17534,7 +17534,7 @@
     "desc": "https://www.vultr.com",
     "docsUrl": "vultr",
     "fullTitle": "Vultr",
-    "group": "application",
+    "group": "service",
     "id": "Vultr",
     "param": {
       "hasAvatar": true,
@@ -17553,7 +17553,7 @@
     "desc": "https://www.warp.dev",
     "docsUrl": "warp",
     "fullTitle": "Warp",
-    "group": "application",
+    "group": "service",
     "id": "Warp",
     "param": {
       "hasAvatar": true,
@@ -17572,7 +17572,7 @@
     "desc": "https://www.wattpad.com",
     "docsUrl": "wattpad",
     "fullTitle": "Wattpad",
-    "group": "application",
+    "group": "service",
     "id": "Wattpad",
     "param": {
       "hasAvatar": true,
@@ -17591,7 +17591,7 @@
     "desc": "https://www.waze.com",
     "docsUrl": "waze",
     "fullTitle": "Waze",
-    "group": "application",
+    "group": "service",
     "id": "Waze",
     "param": {
       "hasAvatar": true,
@@ -17610,7 +17610,7 @@
     "desc": "https://wearos.google.com",
     "docsUrl": "wear-os",
     "fullTitle": "Wear OS",
-    "group": "application",
+    "group": "service",
     "id": "WearOS",
     "param": {
       "hasAvatar": true,
@@ -17629,7 +17629,7 @@
     "desc": "https://webassembly.org",
     "docsUrl": "web-assembly",
     "fullTitle": "WebAssembly",
-    "group": "application",
+    "group": "service",
     "id": "WebAssembly",
     "param": {
       "hasAvatar": true,
@@ -17648,7 +17648,7 @@
     "desc": "https://webflow.com",
     "docsUrl": "webflow",
     "fullTitle": "Webflow",
-    "group": "application",
+    "group": "service",
     "id": "Webflow",
     "param": {
       "hasAvatar": true,
@@ -17667,7 +17667,7 @@
     "desc": "https://www.jetbrains.com/webstorm",
     "docsUrl": "web-storm",
     "fullTitle": "WebStorm",
-    "group": "application",
+    "group": "service",
     "id": "WebStorm",
     "param": {
       "hasAvatar": true,
@@ -17686,7 +17686,7 @@
     "desc": "https://www.wechat.com",
     "docsUrl": "we-chat",
     "fullTitle": "WeChat",
-    "group": "application",
+    "group": "service",
     "id": "WeChat",
     "param": {
       "hasAvatar": true,
@@ -17705,7 +17705,7 @@
     "desc": "https://weibo.com",
     "docsUrl": "weibo",
     "fullTitle": "Sina Weibo",
-    "group": "application",
+    "group": "service",
     "id": "Weibo",
     "param": {
       "hasAvatar": true,
@@ -17724,7 +17724,7 @@
     "desc": "https://www.wellsfargo.com",
     "docsUrl": "wells-fargo",
     "fullTitle": "Wells Fargo",
-    "group": "application",
+    "group": "service",
     "id": "WellsFargo",
     "param": {
       "hasAvatar": true,
@@ -17763,7 +17763,7 @@
     "desc": "https://weread.qq.com",
     "docsUrl": "we-read",
     "fullTitle": "WeRead",
-    "group": "application",
+    "group": "service",
     "id": "WeRead",
     "param": {
       "hasAvatar": true,
@@ -17782,7 +17782,7 @@
     "desc": "https://wezterm.org",
     "docsUrl": "wez-term",
     "fullTitle": "WezTerm",
-    "group": "application",
+    "group": "service",
     "id": "WezTerm",
     "param": {
       "hasAvatar": true,
@@ -17801,7 +17801,7 @@
     "desc": "https://www.whatsapp.com",
     "docsUrl": "whats-app",
     "fullTitle": "WhatsApp",
-    "group": "application",
+    "group": "service",
     "id": "WhatsApp",
     "param": {
       "hasAvatar": true,
@@ -17820,7 +17820,7 @@
     "desc": "https://www.wikipedia.org",
     "docsUrl": "wikipedia",
     "fullTitle": "Wikipedia",
-    "group": "application",
+    "group": "service",
     "id": "Wikipedia",
     "param": {
       "hasAvatar": true,
@@ -17858,7 +17858,7 @@
     "desc": "https://wire.com",
     "docsUrl": "wire",
     "fullTitle": "Wire",
-    "group": "application",
+    "group": "service",
     "id": "Wire",
     "param": {
       "hasAvatar": true,
@@ -17877,7 +17877,7 @@
     "desc": "https://www.wireguard.com",
     "docsUrl": "wire-guard",
     "fullTitle": "WireGuard",
-    "group": "application",
+    "group": "service",
     "id": "WireGuard",
     "param": {
       "hasAvatar": true,
@@ -17896,7 +17896,7 @@
     "desc": "https://wise.com",
     "docsUrl": "wise",
     "fullTitle": "Wise",
-    "group": "application",
+    "group": "service",
     "id": "Wise",
     "param": {
       "hasAvatar": true,
@@ -17915,7 +17915,7 @@
     "desc": "https://www.wix.com",
     "docsUrl": "wix",
     "fullTitle": "Wix",
-    "group": "application",
+    "group": "service",
     "id": "Wix",
     "param": {
       "hasAvatar": true,
@@ -17934,7 +17934,7 @@
     "desc": "https://wordpress.org",
     "docsUrl": "word-press",
     "fullTitle": "WordPress",
-    "group": "application",
+    "group": "service",
     "id": "WordPress",
     "param": {
       "hasAvatar": true,
@@ -17991,7 +17991,7 @@
     "desc": "https://x.com",
     "docsUrl": "x",
     "fullTitle": "X (Twitter)",
-    "group": "application",
+    "group": "service",
     "id": "X",
     "param": {
       "hasAvatar": true,
@@ -18029,7 +18029,7 @@
     "desc": "https://developer.apple.com/xcode",
     "docsUrl": "xcode",
     "fullTitle": "Xcode",
-    "group": "application",
+    "group": "service",
     "id": "Xcode",
     "param": {
       "hasAvatar": true,
@@ -18048,7 +18048,7 @@
     "desc": "https://www.xiaohongshu.com",
     "docsUrl": "xiaohongshu",
     "fullTitle": "Xiaohongshu",
-    "group": "application",
+    "group": "service",
     "id": "Xiaohongshu",
     "param": {
       "hasAvatar": true,
@@ -18067,7 +18067,7 @@
     "desc": "https://www.mi.com",
     "docsUrl": "xiaomi",
     "fullTitle": "Xiaomi",
-    "group": "application",
+    "group": "service",
     "id": "Xiaomi",
     "param": {
       "hasAvatar": true,
@@ -18124,7 +18124,7 @@
     "desc": "https://www.xing.com",
     "docsUrl": "xing",
     "fullTitle": "Xing",
-    "group": "application",
+    "group": "service",
     "id": "Xing",
     "param": {
       "hasAvatar": true,
@@ -18162,7 +18162,7 @@
     "desc": "https://xrpl.org",
     "docsUrl": "xrp",
     "fullTitle": "XRP",
-    "group": "application",
+    "group": "service",
     "id": "XRP",
     "param": {
       "hasAvatar": true,
@@ -18200,7 +18200,7 @@
     "desc": "https://yaml.org",
     "docsUrl": "yaml",
     "fullTitle": "YAML",
-    "group": "application",
+    "group": "service",
     "id": "YAML",
     "param": {
       "hasAvatar": true,
@@ -18238,7 +18238,7 @@
     "desc": "https://yarnpkg.com",
     "docsUrl": "yarn",
     "fullTitle": "Yarn",
-    "group": "application",
+    "group": "service",
     "id": "Yarn",
     "param": {
       "hasAvatar": true,
@@ -18257,7 +18257,7 @@
     "desc": "https://www.ycombinator.com",
     "docsUrl": "y-combinator",
     "fullTitle": "Y Combinator",
-    "group": "application",
+    "group": "service",
     "id": "YCombinator",
     "param": {
       "hasAvatar": true,
@@ -18276,7 +18276,7 @@
     "desc": "https://www.yelp.com",
     "docsUrl": "yelp",
     "fullTitle": "Yelp",
-    "group": "application",
+    "group": "service",
     "id": "Yelp",
     "param": {
       "hasAvatar": true,
@@ -18333,7 +18333,7 @@
     "desc": "https://www.youtube.com",
     "docsUrl": "you-tube",
     "fullTitle": "YouTube",
-    "group": "application",
+    "group": "service",
     "id": "YouTube",
     "param": {
       "hasAvatar": true,
@@ -18352,7 +18352,7 @@
     "desc": "https://music.youtube.com",
     "docsUrl": "you-tube-music",
     "fullTitle": "YouTube Music",
-    "group": "application",
+    "group": "service",
     "id": "YouTubeMusic",
     "param": {
       "hasAvatar": true,
@@ -18371,7 +18371,7 @@
     "desc": "https://www.youtube.com/shorts",
     "docsUrl": "you-tube-shorts",
     "fullTitle": "YouTube Shorts",
-    "group": "application",
+    "group": "service",
     "id": "YouTubeShorts",
     "param": {
       "hasAvatar": true,
@@ -18428,7 +18428,7 @@
     "desc": "https://www.zalando.com",
     "docsUrl": "zalando",
     "fullTitle": "Zalando",
-    "group": "application",
+    "group": "service",
     "id": "Zalando",
     "param": {
       "hasAvatar": true,
@@ -18466,7 +18466,7 @@
     "desc": "https://www.zara.com",
     "docsUrl": "zara",
     "fullTitle": "Zara",
-    "group": "application",
+    "group": "service",
     "id": "Zara",
     "param": {
       "hasAvatar": true,
@@ -18504,7 +18504,7 @@
     "desc": "https://zed.dev",
     "docsUrl": "zed",
     "fullTitle": "Zed",
-    "group": "application",
+    "group": "service",
     "id": "Zed",
     "param": {
       "hasAvatar": true,
@@ -18523,7 +18523,7 @@
     "desc": "https://www.zellepay.com",
     "docsUrl": "zelle",
     "fullTitle": "Zelle",
-    "group": "application",
+    "group": "service",
     "id": "Zelle",
     "param": {
       "hasAvatar": true,
@@ -18561,7 +18561,7 @@
     "desc": "https://www.zendesk.com",
     "docsUrl": "zendesk",
     "fullTitle": "Zendesk",
-    "group": "application",
+    "group": "service",
     "id": "Zendesk",
     "param": {
       "hasAvatar": true,
@@ -18618,7 +18618,7 @@
     "desc": "https://www.zerotier.com",
     "docsUrl": "zero-tier",
     "fullTitle": "ZeroTier",
-    "group": "application",
+    "group": "service",
     "id": "ZeroTier",
     "param": {
       "hasAvatar": true,
@@ -18637,7 +18637,7 @@
     "desc": "https://www.zhihu.com",
     "docsUrl": "zhihu",
     "fullTitle": "Zhihu",
-    "group": "application",
+    "group": "service",
     "id": "Zhihu",
     "param": {
       "hasAvatar": true,
@@ -18675,7 +18675,7 @@
     "desc": "https://www.zoho.com",
     "docsUrl": "zoho",
     "fullTitle": "Zoho",
-    "group": "application",
+    "group": "service",
     "id": "Zoho",
     "param": {
       "hasAvatar": true,
@@ -18694,7 +18694,7 @@
     "desc": "https://zoom.us",
     "docsUrl": "zoom",
     "fullTitle": "Zoom",
-    "group": "application",
+    "group": "service",
     "id": "Zoom",
     "param": {
       "hasAvatar": true,
@@ -18713,7 +18713,7 @@
     "desc": "https://www.zotero.org",
     "docsUrl": "zotero",
     "fullTitle": "Zotero",
-    "group": "application",
+    "group": "service",
     "id": "Zotero",
     "param": {
       "hasAvatar": true,
@@ -18732,7 +18732,7 @@
     "desc": "https://www.zsh.org",
     "docsUrl": "zsh",
     "fullTitle": "Zsh",
-    "group": "application",
+    "group": "service",
     "id": "Zsh",
     "param": {
       "hasAvatar": true,
@@ -18751,7 +18751,7 @@
     "desc": "https://zulip.com",
     "docsUrl": "zulip",
     "fullTitle": "Zulip",
-    "group": "application",
+    "group": "service",
     "id": "Zulip",
     "param": {
       "hasAvatar": true,

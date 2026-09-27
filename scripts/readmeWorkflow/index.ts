@@ -44,26 +44,30 @@ const run = () => {
   const application = toc
     .filter((item) => item.group === "application")
     .sort((a, b) => a.fullTitle.localeCompare(b.fullTitle));
+  const service = toc
+    .filter((item) => item.group === "service")
+    .sort((a, b) => a.fullTitle.localeCompare(b.fullTitle));
 
-  const max = Math.max(model.length, provider.length, application.length);
+  const max = Math.max(model.length, provider.length, application.length, service.length);
 
   const table = [
-    ["Model", "Provider", "Application"],
+    ["Model", "Provider", "Application", "Service"],
     ...Array.from({ length: max }).map((_, index) => [
       model[index] ? genMd(model[index]) : "",
       provider[index] ? genMd(provider[index]) : "",
       application[index] ? genMd(application[index]) : "",
+      service[index] ? genMd(service[index]) : "",
     ]),
   ];
 
-  const rendered = model.length + provider.length + application.length;
+  const rendered = model.length + provider.length + application.length + service.length;
 
-  // The table has exactly three columns, so an icon in any other group is dropped without a trace.
+  // The table has exactly four columns, so an icon in any other group is dropped without a trace.
   // Reporting toc.length here made that invisible: it always claimed every icon had been written.
   if (rendered !== toc.length) {
     const groups = [...new Set(toc.map((item) => item.group))].join(", ");
     consola.error(
-      `${toc.length - rendered} of ${toc.length} icons fall in no rendered column. Columns are model, provider and application; toc uses: ${groups}.`,
+      `${toc.length - rendered} of ${toc.length} icons fall in no rendered column. Columns are model, provider, application and service; toc uses: ${groups}.`,
     );
     process.exitCode = 1;
     return;

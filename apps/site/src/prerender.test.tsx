@@ -67,7 +67,7 @@ describe("the prerendered page", () => {
 
   it("names brands", () => {
     // The marquee's tiles are the brand names in the first response — a `title` and an `aria-label` each, because an inline SVG on its own is not a name. The second track is skipped in Node, so each brand should be named once rather than twice.
-    for (const id of ["OpenAI", "Claude", "Gemini", "Mistral", "DeepSeek"]) {
+    for (const id of ["OpenAI", "Claude", "Gemini", "Mistral", "DeepSeek", "YouTube", "Spotify"]) {
       const entry = entries.find((item) => item.id === id);
       expect(markup, `${id} is not in the prerendered markup`).toContain(
         `aria-label="${entry?.fullTitle || id}"`,

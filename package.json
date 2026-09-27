@@ -133,7 +133,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,md,mdx,yml,yaml}": [
+    "*.{js,jsx,ts,tsx,json,mdx,yml,yaml}": [
       "vp fmt"
     ],
     "*.{js,jsx,ts,tsx}": [

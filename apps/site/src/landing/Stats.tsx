@@ -28,6 +28,7 @@ export const Stats = () => {
                 application: stats.application,
                 model: stats.model,
                 provider: stats.provider,
+                service: stats.service,
               })}
             </p>
           </div>

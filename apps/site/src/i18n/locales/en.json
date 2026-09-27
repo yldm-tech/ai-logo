@@ -55,11 +55,13 @@
     "group": {
       "application": "application",
       "model": "model",
-      "provider": "provider"
+      "provider": "provider",
+      "service": "service"
     },
     "models": "Models",
     "providers": "Providers",
     "search": "Search brands, models, providers…",
+    "services": "Services",
     "shown": "{{count}} shown",
     "shown_one": "{{count}} shown",
     "shown_other": "{{count}} shown",
@@ -68,7 +70,7 @@
   "hero": {
     "badge": "{{brands}} brands · {{color}} in colour · MIT",
     "browse": "Browse {{count}} icons",
-    "sub": "Logos for AI providers, models and applications as typed React components — colour, wordmark, lockup and avatar variants — plus static SVG, PNG and WebP on a CDN.",
+    "sub": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components — colour, wordmark, lockup and avatar variants — and static SVG, PNG and WebP on a CDN.",
     "title": "Every AI brand, <a>one import</a>."
   },
   "install": {
@@ -77,8 +79,8 @@
     "title": "Add it to a project"
   },
   "meta": {
-    "description": "Logos for AI providers, models and applications as typed React components, with colour, wordmark, lockup and avatar variants, plus static SVG, PNG and WebP on a CDN. MIT licensed.",
-    "title": "AI Logo — {{count}} AI brand icons for React and CDN"
+    "description": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components with colour, wordmark, lockup and avatar variants, and as static SVG, PNG and WebP on a CDN. MIT licensed.",
+    "title": "AI Logo — {{count}} AI and service brand icons for React and CDN"
   },
   "nav": {
     "github": "GitHub repository",
@@ -91,7 +93,7 @@
   },
   "stats": {
     "brands": "brand marks",
-    "brandsNote": "{{provider}} providers · {{model}} models · {{application}} apps",
+    "brandsNote": "{{provider}} providers · {{model}} models · {{application}} apps · {{service}} services",
     "colour": "in full colour",
     "colourNote": "the rest inherit currentColor",
     "formats": "asset formats",

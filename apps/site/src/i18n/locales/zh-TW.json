@@ -55,11 +55,13 @@
     "group": {
       "application": "應用",
       "model": "模型",
-      "provider": "服務商"
+      "provider": "服務商",
+      "service": "服務"
     },
     "models": "模型",
     "providers": "服務商",
     "search": "搜尋品牌、模型、服務商…",
+    "services": "常用服務",
     "shown": "顯示 {{count}} 個",
     "shown_other": "顯示 {{count}} 個",
     "skip": "略過圖示網格"
@@ -67,7 +69,7 @@
   "hero": {
     "badge": "{{brands}} 個品牌 · {{color}} 個彩色 · MIT",
     "browse": "瀏覽 {{count}} 個圖示",
-    "sub": "AI 服務商、模型與應用的品牌圖示。以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。",
+    "sub": "AI 服務商、模型與應用，以及數百個主流服務的品牌圖示。以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。",
     "title": "每個 AI 品牌，<a>一行 import</a>"
   },
   "install": {
@@ -76,8 +78,8 @@
     "title": "把它加進專案"
   },
   "meta": {
-    "description": "AI 服務商、模型與應用的品牌圖示，以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。MIT 授權。",
-    "title": "AI Logo — {{count}} 個 AI 品牌圖示，React 元件與 CDN"
+    "description": "AI 服務商、模型與應用，以及數百個主流服務的品牌圖示，以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。MIT 授權。",
+    "title": "AI Logo — {{count}} 個 AI 與主流服務品牌圖示，React 元件與 CDN"
   },
   "nav": {
     "github": "GitHub 儲存庫",
@@ -90,7 +92,7 @@
   },
   "stats": {
     "brands": "個品牌標識",
-    "brandsNote": "{{provider}} 個服務商 · {{model}} 個模型 · {{application}} 個應用",
+    "brandsNote": "{{provider}} 個服務商 · {{model}} 個模型 · {{application}} 個應用 · {{service}} 個常用服務",
     "colour": "個有彩色版本",
     "colourNote": "其餘跟隨 currentColor",
     "formats": "種資源格式",

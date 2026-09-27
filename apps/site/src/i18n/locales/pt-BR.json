@@ -55,11 +55,13 @@
     "group": {
       "application": "aplicação",
       "model": "modelo",
-      "provider": "provedor"
+      "provider": "provedor",
+      "service": "serviço"
     },
     "models": "Modelos",
     "providers": "Provedores",
     "search": "Buscar marcas, modelos, provedores…",
+    "services": "Serviços",
     "shown": "{{count}} exibidas",
     "shown_many": "{{count}} exibidas",
     "shown_one": "{{count}} exibida",
@@ -69,7 +71,7 @@
   "hero": {
     "badge": "{{brands}} marcas · {{color}} coloridas · MIT",
     "browse": "Ver {{count}} ícones",
-    "sub": "Logotipos de provedores, modelos e aplicações de IA como componentes React tipados — com variantes em cor, logotipo, assinatura e avatar — além de SVG, PNG e WebP estáticos em um CDN.",
+    "sub": "Logotipos de provedores, modelos e aplicações de IA, e de centenas de serviços populares, como componentes React tipados — com variantes em cor, logotipo, assinatura e avatar — além de SVG, PNG e WebP estáticos em um CDN.",
     "title": "Toda marca de IA, <a>um import</a>."
   },
   "install": {
@@ -78,8 +80,8 @@
     "title": "Adicione a um projeto"
   },
   "meta": {
-    "description": "Logotipos de provedores, modelos e aplicações de IA como componentes React tipados, com variantes em cor, logotipo, assinatura e avatar, além de SVG, PNG e WebP estáticos em um CDN. Licença MIT.",
-    "title": "AI Logo — {{count}} ícones de marcas de IA para React e CDN"
+    "description": "Logotipos de provedores, modelos e aplicações de IA, e de centenas de serviços populares, como componentes React tipados, com variantes em cor, logotipo, assinatura e avatar, além de SVG, PNG e WebP estáticos em um CDN. Licença MIT.",
+    "title": "AI Logo — {{count}} ícones de marcas de IA e serviços populares para React e CDN"
   },
   "nav": {
     "github": "Repositório no GitHub",
@@ -92,7 +94,7 @@
   },
   "stats": {
     "brands": "marcas",
-    "brandsNote": "{{provider}} provedores · {{model}} modelos · {{application}} apps",
+    "brandsNote": "{{provider}} provedores · {{model}} modelos · {{application}} apps · {{service}} serviços",
     "colour": "em cores",
     "colourNote": "as demais herdam currentColor",
     "formats": "formatos",
