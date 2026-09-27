@@ -1480,6 +1480,7 @@ export {
 } from "./icons/TailwindCSS";
 export { default as TanStack, type CompoundedIcon as TanStackProps } from "./icons/TanStack";
 export { default as Taobao, type CompoundedIcon as TaobaoProps } from "./icons/Taobao";
+export { default as TapTapGo, type CompoundedIcon as TapTapGoProps } from "./icons/TapTapGo";
 export { default as Target, type CompoundedIcon as TargetProps } from "./icons/Target";
 export { default as Targon, type CompoundedIcon as TargonProps } from "./icons/Targon";
 export { default as Tavily, type CompoundedIcon as TavilyProps } from "./icons/Tavily";

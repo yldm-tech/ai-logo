@@ -169,7 +169,8 @@ class SvgWorkflow {
           const body = document.body;
           return body.offsetWidth > 0 && body.offsetHeight > 0;
         },
-        { timeout: 1000 },
+        // One second timed out a dozen avatars at random on a loaded machine, five pages at a time; the page is static HTML, so the wait is only ever this long when the machine is busy.
+        { timeout: 10_000 },
       );
 
       const filename = resolve(outputAvatarsDir, `${outputFileName}.webp`);
@@ -272,6 +273,7 @@ class SvgWorkflow {
           }
         } catch (error) {
           consola.error(`Failed to export ${key.toLowerCase()}:`, error);
+          this.failures.push(`svg ${key.toLowerCase()}`);
         }
       }
     });
@@ -293,6 +295,8 @@ class SvgWorkflow {
               }
             } catch (error) {
               consola.error(`Failed to export ${key.toLowerCase()}:`, error);
+              // Counted like the PNG and WebP failures: a new brand whose avatar timed out was dropped while the run still exited 0, and no test checks the avatar directory.
+              this.failures.push(`avatar ${key.toLowerCase()}`);
             }
           }
         },

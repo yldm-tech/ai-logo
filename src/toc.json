@@ -20623,6 +20623,25 @@
     "title": "Taobao"
   },
   {
+    "color": "#8B6CF6",
+    "desc": "https://taptapgo.yldm.ai",
+    "docsUrl": "tap-tap-go",
+    "fullTitle": "TapTapGo (指尖冒险)",
+    "group": "service",
+    "id": "TapTapGo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TapTapGo"
+  },
+  {
     "color": "#CC0000",
     "desc": "https://www.target.com",
     "docsUrl": "target",
