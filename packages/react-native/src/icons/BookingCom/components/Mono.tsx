@@ -1,0 +1,19 @@
+import React, { memo } from "react";
+import { Path, Svg } from "react-native-svg";
+
+import type { RNIconProps } from "@/features";
+
+const Icon = memo<RNIconProps>(({ size = 24, style, color = "#000000", ...rest }) => {
+  return (
+    <Svg color={color} height={size} style={style} viewBox="0 0 24 24" width={size} {...rest}>
+      <Path
+        d="M24 0H0v24h24ZM8.575 6.563h2.658c2.108 0 3.473 1.15 3.473 2.898 0 1.15-.575 1.82-.91 2.108l-.287.263.335.192c.815.479 1.318 1.389 1.318 2.395 0 1.988-1.51 3.257-3.857 3.257H7.449V7.713c0-.623.503-1.126 1.126-1.15zm1.7 1.868c-.479.024-.694.264-.694.79v1.893h1.676c.958 0 1.294-.743 1.294-1.365 0-.815-.503-1.318-1.318-1.318zm-.096 4.36c-.407.071-.598.31-.598.79v2.251h1.868c.934 0 1.509-.55 1.509-1.533 0-.934-.599-1.509-1.51-1.509zm7.737 2.394c.743 0 1.341.599 1.341 1.342a1.34 1.34 0 0 1-1.341 1.341 1.355 1.355 0 0 1-1.341-1.341c0-.743.598-1.342 1.34-1.342z"
+        fill={color}
+      />
+    </Svg>
+  );
+});
+
+Icon.displayName = "BookingComMono";
+
+export default Icon;

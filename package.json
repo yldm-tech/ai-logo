@@ -29,7 +29,8 @@
     "apps/*"
   ],
   "files": [
-    "es"
+    "es",
+    "THIRD_PARTY_NOTICES.md"
   ],
   "sideEffects": false,
   "main": "es/index.mjs",
