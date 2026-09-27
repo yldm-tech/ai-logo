@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [1.11.0](https://github.com/yldm-tech/ai-logo/compare/v1.10.0...v1.11.0) (2026-09-27)
+
+### Features
+
+- add 420 more mainstream service icons from Simple Icons ([9c88937](https://github.com/yldm-tech/ai-logo/commit/9c8893789cd743dfffdc008cd65c9ab460af1ddb))
+
+### Bug Fixes
+
+- commit the Target brand that a global target/ ignore swallowed ([db1aac9](https://github.com/yldm-tech/ai-logo/commit/db1aac9ad3faf0165fc5d2a3edf46a811bfeff5d))
+
 ## [1.10.0](https://github.com/yldm-tech/ai-logo/compare/v1.9.2...v1.10.0) (2026-09-27)
 
 ### Features
