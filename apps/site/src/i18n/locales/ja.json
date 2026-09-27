@@ -55,11 +55,13 @@
     "group": {
       "application": "アプリ",
       "model": "モデル",
-      "provider": "プロバイダー"
+      "provider": "プロバイダー",
+      "service": "サービス"
     },
     "models": "モデル",
     "providers": "プロバイダー",
     "search": "ブランド、モデル、プロバイダーを検索…",
+    "services": "サービス",
     "shown": "{{count}} 件表示",
     "shown_other": "{{count}} 件表示",
     "skip": "アイコングリッドをスキップ"
@@ -67,7 +69,7 @@
   "hero": {
     "badge": "{{brands}} ブランド · うち {{color}} はカラー · MIT",
     "browse": "{{count}} 個のアイコンを見る",
-    "sub": "AI プロバイダー、モデル、アプリケーションのロゴを型付きの React コンポーネントとして提供します。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から配信しています。",
+    "sub": "AI プロバイダー、モデル、アプリケーションに加え、数百の主要サービスのロゴを型付きの React コンポーネントとして提供します。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から配信しています。",
     "title": "すべての AI ブランドを、<a>1 行の import で</a>"
   },
   "install": {
@@ -76,8 +78,8 @@
     "title": "プロジェクトに追加する"
   },
   "meta": {
-    "description": "AI プロバイダー、モデル、アプリケーションのロゴを型付きの React コンポーネントで提供。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から。MIT ライセンス。",
-    "title": "AI Logo — AI ブランドアイコン {{count}} 種、React と CDN"
+    "description": "AI プロバイダー、モデル、アプリケーションに加え、数百の主要サービスのロゴを型付きの React コンポーネントで提供。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から。MIT ライセンス。",
+    "title": "AI Logo — AI と主要サービスのブランドアイコン {{count}} 種、React と CDN"
   },
   "nav": {
     "github": "GitHub リポジトリ",
@@ -90,7 +92,7 @@
   },
   "stats": {
     "brands": "ブランドマーク",
-    "brandsNote": "プロバイダー {{provider}} · モデル {{model}} · アプリ {{application}}",
+    "brandsNote": "プロバイダー {{provider}} · モデル {{model}} · アプリ {{application}} · サービス {{service}}",
     "colour": "がフルカラー",
     "colourNote": "残りは currentColor を継承",
     "formats": "種類の配布形式",

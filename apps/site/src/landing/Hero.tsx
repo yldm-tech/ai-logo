@@ -5,10 +5,11 @@ import { CopyButton } from "../components/Copy";
 import { entrance } from "../motion";
 import { PKG, stats } from "../registry";
 import { useStore } from "../store";
-import { marqueeRows } from "./featured";
+import { featuredServices, marqueeRows } from "./featured";
 import { Marquee } from "./Marquee";
 
-const ROWS = marqueeRows(3, 26);
+// Two tracks of AI brands and one of mainstream services, so the first screen reflects both halves of the set.
+const ROWS = [...marqueeRows(2, 26), featuredServices.slice(0, 26)];
 
 /** Three tracks at different speeds and alternating directions. Matching speeds would read as one block of icons sliding sideways; the difference is what makes it read as depth. */
 const TRACKS = [

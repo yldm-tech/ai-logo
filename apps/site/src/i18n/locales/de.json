@@ -55,11 +55,13 @@
     "group": {
       "application": "Anwendung",
       "model": "Modell",
-      "provider": "Anbieter"
+      "provider": "Anbieter",
+      "service": "Dienst"
     },
     "models": "Modelle",
     "providers": "Anbieter",
     "search": "Marken, Modelle, Anbieter suchen…",
+    "services": "Dienste",
     "shown": "{{count}} angezeigt",
     "shown_one": "{{count}} angezeigt",
     "shown_other": "{{count}} angezeigt",
@@ -68,7 +70,7 @@
   "hero": {
     "badge": "{{brands}} Marken · {{color}} in Farbe · MIT",
     "browse": "{{count}} Icons ansehen",
-    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten — mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN.",
+    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen sowie Hunderten gängiger Dienste als typisierte React-Komponenten — mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN.",
     "title": "Jede KI-Marke, <a>ein Import</a>."
   },
   "install": {
@@ -77,8 +79,8 @@
     "title": "In ein Projekt aufnehmen"
   },
   "meta": {
-    "description": "Logos von KI-Anbietern, Modellen und Anwendungen als typisierte React-Komponenten, mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten sowie statischen SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
-    "title": "AI Logo — {{count}} KI-Markenicons für React und CDN"
+    "description": "Logos von KI-Anbietern, Modellen und Anwendungen sowie Hunderten gängiger Dienste als typisierte React-Komponenten, mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten sowie statischen SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
+    "title": "AI Logo — {{count}} Markenicons für KI und gängige Dienste, für React und CDN"
   },
   "nav": {
     "github": "GitHub-Repository",
@@ -91,7 +93,7 @@
   },
   "stats": {
     "brands": "Markenzeichen",
-    "brandsNote": "{{provider}} Anbieter · {{model}} Modelle · {{application}} Apps",
+    "brandsNote": "{{provider}} Anbieter · {{model}} Modelle · {{application}} Apps · {{service}} Dienste",
     "colour": "in voller Farbe",
     "colourNote": "der Rest erbt currentColor",
     "formats": "Formate",

@@ -13,6 +13,7 @@ const FILTERS: { count: number; id: Filter; key: string }[] = [
   { count: stats.provider, id: "provider", key: "providers" },
   { count: stats.model, id: "model", key: "models" },
   { count: stats.application, id: "application", key: "apps" },
+  { count: stats.service, id: "service", key: "services" },
 ];
 
 const VARIANTS = ["Color", "Avatar", "Text", "Combine"] as const;

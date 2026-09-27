@@ -55,11 +55,13 @@
     "group": {
       "application": "aplicación",
       "model": "modelo",
-      "provider": "proveedor"
+      "provider": "proveedor",
+      "service": "servicio"
     },
     "models": "Modelos",
     "providers": "Proveedores",
     "search": "Buscar marcas, modelos, proveedores…",
+    "services": "Servicios",
     "shown": "{{count}} visibles",
     "shown_many": "{{count}} visibles",
     "shown_one": "{{count}} visible",
@@ -69,7 +71,7 @@
   "hero": {
     "badge": "{{brands}} marcas · {{color}} a color · MIT",
     "browse": "Ver {{count}} iconos",
-    "sub": "Logotipos de proveedores, modelos y aplicaciones de IA como componentes de React tipados — con variantes a color, logotipo, imagotipo y avatar — además de SVG, PNG y WebP estáticos en un CDN.",
+    "sub": "Logotipos de proveedores, modelos y aplicaciones de IA, y de cientos de servicios populares, como componentes de React tipados — con variantes a color, logotipo, imagotipo y avatar — además de SVG, PNG y WebP estáticos en un CDN.",
     "title": "Cada marca de IA, <a>un solo import</a>."
   },
   "install": {
@@ -78,8 +80,8 @@
     "title": "Añádelo a un proyecto"
   },
   "meta": {
-    "description": "Logotipos de proveedores, modelos y aplicaciones de IA como componentes de React tipados, con variantes a color, logotipo, imagotipo y avatar, además de SVG, PNG y WebP estáticos en un CDN. Licencia MIT.",
-    "title": "AI Logo — {{count}} iconos de marcas de IA para React y CDN"
+    "description": "Logotipos de proveedores, modelos y aplicaciones de IA, y de cientos de servicios populares, como componentes de React tipados, con variantes a color, logotipo, imagotipo y avatar, además de SVG, PNG y WebP estáticos en un CDN. Licencia MIT.",
+    "title": "AI Logo — {{count}} iconos de marcas de IA y servicios populares para React y CDN"
   },
   "nav": {
     "github": "Repositorio de GitHub",
@@ -92,7 +94,7 @@
   },
   "stats": {
     "brands": "marcas",
-    "brandsNote": "{{provider}} proveedores · {{model}} modelos · {{application}} apps",
+    "brandsNote": "{{provider}} proveedores · {{model}} modelos · {{application}} apps · {{service}} servicios",
     "colour": "a todo color",
     "colourNote": "el resto hereda currentColor",
     "formats": "formatos",
