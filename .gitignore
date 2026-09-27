@@ -46,3 +46,6 @@ react-router.config.mjs
 !patches/*.patch
 dist-treeshake
 dist-treeshake-lookup
+# Brand directories are named after the brand, and a machine-wide ignore such as Rust's target/ matches src/Target/ on case-insensitive filesystems. Negating here overrides core.excludesFile, so the brand is committed on every contributor's machine.
+!src/Target/
+!packages/react-native/src/icons/Target/
