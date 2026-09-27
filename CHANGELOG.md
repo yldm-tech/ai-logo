@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.14.0](https://github.com/yldm-tech/ai-logo/compare/v1.13.0...v1.14.0) (2026-09-27)
+
+### Features
+
+- add the TapTapGo icon ([4254043](https://github.com/yldm-tech/ai-logo/commit/4254043e189216cb25e6933cf472cef5cd649e39))
+
 ## [1.13.0](https://github.com/yldm-tech/ai-logo/compare/v1.12.0...v1.13.0) (2026-09-27)
 
 ### Features
