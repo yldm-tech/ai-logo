@@ -62,7 +62,7 @@ Copy the closest existing brand rather than starting from scratch. Then:
    ---
    ```
 
-   `title` is the name shown in the README table and on the site, `description` is the brand's home page, and `category` is one of `Model`, `Provider` or `Application` — it is lowercased into the `group` field that the three README columns and the site's filters are built from.
+   `title` is the name shown in the README table and on the site, `description` is the brand's home page, and `category` is one of `Model`, `Provider`, `Application` or `Service` (a mainstream non-AI brand) — it is lowercased into the `group` field that the four README columns and the site's filters are built from.
 
 2. Add the export to `src/icons.ts`, in alphabetical position: `export { default as YourBrand, type CompoundedIcon as YourBrandProps } from "./YourBrand";`. The toc script discovers icons by matching `default as (\w+)` in that file, so a brand that is not exported there does not exist as far as the rest of the pipeline is concerned.
 
