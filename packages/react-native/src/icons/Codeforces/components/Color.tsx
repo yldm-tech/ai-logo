@@ -1,0 +1,19 @@
+import React, { memo } from "react";
+import { Path, Svg } from "react-native-svg";
+
+import type { RNIconProps } from "@/features";
+
+const Icon = memo<RNIconProps>(({ size = 24, style, ...rest }) => {
+  return (
+    <Svg height={size} style={style} viewBox="0 0 24 24" width={size} {...rest}>
+      <Path
+        d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.673 21 0 20.328 0 19.5V9c0-.828.673-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.827 0-1.5-.672-1.5-1.5v-15c0-.828.673-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V12c0-.828.672-1.5 1.5-1.5h3z"
+        fill="#1F8ACB"
+      />
+    </Svg>
+  );
+});
+
+Icon.displayName = "CodeforcesColor";
+
+export default Icon;
