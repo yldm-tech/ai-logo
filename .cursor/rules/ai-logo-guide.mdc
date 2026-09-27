@@ -10,7 +10,7 @@ How this repository is laid out and what adding an icon actually involves. [CONT
 
 ## Project Overview
 
-323 AI company, model and application brands, each a React component under `src/`, published as `@yldm-tech/ai-logo`. The repository is a pnpm workspace and pnpm is required — `vite` is aliased to `@voidzero-dev/vite-plus-core` through a catalog in `pnpm-workspace.yaml`, which no other package manager reads.
+566 brands — AI companies, models and applications plus mainstream non-AI services — each a React component under `src/`, published as `@yldm-tech/ai-logo`. The repository is a pnpm workspace and pnpm is required — `vite` is aliased to `@voidzero-dev/vite-plus-core` through a catalog in `pnpm-workspace.yaml`, which no other package manager reads.
 
 ## Directory Structure
 

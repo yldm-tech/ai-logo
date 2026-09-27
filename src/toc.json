@@ -249,6 +249,25 @@
     "title": "AionLabs"
   },
   {
+    "color": "#FF5A5F",
+    "desc": "https://www.airbnb.com",
+    "docsUrl": "airbnb",
+    "fullTitle": "Airbnb",
+    "group": "application",
+    "id": "Airbnb",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Airbnb"
+  },
+  {
     "color": "#00C8FF",
     "desc": "https://airjelly.ai",
     "docsUrl": "air-jelly",
@@ -266,6 +285,25 @@
       "hasTextColor": false
     },
     "title": "AirJelly"
+  },
+  {
+    "color": "#18BFFF",
+    "desc": "https://www.airtable.com",
+    "docsUrl": "airtable",
+    "fullTitle": "Airtable",
+    "group": "application",
+    "id": "Airtable",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Airtable"
   },
   {
     "color": "#000",
@@ -325,6 +363,44 @@
     "title": "AlephAlpha"
   },
   {
+    "color": "#5C1F87",
+    "desc": "https://www.alfredapp.com",
+    "docsUrl": "alfred",
+    "fullTitle": "Alfred",
+    "group": "application",
+    "id": "Alfred",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Alfred"
+  },
+  {
+    "color": "#003DFF",
+    "desc": "https://www.algolia.com",
+    "docsUrl": "algolia",
+    "fullTitle": "Algolia",
+    "group": "application",
+    "id": "Algolia",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Algolia"
+  },
+  {
     "color": "#FF6003",
     "desc": "https://alibaba.com",
     "docsUrl": "alibaba",
@@ -363,6 +439,82 @@
     "title": "AlibabaCloud"
   },
   {
+    "color": "#FF4747",
+    "desc": "https://www.aliexpress.com",
+    "docsUrl": "ali-express",
+    "fullTitle": "AliExpress",
+    "group": "application",
+    "id": "AliExpress",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "AliExpress"
+  },
+  {
+    "color": "#1677FF",
+    "desc": "https://www.alipay.com",
+    "docsUrl": "alipay",
+    "fullTitle": "Alipay",
+    "group": "application",
+    "id": "Alipay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Alipay"
+  },
+  {
+    "color": "#ED1C24",
+    "desc": "https://www.amd.com",
+    "docsUrl": "amd",
+    "fullTitle": "AMD",
+    "group": "application",
+    "id": "AMD",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "AMD"
+  },
+  {
+    "color": "#2E77BC",
+    "desc": "https://www.americanexpress.com",
+    "docsUrl": "american-express",
+    "fullTitle": "American Express",
+    "group": "application",
+    "id": "AmericanExpress",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "American Express"
+  },
+  {
     "color": "#F34E3F",
     "desc": "https://ampcode.com",
     "docsUrl": "amp",
@@ -380,6 +532,63 @@
       "hasTextColor": false
     },
     "title": "Amp"
+  },
+  {
+    "color": "#44A833",
+    "desc": "https://www.anaconda.com",
+    "docsUrl": "anaconda",
+    "fullTitle": "Anaconda",
+    "group": "application",
+    "id": "Anaconda",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Anaconda"
+  },
+  {
+    "color": "#3DDC84",
+    "desc": "https://www.android.com",
+    "docsUrl": "android",
+    "fullTitle": "Android",
+    "group": "application",
+    "id": "Android",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Android"
+  },
+  {
+    "color": "#0F0F11",
+    "desc": "https://angular.dev",
+    "docsUrl": "angular",
+    "fullTitle": "Angular",
+    "group": "application",
+    "id": "Angular",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Angular"
   },
   {
     "color": "#514BFD",
@@ -477,6 +686,25 @@
     "title": "Anyscale"
   },
   {
+    "color": "#231F20",
+    "desc": "https://kafka.apache.org",
+    "docsUrl": "apache-kafka",
+    "fullTitle": "Apache Kafka",
+    "group": "application",
+    "id": "ApacheKafka",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Apache Kafka"
+  },
+  {
     "color": "#0d9488",
     "desc": "https://apertis.ai",
     "docsUrl": "apertis",
@@ -515,6 +743,82 @@
     "title": "Apple"
   },
   {
+    "color": "#FA243C",
+    "desc": "https://music.apple.com",
+    "docsUrl": "apple-music",
+    "fullTitle": "Apple Music",
+    "group": "application",
+    "id": "AppleMusic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Apple Music"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.apple.com/apple-pay",
+    "docsUrl": "apple-pay",
+    "fullTitle": "Apple Pay",
+    "group": "application",
+    "id": "ApplePay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Apple Pay"
+  },
+  {
+    "color": "#0D96F6",
+    "desc": "https://www.apple.com/app-store",
+    "docsUrl": "app-store",
+    "fullTitle": "App Store",
+    "group": "application",
+    "id": "AppStore",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "App Store"
+  },
+  {
+    "color": "#FCBFBD",
+    "desc": "https://arc.net",
+    "docsUrl": "arc",
+    "fullTitle": "Arc",
+    "group": "application",
+    "id": "Arc",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Arc"
+  },
+  {
     "color": "#008C8C",
     "desc": "https://arcee.ai/",
     "docsUrl": "arcee",
@@ -532,6 +836,63 @@
       "hasTextColor": false
     },
     "title": "Arcee"
+  },
+  {
+    "color": "#1793D1",
+    "desc": "https://archlinux.org",
+    "docsUrl": "arch-linux",
+    "fullTitle": "Arch Linux",
+    "group": "application",
+    "id": "ArchLinux",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Arch Linux"
+  },
+  {
+    "color": "#0091BD",
+    "desc": "https://www.arm.com",
+    "docsUrl": "arm",
+    "fullTitle": "Arm",
+    "group": "application",
+    "id": "Arm",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Arm"
+  },
+  {
+    "color": "#F06A6A",
+    "desc": "https://asana.com",
+    "docsUrl": "asana",
+    "fullTitle": "Asana",
+    "group": "application",
+    "id": "Asana",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Asana"
   },
   {
     "color": "#E8A317",
@@ -572,6 +933,44 @@
     "title": "AssemblyAI"
   },
   {
+    "color": "#BC52EE",
+    "desc": "https://astro.build",
+    "docsUrl": "astro",
+    "fullTitle": "Astro",
+    "group": "application",
+    "id": "Astro",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Astro"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.asus.com",
+    "docsUrl": "asus",
+    "fullTitle": "ASUS",
+    "group": "application",
+    "id": "Asus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ASUS"
+  },
+  {
     "color": "#7036F0",
     "desc": "https://atlascloud.ai",
     "docsUrl": "atlas-cloud",
@@ -589,6 +988,44 @@
       "hasTextColor": false
     },
     "title": "Atlas Cloud"
+  },
+  {
+    "color": "#0052CC",
+    "desc": "https://www.atlassian.com",
+    "docsUrl": "atlassian",
+    "fullTitle": "Atlassian",
+    "group": "application",
+    "id": "Atlassian",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Atlassian"
+  },
+  {
+    "color": "#EB5424",
+    "desc": "https://auth0.com",
+    "docsUrl": "auth0",
+    "fullTitle": "Auth0",
+    "group": "application",
+    "id": "Auth0",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Auth0"
   },
   {
     "color": "#E00054",
@@ -821,6 +1258,25 @@
     "title": "Bedrock"
   },
   {
+    "color": "#1769FF",
+    "desc": "https://www.behance.net",
+    "docsUrl": "behance",
+    "fullTitle": "Behance",
+    "group": "application",
+    "id": "Behance",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Behance"
+  },
+  {
     "color": "#fff",
     "desc": "https://bfl.ai",
     "docsUrl": "bfl",
@@ -878,6 +1334,25 @@
     "title": "bilibili index"
   },
   {
+    "color": "#F0B90B",
+    "desc": "https://www.binance.com",
+    "docsUrl": "binance",
+    "fullTitle": "Binance",
+    "group": "application",
+    "id": "Binance",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Binance"
+  },
+  {
     "color": "#174ae4",
     "colorGradient": "linear-gradient(130deg, #2870EA 20%, #1B4AEF 77.5%)",
     "desc": "https://bing.com",
@@ -898,6 +1373,82 @@
     "title": "Bing"
   },
   {
+    "color": "#0052CC",
+    "desc": "https://bitbucket.org",
+    "docsUrl": "bitbucket",
+    "fullTitle": "Bitbucket",
+    "group": "application",
+    "id": "Bitbucket",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bitbucket"
+  },
+  {
+    "color": "#F7931A",
+    "desc": "https://bitcoin.org",
+    "docsUrl": "bitcoin",
+    "fullTitle": "Bitcoin",
+    "group": "application",
+    "id": "Bitcoin",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bitcoin"
+  },
+  {
+    "color": "#175DDC",
+    "desc": "https://bitwarden.com",
+    "docsUrl": "bitwarden",
+    "fullTitle": "Bitwarden",
+    "group": "application",
+    "id": "Bitwarden",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bitwarden"
+  },
+  {
+    "color": "#1185FE",
+    "desc": "https://bsky.app",
+    "docsUrl": "bluesky",
+    "fullTitle": "Bluesky",
+    "group": "application",
+    "id": "Bluesky",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bluesky"
+  },
+  {
     "color": "#006EFF",
     "desc": "https://open.bochaai.com",
     "docsUrl": "bocha",
@@ -915,6 +1466,44 @@
       "hasTextColor": false
     },
     "title": "Bocha"
+  },
+  {
+    "color": "#003A9A",
+    "desc": "https://www.booking.com",
+    "docsUrl": "booking-com",
+    "fullTitle": "Booking.com",
+    "group": "application",
+    "id": "BookingCom",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Booking.com"
+  },
+  {
+    "color": "#0061D5",
+    "desc": "https://www.box.com",
+    "docsUrl": "box",
+    "fullTitle": "Box",
+    "group": "application",
+    "id": "Box",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Box"
   },
   {
     "color": "#FF4000",
@@ -974,6 +1563,25 @@
     "title": "Browserless"
   },
   {
+    "color": "#000000",
+    "desc": "https://bun.sh",
+    "docsUrl": "bun",
+    "fullTitle": "Bun",
+    "group": "application",
+    "id": "Bun",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Bun"
+  },
+  {
     "color": "#E95513",
     "desc": "https://ai.burncloud.com",
     "docsUrl": "burn-cloud",
@@ -1010,6 +1618,25 @@
       "hasTextColor": false
     },
     "title": "ByteDance"
+  },
+  {
+    "color": "#006BFF",
+    "desc": "https://calendly.com",
+    "docsUrl": "calendly",
+    "fullTitle": "Calendly",
+    "group": "application",
+    "id": "Calendly",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Calendly"
   },
   {
     "color": "#fff",
@@ -1127,6 +1754,44 @@
     "title": "CherryStudio"
   },
   {
+    "color": "#4285F4",
+    "desc": "https://www.google.com/chrome",
+    "docsUrl": "chrome",
+    "fullTitle": "Google Chrome",
+    "group": "application",
+    "id": "Chrome",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Chrome"
+  },
+  {
+    "color": "#343434",
+    "desc": "https://circleci.com",
+    "docsUrl": "circle-ci",
+    "fullTitle": "CircleCI",
+    "group": "application",
+    "id": "CircleCI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "CircleCI"
+  },
+  {
     "color": "#fff",
     "desc": "https://civitai.com",
     "docsUrl": "civitai",
@@ -1184,6 +1849,63 @@
     "title": "Claude Code"
   },
   {
+    "color": "#6C47FF",
+    "desc": "https://clerk.com",
+    "docsUrl": "clerk",
+    "fullTitle": "Clerk",
+    "group": "application",
+    "id": "Clerk",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Clerk"
+  },
+  {
+    "color": "#FFCC01",
+    "desc": "https://clickhouse.com",
+    "docsUrl": "click-house",
+    "fullTitle": "ClickHouse",
+    "group": "application",
+    "id": "ClickHouse",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ClickHouse"
+  },
+  {
+    "color": "#7B68EE",
+    "desc": "https://clickup.com",
+    "docsUrl": "click-up",
+    "fullTitle": "ClickUp",
+    "group": "application",
+    "id": "ClickUp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ClickUp"
+  },
+  {
     "color": "#323B43",
     "desc": "https://cline.bot",
     "docsUrl": "cline",
@@ -1239,6 +1961,44 @@
       "hasTextColor": false
     },
     "title": "Cloudflare"
+  },
+  {
+    "color": "#F38020",
+    "desc": "https://pages.cloudflare.com",
+    "docsUrl": "cloudflare-pages",
+    "fullTitle": "Cloudflare Pages",
+    "group": "application",
+    "id": "CloudflarePages",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Cloudflare Pages"
+  },
+  {
+    "color": "#3448C5",
+    "desc": "https://cloudinary.com",
+    "docsUrl": "cloudinary",
+    "fullTitle": "Cloudinary",
+    "group": "application",
+    "id": "Cloudinary",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Cloudinary"
   },
   {
     "color": "#6c4dff",
@@ -1376,6 +2136,25 @@
     "title": "Cohere"
   },
   {
+    "color": "#0052FF",
+    "desc": "https://www.coinbase.com",
+    "docsUrl": "coinbase",
+    "fullTitle": "Coinbase",
+    "group": "application",
+    "id": "Coinbase",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Coinbase"
+  },
+  {
     "color": "#F9AB00",
     "colorGradient": "linear-gradient(-45deg, #E8710A, #F9AB00)",
     "desc": "https://colab.research.google.com/",
@@ -1453,6 +2232,25 @@
     "title": "CommandA"
   },
   {
+    "color": "#172B4D",
+    "desc": "https://www.atlassian.com/software/confluence",
+    "docsUrl": "confluence",
+    "fullTitle": "Confluence",
+    "group": "application",
+    "id": "Confluence",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Confluence"
+  },
+  {
     "color": "#fff",
     "desc": "https://copilot.microsoft.com",
     "docsUrl": "copilot",
@@ -1510,6 +2308,25 @@
     "title": "Coqui"
   },
   {
+    "color": "#0056D2",
+    "desc": "https://www.coursera.org",
+    "docsUrl": "coursera",
+    "fullTitle": "Coursera",
+    "group": "application",
+    "id": "Coursera",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Coursera"
+  },
+  {
     "color": "#4D53E8",
     "desc": "https://coze.com",
     "docsUrl": "coze",
@@ -1529,6 +2346,25 @@
     "title": "Coze"
   },
   {
+    "color": "#00599C",
+    "desc": "https://isocpp.org",
+    "docsUrl": "c-plus-plus",
+    "fullTitle": "C++",
+    "group": "application",
+    "id": "CPlusPlus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "C++"
+  },
+  {
     "color": "#fff",
     "desc": "https://crewai.com",
     "docsUrl": "crew-ai",
@@ -1546,6 +2382,25 @@
       "hasTextColor": false
     },
     "title": "CrewAI"
+  },
+  {
+    "color": "#FF5E00",
+    "desc": "https://www.crunchyroll.com",
+    "docsUrl": "crunchyroll",
+    "fullTitle": "Crunchyroll",
+    "group": "application",
+    "id": "Crunchyroll",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Crunchyroll"
   },
   {
     "color": "#fff",
@@ -1623,6 +2478,44 @@
       "hasTextColor": false
     },
     "title": "DALL-E"
+  },
+  {
+    "color": "#0175C2",
+    "desc": "https://dart.dev",
+    "docsUrl": "dart",
+    "fullTitle": "Dart",
+    "group": "application",
+    "id": "Dart",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dart"
+  },
+  {
+    "color": "#632CA6",
+    "desc": "https://www.datadoghq.com",
+    "docsUrl": "datadog",
+    "fullTitle": "Datadog",
+    "group": "application",
+    "id": "Datadog",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Datadog"
   },
   {
     "color": "#EE3D2C",
@@ -1758,6 +2651,44 @@
     "title": "DeepSeek"
   },
   {
+    "color": "#007DB8",
+    "desc": "https://www.dell.com",
+    "docsUrl": "dell",
+    "fullTitle": "Dell",
+    "group": "application",
+    "id": "Dell",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dell"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://deno.com",
+    "docsUrl": "deno",
+    "fullTitle": "Deno",
+    "group": "application",
+    "id": "Deno",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Deno"
+  },
+  {
     "color": "#fff",
     "desc": "https://devin.ai",
     "docsUrl": "devin",
@@ -1775,6 +2706,25 @@
       "hasTextColor": false
     },
     "title": "Devin"
+  },
+  {
+    "color": "#0A0A0A",
+    "desc": "https://dev.to",
+    "docsUrl": "dev-to",
+    "fullTitle": "dev.to",
+    "group": "application",
+    "id": "DevTo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "dev.to"
   },
   {
     "color": "#03F",
@@ -1796,6 +2746,44 @@
     "title": "Dify"
   },
   {
+    "color": "#0080FF",
+    "desc": "https://www.digitalocean.com",
+    "docsUrl": "digital-ocean",
+    "fullTitle": "DigitalOcean",
+    "group": "application",
+    "id": "DigitalOcean",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DigitalOcean"
+  },
+  {
+    "color": "#5865F2",
+    "desc": "https://discord.com",
+    "docsUrl": "discord",
+    "fullTitle": "Discord",
+    "group": "application",
+    "id": "Discord",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Discord"
+  },
+  {
     "color": "#fff",
     "desc": "https://doc2x.noedgeai.com",
     "docsUrl": "doc2-x",
@@ -1813,6 +2801,25 @@
       "hasTextColor": false
     },
     "title": "Doc2X"
+  },
+  {
+    "color": "#2496ED",
+    "desc": "https://www.docker.com",
+    "docsUrl": "docker",
+    "fullTitle": "Docker",
+    "group": "application",
+    "id": "Docker",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Docker"
   },
   {
     "color": "#fff",
@@ -1853,6 +2860,25 @@
     "title": "Dolphin"
   },
   {
+    "color": "#FF3008",
+    "desc": "https://www.doordash.com",
+    "docsUrl": "door-dash",
+    "fullTitle": "DoorDash",
+    "group": "application",
+    "id": "DoorDash",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DoorDash"
+  },
+  {
     "color": "#FFF",
     "desc": "https://team.doubao.com",
     "docsUrl": "doubao",
@@ -1889,6 +2915,158 @@
       "hasTextColor": false
     },
     "title": "DreamMachine"
+  },
+  {
+    "color": "#EA4C89",
+    "desc": "https://dribbble.com",
+    "docsUrl": "dribbble",
+    "fullTitle": "Dribbble",
+    "group": "application",
+    "id": "Dribbble",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dribbble"
+  },
+  {
+    "color": "#C5F74F",
+    "desc": "https://orm.drizzle.team",
+    "docsUrl": "drizzle",
+    "fullTitle": "Drizzle",
+    "group": "application",
+    "id": "Drizzle",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Drizzle"
+  },
+  {
+    "color": "#0061FF",
+    "desc": "https://www.dropbox.com",
+    "docsUrl": "dropbox",
+    "fullTitle": "Dropbox",
+    "group": "application",
+    "id": "Dropbox",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Dropbox"
+  },
+  {
+    "color": "#DE5833",
+    "desc": "https://duckduckgo.com",
+    "docsUrl": "duck-duck-go",
+    "fullTitle": "DuckDuckGo",
+    "group": "application",
+    "id": "DuckDuckGo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "DuckDuckGo"
+  },
+  {
+    "color": "#58CC02",
+    "desc": "https://www.duolingo.com",
+    "docsUrl": "duolingo",
+    "fullTitle": "Duolingo",
+    "group": "application",
+    "id": "Duolingo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Duolingo"
+  },
+  {
+    "color": "#E53238",
+    "desc": "https://www.ebay.com",
+    "docsUrl": "ebay",
+    "fullTitle": "eBay",
+    "group": "application",
+    "id": "Ebay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "eBay"
+  },
+  {
+    "color": "#005571",
+    "desc": "https://www.elastic.co/elasticsearch",
+    "docsUrl": "elasticsearch",
+    "fullTitle": "Elasticsearch",
+    "group": "application",
+    "id": "Elasticsearch",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Elasticsearch"
+  },
+  {
+    "color": "#47848F",
+    "desc": "https://www.electronjs.org",
+    "docsUrl": "electron",
+    "fullTitle": "Electron",
+    "group": "application",
+    "id": "Electron",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Electron"
   },
   {
     "color": "#fff",
@@ -1929,6 +3107,44 @@
     "title": "11x"
   },
   {
+    "color": "#313131",
+    "desc": "https://www.epicgames.com",
+    "docsUrl": "epic-games",
+    "fullTitle": "Epic Games",
+    "group": "application",
+    "id": "EpicGames",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Epic Games"
+  },
+  {
+    "color": "#4B32C3",
+    "desc": "https://eslint.org",
+    "docsUrl": "es-lint",
+    "fullTitle": "ESLint",
+    "group": "application",
+    "id": "ESLint",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "ESLint"
+  },
+  {
     "color": "#111322",
     "colorGradient": "linear-gradient(135deg, #5E38A5, #31018C 63%)",
     "desc": "https://essential.ai",
@@ -1947,6 +3163,63 @@
       "hasTextColor": false
     },
     "title": "Essential AI"
+  },
+  {
+    "color": "#3C3C3D",
+    "desc": "https://ethereum.org",
+    "docsUrl": "ethereum",
+    "fullTitle": "Ethereum",
+    "group": "application",
+    "id": "Ethereum",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ethereum"
+  },
+  {
+    "color": "#F16521",
+    "desc": "https://www.etsy.com",
+    "docsUrl": "etsy",
+    "fullTitle": "Etsy",
+    "group": "application",
+    "id": "Etsy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Etsy"
+  },
+  {
+    "color": "#00A82D",
+    "desc": "https://evernote.com",
+    "docsUrl": "evernote",
+    "fullTitle": "Evernote",
+    "group": "application",
+    "id": "Evernote",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Evernote"
   },
   {
     "color": "#7C5CFF",
@@ -1985,6 +3258,25 @@
       "hasTextColor": false
     },
     "title": "Exa"
+  },
+  {
+    "color": "#0866FF",
+    "desc": "https://www.facebook.com",
+    "docsUrl": "facebook",
+    "fullTitle": "Facebook",
+    "group": "application",
+    "id": "Facebook",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Facebook"
   },
   {
     "color": "#EC0648",
@@ -2063,6 +3355,25 @@
     "title": "Figma"
   },
   {
+    "color": "#DD2C00",
+    "desc": "https://firebase.google.com",
+    "docsUrl": "firebase",
+    "fullTitle": "Firebase",
+    "group": "application",
+    "id": "Firebase",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Firebase"
+  },
+  {
     "color": "#ff4d00",
     "desc": "https://firecrawl.dev",
     "docsUrl": "firecrawl",
@@ -2080,6 +3391,25 @@
       "hasTextColor": false
     },
     "title": "Firecrawl"
+  },
+  {
+    "color": "#FF7139",
+    "desc": "https://www.firefox.com",
+    "docsUrl": "firefox",
+    "fullTitle": "Firefox Browser",
+    "group": "application",
+    "id": "Firefox",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Firefox Browser"
   },
   {
     "color": "#5019C5",
@@ -2158,6 +3488,25 @@
     "title": "Flowith"
   },
   {
+    "color": "#02569B",
+    "desc": "https://flutter.dev",
+    "docsUrl": "flutter",
+    "fullTitle": "Flutter",
+    "group": "application",
+    "id": "Flutter",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Flutter"
+  },
+  {
     "color": "#fff",
     "desc": "https://blackforestlabs.ai",
     "docsUrl": "flux",
@@ -2175,6 +3524,25 @@
       "hasTextColor": false
     },
     "title": "Flux"
+  },
+  {
+    "color": "#24175B",
+    "desc": "https://fly.io",
+    "docsUrl": "fly-io",
+    "fullTitle": "Fly.io",
+    "group": "application",
+    "id": "FlyIo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Fly.io"
   },
   {
     "color": "#101723",
@@ -2254,6 +3622,63 @@
     "title": "Gemma"
   },
   {
+    "color": "#15171A",
+    "desc": "https://ghost.org",
+    "docsUrl": "ghost",
+    "fullTitle": "Ghost",
+    "group": "application",
+    "id": "Ghost",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ghost"
+  },
+  {
+    "color": "#F03C2E",
+    "desc": "https://git-scm.com",
+    "docsUrl": "git",
+    "fullTitle": "Git",
+    "group": "application",
+    "id": "Git",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Git"
+  },
+  {
+    "color": "#609926",
+    "desc": "https://about.gitea.com",
+    "docsUrl": "gitea",
+    "fullTitle": "Gitea",
+    "group": "application",
+    "id": "Gitea",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Gitea"
+  },
+  {
     "color": "#000",
     "desc": "https://ai-assets.gitee.com/",
     "docsUrl": "gitee-ai",
@@ -2292,6 +3717,25 @@
     "title": "Github"
   },
   {
+    "color": "#2088FF",
+    "desc": "https://github.com/features/actions",
+    "docsUrl": "github-actions",
+    "fullTitle": "GitHub Actions",
+    "group": "application",
+    "id": "GithubActions",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GitHub Actions"
+  },
+  {
     "color": "#000",
     "desc": "https://github.com/features/copilot",
     "docsUrl": "github-copilot",
@@ -2309,6 +3753,25 @@
       "hasTextColor": false
     },
     "title": "GithubCopilot"
+  },
+  {
+    "color": "#FC6D26",
+    "desc": "https://gitlab.com",
+    "docsUrl": "git-lab",
+    "fullTitle": "GitLab",
+    "group": "application",
+    "id": "GitLab",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GitLab"
   },
   {
     "color": "#000",
@@ -2368,6 +3831,82 @@
     "title": "GLM-V"
   },
   {
+    "color": "#EA4335",
+    "desc": "https://mail.google.com",
+    "docsUrl": "gmail",
+    "fullTitle": "Gmail",
+    "group": "application",
+    "id": "Gmail",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Gmail"
+  },
+  {
+    "color": "#00ADD8",
+    "desc": "https://go.dev",
+    "docsUrl": "go",
+    "fullTitle": "Go",
+    "group": "application",
+    "id": "Go",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Go"
+  },
+  {
+    "color": "#1BDBDB",
+    "desc": "https://www.godaddy.com",
+    "docsUrl": "go-daddy",
+    "fullTitle": "GoDaddy",
+    "group": "application",
+    "id": "GoDaddy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GoDaddy"
+  },
+  {
+    "color": "#1E1914",
+    "desc": "https://www.goodreads.com",
+    "docsUrl": "goodreads",
+    "fullTitle": "Goodreads",
+    "group": "application",
+    "id": "Goodreads",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Goodreads"
+  },
+  {
     "color": "#fff",
     "desc": "https://google.com",
     "docsUrl": "google",
@@ -2385,6 +3924,44 @@
       "hasTextColor": false
     },
     "title": "Google"
+  },
+  {
+    "color": "#E37400",
+    "desc": "https://marketingplatform.google.com/about/analytics",
+    "docsUrl": "google-analytics",
+    "fullTitle": "Google Analytics",
+    "group": "application",
+    "id": "GoogleAnalytics",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Analytics"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://calendar.google.com",
+    "docsUrl": "google-calendar",
+    "fullTitle": "Google Calendar",
+    "group": "application",
+    "id": "GoogleCalendar",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Calendar"
   },
   {
     "color": "#fff",
@@ -2406,6 +3983,139 @@
     "title": "GoogleCloud"
   },
   {
+    "color": "#4285F4",
+    "desc": "https://docs.google.com",
+    "docsUrl": "google-docs",
+    "fullTitle": "Google Docs",
+    "group": "application",
+    "id": "GoogleDocs",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Docs"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://drive.google.com",
+    "docsUrl": "google-drive",
+    "fullTitle": "Google Drive",
+    "group": "application",
+    "id": "GoogleDrive",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Drive"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://maps.google.com",
+    "docsUrl": "google-maps",
+    "fullTitle": "Google Maps",
+    "group": "application",
+    "id": "GoogleMaps",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Maps"
+  },
+  {
+    "color": "#00897B",
+    "desc": "https://meet.google.com",
+    "docsUrl": "google-meet",
+    "fullTitle": "Google Meet",
+    "group": "application",
+    "id": "GoogleMeet",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Meet"
+  },
+  {
+    "color": "#4285F4",
+    "desc": "https://pay.google.com",
+    "docsUrl": "google-pay",
+    "fullTitle": "Google Pay",
+    "group": "application",
+    "id": "GooglePay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Pay"
+  },
+  {
+    "color": "#414141",
+    "desc": "https://play.google.com",
+    "docsUrl": "google-play",
+    "fullTitle": "Google Play",
+    "group": "application",
+    "id": "GooglePlay",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Play"
+  },
+  {
+    "color": "#34A853",
+    "desc": "https://sheets.google.com",
+    "docsUrl": "google-sheets",
+    "fullTitle": "Google Sheets",
+    "group": "application",
+    "id": "GoogleSheets",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Google Sheets"
+  },
+  {
     "color": "#fff",
     "desc": "https://block.github.io/goose",
     "docsUrl": "goose",
@@ -2425,6 +4135,25 @@
     "title": "Goose"
   },
   {
+    "color": "#00B14F",
+    "desc": "https://www.grab.com",
+    "docsUrl": "grab",
+    "fullTitle": "Grab",
+    "group": "application",
+    "id": "Grab",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Grab"
+  },
+  {
     "color": "#fff",
     "desc": "https://gradio.app",
     "docsUrl": "gradio",
@@ -2442,6 +4171,63 @@
       "hasTextColor": false
     },
     "title": "Gradio"
+  },
+  {
+    "color": "#F46800",
+    "desc": "https://grafana.com",
+    "docsUrl": "grafana",
+    "fullTitle": "Grafana",
+    "group": "application",
+    "id": "Grafana",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Grafana"
+  },
+  {
+    "color": "#027E6F",
+    "desc": "https://www.grammarly.com",
+    "docsUrl": "grammarly",
+    "fullTitle": "Grammarly",
+    "group": "application",
+    "id": "Grammarly",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Grammarly"
+  },
+  {
+    "color": "#E10098",
+    "desc": "https://graphql.org",
+    "docsUrl": "graph-ql",
+    "fullTitle": "GraphQL",
+    "group": "application",
+    "id": "GraphQL",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GraphQL"
   },
   {
     "color": "#44A775",
@@ -2559,6 +4345,25 @@
     "title": "Hedra"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.hbo.com",
+    "docsUrl": "hbo",
+    "fullTitle": "HBO",
+    "group": "application",
+    "id": "HBO",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "HBO"
+  },
+  {
     "color": "#000",
     "desc": "https://hedra.com",
     "docsUrl": "hedra",
@@ -2615,6 +4420,44 @@
       "hasTextColor": true
     },
     "title": "Higress"
+  },
+  {
+    "color": "#FBB040",
+    "desc": "https://brew.sh",
+    "docsUrl": "homebrew",
+    "fullTitle": "Homebrew",
+    "group": "application",
+    "id": "Homebrew",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Homebrew"
+  },
+  {
+    "color": "#0096D6",
+    "desc": "https://www.hp.com",
+    "docsUrl": "hp",
+    "fullTitle": "HP",
+    "group": "application",
+    "id": "HP",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "HP"
   },
   {
     "color": "#C7000B",
@@ -2731,6 +4574,25 @@
     "title": "IBM"
   },
   {
+    "color": "#3693F3",
+    "desc": "https://www.icloud.com",
+    "docsUrl": "i-cloud",
+    "fullTitle": "iCloud",
+    "group": "application",
+    "id": "ICloud",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "iCloud"
+  },
+  {
     "color": "#fff",
     "desc": "https://ideogram.ai",
     "docsUrl": "ideogram",
@@ -2767,6 +4629,25 @@
       "hasTextColor": false
     },
     "title": "iFlyTekCloud"
+  },
+  {
+    "color": "#F5C518",
+    "desc": "https://www.imdb.com",
+    "docsUrl": "im-db",
+    "fullTitle": "IMDb",
+    "group": "application",
+    "id": "IMDb",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "IMDb"
   },
   {
     "color": "#fff",
@@ -2864,6 +4745,44 @@
     "title": "Inflection"
   },
   {
+    "color": "#FF0069",
+    "desc": "https://www.instagram.com",
+    "docsUrl": "instagram",
+    "fullTitle": "Instagram",
+    "group": "application",
+    "id": "Instagram",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Instagram"
+  },
+  {
+    "color": "#0071C5",
+    "desc": "https://www.intel.com",
+    "docsUrl": "intel",
+    "fullTitle": "Intel",
+    "group": "application",
+    "id": "Intel",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Intel"
+  },
+  {
     "color": "#1B3882",
     "desc": "https://internlm.intern-ai.org.cn",
     "docsUrl": "intern-lm",
@@ -2881,6 +4800,63 @@
       "hasTextColor": false
     },
     "title": "InternLM"
+  },
+  {
+    "color": "#F7DF1E",
+    "desc": "https://developer.mozilla.org/docs/Web/JavaScript",
+    "docsUrl": "java-script",
+    "fullTitle": "JavaScript",
+    "group": "application",
+    "id": "JavaScript",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "JavaScript"
+  },
+  {
+    "color": "#C21325",
+    "desc": "https://jestjs.io",
+    "docsUrl": "jest",
+    "fullTitle": "Jest",
+    "group": "application",
+    "id": "Jest",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Jest"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.jetbrains.com",
+    "docsUrl": "jet-brains",
+    "fullTitle": "JetBrains",
+    "group": "application",
+    "id": "JetBrains",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "JetBrains"
   },
   {
     "color": "#000",
@@ -2921,6 +4897,25 @@
     "title": "Jina"
   },
   {
+    "color": "#0052CC",
+    "desc": "https://www.atlassian.com/software/jira",
+    "docsUrl": "jira",
+    "fullTitle": "Jira",
+    "group": "application",
+    "id": "Jira",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Jira"
+  },
+  {
     "color": "#47E054",
     "desc": "https://jetbrains.com/junie",
     "docsUrl": "junie",
@@ -2940,6 +4935,25 @@
     "title": "Junie"
   },
   {
+    "color": "#F37626",
+    "desc": "https://jupyter.org",
+    "docsUrl": "jupyter",
+    "fullTitle": "Jupyter",
+    "group": "application",
+    "id": "Jupyter",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Jupyter"
+  },
+  {
     "color": "#FEB219",
     "desc": "https://kagi.com",
     "docsUrl": "kagi",
@@ -2957,6 +4971,44 @@
       "hasTextColor": false
     },
     "title": "Kagi"
+  },
+  {
+    "color": "#FFCD00",
+    "desc": "https://www.kakaocorp.com/page/service/service/KakaoTalk",
+    "docsUrl": "kakao-talk",
+    "fullTitle": "KakaoTalk",
+    "group": "application",
+    "id": "KakaoTalk",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "KakaoTalk"
+  },
+  {
+    "color": "#14BF96",
+    "desc": "https://www.khanacademy.org",
+    "docsUrl": "khan-academy",
+    "fullTitle": "Khan Academy",
+    "group": "application",
+    "id": "KhanAcademy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Khan Academy"
   },
   {
     "color": "#F8F676",
@@ -3075,6 +5127,25 @@
     "title": "Kolors"
   },
   {
+    "color": "#7F52FF",
+    "desc": "https://kotlinlang.org",
+    "docsUrl": "kotlin",
+    "fullTitle": "Kotlin",
+    "group": "application",
+    "id": "Kotlin",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kotlin"
+  },
+  {
     "color": "#000",
     "desc": "https://krea.ai",
     "docsUrl": "krea",
@@ -3092,6 +5163,44 @@
       "hasTextColor": false
     },
     "title": "Krea"
+  },
+  {
+    "color": "#FF4906",
+    "desc": "https://www.kuaishou.com",
+    "docsUrl": "kuaishou",
+    "fullTitle": "Kuaishou",
+    "group": "application",
+    "id": "Kuaishou",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kuaishou"
+  },
+  {
+    "color": "#326CE5",
+    "desc": "https://kubernetes.io",
+    "docsUrl": "kubernetes",
+    "fullTitle": "Kubernetes",
+    "group": "application",
+    "id": "Kubernetes",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kubernetes"
   },
   {
     "color": "#0A67FF",
@@ -3227,6 +5336,25 @@
     "title": "LangSmith"
   },
   {
+    "color": "#E2231A",
+    "desc": "https://www.lenovo.com",
+    "docsUrl": "lenovo",
+    "fullTitle": "Lenovo",
+    "group": "application",
+    "id": "Lenovo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lenovo"
+  },
+  {
     "color": "#2F80ED",
     "desc": "https://lepton.ai",
     "docsUrl": "lepton-ai",
@@ -3282,6 +5410,63 @@
       "hasTextColor": false
     },
     "title": "Lightricks"
+  },
+  {
+    "color": "#00C300",
+    "desc": "https://line.me",
+    "docsUrl": "line",
+    "fullTitle": "LINE",
+    "group": "application",
+    "id": "Line",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "LINE"
+  },
+  {
+    "color": "#5E6AD2",
+    "desc": "https://linear.app",
+    "docsUrl": "linear",
+    "fullTitle": "Linear",
+    "group": "application",
+    "id": "Linear",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Linear"
+  },
+  {
+    "color": "#FCC624",
+    "desc": "https://www.kernel.org",
+    "docsUrl": "linux",
+    "fullTitle": "Linux",
+    "group": "application",
+    "id": "Linux",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Linux"
   },
   {
     "color": "#fff",
@@ -3419,6 +5604,25 @@
     "title": "LobeHub"
   },
   {
+    "color": "#85C8C8",
+    "desc": "https://logseq.com",
+    "docsUrl": "logseq",
+    "fullTitle": "Logseq",
+    "group": "application",
+    "id": "Logseq",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Logseq"
+  },
+  {
     "color": "#fff",
     "desc": "https://longcat.chat/",
     "docsUrl": "long-cat",
@@ -3436,6 +5640,25 @@
       "hasTextColor": false
     },
     "title": "LongCat"
+  },
+  {
+    "color": "#625DF5",
+    "desc": "https://www.loom.com",
+    "docsUrl": "loom",
+    "fullTitle": "Loom",
+    "group": "application",
+    "id": "Loom",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Loom"
   },
   {
     "color": "#000",
@@ -3495,6 +5718,25 @@
     "title": "Luma"
   },
   {
+    "color": "#FF00BF",
+    "desc": "https://www.lyft.com",
+    "docsUrl": "lyft",
+    "fullTitle": "Lyft",
+    "group": "application",
+    "id": "Lyft",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lyft"
+  },
+  {
     "color": "#fff",
     "desc": "https://magic.dev",
     "docsUrl": "magic",
@@ -3512,6 +5754,25 @@
       "hasTextColor": false
     },
     "title": "Magic"
+  },
+  {
+    "color": "#FFE01B",
+    "desc": "https://mailchimp.com",
+    "docsUrl": "mailchimp",
+    "fullTitle": "MailChimp",
+    "group": "application",
+    "id": "Mailchimp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MailChimp"
   },
   {
     "color": "#ff009a",
@@ -3550,6 +5811,44 @@
       "hasTextColor": false
     },
     "title": "Manus"
+  },
+  {
+    "color": "#EB001B",
+    "desc": "https://www.mastercard.com",
+    "docsUrl": "mastercard",
+    "fullTitle": "MasterCard",
+    "group": "application",
+    "id": "Mastercard",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MasterCard"
+  },
+  {
+    "color": "#6364FF",
+    "desc": "https://joinmastodon.org",
+    "docsUrl": "mastodon",
+    "fullTitle": "Mastodon",
+    "group": "application",
+    "id": "Mastodon",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mastodon"
   },
   {
     "color": "#000",
@@ -3609,6 +5908,44 @@
     "title": "MCP.so"
   },
   {
+    "color": "#000000",
+    "desc": "https://medium.com",
+    "docsUrl": "medium",
+    "fullTitle": "Medium",
+    "group": "application",
+    "id": "Medium",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Medium"
+  },
+  {
+    "color": "#FFD100",
+    "desc": "https://www.meituan.com",
+    "docsUrl": "meituan",
+    "fullTitle": "Meituan",
+    "group": "application",
+    "id": "Meituan",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Meituan"
+  },
+  {
     "color": "#FF5C00",
     "desc": "https://menlo.ai",
     "docsUrl": "menlo",
@@ -3645,6 +5982,25 @@
       "hasTextColor": false
     },
     "title": "Meshy"
+  },
+  {
+    "color": "#0866FF",
+    "desc": "https://www.messenger.com",
+    "docsUrl": "messenger",
+    "fullTitle": "Messenger",
+    "group": "application",
+    "id": "Messenger",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Messenger"
   },
   {
     "color": "#1d65c1",
@@ -3763,6 +6119,25 @@
     "title": "Minimax"
   },
   {
+    "color": "#050038",
+    "desc": "https://miro.com",
+    "docsUrl": "miro",
+    "fullTitle": "Miro",
+    "group": "application",
+    "id": "Miro",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Miro"
+  },
+  {
     "color": "#FA520F",
     "desc": "https://mistral.ai",
     "docsUrl": "mistral",
@@ -3782,6 +6157,25 @@
     "title": "Mistral"
   },
   {
+    "color": "#7856FF",
+    "desc": "https://mixpanel.com",
+    "docsUrl": "mixpanel",
+    "fullTitle": "Mixpanel",
+    "group": "application",
+    "id": "Mixpanel",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Mixpanel"
+  },
+  {
     "color": "#624AFF",
     "desc": "https://modelscope.cn",
     "docsUrl": "model-scope",
@@ -3799,6 +6193,25 @@
       "hasTextColor": false
     },
     "title": "ModelScope"
+  },
+  {
+    "color": "#47A248",
+    "desc": "https://www.mongodb.com",
+    "docsUrl": "mongo-db",
+    "fullTitle": "MongoDB",
+    "group": "application",
+    "id": "MongoDB",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MongoDB"
   },
   {
     "color": "#6841ea",
@@ -3897,6 +6310,25 @@
     "title": "MyShell"
   },
   {
+    "color": "#4479A1",
+    "desc": "https://www.mysql.com",
+    "docsUrl": "my-sql",
+    "fullTitle": "MySQL",
+    "group": "application",
+    "id": "MySQL",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MySQL"
+  },
+  {
     "color": "#EA4B71",
     "desc": "https://n8n.io",
     "docsUrl": "n-8-n",
@@ -3914,6 +6346,25 @@
       "hasTextColor": false
     },
     "title": "n8n"
+  },
+  {
+    "color": "#DE3723",
+    "desc": "https://www.namecheap.com",
+    "docsUrl": "namecheap",
+    "fullTitle": "Namecheap",
+    "group": "application",
+    "id": "Namecheap",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Namecheap"
   },
   {
     "color": "#FCD53F",
@@ -3954,6 +6405,82 @@
     "title": "Nebius"
   },
   {
+    "color": "#34D59A",
+    "desc": "https://neon.com",
+    "docsUrl": "neon",
+    "fullTitle": "Neon",
+    "group": "application",
+    "id": "Neon",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Neon"
+  },
+  {
+    "color": "#D43C33",
+    "desc": "https://music.163.com",
+    "docsUrl": "net-ease-cloud-music",
+    "fullTitle": "NetEase Cloud Music",
+    "group": "application",
+    "id": "NetEaseCloudMusic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "NetEase Cloud Music"
+  },
+  {
+    "color": "#E50914",
+    "desc": "https://www.netflix.com",
+    "docsUrl": "netflix",
+    "fullTitle": "Netflix",
+    "group": "application",
+    "id": "Netflix",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Netflix"
+  },
+  {
+    "color": "#00C7B7",
+    "desc": "https://www.netlify.com",
+    "docsUrl": "netlify",
+    "fullTitle": "Netlify",
+    "group": "application",
+    "id": "Netlify",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Netlify"
+  },
+  {
     "color": "#dd2e57",
     "desc": "https://newapi.ai",
     "docsUrl": "new-api",
@@ -3971,6 +6498,63 @@
       "hasTextColor": false
     },
     "title": "New API"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://nextjs.org",
+    "docsUrl": "next-js",
+    "fullTitle": "Next.js",
+    "group": "application",
+    "id": "NextJS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Next.js"
+  },
+  {
+    "color": "#009639",
+    "desc": "https://nginx.org",
+    "docsUrl": "nginx",
+    "fullTitle": "NGINX",
+    "group": "application",
+    "id": "Nginx",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "NGINX"
+  },
+  {
+    "color": "#5FA04E",
+    "desc": "https://nodejs.org",
+    "docsUrl": "node-js",
+    "fullTitle": "Node.js",
+    "group": "application",
+    "id": "NodeJS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Node.js"
   },
   {
     "color": "#fff",
@@ -4107,6 +6691,44 @@
     "title": "NPLCloud"
   },
   {
+    "color": "#CB3837",
+    "desc": "https://www.npmjs.com",
+    "docsUrl": "npm",
+    "fullTitle": "npm",
+    "group": "application",
+    "id": "Npm",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "npm"
+  },
+  {
+    "color": "#00DC82",
+    "desc": "https://nuxt.com",
+    "docsUrl": "nuxt",
+    "fullTitle": "Nuxt",
+    "group": "application",
+    "id": "Nuxt",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Nuxt"
+  },
+  {
     "color": "#74B71B",
     "desc": "https://nvidia.com/en-us/ai-on-rtx/chat-with-rtx-generative-ai/",
     "docsUrl": "nvidia",
@@ -4145,6 +6767,25 @@
     "title": "Obsidian"
   },
   {
+    "color": "#007DC1",
+    "desc": "https://www.okta.com",
+    "docsUrl": "okta",
+    "fullTitle": "Okta",
+    "group": "application",
+    "id": "Okta",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Okta"
+  },
+  {
     "color": "#fff",
     "desc": "https://ollama.ai",
     "docsUrl": "ollama",
@@ -4162,6 +6803,44 @@
       "hasTextColor": false
     },
     "title": "Ollama"
+  },
+  {
+    "color": "#145FE4",
+    "desc": "https://1password.com",
+    "docsUrl": "one-password",
+    "fullTitle": "1Password",
+    "group": "application",
+    "id": "OnePassword",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "1Password"
+  },
+  {
+    "color": "#F5010C",
+    "desc": "https://www.oneplus.com",
+    "docsUrl": "one-plus",
+    "fullTitle": "OnePlus",
+    "group": "application",
+    "id": "OnePlus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OnePlus"
   },
   {
     "color": "#000",
@@ -4278,6 +6957,25 @@
     "title": "OpenHuman"
   },
   {
+    "color": "#000000",
+    "desc": "https://openjdk.org",
+    "docsUrl": "open-jdk",
+    "fullTitle": "OpenJDK",
+    "group": "application",
+    "id": "OpenJDK",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OpenJDK"
+  },
+  {
     "color": "#C8FF00",
     "desc": "https://openrouter.ai",
     "docsUrl": "open-router",
@@ -4297,6 +6995,25 @@
     "title": "OpenRouter"
   },
   {
+    "color": "#7EBC6F",
+    "desc": "https://www.openstreetmap.org",
+    "docsUrl": "open-street-map",
+    "fullTitle": "OpenStreetMap",
+    "group": "application",
+    "id": "OpenStreetMap",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OpenStreetMap"
+  },
+  {
     "color": "#fff",
     "desc": "https://openwebui.com",
     "docsUrl": "open-web-ui",
@@ -4314,6 +7031,63 @@
       "hasTextColor": false
     },
     "title": "OpenWebUI"
+  },
+  {
+    "color": "#FF1B2D",
+    "desc": "https://www.opera.com",
+    "docsUrl": "opera",
+    "fullTitle": "Opera",
+    "group": "application",
+    "id": "Opera",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Opera"
+  },
+  {
+    "color": "#2D683D",
+    "desc": "https://www.oppo.com",
+    "docsUrl": "oppo",
+    "fullTitle": "OPPO",
+    "group": "application",
+    "id": "Oppo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "OPPO"
+  },
+  {
+    "color": "#47A141",
+    "desc": "https://www.overleaf.com",
+    "docsUrl": "overleaf",
+    "fullTitle": "Overleaf",
+    "group": "application",
+    "id": "Overleaf",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Overleaf"
   },
   {
     "color": "#FFF",
@@ -4352,6 +7126,25 @@
       "hasTextColor": false
     },
     "title": "Parasail"
+  },
+  {
+    "color": "#002991",
+    "desc": "https://www.paypal.com",
+    "docsUrl": "pay-pal",
+    "fullTitle": "PayPal",
+    "group": "application",
+    "id": "PayPal",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PayPal"
   },
   {
     "color": "#22B8CD",
@@ -4449,6 +7242,25 @@
     "title": "Pika"
   },
   {
+    "color": "#BD081C",
+    "desc": "https://www.pinterest.com",
+    "docsUrl": "pinterest",
+    "fullTitle": "Pinterest",
+    "group": "application",
+    "id": "Pinterest",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pinterest"
+  },
+  {
     "color": "#000",
     "desc": "https://app.pixverse.ai",
     "docsUrl": "pix-verse",
@@ -4468,6 +7280,25 @@
     "title": "PixVerse"
   },
   {
+    "color": "#000000",
+    "desc": "https://planetscale.com",
+    "docsUrl": "planet-scale",
+    "fullTitle": "PlanetScale",
+    "group": "application",
+    "id": "PlanetScale",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PlanetScale"
+  },
+  {
     "color": "#A8A6FF",
     "desc": "https://player2.game",
     "docsUrl": "player2",
@@ -4485,6 +7316,44 @@
       "hasTextColor": false
     },
     "title": "Player2"
+  },
+  {
+    "color": "#0070D1",
+    "desc": "https://www.playstation.com",
+    "docsUrl": "play-station",
+    "fullTitle": "PlayStation",
+    "group": "application",
+    "id": "PlayStation",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PlayStation"
+  },
+  {
+    "color": "#F69220",
+    "desc": "https://pnpm.io",
+    "docsUrl": "pnpm",
+    "fullTitle": "pnpm",
+    "group": "application",
+    "id": "Pnpm",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "pnpm"
   },
   {
     "color": "#000",
@@ -4544,6 +7413,63 @@
     "title": "Poolside"
   },
   {
+    "color": "#4169E1",
+    "desc": "https://www.postgresql.org",
+    "docsUrl": "postgre-sql",
+    "fullTitle": "PostgreSQL",
+    "group": "application",
+    "id": "PostgreSQL",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PostgreSQL"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://posthog.com",
+    "docsUrl": "post-hog",
+    "fullTitle": "PostHog",
+    "group": "application",
+    "id": "PostHog",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PostHog"
+  },
+  {
+    "color": "#FF6C37",
+    "desc": "https://www.postman.com",
+    "docsUrl": "postman",
+    "fullTitle": "Postman",
+    "group": "application",
+    "id": "Postman",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Postman"
+  },
+  {
     "color": "#2874ff",
     "desc": "https://ppinfra.com",
     "docsUrl": "ppio",
@@ -4561,6 +7487,120 @@
       "hasTextColor": false
     },
     "title": "PPIO"
+  },
+  {
+    "color": "#F7B93E",
+    "desc": "https://prettier.io",
+    "docsUrl": "prettier",
+    "fullTitle": "Prettier",
+    "group": "application",
+    "id": "Prettier",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Prettier"
+  },
+  {
+    "color": "#2D3748",
+    "desc": "https://www.prisma.io",
+    "docsUrl": "prisma",
+    "fullTitle": "Prisma",
+    "group": "application",
+    "id": "Prisma",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Prisma"
+  },
+  {
+    "color": "#DA552F",
+    "desc": "https://www.producthunt.com",
+    "docsUrl": "product-hunt",
+    "fullTitle": "Product Hunt",
+    "group": "application",
+    "id": "ProductHunt",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Product Hunt"
+  },
+  {
+    "color": "#E6522C",
+    "desc": "https://prometheus.io",
+    "docsUrl": "prometheus",
+    "fullTitle": "Prometheus",
+    "group": "application",
+    "id": "Prometheus",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Prometheus"
+  },
+  {
+    "color": "#6D4AFF",
+    "desc": "https://proton.me",
+    "docsUrl": "proton",
+    "fullTitle": "Proton",
+    "group": "application",
+    "id": "Proton",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Proton"
+  },
+  {
+    "color": "#6D4AFF",
+    "desc": "https://proton.me/mail",
+    "docsUrl": "proton-mail",
+    "fullTitle": "Proton Mail",
+    "group": "application",
+    "id": "ProtonMail",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Proton Mail"
   },
   {
     "color": "#AC51FF",
@@ -4599,6 +7639,44 @@
       "hasTextColor": false
     },
     "title": "PydanticAI"
+  },
+  {
+    "color": "#3776AB",
+    "desc": "https://www.python.org",
+    "docsUrl": "python",
+    "fullTitle": "Python",
+    "group": "application",
+    "id": "Python",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Python"
+  },
+  {
+    "color": "#EE4C2C",
+    "desc": "https://pytorch.org",
+    "docsUrl": "py-torch",
+    "fullTitle": "PyTorch",
+    "group": "application",
+    "id": "PyTorch",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "PyTorch"
   },
   {
     "color": "#1041F3",
@@ -4658,6 +7736,63 @@
     "title": "Qoder"
   },
   {
+    "color": "#1EBAFC",
+    "desc": "https://im.qq.com",
+    "docsUrl": "qq",
+    "fullTitle": "QQ",
+    "group": "application",
+    "id": "QQ",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "QQ"
+  },
+  {
+    "color": "#3253DC",
+    "desc": "https://www.qualcomm.com",
+    "docsUrl": "qualcomm",
+    "fullTitle": "Qualcomm",
+    "group": "application",
+    "id": "Qualcomm",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Qualcomm"
+  },
+  {
+    "color": "#B92B27",
+    "desc": "https://www.quora.com",
+    "docsUrl": "quora",
+    "fullTitle": "Quora",
+    "group": "application",
+    "id": "Quora",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Quora"
+  },
+  {
     "color": "#615ced",
     "colorGradient": "linear-gradient(to right, #6336E7,  #6F69F7)",
     "desc": "https://huggingface.co/Qwen",
@@ -4676,6 +7811,25 @@
       "hasTextColor": false
     },
     "title": "Qwen"
+  },
+  {
+    "color": "#FF6600",
+    "desc": "https://www.rabbitmq.com",
+    "docsUrl": "rabbit-mq",
+    "fullTitle": "RabbitMQ",
+    "group": "application",
+    "id": "RabbitMQ",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "RabbitMQ"
   },
   {
     "color": "#853bce",
@@ -4698,6 +7852,63 @@
     "title": "Railway"
   },
   {
+    "color": "#A22846",
+    "desc": "https://www.raspberrypi.com",
+    "docsUrl": "raspberry-pi",
+    "fullTitle": "Raspberry Pi",
+    "group": "application",
+    "id": "RaspberryPi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Raspberry Pi"
+  },
+  {
+    "color": "#FF6363",
+    "desc": "https://www.raycast.com",
+    "docsUrl": "raycast",
+    "fullTitle": "Raycast",
+    "group": "application",
+    "id": "Raycast",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Raycast"
+  },
+  {
+    "color": "#61DAFB",
+    "desc": "https://react.dev",
+    "docsUrl": "react",
+    "fullTitle": "React",
+    "group": "application",
+    "id": "React",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "React"
+  },
+  {
     "color": "#000",
     "desc": "https://recraft.ai",
     "docsUrl": "recraft",
@@ -4717,6 +7928,44 @@
     "title": "Recraft"
   },
   {
+    "color": "#FF4500",
+    "desc": "https://www.reddit.com",
+    "docsUrl": "reddit",
+    "fullTitle": "Reddit",
+    "group": "application",
+    "id": "Reddit",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Reddit"
+  },
+  {
+    "color": "#FF4438",
+    "desc": "https://redis.io",
+    "docsUrl": "redis",
+    "fullTitle": "Redis",
+    "group": "application",
+    "id": "Redis",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Redis"
+  },
+  {
     "color": "#000",
     "desc": "https://relace.ai",
     "docsUrl": "relace",
@@ -4734,6 +7983,44 @@
       "hasTextColor": false
     },
     "title": "Relace"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://remix.run",
+    "docsUrl": "remix",
+    "fullTitle": "Remix",
+    "group": "application",
+    "id": "Remix",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Remix"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://render.com",
+    "docsUrl": "render",
+    "fullTitle": "Render",
+    "group": "application",
+    "id": "Render",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Render"
   },
   {
     "color": "#EA2805",
@@ -4774,6 +8061,25 @@
     "title": "Replit"
   },
   {
+    "color": "#000000",
+    "desc": "https://resend.com",
+    "docsUrl": "resend",
+    "fullTitle": "Resend",
+    "group": "application",
+    "id": "Resend",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Resend"
+  },
+  {
     "color": "#000",
     "desc": "https://app.reve.com",
     "docsUrl": "reve",
@@ -4791,6 +8097,25 @@
       "hasTextColor": false
     },
     "title": "Reve"
+  },
+  {
+    "color": "#191C1F",
+    "desc": "https://www.revolut.com",
+    "docsUrl": "revolut",
+    "fullTitle": "Revolut",
+    "group": "application",
+    "id": "Revolut",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Revolut"
   },
   {
     "color": "#000",
@@ -4870,6 +8195,25 @@
     "title": "RWKV"
   },
   {
+    "color": "#006CFF",
+    "desc": "https://www.apple.com/safari",
+    "docsUrl": "safari",
+    "fullTitle": "Safari",
+    "group": "application",
+    "id": "Safari",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Safari"
+  },
+  {
     "color": "#EE7624",
     "desc": "https://sambanova.ai",
     "docsUrl": "samba-nova",
@@ -4887,6 +8231,25 @@
       "hasTextColor": false
     },
     "title": "SambaNova"
+  },
+  {
+    "color": "#1428A0",
+    "desc": "https://www.samsung.com",
+    "docsUrl": "samsung",
+    "fullTitle": "Samsung",
+    "group": "application",
+    "id": "Samsung",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Samsung"
   },
   {
     "color": "#0066FF",
@@ -4963,6 +8326,63 @@
       "hasTextColor": false
     },
     "title": "SenseNova"
+  },
+  {
+    "color": "#362D59",
+    "desc": "https://sentry.io",
+    "docsUrl": "sentry",
+    "fullTitle": "Sentry",
+    "group": "application",
+    "id": "Sentry",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Sentry"
+  },
+  {
+    "color": "#7AB55C",
+    "desc": "https://www.shopify.com",
+    "docsUrl": "shopify",
+    "fullTitle": "Shopify",
+    "group": "application",
+    "id": "Shopify",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Shopify"
+  },
+  {
+    "color": "#3B45FD",
+    "desc": "https://signal.org",
+    "docsUrl": "signal",
+    "fullTitle": "Signal",
+    "group": "application",
+    "id": "Signal",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Signal"
   },
   {
     "color": "#6E29F6",
@@ -5060,6 +8480,25 @@
     "title": "Smithery"
   },
   {
+    "color": "#FFFC00",
+    "desc": "https://www.snapchat.com",
+    "docsUrl": "snapchat",
+    "fullTitle": "Snapchat",
+    "group": "application",
+    "id": "Snapchat",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Snapchat"
+  },
+  {
     "color": "#249EDC",
     "desc": "https://snowflake.com",
     "docsUrl": "snowflake",
@@ -5077,6 +8516,25 @@
       "hasTextColor": false
     },
     "title": "Snowflake"
+  },
+  {
+    "color": "#000",
+    "desc": "https://www.sony.com",
+    "docsUrl": "sony",
+    "fullTitle": "Sony",
+    "group": "application",
+    "id": "Sony",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Sony"
   },
   {
     "color": "#6200ee",
@@ -5118,6 +8576,25 @@
     "title": "Sora"
   },
   {
+    "color": "#FF5500",
+    "desc": "https://soundcloud.com",
+    "docsUrl": "sound-cloud",
+    "fullTitle": "SoundCloud",
+    "group": "application",
+    "id": "SoundCloud",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "SoundCloud"
+  },
+  {
     "color": "#0070f0",
     "desc": "https://xinghuo.xfyun.cn",
     "docsUrl": "spark",
@@ -5156,6 +8633,63 @@
     "title": "SpeedAI"
   },
   {
+    "color": "#1ED760",
+    "desc": "https://www.spotify.com",
+    "docsUrl": "spotify",
+    "fullTitle": "Spotify",
+    "group": "application",
+    "id": "Spotify",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Spotify"
+  },
+  {
+    "color": "#003B57",
+    "desc": "https://www.sqlite.org",
+    "docsUrl": "sq-lite",
+    "fullTitle": "SQLite",
+    "group": "application",
+    "id": "SQLite",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "SQLite"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.squarespace.com",
+    "docsUrl": "squarespace",
+    "fullTitle": "Squarespace",
+    "group": "application",
+    "id": "Squarespace",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Squarespace"
+  },
+  {
     "color": "#330066",
     "colorGradient": "linear-gradient(to bottom, #9D39FF,  #A380FF)",
     "desc": "https://deepmind.google/technologies/gemini",
@@ -5174,6 +8708,25 @@
       "hasTextColor": false
     },
     "title": "Stability"
+  },
+  {
+    "color": "#F58025",
+    "desc": "https://stackoverflow.com",
+    "docsUrl": "stack-overflow",
+    "fullTitle": "Stack Overflow",
+    "group": "application",
+    "id": "StackOverflow",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Stack Overflow"
   },
   {
     "color": "#DF0428",
@@ -5195,6 +8748,25 @@
     "title": "StateCloud"
   },
   {
+    "color": "#000000",
+    "desc": "https://store.steampowered.com",
+    "docsUrl": "steam",
+    "fullTitle": "Steam",
+    "group": "application",
+    "id": "Steam",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Steam"
+  },
+  {
     "color": "#000",
     "desc": "https://stepfun.com",
     "docsUrl": "stepfun",
@@ -5212,6 +8784,25 @@
       "hasTextColor": false
     },
     "title": "StepFun"
+  },
+  {
+    "color": "#FF4785",
+    "desc": "https://storybook.js.org",
+    "docsUrl": "storybook",
+    "fullTitle": "Storybook",
+    "group": "application",
+    "id": "Storybook",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Storybook"
   },
   {
     "color": "#464bba",
@@ -5252,6 +8843,25 @@
     "title": "StreamLake"
   },
   {
+    "color": "#635BFF",
+    "desc": "https://stripe.com",
+    "docsUrl": "stripe",
+    "fullTitle": "Stripe",
+    "group": "application",
+    "id": "Stripe",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Stripe"
+  },
+  {
     "color": "#fff",
     "desc": "https://submodel.ai",
     "docsUrl": "sub-model",
@@ -5269,6 +8879,25 @@
       "hasTextColor": false
     },
     "title": "SubModel"
+  },
+  {
+    "color": "#FF6719",
+    "desc": "https://substack.com",
+    "docsUrl": "substack",
+    "fullTitle": "Substack",
+    "group": "application",
+    "id": "Substack",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Substack"
   },
   {
     "color": "#000",
@@ -5290,6 +8919,63 @@
     "title": "Suno"
   },
   {
+    "color": "#3FCF8E",
+    "desc": "https://supabase.com",
+    "docsUrl": "supabase",
+    "fullTitle": "Supabase",
+    "group": "application",
+    "id": "Supabase",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Supabase"
+  },
+  {
+    "color": "#FF3E00",
+    "desc": "https://svelte.dev",
+    "docsUrl": "svelte",
+    "fullTitle": "Svelte",
+    "group": "application",
+    "id": "Svelte",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Svelte"
+  },
+  {
+    "color": "#F05138",
+    "desc": "https://www.swift.org",
+    "docsUrl": "swift",
+    "fullTitle": "Swift",
+    "group": "application",
+    "id": "Swift",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Swift"
+  },
+  {
     "color": "#0000FF",
     "desc": "https://sync.so",
     "docsUrl": "sync",
@@ -5307,6 +8993,44 @@
       "hasTextColor": false
     },
     "title": "Sync"
+  },
+  {
+    "color": "#06B6D4",
+    "desc": "https://tailwindcss.com",
+    "docsUrl": "tailwind-css",
+    "fullTitle": "Tailwind CSS",
+    "group": "application",
+    "id": "TailwindCSS",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tailwind CSS"
+  },
+  {
+    "color": "#E94F20",
+    "desc": "https://www.taobao.com",
+    "docsUrl": "taobao",
+    "fullTitle": "Taobao",
+    "group": "application",
+    "id": "Taobao",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Taobao"
   },
   {
     "color": "#68C3FF",
@@ -5347,6 +9071,25 @@
     "title": "Tavily"
   },
   {
+    "color": "#26A5E4",
+    "desc": "https://telegram.org",
+    "docsUrl": "telegram",
+    "fullTitle": "Telegram",
+    "group": "application",
+    "id": "Telegram",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Telegram"
+  },
+  {
     "color": "#0052D9",
     "desc": "https://tencent.com",
     "docsUrl": "tencent",
@@ -5383,6 +9126,82 @@
       "hasTextColor": false
     },
     "title": "TencentCloud"
+  },
+  {
+    "color": "#FF6F00",
+    "desc": "https://www.tensorflow.org",
+    "docsUrl": "tensor-flow",
+    "fullTitle": "TensorFlow",
+    "group": "application",
+    "id": "TensorFlow",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TensorFlow"
+  },
+  {
+    "color": "#844FBA",
+    "desc": "https://www.terraform.io",
+    "docsUrl": "terraform",
+    "fullTitle": "Terraform",
+    "group": "application",
+    "id": "Terraform",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Terraform"
+  },
+  {
+    "color": "#CC0000",
+    "desc": "https://www.tesla.com",
+    "docsUrl": "tesla",
+    "fullTitle": "Tesla",
+    "group": "application",
+    "id": "Tesla",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tesla"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.threads.com",
+    "docsUrl": "threads",
+    "fullTitle": "Threads",
+    "group": "application",
+    "id": "Threads",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Threads"
   },
   {
     "color": "#0057ff",
@@ -5424,6 +9243,44 @@
     "title": "Technology Innovation Institute"
   },
   {
+    "color": "#000000",
+    "desc": "https://www.tiktok.com",
+    "docsUrl": "tik-tok",
+    "fullTitle": "TikTok",
+    "group": "application",
+    "id": "TikTok",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TikTok"
+  },
+  {
+    "color": "#E44332",
+    "desc": "https://www.todoist.com",
+    "docsUrl": "todoist",
+    "fullTitle": "Todoist",
+    "group": "application",
+    "id": "Todoist",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Todoist"
+  },
+  {
     "color": "#fff",
     "desc": "https://together.ai",
     "docsUrl": "together",
@@ -5462,6 +9319,25 @@
     "title": "TopazLabs"
   },
   {
+    "color": "#7D4698",
+    "desc": "https://www.torproject.org",
+    "docsUrl": "tor-project",
+    "fullTitle": "Tor Project",
+    "group": "application",
+    "id": "TorProject",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tor Project"
+  },
+  {
     "color": "#32F08C",
     "desc": "https://trae.ai",
     "docsUrl": "trae",
@@ -5479,6 +9355,44 @@
       "hasTextColor": false
     },
     "title": "TRAE"
+  },
+  {
+    "color": "#0052CC",
+    "desc": "https://trello.com",
+    "docsUrl": "trello",
+    "fullTitle": "Trello",
+    "group": "application",
+    "id": "Trello",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Trello"
+  },
+  {
+    "color": "#34E0A1",
+    "desc": "https://www.tripadvisor.com",
+    "docsUrl": "tripadvisor",
+    "fullTitle": "Tripadvisor",
+    "group": "application",
+    "id": "Tripadvisor",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tripadvisor"
   },
   {
     "color": "#000",
@@ -5500,6 +9414,44 @@
     "title": "Tripo"
   },
   {
+    "color": "#00B67A",
+    "desc": "https://www.trustpilot.com",
+    "docsUrl": "trustpilot",
+    "fullTitle": "Trustpilot",
+    "group": "application",
+    "id": "Trustpilot",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Trustpilot"
+  },
+  {
+    "color": "#36465D",
+    "desc": "https://www.tumblr.com",
+    "docsUrl": "tumblr",
+    "fullTitle": "Tumblr",
+    "group": "application",
+    "id": "Tumblr",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Tumblr"
+  },
+  {
     "color": "#F7AD8A",
     "colorGradient": "linear-gradient(-45deg, #FAD076, #F7AD8A, #C768B9)",
     "desc": "https://turix.ai",
@@ -5518,6 +9470,139 @@
       "hasTextColor": false
     },
     "title": "TuriX"
+  },
+  {
+    "color": "#9146FF",
+    "desc": "https://www.twitch.tv",
+    "docsUrl": "twitch",
+    "fullTitle": "Twitch",
+    "group": "application",
+    "id": "Twitch",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Twitch"
+  },
+  {
+    "color": "#262627",
+    "desc": "https://www.typeform.com",
+    "docsUrl": "typeform",
+    "fullTitle": "Typeform",
+    "group": "application",
+    "id": "Typeform",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Typeform"
+  },
+  {
+    "color": "#3178C6",
+    "desc": "https://www.typescriptlang.org",
+    "docsUrl": "type-script",
+    "fullTitle": "TypeScript",
+    "group": "application",
+    "id": "TypeScript",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TypeScript"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.uber.com",
+    "docsUrl": "uber",
+    "fullTitle": "Uber",
+    "group": "application",
+    "id": "Uber",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Uber"
+  },
+  {
+    "color": "#06C167",
+    "desc": "https://www.ubereats.com",
+    "docsUrl": "uber-eats",
+    "fullTitle": "Uber Eats",
+    "group": "application",
+    "id": "UberEats",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Uber Eats"
+  },
+  {
+    "color": "#E95420",
+    "desc": "https://ubuntu.com",
+    "docsUrl": "ubuntu",
+    "fullTitle": "Ubuntu",
+    "group": "application",
+    "id": "Ubuntu",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Ubuntu"
+  },
+  {
+    "color": "#A435F0",
+    "desc": "https://www.udemy.com",
+    "docsUrl": "udemy",
+    "fullTitle": "Udemy",
+    "group": "application",
+    "id": "Udemy",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Udemy"
   },
   {
     "color": "#e30a5d",
@@ -5595,6 +9680,25 @@
       "hasTextColor": false
     },
     "title": "Upsate"
+  },
+  {
+    "color": "#00E9A3",
+    "desc": "https://upstash.com",
+    "docsUrl": "upstash",
+    "fullTitle": "Upstash",
+    "group": "application",
+    "id": "Upstash",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Upstash"
   },
   {
     "color": "#000",
@@ -5692,6 +9796,25 @@
     "title": "VertexAI"
   },
   {
+    "color": "#7360F2",
+    "desc": "https://www.viber.com",
+    "docsUrl": "viber",
+    "fullTitle": "Viber",
+    "group": "application",
+    "id": "Viber",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Viber"
+  },
+  {
     "color": "#22D5FF",
     "colorGradient": "linear-gradient(to right, #40EDD8, #22D5FF, #047FFE)",
     "desc": "https://vidu.com",
@@ -5729,6 +9852,139 @@
       "hasTextColor": false
     },
     "title": "Viggle"
+  },
+  {
+    "color": "#019733",
+    "desc": "https://www.vim.org",
+    "docsUrl": "vim",
+    "fullTitle": "Vim",
+    "group": "application",
+    "id": "Vim",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vim"
+  },
+  {
+    "color": "#1A1F71",
+    "desc": "https://www.visa.com",
+    "docsUrl": "visa",
+    "fullTitle": "Visa",
+    "group": "application",
+    "id": "Visa",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Visa"
+  },
+  {
+    "color": "#9135FF",
+    "desc": "https://vite.dev",
+    "docsUrl": "vite",
+    "fullTitle": "Vite",
+    "group": "application",
+    "id": "Vite",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vite"
+  },
+  {
+    "color": "#00FF74",
+    "desc": "https://vitest.dev",
+    "docsUrl": "vitest",
+    "fullTitle": "Vitest",
+    "group": "application",
+    "id": "Vitest",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vitest"
+  },
+  {
+    "color": "#EF3939",
+    "desc": "https://vivaldi.com",
+    "docsUrl": "vivaldi",
+    "fullTitle": "Vivaldi",
+    "group": "application",
+    "id": "Vivaldi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Vivaldi"
+  },
+  {
+    "color": "#415FFF",
+    "desc": "https://www.vivo.com",
+    "docsUrl": "vivo",
+    "fullTitle": "vivo",
+    "group": "application",
+    "id": "Vivo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "vivo"
+  },
+  {
+    "color": "#0077FF",
+    "desc": "https://vk.com",
+    "docsUrl": "vk",
+    "fullTitle": "VK",
+    "group": "application",
+    "id": "VK",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "VK"
   },
   {
     "color": "#fff",
@@ -5788,6 +10044,63 @@
     "title": "Voyage"
   },
   {
+    "color": "#33CCFF",
+    "desc": "https://www.waze.com",
+    "docsUrl": "waze",
+    "fullTitle": "Waze",
+    "group": "application",
+    "id": "Waze",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Waze"
+  },
+  {
+    "color": "#07C160",
+    "desc": "https://www.wechat.com",
+    "docsUrl": "we-chat",
+    "fullTitle": "WeChat",
+    "group": "application",
+    "id": "WeChat",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WeChat"
+  },
+  {
+    "color": "#E6162D",
+    "desc": "https://weibo.com",
+    "docsUrl": "weibo",
+    "fullTitle": "Sina Weibo",
+    "group": "application",
+    "id": "Weibo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Sina Weibo"
+  },
+  {
     "color": "#167ADF",
     "colorGradient": "linear-gradient(to right, #0A51C3,  #23A4FB)",
     "desc": "https://yiyan.baidu.com",
@@ -5808,6 +10121,44 @@
     "title": "Wenxin"
   },
   {
+    "color": "#25D366",
+    "desc": "https://www.whatsapp.com",
+    "docsUrl": "whats-app",
+    "fullTitle": "WhatsApp",
+    "group": "application",
+    "id": "WhatsApp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WhatsApp"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.wikipedia.org",
+    "docsUrl": "wikipedia",
+    "fullTitle": "Wikipedia",
+    "group": "application",
+    "id": "Wikipedia",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wikipedia"
+  },
+  {
     "color": "#fff",
     "desc": "https://windsurf.com",
     "docsUrl": "windsurf",
@@ -5825,6 +10176,63 @@
       "hasTextColor": false
     },
     "title": "Windsurf"
+  },
+  {
+    "color": "#9FE870",
+    "desc": "https://wise.com",
+    "docsUrl": "wise",
+    "fullTitle": "Wise",
+    "group": "application",
+    "id": "Wise",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wise"
+  },
+  {
+    "color": "#0C6EFC",
+    "desc": "https://www.wix.com",
+    "docsUrl": "wix",
+    "fullTitle": "Wix",
+    "group": "application",
+    "id": "Wix",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Wix"
+  },
+  {
+    "color": "#21759B",
+    "desc": "https://wordpress.org",
+    "docsUrl": "word-press",
+    "fullTitle": "WordPress",
+    "group": "application",
+    "id": "WordPress",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "WordPress"
   },
   {
     "color": "#F38020",
@@ -5865,6 +10273,25 @@
     "title": "WorldRouter"
   },
   {
+    "color": "#000000",
+    "desc": "https://x.com",
+    "docsUrl": "x",
+    "fullTitle": "X (Twitter)",
+    "group": "application",
+    "id": "X",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "X (Twitter)"
+  },
+  {
     "color": "#fff",
     "desc": "https://x.ai",
     "docsUrl": "xai",
@@ -5882,6 +10309,44 @@
       "hasTextColor": false
     },
     "title": "Grok"
+  },
+  {
+    "color": "#FF2442",
+    "desc": "https://www.xiaohongshu.com",
+    "docsUrl": "xiaohongshu",
+    "fullTitle": "Xiaohongshu",
+    "group": "application",
+    "id": "Xiaohongshu",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Xiaohongshu"
+  },
+  {
+    "color": "#FF6900",
+    "desc": "https://www.mi.com",
+    "docsUrl": "xiaomi",
+    "fullTitle": "Xiaomi",
+    "group": "application",
+    "id": "Xiaomi",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Xiaomi"
   },
   {
     "color": "#000",
@@ -5979,6 +10444,63 @@
     "title": "Yandex"
   },
   {
+    "color": "#2C8EBB",
+    "desc": "https://yarnpkg.com",
+    "docsUrl": "yarn",
+    "fullTitle": "Yarn",
+    "group": "application",
+    "id": "Yarn",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Yarn"
+  },
+  {
+    "color": "#F0652F",
+    "desc": "https://www.ycombinator.com",
+    "docsUrl": "y-combinator",
+    "fullTitle": "Y Combinator",
+    "group": "application",
+    "id": "YCombinator",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Y Combinator"
+  },
+  {
+    "color": "#FF1A1A",
+    "desc": "https://www.yelp.com",
+    "docsUrl": "yelp",
+    "fullTitle": "Yelp",
+    "group": "application",
+    "id": "Yelp",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Yelp"
+  },
+  {
     "color": "#003425",
     "desc": "https://github.com/01-ai/Yi",
     "docsUrl": "yi",
@@ -6015,6 +10537,44 @@
       "hasTextColor": false
     },
     "title": "YouMind"
+  },
+  {
+    "color": "#FF0000",
+    "desc": "https://www.youtube.com",
+    "docsUrl": "you-tube",
+    "fullTitle": "YouTube",
+    "group": "application",
+    "id": "YouTube",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "YouTube"
+  },
+  {
+    "color": "#FF0000",
+    "desc": "https://music.youtube.com",
+    "docsUrl": "you-tube-music",
+    "fullTitle": "YouTube Music",
+    "group": "application",
+    "id": "YouTubeMusic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "YouTube Music"
   },
   {
     "color": "#fff",
@@ -6150,6 +10710,25 @@
     "title": "01.AI"
   },
   {
+    "color": "#0084FF",
+    "desc": "https://www.zhihu.com",
+    "docsUrl": "zhihu",
+    "fullTitle": "Zhihu",
+    "group": "application",
+    "id": "Zhihu",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zhihu"
+  },
+  {
     "color": "#3859FF",
     "desc": "https://zhipuai.cn",
     "docsUrl": "zhipu",
@@ -6167,5 +10746,43 @@
       "hasTextColor": false
     },
     "title": "Zhipu"
+  },
+  {
+    "color": "#0B5CFF",
+    "desc": "https://zoom.us",
+    "docsUrl": "zoom",
+    "fullTitle": "Zoom",
+    "group": "application",
+    "id": "Zoom",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zoom"
+  },
+  {
+    "color": "#CC2936",
+    "desc": "https://www.zotero.org",
+    "docsUrl": "zotero",
+    "fullTitle": "Zotero",
+    "group": "application",
+    "id": "Zotero",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Zotero"
   }
 ]
