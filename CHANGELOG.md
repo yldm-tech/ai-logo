@@ -2,6 +2,17 @@
 
 # Changelog
 
+## [1.12.0](https://github.com/yldm-tech/ai-logo/compare/v1.11.0...v1.12.0) (2026-09-27)
+
+### Features
+
+- give mainstream services their own category and show them on the site ([f84c1ea](https://github.com/yldm-tech/ai-logo/commit/f84c1eab24d3f170f1a8f36acaa32ab081e614b3))
+
+### Documentation
+
+- make updating the site part of every change, not only icon changes ([bfb831a](https://github.com/yldm-tech/ai-logo/commit/bfb831ab82ed3b26df6cc7ba81eb620b8d853453))
+- require the site to ship with every icon change ([66bd235](https://github.com/yldm-tech/ai-logo/commit/66bd235bfbd8cb289d38a0703a9a9a788d99b35e))
+
 ## [1.11.0](https://github.com/yldm-tech/ai-logo/compare/v1.10.0...v1.11.0) (2026-09-27)
 
 ### Features
