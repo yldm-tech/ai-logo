@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.13.0](https://github.com/yldm-tech/ai-logo/compare/v1.12.0...v1.13.0) (2026-09-27)
+
+### Features
+
+- add 311 more mainstream service icons from Simple Icons ([6c7a763](https://github.com/yldm-tech/ai-logo/commit/6c7a763adfa1d67a5363cdf4309692f4504285b1))
+
 ## [1.12.0](https://github.com/yldm-tech/ai-logo/compare/v1.11.0...v1.12.0) (2026-09-27)
 
 ### Features
