@@ -107,31 +107,32 @@ jobs:
             *) echo "::error::Released ${version}, which is not on the v1 line. An upstream tag is probably being treated as this project's last release."; exit 1 ;;
           esac
 
-      # semantic-release publishes @yldm-tech/ai-logo only. The unscoped `ai-logo` alias that re-exports
-      # it and the four static asset packages the CDN helper resolves go out here, at the same version.
+      # semantic-release publishes @yldm-tech/ai-logo only. The unscoped `ai-logo` alias that re-exports it and the four static asset packages the CDN helper resolves go out here, at the same version.
       #
-      # `!cancelled()` rather than success(): if the release step fails after npm publish has already
-      # run, package.json holds the new version and these scripts — each of which skips a name already
-      # published at that version — complete the set instead of leaving it half-released forever. When
-      # no release happened they are no-ops, because every name is already published at that version.
+      # `!cancelled()` rather than success(): if the release step fails after npm publish has already run, package.json holds the new version and these scripts — each of which skips a name already published at that version — complete the set instead of leaving it half-released forever. When no release happened they publish whatever of the set is still missing at the current version, and are no-ops once all of it is there.
       #
-      # What `!cancelled()` cannot tell on its own is which side of the publish the failure landed on.
-      # @semantic-release/npm writes the new version into package.json during prepare, and two prepare
-      # plugins run after it, so a failure there leaves the version bumped with nothing published. That
-      # is how `ai-logo@1.9.1` reached the registry depending on a `@yldm-tech/ai-logo@1.9.1` that does
-      # not exist, which makes `npm i ai-logo` fail outright: the release step died in
-      # @semantic-release/git, one step before the publish.
+      # What `!cancelled()` cannot tell on its own is which side of the publish the failure landed on. @semantic-release/npm writes the new version into package.json during prepare, and two prepare plugins run after it, so a failure there leaves the version bumped with nothing published. That is how `ai-logo@1.9.1` reached the registry depending on a `@yldm-tech/ai-logo@1.9.1` that does not exist, which makes `npm i ai-logo` fail outright: the release step died in @semantic-release/git, one step before the publish.
       #
-      # So the condition is the registry rather than the exit status — a name the alias points at has to
-      # be there before the alias claiming it goes out. npm needs a moment to make a new version
-      # readable, hence the retries; this runs seconds after the publish that creates it.
+      # So when this run's release step succeeded and moved the version, semantic-release has itself just published it — it exits 0 only after @semantic-release/npm's publish returned — and that is the answer. Asking the registry instead is what kept the set at 1.9.2: every release from 1.10.0 to 1.14.0 published the primary, then failed to read it back within the minute this step used to wait, and skipped the alias and the static packages with nothing but a warning. The registry serves packuments with `cache-control: max-age=300`, so a version published seconds ago can stay invisible for five minutes. The registry is consulted only when the exit status cannot answer — the release step failed, or released nothing — and it is given longer than that cache lifetime.
+      #
+      # Skipping the set is a failure, not a warning. As a warning it went unnoticed across five green releases.
       - name: Released version is on the registry
         id: primary
         if: ${{ !cancelled() }}
+        env:
+          RELEASE_OUTCOME: ${{ steps.release.outcome }}
+          VERSION_BEFORE: ${{ steps.release.outputs.version_before }}
+          VERSION_AFTER: ${{ steps.release.outputs.version_after }}
         run: |
           version=$(node -p "require('./package.json').version")
-          for _ in 1 2 3 4 5 6; do
-            if npm view "@yldm-tech/ai-logo@${version}" version >/dev/null 2>&1; then
+          if [ "${RELEASE_OUTCOME}" = "success" ] && [ "${VERSION_BEFORE}" != "${VERSION_AFTER}" ]; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "semantic-release published @yldm-tech/ai-logo@${version} in this run."
+            exit 0
+          fi
+          # 36 attempts 10 seconds apart outlast the registry's five-minute packument cache.
+          for _ in $(seq 1 36); do
+            if output=$(npm view "@yldm-tech/ai-logo@${version}" version 2>&1); then
               echo "published=true" >> "$GITHUB_OUTPUT"
               echo "@yldm-tech/ai-logo@${version} is on the registry."
               exit 0
@@ -139,7 +140,9 @@ jobs:
             sleep 10
           done
           echo "published=false" >> "$GITHUB_OUTPUT"
-          echo "::warning::@yldm-tech/ai-logo@${version} is not on the registry, so the alias and the static packages are skipped. They would otherwise be published at a version the package they point at does not have."
+          echo "${output}"
+          echo "::error::@yldm-tech/ai-logo@${version} is not on the registry, so the alias and the static packages are skipped. They would otherwise be published at a version the package they point at does not have."
+          exit 1
 
       - name: Publish unscoped alias
         if: ${{ !cancelled() && steps.primary.outputs.published == 'true' }}
