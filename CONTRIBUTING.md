@@ -72,6 +72,8 @@ Copy the closest existing brand rather than starting from scratch. Then:
 
 5. Run `pnpm run build:static` to render the new files under `packages/static-*`, and commit them. They are committed build outputs, not generated in CI, and `tests/staticAssets.test.ts` asserts that every variant `src/toc.json` advertises has an SVG behind it — so a brand added without this step fails the test suite and leaves the documented CDN paths 404ing. The script installs a Chrome for puppeteer if there is not one already and re-renders the whole set rather than just what changed, so check `git status` afterwards: stage your brand's files across `static-svg`, `static-png`, `static-webp` and `static-avatar`, and leave any unrelated churn out of the commit.
 
+   The same command also rebuilds the compressed archives under `mygo/` and `mygo/avatar/`. They are the offline assets for the Go/MyGo module; `pnpm run check:mygo` verifies that they contain exactly the committed SVG and avatar outputs.
+
 6. Run `pnpm run sync:md` to regenerate the README icon table, then `npx remark --quiet --output -- README.md`. CI regenerates both and fails on a diff.
 
 7. Port the icon to react-native with `pnpm run auto-converter-web-icons-to-rn`. It converts what `packages/react-native/src/icons` is missing, updates that package's exports and syncs the feature configs. Review the diff — it is code generation, not a build step — and check it with `pnpm --dir packages/react-native run type-check`, which is what CI runs. The port is not published and CI does not check that it is complete, so skipping this does not fail anything; it just leaves the port one brand further behind `src/`.

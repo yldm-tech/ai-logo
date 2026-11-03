@@ -69,17 +69,22 @@
   "hero": {
     "badge": "{{brands}} ブランド · うち {{color}} はカラー · MIT",
     "browse": "{{count}} 個のアイコンを見る",
-    "sub": "AI プロバイダー、モデル、アプリケーションに加え、数百の主要サービスのロゴを型付きの React コンポーネントとして提供します。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から配信しています。",
+    "sub": "AI プロバイダー、モデル、アプリケーションに加え、数百の主要サービスのロゴを型付きの React コンポーネントとして提供します。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から配信しています。 MyGo ネイティブ UI 用の Go モジュールも含まれます。",
     "title": "すべての AI ブランドを、<a>1 行の import で</a>"
   },
   "install": {
     "eyebrow": "インストール",
     "peers": "<c>react</c>、<c>react-dom</c>、<c>antd</c> は peer 依存です。同じビルドが <c>{{alias}}</c> という名前でも同じバージョンで公開されています。どちらか一方を選んでください。",
-    "title": "プロジェクトに追加する"
+    "title": "プロジェクトに追加する",
+    "mygo": {
+      "eyebrow": "Go / MyGo",
+      "title": "ネイティブデスクトップにも",
+      "sub": "<c>{{module}}</c> をインストールすると、MyGo のネイティブ UI アプリで同じ SVG アイコンを使えます。任意の avatar サブパッケージでは WebP のアバターも利用できます。"
+    }
   },
   "meta": {
-    "description": "AI プロバイダー、モデル、アプリケーションに加え、数百の主要サービスのロゴを型付きの React コンポーネントで提供。カラー、ワードマーク、ロックアップ、アバターのバリアント付き。静的な SVG・PNG・WebP も CDN から。MIT ライセンス。",
-    "title": "AI Logo — AI と主要サービスのブランドアイコン {{count}} 種、React と CDN"
+    "description": "AI プロバイダー、モデル、アプリケーションと数百の主要サービスのブランドロゴを、型付き React コンポーネント、MyGo 用 Go モジュール、CDN 上の静的 SVG・PNG・WebP で提供します。MIT ライセンス。",
+    "title": "AI Logo — AI と主要サービスのブランドアイコン {{count}} 種、React、Go、CDN 向け"
   },
   "nav": {
     "github": "GitHub リポジトリ",
@@ -96,7 +101,7 @@
     "colour": "がフルカラー",
     "colourNote": "残りは currentColor を継承",
     "formats": "種類の配布形式",
-    "formatsNote": "React、SVG、PNG、WebP",
+    "formatsNote": "React、Go/MyGo、SVG、PNG、WebP",
     "variants": "種類のバリアント",
     "variantsNote": "モノクロ、カラー、ワードマーク、ロックアップ、アバター"
   },

@@ -4,7 +4,7 @@
 
 <h1>AI Logo</h1>
 
-Popular AI / LLM Model Brand SVG Logo and Icon Collection for React.<br/>
+Popular AI / LLM Model Brand SVG Logo and Icon Collection for React, Go and MyGo.<br/>
 Contributions, corrections & requests can be made on GitHub.
 
 **[ailogo.yldm.ai][site-link]** — browse all 1298 marks, every variant, in 11 languages.
@@ -38,6 +38,7 @@ Contributions, corrections & requests can be made on GitHub.
   - [I'm an Human](#im-an-human)
   - [Usage](#usage)
   - [Packages](#packages)
+  - [Go / MyGo](#go--mygo)
 - [🌐 Website](#-website)
 - [✨ Features](#-features)
 - [🤯 CDN Usage](#-cdn-usage)
@@ -142,6 +143,26 @@ The same files live in this repository under `packages/static-*`, which is what 
 
 A fifth package, `@yldm-tech/ai-logo-rn`, ports the icons to `react-native-svg` and lives under `packages/react-native`. It is `private` and not published — see [its README](./packages/react-native/README.md) for why and for what using it today involves.
 
+### Go / MyGo
+
+The [`github.com/yldm-tech/ai-logo/mygo`](./mygo) Go module packages the same vector SVG variants for [MyGo](https://github.com/egoist/mygo) native UI apps. It parses marks lazily, so an app only pays for the icons it requests. The optional `github.com/yldm-tech/ai-logo/mygo/avatar` subpackage provides the rendered WebP avatars.
+
+```bash
+go get github.com/yldm-tech/ai-logo/mygo
+```
+
+```go
+import (
+    "github.com/egoist/mygo/ui"
+    ailogo "github.com/yldm-tech/ai-logo/mygo"
+)
+
+logo := ailogo.MustParse("openai", ailogo.Mono)
+ui.Icon(c, logo).Size(24, 24)
+```
+
+Available vector variants are `Mono`, `Color`, `Text`, `TextColor`, `TextCn`, `Brand` and `BrandColor`. See [`mygo/README.md`](./mygo/README.md) for lookup, CDN and avatar examples.
+
 <div align="right">
 
 [![][back-to-top]](#readme-top)
@@ -165,6 +186,7 @@ The site is translated into 11 languages — English, Simplified and Traditional
 ## ✨ Features
 
 - 🚀 **Lightweight & Scalable**: Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.
+- 🖥️ **Go and MyGo**: The `github.com/yldm-tech/ai-logo/mygo` module brings the same vector variants and optional avatars to native MyGo desktop applications, with lazy parsing and offline embedded assets.
 - 🌳 **Tree Shakable**: Importing a brand directly — `import { OpenAI } from "@yldm-tech/ai-logo"` — pulls in that brand and nothing else, around 216 kB against the full set. The lookup components are the exception: `ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id string at runtime, so they necessarily carry their whole mapping table and cost roughly 1.7 MB. Reach for them when the id is dynamic, and for the brand export when it is not. Both sizes are pinned by a budget in `apps/site/treeshake`.
 - 🎨 **Every Major Model**: 1298 brands — AI companies, models and applications, plus mainstream services beyond AI: social networks, developer tools, productivity apps, media, gaming, payments, commerce, travel, hardware and automotive. Every one ships a mono mark, and most add some combination of color, text, combined and avatar variants — which ones a given brand has is listed on [the website][site-link] and attached in `src/<Brand>/index.ts`. The non-AI services are ported from [Simple Icons](https://simpleicons.org) and ship mono, color and avatar variants; see [THIRD\_PARTY\_NOTICES.md](./THIRD_PARTY_NOTICES.md) for their licensing.
 

@@ -72,6 +72,13 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: Check MyGo assets
+        run: pnpm run check:mygo
+
+      - name: Test the MyGo module
+        working-directory: mygo
+        run: GOTOOLCHAIN=auto go test ./...
+
       # This gate used to be strictly weaker than the pull request one, and the gap was the part that reaches a consumer: apps/site is where the bundle budgets live, so nothing checked tree-shaking before a publish. The regression those budgets exist for — an icon import pulling in all 323, 3219 kB against 216 kB — type-checks and tests clean, which means every other step here would have passed it straight through to npm.
       #
       # The site also imports the package through node_modules the way a published dependency resolves, so its type-check and its smoke test are the closest thing this repository has to installing the tarball and using it. Both need es/, which the Build step above has just produced.
@@ -106,6 +113,22 @@ jobs:
             1.*) ;;
             *) echo "::error::Released ${version}, which is not on the v1 line. An upstream tag is probably being treated as this project's last release."; exit 1 ;;
           esac
+
+      # `mygo/` is a nested Go module, so the Go tool looks for tags prefixed by
+      # the module directory rather than the root npm tag. Keep that tag on the
+      # exact release commit so `go get github.com/yldm-tech/ai-logo/mygo@vX.Y.Z`
+      # resolves the same assets as the npm packages.
+      - name: Tag the MyGo module
+        if: steps.release.outputs.version_before != steps.release.outputs.version_after
+        run: |
+          version="${{ steps.release.outputs.version_after }}"
+          tag="mygo/v${version}"
+          if git rev-parse --verify --quiet "refs/tags/${tag}" >/dev/null; then
+            echo "${tag} already exists."
+          else
+            git tag "${tag}"
+            git push origin "${tag}"
+          fi
 
       # semantic-release publishes @yldm-tech/ai-logo only. The unscoped `ai-logo` alias that re-exports it and the four static asset packages the CDN helper resolves go out here, at the same version.
       #
