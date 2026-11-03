@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import { Code } from "../components/Code";
 import { CopyButton } from "../components/Copy";
-import { CDN, entries, type IconEntry, PKG, preferred, stats } from "../registry";
+import { CDN, entries, GO_MODULE, type IconEntry, PKG, preferred, stats } from "../registry";
 import { galleryRegistry } from "./registry";
 import { type Filter, useStore } from "../store";
 
@@ -76,6 +76,9 @@ const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) =
 
   if (!Icon) return null;
   const importLine = `import { ${entry.id} } from "${PKG}";`;
+  const goCode = `import ailogo "${GO_MODULE}"
+
+logo := ailogo.MustParse("${entry.id.toLowerCase()}", ailogo.Mono)`;
 
   return (
     <motion.section
@@ -142,22 +145,41 @@ const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) =
           })}
         </div>
 
-        <div className="mt-4 grid gap-2.5 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <Code code={importLine} copy={false} />
-          <div className="flex flex-wrap items-center gap-2">
-            <CopyButton label={t("copy.copyImport")} value={importLine} />
-            {assetLinks(entry).map(({ href, label }) => (
-              <a
-                className="rounded-lg border border-line px-2.5 py-1.5 text-[11px] font-medium text-dim transition hover:border-line-strong hover:bg-elevated hover:text-ink"
-                href={href}
-                key={label}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {label}
-              </a>
-            ))}
+        <div className="mt-4 grid gap-2.5 lg:grid-cols-2">
+          <div className="min-w-0">
+            <div className="mb-2 flex items-center justify-between gap-2">
+              <span className="rounded-full bg-accent-soft px-2.5 py-1 font-mono text-[11px] text-accent">
+                {t("gallery.react")}
+              </span>
+              <CopyButton label={t("copy.copyImport")} value={importLine} />
+            </div>
+            <Code code={importLine} copy={false} />
           </div>
+
+          <div className="min-w-0">
+            <div className="mb-2 flex items-center justify-between gap-2">
+              <span className="rounded-full bg-accent-2/10 px-2.5 py-1 font-mono text-[11px] text-accent-2">
+                {t("install.mygo.eyebrow")}
+              </span>
+              <CopyButton label={t("copy.copy")} value={goCode} />
+            </div>
+            <Code code={goCode} copy={false} />
+          </div>
+        </div>
+
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          {assetLinks(entry).map(({ href, label }) => (
+            <a
+              className="rounded-lg border border-line px-2.5 py-1.5 text-[11px] font-medium text-dim transition hover:border-line-strong hover:bg-elevated hover:text-ink"
+              href={href}
+              key={label}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {label}
+            </a>
+          ))}
+          <span className="ms-auto text-[11px] text-faint">{t("gallery.assets")}</span>
         </div>
       </div>
     </motion.section>

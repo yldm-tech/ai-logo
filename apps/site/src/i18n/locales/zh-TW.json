@@ -64,7 +64,9 @@
     "services": "常用服務",
     "shown": "顯示 {{count}} 個",
     "shown_other": "顯示 {{count}} 個",
-    "skip": "略過圖示網格"
+    "skip": "略過圖示網格",
+    "react": "React",
+    "assets": "資源"
   },
   "hero": {
     "badge": "{{brands}} 個品牌 · {{color}} 個彩色 · MIT",

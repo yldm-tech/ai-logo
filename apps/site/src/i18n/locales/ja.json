@@ -64,7 +64,9 @@
     "services": "サービス",
     "shown": "{{count}} 件表示",
     "shown_other": "{{count}} 件表示",
-    "skip": "アイコングリッドをスキップ"
+    "skip": "アイコングリッドをスキップ",
+    "react": "React",
+    "assets": "アセット"
   },
   "hero": {
     "badge": "{{brands}} ブランド · うち {{color}} はカラー · MIT",

@@ -66,7 +66,9 @@
     "shown_many": "{{count}} exibidas",
     "shown_one": "{{count}} exibida",
     "shown_other": "{{count}} exibidas",
-    "skip": "Pular a grade de ícones"
+    "skip": "Pular a grade de ícones",
+    "react": "React",
+    "assets": "Recursos"
   },
   "hero": {
     "badge": "{{brands}} marcas · {{color}} coloridas · MIT",

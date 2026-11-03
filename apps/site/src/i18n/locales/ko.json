@@ -64,7 +64,9 @@
     "services": "서비스",
     "shown": "{{count}}개 표시",
     "shown_other": "{{count}}개 표시",
-    "skip": "아이콘 그리드 건너뛰기"
+    "skip": "아이콘 그리드 건너뛰기",
+    "react": "React",
+    "assets": "에셋"
   },
   "hero": {
     "badge": "{{brands}}개 브랜드 · {{color}}개 컬러 · MIT",

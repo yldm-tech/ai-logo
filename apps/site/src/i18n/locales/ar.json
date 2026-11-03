@@ -69,7 +69,9 @@
     "shown_other": "{{count}} علامة معروضة",
     "shown_two": "{{count}} علامتان معروضتان",
     "shown_zero": "{{count}} علامة معروضة",
-    "skip": "تخطّي شبكة الأيقونات"
+    "skip": "تخطّي شبكة الأيقونات",
+    "react": "React",
+    "assets": "الأصول"
   },
   "hero": {
     "badge": "{{brands}} علامة · {{color}} بالألوان · MIT",

@@ -65,7 +65,9 @@
     "shown": "{{count}} angezeigt",
     "shown_one": "{{count}} angezeigt",
     "shown_other": "{{count}} angezeigt",
-    "skip": "Icon-Raster überspringen"
+    "skip": "Icon-Raster überspringen",
+    "react": "React",
+    "assets": "Assets"
   },
   "hero": {
     "badge": "{{brands}} Marken · {{color}} in Farbe · MIT",
