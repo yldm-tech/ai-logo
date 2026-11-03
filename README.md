@@ -34,8 +34,8 @@ Contributions, corrections & requests can be made on GitHub.
 #### TOC
 
 - [📦 Installation](#-installation)
-  - [I'm an Agent](#im-an-agent)
-  - [I'm an Human](#im-an-human)
+  - [For agents](#for-agents)
+  - [For humans](#for-humans)
   - [Usage](#usage)
   - [Packages](#packages)
   - [Go / MyGo](#go--mygo)
@@ -57,7 +57,7 @@ Contributions, corrections & requests can be made on GitHub.
 
 ## 📦 Installation
 
-### I'm an Agent
+### For agents
 
 Send this prompt to your agent to use ai-logo
 
@@ -65,7 +65,7 @@ Send this prompt to your agent to use ai-logo
 Read https://github.com/yldm-tech/ai-logo/blob/main/README.md and follow the instructions to use @yldm-tech/ai-logo.
 ```
 
-### I'm an Human
+### For humans
 
 Install `@yldm-tech/ai-logo` and start using the icon set.
 
@@ -130,7 +130,7 @@ toc.map((entry) => entry.id); // "OpenAI", "Anthropic", …
 | <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`@yldm-tech/ai-logo`** | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo)](https://www.npmjs.com/package/@yldm-tech/ai-logo) | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo) | [Source](https://github.com/yldm-tech/ai-logo/tree/main/src)            |
 | <img src="https://github.com/user-attachments/assets/411f5124-9460-43dc-9d91-3d3c3da05b30" alt="React logo" width="48"> | **`ai-logo`** (alias)    | [![npm](https://img.shields.io/npm/v/ai-logo)](https://www.npmjs.com/package/ai-logo)                       | ![NPM Downloads](https://img.shields.io/npm/dw/ai-logo)            | [Source](https://github.com/yldm-tech/ai-logo/tree/main/packages/alias) |
 
-Four more packages carry the rendered files rather than React components. They have no code, no dependencies and no build — just the images, published at the same version as `@yldm-tech/ai-logo` so the whole set can be pinned together. Install one when you want the assets on disk; reach for [CDN Usage](#-cdn-usage) when you do not.
+The published JavaScript packages share one release version. The main package contains the typed React components; the alias, static assets and React Native port serve narrower integration needs.
 
 | Package                                | Version                                                                                                                                 | Downloads                                                                        | Contents                                                     |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -139,9 +139,9 @@ Four more packages carry the rendered files rather than React components. They h
 | **`@yldm-tech/ai-logo-static-webp`**   | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo-static-webp)](https://www.npmjs.com/package/@yldm-tech/ai-logo-static-webp)     | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo-static-webp)   | `light/` and `dark/` WebP renders, the smallest of the three |
 | **`@yldm-tech/ai-logo-static-avatar`** | [![npm](https://img.shields.io/npm/v/@yldm-tech/ai-logo-static-avatar)](https://www.npmjs.com/package/@yldm-tech/ai-logo-static-avatar) | ![NPM Downloads](https://img.shields.io/npm/dw/@yldm-tech/ai-logo-static-avatar) | `avatars/` — one square WebP avatar per icon                 |
 
-The same files live in this repository under `packages/static-*`, which is what the CDN paths below and `getLobeIconCDN`'s jsDelivr and unpkg hosts resolve to.
+The static package files live in this repository under `packages/static-*`. The CDN paths below and `getLobeIconCDN`'s jsDelivr and unpkg hosts resolve to those generated files.
 
-A fifth package, `@yldm-tech/ai-logo-rn`, ports the icons to `react-native-svg` and lives under `packages/react-native`. It is `private` and not published — see [its README](./packages/react-native/README.md) for why and for what using it today involves.
+The React Native port, `@yldm-tech/ai-logo-rn`, lives under `packages/react-native`. It is private and not published; see [its README](./packages/react-native/README.md) for its current usage and limitations.
 
 ### Go / MyGo
 
@@ -150,6 +150,14 @@ The [`github.com/yldm-tech/ai-logo/mygo`](./mygo) Go module packages the same ve
 ```bash
 go get github.com/yldm-tech/ai-logo/mygo
 ```
+
+The module is released with the same version line as the JavaScript packages. Pin it when you need reproducible builds:
+
+```bash
+go get github.com/yldm-tech/ai-logo/mygo@latest
+```
+
+Replace `latest` with a published `vX.Y.Z` tag when pinning a release.
 
 ```go
 import (
@@ -1347,15 +1355,19 @@ $ pnpm start
 
 pnpm is required here rather than optional. The toolchain is [Vite+](https://viteplus.dev), which aliases `vite` to its own core through a catalog and overrides declared in `pnpm-workspace.yaml` — a file only pnpm reads. Installing with npm, yarn or bun resolves the real `vite` instead and `vp pack` refuses to run.
 
-| Task       | Command          |
-| ---------- | ---------------- |
-| Install    | `pnpm install`   |
-| Dev server | `pnpm start`     |
-| Build      | `pnpm run build` |
-| Test       | `pnpm run test`  |
-| Lint       | `pnpm run ci`    |
+| Task          | Command                 |
+| ------------- | ----------------------- |
+| Install       | `pnpm install`          |
+| Dev server    | `pnpm start`            |
+| Build         | `pnpm run build`        |
+| Static assets | `pnpm run build:static` |
+| MyGo assets   | `pnpm run check:mygo`   |
+| Test          | `pnpm run test`         |
+| Lint          | `pnpm run ci`           |
 
 `pnpm run build` regenerates `src/toc.json` and then runs `vp pack`, which bundles `src/index.ts` into `es/index.mjs` with types alongside.
+
+`pnpm run build:static` renders the committed SVG, PNG, WebP and avatar files, then rebuilds the compressed archives embedded by the MyGo module. Run `pnpm run check:mygo` after changing generated assets; it fails when either archive is out of sync.
 
 <div align="right">
 
