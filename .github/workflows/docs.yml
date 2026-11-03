@@ -19,6 +19,12 @@ on:
       - "package.json"
       - "pnpm-lock.yaml"
       - ".github/workflows/docs.yml"
+  # semantic-release uses [skip ci] on its version commit so the release workflow
+  # cannot trigger this deployment through push. The published release event is
+  # the corresponding deployment trigger for the version shown by the site.
+  release:
+    types:
+      - published
   workflow_dispatch:
 
 # Pages deployment authenticates through OIDC, so no token needs to be stored.
