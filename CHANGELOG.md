@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.17.0](https://github.com/yldm-tech/ai-logo/compare/v1.16.0...v1.17.0) (2026-11-03)
+
+### Features
+
+- show Go examples in gallery details ([e269180](https://github.com/yldm-tech/ai-logo/commit/e269180e72de69a7eed50291f9debcca5057882e))
+
 ## [1.16.0](https://github.com/yldm-tech/ai-logo/compare/v1.15.0...v1.16.0) (2026-11-03)
 
 ### Features
