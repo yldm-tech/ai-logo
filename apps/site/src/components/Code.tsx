@@ -63,9 +63,9 @@ export const Code = ({
 );
 
 /** A shell command reads as something to run, so it gets a prompt marker and sits on one line with the copy affordance always visible. */
-export const Command = ({ command }: { command: string }) => (
+export const Command = ({ className = "", command }: { className?: string; command: string }) => (
   <div
-    className="flex items-center gap-3 rounded-xl border border-line bg-surface px-4 py-3"
+    className={`flex items-center gap-3 rounded-xl border border-line bg-surface px-4 py-3 ${className}`}
     dir="ltr"
   >
     <span aria-hidden className="font-mono text-sm text-faint select-none">
