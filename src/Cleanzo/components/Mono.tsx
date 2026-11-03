@@ -1,0 +1,28 @@
+"use client";
+
+import { memo } from "react";
+
+import type { IconType } from "@/types";
+
+import { TITLE } from "../style";
+
+// Mono is traced from the app's official icon: its mark, without the tile, in one colour.
+const Icon: IconType = memo(({ size = "1em", style, ...rest }) => {
+  return (
+    <svg
+      fill="currentColor"
+      fillRule="evenodd"
+      height={size}
+      style={{ flex: "none", lineHeight: 1, ...style }}
+      viewBox="0 0 24 24"
+      width={size}
+      xmlns="http://www.w3.org/2000/svg"
+      {...rest}
+    >
+      <title>{TITLE}</title>
+      <path d="M10.96 2.61c-2.95 4.97 -3.74 5.72 -9.59 9.09 -0.26 0.15 -0.47 0.28 -0.47 0.3 0 0.02 0.21 0.15 0.47 0.29 6.04 3.47 6.86 4.29 10.35 10.35 0.14 0.26 0.27 0.47 0.29 0.47 0.02 -0 0.15 -0.21 0.29 -0.47 3.48 -6.05 4.29 -6.86 10.35 -10.35 0.26 -0.14 0.47 -0.27 0.47 -0.29 0 -0.02 -0.19 -0.14 -0.41 -0.26 -2.44 -1.41 -2.98 -1.77 -2.69 -1.77 0.3 -0 0.88 -0.67 1.04 -1.22 0.54 -1.84 -1.7 -3.22 -3.15 -1.95 -0.24 0.21 -0.59 0.84 -0.59 1.07 -0.01 0.39 -0.09 0.36 -0.69 -0.23 -1.21 -1.19 -2 -2.33 -3.97 -5.68 -0.34 -0.59 -0.63 -1.06 -0.65 -1.06 -0.02 -0 -0.48 0.77 -1.04 1.71zM3.22 17.69c-0.81 0.54 -0.45 1.77 0.51 1.77 0.78 -0 1.23 -0.79 0.84 -1.46 -0.26 -0.45 -0.92 -0.6 -1.34 -0.31z" />
+    </svg>
+  );
+});
+
+export default Icon;
