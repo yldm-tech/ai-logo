@@ -24,6 +24,7 @@ export type Group = (typeof groups)[number];
 
 export const PKG = "@yldm-tech/ai-logo";
 export const ALIAS = "ai-logo";
+export const GO_MODULE = "github.com/yldm-tech/ai-logo/mygo";
 export const CDN = "https://ailogo.yldm.ai";
 export const REPO = "https://github.com/yldm-tech/ai-logo";
 

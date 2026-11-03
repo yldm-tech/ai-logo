@@ -69,17 +69,22 @@
   "hero": {
     "badge": "{{brands}} 個品牌 · {{color}} 個彩色 · MIT",
     "browse": "瀏覽 {{count}} 個圖示",
-    "sub": "AI 服務商、模型與應用，以及數百個主流服務的品牌圖示。以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。",
+    "sub": "AI 服務商、模型與應用，以及數百個主流服務的品牌圖示。以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。 同時提供面向 MyGo 原生 UI 的 Go 模組。",
     "title": "每個 AI 品牌，<a>一行 import</a>"
   },
   "install": {
     "eyebrow": "安裝",
     "peers": "<c>react</c>、<c>react-dom</c> 與 <c>antd</c> 是 peer 相依套件。同一份建置也以 <c>{{alias}}</c> 的名稱發佈，版本一致，二選一即可，不要同時安裝。",
-    "title": "把它加進專案"
+    "title": "把它加進專案",
+    "mygo": {
+      "eyebrow": "Go / MyGo",
+      "title": "也支援原生桌面應用",
+      "sub": "安裝 <c>{{module}}</c>，即可在 MyGo 原生 UI 應用中使用同一套 SVG 圖示；可選的 avatar 子套件也提供 WebP 頭像。"
+    }
   },
   "meta": {
-    "description": "AI 服務商、模型與應用，以及數百個主流服務的品牌圖示，以帶型別的 React 元件提供，含單色、彩色、文字標、組合標與頭像；也提供 CDN 上的靜態 SVG、PNG 與 WebP。MIT 授權。",
-    "title": "AI Logo — {{count}} 個 AI 與主流服務品牌圖示，React 元件與 CDN"
+    "description": "AI 服務商、模型與應用，以及數百個主流服務的品牌圖示，提供帶型別的 React 元件、面向 MyGo 的 Go 模組，以及 CDN 上的靜態 SVG、PNG 與 WebP。MIT 授權。",
+    "title": "AI Logo — {{count}} 個 AI 與主流服務品牌圖示，支援 React、Go 與 CDN"
   },
   "nav": {
     "github": "GitHub 儲存庫",
@@ -96,7 +101,7 @@
     "colour": "個有彩色版本",
     "colourNote": "其餘跟隨 currentColor",
     "formats": "種資源格式",
-    "formatsNote": "React、SVG、PNG、WebP",
+    "formatsNote": "React、Go/MyGo、SVG、PNG、WebP",
     "variants": "種變體",
     "variantsNote": "單色、彩色、文字標、組合標、頭像"
   },

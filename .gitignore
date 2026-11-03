@@ -49,3 +49,10 @@ dist-treeshake-lookup
 # Brand directories are named after the brand, and a machine-wide ignore such as Rust's target/ matches src/Target/ on case-insensitive filesystems. Negating here overrides core.excludesFile, so the brand is committed on every contributor's machine.
 !src/Target/
 !packages/react-native/src/icons/Target/
+# Go embeds the generated archives in the MyGo modules. A contributor's global
+# ignore commonly excludes *.zip, which would otherwise leave the module without
+# its assets after staging.
+!mygo/
+!mygo/*.zip
+!mygo/avatar/
+!mygo/avatar/*.zip

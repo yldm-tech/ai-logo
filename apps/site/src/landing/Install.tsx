@@ -5,7 +5,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { Code, Command } from "../components/Code";
 import { Reveal } from "../components/Reveal";
 import { SectionHead } from "../components/SectionHead";
-import { ALIAS, PKG } from "../registry";
+import { ALIAS, GO_MODULE, PKG } from "../registry";
 
 const MANAGERS = {
   bun: `bun add ${PKG}`,
@@ -74,6 +74,35 @@ export function Badge() {
   );
 }`}
         />
+      </div>
+
+      <div className="mt-3 rounded-2xl border border-line bg-surface p-5 sm:p-6">
+        <div className="flex flex-col gap-1.5">
+          <p className="font-mono text-[11px] tracking-[0.14em] text-accent uppercase">
+            {t("install.mygo.eyebrow")}
+          </p>
+          <h3 className="text-lg font-medium text-ink">{t("install.mygo.title")}</h3>
+          <p className="max-w-3xl text-sm leading-relaxed text-dim">
+            <Trans
+              components={{ c: <code /> }}
+              i18nKey="install.mygo.sub"
+              values={{ module: GO_MODULE }}
+            />
+          </p>
+        </div>
+
+        <div className="mt-5 grid gap-3 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+          <Command command={`go get ${GO_MODULE}`} />
+          <Code
+            code={`import (
+  "github.com/egoist/mygo/ui"
+  ailogo "${GO_MODULE}"
+)
+
+logo := ailogo.MustParse("openai", ailogo.Mono)
+ui.Icon(c, logo).Size(24, 24)`}
+          />
+        </div>
       </div>
     </Reveal>
   );

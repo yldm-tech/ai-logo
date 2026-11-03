@@ -70,17 +70,22 @@
   "hero": {
     "badge": "{{brands}} brands · {{color}} in colour · MIT",
     "browse": "Browse {{count}} icons",
-    "sub": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components — colour, wordmark, lockup and avatar variants — and static SVG, PNG and WebP on a CDN.",
+    "sub": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components — colour, wordmark, lockup and avatar variants — and static SVG, PNG and WebP on a CDN. A Go module for MyGo native UI is included too.",
     "title": "Every AI brand, <a>one import</a>."
   },
   "install": {
     "eyebrow": "Install",
     "peers": "<c>react</c>, <c>react-dom</c> and <c>antd</c> are peer dependencies. The same build is published as <c>{{alias}}</c> at the same version — pick one, not both.",
-    "title": "Add it to a project"
+    "title": "Add it to a project",
+    "mygo": {
+      "eyebrow": "Go / MyGo",
+      "title": "Native desktop apps too",
+      "sub": "Install <c>{{module}}</c> to use the same SVG marks in a MyGo native UI app. The optional avatar subpackage adds the rendered WebP avatars."
+    }
   },
   "meta": {
-    "description": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components with colour, wordmark, lockup and avatar variants, and as static SVG, PNG and WebP on a CDN. MIT licensed.",
-    "title": "AI Logo — {{count}} AI and service brand icons for React and CDN"
+    "description": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components, a Go module for MyGo, and static SVG, PNG and WebP on a CDN. MIT licensed.",
+    "title": "AI Logo — {{count}} AI and service brand icons for React, Go and CDN"
   },
   "nav": {
     "github": "GitHub repository",
@@ -97,7 +102,7 @@
     "colour": "in full colour",
     "colourNote": "the rest inherit currentColor",
     "formats": "asset formats",
-    "formatsNote": "React, SVG, PNG, WebP",
+    "formatsNote": "React, Go/MyGo, SVG, PNG, WebP",
     "variants": "variants per brand",
     "variantsNote": "mono, colour, wordmark, lockup, avatar"
   },

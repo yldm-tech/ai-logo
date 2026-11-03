@@ -71,17 +71,22 @@
   "hero": {
     "badge": "{{brands}} marcas · {{color}} coloridas · MIT",
     "browse": "Ver {{count}} ícones",
-    "sub": "Logotipos de provedores, modelos e aplicações de IA, e de centenas de serviços populares, como componentes React tipados — com variantes em cor, logotipo, assinatura e avatar — além de SVG, PNG e WebP estáticos em um CDN.",
+    "sub": "Logotipos de provedores, modelos e aplicações de IA, e de centenas de serviços populares, como componentes React tipados — com variantes em cor, logotipo, assinatura e avatar — além de SVG, PNG e WebP estáticos em um CDN. Também inclui um módulo Go para a UI nativa do MyGo.",
     "title": "Toda marca de IA, <a>um import</a>."
   },
   "install": {
     "eyebrow": "Instalação",
     "peers": "<c>react</c>, <c>react-dom</c> e <c>antd</c> são dependências peer. O mesmo build é publicado como <c>{{alias}}</c> na mesma versão — escolha um, não os dois.",
-    "title": "Adicione a um projeto"
+    "title": "Adicione a um projeto",
+    "mygo": {
+      "eyebrow": "Go / MyGo",
+      "title": "Também para apps desktop nativos",
+      "sub": "Instale <c>{{module}}</c> para usar os mesmos ícones SVG em um app de UI nativa do MyGo. O subpacote opcional avatar adiciona avatares WebP renderizados."
+    }
   },
   "meta": {
-    "description": "Logotipos de provedores, modelos e aplicações de IA, e de centenas de serviços populares, como componentes React tipados, com variantes em cor, logotipo, assinatura e avatar, além de SVG, PNG e WebP estáticos em um CDN. Licença MIT.",
-    "title": "AI Logo — {{count}} ícones de marcas de IA e serviços populares para React e CDN"
+    "description": "Logotipos de provedores, modelos e aplicações de IA e centenas de serviços populares como componentes React tipados, módulo Go para MyGo e SVG, PNG e WebP estáticos em um CDN. Licença MIT.",
+    "title": "AI Logo — {{count}} ícones de marcas de IA e serviços para React, Go e CDN"
   },
   "nav": {
     "github": "Repositório no GitHub",
@@ -98,7 +103,7 @@
     "colour": "em cores",
     "colourNote": "as demais herdam currentColor",
     "formats": "formatos",
-    "formatsNote": "React, SVG, PNG, WebP",
+    "formatsNote": "React, Go/MyGo, SVG, PNG e WebP",
     "variants": "variantes por marca",
     "variantsNote": "mono, cor, logotipo, assinatura, avatar"
   },

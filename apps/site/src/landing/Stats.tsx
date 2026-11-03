@@ -8,7 +8,7 @@ const CELLS = [
   { key: "brands", value: stats.brands },
   { key: "colour", value: stats.color },
   { key: "variants", value: 5 },
-  { key: "formats", value: 4 },
+  { key: "formats", value: 5 },
 ] as const;
 
 export const Stats = () => {

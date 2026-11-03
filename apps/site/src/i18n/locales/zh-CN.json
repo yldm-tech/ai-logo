@@ -69,17 +69,22 @@
   "hero": {
     "badge": "{{brands}} 个品牌 · {{color}} 个彩色 · MIT",
     "browse": "浏览 {{count}} 个图标",
-    "sub": "AI 服务商、模型与应用，以及数百个主流服务的品牌图标。以带类型的 React 组件提供，含单色、彩色、文字标、组合标与头像；也提供 CDN 上的静态 SVG、PNG 与 WebP。",
+    "sub": "AI 服务商、模型与应用，以及数百个主流服务的品牌图标。以带类型的 React 组件提供，含单色、彩色、文字标、组合标与头像；也提供 CDN 上的静态 SVG、PNG 与 WebP。 同时提供面向 MyGo 原生 UI 的 Go 模块。",
     "title": "每个 AI 品牌，<a>一行 import</a>"
   },
   "install": {
     "eyebrow": "安装",
     "peers": "<c>react</c>、<c>react-dom</c> 和 <c>antd</c> 是 peer 依赖。同一份构建也以 <c>{{alias}}</c> 的名字发布，版本一致，二选一即可，不要同时装。",
-    "title": "把它加进项目"
+    "title": "把它加进项目",
+    "mygo": {
+      "eyebrow": "Go / MyGo",
+      "title": "也支持原生桌面应用",
+      "sub": "安装 <c>{{module}}</c>，即可在 MyGo 原生 UI 应用中使用同一套 SVG 图标；可选的 avatar 子包还提供 WebP 头像。"
+    }
   },
   "meta": {
-    "description": "AI 服务商、模型与应用，以及数百个主流服务的品牌图标，以带类型的 React 组件提供，含单色、彩色、文字标、组合标与头像；也提供 CDN 上的静态 SVG、PNG 与 WebP。MIT 许可证。",
-    "title": "AI Logo — {{count}} 个 AI 与主流服务品牌图标，React 组件与 CDN"
+    "description": "AI 服务商、模型和应用，以及数百个主流服务的品牌图标，提供带类型的 React 组件、面向 MyGo 的 Go 模块，以及 CDN 上的静态 SVG、PNG 和 WebP。MIT 许可证。",
+    "title": "AI Logo — {{count}} 个 AI 与主流服务品牌图标，支持 React、Go 和 CDN"
   },
   "nav": {
     "github": "GitHub 仓库",
@@ -96,7 +101,7 @@
     "colour": "个带彩色版本",
     "colourNote": "其余跟随 currentColor",
     "formats": "种资源格式",
-    "formatsNote": "React、SVG、PNG、WebP",
+    "formatsNote": "React、Go/MyGo、SVG、PNG、WebP",
     "variants": "种变体",
     "variantsNote": "单色、彩色、文字标、组合标、头像"
   },
