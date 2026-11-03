@@ -65,7 +65,9 @@
     "shown": "{{count}} shown",
     "shown_one": "{{count}} shown",
     "shown_other": "{{count}} shown",
-    "skip": "Skip the icon grid"
+    "skip": "Skip the icon grid",
+    "react": "React",
+    "assets": "Assets"
   },
   "hero": {
     "badge": "{{brands}} brands · {{color}} in colour · MIT",
