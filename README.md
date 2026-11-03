@@ -7,22 +7,17 @@
 Popular AI / LLM Model Brand SVG Logo and Icon Collection for React, Go and MyGo.<br/>
 Contributions, corrections & requests can be made on GitHub.
 
-**[ailogo.yldm.ai][site-link]** — browse all 1298 marks, every variant, in 11 languages.
+**[ailogo.yldm.ai](https://ailogo.yldm.ai)** — browse all 1298 marks, every variant, in 11 languages.
 
-[Website][site-link] · [Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+[Website](https://ailogo.yldm.ai) · [Changelog](./CHANGELOG.md) · [Report Bug](https://github.com/yldm-tech/ai-logo/issues) · [Request Feature](https://github.com/yldm-tech/ai-logo/issues)
 
 <!-- SHIELD GROUP -->
 
-[![][npm-release-shield]][npm-release-link]
-[![][npm-downloads-shield]][npm-downloads-link]<br/>
-[![][github-releasedate-shield]][github-releasedate-link]
-[![][github-action-test-shield]][github-action-test-link]
-[![][github-action-release-shield]][github-action-release-link]<br/>
-[![][github-contributors-shield]][github-contributors-link]
-[![][github-forks-shield]][github-forks-link]
-[![][github-stars-shield]][github-stars-link]
-[![][github-issues-shield]][github-issues-link]
-[![][github-license-shield]][github-license-link]
+[![npm version](https://img.shields.io/npm/v/%40yldm-tech%2Fai-logo?color=369eff\&labelColor=black\&logo=npm\&logoColor=white\&style=flat-square)](https://www.npmjs.com/package/@yldm-tech/ai-logo)
+[![npm downloads](https://img.shields.io/npm/dt/%40yldm-tech%2Fai-logo?labelColor=black\&style=flat-square)](https://www.npmjs.com/package/@yldm-tech/ai-logo)<br/>
+[![tests](https://img.shields.io/github/actions/workflow/status/yldm-tech/ai-logo/test.yml?label=test\&labelColor=black\&logo=githubactions\&logoColor=white\&style=flat-square)](https://github.com/yldm-tech/ai-logo/actions/workflows/test.yml)
+[![release](https://img.shields.io/github/actions/workflow/status/yldm-tech/ai-logo/release.yml?label=release\&labelColor=black\&logo=githubactions\&logoColor=white\&style=flat-square)](https://github.com/yldm-tech/ai-logo/actions/workflows/release.yml)<br/>
+[![license](https://img.shields.io/github/license/yldm-tech/ai-logo?color=white\&labelColor=black\&style=flat-square)](https://github.com/yldm-tech/ai-logo/blob/main/LICENSE)
 
 </div>
 
@@ -1430,26 +1425,7 @@ This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://
 [codespaces-shield]: https://github.com/codespaces/badge.svg
 [contributors-contrib]: https://contrib.rocks/image?repo=yldm-tech/ai-logo
 [contributors-link]: https://github.com/yldm-tech/ai-logo/graphs/contributors
-[github-action-release-link]: https://github.com/yldm-tech/ai-logo/actions/workflows/release.yml
-[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/yldm-tech/ai-logo/release.yml?label=release&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
-[github-action-test-link]: https://github.com/yldm-tech/ai-logo/actions/workflows/test.yml
-[github-action-test-shield]: https://img.shields.io/github/actions/workflow/status/yldm-tech/ai-logo/test.yml?label=test&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
-[github-contributors-link]: https://github.com/yldm-tech/ai-logo/graphs/contributors
-[github-contributors-shield]: https://img.shields.io/github/contributors/yldm-tech/ai-logo?color=c4f042&labelColor=black&style=flat-square
-[github-forks-link]: https://github.com/yldm-tech/ai-logo/network/members
-[github-forks-shield]: https://img.shields.io/github/forks/yldm-tech/ai-logo?color=8ae8ff&labelColor=black&style=flat-square
 [github-issues-link]: https://github.com/yldm-tech/ai-logo/issues
-[github-issues-shield]: https://img.shields.io/github/issues/yldm-tech/ai-logo?color=ff80eb&labelColor=black&style=flat-square
-[github-license-link]: https://github.com/yldm-tech/ai-logo/blob/main/LICENSE
-[github-license-shield]: https://img.shields.io/github/license/yldm-tech/ai-logo?color=white&labelColor=black&style=flat-square
-[github-releasedate-link]: https://github.com/yldm-tech/ai-logo/releases
-[github-releasedate-shield]: https://img.shields.io/github/release-date/yldm-tech/ai-logo?labelColor=black&style=flat-square
-[github-stars-link]: https://github.com/yldm-tech/ai-logo/network/stargazers
-[github-stars-shield]: https://img.shields.io/github/stars/yldm-tech/ai-logo?color=ffcb47&labelColor=black&style=flat-square
-[npm-downloads-link]: https://www.npmjs.com/package/@yldm-tech/ai-logo
-[npm-downloads-shield]: https://img.shields.io/npm/dt/%40yldm-tech%2Fai-logo?labelColor=black&style=flat-square
-[npm-release-link]: https://www.npmjs.com/package/@yldm-tech/ai-logo
-[npm-release-shield]: https://img.shields.io/npm/v/%40yldm-tech%2Fai-logo?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [pr-welcome-link]: https://github.com/yldm-tech/ai-logo/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 [site-link]: https://ailogo.yldm.ai
