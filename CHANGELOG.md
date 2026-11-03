@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.15.0](https://github.com/yldm-tech/ai-logo/compare/v1.14.0...v1.15.0) (2026-11-03)
+
+### Features
+
+- add MyGo Go module support ([16024b5](https://github.com/yldm-tech/ai-logo/commit/16024b5e0abddcdf05048939105abe8498380a1b))
+
 ## [1.14.0](https://github.com/yldm-tech/ai-logo/compare/v1.13.0...v1.14.0) (2026-09-27)
 
 ### Features
