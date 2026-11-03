@@ -2,6 +2,17 @@
 
 # Changelog
 
+## [1.16.0](https://github.com/yldm-tech/ai-logo/compare/v1.15.0...v1.16.0) (2026-11-03)
+
+### Features
+
+- unify npm and Go install cards ([cc0f017](https://github.com/yldm-tech/ai-logo/commit/cc0f017b42664ffd0099a3282f212cd01f802eb4))
+
+### Documentation
+
+- fix README badge rendering ([3020aa2](https://github.com/yldm-tech/ai-logo/commit/3020aa29f0a0761edba0356c860d3c09abda2d3a))
+- reorganize README usage guide ([95ed3f1](https://github.com/yldm-tech/ai-logo/commit/95ed3f1422a7c9146fe4ba5adb1f15c14b70252a))
+
 ## [1.15.0](https://github.com/yldm-tech/ai-logo/compare/v1.14.0...v1.15.0) (2026-11-03)
 
 ### Features
