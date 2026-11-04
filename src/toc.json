@@ -1237,6 +1237,25 @@
     "title": "Apertis"
   },
   {
+    "color": "#2E3D55",
+    "desc": "https://github.com/younland/apigo",
+    "docsUrl": "api-go",
+    "fullTitle": "APIGo",
+    "group": "application",
+    "id": "APIGo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "APIGo"
+  },
+  {
     "color": "#311C87",
     "desc": "https://www.apollographql.com",
     "docsUrl": "apollo-graph-ql",
@@ -3711,6 +3730,25 @@
     "title": "Claude Code"
   },
   {
+    "color": "#4AAACB",
+    "desc": "https://cleanzo.echovic.com",
+    "docsUrl": "cleanzo",
+    "fullTitle": "Cleanzo",
+    "group": "application",
+    "id": "Cleanzo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Cleanzo"
+  },
+  {
     "color": "#6C47FF",
     "desc": "https://clerk.com",
     "docsUrl": "clerk",
@@ -3823,6 +3861,25 @@
       "hasTextColor": false
     },
     "title": "Clipdrop"
+  },
+  {
+    "color": "#8874E6",
+    "desc": "https://clipnest.echovic.com",
+    "docsUrl": "clipnest",
+    "fullTitle": "Clipnest",
+    "group": "application",
+    "id": "Clipnest",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Clipnest"
   },
   {
     "color": "#03A9F4",
@@ -8011,6 +8068,25 @@
     "title": "GoDaddy"
   },
   {
+    "color": "#3346D3",
+    "desc": "https://github.com/egoist/godiff",
+    "docsUrl": "godiff",
+    "fullTitle": "Godiff",
+    "group": "application",
+    "id": "Godiff",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Godiff"
+  },
+  {
     "color": "#478CBF",
     "desc": "https://godotengine.org",
     "docsUrl": "godot",
@@ -8028,6 +8104,25 @@
       "hasTextColor": false
     },
     "title": "Godot"
+  },
+  {
+    "color": "#181818",
+    "desc": "https://godwit.email",
+    "docsUrl": "godwit",
+    "fullTitle": "Godwit",
+    "group": "application",
+    "id": "Godwit",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Godwit"
   },
   {
     "color": "#00B964",
@@ -8845,6 +8940,25 @@
       "hasTextColor": false
     },
     "title": "Goose"
+  },
+  {
+    "color": "#EEDBDF",
+    "desc": "https://github.com/egoist/gorex",
+    "docsUrl": "go-rex",
+    "fullTitle": "GoRex",
+    "group": "application",
+    "id": "GoRex",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "GoRex"
   },
   {
     "color": "#00B14F",
@@ -11224,6 +11338,25 @@
     "title": "Keras"
   },
   {
+    "color": "#C7EB73",
+    "desc": "https://kero.sh",
+    "docsUrl": "kero",
+    "fullTitle": "Kero",
+    "group": "application",
+    "id": "Kero",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Kero"
+  },
+  {
     "color": "#F40027",
     "desc": "https://www.kfc.com",
     "docsUrl": "kfc",
@@ -12328,6 +12461,44 @@
     "title": "Litecoin"
   },
   {
+    "color": "#A8DEBA",
+    "desc": "https://reef.echovic.com",
+    "docsUrl": "little-reef",
+    "fullTitle": "小海底 Little Reef",
+    "group": "application",
+    "id": "LittleReef",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "LittleReef"
+  },
+  {
+    "color": "#4E675E",
+    "desc": "https://liubai.echovic.com",
+    "docsUrl": "liubai",
+    "fullTitle": "留白 Liubai",
+    "group": "application",
+    "id": "Liubai",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Liubai"
+  },
+  {
     "color": "#000",
     "desc": "https://livekit.io",
     "docsUrl": "live-kit",
@@ -12558,6 +12729,25 @@
     "title": "Loom"
   },
   {
+    "color": "#6753FB",
+    "desc": "https://lorca.app",
+    "docsUrl": "lorca",
+    "fullTitle": "Lorca",
+    "group": "application",
+    "id": "Lorca",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lorca"
+  },
+  {
     "color": "#000",
     "desc": "https://lovable.dev",
     "docsUrl": "lovable",
@@ -12651,6 +12841,25 @@
       "hasTextColor": false
     },
     "title": "Luma"
+  },
+  {
+    "color": "#3C4070",
+    "desc": "https://github.com/kotuke/lumilo",
+    "docsUrl": "lumilo",
+    "fullTitle": "Lumilo",
+    "group": "application",
+    "id": "Lumilo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Lumilo"
   },
   {
     "color": "#5B9BD5",
@@ -13280,6 +13489,25 @@
     "title": "Meilisearch"
   },
   {
+    "color": "#327DB0",
+    "desc": "https://meiro.elianiva.com",
+    "docsUrl": "meiro",
+    "fullTitle": "Meiro",
+    "group": "application",
+    "id": "Meiro",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Meiro"
+  },
+  {
     "color": "#FFD100",
     "desc": "https://www.meituan.com",
     "docsUrl": "meituan",
@@ -13719,6 +13947,25 @@
     "title": "Mixcloud"
   },
   {
+    "color": "#E6007E",
+    "desc": "https://github.com/fzn0x/mixmusic",
+    "docsUrl": "mix-music",
+    "fullTitle": "MixMusic",
+    "group": "application",
+    "id": "MixMusic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MixMusic"
+  },
+  {
     "color": "#7856FF",
     "desc": "https://mixpanel.com",
     "docsUrl": "mixpanel",
@@ -14043,6 +14290,25 @@
     "title": "MyAnimeList"
   },
   {
+    "color": "#E3122C",
+    "desc": "https://cloudmusic.egoist.dev",
+    "docsUrl": "my-go-cloud-music",
+    "fullTitle": "MyGo 云音乐",
+    "group": "application",
+    "id": "MyGoCloudMusic",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MyGoCloudMusic"
+  },
+  {
     "color": "#fff",
     "desc": "https://myshell.ai",
     "docsUrl": "my-shell",
@@ -14079,6 +14345,25 @@
       "hasTextColor": false
     },
     "title": "MySQL"
+  },
+  {
+    "color": "#49A07E",
+    "desc": "https://mytwig.herosizy.dev",
+    "docsUrl": "my-twig",
+    "fullTitle": "MyTwig",
+    "group": "application",
+    "id": "MyTwig",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "MyTwig"
   },
   {
     "color": "#48AC98",
@@ -17046,6 +17331,25 @@
     "title": "PubMed"
   },
   {
+    "color": "#2CAC4F",
+    "desc": "https://pulse.egoist.dev",
+    "docsUrl": "pulse",
+    "fullTitle": "Pulse",
+    "group": "application",
+    "id": "Pulse",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Pulse"
+  },
+  {
     "color": "#8A3391",
     "desc": "https://www.pulumi.com",
     "docsUrl": "pulumi",
@@ -17443,6 +17747,25 @@
       "hasTextColor": false
     },
     "title": "Quarkus"
+  },
+  {
+    "color": "#5EA2AD",
+    "desc": "https://quaver.0w0.red",
+    "docsUrl": "quaver-astra",
+    "fullTitle": "Quaver Astra",
+    "group": "application",
+    "id": "QuaverAstra",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "QuaverAstra"
   },
   {
     "color": "#2CA01C",
@@ -22069,6 +22392,25 @@
     "title": "Unity"
   },
   {
+    "color": "#FFC107",
+    "desc": "https://github.com/pteich/us3ui",
+    "docsUrl": "universal-s-3-ui",
+    "fullTitle": "Universal S3 UI",
+    "group": "application",
+    "id": "UniversalS3UI",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "UniversalS3UI"
+  },
+  {
     "color": "#F15A2C",
     "desc": "https://unraid.net",
     "docsUrl": "unraid",
@@ -22524,6 +22866,25 @@
       "hasTextColor": false
     },
     "title": "Viber"
+  },
+  {
+    "color": "#1E88E5",
+    "desc": "https://github.com/fazi-gondal/video-downloader-mygo",
+    "docsUrl": "video-downloader-my-go",
+    "fullTitle": "Video-Downloader (MyGo)",
+    "group": "application",
+    "id": "VideoDownloaderMyGo",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "VideoDownloaderMyGo"
   },
   {
     "color": "#22D5FF",
