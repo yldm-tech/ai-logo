@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.18.1](https://github.com/yldm-tech/ai-logo/compare/v1.18.0...v1.18.1) (2026-11-04)
+
+### Bug Fixes
+
+- draw MyGo Cloud Music's mark as a whole record ([51b061e](https://github.com/yldm-tech/ai-logo/commit/51b061efd506bb6e0b767014005b8ec71bc4a9b7))
+
 ## [1.18.0](https://github.com/yldm-tech/ai-logo/compare/v1.17.0...v1.18.0) (2026-11-04)
 
 ### Features
