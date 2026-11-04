@@ -2,6 +2,21 @@
 
 # Changelog
 
+## [1.18.0](https://github.com/yldm-tech/ai-logo/compare/v1.17.0...v1.18.0) (2026-11-04)
+
+### Features
+
+- add the icons of 19 desktop apps built with MyGo ([ba84454](https://github.com/yldm-tech/ai-logo/commit/ba84454cd5723729d1801839ab57b57feffe6f83))
+
+### Bug Fixes
+
+- redo the MyGo Cloud Music, MyTwig, Pulse, GoRex and Lumilo marks ([a08fd06](https://github.com/yldm-tech/ai-logo/commit/a08fd064e213809c5abe25e921e854b015fba666))
+- take Liubai's page as its mark ([e5f3fb3](https://github.com/yldm-tech/ai-logo/commit/e5f3fb3b5815846537b2f493b4d71509e67f19d2))
+
+### Styles
+
+- size the MyGo app marks optically ([e602478](https://github.com/yldm-tech/ai-logo/commit/e602478c0852354b7480a47073807084a6fb1e91))
+
 ## [1.17.0](https://github.com/yldm-tech/ai-logo/compare/v1.16.0...v1.17.0) (2026-11-03)
 
 ### Features
