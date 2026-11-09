@@ -67,4 +67,6 @@ if err != nil {
 ui.Image(c, avatar).Size(40, 40)
 ```
 
-The Go module is MIT licensed. Brand marks remain trademarks of their respective owners; third-party notices for ported assets are in the repository's [`THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md).
+## Licence and sources
+
+The Go module is MIT licensed ([`LICENSE`](./LICENSE)). AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub, MIT licensed, from which the AI and LLM marks started; this module is the fork's addition for MyGo, built from the same SVGs as the React and static packages. The other service marks are ported from Simple Icons and the brand sources listed, with their licences, in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md), which ships inside the module. Brand marks remain trademarks of their respective owners.

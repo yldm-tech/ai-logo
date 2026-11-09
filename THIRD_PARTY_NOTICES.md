@@ -1,5 +1,11 @@
 # Third-party notices
 
+## lobe-icons
+
+AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub, released under the MIT License, Copyright (c) 2023 LobeHub. The AI and LLM marks, the React components and the build tooling started from it. Its licence and copyright notice are kept in [`LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/LICENSE) and, for the Go module, in [`mygo/LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/mygo/LICENSE).
+
+## Simple Icons and other brand sources
+
 The non-AI service icons (social networks, developer tools, productivity apps, media, gaming, payments, commerce, travel, hardware, automotive and browsers) are ported from [Simple Icons](https://github.com/simple-icons/simple-icons) v16.32.0. Simple Icons releases its icon data under [CC0 1.0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md), except for the marks below, whose artwork is published by the brand owner under the licence listed. Logos with share-alike, non-commercial, no-derivatives or custom terms were deliberately left out.
 
 | Brand            | Licence      | Source                                                                                                                 |
