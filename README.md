@@ -21,6 +21,8 @@ Contributions, corrections & requests can be made on GitHub.
 
 </div>
 
+> AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by [LobeHub](https://github.com/lobehub), MIT licensed, and keeps that licence and its copyright notice. The AI and LLM marks and the React components started from lobe-icons; its changelog up to the fork is kept in [`CHANGELOG.upstream.md`](./CHANGELOG.upstream.md). This fork adds a [Go module for MyGo](#go--mygo) native UI apps ([`mygo/`](./mygo)), the non-AI service marks ported from [Simple Icons](https://github.com/simple-icons/simple-icons) and other sources listed in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md), and the [ailogo.yldm.ai](https://ailogo.yldm.ai) site.
+
 > The brand logos in this collection are trademarks of their respective owners. They are included for identification purposes; inclusion does not imply any affiliation or endorsement.
 
 <details>
@@ -1416,7 +1418,7 @@ A commit without the prefix is accepted by commitlint and merged normally, but i
 #### 📝 License
 
 Copyright © 2023 LobeHub, © 2026 yldm-tech. <br />
-This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://github.com/lobehub/lobe-icons).
+This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub. The Go module in [`mygo/`](./mygo) carries the same notices in its own [`LICENSE`](./mygo/LICENSE) and [`THIRD_PARTY_NOTICES.md`](./mygo/THIRD_PARTY_NOTICES.md), since `go get` downloads that directory alone. Third-party marks and their licences are listed in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
 
 <!-- LINK GROUP -->
 
