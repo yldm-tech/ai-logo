@@ -2,6 +2,17 @@
 
 # Changelog
 
+## [1.19.0](https://github.com/yldm-tech/ai-logo/compare/v1.18.1...v1.19.0) (2026-11-10)
+
+### Features
+
+- add the TED icon from Simple Icons ([adb0de8](https://github.com/yldm-tech/ai-logo/commit/adb0de8febe7de6cee06c5a5ffd6d157d488d191))
+- render TED's static assets and add it to the MyGo archives ([79b9aec](https://github.com/yldm-tech/ai-logo/commit/79b9aec87106cb2159fb0ecec805bf6cee73645a))
+
+### Documentation
+
+- credit lobe-icons and ship the notices with the Go module ([e537959](https://github.com/yldm-tech/ai-logo/commit/e5379599f501060a3be366132852f0090f198d0c))
+
 ## [1.18.1](https://github.com/yldm-tech/ai-logo/compare/v1.18.0...v1.18.1) (2026-11-04)
 
 ### Bug Fixes
