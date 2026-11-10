@@ -105,9 +105,9 @@ describe("ModelTag", () => {
   });
 
   it("renders an anchor for href and drops the link when disabled", () => {
-    expect(renderToStaticMarkup(<ModelTag href={"/m"} model={"gpt-4o"} />)).toMatch(
-      /^<a href="\/m"/,
-    );
+    const link = renderToStaticMarkup(<ModelTag href={"/m"} model={"gpt-4o"} />);
+    expect(link).toMatch(/^<a href="\/m"/);
+    expect(link).toContain("text-decoration:none");
     expect(renderToStaticMarkup(<ModelTag disabled href={"/m"} model={"gpt-4o"} />)).toMatch(
       /^<a aria-disabled="true"/,
     );

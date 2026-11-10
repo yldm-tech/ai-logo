@@ -78,7 +78,7 @@ const CloseOutlined = () => (
     fillRule={"evenodd"}
     focusable={"false"}
     height={"1em"}
-    style={{ display: "inline-block", lineHeight: 1 }}
+    style={{ display: "inline-block", lineHeight: 1, verticalAlign: "-0.125em" }}
     viewBox={"64 64 896 896"}
     width={"1em"}
   >
@@ -231,6 +231,8 @@ const Tag = (props: InternalTagProps) => {
         ...variantStyle[mergedVariant],
         ...(disabled && disabledStyle),
         ...colorStyle,
+        // antd's stylesheet takes the underline off a tag rendered as a link.
+        ...(href && { textDecoration: "none" }),
         ...(!visible && { display: "none" }),
         ...styles?.root,
         ...style,

@@ -161,6 +161,7 @@ export const GAP = 7;
 export const closeStyle: CSSProperties = {
   WebkitFontSmoothing: "antialiased",
   alignItems: "center",
+  boxSizing: "border-box",
   color: "rgba(0, 0, 0, 0.45)",
   cursor: "pointer",
   display: "inline-flex",
