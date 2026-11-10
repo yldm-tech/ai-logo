@@ -76,7 +76,7 @@
   },
   "install": {
     "eyebrow": "インストール",
-    "peers": "<c>react</c>、<c>react-dom</c>、<c>antd</c> は peer 依存です。同じビルドが <c>{{alias}}</c> という名前でも同じバージョンで公開されています。どちらか一方を選んでください。",
+    "peers": "peer 依存は <c>react</c> と <c>react-dom</c> だけです。同じビルドが <c>{{alias}}</c> という名前でも同じバージョンで公開されています。どちらか一方を選んでください。",
     "title": "プロジェクトに追加する",
     "mygo": {
       "eyebrow": "Go / MyGo",

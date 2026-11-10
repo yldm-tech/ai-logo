@@ -76,7 +76,7 @@
   },
   "install": {
     "eyebrow": "安裝",
-    "peers": "<c>react</c>、<c>react-dom</c> 與 <c>antd</c> 是 peer 相依套件。同一份建置也以 <c>{{alias}}</c> 的名稱發佈，版本一致，二選一即可，不要同時安裝。",
+    "peers": "peer 相依套件只有 <c>react</c> 與 <c>react-dom</c>。同一份建置也以 <c>{{alias}}</c> 的名稱發佈，版本一致，二選一即可，不要同時安裝。",
     "title": "把它加進專案",
     "mygo": {
       "eyebrow": "Go / MyGo",

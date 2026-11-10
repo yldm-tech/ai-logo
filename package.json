@@ -80,7 +80,6 @@
     "vectorizer": "tsx scripts/vectorizer/index.ts"
   },
   "dependencies": {
-    "antd-style": "^4.1.0",
     "es-toolkit": "^1.52.0",
     "lucide-react": "^1.45.0"
   },
@@ -125,14 +124,8 @@
     "vitest": "catalog:"
   },
   "peerDependencies": {
-    "antd": "^6.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  },
-  "peerDependenciesMeta": {
-    "antd": {
-      "optional": true
-    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,mdx,yml,yaml}": [

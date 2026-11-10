@@ -1,5 +1,5 @@
 import { Icon } from "@/primitives";
-import { cssVar } from "antd-style";
+import { cssVar } from "../cssVar";
 import { Box } from "lucide-react";
 import { type CSSProperties, memo } from "react";
 
