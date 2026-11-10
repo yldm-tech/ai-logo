@@ -18,7 +18,7 @@ Concretely, that means things like a package executing code a consumer did not a
 
 **The brand artwork itself.** Every logo in this collection is a trademark of its owner and is included for identification only. Whether a particular use of a mark is permitted is between you and the owner of that mark, and if a logo here is wrong, outdated, or should not be in the set at all, that is an ordinary [issue](https://github.com/yldm-tech/ai-logo/issues) — handling it privately would help nobody.
 
-Also out of scope: vulnerabilities in `react`, `antd` or any other dependency, which belong upstream (do tell us if the version range this project declares is what exposes you); reports that are a scanner's output with no impact demonstrated behind them; and `@yldm-tech/ai-logo-rn`, which is marked `private` and is not published, so problems there are ordinary issues.
+Also out of scope: vulnerabilities in `react`, `lucide-react` or any other dependency, which belong upstream (do tell us if the version range this project declares is what exposes you); reports that are a scanner's output with no impact demonstrated behind them; and `@yldm-tech/ai-logo-rn`, which is marked `private` and is not published, so problems there are ordinary issues.
 
 ## What to expect
 

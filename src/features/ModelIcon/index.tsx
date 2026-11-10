@@ -15,17 +15,20 @@ export interface ModelIconProps {
   type?: "avatar" | "mono" | "color" | "combine" | "combine-color";
 }
 
+/** The first mapping whose keywords match the model id, or undefined when the id falls back to the default glyph. */
+export const findModelMapping = (originModel?: string) => {
+  if (!originModel) return;
+  const model = originModel.toLowerCase();
+  for (const item of modelMappings) {
+    if (item.keywords.some((keyword) => new RegExp(keyword, "i").test(model))) {
+      return item;
+    }
+  }
+};
+
 const ModelIcon = memo<ModelIconProps>(
   ({ model: originModel, size = 12, type = "avatar", shape, ...rest }) => {
-    const Render = useMemo(() => {
-      if (!originModel) return;
-      const model = originModel.toLowerCase();
-      for (const item of modelMappings) {
-        if (item.keywords.some((keyword) => new RegExp(keyword, "i").test(model))) {
-          return item;
-        }
-      }
-    }, [originModel]);
+    const Render = useMemo(() => findModelMapping(originModel), [originModel]);
 
     const props = {
       size,

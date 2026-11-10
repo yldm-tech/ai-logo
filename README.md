@@ -77,13 +77,13 @@ The unscoped name `ai-logo` also works. It is an alias: a few hundred bytes that
 
 #### Peer dependencies
 
-`react`, `react-dom` and `antd` are peer dependencies. npm 7+, pnpm 8+ and bun install those for you; Yarn Classic does not, so install them alongside:
+`react` and `react-dom` (19 or later) are the only peer dependencies. npm 7+, pnpm 8+ and bun install those for you; Yarn Classic does not, so install them alongside:
 
 ```bash
-yarn add react react-dom antd
+yarn add react react-dom
 ```
 
-`antd` is needed because `ModelTag` renders an antd `Tag` and `antd-style` — a runtime dependency of this package — declares antd as its own peer. Nothing else is required: the layout and icon wrappers the components use are part of this package.
+Nothing else is required, and antd is not one of them: `ModelTag`, `ProviderCombine` and the layout and icon wrappers the components use are part of this package and style themselves inline, so they render the same with or without a stylesheet, on the server or in the browser.
 
 ### Usage
 

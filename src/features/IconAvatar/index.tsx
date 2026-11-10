@@ -1,7 +1,6 @@
 "use client";
 
 import { Center, type CenterProps } from "@/primitives";
-import { useThemeMode } from "antd-style";
 import { CSSProperties, memo } from "react";
 
 import { IconType } from "@/types";
@@ -32,14 +31,14 @@ const IconAvatar = memo<IconAvatarProps>(
     iconClassName,
     ...rest
   }) => {
-    const { isDarkMode } = useThemeMode();
     return (
       <Center
         flex={"none"}
         style={{
           background,
           borderRadius: shape === "circle" ? "50%" : Math.floor(size * 0.1),
-          boxShadow: getAvatarShadow(isDarkMode, background),
+          // The dark-mode ring came from antd-style's ThemeProvider, which this package no longer depends on. Without that provider antd-style always reported light mode, so this is what every page that did not wrap the icons in it already rendered.
+          boxShadow: getAvatarShadow(false, background),
           color,
           height: size,
           overflow: "hidden",

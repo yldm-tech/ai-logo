@@ -77,7 +77,7 @@
   },
   "install": {
     "eyebrow": "Install",
-    "peers": "<c>react</c>, <c>react-dom</c> and <c>antd</c> are peer dependencies. The same build is published as <c>{{alias}}</c> at the same version — pick one, not both.",
+    "peers": "<c>react</c> and <c>react-dom</c> are the only peer dependencies. The same build is published as <c>{{alias}}</c> at the same version — pick one, not both.",
     "title": "Add it to a project",
     "mygo": {
       "eyebrow": "Go / MyGo",

@@ -1,5 +1,5 @@
 import { Center } from "@/primitives";
-import { cssVar } from "antd-style";
+import { cssVar } from "../cssVar";
 import { memo } from "react";
 
 import type { IconAvatarProps } from "../IconAvatar";

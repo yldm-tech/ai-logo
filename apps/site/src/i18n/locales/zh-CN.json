@@ -76,7 +76,7 @@
   },
   "install": {
     "eyebrow": "安装",
-    "peers": "<c>react</c>、<c>react-dom</c> 和 <c>antd</c> 是 peer 依赖。同一份构建也以 <c>{{alias}}</c> 的名字发布，版本一致，二选一即可，不要同时装。",
+    "peers": "peer 依赖只有 <c>react</c> 和 <c>react-dom</c>。同一份构建也以 <c>{{alias}}</c> 的名字发布，版本一致，二选一即可，不要同时装。",
     "title": "把它加进项目",
     "mygo": {
       "eyebrow": "Go / MyGo",
