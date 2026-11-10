@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [1.20.0](https://github.com/yldm-tech/ai-logo/compare/v1.19.0...v1.20.0) (2026-11-10)
+
+### Features
+
+- drop the antd and antd-style dependencies ([8e425de](https://github.com/yldm-tech/ai-logo/commit/8e425debb2e2961757126b5493e161994b1fc474))
+
+### Styles
+
+- match antd's close button box and link decoration in ModelTag ([83039ee](https://github.com/yldm-tech/ai-logo/commit/83039ee7c5f1594c60b83655a536d68206428a49))
+
 ## [1.19.0](https://github.com/yldm-tech/ai-logo/compare/v1.18.1...v1.19.0) (2026-11-10)
 
 ### Features
