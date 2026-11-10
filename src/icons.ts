@@ -1267,6 +1267,7 @@ export { default as Targon, type CompoundedIcon as TargonProps } from "./Targon"
 export { default as Tavily, type CompoundedIcon as TavilyProps } from "./Tavily";
 export { default as TeamCity, type CompoundedIcon as TeamCityProps } from "./TeamCity";
 export { default as TechCrunch, type CompoundedIcon as TechCrunchProps } from "./TechCrunch";
+export { default as TED, type CompoundedIcon as TEDProps } from "./TED";
 export { default as Telegram, type CompoundedIcon as TelegramProps } from "./Telegram";
 export { default as Tencent, type CompoundedIcon as TencentProps } from "./Tencent";
 export { default as TencentCloud, type CompoundedIcon as TencentCloudProps } from "./TencentCloud";

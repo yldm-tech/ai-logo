@@ -21060,6 +21060,25 @@
     "title": "TechCrunch"
   },
   {
+    "color": "#E62B1E",
+    "desc": "https://www.ted.com",
+    "docsUrl": "ted",
+    "fullTitle": "TED",
+    "group": "service",
+    "id": "TED",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": true,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "TED"
+  },
+  {
     "color": "#26A5E4",
     "desc": "https://telegram.org",
     "docsUrl": "telegram",
