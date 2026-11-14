@@ -34,11 +34,15 @@ jobs:
       - name: Build package
         run: pnpm run build
 
-      - name: Check MyGo assets
-        run: pnpm run check:mygo
+      - name: Check the Go modules' assets
+        run: pnpm run check:go
 
       - name: Test the MyGo module
         working-directory: mygo
+        run: GOTOOLCHAIN=auto go test ./...
+
+      - name: Test the NSGo module
+        working-directory: nsgo
         run: GOTOOLCHAIN=auto go test ./...
 
       - name: CI

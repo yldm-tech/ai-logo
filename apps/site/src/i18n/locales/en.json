@@ -72,21 +72,22 @@
   "hero": {
     "badge": "{{brands}} brands · {{color}} in colour · MIT",
     "browse": "Browse {{count}} icons",
-    "sub": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components — colour, wordmark, lockup and avatar variants — and static SVG, PNG and WebP on a CDN. A Go module for MyGo native UI is included too.",
+    "sub": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components — colour, wordmark, lockup and avatar variants — and static SVG, PNG and WebP on a CDN. Go modules for NSGo and MyGo native UI are included too.",
     "title": "Every AI brand, <a>one import</a>."
   },
   "install": {
     "eyebrow": "Install",
     "peers": "<c>react</c> and <c>react-dom</c> are the only peer dependencies. The same build is published as <c>{{alias}}</c> at the same version — pick one, not both.",
     "title": "Add it to a project",
-    "mygo": {
-      "eyebrow": "Go / MyGo",
-      "title": "Native desktop apps too",
-      "sub": "Install <c>{{module}}</c> to use the same SVG marks in a MyGo native UI app. The optional avatar subpackage adds the rendered WebP avatars."
+    "go": {
+      "framework": "Go UI framework",
+      "title": "Native apps in Go too",
+      "nsgo": "Install <c>{{module}}</c> to draw the same SVG marks with <c>core.Icon</c> in an NSGo app on iOS, Android, desktop and the web. The optional avatar subpackage adds the rendered WebP avatars.",
+      "mygo": "Install <c>{{module}}</c> to use the same SVG marks in a MyGo native UI app. The optional avatar subpackage adds the rendered WebP avatars."
     }
   },
   "meta": {
-    "description": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components, a Go module for MyGo, and static SVG, PNG and WebP on a CDN. MIT licensed.",
+    "description": "Logos for AI providers, models and applications, plus hundreds of mainstream services, as typed React components, Go modules for NSGo and MyGo, and static SVG, PNG and WebP on a CDN. MIT licensed.",
     "title": "AI Logo — {{count}} AI and service brand icons for React, Go and CDN"
   },
   "nav": {
@@ -104,7 +105,7 @@
     "colour": "in full colour",
     "colourNote": "the rest inherit currentColor",
     "formats": "asset formats",
-    "formatsNote": "React, Go/MyGo, SVG, PNG, WebP",
+    "formatsNote": "React, Go (NSGo, MyGo), SVG, PNG, WebP",
     "variants": "variants per brand",
     "variantsNote": "mono, colour, wordmark, lockup, avatar"
   },

@@ -73,21 +73,22 @@
   "hero": {
     "badge": "{{brands}} marques · {{color}} en couleur · MIT",
     "browse": "Parcourir {{count}} icônes",
-    "sub": "Les logos des fournisseurs, modèles et applications d’IA, et de centaines de services grand public, sous forme de composants React typés — variantes couleur, logotype, bloc-marque et avatar — plus des SVG, PNG et WebP statiques sur un CDN. Un module Go pour l’UI native de MyGo est également inclus.",
+    "sub": "Les logos des fournisseurs, modèles et applications d’IA, et de centaines de services grand public, sous forme de composants React typés — variantes couleur, logotype, bloc-marque et avatar — plus des SVG, PNG et WebP statiques sur un CDN. Des modules Go pour l’UI native de NSGo et de MyGo sont également inclus.",
     "title": "Toutes les marques d’IA, <a>un seul import</a>."
   },
   "install": {
     "eyebrow": "Installation",
     "peers": "<c>react</c> et <c>react-dom</c> sont les seules dépendances peer. Le même build est publié sous le nom <c>{{alias}}</c> à la même version — choisissez l’un ou l’autre, pas les deux.",
     "title": "Ajoutez-le à un projet",
-    "mygo": {
-      "eyebrow": "Go / MyGo",
-      "title": "Aussi pour les applications natives",
-      "sub": "Installez <c>{{module}}</c> pour utiliser les mêmes icônes SVG dans une application UI native MyGo. Le sous-paquet avatar optionnel ajoute les avatars WebP rendus."
+    "go": {
+      "framework": "Framework d’UI Go",
+      "title": "Aussi pour les applications natives en Go",
+      "nsgo": "Installez <c>{{module}}</c> pour dessiner les mêmes icônes SVG avec <c>core.Icon</c> dans une application NSGo sur iOS, Android, ordinateur et Web. Le sous-paquet avatar optionnel ajoute les avatars WebP rendus.",
+      "mygo": "Installez <c>{{module}}</c> pour utiliser les mêmes icônes SVG dans une application UI native MyGo. Le sous-paquet avatar optionnel ajoute les avatars WebP rendus."
     }
   },
   "meta": {
-    "description": "Logos de fournisseurs, modèles et applications d’IA et de centaines de services courants en composants React typés, module Go pour MyGo et SVG, PNG et WebP statiques sur un CDN. Licence MIT.",
+    "description": "Logos de fournisseurs, modèles et applications d’IA et de centaines de services courants en composants React typés, modules Go pour NSGo et MyGo et SVG, PNG et WebP statiques sur un CDN. Licence MIT.",
     "title": "AI Logo — {{count}} icônes de marques d’IA et de services pour React, Go et CDN"
   },
   "nav": {
@@ -105,7 +106,7 @@
     "colour": "en couleur",
     "colourNote": "les autres héritent de currentColor",
     "formats": "formats disponibles",
-    "formatsNote": "React, Go/MyGo, SVG, PNG, WebP",
+    "formatsNote": "React, Go (NSGo, MyGo), SVG, PNG, WebP",
     "variants": "variantes par marque",
     "variantsNote": "mono, couleur, logotype, bloc-marque, avatar"
   },

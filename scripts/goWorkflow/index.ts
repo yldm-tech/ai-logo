@@ -1,17 +1,17 @@
 import { execFileSync } from "node:child_process";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(fileURLToPath(new URL("../..", import.meta.url)));
 const svgSource = resolve(root, "packages/static-svg/icons");
 const avatarSource = resolve(root, "packages/static-avatar/avatars");
-const mygo = resolve(root, "mygo");
-const svgArchive = resolve(mygo, "icons.zip");
-const avatarArchive = resolve(mygo, "avatar/avatars.zip");
-// `go get` downloads mygo/ alone, so the module carries its own copy of the notices for the marks it ships.
-const notices = resolve(root, "THIRD_PARTY_NOTICES.md");
-const mygoNotices = resolve(mygo, "THIRD_PARTY_NOTICES.md");
+
+// Each Go module embeds its own copy: go:embed cannot reach files outside the module's directory, so the framework modules cannot share one archive.
+const MODULES = [
+  { dir: "mygo", label: "MyGo" },
+  { dir: "nsgo", label: "NSGo" },
+] as const;
 
 const listArchive = (archive: string): string[] => {
   if (!existsSync(archive)) return [];
@@ -31,7 +31,7 @@ const checkArchive = (archive: string, source: string, label: string) => {
   const expected = sourceNames(source);
   const actual = listArchive(archive);
   if (expected.join("\n") !== actual.join("\n")) {
-    throw new Error(`${label} archive is out of date; run pnpm run build:mygo`);
+    throw new Error(`${label} archive is out of date; run pnpm run build:go`);
   }
   console.log(`${label}: ${expected.length} assets`);
 };
@@ -48,24 +48,15 @@ const writeArchive = (archive: string, source: string) => {
   });
 };
 
-const checkNotices = () => {
-  const same =
-    existsSync(mygoNotices) && readFileSync(mygoNotices, "utf8") === readFileSync(notices, "utf8");
-  if (!same) throw new Error("mygo/THIRD_PARTY_NOTICES.md is out of date; run pnpm run build:mygo");
-  console.log("MyGo notices: up to date");
-};
-
 const check = process.argv.includes("--check");
 
-if (check) {
-  checkArchive(svgArchive, svgSource, "MyGo SVG");
-  checkArchive(avatarArchive, avatarSource, "MyGo avatar");
-  checkNotices();
-} else {
-  writeArchive(svgArchive, svgSource);
-  writeArchive(avatarArchive, avatarSource);
-  copyFileSync(notices, mygoNotices);
-  checkArchive(svgArchive, svgSource, "MyGo SVG");
-  checkArchive(avatarArchive, avatarSource, "MyGo avatar");
-  checkNotices();
+for (const { dir, label } of MODULES) {
+  const svgArchive = resolve(root, dir, "icons.zip");
+  const avatarArchive = resolve(root, dir, "avatar/avatars.zip");
+  if (!check) {
+    writeArchive(svgArchive, svgSource);
+    writeArchive(avatarArchive, avatarSource);
+  }
+  checkArchive(svgArchive, svgSource, `${label} SVG`);
+  checkArchive(avatarArchive, avatarSource, `${label} avatar`);
 }

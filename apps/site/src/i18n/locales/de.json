@@ -72,21 +72,22 @@
   "hero": {
     "badge": "{{brands}} Marken · {{color}} in Farbe · MIT",
     "browse": "{{count}} Icons ansehen",
-    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen sowie Hunderten gängiger Dienste als typisierte React-Komponenten — mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN. Ein Go-Modul für die native MyGo-UI ist ebenfalls enthalten.",
+    "sub": "Logos von KI-Anbietern, Modellen und Anwendungen sowie Hunderten gängiger Dienste als typisierte React-Komponenten — mit Farb-, Wortmarken-, Bildwortmarken- und Avatar-Varianten — dazu statische SVG, PNG und WebP über ein CDN. Go-Module für die native UI von NSGo und MyGo sind ebenfalls enthalten.",
     "title": "Jede KI-Marke, <a>ein Import</a>."
   },
   "install": {
     "eyebrow": "Installation",
     "peers": "<c>react</c> und <c>react-dom</c> sind die einzigen Peer-Abhängigkeiten. Derselbe Build erscheint unter dem Namen <c>{{alias}}</c> in derselben Version — nimm eines von beiden, nicht beide.",
     "title": "In ein Projekt aufnehmen",
-    "mygo": {
-      "eyebrow": "Go / MyGo",
-      "title": "Auch für native Desktop-Apps",
-      "sub": "Installiere <c>{{module}}</c>, um dieselben SVG-Marken in einer nativen MyGo-UI-App zu verwenden. Das optionale Avatar-Subpaket liefert gerenderte WebP-Avatare."
+    "go": {
+      "framework": "Go-UI-Framework",
+      "title": "Auch für native Go-Apps",
+      "nsgo": "Installiere <c>{{module}}</c>, um dieselben SVG-Marken mit <c>core.Icon</c> in einer NSGo-App auf iOS, Android, Desktop und im Web zu zeichnen. Das optionale Avatar-Subpaket liefert gerenderte WebP-Avatare.",
+      "mygo": "Installiere <c>{{module}}</c>, um dieselben SVG-Marken in einer nativen MyGo-UI-App zu verwenden. Das optionale Avatar-Subpaket liefert gerenderte WebP-Avatare."
     }
   },
   "meta": {
-    "description": "Logos von KI-Anbietern, Modellen und Anwendungen sowie Hunderten gängiger Dienste als typisierte React-Komponenten, Go-Modul für MyGo und statische SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
+    "description": "Logos von KI-Anbietern, Modellen und Anwendungen sowie Hunderten gängiger Dienste als typisierte React-Komponenten, Go-Module für NSGo und MyGo und statische SVG, PNG und WebP über ein CDN. MIT-Lizenz.",
     "title": "AI Logo — {{count}} Markenicons für KI und Dienste, für React, Go und CDN"
   },
   "nav": {
@@ -104,7 +105,7 @@
     "colour": "in voller Farbe",
     "colourNote": "der Rest erbt currentColor",
     "formats": "Formate",
-    "formatsNote": "React, Go/MyGo, SVG, PNG, WebP",
+    "formatsNote": "React, Go (NSGo, MyGo), SVG, PNG, WebP",
     "variants": "Varianten je Marke",
     "variantsNote": "einfarbig, Farbe, Wortmarke, Bildwortmarke, Avatar"
   },

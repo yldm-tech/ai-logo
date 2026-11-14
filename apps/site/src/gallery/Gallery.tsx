@@ -1,10 +1,20 @@
 import { AnimatePresence, motion } from "motion/react";
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Code } from "../components/Code";
 import { CopyButton } from "../components/Copy";
-import { CDN, entries, GO_MODULE, type IconEntry, PKG, preferred, stats } from "../registry";
+import { GoFrameworkPicker } from "../components/GoFrameworkPicker";
+import {
+  CDN,
+  entries,
+  GO_MODULES,
+  type GoFramework,
+  type IconEntry,
+  PKG,
+  preferred,
+  stats,
+} from "../registry";
 import { galleryRegistry } from "./registry";
 import { type Filter, useStore } from "../store";
 
@@ -67,6 +77,7 @@ const assetLinks = (entry: IconEntry) => {
 const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) => {
   const { t } = useTranslation();
   const heading = useRef<HTMLHeadingElement>(null);
+  const [framework, setFramework] = useState<GoFramework>("nsgo");
   const Icon = galleryRegistry[entry.id];
 
   // The panel appears above the grid, so a reader who picked a cell with the keyboard was left focused on a button that had just been pushed down the page, with the thing they asked for out of view behind them. Focus moves to the panel's heading instead; the grid cell takes it back on close, which Gallery handles because it is the one that knows which cell was pressed.
@@ -76,9 +87,11 @@ const Detail = ({ entry, onClose }: { entry: IconEntry; onClose: () => void }) =
 
   if (!Icon) return null;
   const importLine = `import { ${entry.id} } from "${PKG}";`;
-  const goCode = `import ailogo "${GO_MODULE}"
+  const draw = { mygo: "ui.Icon(c, logo)", nsgo: "core.Icon{SVG: logo}" }[framework];
+  const goCode = `import ailogo "${GO_MODULES[framework].module}"
 
-logo := ailogo.MustParse("${entry.id.toLowerCase()}", ailogo.Mono)`;
+logo := ailogo.MustParse("${entry.id.toLowerCase()}", ailogo.Mono)
+${draw}`;
 
   return (
     <motion.section
@@ -158,9 +171,7 @@ logo := ailogo.MustParse("${entry.id.toLowerCase()}", ailogo.Mono)`;
 
           <div className="min-w-0">
             <div className="mb-2 flex items-center justify-between gap-2">
-              <span className="rounded-full bg-accent-2/10 px-2.5 py-1 font-mono text-[11px] text-accent-2">
-                {t("install.mygo.eyebrow")}
-              </span>
+              <GoFrameworkPicker onChange={setFramework} value={framework} />
               <CopyButton label={t("copy.copy")} value={goCode} />
             </div>
             <Code code={goCode} copy={false} />

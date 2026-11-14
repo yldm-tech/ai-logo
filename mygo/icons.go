@@ -52,7 +52,7 @@ var variantSuffixes = []struct {
 	{Mono, ""},
 }
 
-// The archive is generated from packages/static-svg by scripts/mygoWorkflow.
+// The archive is generated from packages/static-svg by scripts/goWorkflow.
 // Keeping it compressed makes the Go module substantially smaller than a copy
 // of the individual SVG files while retaining offline native-app support.
 //

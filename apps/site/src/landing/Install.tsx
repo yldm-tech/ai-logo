@@ -3,9 +3,10 @@ import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 
 import { Code, Command } from "../components/Code";
+import { GoFrameworkPicker } from "../components/GoFrameworkPicker";
 import { Reveal } from "../components/Reveal";
 import { SectionHead } from "../components/SectionHead";
-import { ALIAS, GO_MODULE, PKG } from "../registry";
+import { ALIAS, GO_MODULES, type GoFramework, PKG } from "../registry";
 
 const MANAGERS = {
   bun: `bun add ${PKG}`,
@@ -18,8 +19,27 @@ type Manager = keyof typeof MANAGERS;
 
 const ORDER: Manager[] = ["npm", "pnpm", "yarn", "bun"];
 
+const GO_SAMPLES: Record<GoFramework, string> = {
+  mygo: `import (
+  "github.com/egoist/mygo/ui"
+  ailogo "${GO_MODULES.mygo.module}"
+)
+
+logo := ailogo.MustParse("openai", ailogo.Mono)
+ui.Icon(c, logo).Size(24, 24)`,
+  nsgo: `import (
+  "github.com/nsgo-dev/nsgo/core"
+  ailogo "${GO_MODULES.nsgo.module}"
+)
+
+logo := ailogo.MustParse("openai", ailogo.Mono)
+core.Icon{SVG: logo, Label: "OpenAI"}`,
+};
+
 export const Install = () => {
   const [manager, setManager] = useState<Manager>("npm");
+  const [framework, setFramework] = useState<GoFramework>("nsgo");
+  const goModule = GO_MODULES[framework].module;
   const { t } = useTranslation();
 
   return (
@@ -87,33 +107,22 @@ export function Badge() {
 
           <div className="rounded-2xl border border-line bg-canvas p-5 sm:p-6">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <span className="rounded-full border border-accent-2/30 bg-accent-2/10 px-2.5 py-1 font-mono text-[11px] font-medium text-accent-2">
-                {t("install.mygo.eyebrow")}
-              </span>
+              <GoFrameworkPicker onChange={setFramework} value={framework} />
               <span className="max-w-full truncate font-mono text-[11px] text-faint">
-                {GO_MODULE}
+                {goModule}
               </span>
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-ink">{t("install.mygo.title")}</h3>
+            <h3 className="mt-4 text-lg font-semibold text-ink">{t("install.go.title")}</h3>
             <p className="mt-2 text-sm leading-relaxed text-dim">
               <Trans
                 components={{ c: <code /> }}
-                i18nKey="install.mygo.sub"
-                values={{ module: GO_MODULE }}
+                i18nKey={`install.go.${framework}`}
+                values={{ module: goModule }}
               />
             </p>
 
-            <Command className="mt-5" command={`go get ${GO_MODULE}`} />
-            <Code
-              className="mt-3"
-              code={`import (
-  "github.com/egoist/mygo/ui"
-  ailogo "${GO_MODULE}"
-)
-
-logo := ailogo.MustParse("openai", ailogo.Mono)
-ui.Icon(c, logo).Size(24, 24)`}
-            />
+            <Command className="mt-5" command={`go get ${goModule}`} />
+            <Code className="mt-3" code={GO_SAMPLES[framework]} />
           </div>
         </div>
       </div>
