@@ -2,7 +2,7 @@
 
 ## lobe-icons
 
-AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub, released under the MIT License, Copyright (c) 2023 LobeHub. The AI and LLM marks, the React components and the build tooling started from it. Its licence and copyright notice are kept in [`LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/LICENSE) and, for the Go module, in [`mygo/LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/mygo/LICENSE).
+AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub, released under the MIT License, Copyright (c) 2023 LobeHub. The AI and LLM marks, the React components and the build tooling started from it. Its licence and copyright notice are kept in [`LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/LICENSE) and, for the Go modules, in [`mygo/LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/mygo/LICENSE) and [`nsgo/LICENSE`](https://github.com/yldm-tech/ai-logo/blob/main/nsgo/LICENSE).
 
 ## Ant Design
 

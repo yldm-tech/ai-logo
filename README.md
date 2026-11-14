@@ -4,7 +4,7 @@
 
 <h1>AI Logo</h1>
 
-Popular AI / LLM Model Brand SVG Logo and Icon Collection for React, Go and MyGo.<br/>
+Popular AI / LLM Model Brand SVG Logo and Icon Collection for React and Go (NSGo and MyGo).<br/>
 Contributions, corrections & requests can be made on GitHub.
 
 **[ailogo.yldm.ai](https://ailogo.yldm.ai)** — browse all 1318 marks, every variant, in 11 languages.
@@ -22,7 +22,7 @@ Contributions, corrections & requests can be made on GitHub.
 
 </div>
 
-> AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by [LobeHub](https://github.com/lobehub), MIT licensed, and keeps that licence and its copyright notice. The AI and LLM marks and the React components started from lobe-icons; its changelog up to the fork is kept in [`CHANGELOG.upstream.md`](./CHANGELOG.upstream.md). This fork adds a [Go module for MyGo](#go--mygo) native UI apps ([`mygo/`](./mygo)), the non-AI service marks ported from [Simple Icons](https://github.com/simple-icons/simple-icons) and other sources listed in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md), and the [ailogo.yldm.ai](https://ailogo.yldm.ai) site.
+> AI Logo is a fork of [lobe-icons](https://github.com/lobehub/lobe-icons) by [LobeHub](https://github.com/lobehub), MIT licensed, and keeps that licence and its copyright notice. The AI and LLM marks and the React components started from lobe-icons; its changelog up to the fork is kept in [`CHANGELOG.upstream.md`](./CHANGELOG.upstream.md). This fork adds [Go modules for NSGo and MyGo](#go--nsgo-and-mygo) native UI apps ([`nsgo/`](./nsgo) and [`mygo/`](./mygo)), the non-AI service marks ported from [Simple Icons](https://github.com/simple-icons/simple-icons) and other sources listed in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md), and the [ailogo.yldm.ai](https://ailogo.yldm.ai) site.
 
 > The brand logos in this collection are trademarks of their respective owners. They are included for identification purposes; inclusion does not imply any affiliation or endorsement.
 
@@ -36,7 +36,7 @@ Contributions, corrections & requests can be made on GitHub.
   - [For humans](#for-humans)
   - [Usage](#usage)
   - [Packages](#packages)
-  - [Go / MyGo](#go--mygo)
+  - [Go / NSGo and MyGo](#go--nsgo-and-mygo)
 - [🌐 Website](#-website)
 - [✨ Features](#-features)
 - [🤯 CDN Usage](#-cdn-usage)
@@ -141,23 +141,37 @@ The static package files live in this repository under `packages/static-*`. The 
 
 The React Native port, `@yldm-tech/ai-logo-rn`, lives under `packages/react-native`. It is private and not published; see [its README](./packages/react-native/README.md) for its current usage and limitations.
 
-### Go / MyGo
+### Go / NSGo and MyGo
 
-The [`github.com/yldm-tech/ai-logo/mygo`](./mygo) Go module packages the same vector SVG variants for [MyGo](https://github.com/egoist/mygo) native UI apps. It parses marks lazily, so an app only pays for the icons it requests. The optional `github.com/yldm-tech/ai-logo/mygo/avatar` subpackage provides the rendered WebP avatars.
+Two Go modules package the same vector SVG variants for native UI frameworks: [`github.com/yldm-tech/ai-logo/nsgo`](./nsgo) for [NSGo](https://github.com/nsgo-dev/nsgo) apps on iOS, Android, desktop and the web, and [`github.com/yldm-tech/ai-logo/mygo`](./mygo) for [MyGo](https://github.com/egoist/mygo) desktop apps. Both parse marks lazily, so an app only pays for the icons it draws, and each has an optional `avatar` subpackage with the rendered WebP avatars.
 
 ```bash
+go get github.com/yldm-tech/ai-logo/nsgo
+# or
 go get github.com/yldm-tech/ai-logo/mygo
 ```
 
-The module is released with the same version line as the JavaScript packages. Pin it when you need reproducible builds:
+The modules are released with the same version line as the JavaScript packages. Pin one when you need reproducible builds:
 
 ```bash
-go get github.com/yldm-tech/ai-logo/mygo@latest
+go get github.com/yldm-tech/ai-logo/nsgo@latest
 ```
 
 Replace `latest` with a published `vX.Y.Z` tag when pinning a release.
 
 ```go
+// NSGo
+import (
+    "github.com/nsgo-dev/nsgo/core"
+    ailogo "github.com/yldm-tech/ai-logo/nsgo"
+)
+
+logo := ailogo.MustParse("openai", ailogo.Mono)
+core.Icon{SVG: logo, Label: "OpenAI"}
+```
+
+```go
+// MyGo
 import (
     "github.com/egoist/mygo/ui"
     ailogo "github.com/yldm-tech/ai-logo/mygo"
@@ -167,7 +181,7 @@ logo := ailogo.MustParse("openai", ailogo.Mono)
 ui.Icon(c, logo).Size(24, 24)
 ```
 
-Available vector variants are `Mono`, `Color`, `Text`, `TextColor`, `TextCn`, `Brand` and `BrandColor`. See [`mygo/README.md`](./mygo/README.md) for lookup, CDN and avatar examples.
+Available vector variants are `Mono`, `Color`, `Text`, `TextColor`, `TextCn`, `Brand` and `BrandColor`. See [`nsgo/README.md`](./nsgo/README.md) and [`mygo/README.md`](./mygo/README.md) for lookup, CDN and avatar examples.
 
 <div align="right">
 
@@ -192,7 +206,7 @@ The site is translated into 11 languages — English, Simplified and Traditional
 ## ✨ Features
 
 - 🚀 **Lightweight & Scalable**: Icons are designed to be lightweight, utilizing highly optimized scalable vector graphics (SVG) for the best performance and quality.
-- 🖥️ **Go and MyGo**: The `github.com/yldm-tech/ai-logo/mygo` module brings the same vector variants and optional avatars to native MyGo desktop applications, with lazy parsing and offline embedded assets.
+- 🖥️ **Go, NSGo and MyGo**: The `github.com/yldm-tech/ai-logo/nsgo` and `github.com/yldm-tech/ai-logo/mygo` modules bring the same vector variants and optional avatars to native NSGo apps on phones, desktops and the web and to MyGo desktop apps, with lazy parsing and offline embedded assets.
 - 🌳 **Tree Shakable**: Importing a brand directly — `import { OpenAI } from "@yldm-tech/ai-logo"` — pulls in that brand and nothing else, around 216 kB against the full set. The lookup components are the exception: `ProviderIcon`, `ModelIcon` and `AgentIcon` resolve an arbitrary id string at runtime, so they necessarily carry their whole mapping table and cost roughly 1.7 MB. Reach for them when the id is dynamic, and for the brand export when it is not. Both sizes are pinned by a budget in `apps/site/treeshake`.
 - 🎨 **Every Major Model**: 1318 brands — AI companies, models and applications, plus mainstream services beyond AI: social networks, developer tools, productivity apps, media, gaming, payments, commerce, travel, hardware and automotive. Every one ships a mono mark, and most add some combination of color, text, combined and avatar variants — which ones a given brand has is listed on [the website][site-link] and attached in `src/<Brand>/index.ts`. The non-AI services are ported from [Simple Icons](https://simpleicons.org) and ship mono, color and avatar variants; see [THIRD\_PARTY\_NOTICES.md](./THIRD_PARTY_NOTICES.md) for their licensing.
 
@@ -1360,13 +1374,13 @@ pnpm is required here rather than optional. The toolchain is [Vite+](https://vit
 | Dev server    | `pnpm start`            |
 | Build         | `pnpm run build`        |
 | Static assets | `pnpm run build:static` |
-| MyGo assets   | `pnpm run check:mygo`   |
+| Go assets     | `pnpm run check:go`     |
 | Test          | `pnpm run test`         |
 | Lint          | `pnpm run ci`           |
 
 `pnpm run build` regenerates `src/toc.json` and then runs `vp pack`, which bundles `src/index.ts` into `es/index.mjs` with types alongside.
 
-`pnpm run build:static` renders the committed SVG, PNG, WebP and avatar files, then rebuilds the compressed archives embedded by the MyGo module. Run `pnpm run check:mygo` after changing generated assets; it fails when either archive is out of sync.
+`pnpm run build:static` renders the committed SVG, PNG, WebP and avatar files, then rebuilds the compressed archives embedded by the NSGo and MyGo modules. Run `pnpm run check:go` after changing generated assets; it fails when any archive is out of sync.
 
 <div align="right">
 
@@ -1420,7 +1434,7 @@ A commit without the prefix is accepted by commitlint and merged normally, but i
 #### 📝 License
 
 Copyright © 2023 LobeHub, © 2026 yldm-tech. <br />
-This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub. The Go module in [`mygo/`](./mygo) carries the same notices in its own [`LICENSE`](./mygo/LICENSE) and [`THIRD_PARTY_NOTICES.md`](./mygo/THIRD_PARTY_NOTICES.md), since `go get` downloads that directory alone. Third-party marks and their licences are listed in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
+This project is [MIT](./LICENSE) licensed and derived from [lobe-icons](https://github.com/lobehub/lobe-icons) by LobeHub. The Go modules in [`nsgo/`](./nsgo) and [`mygo/`](./mygo) carry the same notices in their own `LICENSE` and `THIRD_PARTY_NOTICES.md`, since `go get` downloads a module's directory alone. Third-party marks and their licences are listed in [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md).
 
 <!-- LINK GROUP -->
 

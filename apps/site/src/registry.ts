@@ -24,7 +24,15 @@ export type Group = (typeof groups)[number];
 
 export const PKG = "@yldm-tech/ai-logo";
 export const ALIAS = "ai-logo";
-export const GO_MODULE = "github.com/yldm-tech/ai-logo/mygo";
+/** One Go module per native UI framework, each embedding the same SVG and avatar archives. NSGo comes first because it reaches phones and the web as well as desktops. */
+export const GO_MODULES = {
+  nsgo: { module: "github.com/yldm-tech/ai-logo/nsgo", name: "NSGo" },
+  mygo: { module: "github.com/yldm-tech/ai-logo/mygo", name: "MyGo" },
+} as const;
+
+export type GoFramework = keyof typeof GO_MODULES;
+
+export const GO_FRAMEWORKS = Object.keys(GO_MODULES) as GoFramework[];
 export const CDN = "https://ailogo.yldm.ai";
 export const REPO = "https://github.com/yldm-tech/ai-logo";
 

@@ -72,11 +72,15 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Check MyGo assets
-        run: pnpm run check:mygo
+      - name: Check the Go modules' assets
+        run: pnpm run check:go
 
       - name: Test the MyGo module
         working-directory: mygo
+        run: GOTOOLCHAIN=auto go test ./...
+
+      - name: Test the NSGo module
+        working-directory: nsgo
         run: GOTOOLCHAIN=auto go test ./...
 
       # This gate used to be strictly weaker than the pull request one, and the gap was the part that reaches a consumer: apps/site is where the bundle budgets live, so nothing checked tree-shaking before a publish. The regression those budgets exist for — an icon import pulling in all 323, 3219 kB against 216 kB — type-checks and tests clean, which means every other step here would have passed it straight through to npm.
@@ -114,21 +118,20 @@ jobs:
             *) echo "::error::Released ${version}, which is not on the v1 line. An upstream tag is probably being treated as this project's last release."; exit 1 ;;
           esac
 
-      # `mygo/` is a nested Go module, so the Go tool looks for tags prefixed by
-      # the module directory rather than the root npm tag. Keep that tag on the
-      # exact release commit so `go get github.com/yldm-tech/ai-logo/mygo@vX.Y.Z`
-      # resolves the same assets as the npm packages.
-      - name: Tag the MyGo module
+      # `mygo/` and `nsgo/` are nested Go modules, so the Go tool looks for tags prefixed by the module directory rather than the root npm tag. Keep those tags on the exact release commit so `go get github.com/yldm-tech/ai-logo/nsgo@vX.Y.Z` resolves the same assets as the npm packages.
+      - name: Tag the Go modules
         if: steps.release.outputs.version_before != steps.release.outputs.version_after
         run: |
           version="${{ steps.release.outputs.version_after }}"
-          tag="mygo/v${version}"
-          if git rev-parse --verify --quiet "refs/tags/${tag}" >/dev/null; then
-            echo "${tag} already exists."
-          else
-            git tag "${tag}"
-            git push origin "${tag}"
-          fi
+          for module in mygo nsgo; do
+            tag="${module}/v${version}"
+            if git rev-parse --verify --quiet "refs/tags/${tag}" >/dev/null; then
+              echo "${tag} already exists."
+            else
+              git tag "${tag}"
+              git push origin "${tag}"
+            fi
+          done
 
       # semantic-release publishes @yldm-tech/ai-logo only. The unscoped `ai-logo` alias that re-exports it and the four static asset packages the CDN helper resolves go out here, at the same version.
       #

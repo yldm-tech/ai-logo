@@ -72,7 +72,7 @@ Copy the closest existing brand rather than starting from scratch. Then:
 
 5. Run `pnpm run build:static` to render the new files under `packages/static-*`, and commit them. They are committed build outputs, not generated in CI, and `tests/staticAssets.test.ts` asserts that every variant `src/toc.json` advertises has an SVG behind it — so a brand added without this step fails the test suite and leaves the documented CDN paths 404ing. The script installs a Chrome for puppeteer if there is not one already and re-renders the whole set rather than just what changed, so check `git status` afterwards: stage your brand's files across `static-svg`, `static-png`, `static-webp` and `static-avatar`, and leave any unrelated churn out of the commit.
 
-   The same command also rebuilds the compressed archives under `mygo/` and `mygo/avatar/`. They are the offline assets for the Go/MyGo module; `pnpm run check:mygo` verifies that they contain exactly the committed SVG and avatar outputs.
+   The same command also rebuilds the compressed archives under `mygo/`, `nsgo/` and their `avatar/` subpackages. They are the offline assets for the Go modules for MyGo and NSGo; `pnpm run check:go` verifies that they contain exactly the committed SVG and avatar outputs.
 
 6. Run `pnpm run sync:md` to regenerate the README icon table, then `npx remark --quiet --output -- README.md`. CI regenerates both and fails on a diff.
 
