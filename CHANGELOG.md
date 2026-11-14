@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [1.21.0](https://github.com/yldm-tech/ai-logo/compare/v1.20.0...v1.21.0) (2026-11-14)
+
+### Features
+
+- add NSGo Go module support ([c156532](https://github.com/yldm-tech/ai-logo/commit/c1565321f5b503ad6ed52799b5c7f757956fd66f))
+
+### Documentation
+
+- restore the README the sponsor badges change replaced ([b52a049](https://github.com/yldm-tech/ai-logo/commit/b52a049875c272831bc1f8f9d01c7a314ecd066a)), closes [#58](https://github.com/yldm-tech/ai-logo/issues/58)
+
 ## [1.20.0](https://github.com/yldm-tech/ai-logo/compare/v1.19.0...v1.20.0) (2026-11-10)
 
 ### Features
