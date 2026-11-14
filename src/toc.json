@@ -13890,6 +13890,25 @@
     "title": "Miro"
   },
   {
+    "color": "#000000",
+    "desc": "https://mise.jdx.dev",
+    "docsUrl": "mise",
+    "fullTitle": "mise",
+    "group": "service",
+    "id": "Mise",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "mise"
+  },
+  {
     "color": "#FA520F",
     "desc": "https://mistral.ai",
     "docsUrl": "mistral",
@@ -18813,6 +18832,25 @@
       "hasTextColor": false
     },
     "title": "Runway"
+  },
+  {
+    "color": "#000000",
+    "desc": "https://www.rust-lang.org",
+    "docsUrl": "rust",
+    "fullTitle": "Rust",
+    "group": "service",
+    "id": "Rust",
+    "param": {
+      "hasAvatar": true,
+      "hasBrand": false,
+      "hasBrandColor": false,
+      "hasColor": false,
+      "hasCombine": false,
+      "hasText": false,
+      "hasTextCn": false,
+      "hasTextColor": false
+    },
+    "title": "Rust"
   },
   {
     "color": "#3431C3",
