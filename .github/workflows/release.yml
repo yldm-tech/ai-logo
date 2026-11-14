@@ -8,6 +8,8 @@ on:
   workflow_dispatch:
 
 permissions:
+  # Dispatches the Docs workflow after a release.
+  actions: write
   contents: write
   issues: write
   pull-requests: write
@@ -132,6 +134,13 @@ jobs:
               git push origin "${tag}"
             fi
           done
+
+      # The release commit carries [skip ci], so its push does not run Docs, and the site keeps the version it was built with: v1.20.0 stayed on the page after v1.21.0 shipped. Docs used to listen for the published release instead, but that run's ref is the tag, which the github-pages environment does not allow to deploy, so it failed every time. A dispatch runs on main, which the environment allows, and builds main as the release left it. GITHUB_TOKEN may start a workflow_dispatch run, unlike most events it raises.
+      - name: Deploy the site at the released version
+        if: steps.release.outputs.version_before != steps.release.outputs.version_after
+        run: gh workflow run docs.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       # semantic-release publishes @yldm-tech/ai-logo only. The unscoped `ai-logo` alias that re-exports it and the four static asset packages the CDN helper resolves go out here, at the same version.
       #
