@@ -2,6 +2,14 @@
 
 # Changelog
 
+## [1.22.0](https://github.com/yldm-tech/ai-logo/compare/v1.21.0...v1.22.0) (2026-11-14)
+
+### Features
+
+- add the Rust and mise icons ([36f9dce](https://github.com/yldm-tech/ai-logo/commit/36f9dce9899edd58d567f0cdcafbd7404a265d6c))
+- port the Rust and mise icons to react-native ([25ea507](https://github.com/yldm-tech/ai-logo/commit/25ea507c408b00bc4c1d6db70a9caabd244e50cd))
+- render the Rust and mise static assets and add them to the Go archives ([14756bd](https://github.com/yldm-tech/ai-logo/commit/14756bd7344e883cb67c679db99d292d73161c75))
+
 ## [1.21.0](https://github.com/yldm-tech/ai-logo/compare/v1.20.0...v1.21.0) (2026-11-14)
 
 ### Features
