@@ -1000,6 +1000,7 @@ export { default as Minimax, type CompoundedIcon as MinimaxProps } from "./icons
 export { default as MinIO, type CompoundedIcon as MinIOProps } from "./icons/MinIO";
 export { default as Mintlify, type CompoundedIcon as MintlifyProps } from "./icons/Mintlify";
 export { default as Miro, type CompoundedIcon as MiroProps } from "./icons/Miro";
+export { default as Mise, type CompoundedIcon as MiseProps } from "./icons/Mise";
 export { default as Mistral, type CompoundedIcon as MistralProps } from "./icons/Mistral";
 export { default as Mitsubishi, type CompoundedIcon as MitsubishiProps } from "./icons/Mitsubishi";
 export { default as Mixcloud, type CompoundedIcon as MixcloudProps } from "./icons/Mixcloud";
@@ -1349,6 +1350,7 @@ export {
 export { default as Ruff, type CompoundedIcon as RuffProps } from "./icons/Ruff";
 export { default as Rumble, type CompoundedIcon as RumbleProps } from "./icons/Rumble";
 export { default as Runway, type CompoundedIcon as RunwayProps } from "./icons/Runway";
+export { default as Rust, type CompoundedIcon as RustProps } from "./icons/Rust";
 export { default as Rwkv, type CompoundedIcon as RwkvProps } from "./icons/Rwkv";
 export { default as Ryanair, type CompoundedIcon as RyanairProps } from "./icons/Ryanair";
 export { default as Safari, type CompoundedIcon as SafariProps } from "./icons/Safari";

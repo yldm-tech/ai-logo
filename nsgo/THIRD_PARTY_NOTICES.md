@@ -43,5 +43,7 @@ The non-AI service icons (social networks, developer tools, productivity apps, m
 | Vuetify          | MIT          | <https://vuetifyjs.com/resources/brand-kit>                                                                            |
 | Jekyll           | CC-BY-4.0    | <https://github.com/jekyll/brand/blob/8302ad3ecf045054a095020729a8d2cc7005faf8/jekyll-logo-black.svg>                  |
 | Exercism         | CC-BY-3.0    | <https://github.com/exercism/website-icons/blob/2ad12baa465acfaa74efc5da27a6a12f8b05e3d0/exercism/logo-icon.svg>       |
+| Rust             | CC-BY-4.0    | <https://github.com/rust-lang/rust-artwork/tree/7b54b6689dc310db2f301d7bcda847f016bd447c/logo>                         |
+| mise             | MIT          | <https://github.com/jdx/mise/blob/2697bb99d329f831ff369e75db1261448450a32c/docs/public/logo.svg>                       |
 
 All brand names, logos and trademarks belong to their respective owners. Their inclusion here identifies the brand and does not imply endorsement; use them according to each owner's brand guidelines. See also the [Simple Icons disclaimer](https://github.com/simple-icons/simple-icons/blob/develop/DISCLAIMER.md).
